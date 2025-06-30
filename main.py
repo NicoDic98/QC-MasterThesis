@@ -33,7 +33,7 @@ backend = FakeAlmadenV2()
 # Convert to an ISA circuit and layout-mapped observables.
 pm = generate_preset_pass_manager(backend=backend, optimization_level=1)
 isa_circuit = pm.run(qc)
-isa_circuit.draw("mpl", idle_wires=False)
+isa_circuit.draw("mpl")
 plt.show()
 
 # Run:
@@ -43,6 +43,8 @@ estimator = Estimator(backend)
 mapped_observables = [
     observable.apply_layout(isa_circuit.layout) for observable in observables
 ]
+print(observables)
+print(mapped_observables)
 
 job = estimator.run([(isa_circuit, mapped_observables)])
 result = job.result()
