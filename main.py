@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import SparsePauliOp
+from qiskit_ibm_runtime.fake_provider import FakeAlmadenV2
 from qiskit.transpiler import generate_preset_pass_manager
 from qiskit_ibm_runtime import EstimatorV2 as Estimator
 
@@ -22,24 +23,22 @@ qc.draw("mpl")
 plt.show()
 # Set up six different observables.
 
-observables_labels = ["IZ", "IX", "ZI", "XI", "ZZ", "XX"]
+observables_labels = ["IZ", "IX", "ZI", "XI", "ZZ", "XX"]# in format "q_1, q_0"
 observables = [SparsePauliOp(label) for label in observables_labels]
 
 # Use the following code instead if you want to run on a simulator:
 
-from qiskit_ibm_runtime.fake_provider import FakeAlmadenV2
-
 backend = FakeAlmadenV2()
 
-
 # Convert to an ISA circuit and layout-mapped observables.
-
 pm = generate_preset_pass_manager(backend=backend, optimization_level=1)
 isa_circuit = pm.run(qc)
 isa_circuit.draw("mpl", idle_wires=False)
 plt.show()
 
+# Run:
 estimator = Estimator(backend)
+
 
 mapped_observables = [
     observable.apply_layout(isa_circuit.layout) for observable in observables
@@ -47,20 +46,22 @@ mapped_observables = [
 
 job = estimator.run([(isa_circuit, mapped_observables)])
 result = job.result()
+#
+#
+#
 
 # This is the result of the entire submission.  You submitted one Pub,
 # so this contains one inner result (and some metadata of its own).
 
 job_result = job.result()
+print(job_result)
 
-# This is the result from our single pub, which had five observables,
-# so contains information on all five.
+# This is the result from our single pub, which had six observables,
+# so contains information on all six.
 
 pub_result = job.result()[0]
 
 # Plot the result
-
-from matplotlib import pyplot as plt
 
 values = pub_result.data.evs
 
