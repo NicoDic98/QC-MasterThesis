@@ -47,7 +47,6 @@ print(observables)
 print(mapped_observables)
 
 job = estimator.run([(isa_circuit, mapped_observables)])
-result = job.result()
 #
 #
 #
