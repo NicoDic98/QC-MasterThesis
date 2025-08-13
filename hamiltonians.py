@@ -64,6 +64,19 @@ class FreeWilson2D:
             return self.M_x * (n_y + 1) - (m_x + 1)
 
     def field(self, m_x: int, n_y: int, adjoint: bool = False) -> SparsePauliOp:
+        """
+        Note:
+        With this ordering the site j=0, corresponds to the last qubit in the circuit
+        due to the default ordering in qiskit:
+        (Taken from https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.quantum_info.Pauli#pauli )
+        In the string representation qubit-0 corresponds to the right-most Pauli character,
+        and qubit-(n−1) to the left-most Pauli character.
+        For example 'XYZ' represents X⊗Y⊗Z with 'Z' on qubit-0, 'Y' on qubit-1, and 'X' on qubit-2.
+        :param m_x: X-coordinate of site
+        :param n_y: Y-coordinate of site
+        :param adjoint: Whether to return the adjoint field
+        :return:
+        """
         m_x = m_x % self.M_x
         n_y = n_y % self.N_y
         j = self.j(m_x, n_y)
