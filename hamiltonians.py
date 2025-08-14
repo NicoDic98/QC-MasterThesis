@@ -1,6 +1,7 @@
 from collections.abc import Callable
 
 import numpy as np
+from scipy.special import comb
 from qiskit.quantum_info import SparsePauliOp
 
 
@@ -87,7 +88,7 @@ class FreeWilson2D:
         y_string = adjoint * "-" + "i" + prefix + "Y" + postfix
         return SparsePauliOp([x_string, y_string], [0.5,0.5])
 
-    def hamiltonian(self) -> SparsePauliOp:
+    def full_hamiltonian(self) -> SparsePauliOp:
         a = SparsePauliOp(self.N_sites * "I", 0)
         b = SparsePauliOp(self.N_sites * "I", 0)
         c = SparsePauliOp(self.N_sites * "I", 0)
@@ -100,22 +101,42 @@ class FreeWilson2D:
                                       - self.field(m_x, n_y, True) @ self.field(m_x - 1, n_y + 1, False))
                       + alpha_3(m_x) * (-1j * self.field(m_x, n_y, True) @ self.field(m_x + 3, n_y, False)
                                         + self.field(m_x, n_y, True) @ self.field(m_x + 1, n_y + 1, False)))
-        a = a.simplify()
-        b = b.simplify()
-        c = c.simplify()
-        return -0.5 * (c + c.adjoint() + self.r * (b + b.adjoint())) + (self.mass + 2 * self.r) * a
+        return (-0.5 * (c + c.adjoint() + self.r * (b + b.adjoint())) + (self.mass + 2 * self.r) * a).simplify()
+
+    def zero_charge_penalized_hamiltonian(self, penalty_factor: float = 100) -> SparsePauliOp:
+        return (self.full_hamiltonian() + penalty_factor*self.zero_charge_penalty_term()).simplify()
 
     def zero_charge_penalty_term(self) -> SparsePauliOp:
         ret = SparsePauliOp(self.N_sites * "I", 0)
+        # build number operator
         for m_x in range(self.M_x):
             for n_y in range(self.N_y):
                 ret += self.field(m_x, n_y, True) @ self.field(m_x, n_y, False)
+        # shift to have positive and negative charge
         ret -= SparsePauliOp(self.N_sites * "I", self.N_x*self.N_y)
-        return ret@ret
+        # square, s.t. everything except zero charge is positive
+        return (ret@ret).simplify()
+
+    def zero_charge_projector(self) -> SparsePauliOp:
+        """
+        https://physics.stackexchange.com/questions/181105/how-do-you-find-the-projection-operator-onto-an-eigenspace-if-you-dont-know-the
+        :return:
+        """
+        pen_operator = self.zero_charge_penalty_term()
+        penalty_eigenvalues = np.unique(pen_operator.to_matrix().diagonal())
+        nonzero_eigenvalues = penalty_eigenvalues[np.nonzero(penalty_eigenvalues)]
+        ret = SparsePauliOp(self.N_sites * "I", 1)
+        print(nonzero_eigenvalues)
+        for ev in np.rint(nonzero_eigenvalues.real):
+            ret = ret@(-pen_operator/ev+SparsePauliOp(self.N_sites * "I", 1))
+        return ret.simplify()
 
     def size_of_zero_charge_sector(self) -> int:
         pen_operator = self.zero_charge_penalty_term().simplify()
         pen_matrix = pen_operator.to_matrix()
         pen_list = pen_matrix.diagonal()
         zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:,0]
+        # print([np.binary_repr(zero).count("1") for zero in zeros])
+        if len(zeros)!= comb(self.N_sites, self.N_x*self.N_y):
+            raise ValueError("Something went wrong.")
         return len(zeros)

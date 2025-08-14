@@ -8,7 +8,7 @@ from scipy.sparse.linalg import eigsh
 def calc_energies(m: float, n_eigv = 10):
     print(f'Calculating energies for mass {m:2.3f}')
     free_wilson = FreeWilson2D(2, 2, m, 1)
-    h_operator = (free_wilson.hamiltonian() + 100*free_wilson.zero_charge_penalty_term()).simplify()
+    h_operator = free_wilson.zero_charge_penalized_hamiltonian().simplify()
     h_sparse_matrix = h_operator.to_matrix(sparse=True)
     eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which='SM')
     eigen_values : np.ndarray
@@ -32,10 +32,14 @@ def plot_energies(ms: np.ndarray, sorted_energies: np.ndarray, n_plot: int, name
 
 
 masses = np.linspace(-6, 2, 501)
-zero_c_size = FreeWilson2D(2, 2, masses[0], 1).size_of_zero_charge_sector()
-print(f"Size of the zero charge sector: {zero_c_size}")
-energies = np.array([calc_energies(m, zero_c_size+2) for m in masses])
-print(masses.shape, energies.shape)
-plot_energy_gap(masses, energies)
-plot_energies(masses, energies, 2)
+test = FreeWilson2D(2, 2, masses[0], 1)
+zero_c_size = test.size_of_zero_charge_sector()
+temp = test.zero_charge_penalty_term()@test.full_hamiltonian()@test.zero_charge_penalty_term()
+print(test.zero_charge_projector())
+print(len(test.full_hamiltonian().to_list()), len(test.zero_charge_penalized_hamiltonian().to_list()),len(test.zero_charge_penalty_term().to_list()) ,len(test.zero_charge_projector().to_list()))
+# print(f"Size of the zero charge sector: {zero_c_size}")
+# energies = np.array([calc_energies(m, zero_c_size+2) for m in masses])
+# print(masses.shape, energies.shape)
+# plot_energy_gap(masses, energies)
+# plot_energies(masses, energies, 2)
 
