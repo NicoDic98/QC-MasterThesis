@@ -1,5 +1,6 @@
 from collections.abc import Callable
 
+import numpy as np
 from qiskit.quantum_info import SparsePauliOp
 
 
@@ -82,7 +83,9 @@ class FreeWilson2D:
         j = self.j(m_x, n_y)
         prefix = j * "Z"
         postfix = (self.N_sites - j - 1) * "I"
-        return SparsePauliOp([prefix + "X" + postfix, adjoint * "-" + "i" + prefix + "Y" + postfix])
+        x_string = prefix + "X" + postfix
+        y_string = adjoint * "-" + "i" + prefix + "Y" + postfix
+        return SparsePauliOp([x_string, y_string], [0.5,0.5])
 
     def hamiltonian(self) -> SparsePauliOp:
         a = SparsePauliOp(self.N_sites * "I", 0)
@@ -101,3 +104,18 @@ class FreeWilson2D:
         b = b.simplify()
         c = c.simplify()
         return -0.5 * (c + c.adjoint() + self.r * (b + b.adjoint())) + (self.mass + 2 * self.r) * a
+
+    def zero_charge_penalty_term(self) -> SparsePauliOp:
+        ret = SparsePauliOp(self.N_sites * "I", 0)
+        for m_x in range(self.M_x):
+            for n_y in range(self.N_y):
+                ret += self.field(m_x, n_y, True) @ self.field(m_x, n_y, False)
+        ret -= SparsePauliOp(self.N_sites * "I", self.N_x*self.N_y)
+        return ret@ret
+
+    def size_of_zero_charge_sector(self) -> int:
+        pen_operator = self.zero_charge_penalty_term().simplify()
+        pen_matrix = pen_operator.to_matrix()
+        pen_list = pen_matrix.diagonal()
+        zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:,0]
+        return len(zeros)
