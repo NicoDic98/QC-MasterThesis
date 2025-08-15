@@ -8,9 +8,9 @@ from scipy.sparse.linalg import eigsh
 def calc_energies(m: float, n_eigv = 10):
     print(f'Calculating energies for mass {m:2.3f}')
     free_wilson = FreeWilson2D(2, 2, m, 1)
-    h_operator = free_wilson.zero_charge_penalized_hamiltonian().simplify()
+    h_operator = free_wilson.zero_charge_projected_hamiltonian().simplify()
     h_sparse_matrix = h_operator.to_matrix(sparse=True)
-    eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which='SM')
+    eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which='LM') #'SM' if using penalty and 'LM' if using projection
     eigen_values : np.ndarray
     eigen_vectors : np.ndarray
     eigen_values.sort()
@@ -33,13 +33,38 @@ def plot_energies(ms: np.ndarray, sorted_energies: np.ndarray, n_plot: int, name
 
 masses = np.linspace(-6, 2, 501)
 test = FreeWilson2D(2, 2, masses[0], 1)
+
 zero_c_size = test.size_of_zero_charge_sector()
-temp = test.zero_charge_penalty_term()@test.full_hamiltonian()@test.zero_charge_penalty_term()
-print(test.zero_charge_projector())
-print(len(test.full_hamiltonian().to_list()), len(test.zero_charge_penalized_hamiltonian().to_list()),len(test.zero_charge_penalty_term().to_list()) ,len(test.zero_charge_projector().to_list()))
+print(f"Number of pauli strings:\n"
+      f"Full hamiltonian: {len(test.full_hamiltonian().to_list())}\n"
+      f"Zero-charge penalized hamiltonian: {len(test.zero_charge_penalized_hamiltonian().to_list())}\n"
+      f"Zero-charge projected hamiltonian: {len(test.zero_charge_projected_hamiltonian().to_list())}\n"
+      f"Zero-charge projector: {len(test.zero_charge_projector().to_list())}\n"
+      f"Zero-charge penalty: {len(test.zero_charge_penalty_term().to_list())}")
+
+print(f"Number of non-commuting pauli strings:\n"
+      f"Full hamiltonian: {len(test.full_hamiltonian().group_commuting())}\n"
+      f"Zero-charge penalized hamiltonian: {len(test.zero_charge_penalized_hamiltonian().group_commuting())}\n"
+      f"Zero-charge projected hamiltonian: {len(test.zero_charge_projected_hamiltonian().group_commuting())}\n"
+      f"Zero-charge projector: {len(test.zero_charge_projector().group_commuting())}\n"
+      f"Zero-charge penalty: {len(test.zero_charge_penalty_term().group_commuting())}")
+
 # print(f"Size of the zero charge sector: {zero_c_size}")
 # energies = np.array([calc_energies(m, zero_c_size+2) for m in masses])
-# print(masses.shape, energies.shape)
 # plot_energy_gap(masses, energies)
 # plot_energies(masses, energies, 2)
+
+# pen_operator = test.zero_charge_projector().simplify()
+# pen_matrix = pen_operator.to_matrix()
+# pen_list = pen_matrix.diagonal()
+# zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:,0]
+# print(pen_matrix.min(), pen_matrix.max())
+# print(zeros)
+# print(len(zeros))
+# counter = np.zeros(9)
+# for i in zeros:
+#     bin_i = np.binary_repr(i)
+#     n_ones = bin_i.count("1")
+#     counter[n_ones] += 1
+# print(counter)
 

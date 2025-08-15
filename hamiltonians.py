@@ -103,8 +103,15 @@ class FreeWilson2D:
                                         + self.field(m_x, n_y, True) @ self.field(m_x + 1, n_y + 1, False)))
         return (-0.5 * (c + c.adjoint() + self.r * (b + b.adjoint())) + (self.mass + 2 * self.r) * a).simplify()
 
-    def zero_charge_penalized_hamiltonian(self, penalty_factor: float = 100) -> SparsePauliOp:
-        return (self.full_hamiltonian() + penalty_factor*self.zero_charge_penalty_term()).simplify()
+    def size_of_zero_charge_sector(self) -> int:
+        pen_operator = self.zero_charge_penalty_term().simplify()
+        pen_matrix = pen_operator.to_matrix()
+        pen_list = pen_matrix.diagonal()
+        zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:,0]
+        # print([np.binary_repr(zero).count("1") for zero in zeros])
+        if len(zeros)!= comb(self.N_sites, self.N_x*self.N_y):
+            raise ValueError("Something went wrong.")
+        return len(zeros)
 
     def zero_charge_penalty_term(self) -> SparsePauliOp:
         ret = SparsePauliOp(self.N_sites * "I", 0)
@@ -117,26 +124,37 @@ class FreeWilson2D:
         # square, s.t. everything except zero charge is positive
         return (ret@ret).simplify()
 
-    def zero_charge_projector(self) -> SparsePauliOp:
-        """
-        https://physics.stackexchange.com/questions/181105/how-do-you-find-the-projection-operator-onto-an-eigenspace-if-you-dont-know-the
-        :return:
-        """
-        pen_operator = self.zero_charge_penalty_term()
-        penalty_eigenvalues = np.unique(pen_operator.to_matrix().diagonal())
-        nonzero_eigenvalues = penalty_eigenvalues[np.nonzero(penalty_eigenvalues)]
-        ret = SparsePauliOp(self.N_sites * "I", 1)
-        print(nonzero_eigenvalues)
-        for ev in np.rint(nonzero_eigenvalues.real):
-            ret = ret@(-pen_operator/ev+SparsePauliOp(self.N_sites * "I", 1))
+    def zero_charge_penalized_hamiltonian(self, penalty_factor: float = 100) -> SparsePauliOp:
+        return (self.full_hamiltonian() + penalty_factor*self.zero_charge_penalty_term()).simplify()
+
+    def zero_charge_projector(self, build_from_fields: bool = False) -> SparsePauliOp:
+        if build_from_fields:
+            pen_operator = self.zero_charge_penalty_term()
+            penalty_eigenvalues = np.unique(pen_operator.to_matrix().diagonal())
+            nonzero_eigenvalues = penalty_eigenvalues[np.nonzero(penalty_eigenvalues)]
+            ret = SparsePauliOp(self.N_sites * "I", 1)
+            for ev in np.rint(nonzero_eigenvalues.real):
+                ret = ret@(-pen_operator/ev+SparsePauliOp(self.N_sites * "I", 1))
+        else:
+            ret = SparsePauliOp(self.N_sites * "I", 0)
+            list_of_pauli_strings = ["I", "Z"]
+            while len(list_of_pauli_strings) < 2**self.N_sites:
+                old_list = list_of_pauli_strings.copy()
+                list_of_pauli_strings = [local_str + "I" for local_str in old_list]
+                list_of_pauli_strings.extend([local_str + "Z" for local_str in old_list])
+            for i in range(2**self.N_sites):
+                bin_i = np.binary_repr(i, self.N_sites)
+                n_ones = bin_i.count("1")
+                if n_ones == self.N_x*self.N_y:
+                    signs = np.ones(2**self.N_sites)
+                    for qubit in range(self.N_sites):
+                        digit = bin_i[qubit]
+                        if digit == "1":
+                            signs*=np.array([+1 if pauli_string[qubit]=="I" else -1 for pauli_string in list_of_pauli_strings ])
+                        else:
+                            pass
+                    ret += SparsePauliOp(list_of_pauli_strings, signs/(2**self.N_sites))
         return ret.simplify()
 
-    def size_of_zero_charge_sector(self) -> int:
-        pen_operator = self.zero_charge_penalty_term().simplify()
-        pen_matrix = pen_operator.to_matrix()
-        pen_list = pen_matrix.diagonal()
-        zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:,0]
-        # print([np.binary_repr(zero).count("1") for zero in zeros])
-        if len(zeros)!= comb(self.N_sites, self.N_x*self.N_y):
-            raise ValueError("Something went wrong.")
-        return len(zeros)
+    def zero_charge_projected_hamiltonian(self, build_from_fields: bool = False) -> SparsePauliOp:
+        return (self.zero_charge_projector(build_from_fields)@self.full_hamiltonian()@self.zero_charge_projector(build_from_fields)).simplify()
