@@ -133,6 +133,10 @@ class FreeWilson2D:
             penalty_eigenvalues = np.unique(pen_operator.to_matrix().diagonal())
             nonzero_eigenvalues = penalty_eigenvalues[np.nonzero(penalty_eigenvalues)]
             ret = SparsePauliOp(self.N_sites * "I", 1)
+            """
+            Based on:
+            https://physics.stackexchange.com/questions/181105/how-do-you-find-the-projection-operator-onto-an-eigenspace-if-you-dont-know-the
+            """
             for ev in np.rint(nonzero_eigenvalues.real):
                 ret = ret@(-pen_operator/ev+SparsePauliOp(self.N_sites * "I", 1))
         else:
