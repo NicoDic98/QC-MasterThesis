@@ -1,3 +1,4 @@
+import argparse
 from datetime import datetime
 
 import h5py
@@ -6,6 +7,11 @@ from matplotlib import pyplot as plt
 
 from hamiltonians import FreeWilson2D, HamiltonianType
 from exact_diagonalization import ED
+
+# Define the parser
+parser = argparse.ArgumentParser(description='Short sample app')
+parser.add_argument('--id', action="store", dest='id', default=42)
+args = parser.parse_args()
 
 def plot_energy_gap(ms: np.ndarray, sorted_energies: np.ndarray, name_suffix: str = '_2x2'):
     fig, ax = plt.subplots()
@@ -23,7 +29,7 @@ def plot_energies(ms: np.ndarray, sorted_energies: np.ndarray, n_plot: int, name
 
 
 masses = np.linspace(-6, 2, 501)
-with h5py.File(f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}-{42}.hdf5", "w") as f:
+with h5py.File(f"{datetime.now().strftime('%Y-%m-%U')}-{args.id}.hdf5", "w") as f:
     my_ed = ED(FreeWilson2D.build_hamiltonian, f)
     my_ed.run({"n_x": [2],
                "n_y": [2],

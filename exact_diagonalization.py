@@ -44,7 +44,7 @@ class ED:
         local_group.attrs['Last-Modified'] = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
         if hamiltonian_type == HamiltonianType.Full:
-            self.which = "SM"
+            self.which = "SM"  # 'SM' if using penalty and 'LM' if using projection
         elif hamiltonian_type == HamiltonianType.ZeroChargePenalty:
             self.which = "SM"
         elif hamiltonian_type == HamiltonianType.ZeroChargeProjection:
@@ -65,8 +65,7 @@ class ED:
         elif hamiltonian_type == HamiltonianType.ZeroChargeProjection:
             h_operator = hamiltonian.zero_charge_projected_hamiltonian()
         h_sparse_matrix = h_operator.to_matrix(sparse=True)
-        eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv,
-                                            which=self.which)  # 'SM' if using penalty and 'LM' if using projection
+        eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which=self.which)
         eigen_values: np.ndarray
         eigen_vectors: np.ndarray
         eigen_values.sort()
