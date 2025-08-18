@@ -1,8 +1,11 @@
+from datetime import datetime
+
+import h5py
 import numpy as np
 from matplotlib import pyplot as plt
 
 from hamiltonians import FreeWilson2D, HamiltonianType
-from exact_diagonalization import EDSolver
+from exact_diagonalization import ED
 
 def plot_energy_gap(ms: np.ndarray, sorted_energies: np.ndarray, name_suffix: str = '_2x2'):
     fig, ax = plt.subplots()
@@ -20,8 +23,15 @@ def plot_energies(ms: np.ndarray, sorted_energies: np.ndarray, n_plot: int, name
 
 
 masses = np.linspace(-6, 2, 501)
-energies = np.array([EDSolver(FreeWilson2D(2, 2, m, 1)).solve(HamiltonianType.ZeroChargePenalty) for m in masses])
-plot_energy_gap(masses, energies)
-plot_energies(masses, energies, 2)
+with h5py.File(f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}-{42}.hdf5", "w") as f:
+    my_ed = ED(FreeWilson2D.build_hamiltonian, f)
+    my_ed.run({"n_x": [2],
+               "n_y": [2],
+               "mass": masses.tolist(),
+               "r": 1.},
+              HamiltonianType.ZeroChargePenalty)
+# plot_energy_gap(masses, energies)
+# plot_energies(masses, energies, 2)
+# attr: System-parameters, ProcessId
 
 

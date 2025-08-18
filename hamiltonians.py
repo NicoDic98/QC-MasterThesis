@@ -37,6 +37,10 @@ class BaseHamiltonian:
     def zero_charge_projected_hamiltonian(self) -> SparsePauliOp:
         return self.full_hamiltonian()
 
+    @classmethod
+    def build_hamiltonian(cls, *args, **kwargs):
+        return cls(*args, **kwargs)
+
 
 def alpha_1(m_x: int) -> float:
     """
