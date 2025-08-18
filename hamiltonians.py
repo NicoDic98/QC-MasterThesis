@@ -1,8 +1,41 @@
 from collections.abc import Callable
+from enum import Enum, auto
 
 import numpy as np
 from scipy.special import comb
 from qiskit.quantum_info import SparsePauliOp
+
+
+class HamiltonianType(Enum):
+    Full = auto()
+    ZeroChargePenalty = auto()
+    ZeroChargeProjection = auto()
+
+
+class BaseHamiltonian:
+    field: Callable[..., SparsePauliOp]
+    j: Callable[..., int]
+
+    def __init__(self,
+                 field: Callable[..., SparsePauliOp],
+                 j: Callable[..., int], ):
+        self.field = field
+        self.j = j
+
+    def __str__(self):
+        return "BaseHamiltonian"
+
+    def full_hamiltonian(self) -> SparsePauliOp:
+        return self.field()
+
+    def size_of_zero_charge_sector(self) -> int:
+        return 42
+
+    def zero_charge_penalized_hamiltonian(self) -> SparsePauliOp:
+        return self.full_hamiltonian()
+
+    def zero_charge_projected_hamiltonian(self) -> SparsePauliOp:
+        return self.full_hamiltonian()
 
 
 def alpha_1(m_x: int) -> float:
@@ -38,11 +71,7 @@ def alpha_3(m_x: int) -> float:
         return 0.0
 
 
-def d_func(n_y: int, i: int, alpha: Callable[[int], float]) -> SparsePauliOp:
-    pass
-
-
-class FreeWilson2D:
+class FreeWilson2D(BaseHamiltonian):
     def __init__(self, n_x: int, n_y: int, mass: float, r: float = 1.):
         """
 
@@ -57,7 +86,10 @@ class FreeWilson2D:
         self.r = r
         self.M_x = 2 * n_x
         self.N_sites = self.M_x * self.N_y
-        self.j = self.snake_j
+        super().__init__(self.jwt_field, self.snake_j)
+
+    def __str__(self):
+        return f"FreeWilson2D(N_x={self.N_x}, N_y={self.N_y}, mass={self.mass:2.3f}, r={self.r:2.3f})"
 
     def snake_j(self, m_x: int, n_y: int) -> int:
         if n_y % 2 == 0:
@@ -65,7 +97,7 @@ class FreeWilson2D:
         else:
             return self.M_x * (n_y + 1) - (m_x + 1)
 
-    def field(self, m_x: int, n_y: int, adjoint: bool = False) -> SparsePauliOp:
+    def jwt_field(self, m_x: int, n_y: int, adjoint: bool = False) -> SparsePauliOp:
         """
         Note:
         With this ordering the site j=0, corresponds to the last qubit in the circuit
@@ -86,7 +118,7 @@ class FreeWilson2D:
         postfix = (self.N_sites - j - 1) * "I"
         x_string = prefix + "X" + postfix
         y_string = adjoint * "-" + "i" + prefix + "Y" + postfix
-        return SparsePauliOp([x_string, y_string], [0.5,0.5])
+        return SparsePauliOp([x_string, y_string], [0.5, 0.5])
 
     def full_hamiltonian(self) -> SparsePauliOp:
         a = SparsePauliOp(self.N_sites * "I", 0)
@@ -104,14 +136,14 @@ class FreeWilson2D:
         return (-0.5 * (c + c.adjoint() + self.r * (b + b.adjoint())) + (self.mass + 2 * self.r) * a).simplify()
 
     def size_of_zero_charge_sector(self) -> int:
-        pen_operator = self.zero_charge_penalty_term().simplify()
-        pen_matrix = pen_operator.to_matrix()
-        pen_list = pen_matrix.diagonal()
-        zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:,0]
-        # print([np.binary_repr(zero).count("1") for zero in zeros])
-        if len(zeros)!= comb(self.N_sites, self.N_x*self.N_y):
-            raise ValueError("Something went wrong.")
-        return len(zeros)
+        # pen_operator = self.zero_charge_penalty_term().simplify()
+        # pen_matrix = pen_operator.to_matrix()
+        # pen_list = pen_matrix.diagonal()
+        # zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:,0]
+        # if len(zeros)!= comb(self.N_sites, self.N_x*self.N_y):
+        #     raise ValueError("Something went wrong.")
+        size = comb(self.N_sites, self.N_x * self.N_y, exact=True)
+        return size
 
     def zero_charge_penalty_term(self) -> SparsePauliOp:
         ret = SparsePauliOp(self.N_sites * "I", 0)
@@ -120,12 +152,12 @@ class FreeWilson2D:
             for n_y in range(self.N_y):
                 ret += self.field(m_x, n_y, True) @ self.field(m_x, n_y, False)
         # shift to have positive and negative charge
-        ret -= SparsePauliOp(self.N_sites * "I", self.N_x*self.N_y)
+        ret -= SparsePauliOp(self.N_sites * "I", self.N_x * self.N_y)
         # square, s.t. everything except zero charge is positive
-        return (ret@ret).simplify()
+        return (ret @ ret).simplify()
 
     def zero_charge_penalized_hamiltonian(self, penalty_factor: float = 100) -> SparsePauliOp:
-        return (self.full_hamiltonian() + penalty_factor*self.zero_charge_penalty_term()).simplify()
+        return (self.full_hamiltonian() + penalty_factor * self.zero_charge_penalty_term()).simplify()
 
     def zero_charge_projector(self, build_from_fields: bool = False) -> SparsePauliOp:
         if build_from_fields:
@@ -138,27 +170,59 @@ class FreeWilson2D:
             https://physics.stackexchange.com/questions/181105/how-do-you-find-the-projection-operator-onto-an-eigenspace-if-you-dont-know-the
             """
             for ev in np.rint(nonzero_eigenvalues.real):
-                ret = ret@(-pen_operator/ev+SparsePauliOp(self.N_sites * "I", 1))
+                ret = ret @ (-pen_operator / ev + SparsePauliOp(self.N_sites * "I", 1))
         else:
             ret = SparsePauliOp(self.N_sites * "I", 0)
             list_of_pauli_strings = ["I", "Z"]
-            while len(list_of_pauli_strings) < 2**self.N_sites:
+            while len(list_of_pauli_strings) < 2 ** self.N_sites:
                 old_list = list_of_pauli_strings.copy()
                 list_of_pauli_strings = [local_str + "I" for local_str in old_list]
                 list_of_pauli_strings.extend([local_str + "Z" for local_str in old_list])
-            for i in range(2**self.N_sites):
+            for i in range(2 ** self.N_sites):
                 bin_i = np.binary_repr(i, self.N_sites)
                 n_ones = bin_i.count("1")
-                if n_ones == self.N_x*self.N_y:
-                    signs = np.ones(2**self.N_sites)
+                if n_ones == self.N_x * self.N_y:
+                    signs = np.ones(2 ** self.N_sites)
                     for qubit in range(self.N_sites):
                         digit = bin_i[qubit]
                         if digit == "1":
-                            signs*=np.array([+1 if pauli_string[qubit]=="I" else -1 for pauli_string in list_of_pauli_strings ])
+                            signs *= np.array(
+                                [+1 if pauli_string[qubit] == "I" else -1 for pauli_string in list_of_pauli_strings])
                         else:
                             pass
-                    ret += SparsePauliOp(list_of_pauli_strings, signs/(2**self.N_sites))
+                    ret += SparsePauliOp(list_of_pauli_strings, signs / (2 ** self.N_sites))
         return ret.simplify()
 
     def zero_charge_projected_hamiltonian(self, build_from_fields: bool = False) -> SparsePauliOp:
-        return (self.zero_charge_projector(build_from_fields)@self.full_hamiltonian()@self.zero_charge_projector(build_from_fields)).simplify()
+        return (self.zero_charge_projector(build_from_fields) @ self.full_hamiltonian() @ self.zero_charge_projector(
+            build_from_fields)).simplify()
+
+    def print_zero_charge_projector_analysis(self):
+        pen_operator = self.zero_charge_projector()
+        pen_matrix = pen_operator.to_matrix()
+        pen_list = pen_matrix.diagonal()
+        zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:,0]
+        print(pen_matrix.min(), pen_matrix.max())
+        print(zeros)
+        print(len(zeros))
+        counter = np.zeros(9)
+        for i in zeros:
+            bin_i = np.binary_repr(i)
+            n_ones = bin_i.count("1")
+            counter[n_ones] += 1
+        print(counter)
+
+    def print_pauli_string_analysis(self):
+        print(f"Number of pauli strings:\n"
+              f"Full hamiltonian: {len(self.full_hamiltonian().to_list())}\n"
+              f"Zero-charge penalized hamiltonian: {len(self.zero_charge_penalized_hamiltonian().to_list())}\n"
+              f"Zero-charge projected hamiltonian: {len(self.zero_charge_projected_hamiltonian().to_list())}\n"
+              f"Zero-charge projector: {len(self.zero_charge_projector().to_list())}\n"
+              f"Zero-charge penalty: {len(self.zero_charge_penalty_term().to_list())}")
+
+        print(f"Number of non-commuting pauli strings:\n"
+              f"Full hamiltonian: {len(self.full_hamiltonian().group_commuting())}\n"
+              f"Zero-charge penalized hamiltonian: {len(self.zero_charge_penalized_hamiltonian().group_commuting())}\n"
+              f"Zero-charge projected hamiltonian: {len(self.zero_charge_projected_hamiltonian().group_commuting())}\n"
+              f"Zero-charge projector: {len(self.zero_charge_projector().group_commuting())}\n"
+              f"Zero-charge penalty: {len(self.zero_charge_penalty_term().group_commuting())}")
