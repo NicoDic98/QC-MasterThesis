@@ -1,6 +1,5 @@
 import numpy as np
 from matplotlib import pyplot as plt
-from qiskit.quantum_info import SparsePauliOp
 
 from hamiltonians import FreeWilson2D
 from scipy.sparse.linalg import eigsh
@@ -31,23 +30,23 @@ def plot_energies(ms: np.ndarray, sorted_energies: np.ndarray, n_plot: int, name
     plt.savefig(f'energies{name_suffix}.pdf')
 
 
-masses = np.linspace(-6, 2, 501)
-test = FreeWilson2D(2, 2, masses[0], 1)
-
-zero_c_size = test.size_of_zero_charge_sector()
-print(f"Number of pauli strings:\n"
-      f"Full hamiltonian: {len(test.full_hamiltonian().to_list())}\n"
-      f"Zero-charge penalized hamiltonian: {len(test.zero_charge_penalized_hamiltonian().to_list())}\n"
-      f"Zero-charge projected hamiltonian: {len(test.zero_charge_projected_hamiltonian().to_list())}\n"
-      f"Zero-charge projector: {len(test.zero_charge_projector().to_list())}\n"
-      f"Zero-charge penalty: {len(test.zero_charge_penalty_term().to_list())}")
-
-print(f"Number of non-commuting pauli strings:\n"
-      f"Full hamiltonian: {len(test.full_hamiltonian().group_commuting())}\n"
-      f"Zero-charge penalized hamiltonian: {len(test.zero_charge_penalized_hamiltonian().group_commuting())}\n"
-      f"Zero-charge projected hamiltonian: {len(test.zero_charge_projected_hamiltonian().group_commuting())}\n"
-      f"Zero-charge projector: {len(test.zero_charge_projector().group_commuting())}\n"
-      f"Zero-charge penalty: {len(test.zero_charge_penalty_term().group_commuting())}")
+# masses = np.linspace(-6, 2, 501)
+# test = FreeWilson2D(2, 2, masses[0], 1)
+#
+# zero_c_size = test.size_of_zero_charge_sector()
+# print(f"Number of pauli strings:\n"
+#       f"Full hamiltonian: {len(test.full_hamiltonian().to_list())}\n"
+#       f"Zero-charge penalized hamiltonian: {len(test.zero_charge_penalized_hamiltonian().to_list())}\n"
+#       f"Zero-charge projected hamiltonian: {len(test.zero_charge_projected_hamiltonian().to_list())}\n"
+#       f"Zero-charge projector: {len(test.zero_charge_projector().to_list())}\n"
+#       f"Zero-charge penalty: {len(test.zero_charge_penalty_term().to_list())}")
+#
+# print(f"Number of non-commuting pauli strings:\n"
+#       f"Full hamiltonian: {len(test.full_hamiltonian().group_commuting())}\n"
+#       f"Zero-charge penalized hamiltonian: {len(test.zero_charge_penalized_hamiltonian().group_commuting())}\n"
+#       f"Zero-charge projected hamiltonian: {len(test.zero_charge_projected_hamiltonian().group_commuting())}\n"
+#       f"Zero-charge projector: {len(test.zero_charge_projector().group_commuting())}\n"
+#       f"Zero-charge penalty: {len(test.zero_charge_penalty_term().group_commuting())}")
 
 # print(f"Size of the zero charge sector: {zero_c_size}")
 # energies = np.array([calc_energies(m, zero_c_size+2) for m in masses])
