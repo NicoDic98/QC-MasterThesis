@@ -29,7 +29,7 @@ def plot_energies(ms: np.ndarray, sorted_energies: np.ndarray, n_plot: int, name
     plt.savefig(f'energies{name_suffix}.pdf')
 
 
-masses = np.linspace(-6, 2, 501)
+masses = np.linspace(-6, 2, 51)
 print(FreeWilson2D.__name__)
 with h5py.File(f"{datetime.now().strftime('%Y-%m-%U')}-{args.id}.hdf5", "w") as f:
     pprint_h5(f)

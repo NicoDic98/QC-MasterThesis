@@ -25,17 +25,26 @@ class BaseHamiltonian:
     def __str__(self):
         return "BaseHamiltonian"
 
+    def size_of_zero_charge_sector(self) -> int:
+        return 42
+
     def full_hamiltonian(self) -> SparsePauliOp:
         return self.field()
 
-    def size_of_zero_charge_sector(self) -> int:
-        return 42
+    def size_of_full_hamiltonian(self) -> int:
+        return self.full_hamiltonian().to_matrix(sparse=True).shape[0]
 
     def zero_charge_penalized_hamiltonian(self) -> SparsePauliOp:
         return self.full_hamiltonian()
 
+    def size_of_zero_charge_penalized_hamiltonian(self) -> int:
+        return self.zero_charge_penalized_hamiltonian().to_matrix(sparse=True).shape[0]
+
     def zero_charge_projected_hamiltonian(self) -> SparsePauliOp:
         return self.full_hamiltonian()
+
+    def size_of_zero_charge_projected_hamiltonian(self) -> int:
+        return self.zero_charge_projected_hamiltonian().to_matrix(sparse=True).shape[0]
 
     @classmethod
     def build_hamiltonian(cls, *args, **kwargs):
