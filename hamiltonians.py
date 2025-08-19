@@ -95,7 +95,7 @@ def alpha_3(m_x: int) -> float:
 
 
 class FreeWilson2D(BaseHamiltonian):
-    def __init__(self, n_x: int, n_y: int, mass: float, r: float = 1.):
+    def __init__(self, n_x: int, n_y: int, mass: float, r: float):
         """
 
         :param n_x: Lattice extend in x direction

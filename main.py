@@ -15,16 +15,7 @@ parser = argparse.ArgumentParser(description='Short sample app')
 parser.add_argument('--id', action="store", dest='id', default=default_id)
 args = parser.parse_args()
 
-
-def plot_energies(ms: np.ndarray, sorted_energies: np.ndarray, n_plot: int, name_suffix: str = '_2x2'):
-    fig, ax = plt.subplots()
-    ax.plot(ms, sorted_energies[:, :n_plot])
-    ax.set(xlabel='Mass', ylabel='Energies')
-    ax.set_title("Energies for r=1")
-    plt.savefig(f'energies{name_suffix}.pdf')
-
-
-masses = np.linspace(-6, 2, 51)
+masses = np.linspace(-6, 2, 501)
 Path(data_folder).mkdir(parents=True, exist_ok=True)
 with h5py.File(f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}.hdf5", "a") as f:
     pprint_h5(f)

@@ -70,18 +70,17 @@ class ED:
         non_singular_indices_list = list(
             itertools.product(*[range(len(parameters_dict_list[key])) for key in non_singular_keys]))
 
-        eigen_value_dims = [len(parameters_dict_list[key]) for key in non_singular_keys]
-        eigen_value_dims.append(n_eigv)
-        local_group.create_dataset(EDParameters.EigenValues, eigen_value_dims, dtype=np.float64)
+        parameter_dims = [len(parameters_dict_list[key]) for key in non_singular_keys]
+
+        local_group.create_dataset(EDParameters.EigenValues, parameter_dims + [n_eigv],
+                                   dtype=np.float64)
         for i, key in enumerate(non_singular_keys):
             local_group[EDParameters.EigenValues].dims[i].attach_scale(local_group[key])
             local_group[EDParameters.EigenValues].dims[i].label = key
         local_group[EDParameters.EigenValues].dims[len(non_singular_keys)].label = EDParameters.EigenValueAxis
 
-        eigen_vector_dims = [len(parameters_dict_list[key]) for key in non_singular_keys]
-        eigen_vector_dims.append(eigenvector_dim)
-        eigen_vector_dims.append(n_eigv)
-        local_group.create_dataset(EDParameters.EigenVectors, eigen_vector_dims, dtype=np.complex128)
+        local_group.create_dataset(EDParameters.EigenVectors, parameter_dims + [eigenvector_dim, n_eigv],
+                                   dtype=np.complex128)
         for i, key in enumerate(non_singular_keys):
             local_group[EDParameters.EigenVectors].dims[i].attach_scale(local_group[key])
             local_group[EDParameters.EigenVectors].dims[i].label = key
@@ -94,6 +93,5 @@ class ED:
             h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
             h_sparse_matrix = h_operator.to_matrix(sparse=True)
             eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which=which)
-            eigen_values.sort()
             local_group[EDParameters.EigenValues][*non_singular_index, :] = eigen_values
             local_group[EDParameters.EigenVectors][*non_singular_index] = eigen_vectors
