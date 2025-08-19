@@ -22,25 +22,30 @@ class ED:
     def run(self, parameters_dict_list: dict[str, list], hamiltonian_type: HamiltonianType, n_eigv: int = None):
         local_group = self.save_group.create_group(datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
 
-        non_singular_keys = []
+        non_singular_keys_mask = []
         for key, value in parameters_dict_list.items():
             if len(value) == 1:
-                local_group[key] = value[0]
-            else:
-                non_singular_keys.append(key)
+                local_group.attrs[key] = value[0]
+            non_singular_keys_mask.append(len(value) > 1)
+        print(non_singular_keys_mask)
 
-        temp_key_list = parameters_dict_list.keys()
-        paired_parameters_list = list(itertools.product(*[parameters_dict_list[key] for key in temp_key_list]))
-        parameters_list_dict = [dict(zip(temp_key_list, paired_parameters)) for paired_parameters in
+        paired_parameters_list = list(
+            itertools.product(*[parameters_dict_list[key] for key in parameters_dict_list.keys()]))
+        non_singular_indices_list = [np.array(idx)[non_singular_keys_mask] for idx in
+            itertools.product(*[range(len(parameters_dict_list[key])) for key in parameters_dict_list.keys()])]
+        print(paired_parameters_list)
+        print(non_singular_indices_list)
+
+        parameters_list_dict = [dict(zip(parameters_dict_list.keys(), paired_parameters)) for paired_parameters in
                                 paired_parameters_list]
 
         temp = self.hamiltonian_factory(**(parameters_list_dict[0]))
         if n_eigv is None:
             n_eigv = temp.size_of_zero_charge_sector() + 2
 
-        local_group.attrs['SystemName'] = temp.__name__
+        local_group.attrs['SystemName'] = type(temp).__name__
         local_group.attrs['HamiltonianType'] = hamiltonian_type.name
-        local_group.attrs['SolverName'] = self.__name__
+        local_group.attrs['SolverName'] = type(self).__name__
         local_group.attrs['Last-Modified'] = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
         if hamiltonian_type == HamiltonianType.Full:
@@ -52,9 +57,10 @@ class ED:
         local_group.attrs['ED-Which'] = self.which
 
         print(parameters_list_dict)
-        for parameters in parameters_list_dict:
+        for parameters, non_singular_index in zip(parameters_list_dict, non_singular_indices_list):
+            print(parameters, non_singular_index)
             hamiltonian = self.hamiltonian_factory(**parameters)
-            self.solve(hamiltonian, hamiltonian_type, n_eigv)
+            # self.solve(hamiltonian, hamiltonian_type, n_eigv)
 
     def solve(self, hamiltonian: BaseHamiltonian, hamiltonian_type: HamiltonianType, n_eigv: int = 2):
         print(f"Calculating energies for {hamiltonian}")
