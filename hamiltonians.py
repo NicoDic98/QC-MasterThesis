@@ -1,5 +1,5 @@
 from collections.abc import Callable
-from enum import Enum, auto
+from enum import Enum, auto, StrEnum
 
 import numpy as np
 from scipy.special import comb
@@ -10,6 +10,14 @@ class HamiltonianType(Enum):
     Full = auto()
     ZeroChargePenalty = auto()
     ZeroChargeProjection = auto()
+
+
+class HamiltonianParameters(StrEnum):
+    XExtend = "n_x"
+    YExtend = "n_y"
+    ZExtend = "n_z"
+    Mass = "mass"
+    WilsonParameter = "r"
 
 
 class BaseHamiltonian:
@@ -214,7 +222,7 @@ class FreeWilson2D(BaseHamiltonian):
         pen_operator = self.zero_charge_projector()
         pen_matrix = pen_operator.to_matrix()
         pen_list = pen_matrix.diagonal()
-        zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:,0]
+        zeros = np.argwhere(np.isclose(pen_list, np.zeros_like(pen_list)))[:, 0]
         print(pen_matrix.min(), pen_matrix.max())
         print(zeros)
         print(len(zeros))
