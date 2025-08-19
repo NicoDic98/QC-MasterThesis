@@ -2,6 +2,10 @@ from enum import StrEnum
 
 import h5py
 
+data_folder = "results/data/"
+plots_folder = "results/plots/"
+default_id = 42
+
 class GlobalParameters(StrEnum):
     SystemName = "SystemName"
     SolverName = "SolverName"

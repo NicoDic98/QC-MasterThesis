@@ -8,6 +8,7 @@ from matplotlib import pyplot as plt
 
 from exact_diagonalization import EDParameters
 from hamiltonians import HamiltonianType, HamiltonianParameters
+from misc import plots_folder, default_id
 
 
 def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
@@ -15,12 +16,12 @@ def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
     for key, value in group.attrs.items():
         print(f"\t{key}: {value}")
 
-    output_filename = "results/plots/"
+    output_filename = plots_folder
     output_filename += str(group.name).split("/")[-1]
     Path(output_filename).mkdir(parents=True, exist_ok=True)
 
     output_filename += "/"
-    output_filename += "energy_gap_ed"
+    output_filename += "EnergyGapED"
 
     for key, value in parameters.items():
         print(f"\t{key}: {group[key][value]}")
@@ -53,9 +54,9 @@ def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
     plt.savefig(output_filename)
 
 parent_folder = "results/data/"
-with h5py.File(f"{parent_folder}{datetime.now().strftime('%Y-%m-%U')}-{42}.hdf5", "r") as f:
+with h5py.File(f"{parent_folder}{datetime.now().strftime('%Y-%m-%U')}-{default_id}.hdf5", "r") as f:
     for name in f:
         print(name)
     plot_energy_gap_ed(f[list(f.keys())[-1]], {
-        HamiltonianParameters.WilsonParameter: 0
+        HamiltonianParameters.WilsonParameter: 1
     })
