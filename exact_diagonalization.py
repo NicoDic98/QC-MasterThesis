@@ -52,6 +52,7 @@ class ED:
 
         local_group.attrs[GlobalParameters.SystemName] = type(temp).__name__
         local_group.attrs[GlobalParameters.SolverName] = type(self).__name__
+        local_group.attrs[GlobalParameters.ProcessId] = local_group.file.attrs[GlobalParameters.ProcessId]
         local_group.attrs[GlobalParameters.LastModified] = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
         local_group.attrs[HamiltonianType.__name__] = hamiltonian_type.name
         local_group.attrs[EDParameters.Which] = self.which
@@ -93,8 +94,8 @@ class ED:
             eigen_values, eigen_vectors = self.solve(hamiltonian, hamiltonian_type, n_eigv)
             local_group[EDParameters.EigenValues][*non_singular_index, :] = eigen_values
             local_group[EDParameters.EigenVectors][*non_singular_index] = eigen_vectors
-        print(np.array(local_group[EDParameters.EigenValues]))
-        print(np.array(local_group[EDParameters.EigenVectors]))
+        # print(np.array(local_group[EDParameters.EigenValues]))
+        # print(np.array(local_group[EDParameters.EigenVectors]))
 
     def solve(self, hamiltonian: BaseHamiltonian, hamiltonian_type: HamiltonianType, n_eigv: int = 2):
         print(f"Calculating energies for {hamiltonian}")

@@ -1,5 +1,6 @@
 import argparse
 from datetime import datetime
+from pathlib import Path
 
 import h5py
 import numpy as np
@@ -7,7 +8,7 @@ from matplotlib import pyplot as plt
 
 from hamiltonians import FreeWilson2D, HamiltonianType, HamiltonianParameters
 from exact_diagonalization import ED
-from misc import pprint_h5
+from misc import pprint_h5, GlobalParameters
 
 # Define the parser
 parser = argparse.ArgumentParser(description='Short sample app')
@@ -24,9 +25,11 @@ def plot_energies(ms: np.ndarray, sorted_energies: np.ndarray, n_plot: int, name
 
 
 masses = np.linspace(-6, 2, 51)
-print(FreeWilson2D.__name__)
-with h5py.File(f"{datetime.now().strftime('%Y-%m-%U')}-{args.id}.hdf5", "w") as f:
+parent_folder = "results/data/"
+Path(parent_folder).mkdir(parents=True, exist_ok=True)
+with h5py.File(f"{parent_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}.hdf5", "w") as f:
     pprint_h5(f)
+    f.attrs[GlobalParameters.ProcessId] = args.id
     my_ed = ED(FreeWilson2D.build_hamiltonian, f)
     my_ed.run({HamiltonianParameters.XExtend: [2],
                HamiltonianParameters.YExtend: [2],

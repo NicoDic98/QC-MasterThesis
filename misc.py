@@ -6,6 +6,7 @@ class GlobalParameters(StrEnum):
     SystemName = "SystemName"
     SolverName = "SolverName"
     LastModified = "Last-Modified"
+    ProcessId = "ProcessId"
 
 def print_h5(name, obj: h5py.Group):
     print(f"{name}:{obj}")
