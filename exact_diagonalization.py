@@ -19,6 +19,7 @@ class EDParameters(StrEnum):
     EigenValueAxis = "EigenValueAxis"
     EigenVectorAxis = "EigenVectorAxis"
 
+
 class ED:
     which: Literal["SM", "LM"]
 
@@ -32,6 +33,29 @@ class ED:
     def run(self, parameters_dict_list: dict[str, list], hamiltonian_type: HamiltonianType, n_eigv: int = None):
         local_group = self.save_group.create_group(datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
 
+        parameters_list_dict = [dict(zip(parameters_dict_list.keys(), paired_parameters)) for paired_parameters in
+                                itertools.product(*[parameters_dict_list[key] for key in parameters_dict_list.keys()])]
+        temp = self.hamiltonian_factory(**(parameters_list_dict[0]))
+
+        if n_eigv is None:
+            n_eigv = temp.size_of_zero_charge_sector() + 2
+
+        if hamiltonian_type == HamiltonianType.Full:
+            self.which = "SM"  # 'SM' if using penalty and 'LM' if using projection
+            eigenvector_dim = temp.size_of_full_hamiltonian()
+        elif hamiltonian_type == HamiltonianType.ZeroChargePenalty:
+            self.which = "SM"
+            eigenvector_dim = temp.size_of_zero_charge_penalized_hamiltonian()
+        elif hamiltonian_type == HamiltonianType.ZeroChargeProjection:
+            self.which = "LM"
+            eigenvector_dim = temp.size_of_zero_charge_projected_hamiltonian()
+
+        local_group.attrs[GlobalParameters.SystemName] = type(temp).__name__
+        local_group.attrs[GlobalParameters.SolverName] = type(self).__name__
+        local_group.attrs[GlobalParameters.LastModified] = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+        local_group.attrs[HamiltonianType.__name__] = hamiltonian_type.name
+        local_group.attrs[EDParameters.Which] = self.which
+
         non_singular_keys = []
         for key, value in parameters_dict_list.items():
             if len(value) == 1:
@@ -43,33 +67,8 @@ class ED:
             else:
                 raise NotImplementedError
 
-        paired_parameters_list = list(
-            itertools.product(*[parameters_dict_list[key] for key in parameters_dict_list.keys()]))
         non_singular_indices_list = list(
             itertools.product(*[range(len(parameters_dict_list[key])) for key in non_singular_keys]))
-
-        parameters_list_dict = [dict(zip(parameters_dict_list.keys(), paired_parameters)) for paired_parameters in
-                                paired_parameters_list]
-
-        temp = self.hamiltonian_factory(**(parameters_list_dict[0]))
-        if n_eigv is None:
-            n_eigv = temp.size_of_zero_charge_sector() + 2
-
-        local_group.attrs[GlobalParameters.SystemName] = type(temp).__name__
-        local_group.attrs[HamiltonianType.__name__] = hamiltonian_type.name
-        local_group.attrs[GlobalParameters.SolverName] = type(self).__name__
-        local_group.attrs[GlobalParameters.LastModified] = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-
-        if hamiltonian_type == HamiltonianType.Full:
-            self.which = "SM"  # 'SM' if using penalty and 'LM' if using projection
-            eigenvector_dim = temp.size_of_full_hamiltonian()
-        elif hamiltonian_type == HamiltonianType.ZeroChargePenalty:
-            self.which = "SM"
-            eigenvector_dim = temp.size_of_zero_charge_penalized_hamiltonian()
-        elif hamiltonian_type == HamiltonianType.ZeroChargeProjection:
-            self.which = "LM"
-            eigenvector_dim = temp.size_of_zero_charge_projected_hamiltonian()
-        local_group.attrs[EDParameters.Which] = self.which
 
         eigen_value_dims = [len(parameters_dict_list[key]) for key in non_singular_keys]
         eigen_value_dims.append(n_eigv)
@@ -78,7 +77,6 @@ class ED:
             local_group[EDParameters.EigenValues].dims[i].attach_scale(local_group[key])
             local_group[EDParameters.EigenValues].dims[i].label = key
         local_group[EDParameters.EigenValues].dims[len(non_singular_keys)].label = EDParameters.EigenValueAxis
-        print([dim.label for dim in local_group[EDParameters.EigenValues].dims])
 
         eigen_vector_dims = [len(parameters_dict_list[key]) for key in non_singular_keys]
         eigen_vector_dims.append(eigenvector_dim)
@@ -88,14 +86,13 @@ class ED:
             local_group[EDParameters.EigenVectors].dims[i].attach_scale(local_group[key])
             local_group[EDParameters.EigenVectors].dims[i].label = key
         local_group[EDParameters.EigenVectors].dims[len(non_singular_keys)].label = EDParameters.EigenVectorAxis
-        local_group[EDParameters.EigenVectors].dims[len(non_singular_keys)+1].label = EDParameters.EigenValueAxis
-        print([dim.label for dim in local_group[EDParameters.EigenVectors].dims])
+        local_group[EDParameters.EigenVectors].dims[len(non_singular_keys) + 1].label = EDParameters.EigenValueAxis
 
         for parameters, non_singular_index in zip(parameters_list_dict, non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
             eigen_values, eigen_vectors = self.solve(hamiltonian, hamiltonian_type, n_eigv)
-            local_group[EDParameters.EigenValues][*non_singular_index,:] = eigen_values
-            local_group[EDParameters.EigenVectors][*non_singular_index] = np.zeros_like(eigen_vectors)
+            local_group[EDParameters.EigenValues][*non_singular_index, :] = eigen_values
+            local_group[EDParameters.EigenVectors][*non_singular_index] = eigen_vectors
         print(np.array(local_group[EDParameters.EigenValues]))
         print(np.array(local_group[EDParameters.EigenVectors]))
 
