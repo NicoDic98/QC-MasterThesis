@@ -4,10 +4,9 @@ from pathlib import Path
 
 import h5py
 import numpy as np
-from matplotlib import pyplot as plt
 
-from hamiltonians import FreeWilson2D, HamiltonianType, HamiltonianParameters
 from exact_diagonalization import ED
+from hamiltonians import FreeWilson2D, HamiltonianType, HamiltonianParameters
 from misc import pprint_h5, GlobalParameters, data_folder, default_id
 
 # Define the parser
