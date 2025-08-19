@@ -26,4 +26,6 @@ with h5py.File(f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}.hd
                HamiltonianParameters.WilsonParameter: [1., 3.14]},
               HamiltonianType.ZeroChargePenalty)
     pprint_h5(f)
-# attr: ProcessId
+# Ideas:
+#   - Copy script to combine process files
+#   - Centralize parts of h5 saving (later used in VQE,AVQE,...)

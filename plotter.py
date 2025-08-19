@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 
 from exact_diagonalization import EDParameters
 from hamiltonians import HamiltonianParameters
-from misc import plots_folder, default_id
+from misc import plots_folder, default_id, data_folder
 
 
 def retrieve_dataset_dependency(dataset: h5py.Dataset, parameters: dict[str, int], dependency_names: list[str]):
@@ -89,8 +89,7 @@ def plot_energies_ed(group: h5py.Group, parameters: dict[str, int], n_plot: int)
     plt.savefig(output_filename)
 
 
-parent_folder = "results/data/"
-with h5py.File(f"{parent_folder}{datetime.now().strftime('%Y-%m-%U')}-{default_id}.hdf5", "r") as f:
+with h5py.File(f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{default_id}.hdf5", "r") as f:
     for name in f:
         print(name)
     my_group = f[list(f.keys())[-1]]
