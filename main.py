@@ -26,7 +26,7 @@ def plot_energies(ms: np.ndarray, sorted_energies: np.ndarray, n_plot: int, name
 
 masses = np.linspace(-6, 2, 51)
 Path(data_folder).mkdir(parents=True, exist_ok=True)
-with h5py.File(f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}.hdf5", "w") as f:
+with h5py.File(f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}.hdf5", "a") as f:
     pprint_h5(f)
     f.attrs[GlobalParameters.ProcessId] = args.id
     my_ed = ED(FreeWilson2D.build_hamiltonian, f)

@@ -21,14 +21,12 @@ class EDParameters(StrEnum):
 
 
 class ED:
-    which: Literal["SM", "LM"]
 
     def __init__(self,
                  hamiltonian_factory: Callable[..., BaseHamiltonian],
                  save_group: h5py.Group):
         self.hamiltonian_factory = hamiltonian_factory
         self.save_group = save_group
-        self.which = "SM"
 
     def run(self, parameters_dict_list: dict[str, list], hamiltonian_type: HamiltonianType, n_eigv: int = None):
         local_group = self.save_group.create_group(datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
@@ -40,22 +38,23 @@ class ED:
         if n_eigv is None:
             n_eigv = temp.size_of_zero_charge_sector() + 2
 
+        eigenvector_dim = temp.size_of_hamiltonian(hamiltonian_type)
+
+        which: Literal["SM", "LM"]
+        # 'SM' if using penalty/full and 'LM' if using projection
         if hamiltonian_type == HamiltonianType.Full:
-            self.which = "SM"  # 'SM' if using penalty and 'LM' if using projection
-            eigenvector_dim = temp.size_of_full_hamiltonian()
+            which = "SM"
         elif hamiltonian_type == HamiltonianType.ZeroChargePenalty:
-            self.which = "SM"
-            eigenvector_dim = temp.size_of_zero_charge_penalized_hamiltonian()
+            which = "SM"
         elif hamiltonian_type == HamiltonianType.ZeroChargeProjection:
-            self.which = "LM"
-            eigenvector_dim = temp.size_of_zero_charge_projected_hamiltonian()
+            which = "LM"
 
         local_group.attrs[GlobalParameters.SystemName] = type(temp).__name__
         local_group.attrs[GlobalParameters.SolverName] = type(self).__name__
         local_group.attrs[GlobalParameters.ProcessId] = local_group.file.attrs[GlobalParameters.ProcessId]
         local_group.attrs[GlobalParameters.LastModified] = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
         local_group.attrs[HamiltonianType.__name__] = hamiltonian_type.name
-        local_group.attrs[EDParameters.Which] = self.which
+        local_group.attrs[EDParameters.Which] = which
 
         non_singular_keys = []
         for key, value in parameters_dict_list.items():
@@ -91,23 +90,10 @@ class ED:
 
         for parameters, non_singular_index in zip(parameters_list_dict, non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
-            eigen_values, eigen_vectors = self.solve(hamiltonian, hamiltonian_type, n_eigv)
+            print(f"Calculating energies for {hamiltonian}")
+            h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
+            h_sparse_matrix = h_operator.to_matrix(sparse=True)
+            eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which=which)
+            eigen_values.sort()
             local_group[EDParameters.EigenValues][*non_singular_index, :] = eigen_values
             local_group[EDParameters.EigenVectors][*non_singular_index] = eigen_vectors
-        # print(np.array(local_group[EDParameters.EigenValues]))
-        # print(np.array(local_group[EDParameters.EigenVectors]))
-
-    def solve(self, hamiltonian: BaseHamiltonian, hamiltonian_type: HamiltonianType, n_eigv: int = 2):
-        print(f"Calculating energies for {hamiltonian}")
-        if hamiltonian_type == HamiltonianType.Full:
-            h_operator = hamiltonian.full_hamiltonian()
-        elif hamiltonian_type == HamiltonianType.ZeroChargePenalty:
-            h_operator = hamiltonian.zero_charge_penalized_hamiltonian()
-        elif hamiltonian_type == HamiltonianType.ZeroChargeProjection:
-            h_operator = hamiltonian.zero_charge_projected_hamiltonian()
-        h_sparse_matrix = h_operator.to_matrix(sparse=True)
-        eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which=self.which)
-        eigen_values: np.ndarray
-        eigen_vectors: np.ndarray
-        eigen_values.sort()
-        return eigen_values, eigen_vectors

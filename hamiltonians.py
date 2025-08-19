@@ -39,20 +39,22 @@ class BaseHamiltonian:
     def full_hamiltonian(self) -> SparsePauliOp:
         return self.field()
 
-    def size_of_full_hamiltonian(self) -> int:
-        return self.full_hamiltonian().to_matrix(sparse=True).shape[0]
-
     def zero_charge_penalized_hamiltonian(self) -> SparsePauliOp:
         return self.full_hamiltonian()
-
-    def size_of_zero_charge_penalized_hamiltonian(self) -> int:
-        return self.zero_charge_penalized_hamiltonian().to_matrix(sparse=True).shape[0]
 
     def zero_charge_projected_hamiltonian(self) -> SparsePauliOp:
         return self.full_hamiltonian()
 
-    def size_of_zero_charge_projected_hamiltonian(self) -> int:
-        return self.zero_charge_projected_hamiltonian().to_matrix(sparse=True).shape[0]
+    def hamiltonian_op(self, hamiltonian_type: HamiltonianType) -> SparsePauliOp:
+        if hamiltonian_type == HamiltonianType.Full:
+            return self.full_hamiltonian()
+        elif hamiltonian_type == HamiltonianType.ZeroChargePenalty:
+            return self.zero_charge_penalized_hamiltonian()
+        elif hamiltonian_type == HamiltonianType.ZeroChargeProjection:
+            return self.zero_charge_projected_hamiltonian()
+
+    def size_of_hamiltonian(self, hamiltonian_type: HamiltonianType) -> int:
+        return self.hamiltonian_op(hamiltonian_type).to_matrix(sparse=True).shape[0]
 
     @classmethod
     def build_hamiltonian(cls, *args, **kwargs):

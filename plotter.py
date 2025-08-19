@@ -1,5 +1,4 @@
 from datetime import datetime
-from fileinput import filename
 from pathlib import Path
 
 import h5py
@@ -7,7 +6,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 from exact_diagonalization import EDParameters
-from hamiltonians import HamiltonianType, HamiltonianParameters
+from hamiltonians import HamiltonianParameters
 from misc import plots_folder, default_id
 
 
