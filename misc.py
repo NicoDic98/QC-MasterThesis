@@ -34,6 +34,8 @@ def pprint_h5(obj: h5py.Group, depth: int = 0, basename=""):
     for key, value in obj.attrs.items():
         print(prefix + f"\t\t{key}: {value}")
     for key, value in obj.items():
+        if isinstance(obj.get(key, getlink=True), h5py.ExternalLink):
+            print(prefix + f"\t{obj.get(key, getlink=True)} :")
         if isinstance(value, h5py.Group):
             pprint_h5(value, depth=depth + 1)
         else:
