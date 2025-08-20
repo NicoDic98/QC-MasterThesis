@@ -1,4 +1,4 @@
-Start 2025-08-20 15:38:26 | 22932444 MyPyJob | node002 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+Start 2025-08-20 20:42:51 | 22932805 MyPyJob | node074 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
 
 Used python interpreter:
 /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
@@ -17,6 +17,7 @@ Currently Loaded Modules:
 
 Start of Program:
 
+Trying next filename: results/data/2025-08-33-0.hdf5
 -----Beginning pprint-----
 /:
 	Attributes:
@@ -1026,15 +1027,15 @@ Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=3.140)
 -----Beginning pprint-----
 /:
 	Attributes:
-		ProcessId: 22932444
-	2025-08-20_15-38-27:
+		ProcessId: 22932805
+	2025-08-20_20-42-52:
 		Attributes:
-			HamiltonianType: ZeroChargePenalty
-			Last-Modified: 2025-08-20_15-38-27
-			ProcessId: 22932444
+			HamiltonianType: ZeroChargeProjection
+			Last-Modified: 2025-08-20_20-42-53
+			ProcessId: 22932805
 			SolverName: ED
 			SystemName: FreeWilson2D
-			Which: SM
+			Which: LM
 			n_x: 2
 			n_y: 2
 		EigenValues: <HDF5 dataset "EigenValues": shape (501, 2, 72), type "<f8">
@@ -1042,5 +1043,5 @@ Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=3.140)
 		mass: <HDF5 dataset "mass": shape (501,), type "<f8">
 		r: <HDF5 dataset "r": shape (2,), type "<f8">
 -----Ending pprint-----
-End 2025-08-20 15:43:06 | 22932444 MyPyJob | node002 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+End 2025-08-20 20:53:13 | 22932805 MyPyJob | node074 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
 

@@ -5,9 +5,10 @@ import h5py
 import numpy as np
 from matplotlib import pyplot as plt
 
+from combine_data import combine_data
 from exact_diagonalization import EDParameters
 from hamiltonians import HamiltonianParameters
-from misc import plots_folder, default_id, data_folder
+from misc import plots_folder, data_folder
 
 
 def retrieve_dataset_dependency(dataset: h5py.Dataset, parameters: dict[str, int], dependency_names: list[str]):
@@ -51,14 +52,15 @@ def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: st
 
 
 def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
-    print("Plotting energy gap for:")
+    print(f"Plotting energy gap for {group.name}:")
     for key, value in group.attrs.items():
         print(f"\t{key}: {value}")
 
-    output_filename = create_filename(group, parameters, "EnergyGapED")
-
     energies, dep = retrieve_dataset_dependency(group[EDParameters.EigenValues], parameters,
                                                 [HamiltonianParameters.Mass])
+
+    output_filename = create_filename(group, parameters, "EnergyGapED")
+
     masses = dep[0]
     energies.sort(-1)
     energy_gap = energies[:, 1] - energies[:, 0]
@@ -71,14 +73,15 @@ def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
 
 
 def plot_energies_ed(group: h5py.Group, parameters: dict[str, int], n_plot: int):
-    print("Plotting energies for:")
+    print(f"Plotting energies for {group.name}:")
     for key, value in group.attrs.items():
         print(f"\t{key}: {value}")
 
-    output_filename = create_filename(group, parameters, "EnergiesED")
-
     energies, dep = retrieve_dataset_dependency(group[EDParameters.EigenValues], parameters,
                                                 [HamiltonianParameters.Mass])
+
+    output_filename = create_filename(group, parameters, "EnergiesED")
+
     masses = dep[0]
     energies.sort(-1)
 
@@ -89,15 +92,13 @@ def plot_energies_ed(group: h5py.Group, parameters: dict[str, int], n_plot: int)
     plt.savefig(output_filename)
 
 
-with open("out/latest_id") as f:
-    jobid = int(f.readline())
-
-with h5py.File(f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{jobid}.hdf5", "r") as f:
+combine_data()
+h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}.hdf5"
+with h5py.File(h5_file, "r") as f:
     for name in f:
-        print(name)
-    my_group = f[list(f.keys())[-1]]
-    my_parameters = {
-        HamiltonianParameters.WilsonParameter: 0
-    }
-    plot_energy_gap_ed(my_group, my_parameters)
-    plot_energies_ed(my_group, my_parameters, n_plot=2)
+        my_group = f[name]
+        my_parameters = {
+            HamiltonianParameters.WilsonParameter: 0
+        }
+        plot_energy_gap_ed(my_group, my_parameters)
+        plot_energies_ed(my_group, my_parameters, n_plot=2)

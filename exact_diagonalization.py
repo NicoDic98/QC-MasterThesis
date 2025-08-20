@@ -41,9 +41,9 @@ class ED:
         eigenvector_dim = temp.size_of_hamiltonian(hamiltonian_type)
 
         which: Literal["SM", "LM"]
-        # 'SM' if using penalty/full and 'LM' if using projection
+        # 'SM' if using penalty and 'LM' if using projection/full
         if hamiltonian_type == HamiltonianType.Full:
-            which = "SM"
+            which = "LM"
         elif hamiltonian_type == HamiltonianType.ZeroChargePenalty:
             which = "SM"
         elif hamiltonian_type == HamiltonianType.ZeroChargeProjection:

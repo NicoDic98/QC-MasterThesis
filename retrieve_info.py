@@ -7,7 +7,8 @@ from datetime import datetime
 
 import h5py
 
-from misc import data_folder, default_id
+from combine_data import combine_data
+from misc import data_folder
 
 
 def print_info(f: str):
@@ -19,8 +20,8 @@ def print_info(f: str):
     for parameter in temp[1:]:
         key, value = parameter.split("=")
         parameters[key] = float(value)
-
-    h5_filename = f"{data_folder}{datetime.strptime(dataset_name, '%Y-%m-%d_%H-%M-%S').strftime('%Y-%m-%U')}-{default_id}.hdf5"
+    combine_data()
+    h5_filename = f"{data_folder}{datetime.strptime(dataset_name, '%Y-%m-%d_%H-%M-%S').strftime('%Y-%m-%U')}.hdf5"
 
     print(f"{temp[0]} for (Info for '{f}' from '{h5_filename}'):")
     with h5py.File(h5_filename, "r") as f:
@@ -32,4 +33,5 @@ def print_info(f: str):
             print(f"\t{key}: {value}")
 
 
-print_info("results/plots/2025-08-19_16-54-37/EnergyGapED_r=1.00.pdf")
+if __name__ == "__main__":
+    print_info("results/plots/2025-08-20_20-14-48/E")

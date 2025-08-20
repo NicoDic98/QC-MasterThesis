@@ -15,17 +15,30 @@ parser.add_argument('--id', action="store", dest='id', default=default_id)
 args = parser.parse_args()
 
 masses = np.linspace(-6, 2, 501)
+
 Path(data_folder).mkdir(parents=True, exist_ok=True)
-with h5py.File(f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}.hdf5", "a") as f:
-    pprint_h5(f)
-    f.attrs[GlobalParameters.ProcessId] = args.id
-    my_ed = ED(FreeWilson2D.build_hamiltonian, f)
-    my_ed.run({HamiltonianParameters.XExtend: [2],
-               HamiltonianParameters.YExtend: [2],
-               HamiltonianParameters.Mass: masses.tolist(),
-               HamiltonianParameters.WilsonParameter: [1., 3.14]},
-              HamiltonianType.ZeroChargePenalty)
-    pprint_h5(f)
+
+h5_file_base = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}"
+h5_file = h5_file_base
+
+for my_id in range(100):
+    try:
+        with h5py.File(h5_file + ".hdf5", "a") as f:
+            pprint_h5(f)
+            f.attrs[GlobalParameters.ProcessId] = args.id
+            my_ed = ED(FreeWilson2D.build_hamiltonian, f)
+            my_ed.run({HamiltonianParameters.XExtend: [2],
+                       HamiltonianParameters.YExtend: [2],
+                       HamiltonianParameters.Mass: masses.tolist(),
+                       HamiltonianParameters.WilsonParameter: [1., 3.14]},
+                      HamiltonianType.ZeroChargeProjection)
+            pprint_h5(f)
+            break
+    except OSError as e:
+        if "Unable to synchronously" in str(e):
+            h5_file = h5_file_base + f"-{my_id}"
+            print(f"Trying next filename: {h5_file}.hdf5")
+        else:
+            raise e
 # Ideas:
-#   - Copy script to combine process files
 #   - Centralize parts of h5 saving (later used in VQE,AVQE,...)
