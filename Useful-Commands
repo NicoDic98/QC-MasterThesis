@@ -1,0 +1,8 @@
+See own jobs:
+watch squeue --me
+
+Interactive shell on compute node:
+srun --pty --partition=sgpu_devel --time=0-01:00:00 --gpus=1 --ntasks=1 --account=ag_hiskp_funcke /bin/bash
+
+See gpu usage:
+sreport -t HourPer cluster UserUtilizationByAccount START=2024-01-01 -T gres/gpu | grep s6nidich

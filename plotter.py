@@ -89,7 +89,10 @@ def plot_energies_ed(group: h5py.Group, parameters: dict[str, int], n_plot: int)
     plt.savefig(output_filename)
 
 
-with h5py.File(f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{default_id}.hdf5", "r") as f:
+with open("out/latest_id") as f:
+    jobid = int(f.readline())
+
+with h5py.File(f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{jobid}.hdf5", "r") as f:
     for name in f:
         print(name)
     my_group = f[list(f.keys())[-1]]
