@@ -40,6 +40,9 @@ def pprint_h5(obj: h5py.Group, depth: int = 0, basename=""):
             pprint_h5(value, depth=depth + 1)
         else:
             print(prefix + f"\t{key}: {value}")
+            print(prefix + "\t\tAttributes:")
+            for attr_key, attr_value in value.attrs.items():
+                print(prefix + f"\t\t\t{attr_key}: {attr_value}")
     if depth == 0:
         print("-----Ending pprint-----")
 
