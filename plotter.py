@@ -11,16 +11,18 @@ from hamiltonians import HamiltonianParameters
 from misc import plots_folder, data_folder
 
 
-def retrieve_dataset_dependency(dataset: h5py.Dataset, parameters: dict[str, int], dependency_names: list[str]):
+def retrieve_dataset_dependency(group: h5py.Group, dataset_name: str, parameters: dict[str, int], dependency_names: list[str]):
     selected_indices = []
     dependencies = [np.array([])] * len(dependency_names)
+    dataset = group[dataset_name]
     for dim in dataset.dims:
         if dim.label in parameters.keys():
             selected_indices.append(parameters[dim.label])
         elif dim.label in dependency_names:
             for i, dependency_name in enumerate(dependency_names):
                 if dependency_name == dim.label:
-                    dependencies[i] = np.array(dim[dim.label])
+                    # dependencies[i] = np.array(dim[dim.label])
+                    dependencies[i] = np.array(group[dim.label])
                     selected_indices.append(list(range(len(dependencies[i]))))
                     break
         elif dim.label == EDParameters.EigenValueAxis:  # This is always at the end
@@ -56,7 +58,7 @@ def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
     for key, value in group.attrs.items():
         print(f"\t{key}: {value}")
 
-    energies, dep = retrieve_dataset_dependency(group[EDParameters.EigenValues], parameters,
+    energies, dep = retrieve_dataset_dependency(group, EDParameters.EigenValues, parameters,
                                                 [HamiltonianParameters.Mass])
 
     output_filename = create_filename(group, parameters, "EnergyGapED")
@@ -77,7 +79,7 @@ def plot_energies_ed(group: h5py.Group, parameters: dict[str, int], n_plot: int)
     for key, value in group.attrs.items():
         print(f"\t{key}: {value}")
 
-    energies, dep = retrieve_dataset_dependency(group[EDParameters.EigenValues], parameters,
+    energies, dep = retrieve_dataset_dependency(group, EDParameters.EigenValues, parameters,
                                                 [HamiltonianParameters.Mass])
 
     output_filename = create_filename(group, parameters, "EnergiesED")
@@ -96,9 +98,10 @@ combine_data()
 h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}.hdf5"
 with h5py.File(h5_file, "r") as f:
     for name in f:
-        my_group = f[name]
-        my_parameters = {
-            HamiltonianParameters.WilsonParameter: 0
-        }
-        plot_energy_gap_ed(my_group, my_parameters)
-        plot_energies_ed(my_group, my_parameters, n_plot=2)
+        print(name)
+    my_group = f[name]
+    my_parameters = {
+        # HamiltonianParameters.WilsonParameter: 0
+    }
+    plot_energy_gap_ed(my_group, my_parameters)
+    plot_energies_ed(my_group, my_parameters, n_plot=2)

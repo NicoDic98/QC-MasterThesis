@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser(description='Short sample app')
 parser.add_argument('--id', action="store", dest='id', default=default_id)
 args = parser.parse_args()
 
-masses = np.linspace(-6, 2, 501)
+masses = np.linspace(-6, 2, 1001)
 
 Path(data_folder).mkdir(parents=True, exist_ok=True)
 
@@ -30,8 +30,8 @@ for my_id in range(100):
             my_ed.run({HamiltonianParameters.XExtend: [2],
                        HamiltonianParameters.YExtend: [2],
                        HamiltonianParameters.Mass: masses.tolist(),
-                       HamiltonianParameters.WilsonParameter: [1., 3.14]},
-                      HamiltonianType.ZeroChargeProjection)
+                       HamiltonianParameters.WilsonParameter: [1.]},
+                      HamiltonianType.ZeroChargePenalty)
             pprint_h5(f)
             break
     except OSError as e:

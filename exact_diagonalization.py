@@ -62,7 +62,7 @@ class ED:
                 local_group.attrs[key] = value[0]
             elif len(value) > 1:
                 local_group[key] = value
-                local_group[key].make_scale(key)
+                # local_group[key].make_scale(key)
                 non_singular_keys.append(key)
             else:
                 raise NotImplementedError
@@ -75,14 +75,14 @@ class ED:
         local_group.create_dataset(EDParameters.EigenValues, parameter_dims + [n_eigv],
                                    dtype=np.float64)
         for i, key in enumerate(non_singular_keys):
-            local_group[EDParameters.EigenValues].dims[i].attach_scale(local_group[key])
+            # local_group[EDParameters.EigenValues].dims[i].attach_scale(local_group[key])
             local_group[EDParameters.EigenValues].dims[i].label = key
         local_group[EDParameters.EigenValues].dims[len(non_singular_keys)].label = EDParameters.EigenValueAxis
 
         local_group.create_dataset(EDParameters.EigenVectors, parameter_dims + [eigenvector_dim, n_eigv],
                                    dtype=np.complex128)
         for i, key in enumerate(non_singular_keys):
-            local_group[EDParameters.EigenVectors].dims[i].attach_scale(local_group[key])
+            # local_group[EDParameters.EigenVectors].dims[i].attach_scale(local_group[key])
             local_group[EDParameters.EigenVectors].dims[i].label = key
         local_group[EDParameters.EigenVectors].dims[len(non_singular_keys)].label = EDParameters.EigenVectorAxis
         local_group[EDParameters.EigenVectors].dims[len(non_singular_keys) + 1].label = EDParameters.EigenValueAxis
