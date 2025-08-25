@@ -12,6 +12,11 @@ class DatasetParameters(StrEnum):
 
 class H5Saver:
     def __init__(self, group: h5py.Group, parameters_dict_list: dict[str, list]):
+        """
+
+        :param group: h5py Group to save under
+        :param parameters_dict_list: A dictionary mapping parameter names to lists of parameter values
+        """
         self.group = group
         self.parameters_dict_list = parameters_dict_list
         self.parameters_list_dict = [dict(zip(parameters_dict_list.keys(), paired_parameters))
@@ -36,6 +41,14 @@ class H5Saver:
 
     def create_dataset_with_dim_labels(self, dataset_name: str, shape: list[int], data_dim_names: list[str],
                                        dtype: Any = np.float64):
+        """
+
+        :param dataset_name: Name of the dataset to be created
+        :param shape: Shape of the dataset for a fixed set of parameters
+        :param data_dim_names: Names of the data dimensions
+        :param dtype: Data type
+        :return: None
+        """
         if len(shape) != len(data_dim_names):
             raise ValueError("shape and data_dim_names must have same length")
         self.group.create_dataset(dataset_name, self.parameter_dims + shape,
@@ -50,10 +63,20 @@ class H5Saver:
 
 class H5Loader:
     def __init__(self, group: h5py.Group, dataset_name: str):
+        """
+
+        :param group: h5py Group to load under
+        :param dataset_name: Name of the dataset to be loaded
+        """
         self.group = group
         self.dataset = group[dataset_name]
 
     def retrieve_dependency(self, parameters: dict[str, int], dependency_names: list[str]):
+        """
+        :param parameters: A dictionary mapping parameter names to indices in the corresponding list of parameter values
+        :param dependency_names: List of dependency names, which should not be fixed to one value
+        :return: Dataset values,
+        """
         selected_indices = []
         dependencies = [np.array([])] * len(dependency_names)
         for dim in list(self.dataset.dims)[:-self.dataset.attrs[DatasetParameters.NDataDims]]:
