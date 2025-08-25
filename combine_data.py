@@ -49,7 +49,7 @@ def combine_data(link=True):
                     for group_name in source_groups:
                         full_source_group_names.append(fs[group_name].name)
                     with h5py.File(target_h5_file, "a") as ft:
-                        # get return None if object is not present
+                        # get returns None if object is not present
                         for group_name, full_group_name in zip(source_groups, full_source_group_names):
                             if isinstance(ft.get(group_name, getlink=True), h5py.ExternalLink):
                                 del ft[group_name]

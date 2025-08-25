@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser(description='Short sample app')
 parser.add_argument('--id', action="store", dest='id', default=default_id)
 args = parser.parse_args()
 
-masses = np.linspace(-6, 2, 1001)
+masses = np.linspace(-6, 2, 101)
 
 Path(data_folder).mkdir(parents=True, exist_ok=True)
 

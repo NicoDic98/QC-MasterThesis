@@ -47,18 +47,28 @@ def pprint_h5(obj: h5py.Group, depth: int = 0, basename=""):
         print("-----Ending pprint-----")
 
 
-def pprint_all():
+def pprint_all(summary=False):
     hdf5_files = [f for f in listdir(data_folder) if (isfile(join(data_folder, f)) and (Path(f).suffix == '.hdf5'))]
+    if summary:
+        print("-----Beginning summary-----")
     for file in hdf5_files:
         try:
             with h5py.File(join(data_folder, file), "r") as f:
-                pprint_h5(f, basename=file)
+                if summary:
+                    print(f"{file}{f.name}:")
+                    for name in f.keys():
+                        print(f"\t{name}")
+                else:
+                    pprint_h5(f, basename=file)
         except OSError as e:
             if "Unable to synchronously" in str(e):
                 print(f"Unable to open source file: {file}")
             else:
                 raise e
+    if summary:
+        print("-----Ending summary-----")
 
 
 if __name__ == "__main__":
     pprint_all()
+    pprint_all(True)
