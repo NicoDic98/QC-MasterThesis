@@ -76,7 +76,7 @@ with h5py.File(h5_file, "r") as f:
         print(name)
     my_group = f[name]
     my_parameters = {
-        # HamiltonianParameters.WilsonParameter: 0
+        HamiltonianParameters.WilsonParameter: 0
     }
     plot_energy_gap_ed(my_group, my_parameters)
     plot_energies_ed(my_group, my_parameters, n_plot=2)

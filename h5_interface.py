@@ -75,9 +75,10 @@ class H5Loader:
         """
         :param parameters: A dictionary mapping parameter names to indices in the corresponding list of parameter values
         :param dependency_names: List of dependency names, which should not be fixed to one value
-        :return: Dataset values,
+        :return: Dataset values, Corresponding dependency values
         """
         selected_indices = []
+        mapping = []
         dependencies = [np.array([])] * len(dependency_names)
         for dim in list(self.dataset.dims)[:-self.dataset.attrs[DatasetParameters.NDataDims]]:
             if dim.label in parameters.keys():
@@ -87,7 +88,8 @@ class H5Loader:
                     if dependency_name == dim.label:
                         # dependencies[i] = np.array(dim[dim.label])
                         dependencies[i] = np.array(self.group[dim.label])
-                        selected_indices.append(list(range(len(dependencies[i]))))
+                        mapping.append(i)
+                        selected_indices.append(slice(len(dependencies[i])))
                         break
             else:
                 raise ValueError(f"You needed to specify an index for dimension {dim.label}")
@@ -95,5 +97,6 @@ class H5Loader:
         for dependency_name, dependency in zip(dependency_names, dependencies):
             if len(dependency) == 0:
                 raise ValueError(f"No dimension is labeled as {dependency_name} dimension")
-        values = self.dataset[*selected_indices]
+        # This moves the axes in the order in which the dependencies were given
+        values = np.moveaxis(np.array(self.dataset)[*selected_indices], list(range(len(mapping))), mapping)
         return values, dependencies
