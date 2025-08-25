@@ -46,3 +46,31 @@ class H5Saver:
         for i, key in enumerate(data_dim_names):
             self.group[dataset_name].dims[len(self.non_singular_keys) + i].label = key
         self.group[dataset_name].attrs[DatasetParameters.NDataDims] = len(shape)
+
+
+class H5Loader:
+    def __init__(self, group: h5py.Group, dataset_name: str):
+        self.group = group
+        self.dataset = group[dataset_name]
+
+    def retrieve_dependency(self, parameters: dict[str, int], dependency_names: list[str]):
+        selected_indices = []
+        dependencies = [np.array([])] * len(dependency_names)
+        for dim in list(self.dataset.dims)[:-self.dataset.attrs[DatasetParameters.NDataDims]]:
+            if dim.label in parameters.keys():
+                selected_indices.append(parameters[dim.label])
+            elif dim.label in dependency_names:
+                for i, dependency_name in enumerate(dependency_names):
+                    if dependency_name == dim.label:
+                        # dependencies[i] = np.array(dim[dim.label])
+                        dependencies[i] = np.array(self.group[dim.label])
+                        selected_indices.append(list(range(len(dependencies[i]))))
+                        break
+            else:
+                raise ValueError(f"You needed to specify an index for dimension {dim.label}")
+
+        for dependency_name, dependency in zip(dependency_names, dependencies):
+            if len(dependency) == 0:
+                raise ValueError(f"No dimension is labeled as {dependency_name} dimension")
+        values = self.dataset[*selected_indices]
+        return values, dependencies

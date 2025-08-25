@@ -1,0 +1,10 @@
+EnergiesED for /2025-08-25_14-50-24:
+	HamiltonianType: ZeroChargePenalty
+	Last-Modified: 2025-08-25_14-50-24
+	ProcessId: 23011444
+	SolverName: ED
+	SystemName: FreeWilson2D
+	Which: SM
+	n_x: 2
+	n_y: 2
+	r: 1.0

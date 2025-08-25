@@ -40,5 +40,3 @@ for my_id in range(100):
             print(f"Trying next filename: {h5_file}.hdf5")
         else:
             raise e
-# Ideas:
-#   - Centralize parts of h5 saving (later used in VQE,AVQE,...)

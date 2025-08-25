@@ -2,39 +2,13 @@ from datetime import datetime
 from pathlib import Path
 
 import h5py
-import numpy as np
 from matplotlib import pyplot as plt
 
 from combine_data import combine_data
 from exact_diagonalization import EDParameters
+from h5_interface import H5Loader
 from hamiltonians import HamiltonianParameters
 from misc import plots_folder, data_folder
-
-
-def retrieve_dataset_dependency(group: h5py.Group, dataset_name: str, parameters: dict[str, int], dependency_names: list[str]):
-    selected_indices = []
-    dependencies = [np.array([])] * len(dependency_names)
-    dataset = group[dataset_name]
-    for dim in dataset.dims:
-        if dim.label in parameters.keys():
-            selected_indices.append(parameters[dim.label])
-        elif dim.label in dependency_names:
-            for i, dependency_name in enumerate(dependency_names):
-                if dependency_name == dim.label:
-                    # dependencies[i] = np.array(dim[dim.label])
-                    dependencies[i] = np.array(group[dim.label])
-                    selected_indices.append(list(range(len(dependencies[i]))))
-                    break
-        elif dim.label == EDParameters.EigenValueAxis:  # This is always at the end
-            pass
-        else:
-            raise ValueError(f"You needed to specify an index for dimension {dim.label}")
-
-    for dependency_name, dependency in zip(dependency_names, dependencies):
-        if len(dependency) == 0:
-            raise ValueError(f"No dimension is labeled as {dependency_name} dimension")
-    values = dataset[*selected_indices]
-    return values, dependencies
 
 
 def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: str):
@@ -46,22 +20,28 @@ def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: st
     output_filename += plot_name
 
     for key, value in parameters.items():
-        print(f"\t{key}: {group[key][value]}")
         output_filename = f"{output_filename}_{key}={group[key][value]:.2f}"
 
-    output_filename += ".pdf"
-    return output_filename
+    with open(output_filename + ".info", "w") as f:
+        message = f"{plot_name} for {group.name}:"
+        print(message, file=f)
+        print(message)
+        for key, value in group.attrs.items():
+            message = f"\t{key}: {value}"
+            print(message, file=f)
+            print(message)
+        for key, value in parameters.items():
+            message = f"\t{key}: {group[key][value]}"
+            print(message, file=f)
+            print(message)
+
+    return output_filename + ".png"
 
 
 def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
-    print(f"Plotting energy gap for {group.name}:")
-    for key, value in group.attrs.items():
-        print(f"\t{key}: {value}")
-
-    energies, dep = retrieve_dataset_dependency(group, EDParameters.EigenValues, parameters,
-                                                [HamiltonianParameters.Mass])
-
     output_filename = create_filename(group, parameters, "EnergyGapED")
+    h5_loader = H5Loader(group, EDParameters.EigenValues)
+    energies, dep = h5_loader.retrieve_dependency(parameters, [HamiltonianParameters.Mass])
 
     masses = dep[0]
     energies.sort(-1)
@@ -75,14 +55,9 @@ def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
 
 
 def plot_energies_ed(group: h5py.Group, parameters: dict[str, int], n_plot: int):
-    print(f"Plotting energies for {group.name}:")
-    for key, value in group.attrs.items():
-        print(f"\t{key}: {value}")
-
-    energies, dep = retrieve_dataset_dependency(group, EDParameters.EigenValues, parameters,
-                                                [HamiltonianParameters.Mass])
-
     output_filename = create_filename(group, parameters, "EnergiesED")
+    h5_loader = H5Loader(group, EDParameters.EigenValues)
+    energies, dep = h5_loader.retrieve_dependency(parameters, [HamiltonianParameters.Mass])
 
     masses = dep[0]
     energies.sort(-1)
