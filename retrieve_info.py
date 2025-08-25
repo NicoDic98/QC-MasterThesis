@@ -34,4 +34,4 @@ def print_info(f: str):
 
 
 if __name__ == "__main__":
-    print_info("results/plots/2025-08-20_20-42-52/EnergiesED_r=1.00.pdf")
+    print_info("/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/results/plots/2025-08-21_13-11-53/EnergiesED.pdf")
