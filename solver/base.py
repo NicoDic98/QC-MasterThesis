@@ -1,4 +1,5 @@
 from datetime import datetime
+from enum import Enum, auto
 from typing import Callable
 
 import h5py
@@ -7,6 +8,12 @@ from h5_interface import H5Saver
 from hamiltonian.free_wilson import BaseHamiltonian
 from hamiltonian.base import HamiltonianType
 from misc import GlobalParameters
+
+
+class EstimatorType(Enum):
+    Statevector = auto()
+    Aer = auto()
+    Hardware = auto()
 
 
 class BaseSolver:
