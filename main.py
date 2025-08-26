@@ -6,7 +6,8 @@ import h5py
 import numpy as np
 
 from solver.exact_diagonalization import ED
-from hamiltonians import FreeWilson2D, HamiltonianType, HamiltonianParameters
+from hamiltonian.free_wilson import FreeWilson2D
+from hamiltonian.base import HamiltonianType, HamiltonianParameters
 from misc import pprint_h5, GlobalParameters, data_folder, default_id
 
 # Define the parser

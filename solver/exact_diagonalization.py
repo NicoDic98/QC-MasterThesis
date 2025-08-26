@@ -5,7 +5,8 @@ import h5py
 import numpy as np
 from scipy.sparse.linalg import eigsh
 
-from hamiltonians import BaseHamiltonian, HamiltonianType
+from hamiltonian.free_wilson import BaseHamiltonian
+from hamiltonian.base import HamiltonianType
 from solver.base import BaseSolver
 
 

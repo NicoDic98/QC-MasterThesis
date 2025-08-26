@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 from qiskit.circuit import Parameter
 from qiskit.circuit.library import n_local, XXPlusYYGate
 
-from hamiltonians import BaseHamiltonian, HamiltonianType
+from hamiltonian.free_wilson import BaseHamiltonian
+from hamiltonian.base import HamiltonianType
 from solver.base import BaseSolver
 
 
@@ -42,5 +43,3 @@ class VQE(BaseSolver):
         if test_hamiltonian_op.num_qubits != self.ansatz.num_qubits:
             raise ValueError(
                 f"Number of qubits does not match ansatz: {test_hamiltonian_op.num_qubits}!={self.ansatz.num_qubits}")
-
-

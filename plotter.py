@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 from combine_data import combine_data
 from solver.exact_diagonalization import EDParameters
 from h5_interface import H5Loader
-from hamiltonians import HamiltonianParameters
+from hamiltonian.base import HamiltonianParameters
 from misc import plots_folder, data_folder
 
 
@@ -22,17 +22,17 @@ def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: st
     for key, value in parameters.items():
         output_filename = f"{output_filename}_{key}={group[key][value]:.2f}"
 
-    with open(output_filename + ".info", "w") as f:
+    with open(output_filename + ".info", "w") as finfo:
         message = f"{plot_name} for {group.name}:"
-        print(message, file=f)
+        print(message, file=finfo)
         print(message)
         for key, value in group.attrs.items():
             message = f"\t{key}: {value}"
-            print(message, file=f)
+            print(message, file=finfo)
             print(message)
         for key, value in parameters.items():
             message = f"\t{key}: {group[key][value]}"
-            print(message, file=f)
+            print(message, file=finfo)
             print(message)
 
     return output_filename + ".png"

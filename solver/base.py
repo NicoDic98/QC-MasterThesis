@@ -4,7 +4,8 @@ from typing import Callable
 import h5py
 
 from h5_interface import H5Saver
-from hamiltonians import BaseHamiltonian, HamiltonianType
+from hamiltonian.free_wilson import BaseHamiltonian
+from hamiltonian.base import HamiltonianType
 from misc import GlobalParameters
 
 
