@@ -5,7 +5,7 @@ import h5py
 from matplotlib import pyplot as plt
 
 from combine_data import combine_data
-from exact_diagonalization import EDParameters
+from solver.exact_diagonalization import EDParameters
 from h5_interface import H5Loader
 from hamiltonians import HamiltonianParameters
 from misc import plots_folder, data_folder

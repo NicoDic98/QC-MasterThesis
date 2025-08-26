@@ -1,4 +1,3 @@
-from datetime import datetime
 from enum import StrEnum
 from typing import Literal, Callable
 
@@ -6,9 +5,8 @@ import h5py
 import numpy as np
 from scipy.sparse.linalg import eigsh
 
-from h5_interface import H5Saver
 from hamiltonians import BaseHamiltonian, HamiltonianType
-from misc import GlobalParameters
+from solver.base import BaseSolver
 
 
 class EDParameters(StrEnum):
@@ -19,24 +17,20 @@ class EDParameters(StrEnum):
     EigenVectorAxis = "EigenVectorAxis"
 
 
-class ED:
+class ED(BaseSolver):
 
     def __init__(self,
                  hamiltonian_factory: Callable[..., BaseHamiltonian],
                  save_group: h5py.Group):
-        self.hamiltonian_factory = hamiltonian_factory
-        self.save_group = save_group
+        super().__init__(hamiltonian_factory, save_group)
 
     def run(self, parameters_dict_list: dict[str, list], hamiltonian_type: HamiltonianType, n_eigv: int = None):
-        local_group = self.save_group.create_group(datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
-        h5_saver = H5Saver(local_group, parameters_dict_list)
-
-        temp = self.hamiltonian_factory(**(h5_saver.parameters_list_dict[0]))
+        local_group, h5_saver, test_hamiltonian = self.initialize_run(parameters_dict_list, hamiltonian_type)
 
         if n_eigv is None:
-            n_eigv = temp.size_of_zero_charge_sector() + 2
+            n_eigv = test_hamiltonian.size_of_zero_charge_sector() + 2
 
-        eigenvector_dim = temp.size_of_hamiltonian(hamiltonian_type)
+        eigenvector_dim = test_hamiltonian.size_of_hamiltonian(hamiltonian_type)
 
         which: Literal["SM", "LM"]
         # 'SM' if using penalty and 'LM' if using projection/full
@@ -47,11 +41,6 @@ class ED:
         elif hamiltonian_type == HamiltonianType.ZeroChargeProjection:
             which = "LM"
 
-        local_group.attrs[GlobalParameters.SystemName] = type(temp).__name__
-        local_group.attrs[GlobalParameters.SolverName] = type(self).__name__
-        local_group.attrs[GlobalParameters.ProcessId] = local_group.file.attrs[GlobalParameters.ProcessId]
-        local_group.attrs[GlobalParameters.LastModified] = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-        local_group.attrs[HamiltonianType.__name__] = hamiltonian_type.name
         local_group.attrs[EDParameters.Which] = which
 
         h5_saver.create_dataset_with_dim_labels(EDParameters.EigenValues,
