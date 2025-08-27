@@ -40,19 +40,27 @@ class H5Saver:
         self.parameter_dims = [len(parameters_dict_list[key]) for key in self.non_singular_keys]
 
     def create_dataset_with_dim_labels(self, dataset_name: str, shape: list[int], data_dim_names: list[str],
-                                       dtype: Any = np.float64):
+                                       dtype: Any = np.float64, maxshape: list[int] = None):
         """
 
         :param dataset_name: Name of the dataset to be created
         :param shape: Shape of the dataset for a fixed set of parameters
         :param data_dim_names: Names of the data dimensions
         :param dtype: Data type
+        :param maxshape: Maximum data shape
         :return: None
         """
+        if maxshape is None:
+            pass
+        else:
+            if len(maxshape) != len(data_dim_names):
+                raise ValueError("maxshape and data_dim_names must have same length")
+            maxshape = self.parameter_dims + maxshape
+
         if len(shape) != len(data_dim_names):
             raise ValueError("shape and data_dim_names must have same length")
         self.group.create_dataset(dataset_name, self.parameter_dims + shape,
-                                  dtype=dtype)
+                                  dtype=dtype, maxshape=maxshape)
         for i, key in enumerate(self.non_singular_keys):
             # local_group[EDParameters.EigenValues].dims[i].attach_scale(local_group[key])
             self.group[dataset_name].dims[i].label = key
