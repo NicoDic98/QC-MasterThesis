@@ -6,6 +6,14 @@ import h5py
 import numpy as np
 
 
+def adapt_dtype_for_h5(value):
+    if np.issubdtype(type(value), np.floating) or np.issubdtype(type(value), np.integer) or np.issubdtype(
+            type(value), np.complexfloating) or np.issubdtype(type(value), np.bool):
+        return value
+    else:
+        return str(value)
+
+
 class DatasetParameters(StrEnum):
     NDataDims = "NDataDims"
 

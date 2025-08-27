@@ -1,41 +1,19 @@
 from datetime import datetime
-from enum import Enum, auto, StrEnum
+from enum import Enum, auto
 from typing import Callable
 
 import h5py
-import numpy as np
-from qiskit import QuantumCircuit
-from qiskit.primitives import BaseEstimatorV2
-from qiskit.quantum_info import SparsePauliOp
 
 from h5_interface import H5Saver
-from hamiltonian.free_wilson import BaseHamiltonian
 from hamiltonian.base import HamiltonianType
+from hamiltonian.free_wilson import BaseHamiltonian
 from misc import GlobalParameters
 
 
-class EstimatorType(Enum):
+class SimulatorType(Enum):
     Statevector = auto()
     Aer = auto()
     Hardware = auto()
-
-class QCPrefix(StrEnum):
-    Backend = "Backend/"
-    Estimator = "Estimator/"
-    Optimizer = "Optimizer/"
-    Data = "Data/"
-    MetaData = "MetaData/"
-
-
-def cost_func(params: np.ndarray, ansatz:QuantumCircuit, hamiltonian: SparsePauliOp, estimator: BaseEstimatorV2):
-    pub = (ansatz, hamiltonian, [params])
-    # noinspection PyTypeChecker
-    job = estimator.run(pubs=[pub])
-    pub_result = job.result()[0]
-    energy = pub_result.data.evs[0]
-
-
-    return energy
 
 
 class BaseSolver:

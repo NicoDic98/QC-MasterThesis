@@ -17,6 +17,16 @@ class GlobalParameters(StrEnum):
     ProcessId = "ProcessId"
 
 
+def fill_defaults_in_dict(my_dict: dict, my_default_dict: dict):
+    if my_dict is None:
+        my_dict = my_default_dict
+    else:
+        for key, value in my_default_dict.items():
+            if key not in my_dict:
+                my_dict[key] = value
+    return my_dict
+
+
 def print_h5(name, obj: h5py.Group):
     print(f"{name}:{obj}")
     for key in obj.attrs.keys():
