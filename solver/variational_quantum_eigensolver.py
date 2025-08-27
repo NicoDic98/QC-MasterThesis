@@ -146,6 +146,7 @@ class VQE(BaseSolver):
             "callback": None,
             "options": {"maxiter": 100,
                         "disp": 2},
+            "x0Seed": 42,
         }
         optimizer_params = fill_defaults_in_dict(optimizer_params, optimizer_params_default)
 
@@ -162,6 +163,13 @@ class VQE(BaseSolver):
         local_group.create_group(VQEParameters.Optimizer)
         for key, value in optimizer_params.items():
             local_group[VQEParameters.Optimizer].attrs[key] = adapt_dtype_for_h5(value)
+
+        rng = np.random.default_rng(seed=optimizer_params["x0Seed"])
+        del optimizer_params["x0Seed"]
+        x0 = 2 * np.pi * rng.random(self.ansatz.num_parameters())
+        tes_cost_function = VQECostFunction(circuit, test_hamiltonian_op, estimator, local_group, h5_saver.non_singular_indices_list[0])
+        test_pub_result = tes_cost_function.evaluate(x0)
+        # todo create resizable datasets for everything inside test_pub_result
         """
         todo: save
         per iteration:

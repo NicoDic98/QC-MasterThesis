@@ -24,11 +24,14 @@ class BaseAnsatz:
     def __call__(self):
         return self.full_ansatz.copy()
 
+    def num_parameters(self):
+        return self.full_ansatz.num_parameters
+
     def save_parameters(self, group: h5py.Group):
         group.attrs[CircuitParameters.Ansatz] = type(self).__name__
         group.attrs[CircuitParameters.NumQubits] = self.num_qubits
         group.attrs[CircuitParameters.NumLayers] = self.num_layers
-        group.attrs[CircuitParameters.NumParameters] = self.full_ansatz.num_parameters
+        group.attrs[CircuitParameters.NumParameters] = self.num_parameters()
 
 
 
