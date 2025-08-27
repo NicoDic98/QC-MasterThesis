@@ -50,6 +50,17 @@ class H5Saver:
         :param maxshape: Maximum data shape
         :return: None
         """
+        if np.issubdtype(dtype, np.floating):
+            dtype = np.float64
+        elif np.issubdtype(dtype, np.integer):
+            dtype = np.int64
+        elif np.issubdtype(dtype, np.complexfloating):
+            dtype = np.complex128
+        elif np.issubdtype(dtype, np.bool):
+            dtype = np.bool
+        else:
+            dtype = h5py.string_dtype()
+
         if maxshape is None:
             pass
         else:

@@ -46,7 +46,8 @@ class ED(BaseSolver):
 
         h5_saver.create_dataset_with_dim_labels(EDParameters.EigenValues,
                                                 [n_eigv],
-                                                [EDParameters.EigenValueAxis])
+                                                [EDParameters.EigenValueAxis],
+                                                np.float64)
         h5_saver.create_dataset_with_dim_labels(EDParameters.EigenVectors,
                                                 [eigenvector_dim, n_eigv],
                                                 [EDParameters.EigenVectorAxis, EDParameters.EigenValueAxis],

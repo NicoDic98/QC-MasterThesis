@@ -53,7 +53,7 @@ class VQE(BaseSolver):
             # this will be the same as qc, if backend = AerSimulator()
             qc = pm.run(qc)
             hamiltonian_isa = test_hamiltonian_op.apply_layout(layout=qc.layout)
-            estimator = Estimator(backend)
+            estimator = Estimator(mode=backend)
         elif estimator_type == EstimatorType.Hardware:
             if estimator_params is None:
                 estimator_params = {"seed_transpiler": 42,
@@ -66,3 +66,14 @@ class VQE(BaseSolver):
         local_group.attrs[EstimatorType.__name__] = estimator_type.name
         for key, value in estimator_params.items():
             local_group.attrs[key] = value
+        """
+        todo: save
+        backend parameters
+        estimator parameters
+        per iteration:
+            circuit parameters
+            pub_result.data["evs"]
+            pub_result.data["stds"]
+            other pub_result.data.items()
+            pub_result.metadat.items() and contained in that, circuit_metadata.items()
+        """
