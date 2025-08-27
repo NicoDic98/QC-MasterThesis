@@ -167,6 +167,7 @@ class VQE(BaseSolver):
         rng = np.random.default_rng(seed=optimizer_params["x0Seed"])
         del optimizer_params["x0Seed"]
         x0 = 2 * np.pi * rng.random(self.ansatz.num_parameters())
+        test_hamiltonian_op = test_hamiltonian_op.apply_layout(layout=circuit.layout)
         tes_cost_function = VQECostFunction(circuit, test_hamiltonian_op, estimator, local_group, h5_saver.non_singular_indices_list[0])
         test_pub_result = tes_cost_function.evaluate(x0)
         # todo create resizable datasets for everything inside test_pub_result
@@ -180,4 +181,3 @@ class VQE(BaseSolver):
             pub_result.metadat.items() and contained in that, circuit_metadata.items() (in own subgroup)
             check for non standard dtype, which should be saved as str: if not(h5py.check_string_dtype(dataset.dtype) is None):
         """
-        hamiltonian_isa = test_hamiltonian_op.apply_layout(layout=circuit.layout)
