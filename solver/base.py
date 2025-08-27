@@ -1,8 +1,12 @@
 from datetime import datetime
-from enum import Enum, auto
+from enum import Enum, auto, StrEnum
 from typing import Callable
 
 import h5py
+import numpy as np
+from qiskit import QuantumCircuit
+from qiskit.primitives import BaseEstimatorV2
+from qiskit.quantum_info import SparsePauliOp
 
 from h5_interface import H5Saver
 from hamiltonian.free_wilson import BaseHamiltonian
@@ -14,6 +18,24 @@ class EstimatorType(Enum):
     Statevector = auto()
     Aer = auto()
     Hardware = auto()
+
+class QCPrefix(StrEnum):
+    Backend = "Backend/"
+    Estimator = "Estimator/"
+    Optimizer = "Optimizer/"
+    Data = "Data/"
+    MetaData = "MetaData/"
+
+
+def cost_func(params: np.ndarray, ansatz:QuantumCircuit, hamiltonian: SparsePauliOp, estimator: BaseEstimatorV2):
+    pub = (ansatz, hamiltonian, [params])
+    # noinspection PyTypeChecker
+    job = estimator.run(pubs=[pub])
+    pub_result = job.result()[0]
+    energy = pub_result.data.evs[0]
+
+
+    return energy
 
 
 class BaseSolver:
@@ -37,4 +59,4 @@ class BaseSolver:
         return local_group, h5_saver, test_hamiltonian
 
     def run(self, parameters_dict_list: dict[str, list], hamiltonian_type: HamiltonianType):
-        local_group, h5_saver, test_hamiltonian = self.initialize_run(parameters_dict_list, hamiltonian_type)
+        self.initialize_run(parameters_dict_list, hamiltonian_type)

@@ -1,4 +1,4 @@
-from typing import Callable, Any
+from typing import Callable
 
 import h5py
 from qiskit.primitives import StatevectorEstimator
@@ -68,12 +68,14 @@ class VQE(BaseSolver):
             local_group.attrs[key] = value
         """
         todo: save
-        backend parameters
-        estimator parameters
+        backend parameters (in own subgroup)
+        estimator parameters (in own subgroup)
+        optimizer_parameters (in own subgroup)
         per iteration:
             circuit parameters
             pub_result.data["evs"]
             pub_result.data["stds"]
-            other pub_result.data.items()
-            pub_result.metadat.items() and contained in that, circuit_metadata.items()
+            other pub_result.data.items() (in own subgroup)
+            pub_result.metadat.items() and contained in that, circuit_metadata.items() (in own subgroup)
+            check for non standard dtype, which should be saved as str: if not(h5py.check_string_dtype(dataset.dtype) is None):
         """
