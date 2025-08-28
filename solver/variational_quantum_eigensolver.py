@@ -92,11 +92,12 @@ class VQE(BaseSolver):
 
         :param simulator_type:
         :param simulator_options:
-        https://qiskit.github.io/qiskit-aer/tutorials/1_aersimulator.html
+        https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.AerSimulator.html#aersimulator
         :param preset_pass_manager_options:
         https://quantum.cloud.ibm.com/docs/en/guides/defaults-and-configuration-options
         :param estimator_options:
         https://quantum.cloud.ibm.com/docs/en/api/qiskit-ibm-runtime/options-estimator-options
+        https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.primitives.StatevectorEstimator
         :return:
         """
         if simulator_type == SimulatorType.Statevector:
