@@ -3,6 +3,9 @@ from typing import Callable
 
 import h5py
 import numpy as np
+import qiskit
+import qiskit_ibm_runtime
+import qiskit_aer
 from qiskit import QuantumCircuit
 from qiskit.primitives import StatevectorEstimator, BaseEstimatorV2, PrimitiveResult
 from qiskit.quantum_info import SparsePauliOp
@@ -23,6 +26,9 @@ class VQEParameters(StrEnum):
     Estimator = "Estimator"
     Optimizer = "Optimizer"
     CircuitParameters = "CircuitParameters"
+    QiskitVersion = "QiskitVersion"
+    QiskitIBMRuntimeVersion = "QiskitIBMRuntimeVersion"
+    QiskitAerVersion = "QiskitAerVersion"
     DataPrefix = "Data/"
     MetaDataPrefix = "MetaData/"
 
@@ -54,14 +60,14 @@ class VQECostFunction:
             else:
                 dataset[*self.current_non_singular_index, self.iteration] = value[0]  # only one pub
 
-        for key, value in pub_result.metadata.items(): # pub specific metadata
+        for key, value in pub_result.metadata.items():  # pub specific metadata
             dataset = self.group[VQEParameters.MetaDataPrefix + key]
             if not (h5py.check_string_dtype(dataset.dtype) is None):
                 dataset[*self.current_non_singular_index, self.iteration] = str(value)
             else:
                 dataset[*self.current_non_singular_index, self.iteration] = value
 
-        for key, value in full_result.metadata.items(): # general metadata
+        for key, value in full_result.metadata.items():  # general metadata
             dataset = self.group[VQEParameters.MetaDataPrefix + key]
             if not (h5py.check_string_dtype(dataset.dtype) is None):
                 dataset[*self.current_non_singular_index, self.iteration] = str(value)
@@ -160,6 +166,9 @@ class VQE(BaseSolver):
         optimizer_params = fill_defaults_in_dict(optimizer_params, optimizer_params_default)
 
         local_group.attrs[SimulatorType.__name__] = simulator_type.name
+        local_group.attrs[VQEParameters.QiskitVersion] = qiskit.version.get_version_info()
+        local_group.attrs[VQEParameters.QiskitIBMRuntimeVersion] = qiskit_ibm_runtime.version.get_version_info()
+        local_group.attrs[VQEParameters.QiskitAerVersion] = qiskit_aer.version.get_version_info()
 
         local_group.create_group(VQEParameters.Backend)
         for key, value in backend_params.items():
@@ -177,8 +186,9 @@ class VQE(BaseSolver):
         del optimizer_params["x0Seed"]
         x0 = 2 * np.pi * rng.random(self.ansatz.num_parameters())
         test_hamiltonian_op = test_hamiltonian_op.apply_layout(layout=circuit.layout)
-        tes_cost_function = VQECostFunction(circuit, test_hamiltonian_op, estimator, local_group, h5_saver.non_singular_indices_list[0])
-        test_full_result = tes_cost_function.evaluate(x0)
+        test_cost_function = VQECostFunction(circuit, test_hamiltonian_op, estimator, local_group,
+                                            h5_saver.non_singular_indices_list[0])
+        test_full_result = test_cost_function.evaluate(x0)
         # todo create resizable datasets for everything inside test_pub_result
         """
         todo: save
