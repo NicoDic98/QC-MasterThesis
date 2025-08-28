@@ -1,4 +1,3 @@
-from enum import StrEnum
 from os import listdir
 from os.path import isfile, join
 from pathlib import Path
@@ -8,13 +7,6 @@ import h5py
 data_folder = "results/data/"
 plots_folder = "results/plots/"
 default_id = 42
-
-
-class GlobalParameters(StrEnum):
-    SystemName = "SystemName"
-    SolverName = "SolverName"
-    LastModified = "Last-Modified"
-    ProcessId = "ProcessId"
 
 
 def fill_defaults_in_dict(my_dict: dict, my_default_dict: dict):

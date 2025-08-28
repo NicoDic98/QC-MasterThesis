@@ -3,9 +3,6 @@ from typing import Callable
 
 import h5py
 import numpy as np
-import qiskit
-import qiskit_ibm_runtime
-import qiskit_aer
 from qiskit import QuantumCircuit
 from qiskit.primitives import StatevectorEstimator, BaseEstimatorV2, PrimitiveResult
 from qiskit.quantum_info import SparsePauliOp
@@ -26,9 +23,6 @@ class VQEParameters(StrEnum):
     Estimator = "Estimator"
     Optimizer = "Optimizer"
     CircuitParameters = "CircuitParameters"
-    QiskitVersion = "QiskitVersion"
-    QiskitIBMRuntimeVersion = "QiskitIBMRuntimeVersion"
-    QiskitAerVersion = "QiskitAerVersion"
     DataPrefix = "Data/"
     MetaDataPrefix = "MetaData/"
 
@@ -166,9 +160,6 @@ class VQE(BaseSolver):
         optimizer_params = fill_defaults_in_dict(optimizer_params, optimizer_params_default)
 
         local_group.attrs[SimulatorType.__name__] = simulator_type.name
-        local_group.attrs[VQEParameters.QiskitVersion] = qiskit.version.get_version_info()
-        local_group.attrs[VQEParameters.QiskitIBMRuntimeVersion] = qiskit_ibm_runtime.version.get_version_info()
-        local_group.attrs[VQEParameters.QiskitAerVersion] = qiskit_aer.version.get_version_info()
 
         local_group.create_group(VQEParameters.Backend)
         for key, value in backend_params.items():
@@ -187,7 +178,7 @@ class VQE(BaseSolver):
         x0 = 2 * np.pi * rng.random(self.ansatz.num_parameters())
         test_hamiltonian_op = test_hamiltonian_op.apply_layout(layout=circuit.layout)
         test_cost_function = VQECostFunction(circuit, test_hamiltonian_op, estimator, local_group,
-                                            h5_saver.non_singular_indices_list[0])
+                                             h5_saver.non_singular_indices_list[0])
         test_full_result = test_cost_function.evaluate(x0)
         # todo create resizable datasets for everything inside test_pub_result
         """
