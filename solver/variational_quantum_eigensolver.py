@@ -1,3 +1,4 @@
+from dataclasses import asdict
 from enum import StrEnum
 from typing import Callable, Any
 
@@ -8,10 +9,11 @@ from qiskit.primitives import StatevectorEstimator, BaseEstimatorV2, PrimitiveRe
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler import generate_preset_pass_manager
 from qiskit_aer import AerSimulator
-from qiskit_ibm_runtime import EstimatorV2 as Estimator, EstimatorOptions
+from qiskit_ibm_runtime import EstimatorV2 as Estimator
+from qiskit_ibm_runtime import EstimatorOptions
 from qiskit_ibm_runtime.options.utils import UnsetType
 
-from h5_interface import save_dict_as_attribute, convert_to_h5_compatible_dict
+from h5_interface import save_dict_as_attribute
 from hamiltonian.base import HamiltonianType
 from hamiltonian.free_wilson import BaseHamiltonian
 from misc import fill_defaults_in_dict
@@ -203,6 +205,15 @@ class VQE(BaseSolver):
             raise ValueError(
                 f"Number of qubits does not match ansatz: {test_hamiltonian_op.num_qubits}!={self.ansatz.num_qubits}")
 
+        if simulator_options is None:
+            simulator_options = {}
+        if preset_pass_manager_options is None:
+            preset_pass_manager_options = {}
+        if estimator_options is None:
+            estimator_options = EstimatorOptions()
+        if optimizer_options is None:
+            optimizer_options = {}
+
         estimator, circuit = self.setup_estimator(simulator_type, simulator_options,
                                                   preset_pass_manager_options, estimator_options)
 
@@ -220,18 +231,11 @@ class VQE(BaseSolver):
 
         local_group.attrs[SimulatorType.__name__] = simulator_type.name
 
-        save_dict_as_attribute(local_group,
-                               convert_to_h5_compatible_dict(simulator_options),
-                               VQEParameters.SimulatorOptions)
-        save_dict_as_attribute(local_group,
-                               convert_to_h5_compatible_dict(preset_pass_manager_options),
-                               VQEParameters.PresetPassManagerOptions)
-        save_dict_as_attribute(local_group,
-                               convert_to_h5_compatible_dict(estimator_options),
-                               VQEParameters.EstimatorOptions)
-        save_dict_as_attribute(local_group,
-                               convert_to_h5_compatible_dict(optimizer_options),
-                               VQEParameters.OptimizerOptions)
+        save_dict_as_attribute(local_group, simulator_options, VQEParameters.SimulatorOptions)
+        save_dict_as_attribute(local_group, preset_pass_manager_options, VQEParameters.PresetPassManagerOptions)
+        # noinspection PyDataclass,PyTypeChecker
+        save_dict_as_attribute(local_group, asdict(estimator_options), VQEParameters.EstimatorOptions)
+        save_dict_as_attribute(local_group, optimizer_options, VQEParameters.OptimizerOptions)
 
         rng = np.random.default_rng(seed=optimizer_options["x0Seed"])
         del optimizer_options["x0Seed"]

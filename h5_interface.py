@@ -1,6 +1,4 @@
 import itertools
-import json
-from dataclasses import asdict
 from enum import StrEnum
 from typing import Any
 
@@ -9,17 +7,12 @@ import numpy as np
 
 
 def adapt_dtype_for_h5(value):
-    if np.issubdtype(type(value), np.floating) or np.issubdtype(type(value), np.integer) or np.issubdtype(
-            type(value), np.complexfloating) or np.issubdtype(type(value), np.bool):
+    if (np.issubdtype(type(value), np.floating) or np.issubdtype(type(value), np.integer)
+            or np.issubdtype(type(value), np.complexfloating) or np.issubdtype(type(value), np.bool)
+            or isinstance(value, np.ndarray) or isinstance(value, list) or isinstance(value, tuple)):
         return value
     else:
         return str(value)
-
-
-def convert_to_h5_compatible_dict(my_dict):
-    if not isinstance(my_dict, dict):
-        my_dict = asdict(my_dict)
-    return json.loads(json.dumps(my_dict, default=lambda x: str(x)))
 
 
 def save_dict_as_attribute(group: h5py.Group, my_dict: dict[str, Any], name: str):
@@ -28,7 +21,8 @@ def save_dict_as_attribute(group: h5py.Group, my_dict: dict[str, Any], name: str
         if isinstance(value, dict):
             save_dict_as_attribute(group[name], value, key)
         else:
-            group[name].attrs[key] = value
+            print(f"{key}: {isinstance(value, list)}")
+            group[name].attrs[key] = adapt_dtype_for_h5(value)
 
 
 class DatasetParameters(StrEnum):
