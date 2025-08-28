@@ -23,6 +23,8 @@ def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: st
         output_filename = f"{output_filename}_{key}={group[key][value]:.2f}"
 
     with open(output_filename + ".info", "w") as finfo:
+        # todo: update to use pprint recursion with only group attributes + dataset attributes of the dataset of interest,
+        #  add file argument to pprint
         message = f"{plot_name} for {group.name}:"
         print(message, file=finfo)
         print(message)

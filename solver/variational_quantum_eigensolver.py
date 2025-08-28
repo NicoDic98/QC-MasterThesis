@@ -181,3 +181,13 @@ class VQE(BaseSolver):
             pub_result.metadat.items() and contained in that, circuit_metadata.items() (in own subgroup)
             check for non standard dtype, which should be saved as str: if not(h5py.check_string_dtype(dataset.dtype) is None):
         """
+        """
+        (1,)
+        Data:
+        evs [1.90917969]
+        stds [0.08189292]
+        MetaData:
+        target_precision 0.015625
+        shots 4096
+        circuit_metadata {}
+        """
