@@ -4,7 +4,7 @@ from typing import Callable
 import h5py
 import numpy as np
 from qiskit import QuantumCircuit
-from qiskit.primitives import StatevectorEstimator, BaseEstimatorV2, PubResult
+from qiskit.primitives import StatevectorEstimator, BaseEstimatorV2, PrimitiveResult
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler import generate_preset_pass_manager
 from qiskit_aer import AerSimulator
@@ -37,22 +37,31 @@ class VQECostFunction:
         self.current_non_singular_index = current_non_singular_index
         self.iteration = 0
 
-    def evaluate(self, params: np.ndarray) -> PubResult:
+    def evaluate(self, params: np.ndarray) -> PrimitiveResult:
         pub = (self.ansatz, self.hamiltonian, [params])
         # noinspection PyTypeChecker
         job = self.estimator.run(pubs=[pub])
-        pub_result = job.result()[0]
-        return pub_result
+        return job.result()
 
     def __call__(self, params: np.ndarray) -> float:
-        pub_result = self.evaluate(params)
+        full_result = self.evaluate(params)
+        pub_result = full_result[0]
+
         for key, value in pub_result.data.items():
             dataset = self.group[VQEParameters.DataPrefix + key]
             if not (h5py.check_string_dtype(dataset.dtype) is None):
                 dataset[*self.current_non_singular_index, self.iteration] = str(value[0])  # only one pub
             else:
                 dataset[*self.current_non_singular_index, self.iteration] = value[0]  # only one pub
-        for key, value in pub_result.metadata.items():
+
+        for key, value in pub_result.metadata.items(): # pub specific metadata
+            dataset = self.group[VQEParameters.MetaDataPrefix + key]
+            if not (h5py.check_string_dtype(dataset.dtype) is None):
+                dataset[*self.current_non_singular_index, self.iteration] = str(value)
+            else:
+                dataset[*self.current_non_singular_index, self.iteration] = value
+
+        for key, value in full_result.metadata.items(): # general metadata
             dataset = self.group[VQEParameters.MetaDataPrefix + key]
             if not (h5py.check_string_dtype(dataset.dtype) is None):
                 dataset[*self.current_non_singular_index, self.iteration] = str(value)
@@ -169,7 +178,7 @@ class VQE(BaseSolver):
         x0 = 2 * np.pi * rng.random(self.ansatz.num_parameters())
         test_hamiltonian_op = test_hamiltonian_op.apply_layout(layout=circuit.layout)
         tes_cost_function = VQECostFunction(circuit, test_hamiltonian_op, estimator, local_group, h5_saver.non_singular_indices_list[0])
-        test_pub_result = tes_cost_function.evaluate(x0)
+        test_full_result = tes_cost_function.evaluate(x0)
         # todo create resizable datasets for everything inside test_pub_result
         """
         todo: save
