@@ -1,4 +1,6 @@
 import itertools
+import json
+from dataclasses import asdict
 from enum import StrEnum
 from typing import Any
 
@@ -12,6 +14,21 @@ def adapt_dtype_for_h5(value):
         return value
     else:
         return str(value)
+
+
+def convert_to_h5_compatible_dict(my_dict):
+    if not isinstance(my_dict, dict):
+        my_dict = asdict(my_dict)
+    return json.loads(json.dumps(my_dict, default=lambda x: str(x)))
+
+
+def save_dict_as_attribute(group: h5py.Group, my_dict: dict[str, Any], name: str):
+    group.create_group(name)
+    for key, value in my_dict.items():
+        if isinstance(value, dict):
+            save_dict_as_attribute(group[name], value, key)
+        else:
+            group[name].attrs[key] = value
 
 
 class DatasetParameters(StrEnum):

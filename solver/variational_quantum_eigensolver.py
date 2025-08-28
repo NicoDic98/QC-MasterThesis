@@ -1,5 +1,5 @@
 from enum import StrEnum
-from typing import Callable
+from typing import Callable, Any
 
 import h5py
 import numpy as np
@@ -8,9 +8,10 @@ from qiskit.primitives import StatevectorEstimator, BaseEstimatorV2, PrimitiveRe
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler import generate_preset_pass_manager
 from qiskit_aer import AerSimulator
-from qiskit_ibm_runtime import EstimatorV2 as Estimator
+from qiskit_ibm_runtime import EstimatorV2 as Estimator, EstimatorOptions
+from qiskit_ibm_runtime.options.utils import UnsetType
 
-from h5_interface import adapt_dtype_for_h5
+from h5_interface import save_dict_as_attribute, convert_to_h5_compatible_dict
 from hamiltonian.base import HamiltonianType
 from hamiltonian.free_wilson import BaseHamiltonian
 from misc import fill_defaults_in_dict
@@ -19,12 +20,12 @@ from solver.circuits import XXPlusYYRZAnsatz1
 
 
 class VQEParameters(StrEnum):
-    Backend = "Backend"
-    Estimator = "Estimator"
-    Optimizer = "Optimizer"
-    CircuitParameters = "CircuitParameters"
     DataPrefix = "Data/"
     MetaDataPrefix = "MetaData/"
+    SimulatorOptions = "SimulatorOptions"
+    PresetPassManagerOptions = "PresetPassManagerOptions"
+    EstimatorOptions = "EstimatorOptions"
+    OptimizerOptions = "OptimizerOptions"
 
 
 class VQECostFunction:
@@ -81,10 +82,120 @@ class VQE(BaseSolver):
         super().__init__(hamiltonian_factory, save_group)
         self.ansatz = XXPlusYYRZAnsatz1(num_qubits, num_layers)
 
+    def setup_estimator(self, simulator_type: SimulatorType,
+                        simulator_options: dict[str, Any],
+                        preset_pass_manager_options: dict[str, Any],
+                        estimator_options: EstimatorOptions) -> tuple[BaseEstimatorV2, QuantumCircuit]:
+        """
+
+        :param simulator_type:
+        :param simulator_options:
+        https://qiskit.github.io/qiskit-aer/tutorials/1_aersimulator.html
+        :param preset_pass_manager_options:
+        https://quantum.cloud.ibm.com/docs/en/guides/defaults-and-configuration-options
+        :param estimator_options:
+        https://quantum.cloud.ibm.com/docs/en/api/qiskit-ibm-runtime/options-estimator-options
+        :return:
+        """
+        if simulator_type == SimulatorType.Statevector:
+            estimator_options_default = EstimatorOptions()
+            estimator_options_default.default_precision = 0.0
+            estimator_options_default.simulator.seed_simulator = 42
+
+            preset_pass_manager_options_default = {
+                "seed_transpiler": 42,
+                "optimization_level": 3,
+                "approximation_degree": 1.0
+            }
+
+            if simulator_options:
+                raise UserWarning("Simulator options are ignored when using Statevector estimator")
+
+            preset_pass_manager_options = fill_defaults_in_dict(preset_pass_manager_options,
+                                                                preset_pass_manager_options_default)
+
+            if isinstance(estimator_options.default_precision, UnsetType):
+                estimator_options.default_precision = estimator_options_default.default_precision
+            if isinstance(estimator_options.simulator.seed_simulator, UnsetType):
+                estimator_options.simulator.seed_simulator = estimator_options_default.simulator.seed_simulator
+
+            pm = generate_preset_pass_manager(**preset_pass_manager_options)
+
+            estimator = StatevectorEstimator(default_precision=estimator_options.default_precision,
+                                             seed=estimator_options.simulator.seed_simulator)
+            circuit = pm.run(self.ansatz())
+
+        elif simulator_type == SimulatorType.Aer:
+            simulator_options_defaults = {
+
+            }
+
+            preset_pass_manager_options_default = {
+                "seed_transpiler": 42,
+                "optimization_level": 3,
+                "approximation_degree": 1.0
+            }
+
+            estimator_options_default = EstimatorOptions()
+            estimator_options_default.seed_estimator = 42
+            estimator_options_default.simulator.seed_simulator = 42
+
+            simulator_options = fill_defaults_in_dict(simulator_options,
+                                                      simulator_options_defaults)
+
+            preset_pass_manager_options = fill_defaults_in_dict(preset_pass_manager_options,
+                                                                preset_pass_manager_options_default)
+
+            if isinstance(estimator_options.seed_estimator, UnsetType):
+                estimator_options.seed_estimator = estimator_options_default.seed_estimator
+            if isinstance(estimator_options.simulator.seed_simulator, UnsetType):
+                estimator_options.simulator.seed_simulator = estimator_options_default.simulator.seed_simulator
+
+            backend = AerSimulator(**simulator_options)
+
+            pm = generate_preset_pass_manager(backend=backend,
+                                              **preset_pass_manager_options)
+
+            estimator = Estimator(mode=backend, options=estimator_options)
+            circuit = pm.run(self.ansatz())
+
+        elif simulator_type == SimulatorType.Hardware:
+            if simulator_options:
+                raise UserWarning("Simulator options are ignored when using Hardware estimator")
+
+            preset_pass_manager_options_default = {
+                "seed_transpiler": 42,
+                "optimization_level": 3,
+                "approximation_degree": 1.0
+            }
+
+            estimator_options_default = EstimatorOptions()
+            estimator_options_default.seed_estimator = 42
+            estimator_options_default.simulator.seed_simulator = 42
+
+            preset_pass_manager_options = fill_defaults_in_dict(preset_pass_manager_options,
+                                                                preset_pass_manager_options_default)
+
+            if isinstance(estimator_options.seed_estimator, UnsetType):
+                estimator_options.seed_estimator = estimator_options_default.seed_estimator
+            if isinstance(estimator_options.simulator.seed_simulator, UnsetType):
+                estimator_options.simulator.seed_simulator = estimator_options_default.simulator.seed_simulator
+
+            # todo: choose actual hardware backend
+
+            raise NotImplementedError
+
+        else:
+            raise NotImplementedError
+
+        return estimator, circuit
+
     def run(self, parameters_dict_list: dict[str, list], hamiltonian_type: HamiltonianType,
-            backend_params=None,
-            simulator_type: SimulatorType = SimulatorType.Statevector, estimator_params=None,
-            optimizer_params=None):
+            simulator_type: SimulatorType = SimulatorType.Statevector,
+            simulator_options: dict[str, Any] = None,
+            preset_pass_manager_options: dict[str, Any] = None,
+            estimator_options: EstimatorOptions = None,
+            optimizer_options: dict[str, Any] = None):
         local_group, h5_saver, test_hamiltonian = self.initialize_run(parameters_dict_list, hamiltonian_type)
         self.ansatz.save_parameters(local_group)
         test_hamiltonian_op = test_hamiltonian.hamiltonian_op(hamiltonian_type)
@@ -92,62 +203,10 @@ class VQE(BaseSolver):
             raise ValueError(
                 f"Number of qubits does not match ansatz: {test_hamiltonian_op.num_qubits}!={self.ansatz.num_qubits}")
 
-        if simulator_type == SimulatorType.Statevector:
-            if backend_params is None:
-                backend_params = {}
-            else:
-                raise UserWarning("Backend parameters are ignored when using Statevector estimator")
-            estimator_params_default = {
-                "seed": 42
-            }
-            estimator_params = fill_defaults_in_dict(estimator_params, estimator_params_default)
+        estimator, circuit = self.setup_estimator(simulator_type, simulator_options,
+                                                  preset_pass_manager_options, estimator_options)
 
-            # See:
-            # https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.primitives.StatevectorEstimator
-            estimator = StatevectorEstimator(**estimator_params)
-
-            circuit = self.ansatz()
-
-        elif simulator_type == SimulatorType.Aer:
-            backend_params_default = {}
-            backend_params = fill_defaults_in_dict(backend_params, backend_params_default)
-            estimator_params_default = {
-                "seed_transpiler": 42,
-                "optimization_level": 3,
-                "approximation_degree": 1.0
-            }
-            estimator_params = fill_defaults_in_dict(estimator_params, estimator_params_default)
-
-            # See:
-            # https://qiskit.github.io/qiskit-aer/tutorials/1_aersimulator.html
-            backend = AerSimulator()
-
-            # See for more pass manager options:
-            # https://quantum.cloud.ibm.com/docs/en/guides/defaults-and-configuration-options
-            pm = generate_preset_pass_manager(backend=backend,
-                                              **estimator_params)
-
-            estimator = Estimator(mode=backend)
-
-            # this will be the same as qc, if backend = AerSimulator()
-            circuit = pm.run(self.ansatz())
-
-        elif simulator_type == SimulatorType.Hardware:
-            backend_params_default = {}
-            backend_params = fill_defaults_in_dict(backend_params, backend_params_default)
-            estimator_params_default = {
-                "seed_transpiler": 42,
-                "optimization_level": 3,
-                "approximation_degree": 1.0
-            }
-            estimator_params = fill_defaults_in_dict(estimator_params, estimator_params_default)
-
-            raise NotImplementedError
-
-        else:
-            raise NotImplementedError
-
-        optimizer_params_default = {
+        optimizer_options_default = {
             "method": 'cobyla',
             "bounds": None,
             "constraints": (),
@@ -157,24 +216,25 @@ class VQE(BaseSolver):
                         "disp": 2},
             "x0Seed": 42,
         }
-        optimizer_params = fill_defaults_in_dict(optimizer_params, optimizer_params_default)
+        optimizer_options = fill_defaults_in_dict(optimizer_options, optimizer_options_default)
 
         local_group.attrs[SimulatorType.__name__] = simulator_type.name
 
-        local_group.create_group(VQEParameters.Backend)
-        for key, value in backend_params.items():
-            local_group[VQEParameters.Backend].attrs[key] = adapt_dtype_for_h5(value)
+        save_dict_as_attribute(local_group,
+                               convert_to_h5_compatible_dict(simulator_options),
+                               VQEParameters.SimulatorOptions)
+        save_dict_as_attribute(local_group,
+                               convert_to_h5_compatible_dict(preset_pass_manager_options),
+                               VQEParameters.PresetPassManagerOptions)
+        save_dict_as_attribute(local_group,
+                               convert_to_h5_compatible_dict(estimator_options),
+                               VQEParameters.EstimatorOptions)
+        save_dict_as_attribute(local_group,
+                               convert_to_h5_compatible_dict(optimizer_options),
+                               VQEParameters.OptimizerOptions)
 
-        local_group.create_group(VQEParameters.Estimator)
-        for key, value in estimator_params.items():
-            local_group[VQEParameters.Estimator].attrs[key] = adapt_dtype_for_h5(value)
-
-        local_group.create_group(VQEParameters.Optimizer)
-        for key, value in optimizer_params.items():
-            local_group[VQEParameters.Optimizer].attrs[key] = adapt_dtype_for_h5(value)
-
-        rng = np.random.default_rng(seed=optimizer_params["x0Seed"])
-        del optimizer_params["x0Seed"]
+        rng = np.random.default_rng(seed=optimizer_options["x0Seed"])
+        del optimizer_options["x0Seed"]
         x0 = 2 * np.pi * rng.random(self.ansatz.num_parameters())
         test_hamiltonian_op = test_hamiltonian_op.apply_layout(layout=circuit.layout)
         test_cost_function = VQECostFunction(circuit, test_hamiltonian_op, estimator, local_group,
