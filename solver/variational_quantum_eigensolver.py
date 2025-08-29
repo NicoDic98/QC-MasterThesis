@@ -120,7 +120,7 @@ class VQE(BaseSolver):
         """
         if simulator_type == SimulatorType.Statevector:
             estimator_options_default = EstimatorOptions()
-            estimator_options_default.default_precision = 0.0
+            # estimator_options_default.default_precision = 0.0
             estimator_options_default.simulator.seed_simulator = 42
 
             preset_pass_manager_options_default = {
@@ -132,17 +132,18 @@ class VQE(BaseSolver):
             if simulator_options:
                 raise UserWarning("Simulator options are ignored when using Statevector estimator")
 
-            preset_pass_manager_options = fill_defaults_in_dict(preset_pass_manager_options,
-                                                                preset_pass_manager_options_default)
+            fill_defaults_in_dict(preset_pass_manager_options, preset_pass_manager_options_default)
 
             if isinstance(estimator_options.default_precision, UnsetType):
-                estimator_options.default_precision = estimator_options_default.default_precision
+                precision = 0.0
+            else:
+                precision = estimator_options.default_precision
             if isinstance(estimator_options.simulator.seed_simulator, UnsetType):
                 estimator_options.simulator.seed_simulator = estimator_options_default.simulator.seed_simulator
 
             pm = generate_preset_pass_manager(**preset_pass_manager_options)
 
-            estimator = StatevectorEstimator(default_precision=estimator_options.default_precision,
+            estimator = StatevectorEstimator(default_precision=precision,
                                              seed=estimator_options.simulator.seed_simulator)
             circuit = pm.run(self.ansatz())
 
@@ -161,11 +162,9 @@ class VQE(BaseSolver):
             estimator_options_default.seed_estimator = 42
             estimator_options_default.simulator.seed_simulator = 42
 
-            simulator_options = fill_defaults_in_dict(simulator_options,
-                                                      simulator_options_defaults)
+            fill_defaults_in_dict(simulator_options,  simulator_options_defaults)
 
-            preset_pass_manager_options = fill_defaults_in_dict(preset_pass_manager_options,
-                                                                preset_pass_manager_options_default)
+            fill_defaults_in_dict(preset_pass_manager_options,  preset_pass_manager_options_default)
 
             if isinstance(estimator_options.seed_estimator, UnsetType):
                 estimator_options.seed_estimator = estimator_options_default.seed_estimator
@@ -194,8 +193,7 @@ class VQE(BaseSolver):
             estimator_options_default.seed_estimator = 42
             estimator_options_default.simulator.seed_simulator = 42
 
-            preset_pass_manager_options = fill_defaults_in_dict(preset_pass_manager_options,
-                                                                preset_pass_manager_options_default)
+            fill_defaults_in_dict(preset_pass_manager_options,  preset_pass_manager_options_default)
 
             if isinstance(estimator_options.seed_estimator, UnsetType):
                 estimator_options.seed_estimator = estimator_options_default.seed_estimator
@@ -246,7 +244,7 @@ class VQE(BaseSolver):
                         "disp": 2},
             "x0Seed": 42,
         }
-        optimizer_options = fill_defaults_in_dict(optimizer_options, optimizer_options_default)
+        fill_defaults_in_dict(optimizer_options, optimizer_options_default)
 
         local_group.attrs[SimulatorType.__name__] = simulator_type.name
 
@@ -268,24 +266,24 @@ class VQE(BaseSolver):
         for key, value in test_pub_result.data.items():
             for i, operator_name_suffix in enumerate(["/hamiltonian"]):
                 h5_saver.create_dataset_with_dim_labels(VQEParameters.DataPrefix + key + operator_name_suffix,
-                                                        (10,), [VQEParameters.IterationAxis],
-                                                        type(value[i]), (None,))
+                                                        [10], [VQEParameters.IterationAxis],
+                                                        type(value[i]), [None])
 
         for key, value in test_pub_result.metadata.items():  # pub specific metadata
             h5_saver.create_dataset_with_dim_labels(VQEParameters.MetaDataPrefix + key,
-                                                    (10,), [VQEParameters.IterationAxis],
-                                                    type(value), (None,))
+                                                    [10], [VQEParameters.IterationAxis],
+                                                    type(value), [None])
 
         for key, value in test_full_result.metadata.items():  # general metadata
             h5_saver.create_dataset_with_dim_labels(VQEParameters.MetaDataPrefix + key,
-                                                    (10,), [VQEParameters.IterationAxis],
-                                                    type(value), (None,))
+                                                    [10], [VQEParameters.IterationAxis],
+                                                    type(value), [None])
 
         h5_saver.create_dataset_with_dim_labels(VQEParameters.CircuitParameters,
-                                                (10, self.ansatz.num_parameters()),
+                                                [10, self.ansatz.num_parameters()],
                                                 [VQEParameters.IterationAxis, VQEParameters.CircuitParameterAxis],
                                                 x0.dtype,
-                                                (None, self.ansatz.num_parameters()))
+                                                [None, self.ansatz.num_parameters()])
 
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
