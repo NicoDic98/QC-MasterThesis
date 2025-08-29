@@ -1,3 +1,4 @@
+import inspect
 from enum import StrEnum
 
 import h5py
@@ -5,12 +6,16 @@ from qiskit import QuantumCircuit
 from qiskit.circuit import Parameter
 from qiskit.circuit.library import n_local, XXPlusYYGate
 
+from h5_interface import save_dict_as_attribute, load_attribute_as_dict
+
 
 class CircuitParameters(StrEnum):
+    Circuit = "Circuit"
     Ansatz = "Ansatz"
-    NumQubits = "NumQubits"
-    NumLayers = "NumLayers"
     NumParameters = "NumParameters"
+    AnsatzOptions = "AnsatzOptions"
+    NumQubits = "num_qubits"
+    NumLayers = "num_layers"
 
 
 class BaseAnsatz:
@@ -27,12 +32,20 @@ class BaseAnsatz:
     def num_parameters(self):
         return self.full_ansatz.num_parameters
 
-    def save_parameters(self, group: h5py.Group):
-        group.attrs[CircuitParameters.Ansatz] = type(self).__name__
-        group.attrs[CircuitParameters.NumQubits] = self.num_qubits
-        group.attrs[CircuitParameters.NumLayers] = self.num_layers
-        group.attrs[CircuitParameters.NumParameters] = self.num_parameters()
+    def circuit_dict(self):
+        ansatz_dict = {
+            CircuitParameters.NumQubits: self.num_qubits,
+            CircuitParameters.NumLayers: self.num_layers,
+        }
+        circuit_dict = {
+            CircuitParameters.Ansatz: type(self).__name__,
+            CircuitParameters.NumParameters: self.num_parameters(),
+            CircuitParameters.AnsatzOptions: ansatz_dict,
+        }
+        return circuit_dict
 
+    def save_parameters(self, group: h5py.Group):
+        save_dict_as_attribute(group, self.circuit_dict(), CircuitParameters.Circuit)
 
 
 class XXPlusYYRZAnsatz1(BaseAnsatz):
@@ -59,5 +72,28 @@ class XXPlusYYRZAnsatz1(BaseAnsatz):
             self.fixed_ansatz.x(i)
         self.full_ansatz = self.fixed_ansatz.compose(self.variational_ansatz)
 
-    def save_parameters(self, group: h5py.Group):
-        super().save_parameters(group)
+    def circuit_dict(self):
+        circuit_dict = super().circuit_dict()
+        ansatz_dict = circuit_dict[CircuitParameters.AnsatzOptions]
+        # Modify ansatz_dict
+        return circuit_dict
+
+
+def inheritors(my_class):
+    subclasses = []
+    to_be_searched = [my_class]
+    while to_be_searched:
+        parent = to_be_searched.pop()
+        for child in parent.__subclasses__():
+            if child not in subclasses:
+                subclasses.append(child)
+                to_be_searched.append(child)
+    return subclasses
+
+
+def rebuild_ansatz(group: h5py.Group):
+    circuit_dict = load_attribute_as_dict(group[CircuitParameters.Circuit])
+    for my_class in inheritors(BaseAnsatz):
+        if my_class.__name__ == circuit_dict[CircuitParameters.Ansatz]:
+            return my_class(**circuit_dict[CircuitParameters.AnsatzOptions])
+    raise NotImplementedError(f"No matching ansatz found, for {circuit_dict[CircuitParameters.Ansatz]}")
