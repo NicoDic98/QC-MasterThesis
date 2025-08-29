@@ -1,0 +1,191 @@
+{
+    "Attributes": {
+        "Ansatz": "XXPlusYYRZAnsatz1",
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-08-29_11-01-27",
+        "NumLayers": "2",
+        "NumParameters": "30",
+        "NumQubits": "8",
+        "ProcessId": "42",
+        "QiskitAerVersion": "0.17.1",
+        "QiskitIBMRuntimeVersion": "0.41.1",
+        "QiskitVersion": "2.1.2",
+        "SimulatorType": "Statevector",
+        "SolverName": "VQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": "2",
+        "n_y": "2",
+        "r": 1.0
+    },
+    "CircuitParameters": {
+        "Attributes": {
+            "DIMENSION_LABELS": "['mass' 'IterationAxis' 'CircuitParameterAxis']",
+            "NDataDims": "2"
+        },
+        "Dataset": "<HDF5 dataset \"CircuitParameters\": shape (25, 240, 30), type \"<f8\">"
+    },
+    "Data": {
+        "Attributes": {},
+        "evs": {
+            "Attributes": {},
+            "hamiltonian": {
+                "Attributes": {
+                    "DIMENSION_LABELS": "['mass' 'IterationAxis']",
+                    "NDataDims": "1"
+                },
+                "Dataset": "<HDF5 dataset \"hamiltonian\": shape (25, 240), type \"<f8\">"
+            }
+        },
+        "stds": {
+            "Attributes": {},
+            "hamiltonian": {
+                "Attributes": {
+                    "DIMENSION_LABELS": "['mass' 'IterationAxis']",
+                    "NDataDims": "1"
+                },
+                "Dataset": "<HDF5 dataset \"hamiltonian\": shape (25, 240), type \"<f8\">"
+            }
+        }
+    },
+    "EstimatorOptions": {
+        "Attributes": {
+            "_VERSION": "2",
+            "default_precision": "Unset",
+            "default_shots": "Unset",
+            "experimental": "Unset",
+            "max_execution_time": "Unset",
+            "resilience_level": "Unset",
+            "seed_estimator": "Unset"
+        },
+        "dynamical_decoupling": {
+            "Attributes": {
+                "enable": "Unset",
+                "extra_slack_distribution": "Unset",
+                "scheduling_method": "Unset",
+                "sequence_type": "Unset",
+                "skip_reset_qubits": "Unset"
+            }
+        },
+        "environment": {
+            "Attributes": {
+                "callback": "None",
+                "job_tags": "None",
+                "log_level": "WARNING",
+                "private": "False"
+            }
+        },
+        "execution": {
+            "Attributes": {
+                "init_qubits": "Unset",
+                "rep_delay": "Unset"
+            }
+        },
+        "resilience": {
+            "Attributes": {
+                "layer_noise_model": "Unset",
+                "measure_mitigation": "Unset",
+                "pec_mitigation": "Unset",
+                "zne_mitigation": "Unset"
+            },
+            "layer_noise_learning": {
+                "Attributes": {
+                    "layer_pair_depths": "Unset",
+                    "max_layers_to_learn": "Unset",
+                    "num_randomizations": "Unset",
+                    "shots_per_randomization": "Unset"
+                }
+            },
+            "measure_noise_learning": {
+                "Attributes": {
+                    "num_randomizations": "Unset",
+                    "shots_per_randomization": "Unset"
+                }
+            },
+            "pec": {
+                "Attributes": {
+                    "max_overhead": "Unset",
+                    "noise_gain": "Unset"
+                }
+            },
+            "zne": {
+                "Attributes": {
+                    "amplifier": "Unset",
+                    "extrapolated_noise_factors": "Unset",
+                    "extrapolator": "Unset",
+                    "noise_factors": "Unset"
+                }
+            }
+        },
+        "simulator": {
+            "Attributes": {
+                "basis_gates": "Unset",
+                "coupling_map": "Unset",
+                "noise_model": "Unset",
+                "seed_simulator": "42"
+            }
+        },
+        "twirling": {
+            "Attributes": {
+                "enable_gates": "Unset",
+                "enable_measure": "Unset",
+                "num_randomizations": "Unset",
+                "shots_per_randomization": "Unset",
+                "strategy": "Unset"
+            }
+        }
+    },
+    "MetaData": {
+        "Attributes": {},
+        "circuit_metadata": {
+            "Attributes": {
+                "DIMENSION_LABELS": "['mass' 'IterationAxis']",
+                "NDataDims": "1"
+            },
+            "Dataset": "<HDF5 dataset \"circuit_metadata\": shape (25, 240), type \"|O\">"
+        },
+        "target_precision": {
+            "Attributes": {
+                "DIMENSION_LABELS": "['mass' 'IterationAxis']",
+                "NDataDims": "1"
+            },
+            "Dataset": "<HDF5 dataset \"target_precision\": shape (25, 240), type \"<f8\">"
+        },
+        "version": {
+            "Attributes": {
+                "DIMENSION_LABELS": "['mass' 'IterationAxis']",
+                "NDataDims": "1"
+            },
+            "Dataset": "<HDF5 dataset \"version\": shape (25, 240), type \"<i8\">"
+        }
+    },
+    "OptimizerOptions": {
+        "Attributes": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": "[]",
+            "method": "cobyla",
+            "tol": "None",
+            "x0Seed": "42"
+        },
+        "options": {
+            "Attributes": {
+                "disp": "2",
+                "maxiter": "1000"
+            }
+        }
+    },
+    "PresetPassManagerOptions": {
+        "Attributes": {
+            "approximation_degree": 1.0,
+            "optimization_level": "3",
+            "seed_transpiler": "42"
+        }
+    },
+    "SimulatorOptions": {
+        "Attributes": {}
+    },
+    "mass": {
+        "Attributes": {},
+        "Dataset": "<HDF5 dataset \"mass\": shape (25,), type \"<f8\">"
+    }
+}

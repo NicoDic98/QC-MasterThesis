@@ -32,6 +32,9 @@ class VQEParameters(StrEnum):
     IterationAxis = "IterationAxis"
     CircuitParameterAxis = "CircuitParameterAxis"
     CircuitParameters = "CircuitParameters"
+    HamiltonianSuffix = "/Hamiltonian"
+    Hamiltonian = f"{DataPrefix}evs{HamiltonianSuffix}"
+    NIterations = "NIterations"
 
 
 class VQECostFunction:
@@ -64,7 +67,7 @@ class VQECostFunction:
         pub_result = full_result[0]
 
         for key, value in pub_result.data.items():
-            for i, operator_name_suffix in enumerate(["/hamiltonian"]):
+            for i, operator_name_suffix in enumerate([VQEParameters.HamiltonianSuffix]):
                 dataset = self.group[VQEParameters.DataPrefix + key + operator_name_suffix]
                 self.update_dataset_size(dataset)
                 if not (h5py.check_string_dtype(dataset.dtype) is None):
@@ -87,6 +90,9 @@ class VQECostFunction:
                 dataset[*self.current_non_singular_index, self.iteration] = str(value)
             else:
                 dataset[*self.current_non_singular_index, self.iteration] = value
+
+        dataset = self.group[VQEParameters.NIterations]
+        dataset[*self.current_non_singular_index] = self.iteration
 
         energy = pub_result.data["evs"][0]
         self.iteration += 1
@@ -162,9 +168,9 @@ class VQE(BaseSolver):
             estimator_options_default.seed_estimator = 42
             estimator_options_default.simulator.seed_simulator = 42
 
-            fill_defaults_in_dict(simulator_options,  simulator_options_defaults)
+            fill_defaults_in_dict(simulator_options, simulator_options_defaults)
 
-            fill_defaults_in_dict(preset_pass_manager_options,  preset_pass_manager_options_default)
+            fill_defaults_in_dict(preset_pass_manager_options, preset_pass_manager_options_default)
 
             if isinstance(estimator_options.seed_estimator, UnsetType):
                 estimator_options.seed_estimator = estimator_options_default.seed_estimator
@@ -193,7 +199,7 @@ class VQE(BaseSolver):
             estimator_options_default.seed_estimator = 42
             estimator_options_default.simulator.seed_simulator = 42
 
-            fill_defaults_in_dict(preset_pass_manager_options,  preset_pass_manager_options_default)
+            fill_defaults_in_dict(preset_pass_manager_options, preset_pass_manager_options_default)
 
             if isinstance(estimator_options.seed_estimator, UnsetType):
                 estimator_options.seed_estimator = estimator_options_default.seed_estimator
@@ -265,7 +271,7 @@ class VQE(BaseSolver):
         test_pub_result = test_full_result[0]
 
         for key, value in test_pub_result.data.items():
-            for i, operator_name_suffix in enumerate(["/hamiltonian"]):
+            for i, operator_name_suffix in enumerate([VQEParameters.HamiltonianSuffix]):
                 h5_saver.create_dataset_with_dim_labels(VQEParameters.DataPrefix + key + operator_name_suffix,
                                                         [10], [VQEParameters.IterationAxis],
                                                         type(value[i]), [None])
@@ -285,6 +291,8 @@ class VQE(BaseSolver):
                                                 [VQEParameters.IterationAxis, VQEParameters.CircuitParameterAxis],
                                                 x0.dtype,
                                                 [None, self.ansatz.num_parameters()])
+
+        h5_saver.create_dataset_with_dim_labels(VQEParameters.NIterations, [], [], int)
 
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)

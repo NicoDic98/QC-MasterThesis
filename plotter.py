@@ -1,14 +1,32 @@
+import json
 from datetime import datetime
 from pathlib import Path
 
 import h5py
+import numpy as np
 from matplotlib import pyplot as plt
 
 from combine_data import combine_data
-from solver.exact_diagonalization import EDParameters
+from solver.base import GlobalParameters
+from solver.exact_diagonalization import EDParameters, ED
 from h5_interface import H5Loader
 from hamiltonian.base import HamiltonianParameters
 from misc import plots_folder, data_folder
+from solver.variational_quantum_eigensolver import VQE, VQEParameters
+
+
+def custom_json(obj):
+    if isinstance(obj, h5py.Group):
+        temp = dict(obj)
+        temp["Attributes"] = dict(obj.attrs)
+        return temp
+    if isinstance(obj, h5py.Dataset):
+        temp = {
+            "Dataset": str(obj),
+            "Attributes": dict(obj.attrs),
+        }
+        return temp
+    return str(obj)
 
 
 def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: str):
@@ -22,21 +40,9 @@ def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: st
     for key, value in parameters.items():
         output_filename = f"{output_filename}_{key}={group[key][value]:.2f}"
 
-    with open(output_filename + ".info", "w") as finfo:
-        # todo: update to use pprint recursion with only group attributes + dataset attributes of the dataset of interest,
-        #  add file argument to pprint
-        # todo: convert to dict and use json dump
-        message = f"{plot_name} for {group.name}:"
-        print(message, file=finfo)
-        print(message)
-        for key, value in group.attrs.items():
-            message = f"\t{key}: {value}"
-            print(message, file=finfo)
-            print(message)
-        for key, value in parameters.items():
-            message = f"\t{key}: {group[key][value]}"
-            print(message, file=finfo)
-            print(message)
+    with open(output_filename + ".json", "w") as finfo:
+        json.dump(group, finfo, sort_keys=True, indent=4, default=custom_json)
+        # todo: update to use pprint recursion with only group attributes + dataset attributes of the dataset of interest
 
     return output_filename + ".png"
 
@@ -57,16 +63,28 @@ def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
     plt.savefig(output_filename)
 
 
-def plot_energies_ed(group: h5py.Group, parameters: dict[str, int], n_plot: int):
-    output_filename = create_filename(group, parameters, "EnergiesED")
-    h5_loader = H5Loader(group, EDParameters.EigenValues)
-    energies, dep = h5_loader.retrieve_dependency(parameters, [HamiltonianParameters.Mass])
-
-    masses = dep[0]
-    energies.sort(-1)
+def plot_energies(group: h5py.Group, parameters: dict[str, int], n_plot: int):
+    solver = group.attrs[GlobalParameters.SolverName]
+    output_filename = create_filename(group, parameters, f"Energies{solver}")
+    if solver == ED.__name__:
+        h5_loader = H5Loader(group, EDParameters.EigenValues)
+        energies, dep = h5_loader.retrieve_dependency(parameters, [HamiltonianParameters.Mass])
+        masses = dep[0]
+        energies.sort(-1)
+        energies = energies[:, :n_plot]
+    elif solver == VQE.__name__:
+        h5_loader = H5Loader(group, VQEParameters.Hamiltonian)
+        energies, dep = h5_loader.retrieve_dependency(parameters, [HamiltonianParameters.Mass])
+        h5_loader = H5Loader(group, VQEParameters.NIterations)
+        n_iterations, dep = h5_loader.retrieve_dependency(parameters, [HamiltonianParameters.Mass])
+        print(n_iterations)
+        masses = dep[0]
+        energies = energies[np.arange(len(masses)), n_iterations]
+    else:
+        raise ValueError(f"Unknown solver {solver}")
 
     fig, ax = plt.subplots()
-    ax.plot(masses, energies[:, :n_plot])
+    ax.plot(masses, energies)
     ax.set(xlabel='Mass', ylabel='Energies')
     ax.set_title("Energies")
     plt.savefig(output_filename)
@@ -79,7 +97,6 @@ with h5py.File(h5_file, "r") as f:
         print(name)
     my_group = f[name]
     my_parameters = {
-        HamiltonianParameters.WilsonParameter: 0
     }
-    plot_energy_gap_ed(my_group, my_parameters)
-    plot_energies_ed(my_group, my_parameters, n_plot=2)
+    # plot_energy_gap_ed(my_group, my_parameters)
+    plot_energies(my_group, my_parameters, n_plot=2)

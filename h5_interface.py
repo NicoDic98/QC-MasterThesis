@@ -118,7 +118,11 @@ class H5Loader:
         selected_indices = []
         mapping = []
         dependencies = [np.array([])] * len(dependency_names)
-        for dim in list(self.dataset.dims)[:-self.dataset.attrs[DatasetParameters.NDataDims]]:
+        if self.dataset.attrs[DatasetParameters.NDataDims]:
+            dataset_dims = list(self.dataset.dims)[:-self.dataset.attrs[DatasetParameters.NDataDims]]
+        else:
+            dataset_dims = list(self.dataset.dims)
+        for dim in dataset_dims:
             if dim.label in parameters.keys():
                 selected_indices.append(parameters[dim.label])
             elif dim.label in dependency_names:
