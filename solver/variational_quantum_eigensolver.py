@@ -28,11 +28,15 @@ class VQEParameters(StrEnum):
     PresetPassManagerOptions = "PresetPassManagerOptions"
     EstimatorOptions = "EstimatorOptions"
     OptimizerOptions = "OptimizerOptions"
+    IterationAxis = "IterationAxis"
+    CircuitParameterAxis = "CircuitParameterAxis"
+    CircuitParameters = "CircuitParameters"
 
 
 class VQECostFunction:
     def __init__(self, ansatz: QuantumCircuit, hamiltonian: SparsePauliOp, estimator: BaseEstimatorV2,
-                 group: h5py.Group, current_non_singular_index: tuple[int]):
+                 group: h5py.Group, current_non_singular_index: tuple[
+                int]):  # todo add functionality to accept arbitrary additional operators
         self.ansatz = ansatz
         self.hamiltonian = hamiltonian
         self.estimator = estimator
@@ -245,17 +249,29 @@ class VQE(BaseSolver):
         test_cost_function = VQECostFunction(circuit, test_hamiltonian_op, estimator, local_group,
                                              h5_saver.non_singular_indices_list[0])
         test_full_result = test_cost_function.evaluate(x0)
-        # todo create resizable datasets for everything inside test_pub_result
-        """
-        todo: save
-        per iteration:
-            circuit parameters
-            pub_result.data["evs"]
-            pub_result.data["stds"]
-            other pub_result.data.items() (in own subgroup)
-            pub_result.metadat.items() and contained in that, circuit_metadata.items() (in own subgroup)
-            check for non standard dtype, which should be saved as str: if not(h5py.check_string_dtype(dataset.dtype) is None):
-        """
+        test_pub_result = test_full_result[0]
+
+        for key, value in test_pub_result.data.items():
+            for i, operator_name_suffix in enumerate(["/hamiltonian"]):
+                h5_saver.create_dataset_with_dim_labels(VQEParameters.DataPrefix + key + operator_name_suffix,
+                                                        (10,), [VQEParameters.IterationAxis],
+                                                        type(value[i]), (None,))
+
+        for key, value in test_pub_result.metadata.items():  # pub specific metadata
+            h5_saver.create_dataset_with_dim_labels(VQEParameters.MetaDataPrefix + key,
+                                                    (10,), [VQEParameters.IterationAxis],
+                                                    type(value), (None,))
+
+        for key, value in test_full_result.metadata.items():  # general metadata
+            h5_saver.create_dataset_with_dim_labels(VQEParameters.MetaDataPrefix + key,
+                                                    (10,), [VQEParameters.IterationAxis],
+                                                    type(value), (None,))
+
+        h5_saver.create_dataset_with_dim_labels(VQEParameters.CircuitParameters,
+                                                (10, self.ansatz.num_parameters()),
+                                                [VQEParameters.IterationAxis, VQEParameters.CircuitParameterAxis],
+                                                x0.dtype,
+                                                (None, self.ansatz.num_parameters()))
         """
         (1,)
         Data:
