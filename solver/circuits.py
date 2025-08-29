@@ -54,8 +54,10 @@ class XXPlusYYRZAnsatz1(BaseAnsatz):
                                    reps=self.num_layers - 1)  # this adds just rotations if layers - 1 = 0
 
         self.variational_ansatz = initial_block.compose(following_blocks)
-        # todo: add initialization for zero charge sector
-        self.full_ansatz = self.variational_ansatz
+        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
+        for i in range(0, self.num_qubits, 2):
+            self.fixed_ansatz.x(i)
+        self.full_ansatz = self.fixed_ansatz.compose(self.variational_ansatz)
 
     def save_parameters(self, group: h5py.Group):
         super().save_parameters(group)
