@@ -234,6 +234,7 @@ class VQE(BaseSolver):
         estimator, circuit = self.setup_estimator(simulator_type, simulator_options,
                                                   preset_pass_manager_options, estimator_options)
 
+        # https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html
         optimizer_options_default = {
             "method": 'cobyla',
             "bounds": None,

@@ -21,13 +21,17 @@ def run_ed(my_f: h5py.File):
                HamiltonianParameters.WilsonParameter: [1., 0.5]},
               HamiltonianType.ZeroChargePenalty)
 
+
 def run_vqe(my_f: h5py.File):
     my_vqe = VQE(FreeWilson2D.build_hamiltonian, my_f, 8, 2)
     my_vqe.run({HamiltonianParameters.XExtend: [2],
-               HamiltonianParameters.YExtend: [2],
-               HamiltonianParameters.Mass: np.linspace(-6, 2, 3).tolist(),
-               HamiltonianParameters.WilsonParameter: [1.]},
-              HamiltonianType.ZeroChargePenalty)
+                HamiltonianParameters.YExtend: [2],
+                HamiltonianParameters.Mass: np.linspace(-6, 2, 25).tolist(),
+                HamiltonianParameters.WilsonParameter: [1.]},
+               HamiltonianType.ZeroChargePenalty,
+               optimizer_options={
+                   "options": {"maxiter": 1000, "disp": 1},
+               })
 
 
 # Define the parser
