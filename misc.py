@@ -1,6 +1,7 @@
 from os import listdir
 from os.path import isfile, join
 from pathlib import Path
+from contextlib import redirect_stdout
 
 import h5py
 
@@ -68,5 +69,7 @@ def pprint_all(summary=False):
 
 
 if __name__ == "__main__":
-    pprint_all()
-    pprint_all(True)
+    with open('log.txt', 'w') as f:
+        with redirect_stdout(f):
+            pprint_all()
+            pprint_all(True)
