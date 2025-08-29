@@ -12,6 +12,7 @@ from qiskit_aer import AerSimulator
 from qiskit_ibm_runtime import EstimatorV2 as Estimator
 from qiskit_ibm_runtime import EstimatorOptions
 from qiskit_ibm_runtime.options.utils import UnsetType
+from scipy.optimize import minimize
 
 from h5_interface import save_dict_as_attribute
 from hamiltonian.base import HamiltonianType
@@ -44,6 +45,10 @@ class VQECostFunction:
         self.current_non_singular_index = current_non_singular_index
         self.iteration = 0
 
+    def update_dataset_size(self, dataset: h5py.Dataset, iteration_index: int = -1):
+        if self.iteration >= dataset.shape[iteration_index]:
+            dataset.resize(self.iteration + 10, len(dataset.shape) + iteration_index)
+
     def evaluate(self, params: np.ndarray) -> PrimitiveResult:
         pub = (self.ansatz, self.hamiltonian, [params])
         # noinspection PyTypeChecker
@@ -51,18 +56,25 @@ class VQECostFunction:
         return job.result()
 
     def __call__(self, params: np.ndarray) -> float:
+        dataset = self.group[VQEParameters.CircuitParameters]
+        self.update_dataset_size(dataset, -2)
+        dataset[*self.current_non_singular_index, self.iteration, :] = params
+
         full_result = self.evaluate(params)
         pub_result = full_result[0]
 
         for key, value in pub_result.data.items():
-            dataset = self.group[VQEParameters.DataPrefix + key]
-            if not (h5py.check_string_dtype(dataset.dtype) is None):
-                dataset[*self.current_non_singular_index, self.iteration] = str(value[0])  # only one pub
-            else:
-                dataset[*self.current_non_singular_index, self.iteration] = value[0]  # only one pub
+            for i, operator_name_suffix in enumerate(["/hamiltonian"]):
+                dataset = self.group[VQEParameters.DataPrefix + key + operator_name_suffix]
+                self.update_dataset_size(dataset)
+                if not (h5py.check_string_dtype(dataset.dtype) is None):
+                    dataset[*self.current_non_singular_index, self.iteration] = str(value[i])  # only one pub
+                else:
+                    dataset[*self.current_non_singular_index, self.iteration] = value[i]  # only one pub
 
         for key, value in pub_result.metadata.items():  # pub specific metadata
             dataset = self.group[VQEParameters.MetaDataPrefix + key]
+            self.update_dataset_size(dataset)
             if not (h5py.check_string_dtype(dataset.dtype) is None):
                 dataset[*self.current_non_singular_index, self.iteration] = str(value)
             else:
@@ -70,12 +82,14 @@ class VQECostFunction:
 
         for key, value in full_result.metadata.items():  # general metadata
             dataset = self.group[VQEParameters.MetaDataPrefix + key]
+            self.update_dataset_size(dataset)
             if not (h5py.check_string_dtype(dataset.dtype) is None):
                 dataset[*self.current_non_singular_index, self.iteration] = str(value)
             else:
                 dataset[*self.current_non_singular_index, self.iteration] = value
 
         energy = pub_result.data["evs"][0]
+        self.iteration += 1
         return energy
 
 
@@ -272,6 +286,15 @@ class VQE(BaseSolver):
                                                 [VQEParameters.IterationAxis, VQEParameters.CircuitParameterAxis],
                                                 x0.dtype,
                                                 (None, self.ansatz.num_parameters()))
+
+        for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
+            hamiltonian = self.hamiltonian_factory(**parameters)
+            print(f"Calculating energies for {hamiltonian}")
+            h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
+            h_operator = h_operator.apply_layout(layout=circuit.layout)
+
+            minimize(fun=VQECostFunction(circuit, h_operator, estimator, local_group, non_singular_index),
+                     x0=x0, **optimizer_options)
         """
         (1,)
         Data:
