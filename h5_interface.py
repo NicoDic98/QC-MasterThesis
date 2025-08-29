@@ -9,7 +9,7 @@ import numpy as np
 def adapt_dtype_for_h5(value):
     if (np.issubdtype(type(value), np.floating) or np.issubdtype(type(value), np.integer)
             or np.issubdtype(type(value), np.complexfloating) or np.issubdtype(type(value), np.bool)
-            or isinstance(value, np.ndarray) or isinstance(value, list) or isinstance(value, tuple)):
+            or isinstance(value, (np.ndarray, list, tuple))):
         return value
     else:
         return str(value)
@@ -23,6 +23,18 @@ def save_dict_as_attribute(group: h5py.Group, my_dict: dict[str, Any], name: str
         else:
             print(f"{key}: {isinstance(value, list)}")
             group[name].attrs[key] = adapt_dtype_for_h5(value)
+
+
+def load_attribute_as_dict(group: h5py.Group, recursive: bool = True) -> dict[str, Any]:
+    ret = {}
+    for key, value in group.attrs.items():
+        ret[key] = value
+        print(type(value))
+    if recursive:
+        for key, value in group.items():
+            if isinstance(value, h5py.Group):
+                ret[key] = load_attribute_as_dict(value)
+    return ret
 
 
 class DatasetParameters(StrEnum):

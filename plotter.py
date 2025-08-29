@@ -9,24 +9,11 @@ from matplotlib import pyplot as plt
 from combine_data import combine_data
 from solver.base import GlobalParameters
 from solver.exact_diagonalization import EDParameters, ED
-from h5_interface import H5Loader
+from h5_interface import H5Loader, load_attribute_as_dict
 from hamiltonian.base import HamiltonianParameters
 from misc import plots_folder, data_folder
 from solver.variational_quantum_eigensolver import VQE, VQEParameters
-
-
-def custom_json(obj):
-    if isinstance(obj, h5py.Group):
-        temp = dict(obj)
-        temp["Attributes"] = dict(obj.attrs)
-        return temp
-    if isinstance(obj, h5py.Dataset):
-        temp = {
-            "Dataset": str(obj),
-            "Attributes": dict(obj.attrs),
-        }
-        return temp
-    return str(obj)
+from numpyencoder import NumpyEncoder
 
 
 def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: str):
@@ -37,13 +24,19 @@ def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: st
     output_filename += "/"
     output_filename += plot_name
 
+    parameter_values = {}
     for key, value in parameters.items():
         output_filename = f"{output_filename}_{key}={group[key][value]:.2f}"
+        parameter_values[key] = group[key][value]
 
+    info_dict = load_attribute_as_dict(group, False)
+    info_dict.update(parameter_values)
+    # info_dict["abc"] = load_attribute_as_dict(group["abc"]) todo update other stuff into this
+    final_info_dict = {
+        group.name: info_dict
+    }
     with open(output_filename + ".json", "w") as finfo:
-        json.dump(group, finfo, sort_keys=True, indent=4, default=custom_json)
-        # todo: update to use pprint recursion with only group attributes + dataset attributes of the dataset of interest
-
+        json.dump(final_info_dict, finfo, sort_keys=True, indent=4, cls=NumpyEncoder)
     return output_filename + ".png"
 
 
