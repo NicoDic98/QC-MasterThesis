@@ -50,10 +50,17 @@ class BaseAnsatz:
 
 class XXPlusYYRZAnsatz1(BaseAnsatz):
     def __init__(self, num_qubits: int, num_layers: int):
+        """
+        Ansatz based on https://dx.doi.org/10.1103/PhysRevD.109.114508
+        Factors of 2 in entangling blocks are there to match the gate definitions in this paper.
+        With this the parameter range yielding unique gates is [0, 2*pi]
+        :param num_qubits:
+        :param num_layers:
+        """
         super().__init__(num_qubits, num_layers)
         initial_block = n_local(num_qubits=self.num_qubits,
                                 rotation_blocks=[],
-                                entanglement_blocks=XXPlusYYGate(Parameter('A'), 0),
+                                entanglement_blocks=XXPlusYYGate(2*Parameter('A'), 0),
                                 entanglement="pairwise",
                                 insert_barriers=True,
                                 skip_final_rotation_layer=True,
@@ -61,7 +68,7 @@ class XXPlusYYRZAnsatz1(BaseAnsatz):
                                 parameter_prefix="phi")
         following_blocks = n_local(num_qubits=self.num_qubits,
                                    rotation_blocks="rz",
-                                   entanglement_blocks=XXPlusYYGate(Parameter('A'), 0),
+                                   entanglement_blocks=XXPlusYYGate(2*Parameter('A'), 0),
                                    entanglement="pairwise",
                                    insert_barriers=True,
                                    reps=self.num_layers - 1)  # this adds just rotations if layers - 1 = 0

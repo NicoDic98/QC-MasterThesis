@@ -37,6 +37,9 @@ def load_attribute_as_dict(group: h5py.Group, recursive: bool = True) -> dict[st
     return ret
 
 
+# todo: method for: load all as dict, use this as a different print option to file, such that subgroups can be folded in
+
+
 class DatasetParameters(StrEnum):
     NDataDims = "NDataDims"
 
