@@ -1,4 +1,3 @@
-import inspect
 from enum import StrEnum
 
 import h5py

@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --partition=intelsr_devel
-#SBATCH --time=0-00:59:00
+#SBATCH --partition=intelsr_short
+#SBATCH --time=0-03:59:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --job-name=MyPyJob

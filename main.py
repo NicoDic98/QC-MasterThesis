@@ -23,14 +23,14 @@ def run_ed(my_f: h5py.File):
 
 
 def run_vqe(my_f: h5py.File):
-    my_vqe = VQE(FreeWilson2D.build_hamiltonian, my_f, 8, 2)
+    my_vqe = VQE(FreeWilson2D.build_hamiltonian, my_f, 8, 4)
     my_vqe.run({HamiltonianParameters.XExtend: [2],
                 HamiltonianParameters.YExtend: [2],
-                HamiltonianParameters.Mass: np.linspace(-6, 2, 25).tolist(),
+                HamiltonianParameters.Mass: np.linspace(-6, 2, 101).tolist(),
                 HamiltonianParameters.WilsonParameter: [1.]},
                HamiltonianType.ZeroChargePenalty,
                optimizer_options={
-                   "options": {"maxiter": 1000, "disp": 1},
+                   "options": {"maxiter": 5000, "disp": 1},
                })
 
 
@@ -41,21 +41,11 @@ args = parser.parse_args()
 
 Path(data_folder).mkdir(parents=True, exist_ok=True)
 
-h5_file_base = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}"
-h5_file = h5_file_base
+h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 
-for my_id in range(100):
-    try:
-        with h5py.File(h5_file + ".hdf5", "a") as f:
-            pprint_h5(f)
-            f.attrs[GlobalParameters.ProcessId] = args.id
-            # run_ed(f)
-            run_vqe(f)
-            pprint_h5(f)
-            break
-    except OSError as e:
-        if "Unable to synchronously" in str(e):
-            h5_file = h5_file_base + f"-{my_id}"
-            print(f"Trying next filename: {h5_file}.hdf5")
-        else:
-            raise e
+with h5py.File(h5_file + ".hdf5", "a") as f:
+    pprint_h5(f)
+    f.attrs[GlobalParameters.ProcessId] = args.id
+    # run_ed(f)
+    run_vqe(f)
+    pprint_h5(f)
