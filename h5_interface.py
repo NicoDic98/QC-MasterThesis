@@ -21,7 +21,6 @@ def save_dict_as_attribute(group: h5py.Group, my_dict: dict[str, Any], name: str
         if isinstance(value, dict):
             save_dict_as_attribute(group[name], value, key)
         else:
-            print(f"{key}: {isinstance(value, list)}")
             group[name].attrs[key] = adapt_dtype_for_h5(value)
 
 
