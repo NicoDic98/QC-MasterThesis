@@ -5,6 +5,8 @@ from typing import Any
 import h5py
 import numpy as np
 
+from labels import VQEParameters
+
 
 def adapt_dtype_for_h5(value):
     if (np.issubdtype(type(value), np.floating) or np.issubdtype(type(value), np.integer)
@@ -28,7 +30,6 @@ def load_attribute_as_dict(group: h5py.Group, recursive: bool = True) -> dict[st
     ret = {}
     for key, value in group.attrs.items():
         ret[key] = value
-        print(type(value))
     if recursive:
         for key, value in group.items():
             if isinstance(value, h5py.Group):
@@ -123,10 +124,12 @@ class H5Loader:
         self.group = group
         self.dataset = group[dataset_name]
 
-    def retrieve_dependency(self, parameters: dict[str, int], dependency_names: list[str]):
+    def retrieve_dependency(self, parameters: dict[str, int], dependency_names: list[str],
+                            final_iteration_value: bool = True):
         """
         :param parameters: A dictionary mapping parameter names to indices in the corresponding list of parameter values
         :param dependency_names: List of dependency names, which should not be fixed to one value
+        :param final_iteration_value: If true, return only the value in the final iteration
         :return: Dataset values, Corresponding dependency values
         """
         selected_indices = []
@@ -145,7 +148,7 @@ class H5Loader:
                         # dependencies[i] = np.array(dim[dim.label])
                         dependencies[i] = np.array(self.group[dim.label])
                         mapping.append(i)
-                        selected_indices.append(slice(len(dependencies[i])))
+                        selected_indices.append(slice(None))
                         break
             else:
                 raise ValueError(f"You needed to specify an index for dimension {dim.label}")
@@ -153,6 +156,30 @@ class H5Loader:
         for dependency_name, dependency in zip(dependency_names, dependencies):
             if len(dependency) == 0:
                 raise ValueError(f"No dimension is labeled as {dependency_name} dimension")
+
+        # If there is an IterationAxis, move it to the front of the NDataDims
+        source = list(range(len(mapping)))
+        has_iteration_axis = False
+        for i, dim in enumerate(list(self.dataset.dims)):
+            if dim.label == VQEParameters.IterationAxis:
+                has_iteration_axis = True
+                source.append(i)
+                mapping.append(len(mapping))
+                break
+
         # This moves the axes in the order in which the dependencies were given
-        values = np.moveaxis(np.array(self.dataset)[*selected_indices], list(range(len(mapping))), mapping)
+        values = np.moveaxis(np.array(self.dataset)[*selected_indices], source, mapping)
+        if final_iteration_value and has_iteration_axis:
+            temp = [*values.shape]
+            temp.pop(mapping[-1])
+            final_shape = (*temp,)
+            flat_shape = (-1, *values.shape[-self.dataset.attrs[DatasetParameters.NDataDims]:]) # is non 0
+            values = values.reshape(flat_shape)
+
+            n_iter_h5_loader = H5Loader(self.group, VQEParameters.NIterations)
+            n_iterations, _ = n_iter_h5_loader.retrieve_dependency(parameters, dependency_names)
+
+            values = values[range(len(values)), n_iterations.flat]
+            values = values.reshape(final_shape)
+
         return values, dependencies

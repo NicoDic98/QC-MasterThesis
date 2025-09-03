@@ -47,7 +47,7 @@ class BaseSolver:
         local_group.attrs[GlobalParameters.ProcessId] = local_group.file.attrs[GlobalParameters.ProcessId]
         local_group.attrs[GlobalParameters.LastModified] = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
         local_group.attrs[HamiltonianType.__name__] = hamiltonian_type.name
-        version_dict ={
+        version_dict = {
             GlobalParameters.QiskitVersion: qiskit.version.get_version_info(),
             GlobalParameters.QiskitIBMRuntimeVersion: qiskit_ibm_runtime.version.get_version_info(),
             GlobalParameters.QiskitAerVersion: qiskit_aer.version.get_version_info(),

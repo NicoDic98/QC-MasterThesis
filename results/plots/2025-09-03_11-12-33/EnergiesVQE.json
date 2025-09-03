@@ -1,0 +1,21 @@
+{
+    "/2025-09-03_11-12-33": {
+        "Circuit": {
+            "Ansatz": "XXPlusYYRZAnsatz1",
+            "AnsatzOptions": {
+                "num_layers": 8,
+                "num_qubits": 8
+            },
+            "NumParameters": 120
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-09-03_11-12-33",
+        "ProcessId": "23114900",
+        "SimulatorType": "Statevector",
+        "SolverName": "VQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
+    }
+}

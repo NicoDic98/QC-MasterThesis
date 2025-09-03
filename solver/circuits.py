@@ -59,7 +59,7 @@ class XXPlusYYRZAnsatz1(BaseAnsatz):
         super().__init__(num_qubits, num_layers)
         initial_block = n_local(num_qubits=self.num_qubits,
                                 rotation_blocks=[],
-                                entanglement_blocks=XXPlusYYGate(2*Parameter('A'), 0),
+                                entanglement_blocks=XXPlusYYGate(2 * Parameter('A'), 0),
                                 entanglement="pairwise",
                                 insert_barriers=True,
                                 skip_final_rotation_layer=True,
@@ -67,7 +67,7 @@ class XXPlusYYRZAnsatz1(BaseAnsatz):
                                 parameter_prefix="phi")
         following_blocks = n_local(num_qubits=self.num_qubits,
                                    rotation_blocks="rz",
-                                   entanglement_blocks=XXPlusYYGate(2*Parameter('A'), 0),
+                                   entanglement_blocks=XXPlusYYGate(2 * Parameter('A'), 0),
                                    entanglement="pairwise",
                                    insert_barriers=True,
                                    reps=self.num_layers - 1)  # this adds just rotations if layers - 1 = 0
@@ -97,7 +97,7 @@ def inheritors(my_class):
     return subclasses
 
 
-def rebuild_ansatz(group: h5py.Group):
+def rebuild_ansatz(group: h5py.Group) -> BaseAnsatz:
     circuit_dict = load_attribute_as_dict(group[CircuitParameters.Circuit])
     for my_class in inheritors(BaseAnsatz):
         if my_class.__name__ == circuit_dict[CircuitParameters.Ansatz]:

@@ -364,6 +364,474 @@
 				QiskitVersion: 2.1.2
 		mass: <HDF5 dataset "mass": shape (101,), type "<f8">
 			Attributes:
+	<ExternalLink to "/2025-09-03_11-10-56" in file "results/data/2025-09-35-23114898.hdf5" :
+	2025-09-03_11-10-56:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-10-56
+			ProcessId: 23114898
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: <HDF5 dataset "CircuitParameters": shape (101, 20000, 60), type "<f8">
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: <HDF5 dataset "Hamiltonian": shape (101, 20000), type "<f8">
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: <HDF5 dataset "Hamiltonian": shape (101, 20000), type "<f8">
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: <HDF5 dataset "circuit_metadata": shape (101, 20000), type "|O">
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: <HDF5 dataset "target_precision": shape (101, 20000), type "<f8">
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: <HDF5 dataset "version": shape (101, 20000), type "<i8">
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: <HDF5 dataset "NIterations": shape (101,), type "<i8">
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: <HDF5 dataset "mass": shape (101,), type "<f8">
+			Attributes:
+	<ExternalLink to "/2025-09-03_11-11-36" in file "results/data/2025-09-35-23114899.hdf5" :
+	2025-09-03_11-11-36:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-11-36
+			ProcessId: 23114899
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 30
+			AnsatzOptions:
+				Attributes:
+					num_layers: 2
+					num_qubits: 8
+		CircuitParameters: <HDF5 dataset "CircuitParameters": shape (101, 20000, 30), type "<f8">
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: <HDF5 dataset "Hamiltonian": shape (101, 20000), type "<f8">
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: <HDF5 dataset "Hamiltonian": shape (101, 20000), type "<f8">
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: <HDF5 dataset "circuit_metadata": shape (101, 20000), type "|O">
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: <HDF5 dataset "target_precision": shape (101, 20000), type "<f8">
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: <HDF5 dataset "version": shape (101, 20000), type "<i8">
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: <HDF5 dataset "NIterations": shape (101,), type "<i8">
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: <HDF5 dataset "mass": shape (101,), type "<f8">
+			Attributes:
+	<ExternalLink to "/2025-09-03_11-12-33" in file "results/data/2025-09-35-23114900.hdf5" :
+	2025-09-03_11-12-33:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-12-33
+			ProcessId: 23114900
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 120
+			AnsatzOptions:
+				Attributes:
+					num_layers: 8
+					num_qubits: 8
+		CircuitParameters: <HDF5 dataset "CircuitParameters": shape (25, 20000, 120), type "<f8">
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: <HDF5 dataset "Hamiltonian": shape (25, 20000), type "<f8">
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: <HDF5 dataset "Hamiltonian": shape (25, 20000), type "<f8">
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: <HDF5 dataset "circuit_metadata": shape (25, 20000), type "|O">
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: <HDF5 dataset "target_precision": shape (25, 20000), type "<f8">
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: <HDF5 dataset "version": shape (25, 20000), type "<i8">
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: <HDF5 dataset "NIterations": shape (25,), type "<i8">
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: <HDF5 dataset "mass": shape (25,), type "<f8">
+			Attributes:
+	<ExternalLink to "/2025-09-03_22-35-17" in file "results/data/2025-09-35-23116296.hdf5" :
+	2025-09-03_22-35-17:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_22-35-17
+			ProcessId: 23116296
+			SolverName: ED
+			SystemName: FreeWilson2D
+			Which: SM
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		EigenValues: <HDF5 dataset "EigenValues": shape (1001, 72), type "<f8">
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		EigenVectors: <HDF5 dataset "EigenVectors": shape (1001, 256, 72), type "<c16">
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenVectorAxis' 'EigenValueAxis']
+				NDataDims: 2
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: <HDF5 dataset "mass": shape (1001,), type "<f8">
+			Attributes:
 -----Ending pprint-----
 -----Beginning pprint-----
 2025-09-35-23114900.hdf5/:
@@ -784,6 +1252,37 @@
 		mass: <HDF5 dataset "mass": shape (1001,), type "<f8">
 			Attributes:
 -----Ending pprint-----
+-----Beginning pprint-----
+2025-09-35-23116296.hdf5/:
+	Attributes:
+		ProcessId: 23116296
+	2025-09-03_22-35-17:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_22-35-17
+			ProcessId: 23116296
+			SolverName: ED
+			SystemName: FreeWilson2D
+			Which: SM
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		EigenValues: <HDF5 dataset "EigenValues": shape (1001, 72), type "<f8">
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		EigenVectors: <HDF5 dataset "EigenVectors": shape (1001, 256, 72), type "<c16">
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenVectorAxis' 'EigenValueAxis']
+				NDataDims: 2
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: <HDF5 dataset "mass": shape (1001,), type "<f8">
+			Attributes:
+-----Ending pprint-----
 -----Beginning summary-----
 2025-09-35-23114898.hdf5/:
 	2025-09-03_11-10-56
@@ -793,6 +1292,10 @@
 	2025-08-25_16-04-39
 2025-09-35.hdf5/:
 	2025-09-02_17-46-07
+	2025-09-03_11-10-56
+	2025-09-03_11-11-36
+	2025-09-03_11-12-33
+	2025-09-03_22-35-17
 2025-09-35-23114900.hdf5/:
 	2025-09-03_11-12-33
 2025-09-35-23114899.hdf5/:
@@ -802,4 +1305,6 @@
 	2025-08-20_20-41-52
 	2025-08-20_20-42-52
 	2025-08-21_13-11-53
+2025-09-35-23116296.hdf5/:
+	2025-09-03_22-35-17
 -----Ending summary-----

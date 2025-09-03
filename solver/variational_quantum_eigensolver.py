@@ -1,5 +1,4 @@
 from dataclasses import asdict
-from enum import StrEnum
 from typing import Callable, Any
 
 import h5py
@@ -9,32 +8,18 @@ from qiskit.primitives import StatevectorEstimator, BaseEstimatorV2, PrimitiveRe
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler import generate_preset_pass_manager
 from qiskit_aer import AerSimulator
-from qiskit_ibm_runtime import EstimatorV2 as Estimator
 from qiskit_ibm_runtime import EstimatorOptions
+from qiskit_ibm_runtime import EstimatorV2 as Estimator
 from qiskit_ibm_runtime.options.utils import UnsetType
 from scipy.optimize import minimize
 
 from h5_interface import save_dict_as_attribute
 from hamiltonian.base import HamiltonianType
 from hamiltonian.free_wilson import BaseHamiltonian
+from labels import VQEParameters
 from misc import fill_defaults_in_dict
 from solver.base import BaseSolver, SimulatorType
 from solver.circuits import XXPlusYYRZAnsatz1
-
-
-class VQEParameters(StrEnum):
-    DataPrefix = "Data/"
-    MetaDataPrefix = "MetaData/"
-    SimulatorOptions = "SimulatorOptions"
-    PresetPassManagerOptions = "PresetPassManagerOptions"
-    EstimatorOptions = "EstimatorOptions"
-    OptimizerOptions = "OptimizerOptions"
-    IterationAxis = "IterationAxis"
-    CircuitParameterAxis = "CircuitParameterAxis"
-    CircuitParameters = "CircuitParameters"
-    HamiltonianSuffix = "/Hamiltonian"
-    Hamiltonian = f"{DataPrefix}evs{HamiltonianSuffix}"
-    NIterations = "NIterations"
 
 
 class VQECostFunction:
