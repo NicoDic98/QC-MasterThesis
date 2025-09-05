@@ -4,6 +4,7 @@ from pathlib import Path
 
 import h5py
 import numpy as np
+from qiskit_ibm_runtime import EstimatorOptions
 
 from solver.exact_diagonalization import ED
 from hamiltonian.free_wilson import FreeWilson2D
@@ -23,15 +24,16 @@ def run_ed(my_f: h5py.File):
 
 
 def run_vqe(my_f: h5py.File):
-    my_vqe = VQE(FreeWilson2D.build_hamiltonian, my_f, 8, 8)
+    my_vqe = VQE(FreeWilson2D.build_hamiltonian, my_f, 8, 4)
     my_vqe.run({HamiltonianParameters.XExtend: [2],
                 HamiltonianParameters.YExtend: [2],
-                HamiltonianParameters.Mass: np.linspace(-6, 2, 25).tolist(),
+                HamiltonianParameters.Mass: np.linspace(-6, 2, 101).tolist(),
                 HamiltonianParameters.WilsonParameter: [1.]},
                HamiltonianType.ZeroChargePenalty,
                optimizer_options={
-                   "options": {"maxiter": 20000, "disp": 1},
-               })
+                   "options": {"maxiter": 20000, "disp": 1, "x0Seed": my_f.attrs[GlobalParameters.ProcessId]},
+               },
+               estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId]))
 
 
 # Define the parser
