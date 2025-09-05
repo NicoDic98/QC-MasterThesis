@@ -4,7 +4,7 @@ from pathlib import Path
 
 import h5py
 import numpy as np
-from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt, cm
 import matplotlib.axes as axes
 
 from combine_data import combine_data
@@ -27,21 +27,8 @@ class ResultLoader:
     def get_observables(self, observable_name: str, parameters: dict[str, int], dependency_names: list[str],
                         final_value: bool = True):
         h5_loader = H5Loader(self.group, observable_name)
-        observables, dep = h5_loader.retrieve_dependency(parameters, dependency_names, final_value)
-        return observables, dep
-
-    def get_energy_mass(self, parameters: dict[str, int]):
-        if self.solver == ED.__name__:
-            energy, dep = self.get_observables(EDParameters.EigenValues, parameters,
-                                               [HamiltonianParameters.Mass])
-            energy.sort(-1)
-            energy = energy[:, :2]
-        elif self.solver == VQE.__name__:
-            energy, dep = self.get_observables(VQEParameters.Hamiltonian, parameters,
-                                               [HamiltonianParameters.Mass])
-        else:
-            raise NotImplementedError
-        return energy, dep[0]
+        observables, dep, dep_dict = h5_loader.retrieve_dependency(parameters, dependency_names, final_value)
+        return observables, dep, dep_dict
 
     def info_dict(self, parameters: dict[str, int]):
         parameter_values = {}
@@ -53,11 +40,73 @@ class ResultLoader:
         if CircuitParameters.Circuit in self.group:
             info_dict[CircuitParameters.Circuit] = load_attribute_as_dict(self.group[CircuitParameters.Circuit])
         if VQEParameters.OptimizerOptions in self.group:
-            info_dict[VQEParameters.OptimizerOptions] = load_attribute_as_dict(self.group[VQEParameters.OptimizerOptions])
+            info_dict[VQEParameters.OptimizerOptions] = load_attribute_as_dict(
+                self.group[VQEParameters.OptimizerOptions])
         return self.group.name, info_dict
 
-def plot_state(ax: axes.Axes):
-    pass
+    def get_energy_mass(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            energy, dep, _ = self.get_observables(EDParameters.EigenValues, parameters,
+                                                  [HamiltonianParameters.Mass])
+            energy.sort(-1)
+            energy = energy[:, :2]
+        elif self.solver == VQE.__name__:
+            energy, dep, _ = self.get_observables(VQEParameters.Hamiltonian, parameters,
+                                                  [HamiltonianParameters.Mass])
+        else:
+            raise NotImplementedError
+        return energy, dep[0]
+
+    def get_ground_state(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            energy, _, energy_dep_dict = self.get_observables(EDParameters.EigenValues, parameters, [])
+            eigen_vect, _, eigen_vect_dep_dict = self.get_observables(EDParameters.EigenVectors, parameters, [])
+            return np.take(eigen_vect,
+                           np.argmin(energy, energy_dep_dict[EDParameters.EigenValueAxis]),
+                           eigen_vect_dep_dict[EDParameters.EigenValueAxis])
+        else:
+            raise NotImplementedError
+
+    def get_excited_state(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            energy, _, energy_dep_dict = self.get_observables(EDParameters.EigenValues, parameters, [])
+            eigen_vect, _, eigen_vect_dep_dict = self.get_observables(EDParameters.EigenVectors, parameters, [])
+            return np.take(eigen_vect,
+                           np.argsort(energy, energy_dep_dict[EDParameters.EigenValueAxis])[1],
+                           eigen_vect_dep_dict[EDParameters.EigenValueAxis])
+        else:
+            raise NotImplementedError
+
+    def plot_ground_state(self, parameters: dict[str, int]):
+        return plot_state(self.get_ground_state(parameters))
+
+    def plot_excited_state(self, parameters: dict[str, int]):
+        return plot_state(self.get_excited_state(parameters))
+
+
+def plot_state(state: np.ndarray):
+    fig, ax = plt.subplots(2, 4)
+    cmap_0 = plt.get_cmap('Reds')
+    cmap_1 = plt.get_cmap('Blues')
+    pie_labels = [np.binary_repr(i, 8) for i in range(len(state))]
+    norm_phase = plt.Normalize(vmin=0, vmax=2*np.pi)
+    for i in range(2):
+        for j in range(4):
+            site = i * 4 + j
+            colors = []
+            for k, bin_rep in enumerate(pie_labels):
+                if bin_rep[site] == "0":
+                    colors.append(cmap_0(norm_phase(np.angle(state[k]))))
+                else:
+                    colors.append(cmap_1(norm_phase(np.angle(state[k]))))
+            ax[i, j].pie(np.abs(state), colors=colors, radius=2)
+    cbar_0 = fig.colorbar(cm.ScalarMappable(norm=norm_phase, cmap=cmap_0), ax=ax,
+                          orientation='horizontal', pad = 0.01)
+    cbar_1 = fig.colorbar(cm.ScalarMappable(norm=norm_phase, cmap=cmap_1), ax=ax,
+                          orientation='horizontal', pad = 0.01)
+    cbar_0.ax.set_ylabel('0', rotation=0)
+    cbar_1.ax.set_ylabel('1', rotation=0)
+    return fig
 
 
 def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: str):
@@ -87,7 +136,7 @@ def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: st
 def plot_energy_gap_ed(group: h5py.Group, parameters: dict[str, int]):
     output_filename = create_filename(group, parameters, "EnergyGapED")
     h5_loader = H5Loader(group, EDParameters.EigenValues)
-    energies, dep = h5_loader.retrieve_dependency(parameters, [HamiltonianParameters.Mass])
+    energies, dep, _ = h5_loader.retrieve_dependency(parameters, [HamiltonianParameters.Mass])
 
     masses = dep[0]
     energies.sort(-1)
@@ -109,6 +158,7 @@ def plot_energies(group: h5py.Group, parameters: dict[str, int], n_plot: int):
     ax.set(xlabel='Mass', ylabel='Energies')
     ax.set_title("Energies")
     plt.savefig(output_filename)
+
 
 if __name__ == "__main__":
     combine_data()

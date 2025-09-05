@@ -162,10 +162,11 @@ class H5Loader:
         has_iteration_axis = False
         for i, dim in enumerate(list(self.dataset.dims)):
             if dim.label == VQEParameters.IterationAxis:
+                if has_iteration_axis:
+                    raise ValueError(f"Iteration axis {dim.label} has already been defined")
                 has_iteration_axis = True
                 source.append(i)
                 mapping.append(len(mapping))
-                break
 
         # This moves the axes in the order in which the dependencies were given
         values = np.moveaxis(np.array(self.dataset)[*selected_indices], source, mapping)
@@ -173,13 +174,25 @@ class H5Loader:
             temp = [*values.shape]
             temp.pop(mapping[-1])
             final_shape = (*temp,)
-            flat_shape = (-1, *values.shape[-self.dataset.attrs[DatasetParameters.NDataDims]:]) # is non 0
+            flat_shape = (-1, *values.shape[-self.dataset.attrs[DatasetParameters.NDataDims]:])  # is non 0
             values = values.reshape(flat_shape)
 
             n_iter_h5_loader = H5Loader(self.group, VQEParameters.NIterations)
-            n_iterations, _ = n_iter_h5_loader.retrieve_dependency(parameters, dependency_names)
+            n_iterations, _, _ = n_iter_h5_loader.retrieve_dependency(parameters, dependency_names)
 
             values = values[range(len(values)), n_iterations.flat]
             values = values.reshape(final_shape)
 
-        return values, dependencies
+        temp = dependency_names.copy()
+        for dim in list(self.dataset.dims)[len(dataset_dims): len(self.dataset.dims)]:
+            if dim.label == VQEParameters.IterationAxis:
+                if not final_iteration_value:
+                    temp.insert(mapping[-1], dim.label)
+            else:
+                temp.append(dim.label)
+
+        dim_labels = {}
+        for i, dep_name in enumerate(temp):
+            dim_labels[dep_name] = i
+
+        return values, dependencies, dim_labels
