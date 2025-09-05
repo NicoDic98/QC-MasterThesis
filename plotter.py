@@ -5,6 +5,7 @@ from pathlib import Path
 import h5py
 import numpy as np
 from matplotlib import pyplot as plt
+import matplotlib.axes as axes
 
 from combine_data import combine_data
 from solver.base import GlobalParameters
@@ -54,6 +55,9 @@ class ResultLoader:
         if VQEParameters.OptimizerOptions in self.group:
             info_dict[VQEParameters.OptimizerOptions] = load_attribute_as_dict(self.group[VQEParameters.OptimizerOptions])
         return self.group.name, info_dict
+
+def plot_state(ax: axes.Axes):
+    pass
 
 
 def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: str):
