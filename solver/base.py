@@ -37,7 +37,8 @@ class BaseSolver:
         self.save_group = save_group
 
     def initialize_run(self, parameters_dict_list: dict[str, list], hamiltonian_type: HamiltonianType):
-        local_group = self.save_group.create_group(datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
+        local_group = self.save_group.create_group(datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+                                                   + f"-{self.save_group.file.attrs[GlobalParameters.ProcessId]}")
         h5_saver = H5Saver(local_group, parameters_dict_list)
 
         test_hamiltonian = self.hamiltonian_factory(**(h5_saver.parameters_list_dict[0]))

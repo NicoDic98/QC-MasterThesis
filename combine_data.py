@@ -4,7 +4,7 @@ from pathlib import Path
 
 import h5py
 
-from misc import data_folder
+from misc import data_folder, pprint_all
 
 
 def combine_data(link=True):
@@ -76,3 +76,4 @@ def combine_data(link=True):
 
 if __name__ == "__main__":
     combine_data(link=False)
+    pprint_all(True)
