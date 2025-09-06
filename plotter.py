@@ -91,11 +91,12 @@ def plot_state(state: np.ndarray):
     cmap_1 = plt.get_cmap('winter')
     pie_labels = [np.binary_repr(i, 8) for i in range(len(state))]
 
-    relevant_labels = [pie_label if amplitudes[index] > 0.6 * max_amplitude else "" for index, pie_label in
+    relevant_labels = [pie_label if amplitudes[index] > 0.1 * max_amplitude else "" for index, pie_label in
                        enumerate(pie_labels)]
     wedge_labels = []
     legend_labels = []
     wedge_number = 1
+    wedge_limit = 20
     for pie_label in relevant_labels:
         if pie_label:
             wedge_labels.append(f"{wedge_number}")
@@ -104,6 +105,8 @@ def plot_state(state: np.ndarray):
             wedge_number += 1
         else:
             wedge_labels.append("")
+    if wedge_number > wedge_limit:
+        wedge_labels = None
 
     norm_phase = plt.Normalize(vmin=0, vmax=2 * np.pi)
     for i in range(2):
@@ -123,8 +126,9 @@ def plot_state(state: np.ndarray):
                           orientation='horizontal', pad=0.01)
     cbar_0.ax.set_ylabel('0', rotation=0)
     cbar_1.ax.set_ylabel('1', rotation=0)
-    fig.legend(title="States", handles=legend_labels)
-    return fig
+    if wedge_number <= wedge_limit:
+        fig.legend(title="States", handles=legend_labels)
+    return fig, relevant_labels
 
 
 def create_filename(group: h5py.Group, parameters: dict[str, int], plot_name: str):
