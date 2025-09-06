@@ -4,19 +4,18 @@ from pathlib import Path
 
 import h5py
 import numpy as np
-from matplotlib import pyplot as plt, cm
-import matplotlib.axes as axes
+from matplotlib import pyplot as plt, cm, lines
+from numpyencoder import NumpyEncoder
 
 from combine_data import combine_data
+from h5_interface import H5Loader, load_attribute_as_dict
+from hamiltonian.base import HamiltonianParameters
+from labels import VQEParameters
+from misc import plots_folder, data_folder
 from solver.base import GlobalParameters
 from solver.circuits import CircuitParameters
 from solver.exact_diagonalization import EDParameters, ED
-from h5_interface import H5Loader, load_attribute_as_dict
-from hamiltonian.base import HamiltonianParameters
-from misc import plots_folder, data_folder
 from solver.variational_quantum_eigensolver import VQE
-from labels import VQEParameters
-from numpyencoder import NumpyEncoder
 
 
 class ResultLoader:
@@ -85,11 +84,28 @@ class ResultLoader:
 
 
 def plot_state(state: np.ndarray):
+    amplitudes = np.abs(state)
+    max_amplitude = np.max(amplitudes)
     fig, ax = plt.subplots(2, 4)
-    cmap_0 = plt.get_cmap('Reds')
-    cmap_1 = plt.get_cmap('Blues')
+    cmap_0 = plt.get_cmap('autumn')
+    cmap_1 = plt.get_cmap('winter')
     pie_labels = [np.binary_repr(i, 8) for i in range(len(state))]
-    norm_phase = plt.Normalize(vmin=0, vmax=2*np.pi)
+
+    relevant_labels = [pie_label if amplitudes[index] > 0.6 * max_amplitude else "" for index, pie_label in
+                       enumerate(pie_labels)]
+    wedge_labels = []
+    legend_labels = []
+    wedge_number = 1
+    for pie_label in relevant_labels:
+        if pie_label:
+            wedge_labels.append(f"{wedge_number}")
+            legend_labels.append(lines.Line2D([], [], ls="", markersize=10, color="black",
+                                              label=pie_label, marker=f"${wedge_number}$"))
+            wedge_number += 1
+        else:
+            wedge_labels.append("")
+
+    norm_phase = plt.Normalize(vmin=0, vmax=2 * np.pi)
     for i in range(2):
         for j in range(4):
             site = i * 4 + j
@@ -99,13 +115,15 @@ def plot_state(state: np.ndarray):
                     colors.append(cmap_0(norm_phase(np.angle(state[k]))))
                 else:
                     colors.append(cmap_1(norm_phase(np.angle(state[k]))))
-            ax[i, j].pie(np.abs(state), colors=colors, radius=2)
+            ax[i, j].pie(amplitudes, colors=colors, radius=2, labels=wedge_labels)
+            wedge_labels = None
     cbar_0 = fig.colorbar(cm.ScalarMappable(norm=norm_phase, cmap=cmap_0), ax=ax,
-                          orientation='horizontal', pad = 0.01)
+                          orientation='horizontal', pad=0.01)
     cbar_1 = fig.colorbar(cm.ScalarMappable(norm=norm_phase, cmap=cmap_1), ax=ax,
-                          orientation='horizontal', pad = 0.01)
+                          orientation='horizontal', pad=0.01)
     cbar_0.ax.set_ylabel('0', rotation=0)
     cbar_1.ax.set_ylabel('1', rotation=0)
+    fig.legend(title="States", handles=legend_labels)
     return fig
 
 
