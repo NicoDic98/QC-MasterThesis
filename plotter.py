@@ -5,7 +5,10 @@ from pathlib import Path
 import h5py
 import numpy as np
 from matplotlib import pyplot as plt, cm, lines
+from matplotlib.animation import FuncAnimation, PillowWriter
 from numpyencoder import NumpyEncoder
+from qiskit import generate_preset_pass_manager
+from qiskit_aer import AerSimulator
 
 from combine_data import combine_data
 from h5_interface import H5Loader, load_attribute_as_dict
@@ -13,15 +16,64 @@ from hamiltonian.base import HamiltonianParameters
 from labels import VQEParameters
 from misc import plots_folder, data_folder
 from solver.base import GlobalParameters
-from solver.circuits import CircuitParameters
+from solver.circuits import CircuitParameters, rebuild_ansatz
 from solver.exact_diagonalization import EDParameters, ED
 from solver.variational_quantum_eigensolver import VQE
+
+
+class Animator:
+    def __init__(self, data: np.ndarray, stepsize: int):
+        fig, ax = plt.subplots(1, 1)
+        self.fig = fig
+        self.ax = ax
+        self.data = data
+        self.stepsize = stepsize
+
+    def __call__(self, i):
+        self.ax.clear()
+
+        point = np.abs(self.data[i])
+
+        self.ax.plot(np.arange(len(point)), point, color='green',
+                     label=f"Iteration {i * self.stepsize}", marker='o')
+        self.ax.set_xlabel("Layer")
+        self.ax.set_ylabel("Fidelity")
+        self.ax.set_xlim((-0.5, 8.5))
+        self.ax.set_ylim((-0.05, 1.05))
+
+        self.ax.legend(loc='upper left')
+
+    def generate_frame_array(self):
+        frames = np.arange(1)
+        start = 1
+        step = 1
+        run = True
+        while run:
+            end = 50 * start
+            if end > len(self.data):
+                end = len(self.data)
+                run = False
+            frames = np.append(frames, np.arange(start, end, step))
+            start = end
+            step *= 10
+        return np.append(frames, [len(self.data) - 1] * int(len(frames) / 20))
+
+    def animate(self, filename: str):
+        frames = self.generate_frame_array()
+        fps = int(len(frames) / 10)
+        ani = FuncAnimation(self.fig, self, frames=frames, interval=200, repeat=False)
+
+        # Save the animation as an animated GIF
+        ani.save(filename, dpi=300, writer=PillowWriter(fps=fps))
 
 
 class ResultLoader:
     def __init__(self, group: h5py.Group):
         self.group = group
         self.solver = group.attrs[GlobalParameters.SolverName]
+
+    def get_parameter_values_from_indices(self, parameters: dict[str, int]) -> dict[str, float]:
+        return {key: self.group[key][value] for key, value in parameters.items()}
 
     def get_observables(self, observable_name: str, parameters: dict[str, int], dependency_names: list[str],
                         final_value: bool = True):
@@ -81,6 +133,60 @@ class ResultLoader:
 
     def plot_excited_state(self, parameters: dict[str, int]):
         return plot_state(self.get_excited_state(parameters))
+
+    def get_overlaps(self, parameters: dict[str, int], reference_state: np.ndarray, every_n_iterations: int = 10):
+        if self.solver == ED.__name__:
+            raise NotImplementedError
+        elif self.solver == VQE.__name__:
+            circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(VQEParameters.CircuitParameters,
+                                                                                      parameters, [], False)
+
+            # Only use relevant parameters
+            n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
+            circuit_parameters = circuit_parameters[:n_iterations:every_n_iterations+1]
+
+            ansatz = rebuild_ansatz(self.group)
+            circuit, num_state_vectors = ansatz.build_full_ansatz_with_save_points()
+            if circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]] != len(
+                    circuit.parameters):
+                raise ValueError("Parameters do not match circuit parameters")
+            parameter_binds = {}
+            for i, p in enumerate(circuit.parameters):
+                parameter_binds[p] = np.take(circuit_parameters, i,
+                                             circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis])
+
+            simulator_options = {
+                "method": "statevector",
+            }
+            backend = AerSimulator(**simulator_options)
+            pm = generate_preset_pass_manager(backend=backend)
+            circuit = pm.run(circuit)
+            result = backend.run(circuit, shots=1, parameter_binds=[parameter_binds]).result()
+
+            over_laps = np.zeros((circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.IterationAxis]],
+                                  num_state_vectors),
+                                 dtype=np.complex128)
+            # reference_state = result.data(0)[f"psi_{4}"].data
+            for it in range(over_laps.shape[0]):
+                for state_vector_index in range(over_laps.shape[1]):
+                    sv = result.data(it)[CircuitParameters.StateVectorBaseName + f"{state_vector_index}"]
+                    over_laps[it, state_vector_index] = np.vdot(sv, reference_state)
+            return over_laps
+        else:
+            raise NotImplementedError
+
+    def save_overlap_evolution(self, parameters: dict[str, int], reference_state: np.ndarray,
+                               base_filename: str,
+                               every_n_iterations: int = 10):
+        sel_values = self.get_parameter_values_from_indices(parameters)
+        info_str = ""
+        for key, value in parameters.items():
+            info_str += f"_{key}_{sel_values[key]:.2f}"
+        print(info_str)
+        overlaps = self.get_overlaps(parameters, reference_state, every_n_iterations)
+        #TODO: Save overlaps to file
+        Animator(overlaps, every_n_iterations).animate(
+            f"{base_filename}fidelity_evolution{info_str}.gif")
 
 
 def plot_state(state: np.ndarray):

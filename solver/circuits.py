@@ -54,7 +54,7 @@ class BaseAnsatz:
         save_dict_as_attribute(group, self.circuit_dict(), CircuitParameters.Circuit)
 
 
-    def build_full_ansatz_with_save_points(self)->QuantumCircuit:
+    def build_full_ansatz_with_save_points(self)-> tuple[QuantumCircuit, int]:
         state_vector_index = 0
         dag = circuit_to_dag(self.full_ansatz)
 
@@ -65,7 +65,7 @@ class BaseAnsatz:
                 state_vector_index += 1
                 dag.substitute_node(node, temp)
 
-        return dag_to_circuit(dag)
+        return dag_to_circuit(dag), state_vector_index
 
 
 class XXPlusYYRZAnsatz1(BaseAnsatz):
