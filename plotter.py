@@ -86,7 +86,7 @@ class ResultLoader:
 def plot_state(state: np.ndarray):
     amplitudes = np.abs(state)
     max_amplitude = np.max(amplitudes)
-    fig, ax = plt.subplots(2, 4)
+    fig, ax = plt.subplots(figsize=(7.5, 10))
     cmap_0 = plt.get_cmap('autumn')
     cmap_1 = plt.get_cmap('winter')
     pie_labels = [np.binary_repr(i, 8) for i in range(len(state))]
@@ -109,6 +109,20 @@ def plot_state(state: np.ndarray):
         wedge_labels = None
 
     norm_phase = plt.Normalize(vmin=0, vmax=2 * np.pi)
+
+    nx, ny = (2, 2)
+    radius = 3
+    x = np.arange(nx) * 10 * radius
+    y = np.arange(ny) * 10 * radius
+    comp_shifts = [-1.5 * radius, 1.5 * radius]
+
+    xv, yv = np.meshgrid(x, y)
+
+    ax.scatter(x=xv, y=yv, s=0)
+    for x_ in x:
+        for y_ in y:
+            circle = plt.Circle((x_, y_), 3 * radius, color='b', fill=False)
+            ax.add_patch(circle)
     for i in range(2):
         for j in range(4):
             site = i * 4 + j
@@ -118,16 +132,29 @@ def plot_state(state: np.ndarray):
                     colors.append(cmap_0(norm_phase(np.angle(state[k]))))
                 else:
                     colors.append(cmap_1(norm_phase(np.angle(state[k]))))
-            ax[i, j].pie(amplitudes, colors=colors, radius=2, labels=wedge_labels)
+
+            center = (float(x[j // 2] + comp_shifts[j % 2]), float(y[i]))
+            print(center)
+            ax.pie(amplitudes, colors=colors, radius=radius, labels=wedge_labels, center=center, labeldistance=1.1,
+                   rotatelabels=True)
             wedge_labels = None
+    _ = ax.xaxis.set_ticks(x)
+    _ = ax.yaxis.set_ticks(y)
+    ax.set_xlim((float(x[0] - 4 * radius), float(x[-1] + 4 * radius)))
+    ax.set_ylim((float(y[0] - 4 * radius), float(y[-1] + 4 * radius)))
+
+    ax.set_frame_on(True)
+    ax.set_aspect(1.0)
+
     cbar_0 = fig.colorbar(cm.ScalarMappable(norm=norm_phase, cmap=cmap_0), ax=ax,
-                          orientation='horizontal', pad=0.01)
+                          orientation='horizontal', pad=0.03)
     cbar_1 = fig.colorbar(cm.ScalarMappable(norm=norm_phase, cmap=cmap_1), ax=ax,
-                          orientation='horizontal', pad=0.01)
+                          orientation='horizontal', pad=0.04)
+    cbar_1.set_ticks([])
     cbar_0.ax.set_ylabel('0', rotation=0)
     cbar_1.ax.set_ylabel('1', rotation=0)
     if wedge_number <= wedge_limit:
-        fig.legend(title="States", handles=legend_labels)
+        fig.legend(loc='outside right', handles=legend_labels, title="States")
     return fig, relevant_labels
 
 
