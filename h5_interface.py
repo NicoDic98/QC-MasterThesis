@@ -160,7 +160,14 @@ class H5Loader:
         # If there is an IterationAxis, move it to the front of the NDataDims
         source = list(range(len(mapping)))
         has_iteration_axis = False
-        for i, dim in enumerate(list(self.dataset.dims)):
+
+        # The following is necessary such that the source entry for the IterationAxis is correct
+        # even when some parameters are fixed
+        if self.dataset.attrs[DatasetParameters.NDataDims]:
+            temp = list(self.dataset.dims)[-self.dataset.attrs[DatasetParameters.NDataDims]:]
+        else:
+            temp = []
+        for i, dim in enumerate(temp):
             if dim.label == VQEParameters.IterationAxis:
                 if has_iteration_axis:
                     raise ValueError(f"Iteration axis {dim.label} has already been defined")
