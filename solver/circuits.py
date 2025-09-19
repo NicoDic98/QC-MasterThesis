@@ -4,6 +4,9 @@ import h5py
 from qiskit import QuantumCircuit
 from qiskit.circuit import Parameter
 from qiskit.circuit.library import n_local, XXPlusYYGate
+from qiskit.converters import circuit_to_dag, dag_to_circuit
+from qiskit.transpiler.passes import RemoveBarriers
+from qiskit_aer.library import SaveStatevector
 
 from h5_interface import save_dict_as_attribute, load_attribute_as_dict
 
@@ -15,18 +18,22 @@ class CircuitParameters(StrEnum):
     AnsatzOptions = "AnsatzOptions"
     NumQubits = "num_qubits"
     NumLayers = "num_layers"
+    StateVectorBaseName = "psi_"
 
 
 class BaseAnsatz:
     def __init__(self, num_qubits: int, num_layers: int):
-        self.num_qubits = num_qubits
+        self.num_qubits = int(num_qubits)
         if num_layers < 1:
             raise ValueError("Number of layers must be positive")
-        self.num_layers = num_layers
+        self.num_layers = int(num_layers)
         self.full_ansatz = QuantumCircuit(self.num_qubits)
 
     def __call__(self):
-        return self.full_ansatz.copy()
+        # Remove barriers here  because otherwise the transpilation might be harmed by to many barriers
+        ret = self.full_ansatz.copy()
+        ret = RemoveBarriers()(ret)
+        return ret
 
     def num_parameters(self):
         return self.full_ansatz.num_parameters
@@ -45,6 +52,20 @@ class BaseAnsatz:
 
     def save_parameters(self, group: h5py.Group):
         save_dict_as_attribute(group, self.circuit_dict(), CircuitParameters.Circuit)
+
+
+    def build_full_ansatz_with_save_points(self)->QuantumCircuit:
+        state_vector_index = 0
+        dag = circuit_to_dag(self.full_ansatz)
+
+        for node in dag.op_nodes():
+            if node.name == "barrier":
+                temp = SaveStatevector(self.num_qubits,
+                                       label=CircuitParameters.StateVectorBaseName + f"{state_vector_index}")
+                state_vector_index += 1
+                dag.substitute_node(node, temp)
+
+        return dag_to_circuit(dag)
 
 
 class XXPlusYYRZAnsatz1(BaseAnsatz):
@@ -73,6 +94,7 @@ class XXPlusYYRZAnsatz1(BaseAnsatz):
                                    reps=self.num_layers - 1)  # this adds just rotations if layers - 1 = 0
 
         self.variational_ansatz = initial_block.compose(following_blocks)
+        self.variational_ansatz.barrier()
         self.fixed_ansatz = QuantumCircuit(self.num_qubits)
         for i in range(0, self.num_qubits, 2):
             self.fixed_ansatz.x(i)
