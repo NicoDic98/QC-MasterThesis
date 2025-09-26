@@ -287,13 +287,3 @@ class VQE(BaseSolver):
 
             minimize(fun=VQECostFunction(circuit, h_operator, estimator, local_group, non_singular_index),
                      x0=x0, **optimizer_options)
-        """
-        (1,)
-        Data:
-        evs [1.90917969]
-        stds [0.08189292]
-        MetaData:
-        target_precision 0.015625
-        shots 4096
-        circuit_metadata {}
-        """
