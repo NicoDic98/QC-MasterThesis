@@ -1,4 +1,5 @@
 from enum import StrEnum
+from typing import Any
 
 import h5py
 from qiskit import QuantumCircuit
@@ -22,11 +23,9 @@ class CircuitParameters(StrEnum):
 
 
 class BaseAnsatz:
-    def __init__(self, num_qubits: int, num_layers: int):
+    def __init__(self, num_qubits: int):
         self.num_qubits = int(num_qubits)
-        if num_layers < 1:
-            raise ValueError("Number of layers must be positive")
-        self.num_layers = int(num_layers)
+        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
         self.full_ansatz = QuantumCircuit(self.num_qubits)
 
     def __call__(self):
@@ -38,14 +37,12 @@ class BaseAnsatz:
     def num_parameters(self):
         return self.full_ansatz.num_parameters
 
-    def circuit_dict(self):
+    def circuit_dict(self) -> dict[str, Any]:
         ansatz_dict = {
             CircuitParameters.NumQubits: self.num_qubits,
-            CircuitParameters.NumLayers: self.num_layers,
         }
         circuit_dict = {
             CircuitParameters.Ansatz: type(self).__name__,
-            CircuitParameters.NumParameters: self.num_parameters(),
             CircuitParameters.AnsatzOptions: ansatz_dict,
         }
         return circuit_dict
@@ -53,8 +50,7 @@ class BaseAnsatz:
     def save_parameters(self, group: h5py.Group):
         save_dict_as_attribute(group, self.circuit_dict(), CircuitParameters.Circuit)
 
-
-    def build_full_ansatz_with_save_points(self)-> tuple[QuantumCircuit, int]:
+    def build_full_ansatz_with_save_points(self) -> tuple[QuantumCircuit, int]:
         state_vector_index = 0
         dag = circuit_to_dag(self.full_ansatz)
 
@@ -68,7 +64,25 @@ class BaseAnsatz:
         return dag_to_circuit(dag), state_vector_index
 
 
-class XXPlusYYRZAnsatz1(BaseAnsatz):
+class BaseVQEAnsatz(BaseAnsatz):
+    def __init__(self, num_qubits: int, num_layers: int):
+        super().__init__(num_qubits)
+        if num_layers < 1:
+            raise ValueError("Number of layers must be positive")
+        self.num_layers = int(num_layers)
+
+    def circuit_dict(self):
+        circuit_dict = super().circuit_dict()
+        # Modify circuit_dict
+        circuit_dict[CircuitParameters.NumParameters] = self.num_parameters()
+
+        ansatz_dict = circuit_dict[CircuitParameters.AnsatzOptions]
+        # Modify ansatz_dict
+        ansatz_dict[CircuitParameters.NumLayers] = self.num_layers
+        return circuit_dict
+
+
+class XXPlusYYRZAnsatz1(BaseVQEAnsatz):
     def __init__(self, num_qubits: int, num_layers: int):
         """
         Ansatz based on https://dx.doi.org/10.1103/PhysRevD.109.114508
@@ -100,11 +114,11 @@ class XXPlusYYRZAnsatz1(BaseAnsatz):
             self.fixed_ansatz.x(i)
         self.full_ansatz = self.fixed_ansatz.compose(self.variational_ansatz)
 
-    def circuit_dict(self):
-        circuit_dict = super().circuit_dict()
-        ansatz_dict = circuit_dict[CircuitParameters.AnsatzOptions]
-        # Modify ansatz_dict
-        return circuit_dict
+
+class BaseADAPTVQEAnsatz(BaseAnsatz):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        self.operator_pool = []
 
 
 def inheritors(my_class):
