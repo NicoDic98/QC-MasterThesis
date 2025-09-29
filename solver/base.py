@@ -281,5 +281,5 @@ class BaseVQE(BaseSolver):
                                                 [10, self.ansatz.num_parameters()],
                                                 [VQEParameters.IterationAxis, VQEParameters.CircuitParameterAxis],
                                                 x0.dtype,
-                                                [None, self.ansatz.num_parameters()])
+                                                [None, self.ansatz.max_num_parameters()])
         return local_group, h5_saver, estimator, pm, x0

@@ -37,6 +37,9 @@ class BaseAnsatz:
     def num_parameters(self):
         return self.full_ansatz.num_parameters
 
+    def max_num_parameters(self):
+        return self.num_parameters()
+
     def circuit_dict(self) -> dict[str, Any]:
         ansatz_dict = {
             CircuitParameters.NumQubits: self.num_qubits,
@@ -70,6 +73,13 @@ class BaseVQEAnsatz(BaseAnsatz):
         if num_layers < 1:
             raise ValueError("Number of layers must be positive")
         self.num_layers = int(num_layers)
+
+    def max_num_parameters(self):
+        """
+        Returns the maximum number of parameters in the ansatz. None means unlimited.
+        :return: maximum number of parameters
+        """
+        return None
 
     def circuit_dict(self):
         circuit_dict = super().circuit_dict()
@@ -119,6 +129,10 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
         self.operator_pool = []
+
+
+class XXPlusYYRZAdaptAnsatz1(BaseADAPTVQEAnsatz):
+    pass
 
 
 def inheritors(my_class):
