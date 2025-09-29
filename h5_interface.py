@@ -74,7 +74,7 @@ class H5Saver:
         self.parameter_dims = [len(parameters_dict_list[key]) for key in self.non_singular_keys]
 
     def create_dataset_with_dim_labels(self, dataset_name: str, shape: list[int], data_dim_names: list[str],
-                                       dtype: Any = np.float64, maxshape: list[int] = None):
+                                       dtype: Any = np.float64, maxshape: list[int|None] = None):
         """
 
         :param dataset_name: Name of the dataset to be created
