@@ -89,5 +89,5 @@ class VQE(BaseVQE):
             h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
             h_operator = h_operator.apply_layout(layout=circuit.layout)
 
-            minimize(fun=VQECostFunction(circuit, h_operator, estimator, local_group, non_singular_index),
+            minimize(fun=self.cost_function(circuit, h_operator, estimator, local_group, non_singular_index),
                      x0=x0, **optimizer_options)
