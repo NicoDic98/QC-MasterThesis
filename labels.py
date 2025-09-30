@@ -14,3 +14,6 @@ class VQEParameters(StrEnum):
     HamiltonianSuffix = "/Hamiltonian"
     Hamiltonian = f"{DataPrefix}evs{HamiltonianSuffix}"
     NIterations = "NIterations"
+    AnsatzOperatorAxis = "AnsatzOperatorAxis"
+    AnsatzOperators = "AnsatzOperators"
+    AdaptOptions = "AdaptOptions"
