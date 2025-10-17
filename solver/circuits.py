@@ -3,7 +3,7 @@ from typing import Any
 
 import h5py
 from qiskit import QuantumCircuit
-from qiskit.circuit import Parameter
+from qiskit.circuit import Parameter, Gate, ParameterVector
 from qiskit.circuit.library import n_local, XXPlusYYGate, RZGate
 from qiskit.converters import circuit_to_dag, dag_to_circuit
 from qiskit.quantum_info import SparsePauliOp
@@ -136,6 +136,7 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
 
 
 class XXPlusYYRZAdaptAnsatz1(BaseADAPTVQEAnsatz):
+    gate_pool: list[Gate]
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
         # self.fixed_ansatz.h(0)
@@ -158,15 +159,15 @@ class XXPlusYYRZAdaptAnsatz1(BaseADAPTVQEAnsatz):
 
         # print(self.operator_pool)
         qc = QuantumCircuit(2)
-        a = Parameter('A')
+        b = Parameter('B')
         qc.z(1)
         qc.s(0)
         qc.h(1)
         qc.h(0)
         qc.s(1)
         qc.cx(0, 1)
-        qc.ry(a, 0)
-        qc.rz(a, 1)
+        qc.ry(b, 0)
+        qc.rz(b, 1)
         qc.cx(0, 1)
         qc.h(0)
         qc.sdg(1)
@@ -178,11 +179,16 @@ class XXPlusYYRZAdaptAnsatz1(BaseADAPTVQEAnsatz):
 
     def set_ansatz(self, operator_indices: list[int]):
         qc = self.fixed_ansatz.copy()
-        for i in operator_indices:
-            if i < self.num_qubits:
-                qc.append(self.gate_pool[0], [i])
+        my_params = ParameterVector("A", len(operator_indices))
+        for i, oi in enumerate(operator_indices):
+            if oi < self.num_qubits:
+                gate = self.gate_pool[0].copy()
+                gate.params[0]=my_params[i]
+                qc.append(gate, [oi])
             else:
-                qc.append(self.gate_pool[1], [(i - self.num_qubits), (i - self.num_qubits) + 1])
+                gate = self.gate_pool[1].copy()
+                gate.params[0] = my_params[i]
+                qc.append(gate, [(oi - self.num_qubits), (oi - self.num_qubits) + 1])
         self.full_ansatz = qc
 
 
