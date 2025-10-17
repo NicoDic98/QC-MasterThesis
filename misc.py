@@ -16,10 +16,8 @@ def fill_defaults_in_dict(my_dict: dict, my_default_dict: dict):
             my_dict[key] = value
 
 
-def print_h5(name, obj: h5py.Group):
-    print(f"{name}:{obj}")
-    for key in obj.attrs.keys():
-        print(f"\t{key}: {obj.attrs[key]}")
+def info_h5_dataset(obj: h5py.Dataset):
+    return f"Dataset (dtype={obj.dtype}, shape={obj.shape}, maxshape={obj.maxshape})"
 
 
 def pprint_h5(obj: h5py.Group, depth: int = 0, basename=""):
@@ -38,7 +36,7 @@ def pprint_h5(obj: h5py.Group, depth: int = 0, basename=""):
         if isinstance(value, h5py.Group):
             pprint_h5(value, depth=depth + 1)
         else:
-            print(prefix + f"\t{key}: {value}")
+            print(prefix + f"\t{key}: {info_h5_dataset(value)}")
             print(prefix + "\t\tAttributes:")
             for attr_key, attr_value in value.attrs.items():
                 print(prefix + f"\t\t\t{attr_key}: {attr_value}")
