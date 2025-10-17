@@ -74,7 +74,7 @@ class H5Saver:
         self.parameter_dims = [len(parameters_dict_list[key]) for key in self.non_singular_keys]
 
     def create_dataset_with_dim_labels(self, dataset_name: str, shape: list[int], data_dim_names: list[str],
-                                       dtype: Any = np.float64, maxshape: list[int|None] = None, fillvalue = None):
+                                       dtype: Any = np.float64, maxshape: list[int | None] = None, fillvalue=None):
         """
 
         :param dataset_name: Name of the dataset to be created
@@ -166,14 +166,16 @@ class H5Loader:
         # even when some parameters are fixed
         if self.dataset.attrs[DatasetParameters.NDataDims]:
             temp = list(self.dataset.dims)[-self.dataset.attrs[DatasetParameters.NDataDims]:]
+            offset = len(list(self.dataset.dims)) - self.dataset.attrs[DatasetParameters.NDataDims]
         else:
             temp = []
+            offset = 0
         for i, dim in enumerate(temp):
             if dim.label == VQEParameters.IterationAxis:
                 if has_iteration_axis:
                     raise ValueError(f"Iteration axis {dim.label} has already been defined")
                 has_iteration_axis = True
-                source.append(i)
+                source.append(i + offset)
                 mapping.append(len(mapping))
 
         # This moves the axes in the order in which the dependencies were given
