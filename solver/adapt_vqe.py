@@ -9,7 +9,7 @@ from scipy.optimize import minimize
 from h5_interface import save_dict_as_attribute
 from hamiltonian.base import HamiltonianType, BaseHamiltonian
 from labels import VQEParameters
-from misc import fill_defaults_in_dict
+from misc import fill_defaults_in_dict, calc_im_part
 from solver.base import SimulatorType, BaseVQE, BaseCostFunction
 from solver.circuits import XXPlusYYRZAdaptAnsatz1, BaseADAPTVQEAnsatz
 
@@ -110,16 +110,14 @@ class AdaptVQE(BaseVQE):
             hamiltonian = self.hamiltonian_factory(**parameters)
             print(f"Calculating energies for {hamiltonian}")
             h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
-            print("h:\n", h_operator)
+            print("h:", calc_im_part(h_operator))
             commutator_list = [(h_operator @ op - op @ h_operator).simplify() for op in self.ansatz.operator_pool]
-            sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
-                                   for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]
-            print("[op]:\n",self.ansatz.operator_pool)
-            print("[,]:\n",commutator_list)
+            # sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
+            #                        for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]
+            # print("[op]:\n",self.ansatz.operator_pool)
+            # print("[,]:\n",commutator_list)
             self.ansatz.set_ansatz([])
             circuit = pm.run(self.ansatz())
-            # self.ansatz().draw("mpl")
-            # plt.show()
             params = x0
             op_index_list = []
             # cost_function_instance = self.cost_function()
@@ -132,15 +130,14 @@ class AdaptVQE(BaseVQE):
                 pub_result = full_result[0]
                 gradients = pub_result.data.evs
                 abs_gradients = np.abs(gradients)
-                print(gradients, type(gradients))
 
-                pub = (circuit, sec_commutator_list, [params])
-                # print(pub)
-                # noinspection PyTypeChecker
-                job = estimator.run(pubs=[pub])
-                full_result = job.result()
-                pub_result = full_result[0]
-                print(pub_result.data.evs)
+                # pub = (circuit, sec_commutator_list, [params])
+                # # print(pub)
+                # # noinspection PyTypeChecker
+                # job = estimator.run(pubs=[pub])
+                # full_result = job.result()
+                # pub_result = full_result[0]
+                # print(pub_result.data.evs)
 
 
                 if abs_gradients.sum() < adapt_options["prec_cutoff"]:
@@ -152,6 +149,8 @@ class AdaptVQE(BaseVQE):
 
                 self.ansatz.set_ansatz(op_index_list)
                 circuit = pm.run(self.ansatz())
+                self.ansatz().draw("mpl")
+                plt.show()
                 h_operator = h_operator.apply_layout(layout=circuit.layout)
                 # cost_function_instance = self.cost_function(circuit, h_operator, estimator, local_group,
                 #                                             non_singular_index)
