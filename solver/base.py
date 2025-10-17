@@ -282,4 +282,6 @@ class BaseVQE(BaseSolver):
                                                 [VQEParameters.IterationAxis, VQEParameters.CircuitParameterAxis],
                                                 x0.dtype,
                                                 [None, self.ansatz.max_num_parameters()])
+
+        h5_saver.create_dataset_with_dim_labels(VQEParameters.NIterations, [], [], int)
         return local_group, h5_saver, estimator, pm, x0

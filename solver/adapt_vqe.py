@@ -92,7 +92,7 @@ class AdaptVQE(BaseVQE):
         fill_defaults_in_dict(adapt_options, adapt_options_default)
         save_dict_as_attribute(local_group, adapt_options, VQEParameters.AdaptOptions)
 
-        h5_saver.create_dataset_with_dim_labels(VQEParameters.NIterations,
+        h5_saver.create_dataset_with_dim_labels(VQEParameters.StartIterations,
                                                 [0],
                                                 [VQEParameters.AnsatzOperatorAxis],
                                                 int,

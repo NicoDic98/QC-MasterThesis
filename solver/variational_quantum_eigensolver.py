@@ -79,8 +79,6 @@ class VQE(BaseVQE):
                                                                        preset_pass_manager_options, estimator_options,
                                                                        optimizer_options)
 
-        h5_saver.create_dataset_with_dim_labels(VQEParameters.NIterations, [], [], int)
-
         circuit = pm.run(self.ansatz())
 
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
