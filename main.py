@@ -6,6 +6,7 @@ import h5py
 import numpy as np
 from qiskit_ibm_runtime import EstimatorOptions
 
+from solver.adapt_vqe import AdaptVQE
 from solver.exact_diagonalization import ED
 from hamiltonian.free_wilson import FreeWilson2D
 from hamiltonian.base import HamiltonianType, HamiltonianParameters
@@ -37,6 +38,21 @@ def run_vqe(my_f: h5py.File):
                estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId]))
 
 
+def run_adapt_vqe(my_f: h5py.File):
+    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, 8, 1)
+    my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
+                      HamiltonianParameters.YExtend: [2],
+                      HamiltonianParameters.Mass: np.linspace(-6, 2, 4).tolist(),
+                      HamiltonianParameters.WilsonParameter: [1.]},
+                     HamiltonianType.ZeroChargePenalty,
+                     # simulator_type=SimulatorType.Aer,
+                     optimizer_options={
+                         "options": {"maxiter": 2000, "disp": 1},
+                         "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
+                     },
+                     estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId]))
+
+
 # Define the parser
 parser = argparse.ArgumentParser(description='Short sample app')
 parser.add_argument('--id', action="store", dest='id', default=default_id, type=int)
@@ -47,8 +63,9 @@ Path(data_folder).mkdir(parents=True, exist_ok=True)
 h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 
 with h5py.File(h5_file + ".hdf5", "a") as f:
-    pprint_h5(f)
+    # pprint_h5(f)
     f.attrs[GlobalParameters.ProcessId] = args.id
     # run_ed(f)
-    run_vqe(f)
-    pprint_h5(f)
+    # run_vqe(f)
+    run_adapt_vqe(f)
+    # pprint_h5(f)

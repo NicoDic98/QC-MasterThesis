@@ -4,8 +4,9 @@ from typing import Any
 import h5py
 from qiskit import QuantumCircuit
 from qiskit.circuit import Parameter
-from qiskit.circuit.library import n_local, XXPlusYYGate
+from qiskit.circuit.library import n_local, XXPlusYYGate, RZGate
 from qiskit.converters import circuit_to_dag, dag_to_circuit
+from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler.passes import RemoveBarriers
 from qiskit_aer.library import SaveStatevector
 
@@ -119,7 +120,6 @@ class XXPlusYYRZAnsatz1(BaseVQEAnsatz):
 
         self.variational_ansatz = initial_block.compose(following_blocks)
         self.variational_ansatz.barrier()
-        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
         for i in range(0, self.num_qubits, 2):
             self.fixed_ansatz.x(i)
         self.full_ansatz = self.fixed_ansatz.compose(self.variational_ansatz)
@@ -129,10 +129,45 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
         self.operator_pool = []
+        self.gate_pool = []
+
+    def set_ansatz(self, operator_indices: list[int]):
+        self.full_ansatz = self.fixed_ansatz.copy()
 
 
 class XXPlusYYRZAdaptAnsatz1(BaseADAPTVQEAnsatz):
-    pass
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        # self.fixed_ansatz.h(0)
+        # self.fixed_ansatz.cx(0,2)
+        # self.fixed_ansatz.s(0)
+        #
+        # self.fixed_ansatz.x(2)
+        for i in range(0, self.num_qubits, 2):
+            self.fixed_ansatz.h(i)
+        for i in range(self.num_qubits):
+            op = SparsePauliOp.from_sparse_list([("Y", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+
+        self.gate_pool.append(RZGate(Parameter('A')))
+
+        for i in range(self.num_qubits - 1):
+            op = SparsePauliOp.from_sparse_list([("XX", [i, i + 1], -0.5j),
+                                                 ("YY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+
+        # print(self.operator_pool)
+
+        self.gate_pool.append(XXPlusYYGate(2 * Parameter('A'), 0))
+
+    def set_ansatz(self, operator_indices: list[int]):
+        qc = self.fixed_ansatz.copy()
+        for i in operator_indices:
+            if i < self.num_qubits:
+                qc.append(self.gate_pool[0], [i])
+            else:
+                qc.append(self.gate_pool[1], [(i - self.num_qubits), (i - self.num_qubits) + 1])
+        self.full_ansatz = qc
 
 
 def inheritors(my_class):
