@@ -1,14 +1,27 @@
+from contextlib import redirect_stdout
 from os import listdir
 from os.path import isfile, join
 from pathlib import Path
-from contextlib import redirect_stdout
 
 import h5py
+from qiskit.quantum_info import SparsePauliOp
 
 data_folder = "results/data/"
 plots_folder = "results/plots/"
 default_id = 42
 
+def calc_im_part(op: SparsePauliOp):
+    im_part = 0
+    for label, coeff in op.to_list():
+        label: str
+        coeff: complex
+        y_count = label.count("Y")
+        if y_count %2 == 0:
+            im_part += coeff.imag
+        else:
+            im_part += coeff.real
+            print("hi")
+    return im_part
 
 def fill_defaults_in_dict(my_dict: dict, my_default_dict: dict):
     for key, value in my_default_dict.items():
