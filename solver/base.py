@@ -90,6 +90,50 @@ class BaseCostFunction:
         job = self.estimator.run(pubs=[pub])
         return job.result()
 
+    def update_dataset_size(self, dataset: h5py.Dataset, iteration_index: int = -1):
+        if self.iteration >= dataset.shape[iteration_index]:
+            dataset.resize(self.iteration + 10, len(dataset.shape) + iteration_index)
+
+    def __call__(self, params: np.ndarray) -> float:
+        dataset = self.group[VQEParameters.CircuitParameters]
+        self.update_dataset_size(dataset, -2)
+        dataset[*self.current_non_singular_index, self.iteration, :len(params)] = params
+
+        full_result = self.evaluate(params)
+        pub_result = full_result[0]
+
+        for key, value in pub_result.data.items():
+            for i, operator_name_suffix in enumerate([VQEParameters.HamiltonianSuffix]):
+                dataset = self.group[VQEParameters.DataPrefix + key + operator_name_suffix]
+                self.update_dataset_size(dataset)
+                if not (h5py.check_string_dtype(dataset.dtype) is None):
+                    dataset[*self.current_non_singular_index, self.iteration] = str(value[i])  # only one pub
+                else:
+                    dataset[*self.current_non_singular_index, self.iteration] = value[i]  # only one pub
+
+        for key, value in pub_result.metadata.items():  # pub specific metadata
+            dataset = self.group[VQEParameters.MetaDataPrefix + key]
+            self.update_dataset_size(dataset)
+            if not (h5py.check_string_dtype(dataset.dtype) is None):
+                dataset[*self.current_non_singular_index, self.iteration] = str(value)
+            else:
+                dataset[*self.current_non_singular_index, self.iteration] = value
+
+        for key, value in full_result.metadata.items():  # general metadata
+            dataset = self.group[VQEParameters.MetaDataPrefix + key]
+            self.update_dataset_size(dataset)
+            if not (h5py.check_string_dtype(dataset.dtype) is None):
+                dataset[*self.current_non_singular_index, self.iteration] = str(value)
+            else:
+                dataset[*self.current_non_singular_index, self.iteration] = value
+
+        dataset = self.group[VQEParameters.NIterations]
+        dataset[*self.current_non_singular_index] = self.iteration
+
+        energy = pub_result.data["evs"][0]
+        self.iteration += 1
+        return energy
+
 
 class BaseVQE(BaseSolver):
     def __init__(self,

@@ -14,50 +14,25 @@ from solver.base import SimulatorType, BaseVQE, BaseCostFunction
 from solver.circuits import XXPlusYYRZAdaptAnsatz1, BaseADAPTVQEAnsatz
 
 
+def update_operator_dataset_size(dataset: h5py.Dataset, num_operators: int, resize_index: int = -1):
+    if num_operators > dataset.shape[resize_index]:
+        dataset.resize(num_operators, len(dataset.shape) + resize_index)
+
+
 class AdaptVQECostFunction(BaseCostFunction):
-    def update_dataset_size(self, dataset: h5py.Dataset, iteration_index: int = -1):
-        if self.iteration >= dataset.shape[iteration_index]:
-            dataset.resize(self.iteration + 10, len(dataset.shape) + iteration_index)
+    def update_ansatz_operators_dataset(self, num_operators: int, op_index_list: list[int]):
+        dataset = self.group[VQEParameters.AnsatzOperators]
+        update_operator_dataset_size(dataset, num_operators)
+        dataset[*self.current_non_singular_index, :num_operators] = op_index_list
 
-    def __call__(self, params: np.ndarray) -> float:
+    def update_start_iterations_dataset(self, num_operators: int):
+        dataset = self.group[VQEParameters.StartIterations]
+        update_operator_dataset_size(dataset, num_operators)
+        dataset[*self.current_non_singular_index, num_operators - 1] = self.iteration
+
+    def update_circuit_parameters_dataset(self, num_operators: int):
         dataset = self.group[VQEParameters.CircuitParameters]
-        self.update_dataset_size(dataset, -2)
-        dataset[*self.current_non_singular_index, self.iteration, :] = params
-
-        full_result = self.evaluate(params)
-        pub_result = full_result[0]
-
-        for key, value in pub_result.data.items():
-            for i, operator_name_suffix in enumerate([VQEParameters.HamiltonianSuffix]):
-                dataset = self.group[VQEParameters.DataPrefix + key + operator_name_suffix]
-                self.update_dataset_size(dataset)
-                if not (h5py.check_string_dtype(dataset.dtype) is None):
-                    dataset[*self.current_non_singular_index, self.iteration] = str(value[i])  # only one pub
-                else:
-                    dataset[*self.current_non_singular_index, self.iteration] = value[i]  # only one pub
-
-        for key, value in pub_result.metadata.items():  # pub specific metadata
-            dataset = self.group[VQEParameters.MetaDataPrefix + key]
-            self.update_dataset_size(dataset)
-            if not (h5py.check_string_dtype(dataset.dtype) is None):
-                dataset[*self.current_non_singular_index, self.iteration] = str(value)
-            else:
-                dataset[*self.current_non_singular_index, self.iteration] = value
-
-        for key, value in full_result.metadata.items():  # general metadata
-            dataset = self.group[VQEParameters.MetaDataPrefix + key]
-            self.update_dataset_size(dataset)
-            if not (h5py.check_string_dtype(dataset.dtype) is None):
-                dataset[*self.current_non_singular_index, self.iteration] = str(value)
-            else:
-                dataset[*self.current_non_singular_index, self.iteration] = value
-
-        dataset = self.group[VQEParameters.NIterations]
-        dataset[*self.current_non_singular_index] = self.iteration
-
-        energy = pub_result.data["evs"][0]
-        self.iteration += 1
-        return energy
+        update_operator_dataset_size(dataset, num_operators)
 
 
 class AdaptVQE(BaseVQE):
@@ -158,7 +133,11 @@ class AdaptVQE(BaseVQE):
                 self.ansatz().draw("mpl")
                 plt.show()
 
+                cost_function_instance.update_ansatz_operators_dataset(len(op_index_list), op_index_list)
+                cost_function_instance.update_start_iterations_dataset(len(op_index_list))
+                cost_function_instance.update_circuit_parameters_dataset(len(op_index_list))
+
                 cost_function_instance.ansatz = circuit
                 cost_function_instance.hamiltonian = h_operator.apply_layout(layout=circuit.layout)
-                optimize_result= minimize(fun=cost_function_instance, x0=params, **optimizer_options)
+                optimize_result = minimize(fun=cost_function_instance, x0=params, **optimizer_options)
                 params = optimize_result.x
