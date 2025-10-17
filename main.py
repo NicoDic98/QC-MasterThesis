@@ -11,7 +11,7 @@ from solver.exact_diagonalization import ED
 from hamiltonian.free_wilson import FreeWilson2D
 from hamiltonian.base import HamiltonianType, HamiltonianParameters
 from misc import pprint_h5, data_folder, default_id
-from solver.base import GlobalParameters
+from solver.base import GlobalParameters, SimulatorType
 from solver.variational_quantum_eigensolver import VQE
 
 
@@ -39,7 +39,7 @@ def run_vqe(my_f: h5py.File):
 
 
 def run_adapt_vqe(my_f: h5py.File):
-    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, 8, 1)
+    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, 8, 20)
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
                       HamiltonianParameters.Mass: np.linspace(-6, 2, 4).tolist(),

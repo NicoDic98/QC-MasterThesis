@@ -87,7 +87,7 @@ class AdaptVQE(BaseVQE):
         if adapt_options is None:
             adapt_options = {}
         adapt_options_default = {
-            "prec_cutoff": 1e-6
+            "prec_cutoff": 1e-3
         }
         fill_defaults_in_dict(adapt_options, adapt_options_default)
         save_dict_as_attribute(local_group, adapt_options, VQEParameters.AdaptOptions)
@@ -116,14 +116,15 @@ class AdaptVQE(BaseVQE):
             #                        for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]
             # print("[op]:\n",self.ansatz.operator_pool)
             # print("[,]:\n",commutator_list)
+
             self.ansatz.set_ansatz([])
             circuit = pm.run(self.ansatz())
             params = x0
             op_index_list = []
-            # cost_function_instance = self.cost_function()
+            cost_function_instance = self.cost_function(circuit, h_operator.apply_layout(circuit.layout),
+                                                        estimator, local_group, non_singular_index)
             for i in range(self.max_depth):
-                pub = (circuit, commutator_list, [params])
-                # print(pub)
+                pub = (circuit, [op.apply_layout(circuit.layout) for op in commutator_list], [params])
                 # noinspection PyTypeChecker
                 job = estimator.run(pubs=[pub])
                 full_result = job.result()
@@ -139,19 +140,25 @@ class AdaptVQE(BaseVQE):
                 # pub_result = full_result[0]
                 # print(pub_result.data.evs)
 
-
                 if abs_gradients.sum() < adapt_options["prec_cutoff"]:
+                    print("Precision cutoff reached.")
                     break
 
-                op_index_list.append(np.argmax(abs_gradients))
+                new_op_index = np.argmax(abs_gradients)
+                if len(op_index_list):
+                    if new_op_index == op_index_list[-1]:
+                        print("Adding the same operator twice is not sensible, terminating.")
+                        break
+                op_index_list.append(new_op_index)
                 params = np.append(params, 0)
-                print(op_index_list)
+                print(abs_gradients.sum(), op_index_list)
 
                 self.ansatz.set_ansatz(op_index_list)
                 circuit = pm.run(self.ansatz())
                 self.ansatz().draw("mpl")
                 plt.show()
-                h_operator = h_operator.apply_layout(layout=circuit.layout)
-                # cost_function_instance = self.cost_function(circuit, h_operator, estimator, local_group,
-                #                                             non_singular_index)
-                # minimize(fun=cost_function_instance, x0=params, **optimizer_options)
+
+                cost_function_instance.ansatz = circuit
+                cost_function_instance.hamiltonian = h_operator.apply_layout(layout=circuit.layout)
+                optimize_result= minimize(fun=cost_function_instance, x0=params, **optimizer_options)
+                params = optimize_result.x
