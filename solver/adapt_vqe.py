@@ -96,24 +96,26 @@ class AdaptVQE(BaseVQE):
                                                 [0],
                                                 [VQEParameters.AnsatzOperatorAxis],
                                                 int,
-                                                [None], )
+                                                [None],
+                                                -1)
 
         h5_saver.create_dataset_with_dim_labels(VQEParameters.AnsatzOperators,
                                                 [0],
                                                 [VQEParameters.AnsatzOperatorAxis],
                                                 int,
-                                                [None])
+                                                [None],
+                                                -1)
 
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
             print(f"Calculating energies for {hamiltonian}")
             h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
-            # print("h:\n", h_operator)
+            print("h:\n", h_operator)
             commutator_list = [(h_operator @ op - op @ h_operator).simplify() for op in self.ansatz.operator_pool]
             sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
                                    for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]
-            # print("[op]:\n",self.ansatz.operator_pool)
-            # print("[,]:\n",commutator_list)
+            print("[op]:\n",self.ansatz.operator_pool)
+            print("[,]:\n",commutator_list)
             self.ansatz.set_ansatz([])
             circuit = pm.run(self.ansatz())
             # self.ansatz().draw("mpl")
