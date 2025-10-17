@@ -75,13 +75,6 @@ class BaseVQEAnsatz(BaseAnsatz):
             raise ValueError("Number of layers must be positive")
         self.num_layers = int(num_layers)
 
-    def max_num_parameters(self):
-        """
-        Returns the maximum number of parameters in the ansatz. None means unlimited.
-        :return: maximum number of parameters
-        """
-        return None
-
     def circuit_dict(self):
         circuit_dict = super().circuit_dict()
         # Modify circuit_dict
@@ -130,6 +123,13 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         super().__init__(num_qubits)
         self.operator_pool = []
         self.gate_pool = []
+
+    def max_num_parameters(self):
+        """
+        Returns the maximum number of parameters in the ansatz. None means unlimited.
+        :return: maximum number of parameters
+        """
+        return None
 
     def set_ansatz(self, operator_indices: list[int]):
         self.full_ansatz = self.fixed_ansatz.copy()
