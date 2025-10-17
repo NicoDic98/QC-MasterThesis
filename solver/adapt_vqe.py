@@ -115,23 +115,22 @@ class AdaptVQE(BaseVQE):
                 # pub_result = full_result[0]
                 # print(pub_result.data.evs)
 
+                print(f"Current grad: {abs_gradients.sum()}")
                 if abs_gradients.sum() < adapt_options["prec_cutoff"]:
                     print("Precision cutoff reached.")
                     break
 
                 new_op_index = np.argmax(abs_gradients)
+                print(f"New op index: {new_op_index}")
                 if len(op_index_list):
                     if new_op_index == op_index_list[-1]:
                         print("Adding the same operator twice is not sensible, terminating.")
                         break
                 op_index_list.append(new_op_index)
                 params = np.append(params, 0)
-                print(abs_gradients.sum(), op_index_list)
 
                 self.ansatz.set_ansatz(op_index_list)
                 circuit = pm.run(self.ansatz())
-                self.ansatz().draw("mpl")
-                plt.show()
 
                 cost_function_instance.update_ansatz_operators_dataset(len(op_index_list), op_index_list)
                 cost_function_instance.update_start_iterations_dataset(len(op_index_list))
@@ -141,3 +140,5 @@ class AdaptVQE(BaseVQE):
                 cost_function_instance.hamiltonian = h_operator.apply_layout(layout=circuit.layout)
                 optimize_result = minimize(fun=cost_function_instance, x0=params, **optimizer_options)
                 params = optimize_result.x
+            self.ansatz().draw("mpl")
+            plt.show()
