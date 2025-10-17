@@ -15,8 +15,9 @@ from h5_interface import H5Loader, load_attribute_as_dict
 from hamiltonian.base import HamiltonianParameters
 from labels import VQEParameters
 from misc import plots_folder, data_folder
+from solver.adapt_vqe import AdaptVQE
 from solver.base import GlobalParameters
-from solver.circuits import CircuitParameters, rebuild_ansatz
+from solver.circuits import CircuitParameters, rebuild_ansatz, BaseVQEAnsatz, BaseADAPTVQEAnsatz
 from solver.exact_diagonalization import EDParameters, ED
 from solver.variational_quantum_eigensolver import VQE
 
@@ -104,9 +105,30 @@ class ResultLoader:
         elif self.solver == VQE.__name__:
             energy, dep, _ = self.get_observables(VQEParameters.Hamiltonian, parameters,
                                                   [HamiltonianParameters.Mass])
+        elif self.solver == AdaptVQE.__name__:
+            energy, dep, _ = self.get_observables(VQEParameters.Hamiltonian, parameters,
+                                                  [HamiltonianParameters.Mass])
         else:
             raise NotImplementedError
         return energy, dep[0]
+
+    def get_circuit(self, parameters: dict[str, int]):
+        if self.solver == VQE.__name__:
+            ansatz: BaseVQEAnsatz
+            ansatz = rebuild_ansatz(self.group)
+            circuit = ansatz.full_ansatz
+        elif self.solver == AdaptVQE.__name__:
+            ansatz = rebuild_ansatz(self.group)
+            ansatz: BaseADAPTVQEAnsatz
+            operator_indices, _, dep_dict = self.get_observables(VQEParameters.AnsatzOperators, parameters,
+                                                                 [])
+            operator_indices = [idx for idx in operator_indices if idx >= 0]
+            print(operator_indices, dep_dict)
+            ansatz.set_ansatz(operator_indices)
+            circuit = ansatz.full_ansatz
+        else:
+            raise NotImplementedError
+        return circuit
 
     def get_ground_state(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
@@ -143,7 +165,7 @@ class ResultLoader:
 
             # Only use relevant parameters
             n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
-            circuit_parameters = circuit_parameters[:n_iterations:every_n_iterations+1]
+            circuit_parameters = circuit_parameters[:n_iterations:every_n_iterations + 1]
 
             ansatz = rebuild_ansatz(self.group)
             circuit, num_state_vectors = ansatz.build_full_ansatz_with_save_points()
@@ -184,7 +206,7 @@ class ResultLoader:
             info_str += f"_{key}_{sel_values[key]:.2f}"
         print(info_str)
         overlaps = self.get_overlaps(parameters, reference_state, every_n_iterations)
-        #TODO: Save overlaps to file
+        # TODO: Save overlaps to file
         Animator(overlaps, every_n_iterations).animate(
             f"{base_filename}fidelity_evolution{info_str}.gif")
 
