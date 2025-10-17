@@ -152,13 +152,29 @@ class XXPlusYYRZAdaptAnsatz1(BaseADAPTVQEAnsatz):
         self.gate_pool.append(RZGate(Parameter('A')))
 
         for i in range(self.num_qubits - 1):
-            op = SparsePauliOp.from_sparse_list([("XX", [i, i + 1], -0.5j),
-                                                 ("YY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
+            op = SparsePauliOp.from_sparse_list([("YX", [i, i + 1], -0.5j),
+                                                 ("XY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
             self.operator_pool.append(op)
 
         # print(self.operator_pool)
+        qc = QuantumCircuit(2)
+        a = Parameter('A')
+        qc.z(1)
+        qc.s(0)
+        qc.h(1)
+        qc.h(0)
+        qc.s(1)
+        qc.cx(0, 1)
+        qc.ry(a, 0)
+        qc.rz(a, 1)
+        qc.cx(0, 1)
+        qc.h(0)
+        qc.sdg(1)
+        qc.sdg(0)
+        qc.h(1)
+        qc.z(1)
 
-        self.gate_pool.append(XXPlusYYGate(2 * Parameter('A'), 0))
+        self.gate_pool.append(qc.to_gate())
 
     def set_ansatz(self, operator_indices: list[int]):
         qc = self.fixed_ansatz.copy()
