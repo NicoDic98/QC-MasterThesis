@@ -219,7 +219,7 @@ def inheritors(my_class):
     return subclasses
 
 
-def rebuild_ansatz(group: h5py.Group) -> BaseAnsatz|Any:
+def rebuild_ansatz(group: h5py.Group) -> BaseAnsatz|BaseVQEAnsatz|BaseADAPTVQEAnsatz:
     circuit_dict = load_attribute_as_dict(group[CircuitParameters.Circuit])
     for my_class in inheritors(BaseAnsatz):
         if my_class.__name__ == circuit_dict[CircuitParameters.Ansatz]:
