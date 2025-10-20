@@ -166,7 +166,7 @@ class H5Loader:
         # even when some parameters are fixed
         if self.dataset.attrs[DatasetParameters.NDataDims]:
             temp = list(self.dataset.dims)[-self.dataset.attrs[DatasetParameters.NDataDims]:]
-            offset = len(list(self.dataset.dims)) - self.dataset.attrs[DatasetParameters.NDataDims]
+            offset = len(list(self.dataset.dims)) - self.dataset.attrs[DatasetParameters.NDataDims] - len(parameters)
         else:
             temp = []
             offset = 0
@@ -190,7 +190,12 @@ class H5Loader:
             n_iter_h5_loader = H5Loader(self.group, VQEParameters.NIterations)
             n_iterations, _, _ = n_iter_h5_loader.retrieve_dependency(parameters, dependency_names)
 
-            values = values[range(len(values)), n_iterations.flat]
+            if list(values.shape)[0] == 1:
+                values = values.reshape(flat_shape[1:])
+                values = values[n_iterations.flat]
+            else:
+                values = values[range(len(values)), n_iterations.flat]
+
             values = values.reshape(final_shape)
 
         temp = dependency_names.copy()
