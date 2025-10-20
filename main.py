@@ -39,7 +39,7 @@ def run_vqe(my_f: h5py.File):
 
 
 def run_adapt_vqe(my_f: h5py.File):
-    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, 8, 20)
+    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, 8, 40)
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
                       HamiltonianParameters.Mass: np.linspace(-6, 2, 4).tolist(),
@@ -47,7 +47,7 @@ def run_adapt_vqe(my_f: h5py.File):
                      HamiltonianType.ZeroChargePenalty,
                      # simulator_type=SimulatorType.Aer,
                      optimizer_options={
-                         "options": {"maxiter": 5000, "disp": 1},
+                         "options": {"maxiter": 20000, "disp": 1},
                          "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                      },
                      estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId]))
@@ -63,9 +63,9 @@ Path(data_folder).mkdir(parents=True, exist_ok=True)
 h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 
 with h5py.File(h5_file + ".hdf5", "a") as f:
-    # pprint_h5(f)
+    pprint_h5(f)
     f.attrs[GlobalParameters.ProcessId] = args.id
     # run_ed(f)
     # run_vqe(f)
     run_adapt_vqe(f)
-    # pprint_h5(f)
+    pprint_h5(f)
