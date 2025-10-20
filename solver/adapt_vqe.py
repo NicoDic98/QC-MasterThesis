@@ -11,7 +11,7 @@ from hamiltonian.base import HamiltonianType, BaseHamiltonian
 from labels import VQEParameters
 from misc import fill_defaults_in_dict, calc_im_part
 from solver.base import SimulatorType, BaseVQE, BaseCostFunction
-from solver.circuits import XXPlusYYRZAdaptAnsatz1, BaseADAPTVQEAnsatz
+from solver.circuits import YXPlusXYRYAdaptAnsatz1, BaseADAPTVQEAnsatz
 
 
 def update_operator_dataset_size(dataset: h5py.Dataset, num_operators: int, resize_index: int = -1):
@@ -44,7 +44,7 @@ class AdaptVQE(BaseVQE):
                  num_qubits: int,
                  max_depth: int):
         super().__init__(hamiltonian_factory, save_group,
-                         XXPlusYYRZAdaptAnsatz1(num_qubits))
+                         YXPlusXYRYAdaptAnsatz1(num_qubits))
         self.cost_function = AdaptVQECostFunction
         self.max_depth = max_depth
 
@@ -87,8 +87,8 @@ class AdaptVQE(BaseVQE):
             h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
             print("h:", calc_im_part(h_operator))
             commutator_list = [(h_operator @ op - op @ h_operator).simplify() for op in self.ansatz.operator_pool]
-            # sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
-            #                        for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]
+            sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
+                                   for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]
             # print("[op]:\n",self.ansatz.operator_pool)
             # print("[,]:\n",commutator_list)
 
@@ -106,28 +106,37 @@ class AdaptVQE(BaseVQE):
                 pub_result = full_result[0]
                 gradients = pub_result.data.evs
                 abs_gradients = np.abs(gradients)
-
-                # pub = (circuit, sec_commutator_list, [params])
-                # # print(pub)
-                # # noinspection PyTypeChecker
-                # job = estimator.run(pubs=[pub])
-                # full_result = job.result()
-                # pub_result = full_result[0]
-                # print(pub_result.data.evs)
-
-                print(f"Current grad: {abs_gradients.sum()}")
-                if abs_gradients.sum() < adapt_options["prec_cutoff"]:
-                    print("Precision cutoff reached.")
-                    break
-
                 new_op_index = np.argmax(abs_gradients)
                 print(f"New op index: {new_op_index}")
-                if len(op_index_list):
+                print(f"Current grad: {abs_gradients.sum()}")
+                initial_parameter_value = 0
+                if i == 0:
+                    pub = (circuit, sec_commutator_list, [params])
+                    # noinspection PyTypeChecker
+                    job = estimator.run(pubs=[pub])
+                    full_result = job.result()
+                    pub_result = full_result[0]
+                    second_gradients = pub_result.data.evs
+                    for op_id, (grad, secgrad) in enumerate(zip(gradients, second_gradients)):
+                        print(f"{op_id}:\t{grad:.2e}\t{secgrad:.2e}")
+                    if abs_gradients.sum() < adapt_options["prec_cutoff"]:
+                        for op_id, secgrad in enumerate(second_gradients):
+                            if np.abs(secgrad) < adapt_options["prec_cutoff"]:
+                                new_op_index = op_id
+                                initial_parameter_value = np.pi
+                                print(f"Selecting saddle point: {new_op_index} with second gradient of {secgrad}")
+                                break
+                else:
+
+                    if abs_gradients.sum() < adapt_options["prec_cutoff"]:
+                        print("Precision cutoff reached.")
+                        break
                     if new_op_index == op_index_list[-1]:
                         print("Adding the same operator twice is not sensible, terminating.")
                         break
+
                 op_index_list.append(new_op_index)
-                params = np.append(params, 0)
+                params = np.append(params, initial_parameter_value)
 
                 self.ansatz.set_ansatz(op_index_list)
                 circuit = pm.run(self.ansatz())
