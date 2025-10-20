@@ -131,14 +131,14 @@ class AdaptVQE(BaseVQE):
                     if abs_gradients.sum() < adapt_options["prec_cutoff"]:
                         print("Precision cutoff reached.")
                         break
-                    if new_op_index == op_index_list[-1]:
-                        print("Adding the same operator twice is not sensible, terminating.")
-                        break
 
                 op_index_list.append(new_op_index)
                 params = np.append(params, initial_parameter_value)
 
-                self.ansatz.set_ansatz(op_index_list)
+
+                if self.ansatz.set_ansatz(op_index_list):
+                    print("Adding the same operator twice is not sensible, terminating.")
+                    break
                 circuit = pm.run(self.ansatz())
 
                 cost_function_instance.update_ansatz_operators_dataset(len(op_index_list), op_index_list)

@@ -47,7 +47,7 @@ def run_adapt_vqe(my_f: h5py.File):
                      HamiltonianType.ZeroChargePenalty,
                      # simulator_type=SimulatorType.Aer,
                      optimizer_options={
-                         "options": {"maxiter": 20000, "disp": 1},
+                         "options": {"maxiter": 20000, "disp": 2},
                          "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                      },
                      estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId]))
