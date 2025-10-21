@@ -131,7 +131,7 @@ class H5Loader:
         :param parameters: A dictionary mapping parameter names to indices in the corresponding list of parameter values
         :param dependency_names: List of dependency names, which should not be fixed to one value
         :param final_iteration_value: If true, return only the value in the final iteration
-        :return: Dataset values, Corresponding dependency values
+        :return: Dataset values, Corresponding dependency values, Dependency dictionary {Name: Axis}
         """
         selected_indices = []
         mapping = []

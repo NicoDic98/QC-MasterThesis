@@ -78,6 +78,13 @@ class ResultLoader:
 
     def get_observables(self, observable_name: str, parameters: dict[str, int], dependency_names: list[str],
                         final_value: bool = True):
+        """
+        :param observable_name: Observable name
+        :param parameters: A dictionary mapping parameter names to indices in the corresponding list of parameter values
+        :param dependency_names: List of dependency names, which should not be fixed to one value
+        :param final_value: If true, return only the value in the final iteration
+        :return: Dataset values, Corresponding dependency values, Dependency dictionary {Name: Axis}
+        """
         h5_loader = H5Loader(self.group, observable_name)
         observables, dep, dep_dict = h5_loader.retrieve_dependency(parameters, dependency_names, final_value)
         return observables, dep, dep_dict
@@ -122,7 +129,7 @@ class ResultLoader:
         elif self.solver == AdaptVQE.__name__:
             ansatz = rebuild_ansatz(self.group)
             ansatz: BaseADAPTVQEAnsatz
-            operator_indices, _, dep_dict = self.get_observables(VQEParameters.AnsatzOperators, parameters,
+            operator_indices, _, _ = self.get_observables(VQEParameters.AnsatzOperators, parameters,
                                                                  [])
             operator_indices = [idx for idx in operator_indices if idx >= 0]
             ansatz.set_ansatz(operator_indices)
