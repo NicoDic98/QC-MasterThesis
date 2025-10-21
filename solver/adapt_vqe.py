@@ -99,7 +99,8 @@ class AdaptVQE(BaseVQE):
             print(f"Calculating energies for {hamiltonian}")
             h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
             print("h:", calc_im_part(h_operator))
-            commutator_list = [(h_operator @ op - op @ h_operator).simplify() for op in self.ansatz.operator_pool]
+            temp = hamiltonian.hamiltonian_op(HamiltonianType.Full)
+            commutator_list = [(temp @ op - op @ temp).simplify() for op in self.ansatz.operator_pool]
             sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
                                    for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]
             # print("[op]:\n",self.ansatz.operator_pool)

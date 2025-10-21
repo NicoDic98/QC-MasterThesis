@@ -1,0 +1,3 @@
+23707377: PenaltyHamiltonian everywhere; Just R_y'S
+23708081: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; Just R_y'S
+23708113: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; Full Pool: R_y and R_{XY+YX}
