@@ -17,4 +17,6 @@ class VQEParameters(StrEnum):
     AnsatzOperatorAxis = "AnsatzOperatorAxis"
     AnsatzOperators = "AnsatzOperators"
     StartIterations = "StartIterations"
+    AnsatzOperatorDerivatives = "AnsatzOperatorDerivatives"
+    AnsatzPoolOperatorAxis = "AnsatzPoolOperatorAxis"
     AdaptOptions = "AdaptOptions"

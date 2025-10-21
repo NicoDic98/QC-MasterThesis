@@ -25,6 +25,11 @@ class AdaptVQECostFunction(BaseCostFunction):
         update_operator_dataset_size(dataset, num_operators)
         dataset[*self.current_non_singular_index, :num_operators] = op_index_list
 
+    def update_ansatz_operator_derivatives_dataset(self, num_operators: int, derivatives_list: list[float]):
+        dataset = self.group[VQEParameters.AnsatzOperatorDerivatives]
+        update_operator_dataset_size(dataset, num_operators, -2)
+        dataset[*self.current_non_singular_index, num_operators - 1, :] = derivatives_list
+
     def update_start_iterations_dataset(self, num_operators: int):
         dataset = self.group[VQEParameters.StartIterations]
         update_operator_dataset_size(dataset, num_operators)
@@ -81,6 +86,14 @@ class AdaptVQE(BaseVQE):
                                                 [None],
                                                 -1)
 
+        h5_saver.create_dataset_with_dim_labels(VQEParameters.AnsatzOperatorDerivatives,
+                                                [0, len(self.ansatz.operator_pool)],
+                                                [VQEParameters.AnsatzOperatorAxis,
+                                                 VQEParameters.AnsatzPoolOperatorAxis],
+                                                float,
+                                                [None, len(self.ansatz.operator_pool)]
+                                                )
+
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
             print(f"Calculating energies for {hamiltonian}")
@@ -110,6 +123,10 @@ class AdaptVQE(BaseVQE):
                 print(f"New op index: {new_op_index}")
                 print(f"Current grad: {abs_gradients.sum()}")
                 initial_parameter_value = 0
+
+                # Note that the derivative dataset will have one more entry as long as the depth limit is not reached
+                cost_function_instance.update_ansatz_operator_derivatives_dataset(len(op_index_list) + 1, gradients)
+
                 if i == 0:
                     pub = (circuit, sec_commutator_list, [params])
                     # noinspection PyTypeChecker
@@ -134,7 +151,6 @@ class AdaptVQE(BaseVQE):
 
                 op_index_list.append(new_op_index)
                 params = np.append(params, initial_parameter_value)
-
 
                 if self.ansatz.set_ansatz(op_index_list):
                     print("Adding the same operator twice is not sensible, terminating.")
