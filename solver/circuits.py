@@ -159,7 +159,7 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
         for i in range(self.num_qubits - 1):
             op = SparsePauliOp.from_sparse_list([("YX", [i, i + 1], -0.5j),
                                                  ("XY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
-            self.operator_pool.append(op)
+            # self.operator_pool.append(op)
 
         # print(self.operator_pool)
         qc = QuantumCircuit(2)
