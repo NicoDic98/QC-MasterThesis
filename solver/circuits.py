@@ -181,7 +181,7 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
         # qc.draw("mpl")
         # plt.show()
 
-        self.gate_pool.append(qc)
+        self.gate_pool.append(qc.to_gate(label="$R_{XY+YX}$"))
 
     def set_ansatz(self, operator_indices: list[int]):
         qc = self.fixed_ansatz.copy()
@@ -198,8 +198,10 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
             else:
                 if last_gate_on_qubit[(oi - self.num_qubits)] == 1:
                     return 1
-                gate = self.gate_pool[1].to_gate(label="$R_{XY+YX}$",
-                                                 parameter_map={self.gate_pool[1].parameters[0]: my_params[i]})
+                # gate = self.gate_pool[1].to_gate(label="$R_{XY+YX}$",
+                #                                  parameter_map={self.gate_pool[1].parameters[0]: my_params[i]})
+                gate = self.gate_pool[1].copy()
+                gate.params[0] = my_params[i]
                 qc.append(gate, [(oi - self.num_qubits), (oi - self.num_qubits) + 1])
                 last_gate_on_qubit[(oi - self.num_qubits)] = 1
                 last_gate_on_qubit[(oi - self.num_qubits)+1] = 2
