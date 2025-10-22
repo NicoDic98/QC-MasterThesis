@@ -29,6 +29,11 @@ class AdaptVQECostFunction(BaseCostFunction):
         update_operator_dataset_size(dataset, num_operators, -2)
         dataset[*self.current_non_singular_index, num_operators - 1, :] = derivatives_list
 
+    def update_ansatz_operator_second_derivatives_dataset(self, num_operators: int, sec_derivatives_list: list[float]):
+        dataset = self.group[VQEParameters.AnsatzOperatorSecondDerivatives]
+        update_operator_dataset_size(dataset, num_operators, -2)
+        dataset[*self.current_non_singular_index, num_operators - 1, :] = sec_derivatives_list
+
     def update_start_iterations_dataset(self, num_operators: int):
         dataset = self.group[VQEParameters.StartIterations]
         update_operator_dataset_size(dataset, num_operators)
@@ -92,6 +97,14 @@ class AdaptVQE(BaseVQE):
                                                 [None, len(self.ansatz.operator_pool)]
                                                 )
 
+        h5_saver.create_dataset_with_dim_labels(VQEParameters.AnsatzOperatorSecondDerivatives,
+                                                [0, len(self.ansatz.operator_pool)],
+                                                [VQEParameters.AnsatzOperatorAxis,
+                                                 VQEParameters.AnsatzPoolOperatorAxis],
+                                                float,
+                                                [None, len(self.ansatz.operator_pool)]
+                                                )
+
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
             print(f"Calculating energies for {hamiltonian}")
@@ -117,22 +130,26 @@ class AdaptVQE(BaseVQE):
                 full_result = job.result()
                 pub_result = full_result[0]
                 gradients = pub_result.data.evs
+
                 abs_gradients = np.abs(gradients)
                 new_op_index = np.argmax(abs_gradients)
                 print(f"New op index: {new_op_index}")
                 print(f"Current grad: {abs_gradients.sum()}")
                 initial_parameter_value = 0
 
+                pub = (circuit, sec_commutator_list, [params])
+                # noinspection PyTypeChecker
+                job = estimator.run(pubs=[pub])
+                full_result = job.result()
+                pub_result = full_result[0]
+                second_gradients = pub_result.data.evs
+
                 # Note that the derivative dataset will have one more entry as long as the depth limit is not reached
                 cost_function_instance.update_ansatz_operator_derivatives_dataset(len(op_index_list) + 1, gradients)
+                cost_function_instance.update_ansatz_operator_second_derivatives_dataset(len(op_index_list) + 1,
+                                                                                         second_gradients)
 
                 if i == 0:
-                    pub = (circuit, sec_commutator_list, [params])
-                    # noinspection PyTypeChecker
-                    job = estimator.run(pubs=[pub])
-                    full_result = job.result()
-                    pub_result = full_result[0]
-                    second_gradients = pub_result.data.evs
                     for op_id, (grad, secgrad) in enumerate(zip(gradients, second_gradients)):
                         print(f"{op_id}:\t{grad:.2e}\t{secgrad:.2e}")
                     if abs_gradients.sum() < adapt_options["prec_cutoff"]:
