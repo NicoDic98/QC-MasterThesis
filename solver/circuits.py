@@ -158,7 +158,7 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         return 0
 
 
-def build_r_yx_p_xy():
+def build_r_yx_xy(plus = True):
     qc = QuantumCircuit(2)
     b = Parameter('B')
     qc.z(1)
@@ -167,7 +167,10 @@ def build_r_yx_p_xy():
     qc.h(0)
     qc.s(1)
     qc.cx(0, 1)
-    qc.ry(b, 0)
+    if plus:
+        qc.ry(b, 0)
+    else:
+        qc.ry(-b, 0)
     qc.rz(b, 1)
     qc.cx(0, 1)
     qc.h(0)
@@ -204,7 +207,7 @@ class HardwareAdaptAnsatz1(BaseADAPTVQEAnsatz):
             self.operator_pool.append(op)
             self.operator_gate_map.append((3, [i, i + 1]))
 
-        self.gate_pool.append(build_r_yx_p_xy())
+        self.gate_pool.append(build_r_yx_xy())
 
 
 class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
@@ -225,7 +228,7 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
             self.operator_pool.append(op)
             self.operator_gate_map.append((1, [i, i + 1]))
 
-        self.gate_pool.append(build_r_yx_p_xy())
+        self.gate_pool.append(build_r_yx_xy())
 
 
 def inheritors(my_class):
