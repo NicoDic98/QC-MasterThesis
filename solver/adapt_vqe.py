@@ -2,7 +2,6 @@ from typing import Any, Callable
 
 import h5py
 import numpy as np
-from matplotlib import pyplot as plt
 from qiskit_ibm_runtime import EstimatorOptions
 from scipy.optimize import minimize
 
@@ -11,7 +10,7 @@ from hamiltonian.base import HamiltonianType, BaseHamiltonian
 from labels import VQEParameters
 from misc import fill_defaults_in_dict, calc_im_part
 from solver.base import SimulatorType, BaseVQE, BaseCostFunction
-from solver.circuits import YXPlusXYRYAdaptAnsatz1, BaseADAPTVQEAnsatz
+from solver.circuits import BaseADAPTVQEAnsatz
 
 
 def update_operator_dataset_size(dataset: h5py.Dataset, num_operators: int, resize_index: int = -1):
@@ -46,9 +45,8 @@ class AdaptVQE(BaseVQE):
     def __init__(self,
                  hamiltonian_factory: Callable[..., BaseHamiltonian],
                  save_group: h5py.Group,
-                 num_qubits: int):
-        super().__init__(hamiltonian_factory, save_group,
-                         YXPlusXYRYAdaptAnsatz1(num_qubits))
+                 ansatz: BaseADAPTVQEAnsatz):
+        super().__init__(hamiltonian_factory, save_group, ansatz)
         self.cost_function = AdaptVQECostFunction
 
     def run(self, parameters_dict_list: dict[str, list], hamiltonian_type: HamiltonianType,
@@ -163,6 +161,7 @@ class AdaptVQE(BaseVQE):
                 cost_function_instance.update_circuit_parameters_dataset(len(op_index_list))
 
                 cost_function_instance.ansatz = circuit
+                # circuit.draw("text", filename="out/test.txt")
                 cost_function_instance.hamiltonian = h_operator.apply_layout(layout=circuit.layout)
                 optimize_result = minimize(fun=cost_function_instance, x0=params, **optimizer_options)
                 params = optimize_result.x
