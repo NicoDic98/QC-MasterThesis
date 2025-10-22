@@ -120,6 +120,8 @@ class XXPlusYYRZAnsatz1(BaseVQEAnsatz):
 
 
 class BaseADAPTVQEAnsatz(BaseAnsatz):
+    operator_pool: list[SparsePauliOp]
+    gate_pool: list[Gate]
     operator_gate_map: list[tuple[int, list[int]]]
 
     def __init__(self, num_qubits: int):
@@ -156,25 +158,66 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         return 0
 
 
-class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
-    gate_pool: list[Gate | QuantumCircuit]
+def build_r_yx_p_xy():
+    qc = QuantumCircuit(2)
+    b = Parameter('B')
+    qc.z(1)
+    qc.s(0)
+    qc.h(1)
+    qc.h(0)
+    qc.s(1)
+    qc.cx(0, 1)
+    qc.ry(b, 0)
+    qc.rz(b, 1)
+    qc.cx(0, 1)
+    qc.h(0)
+    qc.sdg(1)
+    qc.sdg(0)
+    qc.h(1)
+    qc.z(1)
+    return qc.to_gate(label="$R_{XY+YX}$")
 
+
+class HardwareAdaptAnsatz1(BaseADAPTVQEAnsatz):
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
         for i in range(0, self.num_qubits):
             self.fixed_ansatz.h(i)
         for i in range(self.num_qubits):
-            # op = SparsePauliOp.from_sparse_list([("X", [i], -0.5j)], num_qubits=self.num_qubits)
-            # self.operator_pool.append(op)
+            op = SparsePauliOp.from_sparse_list([("X", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((0, [i]))
+            op = SparsePauliOp.from_sparse_list([("Y", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((1, [i]))
+            op = SparsePauliOp.from_sparse_list([("Z", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((2, [i]))
+
+        self.gate_pool.append(RXGate(Parameter('A')))
+        self.gate_pool.append(RYGate(Parameter('A')))
+        self.gate_pool.append(RZGate(Parameter('A')))
+
+        for i in range(self.num_qubits - 1):
+            op = SparsePauliOp.from_sparse_list([("YX", [i, i + 1], -0.5j),
+                                                 ("XY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((3, [i, i + 1]))
+
+        self.gate_pool.append(build_r_yx_p_xy())
+
+
+class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        for i in range(0, self.num_qubits):
+            self.fixed_ansatz.h(i)
+        for i in range(self.num_qubits):
             op = SparsePauliOp.from_sparse_list([("Y", [i], -0.5j)], num_qubits=self.num_qubits)
             self.operator_pool.append(op)
             self.operator_gate_map.append((0, [i]))
-            # op = SparsePauliOp.from_sparse_list([("Z", [i], -0.5j)], num_qubits=self.num_qubits)
-            # self.operator_pool.append(op)
 
-        # self.gate_pool.append(RXGate(Parameter('A')))
         self.gate_pool.append(RYGate(Parameter('A')))
-        # self.gate_pool.append(RZGate(Parameter('A')))
 
         for i in range(self.num_qubits - 1):
             op = SparsePauliOp.from_sparse_list([("YX", [i, i + 1], -0.5j),
@@ -182,27 +225,7 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
             self.operator_pool.append(op)
             self.operator_gate_map.append((1, [i, i + 1]))
 
-        # print(self.operator_pool)
-        qc = QuantumCircuit(2)
-        b = Parameter('B')
-        qc.z(1)
-        qc.s(0)
-        qc.h(1)
-        qc.h(0)
-        qc.s(1)
-        qc.cx(0, 1)
-        qc.ry(b, 0)
-        qc.rz(b, 1)
-        qc.cx(0, 1)
-        qc.h(0)
-        qc.sdg(1)
-        qc.sdg(0)
-        qc.h(1)
-        qc.z(1)
-        # qc.draw("mpl")
-        # plt.show()
-
-        self.gate_pool.append(qc.to_gate(label="$R_{XY+YX}$"))
+        self.gate_pool.append(build_r_yx_p_xy())
 
 
 def inheritors(my_class):
