@@ -1,4 +1,5 @@
 2025-09-35: Contains variations of VQE runs and 23116296 (2025-09-03_22-35-17) is ED
+
 Fixed Ansatz is full superposition:
 23707377: PenaltyHamiltonian everywhere; Just R_y'S; 2 masses
 23708081: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; Just R_y'S; 2 masses
@@ -13,6 +14,7 @@ Fixed Ansatz is full superposition:
 
 Fixed Ansatz is full superposition:
 23753926: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses
+23753983: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses
 
 Fixed Ansatz is 0-charge sector:
 23753943: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses
