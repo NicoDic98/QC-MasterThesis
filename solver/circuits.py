@@ -136,7 +136,23 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         return None
 
     def set_ansatz(self, operator_indices: list[int]):
-        self.full_ansatz = self.fixed_ansatz.copy()
+        qc = self.fixed_ansatz.copy()
+        my_params = ParameterVector("A", len(operator_indices))
+        last_gate_on_qubit = [-1] * self.num_qubits
+        for i, oi in enumerate(operator_indices):
+            gi, qbits = self.operator_gate_map[oi]
+            ok = False
+            for qbit in qbits:
+                if last_gate_on_qubit[qbit] != oi:
+                    ok = True
+            if not ok:
+                return 1
+            gate = self.gate_pool[gi].copy()
+            gate.params[0] = my_params[i]
+            qc.append(gate, qbits)
+            for qbit in qbits:
+                last_gate_on_qubit[qbit] = oi
+        self.full_ansatz = qc
         return 0
 
 
@@ -187,43 +203,6 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
         # plt.show()
 
         self.gate_pool.append(qc.to_gate(label="$R_{XY+YX}$"))
-
-    def set_ansatz(self, operator_indices: list[int]):
-        qc = self.fixed_ansatz.copy()
-        my_params = ParameterVector("A", len(operator_indices))
-        last_gate_on_qubit = [-1] * self.num_qubits
-        for i, oi in enumerate(operator_indices):
-            gi, qbits = self.operator_gate_map[oi]
-            ok = False
-            for qbit in qbits:
-                if last_gate_on_qubit[qbit] != oi:
-                    ok = True
-            if not ok:
-                return 1
-            gate = self.gate_pool[gi].copy()
-            gate.params[0] = my_params[i]
-            qc.append(gate, qbits)
-            for qbit in qbits:
-                last_gate_on_qubit[qbit] = oi
-            # if oi < self.num_qubits:
-            #     if last_gate_on_qubit[oi] == 0:
-            #         return 1
-            #     gate = self.gate_pool[0].copy()
-            #     gate.params[0] = my_params[i]
-            #     qc.append(gate, [oi])
-            #     last_gate_on_qubit[oi] = 0
-            # else:
-            #     if last_gate_on_qubit[(oi - self.num_qubits)] == 1:
-            #         return 1
-            #     # gate = self.gate_pool[1].to_gate(label="$R_{XY+YX}$",
-            #     #                                  parameter_map={self.gate_pool[1].parameters[0]: my_params[i]})
-            #     gate = self.gate_pool[1].copy()
-            #     gate.params[0] = my_params[i]
-            #     qc.append(gate, [(oi - self.num_qubits), (oi - self.num_qubits) + 1])
-            #     last_gate_on_qubit[(oi - self.num_qubits)] = 1
-            #     last_gate_on_qubit[(oi - self.num_qubits)+1] = 2
-        self.full_ansatz = qc
-        return 0
 
 
 def inheritors(my_class):
