@@ -46,12 +46,10 @@ class AdaptVQE(BaseVQE):
     def __init__(self,
                  hamiltonian_factory: Callable[..., BaseHamiltonian],
                  save_group: h5py.Group,
-                 num_qubits: int,
-                 max_depth: int):
+                 num_qubits: int):
         super().__init__(hamiltonian_factory, save_group,
                          YXPlusXYRYAdaptAnsatz1(num_qubits))
         self.cost_function = AdaptVQECostFunction
-        self.max_depth = max_depth
 
     def run(self, parameters_dict_list: dict[str, list], hamiltonian_type: HamiltonianType,
             simulator_type: SimulatorType = SimulatorType.Statevector,
@@ -67,7 +65,8 @@ class AdaptVQE(BaseVQE):
         if adapt_options is None:
             adapt_options = {}
         adapt_options_default = {
-            "prec_cutoff": 1e-3
+            "prec_cutoff": 1e-3,
+            "max_depth": 20,
         }
         fill_defaults_in_dict(adapt_options, adapt_options_default)
         save_dict_as_attribute(local_group, adapt_options, VQEParameters.AdaptOptions)
@@ -112,7 +111,7 @@ class AdaptVQE(BaseVQE):
             op_index_list = []
             cost_function_instance = self.cost_function(circuit, h_operator.apply_layout(circuit.layout),
                                                         estimator, local_group, non_singular_index)
-            for i in range(self.max_depth):
+            for i in range(adapt_options["max_depth"]):
                 pub = (circuit, [op.apply_layout(circuit.layout) for op in commutator_list], [params])
                 # noinspection PyTypeChecker
                 job = estimator.run(pubs=[pub])
