@@ -67,6 +67,7 @@ class AdaptVQE(BaseVQE):
         adapt_options_default = {
             "prec_cutoff": 1e-3,
             "max_depth": 20,
+            "gradient_hamiltonian_type": hamiltonian_type,
         }
         fill_defaults_in_dict(adapt_options, adapt_options_default)
         save_dict_as_attribute(local_group, adapt_options, VQEParameters.AdaptOptions)
@@ -98,7 +99,7 @@ class AdaptVQE(BaseVQE):
             print(f"Calculating energies for {hamiltonian}")
             h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
             print("h:", calc_im_part(h_operator))
-            temp = hamiltonian.hamiltonian_op(HamiltonianType.Full)
+            temp = hamiltonian.hamiltonian_op(adapt_options["gradient_hamiltonian_type"])
             commutator_list = [(temp @ op - op @ temp).simplify() for op in self.ansatz.operator_pool]
             sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
                                    for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]

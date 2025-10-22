@@ -52,7 +52,10 @@ def run_adapt_vqe(my_f: h5py.File):
                          "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                      },
                      estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId]),
-                     adapt_options={"max_depth": 40})
+                     adapt_options={
+                         "max_depth": 40,
+                         "gradient_hamiltonian_type": HamiltonianType.Full
+                     })
 
 
 # Define the parser
