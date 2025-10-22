@@ -120,10 +120,13 @@ class XXPlusYYRZAnsatz1(BaseVQEAnsatz):
 
 
 class BaseADAPTVQEAnsatz(BaseAnsatz):
+    operator_gate_map: list[tuple[int, list[int]]]
+
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
         self.operator_pool = []
         self.gate_pool = []
+        self.operator_gate_map = []
 
     def max_num_parameters(self):
         """
@@ -149,6 +152,7 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
             # self.operator_pool.append(op)
             op = SparsePauliOp.from_sparse_list([("Y", [i], -0.5j)], num_qubits=self.num_qubits)
             self.operator_pool.append(op)
+            self.operator_gate_map.append((0, [i]))
             # op = SparsePauliOp.from_sparse_list([("Z", [i], -0.5j)], num_qubits=self.num_qubits)
             # self.operator_pool.append(op)
 
@@ -160,6 +164,7 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
             op = SparsePauliOp.from_sparse_list([("YX", [i, i + 1], -0.5j),
                                                  ("XY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
             self.operator_pool.append(op)
+            self.operator_gate_map.append((1, [i, i + 1]))
 
         # print(self.operator_pool)
         qc = QuantumCircuit(2)
@@ -186,25 +191,37 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
     def set_ansatz(self, operator_indices: list[int]):
         qc = self.fixed_ansatz.copy()
         my_params = ParameterVector("A", len(operator_indices))
-        last_gate_on_qubit = [-1]*self.num_qubits
+        last_gate_on_qubit = [-1] * self.num_qubits
         for i, oi in enumerate(operator_indices):
-            if oi < self.num_qubits:
-                if last_gate_on_qubit[oi] == 0:
-                    return 1
-                gate = self.gate_pool[0].copy()
-                gate.params[0] = my_params[i]
-                qc.append(gate, [oi])
-                last_gate_on_qubit[oi] = 0
-            else:
-                if last_gate_on_qubit[(oi - self.num_qubits)] == 1:
-                    return 1
-                # gate = self.gate_pool[1].to_gate(label="$R_{XY+YX}$",
-                #                                  parameter_map={self.gate_pool[1].parameters[0]: my_params[i]})
-                gate = self.gate_pool[1].copy()
-                gate.params[0] = my_params[i]
-                qc.append(gate, [(oi - self.num_qubits), (oi - self.num_qubits) + 1])
-                last_gate_on_qubit[(oi - self.num_qubits)] = 1
-                last_gate_on_qubit[(oi - self.num_qubits)+1] = 2
+            gi, qbits = self.operator_gate_map[oi]
+            ok = False
+            for qbit in qbits:
+                if last_gate_on_qubit[qbit] != oi:
+                    ok = True
+            if not ok:
+                return 1
+            gate = self.gate_pool[gi].copy()
+            gate.params[0] = my_params[i]
+            qc.append(gate, qbits)
+            for qbit in qbits:
+                last_gate_on_qubit[qbit] = oi
+            # if oi < self.num_qubits:
+            #     if last_gate_on_qubit[oi] == 0:
+            #         return 1
+            #     gate = self.gate_pool[0].copy()
+            #     gate.params[0] = my_params[i]
+            #     qc.append(gate, [oi])
+            #     last_gate_on_qubit[oi] = 0
+            # else:
+            #     if last_gate_on_qubit[(oi - self.num_qubits)] == 1:
+            #         return 1
+            #     # gate = self.gate_pool[1].to_gate(label="$R_{XY+YX}$",
+            #     #                                  parameter_map={self.gate_pool[1].parameters[0]: my_params[i]})
+            #     gate = self.gate_pool[1].copy()
+            #     gate.params[0] = my_params[i]
+            #     qc.append(gate, [(oi - self.num_qubits), (oi - self.num_qubits) + 1])
+            #     last_gate_on_qubit[(oi - self.num_qubits)] = 1
+            #     last_gate_on_qubit[(oi - self.num_qubits)+1] = 2
         self.full_ansatz = qc
         return 0
 
@@ -221,7 +238,7 @@ def inheritors(my_class):
     return subclasses
 
 
-def rebuild_ansatz(group: h5py.Group) -> BaseAnsatz|BaseVQEAnsatz|BaseADAPTVQEAnsatz:
+def rebuild_ansatz(group: h5py.Group) -> BaseAnsatz | BaseVQEAnsatz | BaseADAPTVQEAnsatz:
     circuit_dict = load_attribute_as_dict(group[CircuitParameters.Circuit])
     for my_class in inheritors(BaseAnsatz):
         if my_class.__name__ == circuit_dict[CircuitParameters.Ansatz]:
