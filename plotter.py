@@ -119,13 +119,10 @@ class ResultLoader:
             raise NotImplementedError
         return energy, dep[0]
 
-    def get_circuit(self, parameters: dict[str, int], final=False):
+    def get_ansatz(self, parameters: dict[str, int])->BaseVQEAnsatz|BaseADAPTVQEAnsatz:
         if self.solver == VQE.__name__:
             ansatz = rebuild_ansatz(self.group)
             ansatz: BaseVQEAnsatz
-            circuit = ansatz.full_ansatz
-            if final:
-                raise NotImplementedError
         elif self.solver == AdaptVQE.__name__:
             ansatz = rebuild_ansatz(self.group)
             ansatz: BaseADAPTVQEAnsatz
@@ -133,7 +130,17 @@ class ResultLoader:
                                                                  [])
             operator_indices = [idx for idx in operator_indices if idx >= 0]
             ansatz.set_ansatz(operator_indices)
-            circuit = ansatz.full_ansatz
+        else:
+            raise NotImplementedError
+        return ansatz
+
+    def get_circuit(self, parameters: dict[str, int], final=False):
+        ansatz = self.get_ansatz(parameters)
+        circuit = ansatz.full_ansatz
+        if self.solver == VQE.__name__:
+            if final:
+                raise NotImplementedError
+        elif self.solver == AdaptVQE.__name__:
             if final:
                 circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(
                     VQEParameters.CircuitParameters,
