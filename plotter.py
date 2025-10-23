@@ -110,7 +110,7 @@ class ResultLoader:
             energy, dep, _ = self.get_observables(EDParameters.EigenValues, parameters,
                                                   [HamiltonianParameters.Mass])
             energy.sort(-1)
-            energy = energy[:, :2]
+            energy = energy[:, :]
         elif self.solver == VQE.__name__:
             energy, dep, _ = self.get_observables(VQEParameters.Hamiltonian, parameters,
                                                   [HamiltonianParameters.Mass])
