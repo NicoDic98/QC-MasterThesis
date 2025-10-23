@@ -18,3 +18,4 @@ Fixed Ansatz is full superposition:
 
 Fixed Ansatz is 0-charge sector:
 23753943: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses
+23757058: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses
