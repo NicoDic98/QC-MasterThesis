@@ -156,6 +156,15 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         self.full_ansatz = qc
         return 0
 
+    def get_operator_info(self, operator_index: int):
+        """
+        :param operator_index: Operator index
+        :return: Gate index, First qbit, Gate name
+        """
+        gi, qbits = self.operator_gate_map[operator_index]
+        gate = self.gate_pool[gi](Parameter("A"))
+        return gi, qbits[0], gate.name
+
 
 def build_r_yx_xy(b: Parameter, plus=True):
     name = "$R_{XY+YX}$"
