@@ -101,6 +101,8 @@ class ResultLoader:
         if VQEParameters.OptimizerOptions in self.group:
             info_dict[VQEParameters.OptimizerOptions] = load_attribute_as_dict(
                 self.group[VQEParameters.OptimizerOptions])
+        if VQEParameters.AdaptOptions in self.group:
+            info_dict[VQEParameters.AdaptOptions] = load_attribute_as_dict(self.group[VQEParameters.AdaptOptions])
         return self.group.name, info_dict
 
     def get_energy_mass(self, parameters: dict[str, int]):

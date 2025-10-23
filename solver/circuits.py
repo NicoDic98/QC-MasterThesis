@@ -163,7 +163,7 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         """
         gi, qbits = self.operator_gate_map[operator_index]
         gate = self.gate_pool[gi](Parameter("A"))
-        return gi, qbits[0], gate.name
+        return gi, qbits[0], gate.label
 
 
 def build_r_yx_xy(b: Parameter, plus=True):
@@ -205,9 +205,9 @@ class HardwareAdaptAnsatz1(BaseADAPTVQEAnsatz):
             self.operator_pool.append(op)
             self.operator_gate_map.append((2, [i]))
 
-        self.gate_pool.append(lambda a : RXGate(a))
-        self.gate_pool.append(lambda a : RYGate(a))
-        self.gate_pool.append(lambda a : RZGate(a))
+        self.gate_pool.append(lambda a : RXGate(a, label=f"$R_X$"))
+        self.gate_pool.append(lambda a : RYGate(a, label=f"$R_Y$"))
+        self.gate_pool.append(lambda a : RZGate(a, label=f"$R_Z$"))
 
         for i in range(self.num_qubits - 1):
             op = SparsePauliOp.from_sparse_list([("YX", [i, i + 1], -0.5j),
@@ -235,7 +235,7 @@ class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
             self.operator_pool.append(op)
             self.operator_gate_map.append((0, [i]))
 
-        self.gate_pool.append(lambda a : RYGate(a))
+        self.gate_pool.append(lambda a : RYGate(a, label=f"$R_Y$"))
 
         for i in range(self.num_qubits - 1):
             op = SparsePauliOp.from_sparse_list([("YX", [i, i + 1], -0.5j),
