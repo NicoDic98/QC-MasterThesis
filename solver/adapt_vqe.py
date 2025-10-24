@@ -71,6 +71,7 @@ class AdaptVQE(BaseVQE):
             "prec_cutoff": 1e-3,
             "max_depth": 20,
             "gradient_hamiltonian_type": hamiltonian_type,
+            "precision": 0
         }
         fill_defaults_in_dict(adapt_options, adapt_options_default)
         save_dict_as_attribute(local_group, adapt_options, VQEParameters.AdaptOptions)
@@ -121,12 +122,14 @@ class AdaptVQE(BaseVQE):
             circuit = pm.run(self.ansatz())
             params = x0
             op_index_list = []
+            print("Prec", estimator.default_precision)
             cost_function_instance = self.cost_function(circuit, h_operator.apply_layout(circuit.layout),
                                                         estimator, local_group, non_singular_index)
             for i in range(adapt_options["max_depth"]):
+                print("Prec", estimator.default_precision)
                 pub = (circuit, [op.apply_layout(circuit.layout) for op in commutator_list], [params])
                 # noinspection PyTypeChecker
-                job = estimator.run(pubs=[pub])
+                job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
                 full_result = job.result()
                 pub_result = full_result[0]
                 gradients = pub_result.data.evs
@@ -139,7 +142,7 @@ class AdaptVQE(BaseVQE):
 
                 pub = (circuit, sec_commutator_list, [params])
                 # noinspection PyTypeChecker
-                job = estimator.run(pubs=[pub])
+                job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
                 full_result = job.result()
                 pub_result = full_result[0]
                 second_gradients = pub_result.data.evs

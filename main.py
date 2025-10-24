@@ -48,15 +48,17 @@ def run_adapt_vqe(my_f: h5py.File):
                      HamiltonianType.ZeroChargePenalty,
                      # simulator_type=SimulatorType.Aer,
                      optimizer_options={
+                         # "method": 'cobyqa',
                          "options": {"maxiter": 20000, "disp": 1},
                          "tol": 1e-5,
                          "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                      },
                      estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId],
-                                                        default_precision=0.5),
+                                                        default_precision=10.),
                      adapt_options={
                          "max_depth": 40,
-                         "gradient_hamiltonian_type": HamiltonianType.Full
+                         "gradient_hamiltonian_type": HamiltonianType.Full,
+                         "precision": 0.
                      })
 
 
