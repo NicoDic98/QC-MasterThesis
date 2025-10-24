@@ -16,6 +16,7 @@ from qiskit_aer import AerSimulator
 from qiskit_ibm_runtime import EstimatorOptions
 from qiskit_ibm_runtime import EstimatorV2 as Estimator
 from qiskit_ibm_runtime.options.utils import UnsetType
+from numpy.random import Generator, PCG64
 
 from h5_interface import H5Saver, save_dict_as_attribute
 from hamiltonian.base import HamiltonianType
@@ -186,7 +187,7 @@ class BaseVQE(BaseSolver):
             pm = generate_preset_pass_manager(**preset_pass_manager_options)
 
             estimator = StatevectorEstimator(default_precision=precision,
-                                             seed=estimator_options.simulator.seed_simulator)
+                                             seed=Generator(PCG64(estimator_options.simulator.seed_simulator)))
 
         elif simulator_type == SimulatorType.Aer:
             simulator_options_defaults = {
