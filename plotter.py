@@ -121,16 +121,70 @@ class ResultLoader:
             raise NotImplementedError
         return energy, dep[0]
 
-    def get_ansatz(self, parameters: dict[str, int])->BaseVQEAnsatz|BaseADAPTVQEAnsatz:
+    def get_energy_evolution(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            raise NotImplementedError
+        elif self.solver == VQE.__name__:
+            energy, _, _ = self.get_observables(VQEParameters.Hamiltonian,
+                                                parameters,
+                                                [], final_value=False)
+        elif self.solver == AdaptVQE.__name__:
+            energy, _, _ = self.get_observables(VQEParameters.Hamiltonian,
+                                                parameters,
+                                                [], final_value=False)
+        else:
+            raise NotImplementedError
+        return energy
+
+    def get_start_iterations(self, parameters: dict[str, int]):
+        if self.solver == AdaptVQE.__name__:
+            start_iterations, _, _ = self.get_observables(VQEParameters.StartIterations, parameters,
+                                                          [])
+            start_iterations = [it for it in start_iterations if it >= 0]
+        else:
+            raise NotImplementedError
+        return start_iterations
+
+    def get_operator_indices(self, parameters: dict[str, int]):
+        if self.solver == AdaptVQE.__name__:
+            operator_indices, _, _ = self.get_observables(VQEParameters.AnsatzOperators, parameters,
+                                                          [])
+            operator_indices = [idx for idx in operator_indices if idx >= 0]
+        else:
+            raise NotImplementedError
+        return operator_indices
+
+    def map_operator_indices_to_labels(self, parameters: dict[str, int], operator_indices: list[int]):
+        if self.solver == AdaptVQE.__name__:
+            ansatz = self.get_ansatz(parameters)
+            ansatz: BaseADAPTVQEAnsatz
+            labels = []
+            for opid in operator_indices:
+                if opid is None:
+                    labels.append(None)
+                else:
+                    gi, qbit, gname = ansatz.get_operator_info(opid)
+                    labels.append(f"{gname}$^{qbit}$")
+        else:
+            raise NotImplementedError
+        return labels
+
+    def get_operator_labels(self, parameters: dict[str, int]):
+        if self.solver == AdaptVQE.__name__:
+            opid = self.get_operator_indices(parameters)
+            labels = self.map_operator_indices_to_labels(parameters, opid)
+        else:
+            raise NotImplementedError
+        return labels
+
+    def get_ansatz(self, parameters: dict[str, int]) -> BaseVQEAnsatz | BaseADAPTVQEAnsatz:
         if self.solver == VQE.__name__:
             ansatz = rebuild_ansatz(self.group)
             ansatz: BaseVQEAnsatz
         elif self.solver == AdaptVQE.__name__:
             ansatz = rebuild_ansatz(self.group)
             ansatz: BaseADAPTVQEAnsatz
-            operator_indices, _, _ = self.get_observables(VQEParameters.AnsatzOperators, parameters,
-                                                                 [])
-            operator_indices = [idx for idx in operator_indices if idx >= 0]
+            operator_indices = self.get_operator_indices(parameters)
             ansatz.set_ansatz(operator_indices)
         else:
             raise NotImplementedError
@@ -147,7 +201,7 @@ class ResultLoader:
                 circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(
                     VQEParameters.CircuitParameters,
                     parameters, [])
-                circuit_parameters = circuit_parameters[circuit_parameters!=0]
+                circuit_parameters = circuit_parameters[circuit_parameters != 0]
                 if circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]] != len(
                         circuit.parameters):
                     raise ValueError(f"Parameters do not match circuit parameters"
@@ -170,13 +224,12 @@ class ResultLoader:
                 observable_name = VQEParameters.AnsatzOperatorDerivatives
             der, _, der_dep_dict = self.get_observables(observable_name, parameters, [])
 
-            op, _, op_dep_dict = self.get_observables(VQEParameters.AnsatzOperators, parameters, [])
-            op = [idx for idx in op if idx >= 0]
-            op.append(None)
-            der = der[:len(op)]
+            operator_indices = self.get_operator_indices(parameters)
+            operator_indices.append(None)
+            der = der[:len(operator_indices)]
         else:
             raise NotImplementedError
-        return der, der_dep_dict, op
+        return der, der_dep_dict, operator_indices
 
     def plot_derivatives(self, parameters: dict[str, int], second=False):
         if self.solver == AdaptVQE.__name__:
@@ -208,13 +261,7 @@ class ResultLoader:
                         color=cmap(norm(qbit)), linestyle=linestyle_str[gi], alpha=0.5)
             cbar = plt.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), ax=ax)
             cbar.set_label("Qubit")
-            labels = []
-            for opid in op:
-                if opid is None:
-                    labels.append(None)
-                else:
-                    gi, qbit, gname = ansatz.get_operator_info(opid)
-                    labels.append(f"{gname}$^{qbit}$")
+            labels = self.map_operator_indices_to_labels(parameters, op)
             ax.set_xticks(list(range(der.shape[der_dep_dict[VQEParameters.AnsatzOperatorAxis]])), labels)
             ax.legend()
         else:
