@@ -6,6 +6,7 @@ import h5py
 import numpy as np
 from matplotlib import pyplot as plt, cm, lines
 from matplotlib.animation import FuncAnimation, PillowWriter
+from matplotlib.lines import Line2D
 from numpyencoder import NumpyEncoder
 from qiskit import generate_preset_pass_manager
 from qiskit_aer import AerSimulator
@@ -225,15 +226,14 @@ class ResultLoader:
             der, _, der_dep_dict = self.get_observables(observable_name, parameters, [])
 
             operator_indices = self.get_operator_indices(parameters)
-            operator_indices.append(None)
-            der = der[:len(operator_indices)]
+            der = der[:len(operator_indices)+1]
         else:
             raise NotImplementedError
         return der, der_dep_dict, operator_indices
 
     def plot_derivatives(self, parameters: dict[str, int], second=False):
         if self.solver == AdaptVQE.__name__:
-            fig, ax = plt.subplots()
+            fig, ax = plt.subplots(layout='constrained')
 
             ansatz = self.get_ansatz(parameters)
             ansatz: BaseADAPTVQEAnsatz
@@ -241,29 +241,54 @@ class ResultLoader:
             n_qbits = ansatz.num_qubits
             param = np.arange(n_qbits)
             # Colormap setup
-            cmap = plt.get_cmap("cool")
+            cmap = plt.get_cmap("Set2")
             norm = plt.Normalize(vmin=param.min(), vmax=param.max())
 
             der, der_dep_dict, op = self.get_derivatives(parameters, second)
 
             linestyle_str = ['solid', 'dotted', 'dashed', 'dashdot']
             already_labeled = []
+            legend_elements = []
 
             # iterate over different operators in the pool
             for i in range(der.shape[der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis]]):
                 gi, qbit, gname = ansatz.get_operator_info(i)
                 if gi in already_labeled:
-                    label = None
+                    pass
                 else:
-                    label = gname
+                    legend_elements.append(Line2D([0], [0],
+                                                  color=cmap(norm(n_qbits // 2)), linestyle=linestyle_str[gi],
+                                                  label=gname))
                     already_labeled.append(gi)
-                ax.plot(der.take(i, der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis]), label=label,
-                        color=cmap(norm(qbit)), linestyle=linestyle_str[gi], alpha=0.5)
-            cbar = plt.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), ax=ax)
+                ax.plot(der.take(i, der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis]),
+                        color=cmap(norm(qbit)), linestyle=linestyle_str[gi], alpha=0.8)
+            cbar = fig.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), ax=ax,
+                                # location="top", orientation="horizontal"
+                                )
             cbar.set_label("Qubit")
+            selected_data_pts = [der.take(oi, der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis])[i] for i, oi in enumerate(op)]
+            ax.scatter(list(range(len(selected_data_pts))), selected_data_pts, label="Selected",
+                       marker="o", facecolors="none", edgecolors='r')
+            ax.legend(handles=legend_elements)
+
             labels = self.map_operator_indices_to_labels(parameters, op)
-            ax.set_xticks(list(range(der.shape[der_dep_dict[VQEParameters.AnsatzOperatorAxis]])), labels)
-            ax.legend()
+            fig_legend_elements = []
+            for i, (opid, label) in enumerate(zip(op, labels)):
+                gi, qbit, gname = ansatz.get_operator_info(opid)
+                # noinspection PyTypeChecker
+                fig_legend_elements.append(Line2D([0], [0],
+                                              color=cmap(norm(qbit)), linestyle=linestyle_str[gi],
+                                              label=f"{i}: {label}"))
+            source = list(range(der.shape[der_dep_dict[VQEParameters.AnsatzOperatorAxis]]))
+            target = [str(i) for i in source]
+            target[-1] = ""
+            ax.set_xticks(source, target)
+            ax.set_ylabel("Derivative")
+            if second:
+                ax.set_ylabel("Second derivative")
+            ax.set_xlabel("Adapt Iteration")
+            fig.legend(handles=fig_legend_elements, loc='outside right upper', title="Selected operators")
+            # plt.tight_layout()
         else:
             raise NotImplementedError
         return fig

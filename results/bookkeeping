@@ -21,6 +21,7 @@ Fixed Ansatz is full superposition:
 23768438: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.01 (AVQE)
 23768500: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.005 (AVQE)
 23768557: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0. (AVQE), 1. (VQE)
+23768679: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.01 (AVQE)
 
 Fixed Ansatz is 0-charge sector:
 23753943: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses
