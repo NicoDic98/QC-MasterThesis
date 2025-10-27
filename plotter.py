@@ -162,6 +162,65 @@ class ResultLoader:
             raise NotImplementedError
         return circuit
 
+    def get_derivatives(self, parameters: dict[str, int], second=False):
+        if self.solver == AdaptVQE.__name__:
+            if second:
+                observable_name = VQEParameters.AnsatzOperatorSecondDerivatives
+            else:
+                observable_name = VQEParameters.AnsatzOperatorDerivatives
+            der, _, der_dep_dict = self.get_observables(observable_name, parameters, [])
+
+            op, _, op_dep_dict = self.get_observables(VQEParameters.AnsatzOperators, parameters, [])
+            op = [idx for idx in op if idx >= 0]
+            op.append(None)
+            der = der[:len(op)]
+        else:
+            raise NotImplementedError
+        return der, der_dep_dict, op
+
+    def plot_derivatives(self, parameters: dict[str, int], second=False):
+        if self.solver == AdaptVQE.__name__:
+            fig, ax = plt.subplots()
+
+            ansatz = self.get_ansatz(parameters)
+            ansatz: BaseADAPTVQEAnsatz
+
+            n_qbits = ansatz.num_qubits
+            param = np.arange(n_qbits)
+            # Colormap setup
+            cmap = plt.get_cmap("cool")
+            norm = plt.Normalize(vmin=param.min(), vmax=param.max())
+
+            der, der_dep_dict, op = self.get_derivatives(parameters, second)
+
+            linestyle_str = ['solid', 'dotted', 'dashed', 'dashdot']
+            already_labeled = []
+
+            # iterate over different operators in the pool
+            for i in range(der.shape[der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis]]):
+                gi, qbit, gname = ansatz.get_operator_info(i)
+                if gi in already_labeled:
+                    label = None
+                else:
+                    label = gname
+                    already_labeled.append(gi)
+                ax.plot(der.take(i, der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis]), label=label,
+                        color=cmap(norm(qbit)), linestyle=linestyle_str[gi], alpha=0.5)
+            cbar = plt.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), ax=ax)
+            cbar.set_label("Qubit")
+            labels = []
+            for opid in op:
+                if opid is None:
+                    labels.append(None)
+                else:
+                    gi, qbit, gname = ansatz.get_operator_info(opid)
+                    labels.append(f"{gname}$^{qbit}$")
+            ax.set_xticks(list(range(der.shape[der_dep_dict[VQEParameters.AnsatzOperatorAxis]])), labels)
+            ax.legend()
+        else:
+            raise NotImplementedError
+        return fig
+
     def get_ground_state(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
             energy, _, energy_dep_dict = self.get_observables(EDParameters.EigenValues, parameters, [])
