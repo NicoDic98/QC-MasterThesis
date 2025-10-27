@@ -1,0 +1,418 @@
+Start 2025-10-27 11:09:05 | 23768557 MyPyJob | node002 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h: 0.0
+Prec 1.0
+Prec 1.0
+New op index: 27
+Current grad: 24.067297480969504
+0:	-5.20e-03	-2.56e-03
+1:	-2.00e+00	-4.07e-03
+2:	4.70e-03	3.08e-03
+3:	-9.76e-03	5.64e-03
+4:	2.49e+00	-5.70e-04
+5:	6.39e-04	-4.20e-03
+6:	-1.58e-03	-4.12e-03
+7:	-2.50e+00	3.25e-03
+8:	-4.27e-03	3.72e-03
+9:	4.40e-03	2.72e-03
+10:	2.00e+00	-5.03e-01
+11:	3.30e-04	-4.99e-01
+12:	5.64e-03	5.83e-04
+13:	2.00e+00	-4.99e-01
+14:	-4.30e-03	-4.96e-01
+15:	1.84e-03	1.12e-03
+16:	-2.50e+00	3.39e-03
+17:	4.39e-03	3.38e-04
+18:	-2.50e-04	1.45e-03
+19:	2.50e+00	3.16e-03
+20:	-3.40e-03	-7.29e-03
+21:	6.11e-03	-1.60e-03
+22:	-2.00e+00	-2.35e-03
+23:	-2.14e-03	-3.19e-03
+24:	4.98e-01	-1.38e-03
+25:	2.66e-03	7.47e-03
+26:	-4.98e-01	-5.04e-01
+27:	4.00e+00	4.84e-03
+28:	-4.98e-01	-5.08e-01
+29:	1.07e-02	-1.67e-03
+30:	4.98e-01	8.14e-04
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 27   Least value of F = 198.2654625994533
+The corresponding X is: [-0.25]
+
+Prec 1.0
+New op index: 27
+Current grad: 23.422916714506677
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.333, r=1.000)
+h: 0.0
+Prec 1.0
+Prec 1.0
+New op index: 27
+Current grad: 10.755404756066955
+0:	-8.37e-03	5.53e-03
+1:	-6.69e-01	2.14e-03
+2:	-2.69e-04	7.68e-03
+3:	8.84e-03	9.16e-04
+4:	1.17e+00	-6.12e-03
+5:	4.91e-03	-6.84e-03
+6:	-2.50e-03	8.25e-03
+7:	-1.17e+00	8.62e-03
+8:	-4.83e-03	-8.98e-04
+9:	-3.63e-03	-1.92e-03
+10:	6.77e-01	-4.93e-01
+11:	-4.11e-03	-5.06e-01
+12:	4.19e-03	-4.47e-03
+13:	6.62e-01	-4.97e-01
+14:	4.66e-03	-5.02e-01
+15:	1.92e-03	-2.56e-05
+16:	-1.17e+00	-8.17e-04
+17:	-2.04e-04	1.69e-03
+18:	-3.27e-03	7.04e-03
+19:	1.17e+00	4.53e-04
+20:	-2.27e-03	3.22e-03
+21:	-6.13e-03	-1.03e-02
+22:	-6.73e-01	-2.44e-04
+23:	8.63e-04	-4.22e-03
+24:	5.08e-01	-6.09e-03
+25:	8.00e-04	-4.39e-03
+26:	-5.01e-01	-5.02e-01
+27:	1.33e+00	4.58e-03
+28:	-4.93e-01	-5.07e-01
+29:	1.10e-03	1.53e-04
+30:	4.98e-01	-2.42e-03
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 31   Least value of F = 197.87656853154726
+The corresponding X is: [-0.39775]
+
+Prec 1.0
+New op index: 19
+Current grad: 10.214289047307501
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 41   Least value of F = 149.53201168910286
+The corresponding X is: [-0.70298391  1.64613277]
+
+Prec 1.0
+New op index: 4
+Current grad: 8.78424205453834
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 38   Least value of F = 149.7836060697039
+The corresponding X is:
+[-0.71944063  1.64925929  0.01755466]
+
+Prec 1.0
+New op index: 4
+Current grad: 8.777839769716232
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.667, r=1.000)
+h: 0.0
+Prec 1.0
+Prec 1.0
+New op index: 27
+Current grad: 6.718090775870508
+0:	-7.80e-03	-4.13e-03
+1:	6.65e-01	1.24e-03
+2:	4.97e-04	-8.96e-04
+3:	-4.31e-04	-1.27e-03
+4:	-1.63e-01	-7.96e-04
+5:	1.72e-03	1.02e-03
+6:	3.34e-03	-5.04e-03
+7:	1.63e-01	3.53e-03
+8:	4.49e-03	3.31e-03
+9:	8.14e-03	1.93e-03
+10:	-6.72e-01	-4.97e-01
+11:	-4.44e-03	-4.99e-01
+12:	6.68e-03	1.02e-02
+13:	-6.68e-01	-5.00e-01
+14:	7.02e-03	-5.02e-01
+15:	-2.21e-03	-3.77e-03
+16:	1.74e-01	-5.16e-03
+17:	6.57e-04	-6.22e-03
+18:	1.29e-03	-4.44e-03
+19:	-1.59e-01	-3.53e-04
+20:	-1.81e-03	1.67e-03
+21:	-4.71e-03	2.56e-04
+22:	6.64e-01	-3.83e-03
+23:	2.26e-03	4.50e-03
+24:	4.92e-01	3.70e-03
+25:	3.19e-03	-7.98e-04
+26:	-5.03e-01	-5.03e-01
+27:	-1.33e+00	2.74e-03
+28:	-5.12e-01	-4.99e-01
+29:	-3.93e-03	-7.24e-03
+30:	4.92e-01	-3.40e-04
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 26   Least value of F = 197.5678600944483
+The corresponding X is: [0.45]
+
+Prec 1.0
+New op index: 10
+Current grad: 8.01459916439158
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 44   Least value of F = 150.7355906692054
+The corresponding X is: [ 1.81739463 -1.64226934]
+
+Prec 1.0
+New op index: 16
+Current grad: 6.8705634888587435
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 38   Least value of F = 150.9523831872732
+The corresponding X is:
+[ 1.74231455 -1.70047115  0.07820746]
+
+Prec 1.0
+New op index: 16
+Current grad: 6.416831597270392
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h: 0.0
+Prec 1.0
+Prec 1.0
+New op index: 27
+Current grad: 20.05497432440109
+0:	-6.71e-03	-4.31e-03
+1:	2.00e+00	2.39e-03
+2:	-2.92e-03	-7.68e-03
+3:	-2.33e-04	1.95e-03
+4:	-1.50e+00	5.13e-04
+5:	-5.04e-03	-7.37e-04
+6:	3.62e-03	7.94e-03
+7:	1.50e+00	-3.11e-03
+8:	-9.46e-03	1.03e-02
+9:	-9.79e-03	-1.13e-03
+10:	-2.00e+00	-5.06e-01
+11:	-1.10e-03	-5.00e-01
+12:	-5.17e-04	-5.38e-03
+13:	-2.00e+00	-5.04e-01
+14:	1.13e-03	-4.98e-01
+15:	4.74e-03	2.78e-03
+16:	1.49e+00	-3.11e-03
+17:	-5.86e-03	4.94e-03
+18:	-5.47e-03	5.79e-03
+19:	-1.50e+00	7.18e-03
+20:	6.22e-03	2.65e-03
+21:	-2.16e-03	6.82e-03
+22:	1.99e+00	-9.40e-03
+23:	-8.52e-03	-1.59e-03
+24:	4.96e-01	-4.34e-03
+25:	-2.79e-03	5.96e-04
+26:	-5.02e-01	-5.03e-01
+27:	-4.00e+00	-8.31e-04
+28:	-5.02e-01	-4.91e-01
+29:	5.25e-03	-8.49e-04
+30:	4.97e-01	2.07e-03
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 27   Least value of F = 195.07686243751806
+The corresponding X is: [1.025]
+
+Prec 1.0
+New op index: 22
+Current grad: 20.36730744290514
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 36   Least value of F = 144.90631996720938
+The corresponding X is: [ 0.855432   -1.55684348]
+
+Prec 1.0
+New op index: 13
+Current grad: 17.62683494945589
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 40   Least value of F = 144.63655714616397
+The corresponding X is:
+[ 0.8536466  -1.52193485 -0.0387196 ]
+
+Prec 1.0
+New op index: 13
+Current grad: 17.53532998998036
+Adding the same operator twice is not sensible, terminating.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23768557
+	2025-10-27_11-09-06-23768557:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-10-27_11-09-06
+			ProcessId: 23768557
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				gradient_hamiltonian_type: HamiltonianType.Full
+				max_depth: 40
+				prec_cutoff: 0.001
+				precision: 0.005
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(4, 4, 31), maxshape=(4, None, 31))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(4, 4, 31), maxshape=(4, None, 31))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(4, 3), maxshape=(4, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz1
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(4, 110, 3), maxshape=(4, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(4, 110), maxshape=(4, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(4, 110), maxshape=(4, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: 1.0
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23768557
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(4, 110), maxshape=(4, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(4, 110), maxshape=(4, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(4, 110), maxshape=(4, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(4,), maxshape=(4,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: 1e-05
+				x0Seed: 23768557
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(4, 3), maxshape=(4, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(4,), maxshape=(4,))
+			Attributes:
+-----Ending pprint-----
+End 2025-10-27 11:09:09 | 23768557 MyPyJob | node002 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

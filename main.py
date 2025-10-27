@@ -54,11 +54,12 @@ def run_adapt_vqe(my_f: h5py.File):
                          "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                      },
                      estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId],
-                                                        default_precision=10.),
+                                                        default_precision=1.
+                                                        ),
                      adapt_options={
                          "max_depth": 40,
                          "gradient_hamiltonian_type": HamiltonianType.Full,
-                         "precision": 0.
+                         "precision": 0.005
                      })
 
 
