@@ -129,10 +129,14 @@ class ResultLoader:
             energy, _, _ = self.get_observables(VQEParameters.Hamiltonian,
                                                 parameters,
                                                 [], final_value=False)
+            n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
+            energy = energy[:n_iterations+1]
         elif self.solver == AdaptVQE.__name__:
             energy, _, _ = self.get_observables(VQEParameters.Hamiltonian,
                                                 parameters,
                                                 [], final_value=False)
+            n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
+            energy = energy[:n_iterations+1]
         else:
             raise NotImplementedError
         return energy

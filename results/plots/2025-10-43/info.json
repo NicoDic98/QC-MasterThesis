@@ -208,5 +208,40 @@
         "n_x": 2,
         "n_y": 2,
         "r": 1.0
+    },
+    "/2025-10-27_12-20-16-23768679": {
+        "AdaptOptions": {
+            "gradient_hamiltonian_type": "HamiltonianType.ZeroChargePenalty",
+            "max_depth": 40,
+            "prec_cutoff": 0.001,
+            "precision": 0.01
+        },
+        "Circuit": {
+            "Ansatz": "HardwareAdaptAnsatz1",
+            "AnsatzOptions": {
+                "num_qubits": 8
+            }
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-10-27_12-20-16",
+        "OptimizerOptions": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": [],
+            "method": "cobyla",
+            "options": {
+                "disp": 1,
+                "maxiter": 20000
+            },
+            "tol": 1e-05,
+            "x0Seed": 23768679
+        },
+        "ProcessId": 23768679,
+        "SimulatorType": "Statevector",
+        "SolverName": "AdaptVQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
     }
 }

@@ -49,10 +49,13 @@ def pprint_h5(obj: h5py.Group, depth: int = 0, basename=""):
         if isinstance(value, h5py.Group):
             pprint_h5(value, depth=depth + 1)
         else:
-            print(prefix + f"\t{key}: {info_h5_dataset(value)}")
-            print(prefix + "\t\tAttributes:")
-            for attr_key, attr_value in value.attrs.items():
-                print(prefix + f"\t\t\t{attr_key}: {attr_value}")
+            if value is None:
+                print(prefix + f"\t{key}: Error-{value}")
+            else:
+                print(prefix + f"\t{key}: {info_h5_dataset(value)}")
+                print(prefix + "\t\tAttributes:")
+                for attr_key, attr_value in value.attrs.items():
+                    print(prefix + f"\t\t\t{attr_key}: {attr_value}")
     if depth == 0:
         print("-----Ending pprint-----")
 
