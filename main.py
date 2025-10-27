@@ -43,14 +43,14 @@ def run_adapt_vqe(my_f: h5py.File):
     my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz1(8))
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
-                      HamiltonianParameters.Mass: np.linspace(-6, 2, 4).tolist(),
+                      HamiltonianParameters.Mass: np.linspace(-6, 2, 50).tolist(),
                       HamiltonianParameters.WilsonParameter: [1.]},
                      HamiltonianType.ZeroChargePenalty,
                      # simulator_type=SimulatorType.Aer,
                      optimizer_options={
-                         # "method": 'cobyqa',
-                         "options": {"maxiter": 20000, "disp": 1},
-                         "tol": 1e-5,
+                         "method": 'slsqp',
+                         "options": {"maxiter": 20000, "disp": 0},
+                         # "tol": 1e-5,
                          "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                      },
                      estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId],
@@ -59,7 +59,7 @@ def run_adapt_vqe(my_f: h5py.File):
                      adapt_options={
                          "max_depth": 40,
                          "gradient_hamiltonian_type": HamiltonianType.ZeroChargePenalty,
-                         "precision": 0.01
+                         # "precision": 0.01
                      })
 
 

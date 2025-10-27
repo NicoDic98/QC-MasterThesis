@@ -243,5 +243,215 @@
         "n_x": 2,
         "n_y": 2,
         "r": 1.0
+    },
+    "/2025-10-27_16-09-27-23769343": {
+        "AdaptOptions": {
+            "gradient_hamiltonian_type": "HamiltonianType.Full",
+            "max_depth": 40,
+            "prec_cutoff": 0.001,
+            "precision": 0
+        },
+        "Circuit": {
+            "Ansatz": "HardwareAdaptAnsatz1",
+            "AnsatzOptions": {
+                "num_qubits": 8
+            }
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-10-27_16-09-27",
+        "OptimizerOptions": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": [],
+            "method": "cobyqa",
+            "options": {
+                "disp": 1,
+                "maxiter": 20000
+            },
+            "tol": 1e-05,
+            "x0Seed": 23769343
+        },
+        "ProcessId": 23769343,
+        "SimulatorType": "Statevector",
+        "SolverName": "AdaptVQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
+    },
+    "/2025-10-27_16-23-28-23769353": {
+        "AdaptOptions": {
+            "gradient_hamiltonian_type": "HamiltonianType.Full",
+            "max_depth": 40,
+            "prec_cutoff": 0.001,
+            "precision": 0
+        },
+        "Circuit": {
+            "Ansatz": "HardwareAdaptAnsatz1",
+            "AnsatzOptions": {
+                "num_qubits": 8
+            }
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-10-27_16-23-28",
+        "OptimizerOptions": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": [],
+            "method": "slsqp",
+            "options": {
+                "disp": 1,
+                "maxiter": 20000
+            },
+            "tol": 1e-05,
+            "x0Seed": 23769353
+        },
+        "ProcessId": 23769353,
+        "SimulatorType": "Statevector",
+        "SolverName": "AdaptVQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
+    },
+    "/2025-10-27_16-30-29-23769366": {
+        "AdaptOptions": {
+            "gradient_hamiltonian_type": "HamiltonianType.ZeroChargePenalty",
+            "max_depth": 40,
+            "prec_cutoff": 0.001,
+            "precision": 0
+        },
+        "Circuit": {
+            "Ansatz": "HardwareAdaptAnsatz1",
+            "AnsatzOptions": {
+                "num_qubits": 8
+            }
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-10-27_16-30-29",
+        "OptimizerOptions": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": [],
+            "method": "slsqp",
+            "options": {
+                "disp": 1,
+                "maxiter": 20000
+            },
+            "tol": 1e-05,
+            "x0Seed": 23769366
+        },
+        "ProcessId": 23769366,
+        "SimulatorType": "Statevector",
+        "SolverName": "AdaptVQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
+    },
+    "/2025-10-27_16-32-56-23769369": {
+        "AdaptOptions": {
+            "gradient_hamiltonian_type": "HamiltonianType.ZeroChargePenalty",
+            "max_depth": 40,
+            "prec_cutoff": 0.001,
+            "precision": 0
+        },
+        "Circuit": {
+            "Ansatz": "HardwareAdaptAnsatz1",
+            "AnsatzOptions": {
+                "num_qubits": 8
+            }
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-10-27_16-32-56",
+        "OptimizerOptions": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": [],
+            "method": "cobyqa",
+            "options": {
+                "disp": 1,
+                "maxiter": 20000
+            },
+            "tol": 1e-05,
+            "x0Seed": 23769369
+        },
+        "ProcessId": 23769369,
+        "SimulatorType": "Statevector",
+        "SolverName": "AdaptVQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
+    },
+    "/2025-10-27_16-51-22-23769435": {
+        "AdaptOptions": {
+            "gradient_hamiltonian_type": "HamiltonianType.ZeroChargePenalty",
+            "max_depth": 40,
+            "prec_cutoff": 0.001,
+            "precision": 0
+        },
+        "Circuit": {
+            "Ansatz": "HardwareAdaptAnsatz1",
+            "AnsatzOptions": {
+                "num_qubits": 8
+            }
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-10-27_16-51-22",
+        "OptimizerOptions": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": [],
+            "method": "slsqp",
+            "options": {
+                "disp": 0,
+                "maxiter": 20000
+            },
+            "tol": "None",
+            "x0Seed": 23769435
+        },
+        "ProcessId": 23769435,
+        "SimulatorType": "Statevector",
+        "SolverName": "AdaptVQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
+    },
+    "/2025-10-27_16-58-23-23769465": {
+        "AdaptOptions": {
+            "gradient_hamiltonian_type": "HamiltonianType.ZeroChargePenalty",
+            "max_depth": 40,
+            "prec_cutoff": 0.001,
+            "precision": 0
+        },
+        "Circuit": {
+            "Ansatz": "HardwareAdaptAnsatz1",
+            "AnsatzOptions": {
+                "num_qubits": 8
+            }
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-10-27_16-58-23",
+        "OptimizerOptions": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": [],
+            "method": "cobyqa",
+            "options": {
+                "disp": 0,
+                "maxiter": 20000
+            },
+            "tol": "None",
+            "x0Seed": 23769465
+        },
+        "ProcessId": 23769465,
+        "SimulatorType": "Statevector",
+        "SolverName": "AdaptVQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
     }
 }

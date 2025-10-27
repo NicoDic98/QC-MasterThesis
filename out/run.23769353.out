@@ -1,0 +1,625 @@
+Start 2025-10-27 16:23:27 | 23769353 MyPyJob | node001 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h: 0.0
+Prec 0.0
+Prec 0.0
+New op index: 27
+Current grad: 23.999999999999982
+0:	0.00e+00	0.00e+00
+1:	-2.00e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.50e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.50e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	2.00e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	2.00e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	4.16e-17
+16:	-2.50e+00	1.39e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	0.00e+00
+19:	2.50e+00	6.94e-18
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.47e-17
+22:	-2.00e+00	6.94e-18
+23:	0.00e+00	1.39e-17
+24:	5.00e-01	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	-5.00e-01	-5.00e-01
+27:	4.00e+00	6.94e-18
+28:	-5.00e-01	-5.00e-01
+29:	-6.94e-18	2.08e-17
+30:	5.00e-01	2.08e-17
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 198.50000000049644
+            Iterations: 4
+            Function evaluations: 9
+            Gradient evaluations: 4
+Prec 0.0
+New op index: 19
+Current grad: 21.656943398918415
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 151.0000000009961
+            Iterations: 6
+            Function evaluations: 26
+            Gradient evaluations: 6
+Prec 0.0
+New op index: 4
+Current grad: 18.010440859582303
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 148.50000000352549
+            Iterations: 8
+            Function evaluations: 36
+            Gradient evaluations: 8
+Prec 0.0
+New op index: 10
+Current grad: 14.36422087825518
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 101.50000177639885
+            Iterations: 6
+            Function evaluations: 44
+            Gradient evaluations: 6
+Prec 0.0
+New op index: 7
+Current grad: 8.001439370951797
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 95.99082353649507
+            Iterations: 23
+            Function evaluations: 154
+            Gradient evaluations: 23
+Prec 0.0
+New op index: 1
+Current grad: 10.331329827817074
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 75.23676517786453
+            Iterations: 11
+            Function evaluations: 93
+            Gradient evaluations: 11
+Prec 0.0
+New op index: 22
+Current grad: 8.588787777510152
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 45.489885586766874
+            Iterations: 11
+            Function evaluations: 104
+            Gradient evaluations: 11
+Prec 0.0
+New op index: 16
+Current grad: 6.344974305557114
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 24.732539464227493
+            Iterations: 12
+            Function evaluations: 128
+            Gradient evaluations: 12
+Prec 0.0
+New op index: 13
+Current grad: 4.127339261488209
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.999991434486241
+            Iterations: 19
+            Function evaluations: 213
+            Gradient evaluations: 19
+Prec 0.0
+New op index: 27
+Current grad: 0.0029322627886141568
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.999999645106932
+            Iterations: 1
+            Function evaluations: 15
+            Gradient evaluations: 1
+Prec 0.0
+New op index: 1
+Current grad: 0.0006072126591556056
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.333, r=1.000)
+h: 0.0
+Prec 0.0
+Prec 0.0
+New op index: 27
+Current grad: 10.666666666666659
+0:	0.00e+00	0.00e+00
+1:	-6.67e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.17e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.17e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	6.67e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	6.67e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.24e-17
+16:	-1.17e+00	4.63e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	9.25e-18
+19:	1.17e+00	1.62e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.54e-17
+22:	-6.67e-01	-2.31e-18
+23:	0.00e+00	1.39e-17
+24:	5.00e-01	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	-5.00e-01	-5.00e-01
+27:	1.33e+00	6.94e-18
+28:	-5.00e-01	-5.00e-01
+29:	-6.94e-18	2.08e-17
+30:	5.00e-01	2.08e-17
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 199.83333333676683
+            Iterations: 5
+            Function evaluations: 10
+            Gradient evaluations: 5
+Prec 0.0
+New op index: 10
+Current grad: 9.771275797541717
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 151.50000149210462
+            Iterations: 6
+            Function evaluations: 27
+            Gradient evaluations: 6
+Prec 0.0
+New op index: 4
+Current grad: 7.999818845817945
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.49078068270254
+            Iterations: 33
+            Function evaluations: 144
+            Gradient evaluations: 33
+Prec 0.0
+New op index: 19
+Current grad: 6.017337372075353
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 101.50000041932473
+            Iterations: 14
+            Function evaluations: 86
+            Gradient evaluations: 14
+Prec 0.0
+New op index: 1
+Current grad: 2.66721688304087
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 101.16666677742948
+            Iterations: 8
+            Function evaluations: 56
+            Gradient evaluations: 8
+Prec 0.0
+New op index: 16
+Current grad: 2.0004781477691247
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 50.98739836048734
+            Iterations: 10
+            Function evaluations: 87
+            Gradient evaluations: 10
+Prec 0.0
+New op index: 16
+Current grad: 2.83510427353421
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.667, r=1.000)
+h: 0.0
+Prec 0.0
+Prec 0.0
+New op index: 27
+Current grad: 6.666666666666661
+0:	0.00e+00	0.00e+00
+1:	6.67e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.67e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.67e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-6.67e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-6.67e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.31e-17
+16:	1.67e-01	-4.63e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.85e-17
+19:	-1.67e-01	2.54e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.62e-17
+22:	6.67e-01	-1.16e-17
+23:	0.00e+00	1.39e-17
+24:	5.00e-01	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	-5.00e-01	-5.00e-01
+27:	-1.33e+00	6.94e-18
+28:	-5.00e-01	-5.00e-01
+29:	-6.94e-18	2.08e-17
+30:	5.00e-01	2.08e-17
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 199.83333333679994
+            Iterations: 5
+            Function evaluations: 10
+            Gradient evaluations: 5
+Prec 0.0
+New op index: 26
+Current grad: 8.356990314826675
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 148.56703142620208
+            Iterations: 6
+            Function evaluations: 29
+            Gradient evaluations: 6
+Prec 0.0
+New op index: 4
+Current grad: 7.499696705869606
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 147.4507857576189
+            Iterations: 10
+            Function evaluations: 47
+            Gradient evaluations: 10
+Prec 0.0
+New op index: 1
+Current grad: 5.210359441991235
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 97.58571463548513
+            Iterations: 9
+            Function evaluations: 58
+            Gradient evaluations: 9
+Prec 0.0
+New op index: 13
+Current grad: 5.320265173222484
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 97.16420023978085
+            Iterations: 9
+            Function evaluations: 62
+            Gradient evaluations: 9
+Prec 0.0
+New op index: 16
+Current grad: 4.162866782200221
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 96.81544703723333
+            Iterations: 11
+            Function evaluations: 86
+            Gradient evaluations: 11
+Prec 0.0
+New op index: 22
+Current grad: 3.3649966342008106
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 47.65922499416464
+            Iterations: 13
+            Function evaluations: 123
+            Gradient evaluations: 13
+Prec 0.0
+New op index: 19
+Current grad: 3.3447355334349527
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 45.50611669391992
+            Iterations: 34
+            Function evaluations: 326
+            Gradient evaluations: 34
+Prec 0.0
+New op index: 7
+Current grad: 1.4469528248833883
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.666584505808329
+            Iterations: 11
+            Function evaluations: 129
+            Gradient evaluations: 11
+Prec 0.0
+New op index: 13
+Current grad: 0.0039474101038356755
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h: 0.0
+Prec 0.0
+Prec 0.0
+New op index: 27
+Current grad: 19.999999999999986
+0:	0.00e+00	0.00e+00
+1:	2.00e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.50e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.50e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-2.00e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-2.00e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.39e-17
+16:	1.50e+00	-1.39e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.78e-17
+19:	-1.50e+00	3.47e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	6.94e-18
+22:	2.00e+00	-2.08e-17
+23:	0.00e+00	1.39e-17
+24:	5.00e-01	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	-5.00e-01	-5.00e-01
+27:	-4.00e+00	6.94e-18
+28:	-5.00e-01	-5.00e-01
+29:	-6.94e-18	2.08e-17
+30:	5.00e-01	2.08e-17
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 198.50000000037642
+            Iterations: 4
+            Function evaluations: 9
+            Gradient evaluations: 4
+Prec 0.0
+New op index: 7
+Current grad: 19.071131724581
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 146.1461466459594
+            Iterations: 6
+            Function evaluations: 26
+            Gradient evaluations: 6
+Prec 0.0
+New op index: 16
+Current grad: 15.836802068696251
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 143.79228160409332
+            Iterations: 8
+            Function evaluations: 37
+            Gradient evaluations: 8
+Prec 0.0
+New op index: 19
+Current grad: 12.026355589067881
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 92.14253700861373
+            Iterations: 9
+            Function evaluations: 57
+            Gradient evaluations: 9
+Prec 0.0
+New op index: 4
+Current grad: 11.660507453201769
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 90.44241531720154
+            Iterations: 9
+            Function evaluations: 61
+            Gradient evaluations: 9
+Prec 0.0
+New op index: 10
+Current grad: 10.853974779563389
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 43.49519258039451
+            Iterations: 12
+            Function evaluations: 99
+            Gradient evaluations: 12
+Prec 0.0
+New op index: 22
+Current grad: 4.961653115283521
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 37.4890382147713
+            Iterations: 35
+            Function evaluations: 302
+            Gradient evaluations: 35
+Prec 0.0
+New op index: 1
+Current grad: 6.256581380708118
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 16.73663836569272
+            Iterations: 13
+            Function evaluations: 137
+            Gradient evaluations: 13
+Prec 0.0
+New op index: 13
+Current grad: 4.073858589629877
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -15.999993543367438
+            Iterations: 18
+            Function evaluations: 204
+            Gradient evaluations: 18
+Prec 0.0
+New op index: 27
+Current grad: 0.0023496248298147493
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -15.999999804933847
+            Iterations: 1
+            Function evaluations: 15
+            Gradient evaluations: 1
+Prec 0.0
+New op index: 10
+Current grad: 0.0003335318768414669
+Precision cutoff reached.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23769353
+	2025-10-27_16-23-28-23769353:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-10-27_16-23-28
+			ProcessId: 23769353
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				gradient_hamiltonian_type: HamiltonianType.Full
+				max_depth: 40
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(4, 11, 31), maxshape=(4, None, 31))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(4, 11, 31), maxshape=(4, None, 31))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(4, 10), maxshape=(4, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz1
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(4, 950, 10), maxshape=(4, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(4, 950), maxshape=(4, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(4, 950), maxshape=(4, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23769353
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(4, 950), maxshape=(4, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(4, 950), maxshape=(4, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(4, 950), maxshape=(4, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(4,), maxshape=(4,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: 1e-05
+				x0Seed: 23769353
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(4, 10), maxshape=(4, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(4,), maxshape=(4,))
+			Attributes:
+-----Ending pprint-----
+End 2025-10-27 16:23:45 | 23769353 MyPyJob | node001 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
