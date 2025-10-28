@@ -251,6 +251,8 @@ class ResultLoader:
             der, der_dep_dict, op = self.get_derivatives(parameters, second)
 
             linestyle_str = ['solid', 'dotted', 'dashed', 'dashdot']
+            for i in range(100):
+                linestyle_str.append("'solid'")
             already_labeled = []
             legend_elements = []
 

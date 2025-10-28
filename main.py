@@ -7,7 +7,8 @@ import numpy as np
 from qiskit_ibm_runtime import EstimatorOptions
 
 from solver.adapt_vqe import AdaptVQE
-from solver.circuits import HardwareAdaptAnsatz1, HardwareAdaptAnsatz2, HardwareAdaptAnsatz3, HardwareAdaptAnsatz4
+from solver.circuits import HardwareAdaptAnsatz1, HardwareAdaptAnsatz2, HardwareAdaptAnsatz3, HardwareAdaptAnsatz4, \
+    HardwareAdaptAnsatz5
 from solver.exact_diagonalization import ED
 from hamiltonian.free_wilson import FreeWilson2D
 from hamiltonian.base import HamiltonianType, HamiltonianParameters
@@ -40,7 +41,7 @@ def run_vqe(my_f: h5py.File):
 
 
 def run_adapt_vqe(my_f: h5py.File):
-    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz4(8))
+    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz5(8))
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
                       HamiltonianParameters.Mass: np.linspace(-6, 2, 10).tolist(),
@@ -57,8 +58,8 @@ def run_adapt_vqe(my_f: h5py.File):
                                                         # default_precision=1.
                                                         ),
                      adapt_options={
-                         "max_depth": 40,
-                         "gradient_hamiltonian_type": HamiltonianType.Full,
+                         "max_depth": 30,
+                         "gradient_hamiltonian_type": HamiltonianType.ZeroChargePenalty,
                          # "precision": 0.01
                      })
 
