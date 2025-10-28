@@ -17,3 +17,1031 @@ Currently Loaded Modules:
 
 Start of Program:
 
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 15
+Current grad: 6.000000000000008
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	-2.70e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	-4.00e+00	6.94e-18
+16:	0.00e+00	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	0.00e+00	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	0.00e+00	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 11
+Current grad: 539.7142494584662
+New op index: 13
+Current grad: 1.6622651658315593
+New op index: 19
+Current grad: 64.42851201209771
+New op index: 9
+Current grad: 128.13000587288002
+New op index: 17
+Current grad: 0.5142190437502645
+New op index: 15
+Current grad: 1.408828524483927
+New op index: 21
+Current grad: 2.5312092632776864
+New op index: 19
+Current grad: 7.90441938013754
+New op index: 17
+Current grad: 1.4802005279472061
+New op index: 21
+Current grad: 3.565987179089286
+New op index: 13
+Current grad: 1.1717043481065328
+New op index: 19
+Current grad: 0.765330866075511
+New op index: 15
+Current grad: 1.0629449533126876
+New op index: 13
+Current grad: 4.248735802369616
+New op index: 11
+Current grad: 3.3797293870225102
+New op index: 17
+Current grad: 0.3284297014761239
+New op index: 21
+Current grad: 3.759807015276426
+New op index: 13
+Current grad: 0.11739341473900586
+New op index: 15
+Current grad: 2.1839004727031903
+New op index: 9
+Current grad: 0.22733883177669884
+New op index: 17
+Current grad: 0.4539299278116464
+New op index: 11
+Current grad: 0.28352189338219796
+New op index: 13
+Current grad: 0.3901545072805233
+New op index: 19
+Current grad: 0.44265035694112453
+New op index: 11
+Current grad: 0.15176162180638136
+New op index: 15
+Current grad: 0.03754450424685754
+New op index: 21
+Current grad: 0.004785840749757652
+New op index: 17
+Current grad: 3.2747932475945515e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.111, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 15
+Current grad: 5.11111111111112
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	-2.70e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	-3.11e+00	6.94e-18
+16:	0.00e+00	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	0.00e+00	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	-2.47e-32	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 19
+Current grad: 539.7142494588201
+New op index: 17
+Current grad: 1.6647436339904726
+New op index: 11
+Current grad: 70.1520440520608
+New op index: 21
+Current grad: 128.14020187719996
+New op index: 13
+Current grad: 0.5162234662719317
+New op index: 15
+Current grad: 1.6804333968648613
+New op index: 9
+Current grad: 2.5567495845983736
+New op index: 11
+Current grad: 22.490108087796695
+New op index: 13
+Current grad: 1.6462802401844066
+New op index: 9
+Current grad: 8.382080491321739
+New op index: 15
+Current grad: 2.8064665109200826
+New op index: 11
+Current grad: 0.7738943332304987
+New op index: 17
+Current grad: 0.773758592141949
+New op index: 19
+Current grad: 0.1873064799872099
+New op index: 17
+Current grad: 0.029836386815511
+New op index: 15
+Current grad: 0.9439097032875342
+New op index: 21
+Current grad: 0.2501258748350291
+New op index: 17
+Current grad: 1.0192630130012261
+New op index: 13
+Current grad: 0.6355626319995986
+New op index: 11
+Current grad: 0.7447209333636584
+New op index: 19
+Current grad: 0.4056466204784894
+New op index: 17
+Current grad: 0.270409312344837
+New op index: 9
+Current grad: 0.01706493463298703
+New op index: 11
+Current grad: 0.06925470900857261
+New op index: 15
+Current grad: 0.043168662475476044
+New op index: 17
+Current grad: 0.0008130344951780044
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.222, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 15
+Current grad: 4.222222222222233
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	-2.70e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	-2.22e+00	6.94e-18
+16:	0.00e+00	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	0.00e+00	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	0.00e+00	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 11
+Current grad: 539.7142494596536
+New op index: 13
+Current grad: 1.6672576093028608
+New op index: 19
+Current grad: 73.71099344070417
+New op index: 9
+Current grad: 128.14948815567794
+New op index: 17
+Current grad: 0.5182157487230366
+New op index: 15
+Current grad: 7.314394103905999
+New op index: 11
+Current grad: 3.4016479081746067
+New op index: 21
+Current grad: 16.558999149012955
+New op index: 19
+Current grad: 41.317736648299174
+New op index: 9
+Current grad: 1.8637050516251865
+New op index: 17
+Current grad: 0.6399505854603218
+New op index: 13
+Current grad: 0.2927988153018242
+New op index: 15
+Current grad: 1.0055404772997742
+New op index: 11
+Current grad: 4.660088219825884
+New op index: 19
+Current grad: 4.323044583629599
+New op index: 17
+Current grad: 1.932703116148939
+New op index: 21
+Current grad: 0.4794432889076575
+New op index: 19
+Current grad: 1.5845334876919286
+New op index: 9
+Current grad: 1.4627325319084028
+New op index: 21
+Current grad: 0.9511820204233277
+New op index: 17
+Current grad: 0.5420519160776035
+New op index: 13
+Current grad: 0.08560130047656074
+New op index: 15
+Current grad: 0.17320569046785936
+New op index: 11
+Current grad: 0.07322270238040247
+New op index: 9
+Current grad: 0.004389935307777123
+New op index: 13
+Current grad: 0.05192234182559748
+New op index: 15
+Current grad: 0.026871373510939593
+New op index: 17
+Current grad: 0.005937702081950276
+New op index: 15
+Current grad: 0.01833726831481508
+New op index: 19
+Current grad: 4.993257992651568e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.333, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 15
+Current grad: 3.3333333333333446
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	9.63e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	-1.33e+00	6.94e-18
+16:	0.00e+00	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	1.23e-32	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	-1.23e-32	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 19
+Current grad: 539.7142494572477
+New op index: 17
+Current grad: 1.6698233819770245
+New op index: 11
+Current grad: 71.07669383210495
+New op index: 21
+Current grad: 128.15786355328632
+New op index: 13
+Current grad: 0.5203730897821012
+New op index: 11
+Current grad: 2.922979351795447
+New op index: 9
+Current grad: 50.3281778332977
+New op index: 19
+Current grad: 35.90321183336552
+New op index: 15
+Current grad: 0.4278027114030086
+New op index: 11
+Current grad: 0.2139597877559602
+New op index: 13
+Current grad: 0.13370240989103288
+New op index: 11
+Current grad: 0.5346086110820172
+New op index: 21
+Current grad: 0.2554056878437205
+New op index: 17
+Current grad: 0.24118633574432244
+New op index: 15
+Current grad: 0.7725821416987727
+New op index: 19
+Current grad: 0.045805317994060894
+New op index: 17
+Current grad: 0.01591826590475892
+New op index: 19
+Current grad: 1.739428484492101
+New op index: 13
+Current grad: 0.7908980920226262
+New op index: 21
+Current grad: 0.3811746524061214
+New op index: 11
+Current grad: 0.05662193604845501
+New op index: 9
+Current grad: 0.04975229596450145
+New op index: 19
+Current grad: 0.35112811566155777
+New op index: 11
+Current grad: 0.04299453608913201
+New op index: 15
+Current grad: 0.09391961130720958
+New op index: 13
+Current grad: 0.005351545304192784
+New op index: 15
+Current grad: 0.01621867559743224
+New op index: 17
+Current grad: 0.006314493089037039
+New op index: 15
+Current grad: 0.017087776359823
+New op index: 21
+Current grad: 0.0022288857996182383
+New op index: 13
+Current grad: 0.0009808670345738768
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.444, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 21
+Current grad: 2.444444444444456
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	3.47e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	-4.44e-01	6.94e-18
+16:	-6.16e-33	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	6.16e-33	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	-1.23e-32	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 19
+Current grad: 102.4450438567345
+New op index: 13
+Current grad: 1.4445423034438574
+New op index: 9
+Current grad: 313.9982355918581
+New op index: 15
+Current grad: 1.0945672498120749
+New op index: 17
+Current grad: 13.449750734068441
+New op index: 11
+Current grad: 37.06947506954169
+New op index: 13
+Current grad: 38.62572125634372
+New op index: 15
+Current grad: 1.1875311278606553
+New op index: 21
+Current grad: 21.222296351562193
+New op index: 19
+Current grad: 14.698961902620983
+New op index: 13
+Current grad: 1.2968576464369919
+New op index: 17
+Current grad: 1.1711138949508286
+New op index: 21
+Current grad: 0.647597882618935
+New op index: 11
+Current grad: 0.9375487636546331
+New op index: 9
+Current grad: 0.18526740955835622
+New op index: 11
+Current grad: 0.09649772403198391
+New op index: 13
+Current grad: 1.8622733268036367
+New op index: 11
+Current grad: 0.3533341289759692
+New op index: 15
+Current grad: 0.9821541505671811
+New op index: 19
+Current grad: 0.3356787870511064
+New op index: 21
+Current grad: 0.033512891082073656
+New op index: 17
+Current grad: 0.09766304330210253
+New op index: 19
+Current grad: 0.12370933666283275
+New op index: 13
+Current grad: 0.050725227395898013
+New op index: 15
+Current grad: 0.01840947196579779
+New op index: 11
+Current grad: 0.031966147031234536
+New op index: 13
+Current grad: 0.00227577330817902
+New op index: 15
+Current grad: 5.150390938840575e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.556, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 21
+Current grad: 2.444444444444451
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	3.47e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	4.44e-01	6.94e-18
+16:	-6.16e-33	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	6.16e-33	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	-1.23e-32	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 19
+Current grad: 102.4446449134127
+New op index: 13
+Current grad: 1.444542471661894
+New op index: 9
+Current grad: 314.6268448613239
+New op index: 17
+Current grad: 0.596631742112801
+New op index: 11
+Current grad: 10.133910911958642
+New op index: 15
+Current grad: 27.836773623948375
+New op index: 13
+Current grad: 25.55224361645834
+New op index: 9
+Current grad: 29.39344538578356
+New op index: 15
+Current grad: 2.3587279788120967
+New op index: 17
+Current grad: 1.198677769815541
+New op index: 11
+Current grad: 0.1411820764585761
+New op index: 9
+Current grad: 0.8933749800887774
+New op index: 13
+Current grad: 0.4744415888392106
+New op index: 21
+Current grad: 0.0072779094644227025
+New op index: 19
+Current grad: 0.0028140955926074956
+New op index: 17
+Current grad: 0.7764347983525929
+New op index: 15
+Current grad: 0.6107581914073006
+New op index: 21
+Current grad: 0.7028992437252599
+New op index: 19
+Current grad: 0.041481045184273084
+New op index: 13
+Current grad: 0.008228339256303166
+New op index: 17
+Current grad: 0.41095251275650846
+New op index: 15
+Current grad: 0.007210337087090816
+New op index: 11
+Current grad: 0.010287613160666372
+New op index: 11
+Current grad: 0.000780933425573199
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.667, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 15
+Current grad: 3.3333333333333384
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	9.63e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	1.33e+00	6.94e-18
+16:	0.00e+00	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	1.23e-32	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	-1.23e-32	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 9
+Current grad: 540.3000359004488
+New op index: 17
+Current grad: 3.5188463870785895
+New op index: 21
+Current grad: 78.44318026719367
+New op index: 13
+Current grad: 170.7352692936631
+New op index: 15
+Current grad: 6.579569755412201
+New op index: 13
+Current grad: 0.6698243435802157
+New op index: 11
+Current grad: 6.571669431811805
+New op index: 19
+Current grad: 26.269897645785182
+New op index: 17
+Current grad: 4.138948605125135
+New op index: 21
+Current grad: 10.173735708434348
+New op index: 15
+Current grad: 2.3801121515596217
+New op index: 19
+Current grad: 1.1570657154323658
+New op index: 9
+Current grad: 0.29866930215619697
+New op index: 17
+Current grad: 0.01852308877888633
+New op index: 13
+Current grad: 0.017987513801410067
+New op index: 21
+Current grad: 0.0023078092130111878
+New op index: 19
+Current grad: 0.08064413641424632
+New op index: 15
+Current grad: 0.14456819532949466
+New op index: 11
+Current grad: 1.4147191788699371
+New op index: 17
+Current grad: 0.3341124738889088
+New op index: 13
+Current grad: 1.1608079724969982
+New op index: 15
+Current grad: 0.479961730465997
+New op index: 9
+Current grad: 0.014764759550231906
+New op index: 19
+Current grad: 0.00890058822521382
+New op index: 13
+Current grad: 0.10358287927402723
+New op index: 21
+Current grad: 0.03546253468630464
+New op index: 11
+Current grad: 0.003254436335703002
+New op index: 17
+Current grad: 0.003691328012086098
+New op index: 21
+Current grad: 0.013966672086416457
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.222, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 15
+Current grad: 4.222222222222227
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	-2.70e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	2.22e+00	6.94e-18
+16:	0.00e+00	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	0.00e+00	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	0.00e+00	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 21
+Current grad: 540.3000358959326
+New op index: 13
+Current grad: 3.5188508097001487
+New op index: 9
+Current grad: 74.85004005024047
+New op index: 17
+Current grad: 170.88693435131262
+New op index: 15
+Current grad: 8.185054889626912
+New op index: 13
+Current grad: 0.9613838839273071
+New op index: 11
+Current grad: 7.437381422032209
+New op index: 19
+Current grad: 26.58790688245253
+New op index: 17
+Current grad: 4.315785221824569
+New op index: 21
+Current grad: 11.967120900946625
+New op index: 15
+Current grad: 3.647104898227819
+New op index: 13
+Current grad: 1.1716106872266936
+New op index: 19
+Current grad: 0.6965675994614149
+New op index: 9
+Current grad: 0.2947482242696702
+New op index: 17
+Current grad: 0.08248837766029127
+New op index: 21
+Current grad: 0.00564299463456636
+New op index: 15
+Current grad: 0.2331000081148515
+New op index: 17
+Current grad: 4.434453448714707
+New op index: 19
+Current grad: 0.13132433366942914
+New op index: 11
+Current grad: 0.10260765022535859
+New op index: 9
+Current grad: 0.3869617899277633
+New op index: 13
+Current grad: 0.11031421811736489
+New op index: 15
+Current grad: 0.08174563698844589
+New op index: 21
+Current grad: 0.03066262680755135
+New op index: 17
+Current grad: 0.00619437105182979
+New op index: 19
+Current grad: 0.004403485534765796
+New op index: 15
+Current grad: 0.0037085042821673265
+New op index: 19
+Current grad: 0.007104422791406686
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.111, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 15
+Current grad: 5.111111111111114
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	-2.70e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	3.11e+00	6.94e-18
+16:	0.00e+00	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	0.00e+00	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	-2.47e-32	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 9
+Current grad: 540.3000358988365
+New op index: 17
+Current grad: 3.518850600085874
+New op index: 21
+Current grad: 68.50763042815232
+New op index: 13
+Current grad: 171.04004344865862
+New op index: 15
+Current grad: 9.611533812061937
+New op index: 13
+Current grad: 1.2541220713732626
+New op index: 11
+Current grad: 8.05033125276772
+New op index: 19
+Current grad: 26.91936049816969
+New op index: 17
+Current grad: 4.4626827705621865
+New op index: 21
+Current grad: 13.782037937696085
+New op index: 15
+Current grad: 4.9208816327444165
+New op index: 13
+Current grad: 1.224403868671061
+New op index: 19
+Current grad: 0.6414582231078105
+New op index: 9
+Current grad: 0.3218107058752548
+New op index: 17
+Current grad: 0.12423813972513238
+New op index: 21
+Current grad: 0.018127711589721623
+New op index: 11
+Current grad: 0.25406016046162705
+New op index: 9
+Current grad: 0.6440439749111564
+New op index: 15
+Current grad: 0.12005983035918931
+New op index: 13
+Current grad: 0.018837663575724882
+New op index: 17
+Current grad: 0.4625547701461218
+New op index: 15
+Current grad: 0.10074363677093699
+New op index: 19
+Current grad: 0.06050581032729645
+New op index: 17
+Current grad: 0.0330130023508756
+New op index: 21
+Current grad: 0.012289341194464487
+New op index: 19
+Current grad: 0.014832048062255968
+New op index: 21
+Current grad: 0.021988885269184365
+New op index: 15
+Current grad: 0.1443575385595676
+New op index: 11
+Current grad: 0.03342128921725958
+New op index: 15
+Current grad: 0.0019746904761694982
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 15
+Current grad: 6.000000000000003
+0:	-2.89e-34	0.00e+00
+1:	-7.90e-33	0.00e+00
+2:	6.84e-33	0.00e+00
+3:	6.16e-33	-5.00e-01
+4:	4.62e-33	-5.00e-01
+5:	-5.78e-34	1.39e-17
+6:	-2.12e-33	6.94e-18
+7:	-5.97e-33	1.39e-17
+8:	-7.70e-34	0.00e+00
+9:	-5.00e-01	0.00e+00
+10:	3.08e-33	0.00e+00
+11:	-2.66e-15	0.00e+00
+12:	-2.70e-33	-5.00e-01
+13:	5.00e-01	-5.00e-01
+14:	-1.54e-33	6.94e-18
+15:	4.00e+00	6.94e-18
+16:	0.00e+00	-5.00e-01
+17:	5.00e-01	-5.00e-01
+18:	0.00e+00	2.08e-17
+19:	-5.55e-15	8.35e-15
+20:	0.00e+00	2.08e-17
+21:	-5.00e-01	8.35e-15
+New op index: 9
+Current grad: 540.3000358954454
+New op index: 17
+Current grad: 3.518858358748667
+New op index: 21
+Current grad: 62.126843820976916
+New op index: 13
+Current grad: 171.19447845611336
+New op index: 15
+Current grad: 10.916319717412563
+New op index: 13
+Current grad: 1.5470795286892463
+New op index: 11
+Current grad: 8.542592628568466
+New op index: 19
+Current grad: 27.26796783938528
+New op index: 17
+Current grad: 4.576261191141588
+New op index: 21
+Current grad: 15.586196418751378
+New op index: 15
+Current grad: 6.202685556617215
+New op index: 13
+Current grad: 1.30379938933294
+New op index: 19
+Current grad: 0.605704048258873
+New op index: 9
+Current grad: 0.3520103854605218
+New op index: 17
+Current grad: 0.17205429377036077
+New op index: 21
+Current grad: 0.04123896615383778
+New op index: 11
+Current grad: 0.25371378693809193
+New op index: 9
+Current grad: 0.6269430633979799
+New op index: 15
+Current grad: 0.14635446768131752
+New op index: 13
+Current grad: 0.018472513230536464
+New op index: 17
+Current grad: 0.7420677331456567
+New op index: 11
+Current grad: 0.0678938390655278
+New op index: 15
+Current grad: 0.07099010189166638
+New op index: 19
+Current grad: 0.05702844197144735
+New op index: 17
+Current grad: 0.04031748285488834
+New op index: 21
+Current grad: 0.02903284542813847
+New op index: 19
+Current grad: 0.01864933088750259
+New op index: 15
+Current grad: 0.02068239955966424
+New op index: 21
+Current grad: 0.04464872159765702
+New op index: 13
+Current grad: 0.00776536742034092
+New op index: 17
+Current grad: 0.0012289788415038446
+New op index: 15
+Current grad: 0.0024276954813757363
+New op index: 17
+Current grad: 0.0001229531282282561
+Precision cutoff reached.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23770503
+	2025-10-28_12-58-22-23770503:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-10-28_12-58-22
+			ProcessId: 23770503
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 40
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(10, 34, 22), maxshape=(10, None, 22))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(10, 34, 22), maxshape=(10, None, 22))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(10, 33), maxshape=(10, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz4
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(10, 199390, 33), maxshape=(10, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(10, 199390), maxshape=(10, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(10, 199390), maxshape=(10, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23770503
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(10, 199390), maxshape=(10, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(10, 199390), maxshape=(10, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(10, 199390), maxshape=(10, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(10,), maxshape=(10,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyqa
+				tol: None
+				x0Seed: 23770503
+			options:
+				Attributes:
+					disp: 0
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(10, 33), maxshape=(10, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(10,), maxshape=(10,))
+			Attributes:
+-----Ending pprint-----
+End 2025-10-28 18:02:47 | 23770503 MyPyJob | node073 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
