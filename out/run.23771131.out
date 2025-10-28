@@ -1,0 +1,663 @@
+Start 2025-10-28 15:30:51 | 23771131 MyPyJob | node073 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.52e+02
+1:	0.00e+00	-3.52e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.48e+02
+4:	0.00e+00	-3.48e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.52e+02
+7:	0.00e+00	-3.52e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.48e+02
+10:	0.00e+00	-3.48e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.48e+02
+13:	0.00e+00	-3.48e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.52e+02
+16:	0.00e+00	-3.52e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.48e+02
+19:	0.00e+00	-3.48e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.52e+02
+22:	0.00e+00	-3.52e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -352.0
+New op index: 0
+Current grad: 4.3230032009901564e-14
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.111, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.52e+02
+1:	0.00e+00	-3.52e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.48e+02
+4:	0.00e+00	-3.48e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.52e+02
+7:	0.00e+00	-3.52e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.48e+02
+10:	0.00e+00	-3.48e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.48e+02
+13:	0.00e+00	-3.48e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.52e+02
+16:	0.00e+00	-3.52e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.48e+02
+19:	0.00e+00	-3.48e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.52e+02
+22:	0.00e+00	-3.52e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -351.55555555555554
+New op index: 0
+Current grad: 4.317560326327279e-14
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.222, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.51e+02
+1:	0.00e+00	-3.51e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.49e+02
+4:	0.00e+00	-3.49e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.51e+02
+7:	0.00e+00	-3.51e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.49e+02
+10:	0.00e+00	-3.49e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.49e+02
+13:	0.00e+00	-3.49e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.51e+02
+16:	0.00e+00	-3.51e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.49e+02
+19:	0.00e+00	-3.49e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.51e+02
+22:	0.00e+00	-3.51e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -351.1111111111111
+New op index: 0
+Current grad: 4.312117451664402e-14
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.333, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.51e+02
+1:	0.00e+00	-3.51e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.49e+02
+4:	0.00e+00	-3.49e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.51e+02
+7:	0.00e+00	-3.51e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.49e+02
+10:	0.00e+00	-3.49e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.49e+02
+13:	0.00e+00	-3.49e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.51e+02
+16:	0.00e+00	-3.51e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.49e+02
+19:	0.00e+00	-3.49e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.51e+02
+22:	0.00e+00	-3.51e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -350.66666666666663
+New op index: 0
+Current grad: 4.306674577001525e-14
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.444, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.50e+02
+1:	0.00e+00	-3.50e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.50e+02
+4:	0.00e+00	-3.50e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.50e+02
+7:	0.00e+00	-3.50e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.50e+02
+10:	0.00e+00	-3.50e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.50e+02
+13:	0.00e+00	-3.50e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.50e+02
+16:	0.00e+00	-3.50e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.50e+02
+19:	0.00e+00	-3.50e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.50e+02
+22:	0.00e+00	-3.50e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -350.22222222222223
+New op index: 0
+Current grad: 4.301231702338648e-14
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.556, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.50e+02
+1:	0.00e+00	-3.50e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.50e+02
+4:	0.00e+00	-3.50e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.50e+02
+7:	0.00e+00	-3.50e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.50e+02
+10:	0.00e+00	-3.50e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.50e+02
+13:	0.00e+00	-3.50e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.50e+02
+16:	0.00e+00	-3.50e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.50e+02
+19:	0.00e+00	-3.50e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.50e+02
+22:	0.00e+00	-3.50e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -349.77777777777777
+New op index: 0
+Current grad: 4.295788827675771e-14
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.667, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.49e+02
+1:	0.00e+00	-3.49e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.51e+02
+4:	0.00e+00	-3.51e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.49e+02
+7:	0.00e+00	-3.49e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.51e+02
+10:	0.00e+00	-3.51e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.51e+02
+13:	0.00e+00	-3.51e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.49e+02
+16:	0.00e+00	-3.49e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.51e+02
+19:	0.00e+00	-3.51e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.49e+02
+22:	0.00e+00	-3.49e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -349.33333333333337
+New op index: 0
+Current grad: 4.290345953012894e-14
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.222, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.49e+02
+1:	0.00e+00	-3.49e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.51e+02
+4:	0.00e+00	-3.51e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.49e+02
+7:	0.00e+00	-3.49e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.51e+02
+10:	0.00e+00	-3.51e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.51e+02
+13:	0.00e+00	-3.51e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.49e+02
+16:	0.00e+00	-3.49e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.51e+02
+19:	0.00e+00	-3.51e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.49e+02
+22:	0.00e+00	-3.49e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -348.8888888888889
+New op index: 0
+Current grad: 4.2849030783500166e-14
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.111, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.48e+02
+1:	0.00e+00	-3.48e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.52e+02
+4:	0.00e+00	-3.52e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.48e+02
+7:	0.00e+00	-3.48e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.52e+02
+10:	0.00e+00	-3.52e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.52e+02
+13:	0.00e+00	-3.52e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.48e+02
+16:	0.00e+00	-3.48e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.52e+02
+19:	0.00e+00	-3.52e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.48e+02
+22:	0.00e+00	-3.48e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -348.44444444444446
+New op index: 0
+Current grad: 4.2794602036871395e-14
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h: 0.0
+Prec 0.0
+New op index: 0
+Current grad: 0.0
+0:	0.00e+00	-3.48e+02
+1:	0.00e+00	-3.48e+02
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	-3.52e+02
+4:	0.00e+00	-3.52e+02
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	-3.48e+02
+7:	0.00e+00	-3.48e+02
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	-3.52e+02
+10:	0.00e+00	-3.52e+02
+11:	0.00e+00	0.00e+00
+12:	0.00e+00	-3.52e+02
+13:	0.00e+00	-3.52e+02
+14:	0.00e+00	0.00e+00
+15:	0.00e+00	-3.48e+02
+16:	0.00e+00	-3.48e+02
+17:	0.00e+00	0.00e+00
+18:	0.00e+00	-3.52e+02
+19:	0.00e+00	-3.52e+02
+20:	0.00e+00	0.00e+00
+21:	0.00e+00	-3.48e+02
+22:	0.00e+00	-3.48e+02
+23:	0.00e+00	0.00e+00
+24:	0.00e+00	0.00e+00
+25:	0.00e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	0.00e+00	0.00e+00
+28:	0.00e+00	0.00e+00
+29:	0.00e+00	0.00e+00
+30:	0.00e+00	0.00e+00
+31:	0.00e+00	0.00e+00
+32:	0.00e+00	0.00e+00
+33:	0.00e+00	0.00e+00
+34:	0.00e+00	0.00e+00
+35:	0.00e+00	0.00e+00
+36:	0.00e+00	0.00e+00
+37:	0.00e+00	0.00e+00
+Selecting saddle point: 0 with second gradient of -348.0
+New op index: 0
+Current grad: 4.2740173290242624e-14
+Precision cutoff reached.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23771131
+	2025-10-28_15-30-53-23771131:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-10-28_15-30-53
+			ProcessId: 23771131
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 30
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(10, 2, 38), maxshape=(10, None, 38))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(10, 2, 38), maxshape=(10, None, 38))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(10, 1), maxshape=(10, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz9
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(10, 10, 1), maxshape=(10, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(10, 10), maxshape=(10, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(10, 10), maxshape=(10, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23771131
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(10, 10), maxshape=(10, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(10, 10), maxshape=(10, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(10, 10), maxshape=(10, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(10,), maxshape=(10,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 23771131
+			options:
+				Attributes:
+					disp: 0
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(10, 1), maxshape=(10, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(10,), maxshape=(10,))
+			Attributes:
+-----Ending pprint-----
+End 2025-10-28 15:30:54 | 23771131 MyPyJob | node073 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

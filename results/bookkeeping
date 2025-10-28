@@ -53,3 +53,12 @@ Fixed Ansatz is full superposition (5):
 Fixed Ansatz is full superposition+s-gates (6):
 23770883: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z, R_{XX+YY}, R_{XX-YY}, R_{XY+YX} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
 23770999: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY}, R_{XX-YY}, R_{XY+YX} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+
+Fixed Ansatz is full superposition (7):
+23771113: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+
+Fixed Ansatz is full superposition+s-gates (8):
+23771123: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+
+Fixed Ansatz is empty (9):
+23771131: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6

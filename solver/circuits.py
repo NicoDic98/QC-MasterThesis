@@ -168,9 +168,9 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
 
 def build_r_yx_xy(b: Parameter, plus=True):
     if plus:
-        name = "$R_{XY+YX}$"
+        name = "$R_{YX+XY}$"
     else:
-        name = "$R_{XY-YX}$"
+        name = "$R_{YX-XY}$"
     qc = QuantumCircuit(2, name=name)
     qc.z(1)
     qc.s(0)
@@ -325,6 +325,54 @@ class HardwareAdaptAnsatz6(HardwareAdaptAnsatz5):
         super().__init__(num_qubits)
         for i in range(0, self.num_qubits):
             self.fixed_ansatz.s(i)
+
+
+class HardwareAdaptAnsatz7(BaseADAPTVQEAnsatz):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        for i in range(0, self.num_qubits):
+            self.fixed_ansatz.h(i)
+
+        for i in range(self.num_qubits):
+            op = SparsePauliOp.from_sparse_list([("X", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((0, [i]))
+            op = SparsePauliOp.from_sparse_list([("Y", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((1, [i]))
+            op = SparsePauliOp.from_sparse_list([("Z", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((2, [i]))
+
+        self.gate_pool.append(lambda a: RXGate(a, label=f"$R_X$"))
+        self.gate_pool.append(lambda a: RYGate(a, label=f"$R_Y$"))
+        self.gate_pool.append(lambda a: RZGate(a, label=f"$R_Z$"))
+
+        for i in range(self.num_qubits - 1):
+            op = SparsePauliOp.from_sparse_list([("XX", [i, i + 1], -0.5j),
+                                                 ("YY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((3, [i, i + 1]))
+
+            op = SparsePauliOp.from_sparse_list([("YX", [i, i + 1], -0.5j),
+                                                 ("XY", [i, i + 1], 0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((4, [i, i + 1]))
+
+        self.gate_pool.append(lambda a: XXPlusYYGate(2 * a, beta=0, label="$R_{XX+YY}$"))
+        self.gate_pool.append(lambda a: build_r_yx_xy(a, False))
+
+
+class HardwareAdaptAnsatz8(HardwareAdaptAnsatz7):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        for i in range(0, self.num_qubits):
+            self.fixed_ansatz.s(i)
+
+class HardwareAdaptAnsatz9(HardwareAdaptAnsatz7):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
 
 
 class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
