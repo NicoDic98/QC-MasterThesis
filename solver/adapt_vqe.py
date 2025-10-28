@@ -126,7 +126,6 @@ class AdaptVQE(BaseVQE):
             cost_function_instance = self.cost_function(circuit, h_operator.apply_layout(circuit.layout),
                                                         estimator, local_group, non_singular_index)
             for i in range(adapt_options["max_depth"]):
-                print("Prec", estimator.default_precision)
                 pub = (circuit, [op.apply_layout(circuit.layout) for op in commutator_list], [params])
                 # noinspection PyTypeChecker
                 job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
@@ -157,9 +156,9 @@ class AdaptVQE(BaseVQE):
                         print(f"{op_id}:\t{grad:.2e}\t{secgrad:.2e}")
                     if abs_gradients.sum() < adapt_options["prec_cutoff"]:
                         for op_id, secgrad in enumerate(second_gradients):
-                            if np.abs(secgrad) < adapt_options["prec_cutoff"]:
+                            if secgrad < -adapt_options["prec_cutoff"]:
                                 new_op_index = op_id
-                                initial_parameter_value = np.pi
+                                initial_parameter_value = np.pi/4
                                 print(f"Selecting saddle point: {new_op_index} with second gradient of {secgrad}")
                                 break
                 else:

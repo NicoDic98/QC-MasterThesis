@@ -241,7 +241,7 @@ class HardwareAdaptAnsatz3(HardwareAdaptAnsatz1):
         self.gate_pool.append(lambda a: XXPlusYYGate(2 * a, beta=0, label="$R_{XX+YY}$"))
 
 
-class HardwareAdaptAnsatz4(HardwareAdaptAnsatz1):
+class HardwareAdaptAnsatz4(BaseADAPTVQEAnsatz):
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
         for i in range(0, self.num_qubits):
@@ -260,7 +260,12 @@ class HardwareAdaptAnsatz4(HardwareAdaptAnsatz1):
                                                  ("YY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
             self.operator_pool.append(op)
             self.operator_gate_map.append((1, [i, i + 1]))
+            op = SparsePauliOp.from_sparse_list([("XX", [i, i + 1], -0.5j),
+                                                 ("YY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((2, [i, i + 1]))
 
+        self.gate_pool.append(lambda a: XXPlusYYGate(2 * a, beta=0, label="$R_{XX+YY}$"))
         self.gate_pool.append(lambda a: XXPlusYYGate(2 * a, beta=0, label="$R_{XX+YY}$"))
 
 

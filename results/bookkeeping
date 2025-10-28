@@ -12,7 +12,7 @@ Fixed Ansatz is full superposition:
 
 
 
-Fixed Ansatz is full superposition:
+Fixed Ansatz is full superposition (1):
 23753926: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses
 23753983: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses
 23768245: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.5 (AVQE)
@@ -22,17 +22,24 @@ Fixed Ansatz is full superposition:
 23768500: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.005 (AVQE)
 23768557: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0. (AVQE), 1. (VQE)
 23768679: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.01 (AVQE)
-23769343: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, COBYQA
-23769353: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, SLSQP
-23769366: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, SLSQP
-23769369: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, COBYQA
-23769435: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, SLSQP, standard tolerance 1e-6 instead of previous 1e-5
-23769465: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, COBYQA, standard tolerance 1e-6 instead of previous 1e-5
-23769494: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 50 masses, SLSQP, standard tolerance 1e-6 instead of previous 1e-5
+23769343: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, COBYQA, tol=1e-5
+23769353: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, SLSQP, tol=1e-5
+23769366: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, SLSQP, tol=1e-5
+23769369: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, COBYQA, tol=1e-5
+23769435: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, SLSQP, tol=1e-6
+23769465: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, COBYQA, tol=1e-6
+23769494: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 50 masses, SLSQP, tol=1e-6
 
-Fixed Ansatz is 0-charge sector:
+Fixed Ansatz is 0-charge sector (2):
 23753943: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses
 23757058: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses
 
-Fixed Ansatz is full superposition+s-gates:
-23769527: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 50 masses, SLSQP, standard tolerance 1e-6 instead of previous 1e-5,
+Fixed Ansatz is full superposition+s-gates (3):
+23769527: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XY+YX} and R_{XX+YY}; 50 masses, SLSQP, tol=1e-6
+
+Charge conserving ansatz:
+23770418: PenaltyHamiltonian everywhere; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, SLSQP, tol=1e-6
+23770419: PenaltyHamiltonian everywhere; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, COBYQA, tol=1e-6
+23770423: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, COBYQA, tol=1e-6
+23770424: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, SLSQP, tol=1e-6
+23770427: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, SLSQP, tol=1e-6 (Different saddle point initialization value of pi/4)

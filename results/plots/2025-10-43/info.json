@@ -523,5 +523,75 @@
         "n_x": 2,
         "n_y": 2,
         "r": 1.0
+    },
+    "/2025-10-28_10-44-11-23770418": {
+        "AdaptOptions": {
+            "gradient_hamiltonian_type": "HamiltonianType.ZeroChargePenalty",
+            "max_depth": 40,
+            "prec_cutoff": 0.001,
+            "precision": 0
+        },
+        "Circuit": {
+            "Ansatz": "HardwareAdaptAnsatz4",
+            "AnsatzOptions": {
+                "num_qubits": 8
+            }
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-10-28_10-44-11",
+        "OptimizerOptions": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": [],
+            "method": "slsqp",
+            "options": {
+                "disp": 0,
+                "maxiter": 20000
+            },
+            "tol": "None",
+            "x0Seed": 23770418
+        },
+        "ProcessId": 23770418,
+        "SimulatorType": "Statevector",
+        "SolverName": "AdaptVQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
+    },
+    "/2025-10-28_10-53-13-23770419": {
+        "AdaptOptions": {
+            "gradient_hamiltonian_type": "HamiltonianType.ZeroChargePenalty",
+            "max_depth": 40,
+            "prec_cutoff": 0.001,
+            "precision": 0
+        },
+        "Circuit": {
+            "Ansatz": "HardwareAdaptAnsatz4",
+            "AnsatzOptions": {
+                "num_qubits": 8
+            }
+        },
+        "HamiltonianType": "ZeroChargePenalty",
+        "Last-Modified": "2025-10-28_10-53-13",
+        "OptimizerOptions": {
+            "bounds": "None",
+            "callback": "None",
+            "constraints": [],
+            "method": "cobyqa",
+            "options": {
+                "disp": 0,
+                "maxiter": 20000
+            },
+            "tol": "None",
+            "x0Seed": 23770419
+        },
+        "ProcessId": 23770419,
+        "SimulatorType": "Statevector",
+        "SolverName": "AdaptVQE",
+        "SystemName": "FreeWilson2D",
+        "n_x": 2,
+        "n_y": 2,
+        "r": 1.0
     }
 }
