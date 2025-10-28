@@ -252,7 +252,7 @@ class ResultLoader:
 
             linestyle_str = ['solid', 'dotted', 'dashed', 'dashdot']
             for i in range(100):
-                linestyle_str.append("'solid'")
+                linestyle_str.append("solid")
             already_labeled = []
             legend_elements = []
 

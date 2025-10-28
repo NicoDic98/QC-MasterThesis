@@ -167,7 +167,10 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
 
 
 def build_r_yx_xy(b: Parameter, plus=True):
-    name = "$R_{XY+YX}$"
+    if plus:
+        name = "$R_{XY+YX}$"
+    else:
+        name = "$R_{XY-YX}$"
     qc = QuantumCircuit(2, name=name)
     qc.z(1)
     qc.s(0)
@@ -315,6 +318,13 @@ class HardwareAdaptAnsatz5(BaseADAPTVQEAnsatz):
         self.gate_pool.append(lambda a: XXMinusYYGate(2 * a, beta=0, label="$R_{XX-YY}$"))
         self.gate_pool.append(lambda a: build_r_yx_xy(a))
         self.gate_pool.append(lambda a: build_r_yx_xy(a, False))
+
+
+class HardwareAdaptAnsatz6(HardwareAdaptAnsatz5):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        for i in range(0, self.num_qubits):
+            self.fixed_ansatz.s(i)
 
 
 class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
