@@ -7,6 +7,22 @@ import h5py
 from misc import data_folder, pprint_all
 
 
+def heal_h5_files(filename):
+    try:
+        with h5py.File(filename, "a") as ft:
+            for name, obj in ft.items():
+                if isinstance(ft.get(name, getlink=True), h5py.ExternalLink):
+                    if obj is None:
+                        print(f"Healing {name}: {ft.get(name, getlink=True)}")
+                        del ft[name]
+
+    except OSError as e:
+        if "Unable to synchronously" in str(e):
+            print(f"Unable to open file: {filename}")
+        else:
+            raise e
+
+
 def combine_data(link=True):
     print("-----Combining data-----")
     hdf5_files = [f for f in listdir(data_folder) if (isfile(join(data_folder, f)) and (Path(f).suffix == '.hdf5'))]
@@ -19,6 +35,9 @@ def combine_data(link=True):
 
     combinable_files = []
     for hd5_file in hdf5_files:
+        # heal files:
+        heal_h5_files(f"{data_folder}{hd5_file}")
+
         name_components = hd5_file.split("-")
         if len(name_components) < 4:
             print(f"Skipping combined file {hd5_file}")
