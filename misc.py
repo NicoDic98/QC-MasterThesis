@@ -1,14 +1,27 @@
+from contextlib import redirect_stdout
 from os import listdir
 from os.path import isfile, join
 from pathlib import Path
-from contextlib import redirect_stdout
 
 import h5py
+from qiskit.quantum_info import SparsePauliOp
 
 data_folder = "results/data/"
 plots_folder = "results/plots/"
 default_id = 42
 
+def calc_im_part(op: SparsePauliOp):
+    im_part = 0
+    for label, coeff in op.to_list():
+        label: str
+        coeff: complex
+        y_count = label.count("Y")
+        if y_count %2 == 0:
+            im_part += coeff.imag
+        else:
+            im_part += coeff.real
+            print("hi")
+    return im_part
 
 def fill_defaults_in_dict(my_dict: dict, my_default_dict: dict):
     for key, value in my_default_dict.items():
@@ -16,10 +29,8 @@ def fill_defaults_in_dict(my_dict: dict, my_default_dict: dict):
             my_dict[key] = value
 
 
-def print_h5(name, obj: h5py.Group):
-    print(f"{name}:{obj}")
-    for key in obj.attrs.keys():
-        print(f"\t{key}: {obj.attrs[key]}")
+def info_h5_dataset(obj: h5py.Dataset):
+    return f"Dataset (dtype={obj.dtype}, shape={obj.shape}, maxshape={obj.maxshape})"
 
 
 def pprint_h5(obj: h5py.Group, depth: int = 0, basename=""):
@@ -38,10 +49,13 @@ def pprint_h5(obj: h5py.Group, depth: int = 0, basename=""):
         if isinstance(value, h5py.Group):
             pprint_h5(value, depth=depth + 1)
         else:
-            print(prefix + f"\t{key}: {value}")
-            print(prefix + "\t\tAttributes:")
-            for attr_key, attr_value in value.attrs.items():
-                print(prefix + f"\t\t\t{attr_key}: {attr_value}")
+            if value is None:
+                print(prefix + f"\t{key}: Error-{value}")
+            else:
+                print(prefix + f"\t{key}: {info_h5_dataset(value)}")
+                print(prefix + "\t\tAttributes:")
+                for attr_key, attr_value in value.attrs.items():
+                    print(prefix + f"\t\t\t{attr_key}: {attr_value}")
     if depth == 0:
         print("-----Ending pprint-----")
 

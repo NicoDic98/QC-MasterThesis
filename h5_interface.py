@@ -74,7 +74,7 @@ class H5Saver:
         self.parameter_dims = [len(parameters_dict_list[key]) for key in self.non_singular_keys]
 
     def create_dataset_with_dim_labels(self, dataset_name: str, shape: list[int], data_dim_names: list[str],
-                                       dtype: Any = np.float64, maxshape: list[int] = None):
+                                       dtype: Any = np.float64, maxshape: list[int | None] = None, fillvalue=None):
         """
 
         :param dataset_name: Name of the dataset to be created
@@ -82,6 +82,7 @@ class H5Saver:
         :param data_dim_names: Names of the data dimensions
         :param dtype: Data type
         :param maxshape: Maximum data shape
+        :param fillvalue: Fill value
         :return: None
         """
         if np.issubdtype(dtype, np.floating):
@@ -105,7 +106,7 @@ class H5Saver:
         if len(shape) != len(data_dim_names):
             raise ValueError("shape and data_dim_names must have same length")
         self.group.create_dataset(dataset_name, self.parameter_dims + shape,
-                                  dtype=dtype, maxshape=maxshape)
+                                  dtype=dtype, maxshape=maxshape, fillvalue=fillvalue)
         for i, key in enumerate(self.non_singular_keys):
             # local_group[EDParameters.EigenValues].dims[i].attach_scale(local_group[key])
             self.group[dataset_name].dims[i].label = key
@@ -130,7 +131,7 @@ class H5Loader:
         :param parameters: A dictionary mapping parameter names to indices in the corresponding list of parameter values
         :param dependency_names: List of dependency names, which should not be fixed to one value
         :param final_iteration_value: If true, return only the value in the final iteration
-        :return: Dataset values, Corresponding dependency values
+        :return: Dataset values, Corresponding dependency values, Dependency dictionary {Name: Axis}
         """
         selected_indices = []
         mapping = []
@@ -165,14 +166,16 @@ class H5Loader:
         # even when some parameters are fixed
         if self.dataset.attrs[DatasetParameters.NDataDims]:
             temp = list(self.dataset.dims)[-self.dataset.attrs[DatasetParameters.NDataDims]:]
+            offset = len(list(self.dataset.dims)) - self.dataset.attrs[DatasetParameters.NDataDims] - len(parameters)
         else:
             temp = []
+            offset = 0
         for i, dim in enumerate(temp):
             if dim.label == VQEParameters.IterationAxis:
                 if has_iteration_axis:
                     raise ValueError(f"Iteration axis {dim.label} has already been defined")
                 has_iteration_axis = True
-                source.append(i)
+                source.append(i + offset)
                 mapping.append(len(mapping))
 
         # This moves the axes in the order in which the dependencies were given
@@ -187,7 +190,12 @@ class H5Loader:
             n_iter_h5_loader = H5Loader(self.group, VQEParameters.NIterations)
             n_iterations, _, _ = n_iter_h5_loader.retrieve_dependency(parameters, dependency_names)
 
-            values = values[range(len(values)), n_iterations.flat]
+            if list(values.shape)[0] == 1:
+                values = values.reshape(flat_shape[1:])
+                values = values[n_iterations.flat]
+            else:
+                values = values[range(len(values)), n_iterations.flat]
+
             values = values.reshape(final_shape)
 
         temp = dependency_names.copy()

@@ -1,0 +1,851 @@
+Start 2025-10-27 10:54:01 | 23768500 MyPyJob | node002 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h: 0.0
+Prec 0.0
+Prec 0.0
+New op index: 27
+Current grad: 24.055055829873858
+0:	1.52e-03	-2.03e-03
+1:	-2.01e+00	-2.56e-03
+2:	3.75e-03	-4.07e-03
+3:	4.70e-03	3.08e-03
+4:	2.49e+00	5.64e-03
+5:	-6.51e-03	-5.70e-04
+6:	6.39e-04	-4.20e-03
+7:	-2.50e+00	-4.12e-03
+8:	-8.40e-05	3.25e-03
+9:	-4.27e-03	3.72e-03
+10:	2.00e+00	-4.97e-01
+11:	3.89e-03	-5.03e-01
+12:	3.30e-04	1.16e-03
+13:	2.01e+00	-4.99e-01
+14:	2.34e-03	-4.99e-01
+15:	-4.30e-03	4.36e-03
+16:	-2.50e+00	1.12e-03
+17:	-4.79e-03	3.39e-03
+18:	4.39e-03	3.38e-04
+19:	2.50e+00	1.45e-03
+20:	-9.24e-04	3.16e-03
+21:	-3.40e-03	-7.29e-03
+22:	-1.99e+00	-1.60e-03
+23:	-7.73e-04	-2.35e-03
+24:	4.98e-01	-3.19e-03
+25:	-1.76e-03	-1.38e-03
+26:	-4.97e-01	-4.93e-01
+27:	4.00e+00	-4.33e-03
+28:	-4.98e-01	-4.95e-01
+29:	2.15e-03	-8.41e-03
+30:	5.11e-01	-1.67e-03
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 30   Least value of F = 198.50000000001302
+The corresponding X is: [-0.7854]
+
+Prec 0.0
+New op index: 4
+Current grad: 19.69768744232888
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 76   Least value of F = 151.00000000149683
+The corresponding X is: [-0.78539468  1.57079319]
+
+Prec 0.0
+New op index: 19
+Current grad: 17.097646481491374
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 311   Least value of F = 148.50000003218125
+The corresponding X is:
+[-0.785392    1.57079203 -1.57063851]
+
+Prec 0.0
+New op index: 10
+Current grad: 14.452657926259235
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 87   Least value of F = 101.50000000167083
+The corresponding X is:
+[-1.57079977  1.57079205 -1.57079872  1.57080219]
+
+Prec 0.0
+New op index: 1
+Current grad: 8.099714627877802
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 1196   Least value of F = 94.82669058248426
+The corresponding X is:
+[-3.555794    1.57078653 -1.5707942   0.97907456  1.57807869]
+
+Prec 0.0
+New op index: 13
+Current grad: 11.776770322136576
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 3974   Least value of F = 92.99878024540014
+The corresponding X is:
+[-3.15978057  1.57079837 -1.57086028  1.55248987  1.57569559  1.55252245]
+
+Prec 0.0
+New op index: 7
+Current grad: 6.603763508641358
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 2914   Least value of F = 41.4976076883185
+The corresponding X is:
+[-3.15999414  1.57079754 -1.57079557  1.55238244  1.57088935  1.5523884
+  1.56118029]
+
+Prec 0.0
+New op index: 16
+Current grad: 4.597883799585437
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 5768   Least value of F = 35.997549243524766
+The corresponding X is:
+[-3.14890523 -1.57052076 -1.57105742  1.56373562  1.56589262  1.56321802
+  1.57074344  1.56589105]
+
+Prec 0.0
+New op index: 22
+Current grad: 3.1201852949985436
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 5406   Least value of F = -15.999993893946233
+The corresponding X is:
+[-3.12595314 -1.57079688 -1.57079652  1.58644464  1.57079095  1.58643885
+  1.57079921  1.57079727  1.57079435]
+
+Prec 0.0
+New op index: 22
+Current grad: 0.11786243574153522
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.333, r=1.000)
+h: 0.0
+Prec 0.0
+Prec 0.0
+New op index: 27
+Current grad: 10.718078586548293
+0:	-2.20e-03	-8.71e-04
+1:	-6.67e-01	8.34e-03
+2:	1.34e-03	-5.52e-03
+3:	-3.10e-03	2.94e-03
+4:	1.17e+00	1.60e-03
+5:	-2.67e-03	-4.35e-03
+6:	-2.06e-03	8.87e-04
+7:	-1.16e+00	6.06e-03
+8:	-5.20e-03	-1.62e-03
+9:	-1.21e-02	-8.46e-03
+10:	6.75e-01	-5.00e-01
+11:	1.27e-02	-5.05e-01
+12:	-2.03e-03	-1.71e-03
+13:	6.57e-01	-5.00e-01
+14:	-1.55e-03	-5.09e-01
+15:	-1.43e-03	-8.08e-03
+16:	-1.17e+00	2.41e-03
+17:	-5.57e-03	-2.61e-03
+18:	2.90e-03	-1.28e-02
+19:	1.17e+00	3.92e-03
+20:	-7.47e-03	1.36e-03
+21:	3.50e-03	-3.57e-03
+22:	-6.56e-01	-6.58e-03
+23:	8.60e-04	4.18e-03
+24:	4.98e-01	1.75e-03
+25:	-7.10e-04	1.19e-02
+26:	-4.97e-01	-4.98e-01
+27:	1.32e+00	1.94e-03
+28:	-4.99e-01	-5.01e-01
+29:	-1.95e-03	4.08e-03
+30:	5.09e-01	3.13e-03
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 30   Least value of F = 199.83333333333735
+The corresponding X is: [-0.7854]
+
+Prec 0.0
+New op index: 10
+Current grad: 9.849624145098083
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 42   Least value of F = 151.50000000042454
+The corresponding X is: [-1.57079997  1.57079428]
+
+Prec 0.0
+New op index: 19
+Current grad: 8.078277980911777
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 2941   Least value of F = 149.49077948632666
+The corresponding X is:
+[-3.22272533 -1.65492752 -1.57079756]
+
+Prec 0.0
+New op index: 4
+Current grad: 6.591124093544397
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 96   Least value of F = 101.50000000104184
+The corresponding X is:
+[-4.71238575 -1.57080006 -1.570795    1.57079229]
+
+Prec 0.0
+New op index: 7
+Current grad: 2.7809513955006406
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 1042   Least value of F = 99.2981495948921
+The corresponding X is:
+[-4.71239627 -1.57079946 -1.570791    1.57079417  2.55341706]
+
+Prec 0.0
+New op index: 16
+Current grad: 2.4079998080678386
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 143   Least value of F = 51.494897035161806
+The corresponding X is:
+[-4.71238691 -1.57079676 -1.57078969  1.57079385  1.58086402 -1.56045231]
+
+Prec 0.0
+New op index: 22
+Current grad: 2.420031717430972
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 2856   Least value of F = 50.15802446459235
+The corresponding X is:
+[-4.71237922 -1.57079107 -1.57079506  1.57080488  2.16705445 -1.56794095
+  1.61514465]
+
+Prec 0.0
+New op index: 1
+Current grad: 1.4068274607333409
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 177   Least value of F = 1.000000002352901
+The corresponding X is:
+[-4.71239393 -1.57079367 -1.57080289  1.57080004  1.57079694 -1.57079757
+  1.57079456 -1.5707957 ]
+
+Prec 0.0
+New op index: 25
+Current grad: 0.10785480046395754
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 71   Least value of F = 1.000000001612615
+The corresponding X is:
+[-4.71239390e+00 -1.57079777e+00 -1.57079935e+00  1.57079858e+00
+  1.57079321e+00 -1.57079876e+00  1.57079616e+00 -1.57079601e+00
+  7.57433572e-07]
+
+Prec 0.0
+New op index: 30
+Current grad: 0.13442100139681562
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 77   Least value of F = 1.000000001118316
+The corresponding X is:
+[-4.71239261e+00 -1.57079693e+00 -1.57079984e+00  1.57079885e+00
+  1.57079562e+00 -1.57079628e+00  1.57079619e+00 -1.57079320e+00
+  4.02139950e-07 -4.99984649e-02]
+
+Prec 0.0
+New op index: 7
+Current grad: 0.12157125978659175
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 83   Least value of F = 1.0000000008062564
+The corresponding X is:
+[-4.71238882e+00 -1.57079805e+00 -1.57079886e+00  1.57079689e+00
+  1.57079481e+00 -1.57079599e+00  1.57079589e+00 -1.57079747e+00
+  1.07905423e-06 -9.99995993e-02  2.97411459e-06]
+
+Prec 0.0
+New op index: 6
+Current grad: 0.14426811424497885
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 90   Least value of F = 1.0000000004974061
+The corresponding X is:
+[-4.71238878e+00 -1.57079769e+00 -1.57079831e+00  1.57079969e+00
+  1.57079491e+00 -1.57079570e+00  1.57079624e+00 -1.57079632e+00
+  1.41369304e-07  8.99997684e-01  6.29922247e-07  1.20064931e-06]
+
+Prec 0.0
+New op index: 17
+Current grad: 0.13846216771473965
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 97   Least value of F = 1.0000000004938592
+The corresponding X is:
+[-4.71238878e+00 -1.57079769e+00 -1.57079831e+00  1.57079969e+00
+  1.57079491e+00 -1.57079570e+00  1.57079624e+00 -1.57079632e+00
+  1.41369304e-07  1.89999768e+00  6.29922247e-07  1.20064931e-06
+ -5.00000000e-02]
+
+Prec 0.0
+New op index: 11
+Current grad: 0.13590867977734175
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 8711   Least value of F = -0.9999974251578979
+The corresponding X is:
+[-4.71239994e+00 -1.57080897e+00 -1.57080494e+00  1.57079173e+00
+  1.56459487e+00 -1.57080080e+00  1.57079742e+00 -1.57078891e+00
+ -1.07781389e-06  2.90947328e+00  6.20461678e-03 -1.43831827e-05
+ -7.49052023e-02  3.13933103e+00]
+
+Prec 0.0
+New op index: 18
+Current grad: 0.12075455403980713
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 465   Least value of F = -0.9999988130613242
+The corresponding X is:
+[-4.71238422e+00 -1.57079583e+00 -1.57078842e+00  1.57079408e+00
+  1.56459317e+00 -1.57080228e+00  1.57080471e+00 -1.57079316e+00
+  6.81376670e-08  3.90945261e+00  6.19031424e-03  2.23869681e-06
+ -1.24907841e-01  3.14005818e+00 -1.89569470e-06]
+
+Prec 0.0
+New op index: 28
+Current grad: 0.11623206156056624
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 121   Least value of F = -0.9999994543867378
+The corresponding X is:
+[-4.71238244e+00 -1.57079631e+00 -1.57079359e+00  1.57079632e+00
+  1.56459010e+00 -1.57079814e+00  1.57080426e+00 -1.57080338e+00
+  1.28731560e-06  4.90945543e+00  6.20473330e-03 -1.92266950e-05
+ -1.19917198e-01  3.14056178e+00  1.05205566e-06  1.03291975e-07]
+
+Prec 0.0
+New op index: 4
+Current grad: 0.13443653471978242
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 122   Least value of F = -0.9999998455159224
+The corresponding X is:
+[-4.71238111e+00 -1.57079253e+00 -1.57079381e+00  1.57079364e+00
+  1.56458904e+00 -1.57079853e+00  1.57079911e+00 -1.57080245e+00
+ -7.41665204e-07  4.85945576e+00  6.20097353e-03 -1.96546773e-05
+ -1.24921569e-01  3.14106536e+00 -1.70815932e-06  1.95172248e-06
+  6.21516599e-06]
+
+Prec 0.0
+New op index: 23
+Current grad: 0.13075698162790966
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 136   Least value of F = -0.9999998762690053
+The corresponding X is:
+[-4.71239326e+00 -1.57078525e+00 -1.57079813e+00  1.57079707e+00
+  1.56458941e+00 -1.57079572e+00  1.57079599e+00 -1.57080428e+00
+ -2.36356109e-07  4.85945499e+00  6.20225950e-03 -1.47729193e-05
+ -1.74916705e-01  3.14112559e+00 -6.96848351e-07  3.28522489e-06
+  6.07692315e-06 -5.04375661e-05]
+
+Prec 0.0
+New op index: 21
+Current grad: 0.12589795563315884
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 156   Least value of F = -0.9999999147881276
+The corresponding X is:
+[-4.71238338e+00 -1.57079031e+00 -1.57079355e+00  1.57079220e+00
+  1.56459077e+00 -1.57079846e+00  1.57079874e+00 -1.57079888e+00
+  8.90966440e-07  5.85945749e+00  6.20232777e-03 -2.76923319e-06
+  8.25071142e-01  3.14119051e+00 -1.00721427e-06  1.75418939e-06
+ -6.61770549e-07  9.99948364e-01 -1.04459968e-06]
+
+Prec 0.0
+New op index: 22
+Current grad: 0.11232787188399397
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 143   Least value of F = -0.9999999187659446
+The corresponding X is:
+[-4.71238527e+00 -1.57079509e+00 -1.57079412e+00  1.57079673e+00
+  1.56458819e+00 -1.57079981e+00  1.57079636e+00 -1.57079856e+00
+  2.67406991e-07  5.80945790e+00  6.20540699e-03 -1.15242566e-06
+  7.70074466e-01  3.14119473e+00 -5.17280186e-07  1.40031738e-06
+ -1.30976678e-06  1.00000056e+00 -1.01348466e-07 -3.80802184e-06]
+
+Prec 0.0
+New op index: 24
+Current grad: 0.136088980349733
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 10181   Least value of F = -1.999999874447545
+The corresponding X is:
+[-4.71238753e+00 -1.57079697e+00 -1.56187255e+00  1.58139070e+00
+  1.58138728e+00 -1.57080128e+00  1.58685461e+00 -1.57079382e+00
+  7.85320042e-01  6.79082428e+00  1.57914558e-02 -2.28645884e-07
+  1.74006714e+00  3.14115787e+00 -1.41598062e-06 -6.33303532e-07
+ -3.07715540e-02  1.00149797e+00  1.54834110e-02 -9.90622960e-03
+  1.57079630e+00]
+
+Prec 0.0
+New op index: 21
+Current grad: 0.15454815122002794
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 152   Least value of F = -1.9999998983659968
+The corresponding X is:
+[-4.71238302e+00 -1.57079386e+00 -1.56186349e+00  1.58138880e+00
+  1.58138995e+00 -1.57079948e+00  1.58685475e+00 -1.57079850e+00
+  7.85322317e-01  6.79082726e+00  1.57885972e-02  2.30524343e-06
+  2.74007063e+00  3.14120995e+00 -3.74103098e-06  4.33000641e-07
+ -3.07717299e-02  1.00149797e+00  1.54787336e-02 -9.90896887e-03
+  1.57079572e+00 -8.78573517e-07]
+
+Prec 0.0
+New op index: 15
+Current grad: 0.11231328492855837
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 167   Least value of F = -1.999999933801524
+The corresponding X is:
+[-4.71238190e+00 -1.57078855e+00 -1.56186313e+00  1.58138936e+00
+  1.58138839e+00 -1.57079645e+00  1.58685455e+00 -1.57080380e+00
+  7.85379438e-01  6.79083213e+00  1.57934018e-02  3.24260668e-08
+  2.74007269e+00  3.14126828e+00 -5.40838537e-06  2.76144722e-07
+ -3.07683206e-02  1.00144647e+00  1.54796415e-02 -9.90778550e-03
+  1.57079655e+00 -3.43321520e-06 -5.55584004e-07]
+
+Prec 0.0
+New op index: 7
+Current grad: 0.12366657787692195
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 167   Least value of F = -1.99999994881267
+The corresponding X is:
+[-4.71238152e+00 -1.57078864e+00 -1.56186376e+00  1.58138979e+00
+  1.58138859e+00 -1.57079710e+00  1.58685534e+00 -1.57080242e+00
+  7.85379560e-01  6.79083303e+00  1.57934473e-02  2.98661763e-06
+  2.69007526e+00  3.14131849e+00 -6.83085649e-06 -7.09792926e-08
+ -3.07697504e-02  1.00139552e+00  1.54786219e-02 -9.90712954e-03
+  1.57079640e+00 -1.18676364e-06 -5.41624007e-07  5.96831941e-07]
+
+Prec 0.0
+New op index: 23
+Current grad: 0.08211900235955427
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 175   Least value of F = -1.9999999617771569
+The corresponding X is:
+[-4.71238263e+00 -1.57079063e+00 -1.56186599e+00  1.58138833e+00
+  1.58138955e+00 -1.57079753e+00  1.58685296e+00 -1.57080083e+00
+  7.85378624e-01  6.79083323e+00  1.57922675e-02  3.28383836e-06
+  2.64007581e+00  3.14136751e+00 -4.64765361e-06  2.48593230e-06
+ -3.07708485e-02  1.00139097e+00  1.54763957e-02 -9.90638836e-03
+  1.57079567e+00 -6.94297012e-07  3.79707525e-07 -3.09633999e-06
+  3.15772728e-08]
+
+Prec 0.0
+New op index: 10
+Current grad: 0.11159966557285829
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 176   Least value of F = -1.9999999649469986
+The corresponding X is:
+[-4.71238302e+00 -1.57079391e+00 -1.56186213e+00  1.58139118e+00
+  1.58138959e+00 -1.57079954e+00  1.58685069e+00 -1.57079824e+00
+  7.85379283e-01  6.79083284e+00  1.57905815e-02 -1.90058998e-07
+  3.64007637e+00  3.14137288e+00 -8.03038335e-07  1.07769755e-06
+ -3.07441092e-02  1.00136117e+00  1.54739321e-02 -9.90512358e-03
+  1.57079707e+00  5.10621882e-06 -2.30648081e-06 -2.73254007e-05
+ -4.99971917e-02 -9.06525795e-09]
+
+Prec 0.0
+New op index: 21
+Current grad: 0.13512519729378641
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 187   Least value of F = -1.9999999763717442
+The corresponding X is:
+[-4.71238442e+00 -1.57079467e+00 -1.56186502e+00  1.58139325e+00
+  1.58138853e+00 -1.57080028e+00  1.58685061e+00 -1.57079808e+00
+  7.85384961e-01  6.79083097e+00  1.57896321e-02  2.76011481e-07
+  3.59007856e+00  3.14142611e+00 -7.90061377e-07  2.64960873e-07
+ -3.07431902e-02  1.00136298e+00  1.54748103e-02 -9.90557280e-03
+  1.57079697e+00  4.39238793e-06 -3.09539671e-06 -2.75167457e-05
+ -5.49980671e-02 -1.56204974e-06 -4.15954348e-07]
+
+Prec 0.0
+New op index: 8
+Current grad: 0.1351999830413246
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 191   Least value of F = -1.9999999834671773
+The corresponding X is:
+[-4.71238920e+00 -1.57079332e+00 -1.56186783e+00  1.58139408e+00
+  1.58138965e+00 -1.57079939e+00  1.58685193e+00 -1.57079762e+00
+  7.85389100e-01  6.79083017e+00  1.57923969e-02  1.71025746e-06
+  3.54008091e+00  3.14146553e+00 -1.49730533e-06  6.40483419e-07
+ -3.07466412e-02  1.00134122e+00  1.54748793e-02 -9.90394574e-03
+  1.57079649e+00  6.36479632e-06 -9.17565360e-07 -2.98668995e-05
+ -4.97635045e-03  1.52626354e-08 -1.57218592e-06 -1.47604676e-07]
+
+Prec 0.0
+New op index: 8
+Current grad: 0.1351910945098379
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.667, r=1.000)
+h: 0.0
+Prec 0.0
+Prec 0.0
+New op index: 27
+Current grad: 6.705799459683549
+0:	3.08e-03	4.10e-03
+1:	6.55e-01	-2.68e-03
+2:	-9.31e-03	-2.02e-03
+3:	-1.40e-03	2.71e-03
+4:	-1.59e-01	-4.14e-03
+5:	-2.18e-03	-2.05e-03
+6:	5.05e-04	4.48e-04
+7:	1.72e-01	4.98e-03
+8:	1.05e-02	-3.02e-03
+9:	-2.88e-03	-9.21e-03
+10:	-6.67e-01	-5.10e-01
+11:	9.11e-03	-5.06e-01
+12:	-7.61e-03	-6.57e-03
+13:	-6.62e-01	-5.01e-01
+14:	-5.09e-03	-5.06e-01
+15:	5.12e-04	-3.51e-03
+16:	1.65e-01	-3.87e-03
+17:	-4.79e-03	-2.20e-03
+18:	-4.92e-03	6.61e-03
+19:	-1.65e-01	3.31e-03
+20:	4.98e-03	8.06e-05
+21:	-6.49e-04	-2.31e-03
+22:	6.67e-01	-2.17e-03
+23:	2.86e-03	1.64e-03
+24:	4.95e-01	2.92e-03
+25:	3.70e-03	-4.54e-03
+26:	-4.96e-01	-5.00e-01
+27:	-1.32e+00	-1.02e-02
+28:	-5.02e-01	-4.99e-01
+29:	-2.29e-03	3.81e-03
+30:	5.04e-01	-1.40e-03
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 27   Least value of F = 199.8333333333374
+The corresponding X is: [0.7854]
+
+Prec 0.0
+New op index: 28
+Current grad: 8.413514008318824
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 50   Least value of F = 151.39493877588657
+The corresponding X is: [ 1.54378293 -0.78183918]
+
+Prec 0.0
+New op index: 26
+Current grad: 7.709164517924162
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 1606   Least value of F = 150.25182212131355
+The corresponding X is:
+[ 0.47561282 -0.99827184  0.57348019]
+
+Prec 0.0
+New op index: 13
+Current grad: 7.191024325980701
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 1636   Least value of F = 147.74859264042058
+The corresponding X is:
+[ 1.56616432 -2.15806941  0.81603948  3.25278826]
+
+Prec 0.0
+New op index: 19
+Current grad: 6.757741335475397
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 372   Least value of F = 118.89383624602706
+The corresponding X is:
+[ 0.69357609 -0.86067934  0.58677865  4.98742859  1.57388868]
+
+Prec 0.0
+New op index: 16
+Current grad: 5.562732101561571
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 1841   Least value of F = 98.9063091510178
+The corresponding X is:
+[ 0.23260326 -0.22458743  0.67424847  4.70383374  1.57073013 -1.36408905]
+
+Prec 0.0
+New op index: 16
+Current grad: 4.861751864571063
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h: 0.0
+Prec 0.0
+Prec 0.0
+New op index: 27
+Current grad: 20.11725160095133
+0:	6.84e-03	5.70e-03
+1:	2.00e+00	-9.59e-06
+2:	-4.11e-03	1.52e-03
+3:	7.88e-03	2.56e-03
+4:	-1.50e+00	7.08e-04
+5:	6.31e-04	-1.99e-03
+6:	-1.70e-03	-1.66e-03
+7:	1.50e+00	-4.09e-03
+8:	-7.34e-03	2.11e-03
+9:	3.16e-03	-4.70e-04
+10:	-2.00e+00	-5.03e-01
+11:	1.53e-02	-5.03e-01
+12:	-5.43e-03	-6.05e-03
+13:	-2.01e+00	-4.95e-01
+14:	2.55e-03	-5.00e-01
+15:	7.65e-03	-4.31e-03
+16:	1.50e+00	4.04e-03
+17:	2.86e-03	-2.80e-03
+18:	-9.22e-03	-7.03e-03
+19:	-1.50e+00	5.11e-03
+20:	-5.37e-03	-2.69e-03
+21:	-9.48e-03	-2.04e-03
+22:	2.00e+00	2.06e-04
+23:	-1.12e-02	5.71e-03
+24:	4.93e-01	1.00e-04
+25:	-2.69e-03	-6.00e-03
+26:	-5.04e-01	-4.97e-01
+27:	-4.00e+00	-2.42e-03
+28:	-4.98e-01	-4.91e-01
+29:	4.47e-03	-5.60e-06
+30:	5.04e-01	-1.12e-02
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 27   Least value of F = 198.50000000001307
+The corresponding X is: [0.7854]
+
+Prec 0.0
+New op index: 10
+Current grad: 18.321060714823588
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 50   Least value of F = 151.50000000023715
+The corresponding X is: [ 1.57079602 -1.57079322]
+
+Prec 0.0
+New op index: 22
+Current grad: 14.103612784138424
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 666   Least value of F = 145.3285102634714
+The corresponding X is:
+[ 3.55587362 -0.97890768 -1.57079374]
+
+Prec 0.0
+New op index: 16
+Current grad: 15.848480212023222
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 181   Least value of F = 124.30653096571011
+The corresponding X is:
+[ 3.67541955 -0.95503015 -1.57081433 -1.56136029]
+
+Prec 0.0
+New op index: 19
+Current grad: 12.707515512439974
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 932   Least value of F = 91.49098824100014
+The corresponding X is:
+[ 3.54055578 -1.0057236  -1.5708163  -1.56839396  1.55786523]
+
+Prec 0.0
+New op index: 7
+Current grad: 10.700549051895177
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 261   Least value of F = 70.665736314935
+The corresponding X is:
+[ 3.67773838 -0.94589576 -1.57081119 -1.57081374  1.56809503 -1.57078619]
+
+Prec 0.0
+New op index: 1
+Current grad: 8.369221390887759
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 1309   Least value of F = 41.377677559639395
+The corresponding X is:
+[ 3.59820538 -0.87402451 -1.57080031 -1.57079789  1.56282537 -1.57079739
+  1.57080167]
+
+Prec 0.0
+New op index: 4
+Current grad: 5.342305912783822
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 402   Least value of F = 24.736532587972643
+The corresponding X is:
+[ 3.67659243 -0.95352895 -1.57077914 -1.57079448  1.56557935 -1.57078958
+  1.57079328 -1.56687988]
+
+Prec 0.0
+New op index: 13
+Current grad: 4.13882343898278
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 5373   Least value of F = -7.999993091059213
+The corresponding X is:
+[ 3.15772238 -1.55466347 -1.57079555 -1.57079573  1.57078925 -1.57080237
+  1.57080215 -1.57078896 -1.55466271]
+
+Prec 0.0
+New op index: 14
+Current grad: 0.13927669959008263
+Return from COBYLA because the trust region radius reaches its lower bound.
+Number of function values = 1162   Least value of F = -7.999995391154209
+The corresponding X is:
+[ 3.15617061e+00 -1.55621407e+00 -1.57079962e+00 -1.57079634e+00
+  1.57079173e+00 -1.57079546e+00  1.57080110e+00 -1.57079810e+00
+ -1.55621573e+00  9.98062361e-06]
+
+Prec 0.0
+New op index: 4
+Current grad: 0.11831584333366893
+Adding the same operator twice is not sensible, terminating.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23768500
+	2025-10-27_10-54-03-23768500:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-10-27_10-54-03
+			ProcessId: 23768500
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				gradient_hamiltonian_type: HamiltonianType.Full
+				max_depth: 40
+				prec_cutoff: 0.001
+				precision: 0.005
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(4, 29, 31), maxshape=(4, None, 31))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(4, 29, 31), maxshape=(4, None, 31))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(4, 28), maxshape=(4, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz1
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(4, 29000, 28), maxshape=(4, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(4, 29000), maxshape=(4, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(4, 29000), maxshape=(4, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23768500
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(4, 29000), maxshape=(4, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(4, 29000), maxshape=(4, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(4, 29000), maxshape=(4, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(4,), maxshape=(4,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: 1e-05
+				x0Seed: 23768500
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(4, 28), maxshape=(4, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(4,), maxshape=(4,))
+			Attributes:
+-----Ending pprint-----
+End 2025-10-27 11:01:05 | 23768500 MyPyJob | node002 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

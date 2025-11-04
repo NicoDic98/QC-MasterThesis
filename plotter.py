@@ -6,6 +6,7 @@ import h5py
 import numpy as np
 from matplotlib import pyplot as plt, cm, lines
 from matplotlib.animation import FuncAnimation, PillowWriter
+from matplotlib.lines import Line2D
 from numpyencoder import NumpyEncoder
 from qiskit import generate_preset_pass_manager
 from qiskit_aer import AerSimulator
@@ -15,8 +16,9 @@ from h5_interface import H5Loader, load_attribute_as_dict
 from hamiltonian.base import HamiltonianParameters
 from labels import VQEParameters
 from misc import plots_folder, data_folder
+from solver.adapt_vqe import AdaptVQE
 from solver.base import GlobalParameters
-from solver.circuits import CircuitParameters, rebuild_ansatz
+from solver.circuits import CircuitParameters, rebuild_ansatz, BaseVQEAnsatz, BaseADAPTVQEAnsatz
 from solver.exact_diagonalization import EDParameters, ED
 from solver.variational_quantum_eigensolver import VQE
 
@@ -77,6 +79,13 @@ class ResultLoader:
 
     def get_observables(self, observable_name: str, parameters: dict[str, int], dependency_names: list[str],
                         final_value: bool = True):
+        """
+        :param observable_name: Observable name
+        :param parameters: A dictionary mapping parameter names to indices in the corresponding list of parameter values
+        :param dependency_names: List of dependency names, which should not be fixed to one value
+        :param final_value: If true, return only the value in the final iteration
+        :return: Dataset values, Corresponding dependency values, Dependency dictionary {Name: Axis}
+        """
         h5_loader = H5Loader(self.group, observable_name)
         observables, dep, dep_dict = h5_loader.retrieve_dependency(parameters, dependency_names, final_value)
         return observables, dep, dep_dict
@@ -93,6 +102,8 @@ class ResultLoader:
         if VQEParameters.OptimizerOptions in self.group:
             info_dict[VQEParameters.OptimizerOptions] = load_attribute_as_dict(
                 self.group[VQEParameters.OptimizerOptions])
+        if VQEParameters.AdaptOptions in self.group:
+            info_dict[VQEParameters.AdaptOptions] = load_attribute_as_dict(self.group[VQEParameters.AdaptOptions])
         return self.group.name, info_dict
 
     def get_energy_mass(self, parameters: dict[str, int]):
@@ -100,13 +111,193 @@ class ResultLoader:
             energy, dep, _ = self.get_observables(EDParameters.EigenValues, parameters,
                                                   [HamiltonianParameters.Mass])
             energy.sort(-1)
-            energy = energy[:, :2]
+            energy = energy[:, :]
         elif self.solver == VQE.__name__:
+            energy, dep, _ = self.get_observables(VQEParameters.Hamiltonian, parameters,
+                                                  [HamiltonianParameters.Mass])
+        elif self.solver == AdaptVQE.__name__:
             energy, dep, _ = self.get_observables(VQEParameters.Hamiltonian, parameters,
                                                   [HamiltonianParameters.Mass])
         else:
             raise NotImplementedError
         return energy, dep[0]
+
+    def get_energy_evolution(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            raise NotImplementedError
+        elif self.solver == VQE.__name__:
+            energy, _, _ = self.get_observables(VQEParameters.Hamiltonian,
+                                                parameters,
+                                                [], final_value=False)
+            n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
+            energy = energy[:n_iterations+1]
+        elif self.solver == AdaptVQE.__name__:
+            energy, _, _ = self.get_observables(VQEParameters.Hamiltonian,
+                                                parameters,
+                                                [], final_value=False)
+            n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
+            energy = energy[:n_iterations+1]
+        else:
+            raise NotImplementedError
+        return energy
+
+    def get_start_iterations(self, parameters: dict[str, int]):
+        if self.solver == AdaptVQE.__name__:
+            start_iterations, _, _ = self.get_observables(VQEParameters.StartIterations, parameters,
+                                                          [])
+            start_iterations = [it for it in start_iterations if it >= 0]
+        else:
+            raise NotImplementedError
+        return start_iterations
+
+    def get_operator_indices(self, parameters: dict[str, int]):
+        if self.solver == AdaptVQE.__name__:
+            operator_indices, _, _ = self.get_observables(VQEParameters.AnsatzOperators, parameters,
+                                                          [])
+            operator_indices = [idx for idx in operator_indices if idx >= 0]
+        else:
+            raise NotImplementedError
+        return operator_indices
+
+    def map_operator_indices_to_labels(self, parameters: dict[str, int], operator_indices: list[int]):
+        if self.solver == AdaptVQE.__name__:
+            ansatz = self.get_ansatz(parameters)
+            ansatz: BaseADAPTVQEAnsatz
+            labels = []
+            for opid in operator_indices:
+                if opid is None:
+                    labels.append(None)
+                else:
+                    gi, qbit, gname = ansatz.get_operator_info(opid)
+                    labels.append(f"{gname}$^{qbit}$")
+        else:
+            raise NotImplementedError
+        return labels
+
+    def get_operator_labels(self, parameters: dict[str, int]):
+        if self.solver == AdaptVQE.__name__:
+            opid = self.get_operator_indices(parameters)
+            labels = self.map_operator_indices_to_labels(parameters, opid)
+        else:
+            raise NotImplementedError
+        return labels
+
+    def get_ansatz(self, parameters: dict[str, int]) -> BaseVQEAnsatz | BaseADAPTVQEAnsatz:
+        if self.solver == VQE.__name__:
+            ansatz = rebuild_ansatz(self.group)
+            ansatz: BaseVQEAnsatz
+        elif self.solver == AdaptVQE.__name__:
+            ansatz = rebuild_ansatz(self.group)
+            ansatz: BaseADAPTVQEAnsatz
+            operator_indices = self.get_operator_indices(parameters)
+            ansatz.set_ansatz(operator_indices)
+        else:
+            raise NotImplementedError
+        return ansatz
+
+    def get_circuit(self, parameters: dict[str, int], final=False):
+        ansatz = self.get_ansatz(parameters)
+        circuit = ansatz.full_ansatz
+        if self.solver == VQE.__name__:
+            if final:
+                raise NotImplementedError
+        elif self.solver == AdaptVQE.__name__:
+            if final:
+                circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(
+                    VQEParameters.CircuitParameters,
+                    parameters, [])
+                circuit_parameters = circuit_parameters[circuit_parameters != 0]
+                if circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]] != len(
+                        circuit.parameters):
+                    raise ValueError(f"Parameters do not match circuit parameters"
+                                     f"{circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]]}"
+                                     f"!={len(circuit.parameters)}")
+                parameter_binds = {}
+                for i, p in enumerate(circuit.parameters):
+                    parameter_binds[p] = np.take(circuit_parameters, i,
+                                                 circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis])
+                circuit.assign_parameters(parameter_binds, inplace=True)
+        else:
+            raise NotImplementedError
+        return circuit
+
+    def get_derivatives(self, parameters: dict[str, int], second=False):
+        if self.solver == AdaptVQE.__name__:
+            if second:
+                observable_name = VQEParameters.AnsatzOperatorSecondDerivatives
+            else:
+                observable_name = VQEParameters.AnsatzOperatorDerivatives
+            der, _, der_dep_dict = self.get_observables(observable_name, parameters, [])
+
+            operator_indices = self.get_operator_indices(parameters)
+            der = der[:len(operator_indices)+1]
+        else:
+            raise NotImplementedError
+        return der, der_dep_dict, operator_indices
+
+    def plot_derivatives(self, parameters: dict[str, int], second=False):
+        if self.solver == AdaptVQE.__name__:
+            fig, ax = plt.subplots(layout='constrained')
+
+            ansatz = self.get_ansatz(parameters)
+            ansatz: BaseADAPTVQEAnsatz
+
+            n_qbits = ansatz.num_qubits
+            param = np.arange(n_qbits)
+            # Colormap setup
+            cmap = plt.get_cmap("Set2")
+            norm = plt.Normalize(vmin=param.min(), vmax=param.max())
+
+            der, der_dep_dict, op = self.get_derivatives(parameters, second)
+
+            linestyle_str = ['solid', 'dotted', 'dashed', 'dashdot']
+            for i in range(100):
+                linestyle_str.append("solid")
+            already_labeled = []
+            legend_elements = []
+
+            # iterate over different operators in the pool
+            for i in range(der.shape[der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis]]):
+                gi, qbit, gname = ansatz.get_operator_info(i)
+                if gi in already_labeled:
+                    pass
+                else:
+                    legend_elements.append(Line2D([0], [0],
+                                                  color=cmap(norm(n_qbits // 2)), linestyle=linestyle_str[gi],
+                                                  label=gname))
+                    already_labeled.append(gi)
+                ax.plot(der.take(i, der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis]),
+                        color=cmap(norm(qbit)), linestyle=linestyle_str[gi], alpha=0.8)
+            cbar = fig.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), ax=ax,
+                                # location="top", orientation="horizontal"
+                                )
+            cbar.set_label("Qubit")
+            selected_data_pts = [der.take(oi, der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis])[i] for i, oi in enumerate(op)]
+            ax.scatter(list(range(len(selected_data_pts))), selected_data_pts, label="Selected",
+                       marker="o", facecolors="none", edgecolors='r')
+            ax.legend(handles=legend_elements)
+
+            labels = self.map_operator_indices_to_labels(parameters, op)
+            fig_legend_elements = []
+            for i, (opid, label) in enumerate(zip(op, labels)):
+                gi, qbit, gname = ansatz.get_operator_info(opid)
+                # noinspection PyTypeChecker
+                fig_legend_elements.append(Line2D([0], [0],
+                                              color=cmap(norm(qbit)), linestyle=linestyle_str[gi],
+                                              label=f"{i}: {label}"))
+            source = list(range(der.shape[der_dep_dict[VQEParameters.AnsatzOperatorAxis]]))
+            target = [str(i) for i in source]
+            target[-1] = ""
+            ax.set_xticks(source, target)
+            ax.set_ylabel("Derivative")
+            if second:
+                ax.set_ylabel("Second derivative")
+            ax.set_xlabel("Adapt Iteration")
+            fig.legend(handles=fig_legend_elements, loc='outside right upper', title="Selected operators")
+            # plt.tight_layout()
+        else:
+            raise NotImplementedError
+        return fig
 
     def get_ground_state(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
@@ -143,7 +334,7 @@ class ResultLoader:
 
             # Only use relevant parameters
             n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
-            circuit_parameters = circuit_parameters[:n_iterations:every_n_iterations+1]
+            circuit_parameters = circuit_parameters[:n_iterations:every_n_iterations + 1]
 
             ansatz = rebuild_ansatz(self.group)
             circuit, num_state_vectors = ansatz.build_full_ansatz_with_save_points()
@@ -184,7 +375,7 @@ class ResultLoader:
             info_str += f"_{key}_{sel_values[key]:.2f}"
         print(info_str)
         overlaps = self.get_overlaps(parameters, reference_state, every_n_iterations)
-        #TODO: Save overlaps to file
+        # TODO: Save overlaps to file
         Animator(overlaps, every_n_iterations).animate(
             f"{base_filename}fidelity_evolution{info_str}.gif")
 
