@@ -61,3 +61,6 @@ Fixed Ansatz is full superposition+s-gates (8):
 
 Fixed Ansatz is empty (9):
 23771131: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+
+Fixed Ansatz is C invariant 1 (10):
+23809713: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6

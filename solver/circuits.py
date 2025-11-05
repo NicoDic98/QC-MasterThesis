@@ -369,10 +369,27 @@ class HardwareAdaptAnsatz8(HardwareAdaptAnsatz7):
         for i in range(0, self.num_qubits):
             self.fixed_ansatz.s(i)
 
+
 class HardwareAdaptAnsatz9(HardwareAdaptAnsatz7):
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
         self.fixed_ansatz = QuantumCircuit(self.num_qubits)
+
+
+class HardwareAdaptAnsatz10(HardwareAdaptAnsatz7):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
+        if (self.num_qubits % 2) != 0:
+            raise NotImplementedError
+
+        self.fixed_ansatz.h(0)
+
+        for i in range(self.num_qubits // 2, self.num_qubits):
+            self.fixed_ansatz.x(i)
+
+        for i in range(1, self.num_qubits):
+            self.fixed_ansatz.cx(0, i)
 
 
 class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
