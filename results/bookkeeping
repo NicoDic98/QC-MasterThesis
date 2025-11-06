@@ -75,6 +75,7 @@ Fixed Ansatz is C invariant 1 (10):
 23819458: ED; 101 masses, 4x4   OOM (3500GB)
 23819461: ED; 101 masses, 3x3   TODO
 23820863: ED; 11 masses,  4x4   OOM (3900GB, compressed matrix, EigenVectorDataset is the problem)
+23821109: ED; 11 masses,  4x4   OOM (3900GB, compressed matrix, w.o. EigenVectors)
 
 # Note an empty circuit needs 34GB of RAM with AER(statevector) for 31 qbits
 # Note an empty circuit needs 17GB of RAM with AER(statevector) for 30 qbits
