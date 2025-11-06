@@ -2,7 +2,7 @@
 #SBATCH --partition=intelsr_short
 #SBATCH --time=0-07:59:00
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
+#SBATCH --mem=5G
 #SBATCH --job-name=MyPyJob
 #SBATCH --output=out/run.%A.out
 #SBATCH --account=ag_hiskp_funcke
