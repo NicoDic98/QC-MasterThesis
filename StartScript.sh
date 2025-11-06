@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --partition=intelsr_short
-#SBATCH --time=0-07:59:00
+#SBATCH --partition=intelsr_long
+#SBATCH --time=3-00:00:00
 #SBATCH --ntasks=1
 #SBATCH --mem=500G
 #SBATCH --job-name=MyPyJob
