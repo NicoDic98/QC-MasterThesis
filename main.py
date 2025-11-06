@@ -20,9 +20,9 @@ from solver.variational_quantum_eigensolver import VQE
 
 def run_ed(my_f: h5py.File):
     my_ed = ED(FreeWilson2D.build_hamiltonian, my_f)
-    my_ed.run({HamiltonianParameters.XExtend: [2],
-               HamiltonianParameters.YExtend: [2],
-               HamiltonianParameters.Mass: np.linspace(-6, 2, 101).tolist(),
+    my_ed.run({HamiltonianParameters.XExtend: [4],
+               HamiltonianParameters.YExtend: [4],
+               HamiltonianParameters.Mass: np.linspace(-6, 2, 11).tolist(),
                HamiltonianParameters.WilsonParameter: [1.]},
               HamiltonianType.Full, compress_matrix=True)
 

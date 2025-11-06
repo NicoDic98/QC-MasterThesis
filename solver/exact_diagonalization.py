@@ -60,10 +60,11 @@ class ED(BaseSolver):
                                                 [n_eigv],
                                                 [EDParameters.EigenValueAxis],
                                                 np.float64)
-        h5_saver.create_dataset_with_dim_labels(EDParameters.EigenVectors,
-                                                [eigenvector_dim, n_eigv],
-                                                [EDParameters.EigenVectorAxis, EDParameters.EigenValueAxis],
-                                                np.complex128)
+        if not compress_matrix:
+            h5_saver.create_dataset_with_dim_labels(EDParameters.EigenVectors,
+                                                    [eigenvector_dim, n_eigv],
+                                                    [EDParameters.EigenVectorAxis, EDParameters.EigenValueAxis],
+                                                    np.complex128)
 
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
@@ -109,6 +110,8 @@ class ED(BaseSolver):
                 h_sparse_matrix = csr_matrix((final_dat, (row_ind, col_ind)),
                                              shape=(zero_charge_size, zero_charge_size))
                 # print("Operator done")
-            eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which=which)
+            eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which=which,
+                                                return_eigenvectors=(not compress_matrix))
             local_group[EDParameters.EigenValues][*non_singular_index, :] = eigen_values
-            local_group[EDParameters.EigenVectors][*non_singular_index] = eigen_vectors
+            if not compress_matrix:
+                local_group[EDParameters.EigenVectors][*non_singular_index] = eigen_vectors
