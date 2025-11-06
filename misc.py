@@ -20,7 +20,6 @@ def calc_im_part(op: SparsePauliOp):
             im_part += coeff.imag
         else:
             im_part += coeff.real
-            print("hi")
     return im_part
 
 def fill_defaults_in_dict(my_dict: dict, my_default_dict: dict):

@@ -110,7 +110,7 @@ class AdaptVQE(BaseVQE):
             hamiltonian = self.hamiltonian_factory(**parameters)
             print(f"Calculating energies for {hamiltonian}")
             h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
-            print("h:", calc_im_part(h_operator))
+            print("h_im:", calc_im_part(h_operator))
             temp = hamiltonian.hamiltonian_op(adapt_options["gradient_hamiltonian_type"])
             commutator_list = [(temp @ op - op @ temp).simplify() for op in self.ansatz.operator_pool]
             sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
@@ -122,7 +122,7 @@ class AdaptVQE(BaseVQE):
             circuit = pm.run(self.ansatz())
             params = x0
             op_index_list = []
-            print("Prec", estimator.default_precision)
+            # print("Prec", estimator.default_precision)
             cost_function_instance = self.cost_function(circuit, h_operator.apply_layout(circuit.layout),
                                                         estimator, local_group, non_singular_index)
             for i in range(adapt_options["max_depth"]):
