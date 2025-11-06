@@ -20,9 +20,9 @@ from solver.variational_quantum_eigensolver import VQE
 
 def run_ed(my_f: h5py.File):
     my_ed = ED(FreeWilson2D.build_hamiltonian, my_f)
-    my_ed.run({HamiltonianParameters.XExtend: [2],
-               HamiltonianParameters.YExtend: [2],
-               HamiltonianParameters.Mass: np.linspace(-6, 2, 1001).tolist(),
+    my_ed.run({HamiltonianParameters.XExtend: [3],
+               HamiltonianParameters.YExtend: [3],
+               HamiltonianParameters.Mass: np.linspace(-6, 2, 101).tolist(),
                HamiltonianParameters.WilsonParameter: [1.]},
               HamiltonianType.ZeroChargePenalty)
 
@@ -77,7 +77,7 @@ h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 with h5py.File(h5_file + ".hdf5", "a") as f:
     pprint_h5(f)
     f.attrs[GlobalParameters.ProcessId] = args.id
-    # run_ed(f)
+    run_ed(f)
     # run_vqe(f)
-    run_adapt_vqe(f)
+    # run_adapt_vqe(f)
     pprint_h5(f)

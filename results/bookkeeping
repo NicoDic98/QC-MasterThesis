@@ -69,6 +69,11 @@ Fixed Ansatz is C invariant 1 (10):
 23819217: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     OOM (5G)
 23819304: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     Aer, OOM (50G)
 23819322: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     Aer, Fail due to wrong test prints
+23819435: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     SVE TODO
+
+
+23819458: ED; 101 masses, 4x4   OOM (3500GB)
+23819461: ED; 101 masses, 3x3   TODO
 
 # Note an empty circuit needs 34GB of RAM with AER(statevector) for 31 qbits
 # Note an empty circuit needs 17GB of RAM with AER(statevector) for 30 qbits
@@ -79,3 +84,6 @@ Fixed Ansatz is C invariant 1 (10):
 # Note an superposition circuit needs  7GB of RAM with StatevectorEstimator for 27 qbits
 # Note an superposition circuit needs 13GB of RAM with StatevectorEstimator for 28 qbits
 # Note an superposition circuit needs 26GB of RAM with StatevectorEstimator for 29 qbits
+
+# ED estimate: 2x2 144MB
+# ED estimate: 3x3 380GB
