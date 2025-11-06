@@ -63,4 +63,6 @@ Fixed Ansatz is empty (9):
 23771131: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
 
 Fixed Ansatz is C invariant 1 (10):
-23809713: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+23809713: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6, 2x2
+23813080: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6, 4x4
+23813117: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4

@@ -42,10 +42,10 @@ def run_vqe(my_f: h5py.File):
 
 
 def run_adapt_vqe(my_f: h5py.File):
-    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz10(8))
-    my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
-                      HamiltonianParameters.YExtend: [2],
-                      HamiltonianParameters.Mass: np.linspace(-6, 2, 10).tolist(),
+    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz10(32))
+    my_adapt_vqe.run({HamiltonianParameters.XExtend: [4],
+                      HamiltonianParameters.YExtend: [4],
+                      HamiltonianParameters.Mass: np.linspace(-6, 2, 2).tolist(),
                       HamiltonianParameters.WilsonParameter: [1.]},
                      HamiltonianType.ZeroChargePenalty,
                      # simulator_type=SimulatorType.Aer,
