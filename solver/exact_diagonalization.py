@@ -110,8 +110,12 @@ class ED(BaseSolver):
                 h_sparse_matrix = csr_matrix((final_dat, (row_ind, col_ind)),
                                              shape=(zero_charge_size, zero_charge_size))
                 # print("Operator done")
-            eigen_values, eigen_vectors = eigsh(h_sparse_matrix, k=n_eigv, which=which,
+            temp = eigsh(h_sparse_matrix, k=n_eigv, which=which,
                                                 return_eigenvectors=(not compress_matrix))
+            if compress_matrix:
+                eigen_values = temp
+            else:
+                eigen_values, eigen_vectors = temp
             local_group[EDParameters.EigenValues][*non_singular_index, :] = eigen_values
             if not compress_matrix:
                 local_group[EDParameters.EigenVectors][*non_singular_index] = eigen_vectors
