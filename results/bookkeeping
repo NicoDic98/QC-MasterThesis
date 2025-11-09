@@ -69,7 +69,7 @@ Fixed Ansatz is C invariant 1 (10):
 23819217: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     OOM (5G)
 23819304: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     Aer, OOM (50G)
 23819322: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     Aer, Fail due to wrong test prints
-23819435: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     SVE TODO
+23819435: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     SVE, reached 3 day time limit
 
 
 23819458: ED; 101 masses, 4x4   OOM (3500GB)
