@@ -106,6 +106,10 @@ class AdaptVQE(BaseVQE):
                                                 [None, len(self.ansatz.operator_pool)]
                                                 )
 
+        # Set file into single writer multiple reader mode:
+        # https://docs.h5py.org/en/latest/swmr.html
+        local_group.file.swmr_mode = True
+
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
             print(f"Calculating energies for {hamiltonian}")
@@ -126,6 +130,7 @@ class AdaptVQE(BaseVQE):
             cost_function_instance = self.cost_function(circuit, h_operator.apply_layout(circuit.layout),
                                                         estimator, local_group, non_singular_index)
             for i in range(adapt_options["max_depth"]):
+                local_group.file.flush()
                 pub = (circuit, [op.apply_layout(circuit.layout) for op in commutator_list], [params])
                 # noinspection PyTypeChecker
                 job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
@@ -135,7 +140,7 @@ class AdaptVQE(BaseVQE):
 
                 abs_gradients = np.abs(gradients)
                 new_op_index = np.argmax(abs_gradients)
-                print(f"New op index: {new_op_index}")
+                print(f"New op index: {new_op_index}", flush=True)
                 print(f"Current grad: {abs_gradients.sum()}")
                 initial_parameter_value = 0
 

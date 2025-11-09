@@ -1,8 +1,7 @@
 #!/bin/bash
-#SBATCH --partition=vlm_long
-#SBATCH --time=3-00:00:00
-#SBATCH --ntasks=48
-#SBATCH --mem=3900G
+#SBATCH --partition=intelsr_long
+#SBATCH --ntasks=32
+#SBATCH --mem=500G
 #SBATCH --job-name=MyPyJob
 #SBATCH --output=out/run.%A.out
 #SBATCH --account=ag_hiskp_funcke
