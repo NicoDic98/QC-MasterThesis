@@ -82,6 +82,9 @@ def pprint_all(summary=False):
 
 
 if __name__ == "__main__":
+    file =  "2025-11-45-23830796.hdf5"
+    with h5py.File(join(data_folder, file), "r", libver='latest', swmr=True) as f:
+        pprint_h5(f, basename=file)
     with open('log.txt', 'w') as f:
         with redirect_stdout(f):
             pprint_all()
