@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition=intelsr_long
 #SBATCH --ntasks=32
-#SBATCH --mem=500G
+#SBATCH --mem=50G
 #SBATCH --job-name=MyPyJob
 #SBATCH --output=out/run.%A.out
 #SBATCH --account=ag_hiskp_funcke
