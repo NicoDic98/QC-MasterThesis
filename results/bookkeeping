@@ -77,7 +77,7 @@ Fixed Ansatz is C invariant 1 (11, arbitrary far 2 qbit gates):
 
 
 23819458: ED; 101 masses, 4x4   OOM (3500GB)
-23819461: ED; 101 masses, 3x3   TODO
+23819461: ED; 101 masses, 3x3   reached 6 day time limit
 23820863: ED; 11 masses,  4x4   OOM (3900GB, compressed matrix, EigenVectorDataset is the problem)
 23821109: ED; 11 masses,  4x4   OOM (3900GB, compressed matrix, w.o. EigenVectors)
 
