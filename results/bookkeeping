@@ -1,89 +1,93 @@
 2025-09-35: Contains variations of VQE runs and 23116296 (2025-09-03_22-35-17) is ED
 
+PH-E: PenaltyHamiltonian everywhere
+PH-VQE: PenaltyHamiltonian only in VQE
+NH-G: Normal Hamiltonian in Gradient calculation
+
 Fixed Ansatz is full superposition:
-23707377: PenaltyHamiltonian everywhere; Just R_y'S; 2 masses
-23708081: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; Just R_y'S; 2 masses
-23708113: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; Full Pool: R_y and R_{XY+YX}; 2 masses
-23726244: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; Full Pool: R_y and R_{XY+YX}; 10 masses
+23707377: PH-E; Just R_y'S; 2 masses
+23708081: PH-VQE; NH-G; Just R_y'S; 2 masses
+23708113: PH-VQE; NH-G; Full Pool: R_y and R_{XY+YX}; 2 masses
+23726244: PH-VQE; NH-G; Full Pool: R_y and R_{XY+YX}; 10 masses
 -- Better HamiltonianType saving, circuit saving and max depth saving added/improved from here on out
-23753211: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 10 masses
+23753211: PH-VQE; NH-G; R_x, R_y, R_z and R_{XY+YX}; 10 masses
 -- second derivatives available from here on out--
-23753452: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses
+23753452: PH-VQE; NH-G; R_x, R_y, R_z and R_{XY+YX}; 4 masses
 
 
 
-Fixed Ansatz is full superposition (1):
-23753926: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses
-23753983: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses
-23768245: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.5 (AVQE)
-23768277: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.1 (AVQE)
-23768364: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.05 (AVQE)
-23768438: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.01 (AVQE)
-23768500: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.005 (AVQE)
-23768557: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0. (AVQE), 1. (VQE)
-23768679: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, Noise 0.01 (AVQE)
-23769343: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, COBYQA, tol=1e-5
-23769353: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses, SLSQP, tol=1e-5
-23769366: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, SLSQP, tol=1e-5
-23769369: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, COBYQA, tol=1e-5
-23769435: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, SLSQP, tol=1e-6
-23769465: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses, COBYQA, tol=1e-6
-23769494: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 50 masses, SLSQP, tol=1e-6
+Fixed Ansatz is full superposition (1, R_x, R_y, R_z and R_{XY+YX}):
+23753926: PH-VQE; NH-G; 4 masses
+23753983: PH-E; 4 masses
+23768245: PH-VQE; NH-G; 4 masses, Noise 0.5 (AVQE)
+23768277: PH-VQE; NH-G; 4 masses, Noise 0.1 (AVQE)
+23768364: PH-VQE; NH-G; 4 masses, Noise 0.05 (AVQE)
+23768438: PH-VQE; NH-G; 4 masses, Noise 0.01 (AVQE)
+23768500: PH-VQE; NH-G; 4 masses, Noise 0.005 (AVQE)
+23768557: PH-VQE; NH-G; 4 masses, Noise 0. (AVQE), 1. (VQE)
+23768679: PH-E; 4 masses, Noise 0.01 (AVQE)
+23769343: PH-VQE; NH-G; 4 masses, COBYQA, tol=1e-5
+23769353: PH-VQE; NH-G; 4 masses, SLSQP, tol=1e-5
+23769366: PH-E; 4 masses, SLSQP, tol=1e-5
+23769369: PH-E; 4 masses, COBYQA, tol=1e-5
+23769435: PH-E; 4 masses, SLSQP, tol=1e-6
+23769465: PH-E; 4 masses, COBYQA, tol=1e-6
+23769494: PH-E; 50 masses, SLSQP, tol=1e-6
 
-Fixed Ansatz is 0-charge sector (2):
-23753943: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z and R_{XY+YX}; 4 masses
-23757058: PenaltyHamiltonian everywhere; R_x, R_y, R_z and R_{XY+YX}; 4 masses
+Fixed Ansatz is 0-charge sector (2, R_x, R_y, R_z and R_{XY+YX}):
+23753943: PH-VQE; NH-G; 4 masses
+23757058: PH-E; 4 masses
 
-Fixed Ansatz is full superposition+s-gates (3):
-23769527: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XY+YX} and R_{XX+YY}; 50 masses, SLSQP, tol=1e-6
+Fixed Ansatz is full superposition+s-gates (3, R_x, R_y, R_z, R_{XY+YX} and R_{XX+YY}):
+23769527: PH-E; 50 masses, SLSQP, tol=1e-6
 
-Fixed Ansatz is full superposition+s-gates (4):
-23770485: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, SLSQP, tol=1e-6
-23770489: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, COBYQA, tol=1e-6
-23770490: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, COBYLA, tol=1e-6
-23770492: PenaltyHamiltonian everywhere; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, COBYLA, tol=1e-6
-23770503: PenaltyHamiltonian everywhere; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, COBYQA, tol=1e-6
-23770505: PenaltyHamiltonian everywhere; R_z, R_{XY+YX} and R_{XX+YY}; 10 masses, SLSQP, tol=1e-6
+Fixed Ansatz is full superposition+s-gates (4, R_z, R_{XY+YX} and R_{XX+YY}):
+23770485: PH-VQE; NH-G; 10 masses, SLSQP, tol=1e-6
+23770489: PH-VQE; NH-G; 10 masses, COBYQA, tol=1e-6
+23770490: PH-VQE; NH-G; 10 masses, COBYLA, tol=1e-6
+23770492: PH-E; 10 masses, COBYLA, tol=1e-6
+23770503: PH-E; 10 masses, COBYQA, tol=1e-6
+23770505: PH-E; 10 masses, SLSQP, tol=1e-6
 
-Fixed Ansatz is full superposition (5):
-23770772: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY}, R_{XX-YY}, R_{XY+YX} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
-23770879: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z, R_{XX+YY}, R_{XX-YY}, R_{XY+YX} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+Fixed Ansatz is full superposition (5, R_x, R_y, R_z, R_{XX+YY}, R_{XX-YY}, R_{XY+YX} and R_{XY-YX}):
+23770772: PH-E; 10 masses, SLSQP, tol=1e-6
+23770879: PH-VQE; NH-G; 10 masses, SLSQP, tol=1e-6
 
-Fixed Ansatz is full superposition+s-gates (6):
-23770883: PenaltyHamiltonian only in VQE; Normal Hamiltonian in Gradient calculation; R_x, R_y, R_z, R_{XX+YY}, R_{XX-YY}, R_{XY+YX} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
-23770999: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY}, R_{XX-YY}, R_{XY+YX} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+Fixed Ansatz is full superposition+s-gates (6, R_x, R_y, R_z, R_{XX+YY}, R_{XX-YY}, R_{XY+YX} and R_{XY-YX}):
+23770883: PH-VQE; NH-G; 10 masses, SLSQP, tol=1e-6
+23770999: PH-E; 10 masses, SLSQP, tol=1e-6
 
-Fixed Ansatz is full superposition (7):
-23771113: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
-23862036: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, SVE                6 min   440MB
-23862126: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, Aer-SVE            9 min   420MB
-23862817: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, Aer-SVE    32cpus  8 min   430MB
-23862877: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, SVE        32cpus  6 min   460MB
-23863023: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, Aer-SVE    32cpus  12 min  440MB   (Parallel-TH: 6) -> MT works, but is slower for 8 qbits
-23863126: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, MPS        32cpus  8 min   280MB
-23863206: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, EStab      32cpus, can not be used in Estimator
-23863344: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, MPS        32cpus  8 min   430MB   (Parallel-TH: 6)
+Fixed Ansatz is full superposition (7, R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}):
+23771113: PH-E; 10 masses, SLSQP, tol=1e-6
+23862036: PH-E; 50 masses, SLSQP, tol=1e-6, SVE                6 min   440MB
+23862126: PH-E; 50 masses, SLSQP, tol=1e-6, Aer-SVE            9 min   420MB
+23862817: PH-E; 50 masses, SLSQP, tol=1e-6, Aer-SVE    32cpus  8 min   430MB
+23862877: PH-E; 50 masses, SLSQP, tol=1e-6, SVE        32cpus  6 min   460MB
+23863023: PH-E; 50 masses, SLSQP, tol=1e-6, Aer-SVE    32cpus  12 min  440MB   (Parallel-TH: 6) -> MT works, but is slower for 8 qbits
+23863126: PH-E; 50 masses, SLSQP, tol=1e-6, MPS        32cpus  8 min   280MB
+23863206: PH-E; 50 masses, SLSQP, tol=1e-6, EStab      32cpus, can not be used in Estimator
+23863344: PH-E; 50 masses, SLSQP, tol=1e-6, MPS        32cpus  8 min   430MB   (Parallel-TH: 6)
 
-Fixed Ansatz is full superposition+s-gates (8):
-23771123: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+Fixed Ansatz is full superposition+s-gates (8, R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}):
+23771123: PH-E; 10 masses, SLSQP, tol=1e-6
 
-Fixed Ansatz is empty (9):
-23771131: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+Fixed Ansatz is empty (9, R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}):
+23771131: PH-E; 10 masses, SLSQP, tol=1e-6
 
-Fixed Ansatz is C invariant 1 (10):
-23809713: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6, 2x2
-23813080: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6, 4x4    OOM (Default)
-23813117: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     OOM (Default)
-23819217: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     OOM (5G)
-23819304: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     Aer-SVE, OOM (50G)
-23819322: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     Aer-SVE, Fail due to wrong test prints
-23819435: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     SVE, reached 3 day time limit
-23830796: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 1 mass, SLSQP, tol=1e-6, 4x4       SVE, Small test maxiter 100, max depth 2 TODO
-23863667: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, OOM (50G), Small test maxiter 100, max depth 2
-23863692: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, Small test maxiter 100, max depth 2 TODO
+Fixed Ansatz is C invariant 1 (10, R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}):
+23809713: PH-E; 10 masses, SLSQP, tol=1e-6, 2x2
+23813080: PH-E; 10 masses, SLSQP, tol=1e-6, 4x4    OOM (Default)
+23813117: PH-E; 2 masses, SLSQP, tol=1e-6, 4x4     OOM (Default)
+23819217: PH-E; 2 masses, SLSQP, tol=1e-6, 4x4     OOM (5G)
+23819304: PH-E; 2 masses, SLSQP, tol=1e-6, 4x4     Aer-SVE, OOM (50G)
+23819322: PH-E; 2 masses, SLSQP, tol=1e-6, 4x4     Aer-SVE, Fail due to wrong test prints
+23819435: PH-E; 2 masses, SLSQP, tol=1e-6, 4x4     SVE, reached 3 day time limit
+23830796: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       SVE, Small test maxiter 100, max depth 2 TODO
+23863667: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, OOM (50G), Small test maxiter 100, max depth 2
+23863692: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, Small test maxiter 100, max depth 2 TODO
 
-Fixed Ansatz is C invariant 1 (11, arbitrary far 2 qbit gates):
-23833720: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6, 2x2
+Fixed Ansatz is C invariant 1 (11, arbitrary far 2 qbit gates, R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}):
+23833720: PH-E; 10 masses, SLSQP, tol=1e-6, 2x2
 
 
 23819458: ED; 101 masses, 4x4   OOM (3500GB)
