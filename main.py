@@ -50,7 +50,8 @@ def run_adapt_vqe(my_f: h5py.File):
                      HamiltonianType.ZeroChargePenalty,
                      simulator_type=SimulatorType.Aer,
                      simulator_options={
-
+                         "method": "matrix_product_state",
+                         "mps_parallel_threshold": 6
                      },
                      optimizer_options={
                          "method": 'slsqp',

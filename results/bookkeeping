@@ -55,8 +55,14 @@ Fixed Ansatz is full superposition+s-gates (6):
 
 Fixed Ansatz is full superposition (7):
 23771113: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
-23862036: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6
-23862126: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, Aer-SVE
+23862036: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, SVE                6 min   440MB
+23862126: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, Aer-SVE            9 min   420MB
+23862817: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, Aer-SVE    32cpus  8 min   430MB
+23862877: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, SVE        32cpus  6 min   460MB
+23863023: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, Aer-SVE    32cpus  12 min  440MB   (Parallel-TH: 6) -> MT works, but is slower for 8 qbits
+23863126: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, MPS        32cpus  8 min   280MB
+23863206: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, EStab      32cpus, can not be used in Estimator
+23863344: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, MPS        32cpus  8 min   430MB   (Parallel-TH: 6)
 
 Fixed Ansatz is full superposition+s-gates (8):
 23771123: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6

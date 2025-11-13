@@ -1,0 +1,64 @@
+Start 2025-11-13 16:27:14 | 23863206 MyPyJob | node078 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+Simulation failed and returned the following error message:
+ERROR:  [Experiment 0] Circuit circuit-172 contains invalid instructions {"instructions": {save_expval}} for "extended_stabilizer" method.Circuit circuit-172 contains invalid parameters  for "extended_stabilizer" method.
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Traceback (most recent call last):
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/main.py", line 85, in <module>
+    run_adapt_vqe(f)
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/main.py", line 46, in run_adapt_vqe
+    my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/solver/adapt_vqe.py", line 64, in run
+    local_group, h5_saver, estimator, pm, x0 = self.initialize_run(parameters_dict_list, hamiltonian_type,
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/solver/base.py", line 323, in initialize_run
+    test_full_result = test_cost_function.evaluate(x0)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/solver/base.py", line 93, in evaluate
+    return job.result()
+           ^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/qiskit/primitives/primitive_job.py", line 65, in result
+    self._result = self._future.result()
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/software/easybuild-INTEL/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/software/easybuild-INTEL/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/software/easybuild-INTEL/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/qiskit_aer/primitives/estimator_v2.py", line 110, in _run
+    return PrimitiveResult([self._run_pub(pub) for pub in pubs], metadata={"version": 2})
+                            ^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/qiskit_aer/primitives/estimator_v2.py", line 145, in _run_pub
+    expval = result.data(flat_index)[pauli]
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/qiskit/result/result.py", line 174, in data
+    return self._get_experiment(experiment).data.to_dict()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/qiskit/result/result.py", line 385, in _get_experiment
+    raise QiskitError(result_status, ", ", exp_status)
+qiskit.exceptions.QiskitError: 'ERROR:  [Experiment 0] Circuit circuit-172 contains invalid instructions {"instructions": {save_expval}} for "extended_stabilizer" method.Circuit circuit-172 contains invalid parameters  for "extended_stabilizer" method. ,  ERROR: Circuit circuit-172 contains invalid instructions {"instructions": {save_expval}} for "extended_stabilizer" method.Circuit circuit-172 contains invalid parameters  for "extended_stabilizer" method.'
+End 2025-11-13 16:27:16 | 23863206 MyPyJob | node078 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

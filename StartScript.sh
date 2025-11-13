@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --partition=intelsr_long
-#SBATCH --ntasks=32
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=32
 #SBATCH --mem=50G
 #SBATCH --job-name=MyPyJob
 #SBATCH --output=out/run.%A.out
