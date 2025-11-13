@@ -15,6 +15,7 @@ from qiskit.transpiler import PassManager
 from qiskit_aer import AerSimulator
 from qiskit_ibm_runtime import EstimatorOptions
 from qiskit_ibm_runtime import EstimatorV2 as Estimator
+from qiskit_aer.primitives import EstimatorV2 as AerEstimator
 from qiskit_ibm_runtime.options.utils import UnsetType
 from numpy.random import Generator, PCG64
 
@@ -191,7 +192,7 @@ class BaseVQE(BaseSolver):
 
         elif simulator_type == SimulatorType.Aer:
             simulator_options_defaults = {
-
+                "method": "statevector"
             }
 
             preset_pass_manager_options_default = {
@@ -200,25 +201,40 @@ class BaseVQE(BaseSolver):
                 "approximation_degree": 1.0
             }
 
-            estimator_options_default = EstimatorOptions()
-            estimator_options_default.seed_estimator = 42
-            estimator_options_default.simulator.seed_simulator = 42
+            # estimator_options_default = EstimatorOptions()
+            # estimator_options_default.seed_estimator = 42
+            # estimator_options_default.simulator.seed_simulator = 42
 
             fill_defaults_in_dict(simulator_options, simulator_options_defaults)
 
             fill_defaults_in_dict(preset_pass_manager_options, preset_pass_manager_options_default)
 
-            if isinstance(estimator_options.seed_estimator, UnsetType):
-                estimator_options.seed_estimator = estimator_options_default.seed_estimator
-            if isinstance(estimator_options.simulator.seed_simulator, UnsetType):
-                estimator_options.simulator.seed_simulator = estimator_options_default.simulator.seed_simulator
+            # if isinstance(estimator_options.seed_estimator, UnsetType):
+            #     estimator_options.seed_estimator = estimator_options_default.seed_estimator
+            # if isinstance(estimator_options.simulator.seed_simulator, UnsetType):
+            #     estimator_options.simulator.seed_simulator = estimator_options_default.simulator.seed_simulator
+
+            if isinstance(estimator_options.default_precision, UnsetType):
+                precision = 0.0
+            else:
+                precision = estimator_options.default_precision
 
             backend = AerSimulator(**simulator_options)
 
             pm = generate_preset_pass_manager(backend=backend,
                                               **preset_pass_manager_options)
 
-            estimator = Estimator(mode=backend, options=estimator_options)
+            # run_options seed_simulator value is used in AerEstimator's "_run_pub" method,
+            # which is enforced to be an integer and the RNG is reinitialized each call
+            # -> setting a seed does not make any sense
+            # With precision != this just adds gaussian noise when using AerEstimator
+            estimator = AerEstimator.from_backend(backend,
+                                                  options={"default_precision": precision,
+                                                           # "run_options": {"seed_simulator":42}
+                                                           }
+                                                  )
+
+            # estimator = Estimator(mode=backend, options=estimator_options)
 
         elif simulator_type == SimulatorType.Hardware:
             if simulator_options:
@@ -241,7 +257,8 @@ class BaseVQE(BaseSolver):
             if isinstance(estimator_options.simulator.seed_simulator, UnsetType):
                 estimator_options.simulator.seed_simulator = estimator_options_default.simulator.seed_simulator
 
-            # todo: choose actual hardware backend
+            # todo: choose actual hardware backend,
+            #  give option to choose Aer here (Feed as a backend into Estimator instead of AerEstimator
 
             raise NotImplementedError
 
