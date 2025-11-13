@@ -55,6 +55,8 @@ Fixed Ansatz is full superposition+s-gates (6):
 
 Fixed Ansatz is full superposition (7):
 23771113: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
+23862036: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6
+23862126: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 50 masses, SLSQP, tol=1e-6, Aer-SVE
 
 Fixed Ansatz is full superposition+s-gates (8):
 23771123: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6
