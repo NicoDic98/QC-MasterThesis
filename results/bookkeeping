@@ -1,5 +1,6 @@
 2025-09-35: Contains variations of VQE runs and 23116296 (2025-09-03_22-35-17) is ED
 
+
 Fixed Ansatz is full superposition:
 23707377: PH-E; Just R_y'S; 2 masses
 23708081: PH-VQE; NH-G; Just R_y'S; 2 masses
@@ -11,6 +12,25 @@ Fixed Ansatz is full superposition:
 23753452: PH-VQE; NH-G; R_x, R_y, R_z and R_{XY+YX}; 4 masses
 
 
+23819458: ED; 101 masses, 4x4   OOM (3500GB)
+23819461: ED; 101 masses, 3x3   reached 6 day time limit
+23820863: ED; 11 masses,  4x4   OOM (3900GB, compressed matrix, EigenVectorDataset is the problem)
+23821109: ED; 11 masses,  4x4   OOM (3900GB, compressed matrix, w.o. EigenVectors)
+
+# Note an empty circuit needs 34GB of RAM with AER(statevector) for 31 qbits
+# Note an empty circuit needs 17GB of RAM with AER(statevector) for 30 qbits
+# Note an empty circuit needs  8GB of RAM with AER(statevector) for 29 qbits
+# Note an empty circuit needs  4GB of RAM with AER(statevector) for 28 qbits
+
+# Note an superposition circuit needs  3GB of RAM with StatevectorEstimator for 26 qbits
+# Note an superposition circuit needs  7GB of RAM with StatevectorEstimator for 27 qbits
+# Note an superposition circuit needs 13GB of RAM with StatevectorEstimator for 28 qbits
+# Note an superposition circuit needs 26GB of RAM with StatevectorEstimator for 29 qbits
+
+# ED estimate: 2x2 144MB pre compression
+# ED estimate: 3x3 380GB Pre compression
+
+# --------------------------------------------------------------------------
 
 Fixed Ansatz is full superposition (1, R_x, R_y, R_z and R_{XY+YX}):
 23753926: PH-VQE; NH-G; 4 masses
@@ -80,38 +100,8 @@ Fixed Ansatz is C invariant 1 (10, R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}):
 23819435: PH-E; 2 masses, SLSQP, tol=1e-6, 4x4     SVE, reached 3 day time limit
 23830796: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       SVE, Small test maxiter 100, max depth 2 TODO
 23863667: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, OOM (50G), Small test maxiter 100, max depth 2
-23863692: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, Small test maxiter 100, max depth 2 TODO
-Fixed Ansatz is C invariant 1 (10):
-23809713: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6, 2x2
-23813080: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 10 masses, SLSQP, tol=1e-6, 4x4    OOM (Default)
-23813117: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     OOM (Default)
-23819217: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     OOM (5G)
-23819304: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     Aer-SVE, OOM (50G)
-23819322: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     Aer-SVE, Fail due to wrong test prints
-23819435: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 2 masses, SLSQP, tol=1e-6, 4x4     SVE, reached 3 day time limit
-23830796: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 1 mass, SLSQP, tol=1e-6, 4x4       SVE, Small test maxiter 100, max depth 2 TODO
-23863667: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, OOM (50G), Small test maxiter 100, max depth 2
-23863692: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, Small test maxiter 100, max depth 2 500G TODO
-23878204: PenaltyHamiltonian everywhere; R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}; 1 mass, SLSQP, tol=1e-6, 4x4       MPS, Small test maxiter 100, max depth 2 500G TODO
+23863692: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, Small test maxiter 100, max depth 2 500G
+23878204: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       MPS, Small test maxiter 100, max depth 2 500G TODO
 
 Fixed Ansatz is C invariant 1 (11, arbitrary far 2 qbit gates, R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}):
 23833720: PH-E; 10 masses, SLSQP, tol=1e-6, 2x2
-
-
-23819458: ED; 101 masses, 4x4   OOM (3500GB)
-23819461: ED; 101 masses, 3x3   reached 6 day time limit
-23820863: ED; 11 masses,  4x4   OOM (3900GB, compressed matrix, EigenVectorDataset is the problem)
-23821109: ED; 11 masses,  4x4   OOM (3900GB, compressed matrix, w.o. EigenVectors)
-
-# Note an empty circuit needs 34GB of RAM with AER(statevector) for 31 qbits
-# Note an empty circuit needs 17GB of RAM with AER(statevector) for 30 qbits
-# Note an empty circuit needs  8GB of RAM with AER(statevector) for 29 qbits
-# Note an empty circuit needs  4GB of RAM with AER(statevector) for 28 qbits
-
-# Note an superposition circuit needs  3GB of RAM with StatevectorEstimator for 26 qbits
-# Note an superposition circuit needs  7GB of RAM with StatevectorEstimator for 27 qbits
-# Note an superposition circuit needs 13GB of RAM with StatevectorEstimator for 28 qbits
-# Note an superposition circuit needs 26GB of RAM with StatevectorEstimator for 29 qbits
-
-# ED estimate: 2x2 144MB pre compression
-# ED estimate: 3x3 380GB Pre compression
