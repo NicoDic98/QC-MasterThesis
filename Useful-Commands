@@ -6,3 +6,11 @@ srun --pty --partition=sgpu_devel --time=0-01:00:00 --gpus=1 --ntasks=1 --accoun
 
 See gpu usage:
 sreport -t HourPer cluster UserUtilizationByAccount START=2024-01-01 -T gres/gpu | grep s6nidich
+
+
+See node counts Allocated (alloc,mix,drain) / Idle / Other / Total per partition:
+sinfo -s
+sinfo -o "%15R %15F %25C %20N"
+
+See cpu counts Allocated / Idle / Other / Total per node for a specific partition:
+sinfo -o "%15n %15C %10eMB   %10O %E" -p lm_long

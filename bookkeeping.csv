@@ -49,7 +49,7 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 23830796,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,32,SLSQP,4x4,"?Small test maxiter 100, max depth 2"
 23863667,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,32,SLSQP,4x4,"!OOM! Small test maxiter 100, max depth 2"
 23863692,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,32,SLSQP,4x4,"Small test maxiter 100, max depth 2, 04:08:05"
-23878204,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,4x4,"?Small test maxiter 100, max depth 2"
+23883059,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,4x4,"Small test maxiter 100, max depth 2, 00:00:32"
 23833720,11,PH,PH,10,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,150,30,SLSQP,2x2,
 ,,PH,,,,,,,,SLSQP,,
 ,,PH,,,,,,,,SLSQP,,

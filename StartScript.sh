@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --partition=intelsr_long
+#SBATCH --partition=lm_long
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
 #SBATCH --mem=500G

@@ -101,7 +101,7 @@ Fixed Ansatz is C invariant 1 (10, R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}):
 23830796: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       SVE, Small test maxiter 100, max depth 2 TODO
 23863667: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, OOM (50G), Small test maxiter 100, max depth 2
 23863692: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       Aer-SVE, Small test maxiter 100, max depth 2 500G
-23878204: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       MPS, Small test maxiter 100, max depth 2 500G TODO
+23883059: PH-E; 1 mass, SLSQP, tol=1e-6, 4x4       MPS, Small test maxiter 100, max depth 2 500G
 
 Fixed Ansatz is C invariant 1 (11, arbitrary far 2 qbit gates, R_x, R_y, R_z, R_{XX+YY} and R_{XY-YX}):
 23833720: PH-E; 10 masses, SLSQP, tol=1e-6, 2x2
