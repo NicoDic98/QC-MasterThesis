@@ -130,13 +130,13 @@ class ResultLoader:
                                                 parameters,
                                                 [], final_value=False)
             n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
-            energy = energy[:n_iterations+1]
+            energy = energy[:n_iterations + 1]
         elif self.solver == AdaptVQE.__name__:
             energy, _, _ = self.get_observables(VQEParameters.Hamiltonian,
                                                 parameters,
                                                 [], final_value=False)
             n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
-            energy = energy[:n_iterations+1]
+            energy = energy[:n_iterations + 1]
         else:
             raise NotImplementedError
         return energy
@@ -169,7 +169,7 @@ class ResultLoader:
                     labels.append(None)
                 else:
                     gi, qbit, gname = ansatz.get_operator_info(opid)
-                    labels.append(f"{gname}$^{qbit}$")
+                    labels.append(f"{gname}" + "$^{" + f"{qbit}" + "}$")
         else:
             raise NotImplementedError
         return labels
@@ -230,7 +230,7 @@ class ResultLoader:
             der, _, der_dep_dict = self.get_observables(observable_name, parameters, [])
 
             operator_indices = self.get_operator_indices(parameters)
-            der = der[:len(operator_indices)+1]
+            der = der[:len(operator_indices) + 1]
         else:
             raise NotImplementedError
         return der, der_dep_dict, operator_indices
@@ -272,7 +272,8 @@ class ResultLoader:
                                 # location="top", orientation="horizontal"
                                 )
             cbar.set_label("Qubit")
-            selected_data_pts = [der.take(oi, der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis])[i] for i, oi in enumerate(op)]
+            selected_data_pts = [der.take(oi, der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis])[i] for i, oi in
+                                 enumerate(op)]
             ax.scatter(list(range(len(selected_data_pts))), selected_data_pts, label="Selected",
                        marker="o", facecolors="none", edgecolors='r')
             ax.legend(handles=legend_elements)
@@ -283,8 +284,8 @@ class ResultLoader:
                 gi, qbit, gname = ansatz.get_operator_info(opid)
                 # noinspection PyTypeChecker
                 fig_legend_elements.append(Line2D([0], [0],
-                                              color=cmap(norm(qbit)), linestyle=linestyle_str[gi],
-                                              label=f"{i}: {label}"))
+                                                  color=cmap(norm(qbit)), linestyle=linestyle_str[gi],
+                                                  label=f"{i}: {label}"))
             source = list(range(der.shape[der_dep_dict[VQEParameters.AnsatzOperatorAxis]]))
             target = [str(i) for i in source]
             target[-1] = ""

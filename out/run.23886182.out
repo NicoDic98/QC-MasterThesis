@@ -194,3 +194,27 @@ Current grad: 249.99589644046864
 New op index: 105	$R_{YX-XY}$(4)
 Current grad: 175.71424463170436
 New op index: 113	$R_{YX-XY}$(8)
+Current grad: 167.48548219891512
+New op index: 25	$R_Y$(8)
+Current grad: 235.8850736767459
+New op index: 113	$R_{YX-XY}$(8)
+Current grad: 162.4349869639713
+New op index: 119	$R_{YX-XY}$(11)
+Current grad: 154.25374885552057
+New op index: 34	$R_Y$(11)
+Current grad: 218.99286505227178
+New op index: 119	$R_{YX-XY}$(11)
+Current grad: 147.19908645912332
+New op index: 129	$R_{YX-XY}$(16)
+Current grad: 137.46564000404172
+New op index: 52	$R_Y$(17)
+Current grad: 201.768259080895
+New op index: 129	$R_{YX-XY}$(16)
+Current grad: 133.0746218098868
+New op index: 135	$R_{YX-XY}$(19)
+Current grad: 124.24857897649807
+New op index: 61	$R_Y$(20)
+Current grad: 188.96963520954026
+New op index: 135	$R_{YX-XY}$(19)
+Current grad: 117.08388667117833
+New op index: 145	$R_{YX-XY}$(24)
