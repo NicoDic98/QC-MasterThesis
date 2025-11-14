@@ -438,6 +438,22 @@ class HardwareAdaptAnsatz11(BaseADAPTVQEAnsatz):
         self.gate_pool.append(lambda a: build_r_yx_xy(a, False))
 
 
+class HardwareAdaptAnsatz12(HardwareAdaptAnsatz5):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
+        if (self.num_qubits % 2) != 0:
+            raise NotImplementedError
+
+        self.fixed_ansatz.h(0)
+
+        for i in range(self.num_qubits // 2, self.num_qubits):
+            self.fixed_ansatz.x(i)
+
+        for i in range(1, self.num_qubits):
+            self.fixed_ansatz.cx(0, i)
+
+
 class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
