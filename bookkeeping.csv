@@ -46,15 +46,15 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 23819304,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,1,SLSQP,4x4,!OOM!
 23819322,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,1,SLSQP,4x4,!Fail due to wrong test prints!
 23819435,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,1,SLSQP,4x4,!reached 3 day time limit!
-23830796,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,32,SLSQP,4x4,"?Small test maxiter 100, max depth 2"
+23830796,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,32,SLSQP,4x4,"!reached 7 day time limit! Small test maxiter 100, max depth 2"
 23863667,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,32,SLSQP,4x4,"!OOM! Small test maxiter 100, max depth 2"
 23863692,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,32,SLSQP,4x4,"Small test maxiter 100, max depth 2, 04:08:05"
 23883059,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,4x4,"Small test maxiter 100, max depth 2, 00:00:32"
 23833720,11,PH,PH,10,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,150,30,SLSQP,2x2,
 23883328,7,PH,PH,2,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,4x4,
 23884079,7,PH,PH,2,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,2x2,
-23886182,7,PH,PH,20,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,1900,32,SLSQP,4x4,?
+23886182,7,PH,PH,20,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,1900,32,SLSQP,4x4,""
 23886472,12,PH,PH,50,00001111+11110000,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,""
-23886762,13,PH,PH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,?
+23886762,13,PH,PH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,""
 ,,PH,,,,,,,,SLSQP,,
 ,,PH,,,,,,,,SLSQP,,

@@ -17,3 +17,11 @@ Currently Loaded Modules:
 
 Start of Program:
 
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=4, N_y=4, mass=-6.000, r=1.000)
+h_im: 0.0
+New op index: 0
+[2025-11-16T12:44:49.015] error: *** JOB 23830796 ON node088 CANCELLED AT 2025-11-16T12:44:49 DUE TO TIME LIMIT ***
