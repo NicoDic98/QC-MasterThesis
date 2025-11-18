@@ -1,0 +1,3729 @@
+Start 2025-11-18 17:51:00 | 23954819 MyPyJob | lmnode208 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 45.99999999999997
+0:	0.00e+00	0.00e+00
+1:	-2.00e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.50e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.50e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	2.00e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	2.00e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	4.16e-17
+16:	-2.50e+00	1.39e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	0.00e+00
+19:	2.50e+00	6.94e-18
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.47e-17
+22:	-2.00e+00	6.94e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.50e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	5.00e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.50e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.50e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-5.00e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.50e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 35.02556920488713
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 24.055980094111362
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 21.41301847732013
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 21.192487807267852
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 17.782634520637863
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 15.72171560412474
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 12.894216719986305
+New op index: 4	$R_Y$[1]
+Current grad: 10.450117442704109
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 18.519446079040637
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.222959086563552
+New op index: 10	$R_Y$[3]
+Current grad: 9.651680194511801
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 18.20162078127913
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 13.071533546735667
+New op index: 16	$R_Y$[5]
+Current grad: 6.426272653002132
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 14.016230322380046
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.966534020316342
+New op index: 13	$R_Y$[4]
+Current grad: 3.593168583971995
+New op index: 16	$R_Y$[5]
+Current grad: 2.2925758314563054
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.013114706581370077
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 44.36734693877547
+0:	0.00e+00	0.00e+00
+1:	-1.92e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.42e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.42e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.92e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.92e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	4.11e-17
+16:	-2.42e+00	1.33e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	5.66e-19
+19:	2.42e+00	7.51e-18
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.41e-17
+22:	-1.92e+00	6.37e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.34e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.84e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.34e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.34e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.84e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.34e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 33.69166360897827
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 23.01950673854235
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 21.21485104732696
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 20.349107732695927
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 17.06091827495149
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 15.064727650009303
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 12.354950495446168
+New op index: 19	$R_Y$[6]
+Current grad: 10.027175956393753
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 17.883136948667417
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.83093648464392
+New op index: 13	$R_Y$[4]
+Current grad: 9.328407433636986
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 17.568149799097593
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 12.535260890295566
+New op index: 7	$R_Y$[2]
+Current grad: 6.214524368135372
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 13.59862139452019
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.028644509486626
+New op index: 1	$R_Y$[0]
+Current grad: 4.197908119331346
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 12.838395337727455
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.844721769935515
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.012094722751422543
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.673, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 42.73469387755098
+0:	0.00e+00	0.00e+00
+1:	-1.84e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.34e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.34e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.84e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.84e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	4.05e-17
+16:	-2.34e+00	1.27e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.13e-18
+19:	2.34e+00	8.07e-18
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.36e-17
+22:	-1.84e+00	5.81e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.17e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.67e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.17e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.17e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.67e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.17e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 32.357134918399986
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 21.979949573354794
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 20.302485967173475
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 19.506973374376898
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 16.338980327982195
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 14.40648347210052
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 11.81206318245007
+New op index: 4	$R_Y$[1]
+Current grad: 9.596474263011414
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 17.248219830160178
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 10.435435829047046
+New op index: 10	$R_Y$[3]
+Current grad: 9.006785958401858
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 16.93412149614437
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.995029115368673
+New op index: 16	$R_Y$[5]
+Current grad: 6.000261950509862
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 13.18758908968111
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.852507968954605
+New op index: 22	$R_Y$[7]
+Current grad: 4.098297912787198
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 12.410284780661964
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.505546799271695
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.011864621802492687
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.510, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 41.10204081632649
+0:	0.00e+00	0.00e+00
+1:	-1.76e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.26e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.26e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.76e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.76e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.99e-17
+16:	-2.26e+00	1.22e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.70e-18
+19:	2.26e+00	8.64e-18
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.30e-17
+22:	-1.76e+00	5.24e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.01e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.51e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.01e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.01e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.51e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.01e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 31.021887288082624
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 20.942212199680725
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 18.68385930752211
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 18.661163946838574
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 15.615874446509062
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 13.746850709662993
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 11.268133876345535
+New op index: 19	$R_Y$[6]
+Current grad: 9.167292463607053
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 16.613647561179718
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.040520936678883
+New op index: 13	$R_Y$[4]
+Current grad: 8.684577424699173
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 16.297039726861826
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 11.453227843165209
+New op index: 7	$R_Y$[2]
+Current grad: 5.788840761467078
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 12.769353991110668
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.667054745640895
+New op index: 1	$R_Y$[0]
+Current grad: 3.9901271654448296
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.9829020489526
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.170827498583802
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.011299181958972063
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.347, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 39.469387755102005
+0:	0.00e+00	0.00e+00
+1:	-1.67e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.17e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.17e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.67e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.67e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.94e-17
+16:	-2.17e+00	1.16e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.27e-18
+19:	2.17e+00	9.20e-18
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.24e-17
+22:	-1.67e+00	4.67e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.85e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.35e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.85e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.85e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.35e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.85e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 29.685854224458915
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 19.902360224406905
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 18.473701339793045
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 17.81169997428291
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 14.891407114834978
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 13.085584460449233
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 10.723154388363039
+New op index: 19	$R_Y$[6]
+Current grad: 8.736629526955603
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 15.979590765208473
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.646052615802219
+New op index: 13	$R_Y$[4]
+Current grad: 8.364653413308844
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 15.658275610061763
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.910061432291851
+New op index: 7	$R_Y$[2]
+Current grad: 5.576444954576252
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 12.339828009735497
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.474503591961335
+New op index: 1	$R_Y$[0]
+Current grad: 3.872880485271161
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.5458248029504
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.8217545529012895
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.007607902700999389
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.184, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 37.83673469387752
+0:	0.00e+00	0.00e+00
+1:	-1.59e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.09e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.09e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.59e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.59e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.88e-17
+16:	-2.09e+00	1.10e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.83e-18
+19:	2.09e+00	9.77e-18
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.19e-17
+22:	-1.59e+00	4.11e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.68e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.18e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.68e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.68e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.18e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.68e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 28.34892616440153
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 18.863239890793192
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 16.849252211124455
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 16.963322264482645
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 14.162959941884969
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 12.422640759172367
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 10.180228114439934
+New op index: 19	$R_Y$[6]
+Current grad: 8.305790194089813
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 15.35089427596474
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.250777321186018
+New op index: 13	$R_Y$[4]
+Current grad: 8.04000514823358
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 15.016412801974251
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.36158187686874
+New op index: 7	$R_Y$[2]
+Current grad: 5.363605445174813
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 11.935141892979416
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.3081872572627935
+New op index: 1	$R_Y$[0]
+Current grad: 3.7761773499260927
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.123363189819225
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.488876109683492
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.009933524918308382
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.020, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 36.20408163265302
+0:	0.00e+00	0.00e+00
+1:	-1.51e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.01e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.01e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.51e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.51e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.82e-17
+16:	-2.01e+00	1.05e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	3.40e-18
+19:	2.01e+00	1.03e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.13e-17
+22:	-1.51e+00	3.54e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.52e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.02e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.52e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.52e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.02e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.52e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 27.010979073696586
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 17.817441194630526
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 15.933408782655096
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 16.113089861878063
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 13.435615921415945
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 11.757621804618104
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 9.628934117280343
+New op index: 19	$R_Y$[6]
+Current grad: 7.875513497079188
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 14.717535653635103
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 8.856917622836235
+New op index: 13	$R_Y$[4]
+Current grad: 7.718586195252109
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 14.372919949205029
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.811621439464266
+New op index: 7	$R_Y$[2]
+Current grad: 5.149272307710108
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 11.514069898364141
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.1283421571221455
+New op index: 1	$R_Y$[0]
+Current grad: 3.6705734951560323
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 10.695291187125832
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.150414333342733
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.008835155625475669
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.857, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 34.57142857142854
+0:	0.00e+00	0.00e+00
+1:	-1.43e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.93e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.93e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.43e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.43e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.77e-17
+16:	-1.93e+00	9.91e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	3.97e-18
+19:	1.93e+00	1.09e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.07e-17
+22:	-1.43e+00	2.97e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.36e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.86e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.36e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.36e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.86e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.36e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 25.671854525308525
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 16.770430111648846
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 15.016504809471146
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 15.260182331693288
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 12.70492132437355
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 11.090663727748094
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 9.080664218216489
+New op index: 4	$R_Y$[1]
+Current grad: 7.44525650572655
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 14.08659661310164
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 8.460179800146602
+New op index: 10	$R_Y$[3]
+Current grad: 7.398444467126001
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 13.725270062495904
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 9.256721747458306
+New op index: 16	$R_Y$[5]
+Current grad: 4.936383264440138
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 11.098554483390346
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.93770066078827
+New op index: 22	$R_Y$[7]
+Current grad: 3.560070500114634
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.24615088926609
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.794251570422745
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.0118357506445242
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.694, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 32.93877551020406
+0:	0.00e+00	0.00e+00
+1:	-1.35e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.85e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.85e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.35e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.35e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.71e-17
+16:	-1.85e+00	9.35e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	4.53e-18
+19:	1.85e+00	1.15e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	3.02e-17
+22:	-1.35e+00	2.41e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.19e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.69e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.19e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.19e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.69e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.19e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 24.33017937919221
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 15.724106753229638
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 14.096096291938943
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 14.405817428583374
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 11.974671527800716
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.42078599792423
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 8.531568353335027
+New op index: 4	$R_Y$[1]
+Current grad: 7.018877971594389
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 13.457968386283799
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 8.063223038357732
+New op index: 10	$R_Y$[3]
+Current grad: 7.077499071393511
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 13.07609120075485
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 8.699373967857394
+New op index: 16	$R_Y$[5]
+Current grad: 4.724367331779717
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.692236652178536
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.76010282001276
+New op index: 22	$R_Y$[7]
+Current grad: 3.457394508268897
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.804088223244577
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.4432599579533125
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.0057413228195971906
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.531, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 31.306122448979565
+0:	0.00e+00	0.00e+00
+1:	-1.27e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.77e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.77e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.27e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.27e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.65e-17
+16:	-1.77e+00	8.78e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	5.10e-18
+19:	1.77e+00	1.20e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.96e-17
+22:	-1.27e+00	1.84e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.03e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.53e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.03e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.03e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.53e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.03e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 22.988563230199812
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 14.671885653161642
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 13.87832255479317
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 13.54342934240589
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 11.240817404520886
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 9.745961949179291
+New op index: 19	$R_Y$[6]
+Current grad: 7.976449780748834
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 11.127079141545828
+New op index: 13	$R_Y$[4]
+Current grad: 6.229472943323736
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.02439297266183
+New op index: 7	$R_Y$[2]
+Current grad: 4.502913074038191
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 10.274914721142252
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 4.569709965082625
+New op index: 1	$R_Y$[0]
+Current grad: 3.347183140576481
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 9.364894818449763
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 4.093650453587342
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.0051875841275396345
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.367, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 29.673469387755077
+0:	0.00e+00	0.00e+00
+1:	-1.18e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.68e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.68e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.18e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.18e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.60e-17
+16:	-1.68e+00	8.21e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	5.66e-18
+19:	1.68e+00	1.26e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.90e-17
+22:	-1.18e+00	1.27e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.87e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.37e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.87e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.87e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.37e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.87e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 21.645718431703344
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 13.61952871812423
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 12.245108293602097
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 12.678293696193128
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 10.502958238078772
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 9.069426533973257
+New op index: 4	$R_Y$[1]
+Current grad: 7.420974719614455
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 10.543259647318338
+New op index: 10	$R_Y$[3]
+Current grad: 5.902968658652965
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 9.51159555601642
+New op index: 16	$R_Y$[5]
+Current grad: 4.288208240836385
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 9.867800535511128
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.4525724387537813
+New op index: 13	$R_Y$[4]
+Current grad: 2.6993271991628354
+New op index: 16	$R_Y$[5]
+Current grad: 1.7681956746686265
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 0.004068394620356136
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.204, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 28.04081632653058
+0:	0.00e+00	0.00e+00
+1:	-1.10e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.60e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.60e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.10e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.10e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.54e-17
+16:	-1.60e+00	7.65e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	6.23e-18
+19:	1.60e+00	1.32e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.85e-17
+22:	-1.10e+00	7.08e-19
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.70e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.20e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.70e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.70e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.20e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.70e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 20.29941501166354
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 12.557757134686291
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.318411623931084
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 11.808100452681236
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.760360736449266
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 8.385072033651467
+New op index: 19	$R_Y$[6]
+Current grad: 6.861000750407037
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.960284151798383
+New op index: 13	$R_Y$[4]
+Current grad: 5.577112565431639
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 8.995307155349895
+New op index: 7	$R_Y$[2]
+Current grad: 4.072932889160565
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 9.459469082417725
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 3.3031563365882537
+New op index: 10	$R_Y$[3]
+Current grad: 2.6164772586082163
+New op index: 7	$R_Y$[2]
+Current grad: 1.712553405551445
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 0.0002185664005184659
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.041, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 26.408163265306094
+0:	0.00e+00	0.00e+00
+1:	-1.02e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.52e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.52e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.02e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.02e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.48e-17
+16:	-1.52e+00	7.08e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	6.80e-18
+19:	1.52e+00	1.37e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.79e-17
+22:	-1.02e+00	1.42e-19
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.54e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.04e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.54e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.54e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.04e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.54e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 18.95112285315738
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 11.494185381660197
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 10.387255694575316
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.929650185532065
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.011442122254508
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 7.6958684314303385
+New op index: 19	$R_Y$[6]
+Current grad: 6.297965603016585
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.376042351029191
+New op index: 13	$R_Y$[4]
+Current grad: 5.24986459929117
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 8.474393462393236
+New op index: 7	$R_Y$[2]
+Current grad: 3.857180862461142
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 9.053313113166203
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 3.1539205847180662
+New op index: 10	$R_Y$[3]
+Current grad: 2.53315472607274
+New op index: 7	$R_Y$[2]
+Current grad: 1.656663440738456
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.00045744494774077165
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.878, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 24.775510204081613
+0:	0.00e+00	0.00e+00
+1:	-9.39e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.44e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.44e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	9.39e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	9.39e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.43e-17
+16:	-1.44e+00	6.51e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	7.36e-18
+19:	1.44e+00	1.43e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.73e-17
+22:	-9.39e-01	-4.25e-19
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.38e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.88e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.38e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.38e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.88e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.38e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 17.5994726055968
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 10.42392755718421
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 9.45139312714207
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.03636664200128
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 8.25370950545652
+New op index: 4	$R_Y$[1]
+Current grad: 6.998417517964092
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 9.656842150342497
+New op index: 19	$R_Y$[6]
+Current grad: 5.755085149663368
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 7.537975093681567
+New op index: 13	$R_Y$[4]
+Current grad: 4.453601229395008
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 7.412514843983305
+New op index: 7	$R_Y$[2]
+Current grad: 3.2225997953378767
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 4.41746690185688
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 0.0008515982441448819
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.714, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 23.142857142857125
+0:	0.00e+00	0.00e+00
+1:	-8.57e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.36e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.36e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	8.57e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	8.57e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.37e-17
+16:	-1.36e+00	5.95e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	7.93e-18
+19:	1.36e+00	1.49e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.68e-17
+22:	-8.57e-01	-9.91e-19
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.21e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.71e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.21e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.21e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.71e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.21e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 16.244399911229458
+New op index: 1	$R_Y$[0]
+Current grad: 9.346394414990359
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 8.079716556131348
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 7.762599872539462
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.3862754499403
+New op index: 10	$R_Y$[3]
+Current grad: 5.804746773329154
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 10.13086819338793
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 6.453331419058395
+New op index: 4	$R_Y$[1]
+Current grad: 4.204932862784675
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 4.486462791122296
+New op index: 19	$R_Y$[6]
+Current grad: 3.4215757578435033
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 8.364900650880617
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 3.783521585577985
+New op index: 13	$R_Y$[4]
+Current grad: 2.88788078878076
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 7.141358005855862
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 2.701532760199899
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.004395987576020763
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.551, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 21.510204081632637
+0:	0.00e+00	0.00e+00
+1:	-7.76e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.28e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.28e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	7.76e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	7.76e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.31e-17
+16:	-1.28e+00	5.38e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	8.50e-18
+19:	1.28e+00	1.54e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.62e-17
+22:	-7.76e-01	-1.56e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.05e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.55e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.05e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.05e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.55e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.05e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 14.885048282758895
+New op index: 1	$R_Y$[0]
+Current grad: 8.259452852403665
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 7.173783997616618
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 7.0400457825904414
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.798958561314696
+New op index: 10	$R_Y$[3]
+Current grad: 5.2214464149889235
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 9.396099966678763
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 5.856377908341337
+New op index: 4	$R_Y$[1]
+Current grad: 3.8383371142073974
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 4.17359578844018
+New op index: 19	$R_Y$[6]
+Current grad: 3.2006103928269916
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 7.966652013483749
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 3.5914037319524375
+New op index: 13	$R_Y$[4]
+Current grad: 2.792753295627337
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.696890276796579
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 2.3243025290770296
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.005743393849152395
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.388, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 19.877551020408145
+0:	0.00e+00	0.00e+00
+1:	-6.94e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.19e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.19e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	6.94e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	6.94e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.26e-17
+16:	-1.19e+00	4.81e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	9.06e-18
+19:	1.19e+00	1.60e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.56e-17
+22:	-6.94e-01	-2.12e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.89e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.39e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.89e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.89e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.39e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.89e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 13.520342307195678
+New op index: 22	$R_Y$[7]
+Current grad: 7.162948672429994
+New op index: 10	$R_Y$[3]
+Current grad: 6.249815962719557
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 6.61232111092153
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 4.688593753418906
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 4.31342128072004
+New op index: 4	$R_Y$[1]
+Current grad: 2.924945736781181
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 4.588700679590157
+New op index: 1	$R_Y$[0]
+Current grad: 3.0697246146029324
+New op index: 19	$R_Y$[6]
+Current grad: 1.8208075627922162
+New op index: 16	$R_Y$[5]
+Current grad: 2.3003736511349366
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 2.637189307438686
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.00025086739378369727
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.224, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 18.244897959183657
+0:	0.00e+00	0.00e+00
+1:	-6.12e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.11e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.11e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	6.12e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	6.12e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.20e-17
+16:	-1.11e+00	4.25e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	9.63e-18
+19:	1.11e+00	1.66e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.51e-17
+22:	-6.12e-01	-2.69e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.72e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.22e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.72e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.72e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.22e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.72e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 12.149021560194997
+New op index: 10	$R_Y$[3]
+Current grad: 6.052986323679513
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 6.051794902220461
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.035661078220578
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.649292689476404
+New op index: 19	$R_Y$[6]
+Current grad: 3.925971063443576
+New op index: 22	$R_Y$[7]
+Current grad: 4.592965033053679
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 4.123992071940662
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 4.544077895669564
+New op index: 1	$R_Y$[0]
+Current grad: 2.6426605627176647
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.758469615008494
+New op index: 7	$R_Y$[2]
+Current grad: 2.7675554713003336
+New op index: 4	$R_Y$[1]
+Current grad: 1.654091402961122
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.061, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 16.612244897959172
+0:	0.00e+00	0.00e+00
+1:	-5.31e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.03e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.03e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	5.31e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	5.31e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.14e-17
+16:	-1.03e+00	3.68e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.02e-17
+19:	1.03e+00	1.71e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.45e-17
+22:	-5.31e-01	-3.26e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.56e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.06e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.56e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.56e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.06e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.56e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.769549651911916
+New op index: 22	$R_Y$[7]
+Current grad: 4.928860548404465
+New op index: 1	$R_Y$[0]
+Current grad: 4.3266789481569985
+New op index: 10	$R_Y$[3]
+Current grad: 4.75284900967323
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 4.628841135988677
+New op index: 4	$R_Y$[1]
+Current grad: 3.000847149488442
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.8859042958499175
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 2.707550461756295
+New op index: 19	$R_Y$[6]
+Current grad: 1.5526400128171636
+New op index: 19	$R_Y$[6]
+Current grad: 2.0409891714412507
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.898, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 14.97959183673468
+0:	0.00e+00	0.00e+00
+1:	-4.49e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	9.49e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-9.49e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	4.49e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	4.49e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.09e-17
+16:	-9.49e-01	3.12e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.08e-17
+19:	9.49e-01	1.77e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.39e-17
+22:	-4.49e-01	-3.82e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.40e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.90e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.40e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.40e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.90e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.40e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 9.382285776422991
+New op index: 10	$R_Y$[3]
+Current grad: 3.7851628951388774
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 4.173262531309202
+New op index: 4	$R_Y$[1]
+Current grad: 3.557066812209632
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 6.196208815683315
+New op index: 7	$R_Y$[2]
+Current grad: 2.894416204427096
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.735, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 13.346938775510196
+0:	0.00e+00	0.00e+00
+1:	-3.67e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	8.67e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-8.67e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	3.67e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	3.67e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	3.03e-17
+16:	-8.67e-01	2.55e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.13e-17
+19:	8.67e-01	1.83e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.34e-17
+22:	-3.67e-01	-4.39e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.23e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.73e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.23e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.23e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.73e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.23e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 7.979316279386388
+New op index: 22	$R_Y$[7]
+Current grad: 2.612429436512052
+New op index: 1	$R_Y$[0]
+Current grad: 2.290529861337681
+New op index: 1	$R_Y$[0]
+Current grad: 3.5050366967271223
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.571, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 11.714285714285706
+0:	0.00e+00	0.00e+00
+1:	-2.86e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	7.86e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-7.86e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	2.86e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	2.86e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.97e-17
+16:	-7.86e-01	1.98e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.19e-17
+19:	7.86e-01	1.88e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.28e-17
+22:	-2.86e-01	-4.96e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.07e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.57e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.07e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.07e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.57e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.07e+00	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 7.0481877221302
+New op index: 1	$R_Y$[0]
+Current grad: 2.3821262922722686
+New op index: 10	$R_Y$[3]
+Current grad: 2.096903097773947
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.0189426755621924
+New op index: 22	$R_Y$[7]
+Current grad: 2.175034744647318
+New op index: 1	$R_Y$[0]
+Current grad: 1.9147835162162492
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.408, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 10.08163265306122
+0:	0.00e+00	0.00e+00
+1:	-2.04e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	7.04e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-7.04e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	2.04e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	2.04e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.92e-17
+16:	-7.04e-01	1.42e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.25e-17
+19:	7.04e-01	1.94e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.22e-17
+22:	-2.04e-01	-5.52e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-9.08e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.41e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-9.08e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	9.08e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.41e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	9.08e-01	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 6.212824154187655
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 2.3440659849828984
+New op index: 7	$R_Y$[2]
+Current grad: 2.4573948230458367
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 1.376105517810999
+New op index: 19	$R_Y$[6]
+Current grad: 2.4666034701428603
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 2.0947646200877887
+New op index: 10	$R_Y$[3]
+Current grad: 0.4095782968668467
+New op index: 13	$R_Y$[4]
+Current grad: 0.6070565661649888
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.035833636568646
+New op index: 10	$R_Y$[3]
+Current grad: 0.014055674177259163
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.245, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 8.44897959183673
+0:	0.00e+00	0.00e+00
+1:	-1.22e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	6.22e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-6.22e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.22e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.22e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.86e-17
+16:	-6.22e-01	8.50e-19
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.30e-17
+19:	6.22e-01	2.00e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.17e-17
+22:	-1.22e-01	-6.09e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-7.45e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.24e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-7.45e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	7.45e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.24e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	7.45e-01	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 5.366444951010392
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 2.283902748291816
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 3.186512799890947
+New op index: 19	$R_Y$[6]
+Current grad: 3.98939056796272
+New op index: 4	$R_Y$[1]
+Current grad: 2.469849960996987
+New op index: 22	$R_Y$[7]
+Current grad: 0.24810185421224507
+New op index: 1	$R_Y$[0]
+Current grad: 0.1238326706876369
+New op index: 1	$R_Y$[0]
+Current grad: 0.9999843027598027
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.082, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 6.81632653061224
+0:	0.00e+00	0.00e+00
+1:	-4.08e-02	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	5.41e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-5.41e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	4.08e-02	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	4.08e-02	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.80e-17
+16:	-5.41e-01	2.83e-19
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.36e-17
+19:	5.41e-01	2.05e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-17
+22:	-4.08e-02	-6.66e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-5.82e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.08e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-5.82e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	5.82e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.08e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	5.82e-01	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 4.4771765060593385
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 2.1375660957709006
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 2.0074181387008094
+New op index: 19	$R_Y$[6]
+Current grad: 2.9179780429057
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 2.3969661169460688
+New op index: 4	$R_Y$[1]
+Current grad: 0.33706730712133315
+New op index: 22	$R_Y$[7]
+Current grad: 0.08256136741019122
+New op index: 1	$R_Y$[0]
+Current grad: 0.04174337178346652
+New op index: 1	$R_Y$[0]
+Current grad: 1.0001981836565772
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.918, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 5.510204081632648
+0:	0.00e+00	0.00e+00
+1:	4.08e-02	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	4.59e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.59e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-4.08e-02	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-4.08e-02	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.75e-17
+16:	-4.59e-01	-2.83e-19
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.42e-17
+19:	4.59e-01	2.11e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.05e-17
+22:	4.08e-02	-7.22e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.18e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	9.18e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.18e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.18e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-9.18e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.18e-01	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 3.8236895107086255
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 2.1371485938301893
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 3.025999572189202
+New op index: 4	$R_Y$[1]
+Current grad: 3.6761514139762466
+New op index: 19	$R_Y$[6]
+Current grad: 2.1536787492284457
+New op index: 22	$R_Y$[7]
+Current grad: 0.08718298630106076
+New op index: 1	$R_Y$[0]
+Current grad: 0.0515437091475521
+New op index: 1	$R_Y$[0]
+Current grad: 1.000677409515836
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.755, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 4.530612244897959
+0:	0.00e+00	0.00e+00
+1:	1.22e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	3.78e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-3.78e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.22e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.22e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.69e-17
+16:	-3.78e-01	-8.50e-19
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.47e-17
+19:	3.78e-01	2.17e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.00e-17
+22:	1.22e-01	-7.79e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.55e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	7.55e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.55e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.55e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-7.55e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.55e-01	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 3.408597703323119
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 2.285289886842104
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 3.1865600118415207
+New op index: 4	$R_Y$[1]
+Current grad: 3.9894202928254607
+New op index: 19	$R_Y$[6]
+Current grad: 2.46985620055718
+New op index: 1	$R_Y$[0]
+Current grad: 0.24809660692628135
+New op index: 22	$R_Y$[7]
+Current grad: 0.1348875054720604
+New op index: 22	$R_Y$[7]
+Current grad: 0.9999643202495243
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.592, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 3.5510204081632653
+0:	0.00e+00	0.00e+00
+1:	2.04e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.96e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.96e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-2.04e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-2.04e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.63e-17
+16:	-2.96e-01	-1.42e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.53e-17
+19:	2.96e-01	2.22e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.94e-17
+22:	2.04e-01	-8.35e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-9.18e-02	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	5.92e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-9.18e-02	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	9.18e-02	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-5.92e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	9.18e-02	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 2.9475147287426777
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 2.3440503029610156
+New op index: 19	$R_Y$[6]
+Current grad: 3.3229344212801974
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 2.909627978134509
+New op index: 4	$R_Y$[1]
+Current grad: 2.791979980306129
+New op index: 1	$R_Y$[0]
+Current grad: 0.4086018750784926
+New op index: 22	$R_Y$[7]
+Current grad: 0.2048717778140822
+New op index: 22	$R_Y$[7]
+Current grad: 1.0019929057999108
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.429, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 3.1428571428571397
+0:	0.00e+00	0.00e+00
+1:	2.86e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.14e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.14e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-2.86e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-2.86e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.58e-17
+16:	-2.14e-01	-1.98e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.59e-17
+19:	2.14e-01	2.28e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.88e-17
+22:	2.86e-01	-8.92e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	7.14e-02	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.29e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	7.14e-02	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-7.14e-02	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.29e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-7.14e-02	2.08e-17
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 2.762470684284059
+New op index: 10	$R_Y$[3]
+Current grad: 2.3820846795088504
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 2.4092955802486893
+New op index: 13	$R_Y$[4]
+Current grad: 2.3381820913533256
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 2.4639349438782343
+New op index: 22	$R_Y$[7]
+Current grad: 2.07794429869239
+New op index: 1	$R_Y$[0]
+Current grad: 1.8420058822345808
+New op index: 22	$R_Y$[7]
+Current grad: 3.085728190204044
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.265, r=1.000)
+h_im: 0.0
+New op index: 1	$R_Y$[0]
+Current grad: 3.469387755102038
+0:	0.00e+00	0.00e+00
+1:	3.67e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.33e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.33e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-3.67e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-3.67e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.52e-17
+16:	-1.33e-01	-2.55e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.64e-17
+19:	1.33e-01	2.34e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.83e-17
+22:	3.67e-01	-9.49e-18
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.35e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.65e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.35e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.35e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.65e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.35e-01	2.08e-17
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 3.5713206754750253
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 4.071441325054982
+New op index: 13	$R_Y$[4]
+Current grad: 4.0564515951587685
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.413521504796843
+New op index: 16	$R_Y$[5]
+Current grad: 2.5729156694996798
+New op index: 7	$R_Y$[2]
+Current grad: 3.3400858706654897
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 5.3591068754051205
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.1868535257817667
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 1.754275716052352
+New op index: 22	$R_Y$[7]
+Current grad: 1.4096503377642604
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.824871318613901
+New op index: 16	$R_Y$[5]
+Current grad: 0.740794421475528
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.102, r=1.000)
+h_im: 0.0
+New op index: 1	$R_Y$[0]
+Current grad: 3.7959183673469337
+0:	0.00e+00	0.00e+00
+1:	4.49e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	5.10e-02	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-5.10e-02	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-4.49e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-4.49e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.46e-17
+16:	-5.10e-02	-3.12e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.70e-17
+19:	5.10e-02	2.39e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.77e-17
+22:	4.49e-01	-1.01e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.98e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.02e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.98e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.98e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.02e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.98e-01	2.08e-17
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 4.142757404496714
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 4.642844070097597
+New op index: 13	$R_Y$[4]
+Current grad: 4.644823381882295
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 4.053113900320865
+New op index: 16	$R_Y$[5]
+Current grad: 3.11179815729371
+New op index: 7	$R_Y$[2]
+Current grad: 4.234972727329381
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.119835527470377
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 4.143332709723065
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 2.526218441192686
+New op index: 10	$R_Y$[3]
+Current grad: 2.6443784966606794
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.939, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 4.612244897959174
+0:	0.00e+00	0.00e+00
+1:	5.31e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-3.06e-02	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	3.06e-02	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-5.31e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-5.31e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.41e-17
+16:	3.06e-02	-3.68e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.76e-17
+19:	-3.06e-02	2.45e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.71e-17
+22:	5.31e-01	-1.06e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	5.61e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-6.12e-02	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	5.61e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-5.61e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	6.12e-02	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-5.61e-01	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 4.320606273929359
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 4.254338634634295
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.6306491314962366
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.3392232935102473
+New op index: 22	$R_Y$[7]
+Current grad: 2.8703748829148514
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.603772726080555
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 3.9285858540415624
+New op index: 16	$R_Y$[5]
+Current grad: 2.759735370048885
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 6.234511266570858
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 4.2023809551988744
+New op index: 4	$R_Y$[1]
+Current grad: 2.0356598903846903
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 4.70733773457695
+New op index: 4	$R_Y$[1]
+Current grad: 1.563876567831774
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.776, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.244897959183663
+0:	0.00e+00	0.00e+00
+1:	6.12e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.12e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.12e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-6.12e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-6.12e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.35e-17
+16:	1.12e-01	-4.25e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.81e-17
+19:	-1.12e-01	2.51e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.66e-17
+22:	6.12e-01	-1.12e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	7.24e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.24e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	7.24e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-7.24e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.24e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-7.24e-01	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 5.7545983297574566
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 6.972872892959374
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.68326847697761
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 5.10379299706144
+New op index: 19	$R_Y$[6]
+Current grad: 4.275324864641011
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 4.689736756868224
+New op index: 10	$R_Y$[3]
+Current grad: 4.87494333317208
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 2.9948059986774798
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 3.1775139986294536
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.6262232155007417
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.1673176781854524
+New op index: 1	$R_Y$[0]
+Current grad: 2.3923799943426447
+New op index: 22	$R_Y$[7]
+Current grad: 1.8986215515510734
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 2.873961471431688
+New op index: 19	$R_Y$[6]
+Current grad: 0.007452160765911793
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.612, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 7.877551020408152
+0:	0.00e+00	0.00e+00
+1:	6.94e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.94e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.94e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-6.94e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-6.94e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.29e-17
+16:	1.94e-01	-4.81e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.87e-17
+19:	-1.94e-01	2.56e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.60e-17
+22:	6.94e-01	-1.18e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	8.88e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-3.88e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	8.88e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-8.88e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	3.88e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-8.88e-01	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 7.1732874906828705
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 8.073424048978387
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.506523364715344
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 5.686061004932546
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 4.902840462590718
+New op index: 19	$R_Y$[6]
+Current grad: 4.342640985393778
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 5.386388143329175
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 5.248751272872407
+New op index: 10	$R_Y$[3]
+Current grad: 5.07325472410121
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.984337980341402
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.147756827980551
+New op index: 13	$R_Y$[4]
+Current grad: 2.50184713725036
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 2.498943448097465
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 2.0002441005904195
+New op index: 1	$R_Y$[0]
+Current grad: 1.0234962417516873
+New op index: 19	$R_Y$[6]
+Current grad: 0.00875515369041733
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.449, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 9.510204081632644
+0:	0.00e+00	0.00e+00
+1:	7.76e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-2.76e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	2.76e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-7.76e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-7.76e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.24e-17
+16:	2.76e-01	-5.38e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.93e-17
+19:	-2.76e-01	2.62e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.54e-17
+22:	7.76e-01	-1.23e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.05e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-5.51e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.05e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.05e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	5.51e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.05e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 8.581139418485062
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.176083005042015
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 7.34157796090921
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 6.280799988818729
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 5.467511561843416
+New op index: 19	$R_Y$[6]
+Current grad: 4.807985816636253
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 6.092883506871816
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 5.953576380089245
+New op index: 10	$R_Y$[3]
+Current grad: 5.483185233741581
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.311841984360268
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.2818422846129143
+New op index: 13	$R_Y$[4]
+Current grad: 2.6233167621066933
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 3.0388983953525774
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 1.999741788272906
+New op index: 1	$R_Y$[0]
+Current grad: 1.0245623892667577
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 0.01246609807226583
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.286, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 11.142857142857125
+0:	0.00e+00	0.00e+00
+1:	8.57e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-3.57e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	3.57e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-8.57e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-8.57e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.18e-17
+16:	3.57e-01	-5.95e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	1.98e-17
+19:	-3.57e-01	2.68e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.49e-17
+22:	8.57e-01	-1.29e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.21e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-7.14e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.21e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.21e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	7.14e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.21e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 9.98219551932789
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.282219309263043
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 8.183238759541132
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 6.879885742394157
+New op index: 10	$R_Y$[3]
+Current grad: 6.015877488743346
+New op index: 13	$R_Y$[4]
+Current grad: 4.729494497540571
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 7.658991074015152
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 4.202253235454264
+New op index: 19	$R_Y$[6]
+Current grad: 2.950759283842185
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.985374433816262
+New op index: 1	$R_Y$[0]
+Current grad: 1.0257184343715005
+New op index: 10	$R_Y$[3]
+Current grad: 0.00829751711238438
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.122, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 12.775510204081614
+0:	0.00e+00	0.00e+00
+1:	9.39e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-4.39e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	4.39e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-9.39e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-9.39e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-17
+16:	4.39e-01	-6.51e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.04e-17
+19:	-4.39e-01	2.73e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.43e-17
+22:	9.39e-01	-1.35e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.38e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-8.78e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.38e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.38e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	8.78e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.38e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.378602653775733
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 11.393071994357669
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.031565184548237
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 7.4862957568365935
+New op index: 10	$R_Y$[3]
+Current grad: 6.564580272445585
+New op index: 13	$R_Y$[4]
+Current grad: 5.025761237352387
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 8.119668678482267
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 4.317500257586812
+New op index: 19	$R_Y$[6]
+Current grad: 3.0671611206404137
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.314861662024363
+New op index: 1	$R_Y$[0]
+Current grad: 1.0282081073904588
+New op index: 10	$R_Y$[3]
+Current grad: 0.010000529768115015
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.041, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 14.408163265306104
+0:	0.00e+00	0.00e+00
+1:	1.02e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-5.20e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	5.20e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.02e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.02e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.07e-17
+16:	5.20e-01	-7.08e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-17
+19:	-5.20e-01	2.79e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.37e-17
+22:	1.02e+00	-1.40e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.54e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.04e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.54e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.54e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.04e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.54e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 12.770790686778861
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 12.506779630352172
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.884100280688896
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 8.089736699360508
+New op index: 13	$R_Y$[4]
+Current grad: 7.1077455565802
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.564288085796148
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 7.29472507896897
+New op index: 7	$R_Y$[2]
+Current grad: 6.902921619184174
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 8.947355210494663
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 8.252962547043184
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 7.262843551494264
+New op index: 10	$R_Y$[3]
+Current grad: 6.099912268910038
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 8.100379184371596
+New op index: 22	$R_Y$[7]
+Current grad: 3.3432383300810513
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.372299946574833
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.009444786351792878
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.204, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 16.0408163265306
+0:	0.00e+00	0.00e+00
+1:	1.10e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-6.02e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	6.02e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.10e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.10e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.01e-17
+16:	6.02e-01	-7.65e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.15e-17
+19:	-6.02e-01	2.85e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.32e-17
+22:	1.10e+00	-1.46e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.70e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.20e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.70e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.70e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.20e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.70e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 14.15955691565443
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 13.622418152394857
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 10.738876347065528
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 8.701771898855311
+New op index: 13	$R_Y$[4]
+Current grad: 7.650131987911629
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.294846097032742
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 7.724547359661488
+New op index: 1	$R_Y$[0]
+Current grad: 7.247569627613723
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 9.744899313146142
+New op index: 22	$R_Y$[7]
+Current grad: 6.238099903598984
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 7.058500801504493
+New op index: 10	$R_Y$[3]
+Current grad: 3.932186236025311
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 4.588496584737721
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 0.002151284621907626
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.367, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 17.673469387755077
+0:	0.00e+00	0.00e+00
+1:	1.18e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-6.84e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	6.84e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.18e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.18e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.95e-17
+16:	6.84e-01	-8.21e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.21e-17
+19:	-6.84e-01	2.90e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.26e-17
+22:	1.18e+00	-1.52e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.87e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.37e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.87e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.87e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.37e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.87e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 15.546139477029122
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 14.740405853999881
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 11.597539095385182
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 9.313785682720615
+New op index: 10	$R_Y$[3]
+Current grad: 8.189886155019398
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.041921729486715
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 8.15407118611631
+New op index: 22	$R_Y$[7]
+Current grad: 7.592462732327136
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 10.3635543171298
+New op index: 1	$R_Y$[0]
+Current grad: 6.47160038861801
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 7.7019458462418084
+New op index: 13	$R_Y$[4]
+Current grad: 4.03941670097335
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 5.057599345682462
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 0.004366186497429541
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.531, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 19.306122448979565
+0:	0.00e+00	0.00e+00
+1:	1.27e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-7.65e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	7.65e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.27e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.27e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.90e-17
+16:	7.65e-01	-8.78e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.27e-17
+19:	-7.65e-01	2.96e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.20e-17
+22:	1.27e+00	-1.57e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.03e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.53e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.03e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.03e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.53e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.03e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 16.931839708945667
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 15.860176193390819
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 12.455465055538637
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 9.928493354129108
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 8.72960181361153
+New op index: 13	$R_Y$[4]
+Current grad: 7.599987405735733
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 11.10749343388666
+New op index: 1	$R_Y$[0]
+Current grad: 7.936453876845245
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 10.967060785412862
+New op index: 22	$R_Y$[7]
+Current grad: 6.70259993652339
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 8.32313382080605
+New op index: 10	$R_Y$[3]
+Current grad: 4.146666206699518
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 5.512632268797109
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 0.005278042333070119
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.694, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 20.93877551020406
+0:	0.00e+00	0.00e+00
+1:	1.35e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-8.47e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	8.47e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.35e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.35e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.84e-17
+16:	8.47e-01	-9.35e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.32e-17
+19:	-8.47e-01	3.02e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.15e-17
+22:	1.35e+00	-1.63e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.19e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.69e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.19e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.19e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.69e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.19e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 18.31748878474647
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 16.982817187516684
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 13.316402753554307
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 10.546309755819202
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 9.269103669372623
+New op index: 13	$R_Y$[4]
+Current grad: 8.059271141843354
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 11.778158488319086
+New op index: 1	$R_Y$[0]
+Current grad: 8.279921710853776
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 11.560927794725764
+New op index: 22	$R_Y$[7]
+Current grad: 6.934508073569338
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 8.922354250253543
+New op index: 10	$R_Y$[3]
+Current grad: 4.254198723183601
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 5.9539992390978185
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 0.0012681324719827
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.857, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 22.571428571428548
+0:	0.00e+00	0.00e+00
+1:	1.43e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-9.29e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	9.29e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.43e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.43e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.78e-17
+16:	9.29e-01	-9.91e-18
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.38e-17
+19:	-9.29e-01	3.07e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.09e-17
+22:	1.43e+00	-1.69e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.36e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.86e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.36e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.36e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.86e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.36e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 19.69742477807859
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 18.10293478879598
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 14.179874570662443
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 11.16117871473244
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 9.80864258823045
+New op index: 13	$R_Y$[4]
+Current grad: 8.517204254129046
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 12.451662360177876
+New op index: 1	$R_Y$[0]
+Current grad: 8.62340015255219
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 12.146811428130007
+New op index: 22	$R_Y$[7]
+Current grad: 7.165437067427435
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.506121368999702
+New op index: 10	$R_Y$[3]
+Current grad: 4.361498125074033
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 6.385809577035105
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.0008711252389692022
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.020, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 24.204081632653043
+0:	0.00e+00	0.00e+00
+1:	1.51e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.01e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.01e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.51e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.51e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.73e-17
+16:	1.01e+00	-1.05e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.44e-17
+19:	-1.01e+00	3.13e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	1.03e-17
+22:	1.51e+00	-1.74e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.52e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.02e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.52e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.52e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.02e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.52e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 21.078950172991306
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 19.225565806527104
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 15.042040168861536
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 11.779277450883557
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 10.348291108288274
+New op index: 10	$R_Y$[3]
+Current grad: 8.975032501633077
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 13.127425100928354
+New op index: 22	$R_Y$[7]
+Current grad: 8.966217412378654
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 12.726561308174006
+New op index: 1	$R_Y$[0]
+Current grad: 7.395029051996409
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 10.075991143434797
+New op index: 13	$R_Y$[4]
+Current grad: 4.471946404209925
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 6.810570266579001
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.0011525546322818099
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.184, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 25.83673469387752
+0:	0.00e+00	0.00e+00
+1:	1.59e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.09e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.09e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.59e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.59e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.67e-17
+16:	1.09e+00	-1.10e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.49e-17
+19:	-1.09e+00	3.19e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	9.77e-18
+22:	1.59e+00	-1.80e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.68e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.18e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.68e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.68e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.18e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.68e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 22.4602195794034
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 20.34919653567415
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 15.905806289115558
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 12.398657826603994
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.888076392955874
+New op index: 10	$R_Y$[3]
+Current grad: 9.431996577745632
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 13.804988603590996
+New op index: 22	$R_Y$[7]
+Current grad: 9.30818638542516
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 13.30137931399738
+New op index: 1	$R_Y$[0]
+Current grad: 7.623696893848773
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 10.634480165824334
+New op index: 13	$R_Y$[4]
+Current grad: 4.580329676088158
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 7.228613074931784
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.0016516331262429345
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.347, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 27.469387755102005
+0:	0.00e+00	0.00e+00
+1:	1.67e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.17e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.17e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.67e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.67e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.61e-17
+16:	1.17e+00	-1.16e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.55e-17
+19:	-1.17e+00	3.24e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	9.20e-18
+22:	1.67e+00	-1.86e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.85e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.35e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.85e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.85e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.35e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.85e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 23.841184250571043
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 19.965122003414628
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 16.336585183940176
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 12.615781937477912
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.402527266862133
+New op index: 22	$R_Y$[7]
+Current grad: 9.014139911636523
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 13.545038474573037
+New op index: 16	$R_Y$[5]
+Current grad: 7.608489986310163
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 13.220793321538606
+New op index: 10	$R_Y$[3]
+Current grad: 5.72050443970234
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.241551413909502
+New op index: 1	$R_Y$[0]
+Current grad: 4.202877347741021
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.766613836316218
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 0.0030181464813827793
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.510, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 29.1020408163265
+0:	0.00e+00	0.00e+00
+1:	1.76e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.26e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.26e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.76e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.76e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.56e-17
+16:	1.26e+00	-1.22e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.61e-17
+19:	-1.26e+00	3.30e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	8.64e-18
+22:	1.76e+00	-1.91e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.01e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.51e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.01e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.01e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.51e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.01e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 25.219004193613035
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 21.090979062493037
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 17.208076671755382
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 13.245801340056705
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.949439000914936
+New op index: 22	$R_Y$[7]
+Current grad: 9.468683397371194
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 14.22188667188809
+New op index: 16	$R_Y$[5]
+Current grad: 7.948411578462345
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 13.767212578474664
+New op index: 10	$R_Y$[3]
+Current grad: 5.954247113740666
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.569441065795285
+New op index: 1	$R_Y$[0]
+Current grad: 4.314924278736901
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 7.181668526508624
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.0014366829924387333
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.673, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 30.73469387755099
+0:	0.00e+00	0.00e+00
+1:	1.84e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.34e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.34e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.84e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.84e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.50e-17
+16:	1.34e+00	-1.27e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.66e-17
+19:	-1.34e+00	3.36e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	8.07e-18
+22:	1.84e+00	-1.97e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.17e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.67e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.17e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.17e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.67e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.17e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 26.597867175685433
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 22.223433899198422
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 18.08092256248989
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 13.878040981358712
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 11.491835719997532
+New op index: 22	$R_Y$[7]
+Current grad: 9.918495342596103
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 14.896288444049812
+New op index: 16	$R_Y$[5]
+Current grad: 8.288722941511942
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 14.313232037451321
+New op index: 10	$R_Y$[3]
+Current grad: 6.167436288710644
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 12.14927205626089
+New op index: 1	$R_Y$[0]
+Current grad: 4.42711370041919
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 7.576901119905572
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 0.002169325934583877
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.837, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 32.36734693877548
+0:	0.00e+00	0.00e+00
+1:	1.92e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.42e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.42e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.92e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.92e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.44e-17
+16:	1.42e+00	-1.33e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.72e-17
+19:	-1.42e+00	3.41e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	7.51e-18
+22:	1.92e+00	-2.03e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.34e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.84e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.34e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.34e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.84e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.34e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 27.977384194454167
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 23.344187777898625
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 18.956546334847104
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 14.507941437969821
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 12.035605226390883
+New op index: 22	$R_Y$[7]
+Current grad: 10.372246826514798
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 15.566576891967745
+New op index: 16	$R_Y$[5]
+Current grad: 8.627770440056262
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 14.858959848156728
+New op index: 10	$R_Y$[3]
+Current grad: 6.391498878871923
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 12.59929053471418
+New op index: 1	$R_Y$[0]
+Current grad: 4.5375836402928496
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 7.973154319144871
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 0.008198617565855288
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 33.99999999999997
+0:	0.00e+00	0.00e+00
+1:	2.00e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.50e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.50e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-2.00e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-2.00e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	1.39e-17
+16:	1.50e+00	-1.39e-17
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.78e-17
+19:	-1.50e+00	3.47e-17
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	6.94e-18
+22:	2.00e+00	-2.08e-17
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.50e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-3.00e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.50e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.50e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	3.00e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.50e+00	2.08e-17
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 31.775560288091526
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 25.86937664003877
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 22.533061257595
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 15.280866821073014
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 13.00123819479803
+New op index: 22	$R_Y$[7]
+Current grad: 10.538445422313048
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 16.431051324581745
+New op index: 16	$R_Y$[5]
+Current grad: 8.967971056559042
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 15.404001160696286
+New op index: 1	$R_Y$[0]
+Current grad: 6.618781044610571
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 12.586347950291335
+New op index: 10	$R_Y$[3]
+Current grad: 5.156425591564344
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 9.231735723312621
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 0.001907742779030654
+Adding the same operator twice is not sensible, terminating.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23954819
+	2025-11-18_17-51-02-23954819:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-11-18_17-51-02
+			ProcessId: 23954819
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				gradient_hamiltonian_type: HamiltonianType.Full
+				max_depth: 50
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 21, 38), maxshape=(50, None, 38))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 21, 38), maxshape=(50, None, 38))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 21), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz7
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 6330, 21), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 6330), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 6330), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23954819
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 6330), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 6330), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 6330), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 23954819
+			options:
+				Attributes:
+					disp: 0
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 21), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+End 2025-11-18 18:08:53 | 23954819 MyPyJob | lmnode208 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

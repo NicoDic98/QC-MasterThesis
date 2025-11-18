@@ -64,7 +64,7 @@ def run_adapt_vqe(my_f: h5py.File):
                                                         ),
                      adapt_options={
                          "max_depth": 50,
-                         "gradient_hamiltonian_type": HamiltonianType.ZeroChargePenalty,
+                         "gradient_hamiltonian_type": HamiltonianType.Full,
                          # "precision": 0.01
                      })
 
