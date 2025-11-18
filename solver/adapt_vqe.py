@@ -140,8 +140,8 @@ class AdaptVQE(BaseVQE):
 
                 abs_gradients = np.abs(gradients)
                 new_op_index = np.argmax(abs_gradients)
-                _, qbit, gname = self.ansatz.get_operator_info(int(new_op_index))
-                print(f"New op index: {new_op_index}\t{gname}({qbit})", flush=True)
+                _, qbits, gname = self.ansatz.get_operator_info(int(new_op_index), True)
+                print(f"New op index: {new_op_index}\t{gname}{qbits}", flush=True)
                 print(f"Current grad: {abs_gradients.sum()}")
                 initial_parameter_value = 0
 
