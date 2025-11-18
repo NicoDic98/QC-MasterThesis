@@ -57,4 +57,5 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 23886472,12,PH,PH,50,00001111+11110000,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,""
 23886762,13,PH,PH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,""
 23954272,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,
-,,PH,,,,,,,,SLSQP,,
+23954327,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added
+23954408,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added

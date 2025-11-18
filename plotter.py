@@ -168,7 +168,7 @@ class ResultLoader:
                 if opid is None:
                     labels.append(None)
                 else:
-                    gi, qbit, gname = ansatz.get_operator_info(opid)
+                    gi, qbit, gname = ansatz.get_operator_info(opid, True)
                     labels.append(f"{gname}" + "$^{" + f"{qbit}" + "}$")
         else:
             raise NotImplementedError
