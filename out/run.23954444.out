@@ -630,3 +630,1711 @@ Current grad: 2.1229686221779773
 New op index: 23	$R_{YX-XY}$[1, 2]
 Current grad: 2.536026659897333
 New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 2.771589062817708
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.6382655271532074
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 2.54285781816496
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 4.046339717345544
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 3.6367311042466692
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 2.9903344327650734
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 2.327467404243359
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.127408323123782
+New op index: 61	$R_{YX-XY}$[5, 7]
+Current grad: 1.2472472732047788
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.104133495536711
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.2202884800841962
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.1070793566092196
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.1257720225128556
+New op index: 61	$R_{YX-XY}$[5, 7]
+Current grad: 1.0835260937896798
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.5831006842683404
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.1437425947487891
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.2487512582958376
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.211935296950395
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.1164719663349054
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 1.0446886157376944
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 1.0202165159269432
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 0.8731967568035744
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 0.7376113937338723
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 0.6740024051024486
+New op index: 49	$R_{YX-XY}$[3, 6]
+Current grad: 2.511808134740283
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 3.7093425867784884
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 2.943253068834719
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.293057063544774
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.347, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 65.55102040816327
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	5.78e-17
+9:	-3.85e+00	5.78e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-3.35e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-3.35e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-7.69e-16
+19:	-3.85e+00	-7.69e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	-4.48e-18
+23:	4.35e+00	-4.48e-18
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	9.39e-16
+29:	4.35e+00	9.39e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	8.58e-16
+33:	3.85e+00	8.58e-16
+34:	0.00e+00	-5.00e-01
+35:	-3.85e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-3.85e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-9.03e-16
+41:	-4.35e+00	-9.03e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	3.85e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	3.35e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	3.85e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	3.35e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-4.35e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	3.85e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 50.1985998424206
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 35.703299095300096
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 29.379134837490376
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 22.416887228919965
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 19.873919106929712
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 16.87597458670801
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 14.656507578091652
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 12.18368494951401
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 10.920699965006968
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 9.056719624829519
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 7.644860483281038
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 6.129598975253541
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 4.947447605195053
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 3.429617646351547
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.33980456532837
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 0.8954232317425813
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 1.121900425670075
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.0886291571223732
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 1.9695675897411098
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 3.8175806800700527
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 5.4133729784652695
+New op index: 11	$R_{YX-XY}$[0, 2]
+Current grad: 4.136877304473859
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 3.5226033159486523
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 3.0430455973998294
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 3.817045980600812
+New op index: 27	$R_{YX-XY}$[1, 4]
+Current grad: 3.5758675769749013
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 3.9088579816725644
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 3.2516654097167055
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.9249677929998805
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 2.6735389322474576
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 2.5014007315202282
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 2.1786571059990782
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 2.093602585737208
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 1.9049734121094928
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 2.1885617212424657
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.9759858488365178
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.6520018697082637
+New op index: 55	$R_{YX-XY}$[4, 6]
+Current grad: 1.5852254880487706
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 1.7035622419461263
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.485098002852145
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 1.3351725443030493
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 1.0555422464961426
+New op index: 27	$R_{YX-XY}$[1, 4]
+Current grad: 1.1416788811378145
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 1.50192642762525
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.3892398825339218
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.0501473346983698
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 0.9915583969656457
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 1.1121661523615236
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 1.0589875445053263
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.184, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 62.93877551020408
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	5.61e-17
+9:	-3.68e+00	5.61e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-3.18e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-3.18e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-7.33e-16
+19:	-3.68e+00	-7.33e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	-2.78e-18
+23:	4.18e+00	-2.78e-18
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	9.02e-16
+29:	4.18e+00	9.02e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	8.22e-16
+33:	3.68e+00	8.22e-16
+34:	0.00e+00	-5.00e-01
+35:	-3.68e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-3.68e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-8.64e-16
+41:	-4.18e+00	-8.64e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	3.68e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	3.18e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	3.68e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	3.18e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-4.18e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	3.68e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 48.01205959522457
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 33.91921668518802
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 27.978155385793617
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 21.422050199234555
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 18.921151941483075
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 15.948183923897854
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 14.063904966765328
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 11.903356797058493
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 10.369435003106167
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 8.79267217926248
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 7.449931109601522
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 5.896241264657665
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 4.434268124274214
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 3.126443575101227
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.195638365118792
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 0.8048490327666412
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 1.4922888241108052
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.523480172059882
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 4.937075951594293
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 4.094232679104197
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 3.2865028727873513
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 2.8310374886005167
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 3.5705310374314574
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 2.9485842066060046
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 2.6819041021280117
+New op index: 49	$R_{YX-XY}$[3, 6]
+Current grad: 3.6931753205427205
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 4.499036665424887
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 3.620074264039051
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 2.81997102545537
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 2.4328770205943453
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 2.3221418230655457
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.007778033132898
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.3938014010538604
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 1.1096610292871874
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 0.926100458962677
+New op index: 21	$R_{YX-XY}$[0, 7]
+Current grad: 0.8379223322076295
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.0080274658639707
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 0.8417090177371405
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 0.7301087284436496
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 0.6592032749721681
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.3962066755856386
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.1081928772864569
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.4499471432706033
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 1.321715496620735
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 1.2396634443722898
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.0833764330357847
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 1.2964720287342426
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.1951035228392721
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 1.1330565610371206
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.020, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 60.326530612244895
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	5.44e-17
+9:	-3.52e+00	5.44e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-3.02e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-3.02e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-6.98e-16
+19:	-3.52e+00	-6.98e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	-1.08e-18
+23:	4.02e+00	-1.08e-18
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	8.65e-16
+29:	4.02e+00	8.65e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	7.85e-16
+33:	3.52e+00	7.85e-16
+34:	0.00e+00	-5.00e-01
+35:	-3.52e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-3.52e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-8.26e-16
+41:	-4.02e+00	-8.26e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	3.52e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	3.02e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	3.52e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	3.02e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-4.02e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	3.52e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 45.82319761173431
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 32.13519922733032
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 26.610226691560545
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 20.4255733954609
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 18.05737878793633
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 15.21161835189525
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 13.21126635424061
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 10.967569501761155
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 9.854504173800894
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 8.15720020815916
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 6.884947072181524
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 5.521569964725047
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 4.4729341634408355
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 3.099538651325129
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.151164885732558
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 0.833120909585744
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 1.013784675901943
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 0.9793038442596333
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 1.7341088008924577
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 3.508431464951449
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 5.207169072438125
+New op index: 11	$R_{YX-XY}$[0, 2]
+Current grad: 4.093501041272644
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 3.4477982013153134
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 4.365602558538313
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 3.6809509879045748
+New op index: 27	$R_{YX-XY}$[1, 4]
+Current grad: 3.420525688956544
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 3.693284675113232
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 3.0404098127901587
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.729779075734316
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 2.491871669100484
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 2.3153650591468926
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 2.037616941855071
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.9258783206498795
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 1.7519877796040513
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 2.021721452919278
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.830961748427849
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.5275521910223908
+New op index: 55	$R_{YX-XY}$[4, 6]
+Current grad: 1.4722461615025022
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 1.5756585669508896
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.3866507198511662
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 1.2496138643207533
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 0.9906173507960683
+New op index: 27	$R_{YX-XY}$[1, 4]
+Current grad: 1.0630634808739634
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 1.3866112301478026
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.274318219585407
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 0.9678057272594691
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 0.9124213763324645
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 1.0389559351324
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 0.9911280239667999
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.857, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 57.71428571428572
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	5.27e-17
+9:	-3.36e+00	5.27e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-2.86e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-2.86e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-6.63e-16
+19:	-3.36e+00	-6.63e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	6.20e-19
+23:	3.86e+00	6.20e-19
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	8.28e-16
+29:	3.86e+00	8.28e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	7.48e-16
+33:	3.36e+00	7.48e-16
+34:	0.00e+00	-5.00e-01
+35:	-3.36e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-3.36e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-7.87e-16
+41:	-3.86e+00	-7.87e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	3.36e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	2.86e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	3.36e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	2.86e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-3.86e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	3.36e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 43.63165822022251
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 30.340357313456735
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 25.204009564461558
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 19.425491516621793
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 17.08567823381869
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 14.282156655126261
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 12.623620632623183
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 10.681657544880835
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 9.327634737182727
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 7.911820770787124
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 6.728378274928904
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 5.30194265093221
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 3.9719793862599837
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 2.7974566580372477
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.0157991774707607
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 0.7520073934008309
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 1.346705281399203
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.3567678107355596
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.8963638662611393
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 2.957079058393944
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 2.8267612584590704
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 2.3566888554797982
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 2.1645623121309736
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.6493653948364029
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.625127831925853
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.4081219002174328
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.2403351595704832
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.487946123985485
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 1.5334846187125413
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 2.1866602998693203
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.750844548132187
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.3652014498144225
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.0881912892285492
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 0.8822810679355497
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 1.115734285851992
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.8565213731443977
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 3.040724871475045
+New op index: 55	$R_{YX-XY}$[4, 6]
+Current grad: 2.911045341657392
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 2.6258337759284385
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 2.4275817356884275
+New op index: 61	$R_{YX-XY}$[5, 7]
+Current grad: 2.1021162903213497
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 2.057588320983456
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 1.5704155854559452
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 1.4449897983559254
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.2612681333681108
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.1173145839974439
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 0.9564982779810436
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 0.5706448606652839
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 0.5347857505041584
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.694, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 55.102040816326536
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	5.10e-17
+9:	-3.19e+00	5.10e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-2.69e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-2.69e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-6.28e-16
+19:	-3.19e+00	-6.28e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	2.32e-18
+23:	3.69e+00	2.32e-18
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	7.91e-16
+29:	3.69e+00	7.91e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	7.11e-16
+33:	3.19e+00	7.11e-16
+34:	0.00e+00	-5.00e-01
+35:	-3.19e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-3.19e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-7.49e-16
+41:	-3.69e+00	-7.49e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	3.19e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	2.69e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	3.19e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	2.69e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-3.69e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	3.19e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 41.432029338620666
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 28.544804849534117
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 23.81444025940876
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 18.422946439177203
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 16.17230115753349
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 13.44492512340815
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 11.896201664152425
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 10.064528925270286
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 8.801536642895453
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 7.471851401675449
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 6.366582448095622
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 5.003713352737372
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 3.7408817874217433
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 2.631010443066217
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.9270965860305673
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 0.7260673759753369
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 1.2728291353073131
+New op index: 55	$R_{YX-XY}$[4, 6]
+Current grad: 1.2722820743872723
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 1.8191946755193653
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 2.82830346732698
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 2.6902469416838493
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 2.24907526067745
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 2.0617594159654593
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 1.5800461055904385
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.5573449271841655
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 1.385129202045098
+New op index: 55	$R_{YX-XY}$[4, 6]
+Current grad: 1.1055249621412726
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.8959525250626417
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 1.586175720275834
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.6213825460069435
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 1.455918747499394
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.3268234399201555
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 1.635470315369845
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.7511329704270575
+New op index: 61	$R_{YX-XY}$[5, 7]
+Current grad: 1.584324802441198
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 1.4674901231661925
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.169490140399188
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.1004774910072292
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 1.12975398630264
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 0.9648326617604541
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.1504511292529032
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 1.0129665960222547
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 0.8832867675337357
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 0.7762039168162456
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 0.7176649422961205
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 0.6495618215310506
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 0.6302179638054269
+New op index: 11	$R_{YX-XY}$[0, 2]
+Current grad: 0.5627746314203175
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.165054124115812
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.531, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 52.48979591836735
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	4.93e-17
+9:	-3.03e+00	4.93e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-2.53e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-2.53e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-5.93e-16
+19:	-3.03e+00	-5.93e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	4.02e-18
+23:	3.53e+00	4.02e-18
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	7.55e-16
+29:	3.53e+00	7.55e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	6.74e-16
+33:	3.03e+00	6.74e-16
+34:	0.00e+00	-5.00e-01
+35:	-3.03e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-3.03e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-7.10e-16
+41:	-3.53e+00	-7.10e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	3.03e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	2.53e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	3.03e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	2.53e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-3.53e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	3.03e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 39.235581002044235
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 26.739417152392686
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 22.401660984405993
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 17.418957030369242
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 15.249019670266959
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 12.604413197249503
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 11.166440399121463
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 9.44507832247152
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 8.274019284988766
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 7.029826747448747
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 6.003982447770909
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 4.704422592642963
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 3.5082351926870476
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 2.4660633988964364
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.8392232593900908
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 0.700509641056116
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 1.1964226711839974
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.1875298471221263
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.739995845496647
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 2.6946121117308945
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 2.55163356642049
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 2.145089964559288
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 1.9628178644545338
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.511399995491698
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.4912466814736942
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.3210849088372267
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.0591630541192916
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.78977397090534
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.4029942611107515
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.2994743624971064
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 1.258766268017855
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.290894899745501
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.3175782530368954
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 0.982468680606095
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 1.0516490188763818
+New op index: 49	$R_{YX-XY}$[3, 6]
+Current grad: 2.700071793503856
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 3.4266593502105374
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 2.7240092134221143
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 2.286491323722012
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.8282760681193377
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.8480334528223987
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 1.3898909243185753
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 1.2922701309431948
+New op index: 11	$R_{YX-XY}$[0, 2]
+Current grad: 1.0035321645574187
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 2.2760477795619503
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 1.9914834903694238
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.7369301750481605
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.4809389459422138
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.2656114348142444
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.367, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 49.87755102040816
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	4.76e-17
+9:	-2.87e+00	4.76e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-2.37e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-2.37e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-5.58e-16
+19:	-2.87e+00	-5.58e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	5.72e-18
+23:	3.37e+00	5.72e-18
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	7.18e-16
+29:	3.37e+00	7.18e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	6.38e-16
+33:	2.87e+00	6.38e-16
+34:	0.00e+00	-5.00e-01
+35:	-2.87e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-2.87e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-6.72e-16
+41:	-3.37e+00	-6.72e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	2.87e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	2.37e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	2.87e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	2.37e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-3.37e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	2.87e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 37.036835808225305
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 24.934309787741196
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 20.99391040533704
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 16.408618415984883
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 14.328852578068147
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 11.758872077486561
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 10.4331066567003
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 8.822208722289076
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 7.744781830292385
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 6.58881693729942
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 5.6403973340046445
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 4.403695865322094
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 3.27359471819397
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 2.3001142727549144
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.7541789435572093
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 0.6753114055181368
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 1.1254676448495666
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.1048272568398678
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.6585211405952553
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 2.5594895829388955
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 2.4217049026819137
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 2.043060823243479
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 1.837451315594938
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.5183713812157054
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.4786068412031428
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.3125108825089322
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.0081495759921482
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.6766214064424414
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.3237505757370311
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.2220078318810779
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 1.1795270810198428
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.2278236283099127
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.2615858369751107
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 0.9286523594479463
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 1.0221918168730717
+New op index: 49	$R_{YX-XY}$[3, 6]
+Current grad: 2.623171478404875
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 3.2875534132157025
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 2.5742260028389095
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 2.1625559626222968
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.7401450291153915
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.7586421565070331
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 1.3369473876297433
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 1.2457395760607288
+New op index: 11	$R_{YX-XY}$[0, 2]
+Current grad: 0.9725361983244553
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 2.1751488658860394
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 1.8307655503221594
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.7425192130178926
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.3837265835627925
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.1747677920216455
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.204, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 47.265306122448976
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	4.59e-17
+9:	-2.70e+00	4.59e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-2.20e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-2.20e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-5.23e-16
+19:	-2.70e+00	-5.23e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	7.42e-18
+23:	3.20e+00	7.42e-18
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	6.81e-16
+29:	3.20e+00	6.81e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	6.01e-16
+33:	2.70e+00	6.01e-16
+34:	0.00e+00	-5.00e-01
+35:	-2.70e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-2.70e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-6.33e-16
+41:	-3.20e+00	-6.33e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	2.70e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	2.20e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	2.70e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	2.20e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-3.20e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	2.70e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 34.828319763750144
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 23.11336198041034
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 19.594377946152786
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 15.394245651517652
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 13.453614696789579
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 11.00393164956545
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 9.563246301351207
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 7.8910824020363854
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 7.132182099739287
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 5.856990390050248
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 4.9389992671355065
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 3.998610390228403
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 3.2937003387388506
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 2.2819333543993414
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.6969907417521886
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 0.6738589960613321
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 0.7810649995868828
+New op index: 55	$R_{YX-XY}$[4, 6]
+Current grad: 0.7171143593824676
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 1.0497465067508103
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 2.0358727803909105
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 2.25233680613203
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.7842037691165826
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 1.7757860516102832
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.36645123083201
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 1.313530847274765
+New op index: 55	$R_{YX-XY}$[4, 6]
+Current grad: 1.0328627528186893
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 1.1968196874648283
+New op index: 27	$R_{YX-XY}$[1, 4]
+Current grad: 2.8693955903583093
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 3.2919500917677658
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 2.3983524525057205
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 1.7289739124609236
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 1.4255496900737676
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.1330797939127861
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 1.0175656271806002
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 0.8270838837049665
+New op index: 55	$R_{YX-XY}$[4, 6]
+Current grad: 0.7232461232991267
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.0338736019027528
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 0.9646560357888994
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 0.9126422666149856
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 1.0756228691669483
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 0.9811860222754376
+New op index: 11	$R_{YX-XY}$[0, 2]
+Current grad: 0.8868901877385563
+New op index: 61	$R_{YX-XY}$[5, 7]
+Current grad: 0.9938632606548476
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.0827886905312272
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 0.8891118599193886
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 0.8000131998623419
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 0.67563083712709
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 0.5908872458867663
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.2484910107475797
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.041, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 44.65306122448979
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	4.42e-17
+9:	-2.54e+00	4.42e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-2.04e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-2.04e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-4.88e-16
+19:	-2.54e+00	-4.88e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	9.12e-18
+23:	3.04e+00	9.12e-18
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	6.44e-16
+29:	3.04e+00	6.44e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	5.64e-16
+33:	2.54e+00	5.64e-16
+34:	0.00e+00	-5.00e-01
+35:	-2.54e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-2.54e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-5.95e-16
+41:	-3.04e+00	-5.95e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	2.54e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	2.04e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	2.54e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	2.04e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-3.04e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	2.54e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 32.61575435711548
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 21.28750319320171
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 18.14719695507301
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 14.377908345968057
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 12.46434912563414
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 10.053100890004723
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 8.954135048014733
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 7.564085867257276
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 6.677951267486447
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 5.698131845980409
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 4.911657789411357
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 3.7959951122046602
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 2.801074513503763
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.9659867258227173
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.5830621108739855
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 0.6259707581182777
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 0.9862712082323561
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 0.9480051399893425
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.4929059594720888
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 2.29384421697996
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 2.161421904591169
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 1.8323272527286398
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 1.651289507181513
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.3702067768206827
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.3416740636590463
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 1.1733152558250164
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 1.5238995477444295
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 1.3305854422240269
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.1543807380038587
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 1.0784451877339865
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.0802654128232745
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 1.1817638224189329
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 0.8378996448591647
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 0.7886969145298833
+New op index: 49	$R_{YX-XY}$[3, 6]
+Current grad: 2.6832047876079543
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 3.0001641745880265
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 2.2613988727718644
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 1.9726620014020355
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.5396601133351617
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 1.3661390829891948
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.3019772125714093
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.0534781758484288
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 0.9395882849943287
+New op index: 11	$R_{YX-XY}$[0, 2]
+Current grad: 0.8628705921073963
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 1.2475953321564002
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 0.9881758120715356
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 0.8356351984387784
+New op index: 61	$R_{YX-XY}$[5, 7]
+Current grad: 0.6983635579953459
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 0.8734949195009886
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.878, r=1.000)
+h_im: 0.0
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 42.04081632653062
+0:	0.00e+00	8.07e-17
+1:	0.00e+00	-5.77e-17
+2:	0.00e+00	8.80e-17
+3:	0.00e+00	-5.00e-01
+4:	0.00e+00	-5.00e-01
+5:	0.00e+00	2.13e-17
+6:	0.00e+00	-2.86e-17
+7:	0.00e+00	1.39e-17
+8:	0.00e+00	4.25e-17
+9:	-2.38e+00	4.25e-17
+10:	0.00e+00	2.91e-17
+11:	5.00e-01	3.79e-16
+12:	0.00e+00	-5.00e-01
+13:	-1.88e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	-1.88e+00	-5.00e-01
+16:	0.00e+00	1.96e-16
+17:	5.00e-01	1.96e-16
+18:	0.00e+00	-4.52e-16
+19:	-2.38e+00	-4.52e-16
+20:	0.00e+00	1.08e-16
+21:	1.30e-17	8.07e-17
+22:	0.00e+00	1.08e-17
+23:	2.88e+00	1.08e-17
+24:	0.00e+00	-5.00e-01
+25:	5.00e-01	-5.00e-01
+26:	0.00e+00	-5.00e-01
+27:	5.00e-01	-5.00e-01
+28:	0.00e+00	6.07e-16
+29:	2.88e+00	6.07e-16
+30:	0.00e+00	-3.34e-17
+31:	-2.17e-17	-6.46e-17
+32:	0.00e+00	5.27e-16
+33:	2.38e+00	5.27e-16
+34:	0.00e+00	-5.00e-01
+35:	-2.38e+00	-5.00e-01
+36:	0.00e+00	-5.00e-01
+37:	-2.38e+00	-5.00e-01
+38:	0.00e+00	1.86e-16
+39:	-2.39e-17	1.87e-16
+40:	0.00e+00	-5.56e-16
+41:	-2.88e+00	-5.56e-16
+42:	0.00e+00	2.91e-17
+43:	-5.00e-01	2.91e-17
+44:	0.00e+00	-7.07e-17
+45:	4.34e-17	-2.00e+00
+46:	0.00e+00	-5.00e-01
+47:	2.38e+00	-5.00e-01
+48:	0.00e+00	-5.00e-01
+49:	-5.00e-01	-5.00e-01
+50:	0.00e+00	-5.00e-01
+51:	1.88e+00	-5.00e-01
+52:	0.00e+00	-5.00e-01
+53:	2.38e+00	-5.00e-01
+54:	0.00e+00	-5.00e-01
+55:	-5.00e-01	-5.00e-01
+56:	0.00e+00	-5.00e-01
+57:	1.88e+00	-5.00e-01
+58:	0.00e+00	-7.37e-18
+59:	-2.88e+00	-7.37e-18
+60:	0.00e+00	-1.69e-17
+61:	-5.00e-01	6.64e-17
+62:	0.00e+00	-1.47e-17
+63:	2.38e+00	-1.47e-17
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 30.394819437198215
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 19.450634308482282
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 16.727839473564423
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 13.350634147818809
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 11.580573299112466
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 9.284780175323526
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 8.058385514397461
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 6.626818205267044
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 6.009979114398661
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 4.901596399474027
+New op index: 63	$R_{YX-XY}$[6, 7]
+Current grad: 4.144234276593744
+New op index: 13	$R_{YX-XY}$[0, 3]
+Current grad: 3.3959193244553694
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 2.8229557954088036
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.9636212107926112
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.5242441067670243
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 0.6061821280320487
+New op index: 39	$R_{YX-XY}$[2, 5]
+Current grad: 0.6943317863368018
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 0.6484892804590621
+New op index: 45	$R_{YX-XY}$[3, 4]
+Current grad: 0.9185256987877212
+New op index: 49	$R_{YX-XY}$[3, 6]
+Current grad: 3.309498092121175
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 3.085311478507121
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 2.2363248920142698
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 1.9163335409221087
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 1.6287338176455353
+New op index: 57	$R_{YX-XY}$[4, 7]
+Current grad: 1.5010599077460016
+New op index: 53	$R_{YX-XY}$[4, 5]
+Current grad: 1.144138573719225
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 1.106148266878535
+New op index: 61	$R_{YX-XY}$[5, 7]
+Current grad: 0.9564008823715634
+New op index: 47	$R_{YX-XY}$[3, 5]
+Current grad: 0.9884248982176429
+New op index: 23	$R_{YX-XY}$[1, 2]
+Current grad: 0.9307784008139499
+New op index: 35	$R_{YX-XY}$[2, 3]
+Current grad: 1.0563010958992858
+New op index: 37	$R_{YX-XY}$[2, 4]
+Current grad: 0.9414363968382311
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 0.8824644218781372
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 0.820461017329299
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 0.7054236507083324
+New op index: 25	$R_{YX-XY}$[1, 3]
+Current grad: 0.6896157742982514
+New op index: 41	$R_{YX-XY}$[2, 6]
+Current grad: 0.7209654730519384
+New op index: 29	$R_{YX-XY}$[1, 5]
+Current grad: 0.7944409278411898
+New op index: 59	$R_{YX-XY}$[5, 6]
+Current grad: 1.1044626689543573
+New op index: 9	$R_{YX-XY}$[0, 1]
+Current grad: 0.9150647786555425
+New op index: 33	$R_{YX-XY}$[1, 7]
+Current grad: 0.7421066118650737
+New op index: 15	$R_{YX-XY}$[0, 4]
+Current grad: 0.6616807314846334
+New op index: 31	$R_{YX-XY}$[1, 6]
+Current grad: 0.5205183784814109
+New op index: 19	$R_{YX-XY}$[0, 6]
+Current grad: 0.5583600659344541
+New op index: 51	$R_{YX-XY}$[3, 7]
+Current grad: 0.489963021382615
+New op index: 13	$R_{YX-XY}$[0, 3]
