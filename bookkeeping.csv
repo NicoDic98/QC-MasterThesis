@@ -1,66 +1,66 @@
-JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator Pool,Simulator,Mem,Cores,Optimizer,System Size,Remark
-23753926,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,
-23753983,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,
-23768245,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.5 (AVQE)
-23768277,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.1 (AVQE)
-23768364,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.05 (AVQE)
-23768438,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.01 (AVQE)
-23768500,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.005 (AVQE)
-23768557,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,"Noise 0. (AVQE), 1. (VQE)"
-23768679,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.01 (AVQE)
-23769343,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYQA,2x2,opt_tol=1e-5
-23769353,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,SLSQP,2x2,opt_tol=1e-5
-23769366,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,SLSQP,2x2,opt_tol=1e-5
-23769369,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYQA,2x2,opt_tol=1e-5
-23769435,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,SLSQP,2x2,
-23769465,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYQA,2x2,
-23769494,1,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,SLSQP,2x2,
-23753943,2,PH,NH,4,10101010,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,
-23757058,2,PH,PH,4,10101010,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,
-23769527,3,PH,PH,50,Full superpositon + SGates,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYLA,2x2,
-23770485,4,PH,NH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,SLSQP,2x2,
-23770489,4,PH,NH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYQA,2x2,
-23770490,4,PH,NH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYLA,2x2,
-23770492,4,PH,PH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYLA,2x2,
-23770503,4,PH,PH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYQA,2x2,
-23770505,4,PH,PH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,SLSQP,2x2,
-23770772,5,PH,PH,10,Full superpositon,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,10.16,1,SLSQP,2x2,
-23770879,5,PH,NH,10,Full superpositon,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,10.16,1,SLSQP,2x2,
-23770883,6,PH,NH,10,Full superpositon + SGates,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,10.16,1,SLSQP,2x2,
-23770999,6,PH,PH,10,Full superpositon + SGates,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,10.16,1,SLSQP,2x2,
-23771113,7,PH,PH,10,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,2x2,
-23862036,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,100,32,SLSQP,2x2,6 min   440MB
-23862126,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,100,32,SLSQP,2x2,9 min   420MB
-23862817,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,32,SLSQP,2x2,8 min   430MB
-23862877,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,50,32,SLSQP,2x2,6 min   460MB
-23863023,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,32,SLSQP,2x2,12 min  440MB   (Parallel-TH: 6)
-23863126,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,50,32,SLSQP,2x2,8 min   280MB
-23863206,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},ExStab,50,32,SLSQP,2x2,!Can not be used in Estimator!
-23863344,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,50,32,SLSQP,2x2,8 min   430MB   (Parallel-TH: 6)
-23771123,8,PH,PH,10,Full superpositon + SGates,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,2x2,
-23771131,9,PH,PH,10,Empty,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,2x2,
-23809713,10,PH,PH,10,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,2x2,
-23813080,10,PH,PH,10,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,4x4,!OOM!
-23813117,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,4x4,!OOM!
-23819217,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,5,1,SLSQP,4x4,!OOM!
-23819304,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,1,SLSQP,4x4,!OOM!
-23819322,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,1,SLSQP,4x4,!Fail due to wrong test prints!
-23819435,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,1,SLSQP,4x4,!reached 3 day time limit!
-23830796,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,32,SLSQP,4x4,"!reached 7 day time limit! Small test maxiter 100, max depth 2"
-23863667,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,32,SLSQP,4x4,"!OOM! Small test maxiter 100, max depth 2"
-23863692,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,32,SLSQP,4x4,"Small test maxiter 100, max depth 2, 04:08:05"
-23883059,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,4x4,"Small test maxiter 100, max depth 2, 00:00:32"
-23833720,11,PH,PH,10,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,150,30,SLSQP,2x2,
-23883328,7,PH,PH,2,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,4x4,
-23884079,7,PH,PH,2,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,2x2,
-23886182,7,PH,PH,20,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,1900,32,SLSQP,4x4,""
-23886472,12,PH,PH,50,00001111+11110000,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,""
-23886762,13,PH,PH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,""
-23954272,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,
-23954327,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added
-23954408,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added
-23954444,15,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added
-23954474,16,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added
-23954477,17,PH,PH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added
-23954761,18,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added
-23954764,18,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added
+JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator Pool,Simulator,Mem,Cores,Optimizer,System Size,Remark,Result
+23753926,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,,"EEE, ES"
+23753983,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,,EEE
+23768245,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.5 (AVQE),"GS, ES"
+23768277,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.1 (AVQE),"GS (or), ES (r)"
+23768364,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.05 (AVQE),"GS, EEE"
+23768438,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.01 (AVQE),"GS, EEE"
+23768500,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.005 (AVQE),"GS, EEE, ES"
+23768557,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,"Noise 0. (AVQE), 1. (VQE)",ES
+23768679,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,Noise 0.01 (AVQE),EEE
+23769343,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYQA,2x2,opt_tol=1e-5,"GS, EEE, ES"
+23769353,1,PH,NH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,SLSQP,2x2,opt_tol=1e-5,"GS, EEE, ES"
+23769366,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,SLSQP,2x2,opt_tol=1e-5,"GS, ES"
+23769369,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYQA,2x2,opt_tol=1e-5,EEE
+23769435,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,SLSQP,2x2,,"GS, EEE"
+23769465,1,PH,PH,4,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYQA,2x2,,"GS, EEE"
+23769494,1,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,SLSQP,2x2,,"GS (or), ES (mr), EEE (r)"
+23753943,2,PH,NH,4,10101010,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,,No circuit build (Energy=0)
+23757058,2,PH,PH,4,10101010,R_x; R_y; R_z; R_{XY+YX},SVE,10.16,1,COBYLA,2x2,,No circuit build (Energy=0)
+23769527,3,PH,PH,50,Full superpositon + SGates,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYLA,2x2,,"GS (or), EEE (mr), 1 ES"
+23770485,4,PH,NH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,SLSQP,2x2,,ES
+23770489,4,PH,NH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYQA,2x2,,ES
+23770490,4,PH,NH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYLA,2x2,,ES
+23770492,4,PH,PH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYLA,2x2,,ES
+23770503,4,PH,PH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,COBYQA,2x2,,ES
+23770505,4,PH,PH,10,Full superpositon + SGates,R_z; R_{XY+YX}; R_{XX+YY},SVE,10.16,1,SLSQP,2x2,,ES
+23770772,5,PH,PH,10,Full superpositon,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,10.16,1,SLSQP,2x2,,"GS (or), ES/EEE(mr)"
+23770879,5,PH,NH,10,Full superpositon,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,10.16,1,SLSQP,2x2,,"GS (or), ES(mr)"
+23770883,6,PH,NH,10,Full superpositon + SGates,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,10.16,1,SLSQP,2x2,,"GS (or), ES(mr)"
+23770999,6,PH,PH,10,Full superpositon + SGates,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,10.16,1,SLSQP,2x2,,"GS (or), ES (mr), EEE (r)"
+23771113,7,PH,PH,10,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,2x2,,"GS (or), ES (mr), EEE (r)"
+23862036,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,100,32,SLSQP,2x2,6 min   440MB,"GS (or), ES (mr), EEE (r)"
+23862126,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,100,32,SLSQP,2x2,9 min   420MB,"GS (or), ES (mr), EEE (r)"
+23862817,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,32,SLSQP,2x2,8 min   430MB,"GS (or), ES (mr), EEE (r)"
+23862877,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,50,32,SLSQP,2x2,6 min   460MB,"GS (or), ES (mr), EEE (r)"
+23863023,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,32,SLSQP,2x2,12 min  440MB   (Parallel-TH: 6),"GS (or), ES (mr), EEE (r)"
+23863126,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,50,32,SLSQP,2x2,8 min   280MB,"GS (or), ES (mr), EEE (r)"
+23863206,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},ExStab,50,32,SLSQP,2x2,!Can not be used in Estimator!,DNF
+23863344,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,50,32,SLSQP,2x2,8 min   430MB   (Parallel-TH: 6),"GS (or), ES (mr), EEE (r)"
+23771123,8,PH,PH,10,Full superpositon + SGates,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,2x2,,"GS (or), ES (mr), EEE (r)"
+23771131,9,PH,PH,10,Empty,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,2x2,,No circuit build (Energy>800)
+23809713,10,PH,PH,10,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,2x2,,No circuit build (Energy=0)
+23813080,10,PH,PH,10,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,4x4,!OOM!,DNF
+23813117,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,10.16,1,SLSQP,4x4,!OOM!,DNF
+23819217,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,5,1,SLSQP,4x4,!OOM!,DNF
+23819304,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,1,SLSQP,4x4,!OOM!,DNF
+23819322,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,1,SLSQP,4x4,!Fail due to wrong test prints!,DNF
+23819435,10,PH,PH,2,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,1,SLSQP,4x4,!reached 3 day time limit!,DNF
+23830796,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,32,SLSQP,4x4,"!reached 7 day time limit! Small test maxiter 100, max depth 2",DNF
+23863667,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,50,32,SLSQP,4x4,"!OOM! Small test maxiter 100, max depth 2",DNF
+23863692,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,32,SLSQP,4x4,"Small test maxiter 100, max depth 2, 04:08:05",No circuit build
+23883059,10,PH,PH,1,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,4x4,"Small test maxiter 100, max depth 2, 00:00:32",No circuit build
+23833720,11,PH,PH,10,00001111+11110000,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,150,30,SLSQP,2x2,,No circuit build
+23883328,7,PH,PH,2,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,4x4,,GS/ES
+23884079,7,PH,PH,2,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,500,32,SLSQP,2x2,,GS
+23886182,7,PH,PH,20,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},MPS,1900,32,SLSQP,4x4,,GS/ES
+23886472,12,PH,PH,50,00001111+11110000,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,,No circuit build
+23886762,13,PH,PH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,,No circuit build
+23954272,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,,"EEE, 2 ES"
+23954327,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,"EEE, ES"
+23954408,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,"GS (or), ES (mr), EEE (r)"
+23954444,15,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,Running
+23954474,16,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,ES
+23954477,17,PH,PH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build
+23954761,18,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,EEE (Energy = -4)
+23954764,18,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,ES (Energy = -1)
