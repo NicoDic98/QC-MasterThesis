@@ -426,7 +426,6 @@ class HardwareAdaptAnsatz11(BaseADAPTVQEAnsatz):
 
         for i in range(self.num_qubits):
             for j in range(i + 1, self.num_qubits):
-                print(i, j)
                 op = SparsePauliOp.from_sparse_list([("XX", [i, j], -0.5j),
                                                      ("YY", [i, j], -0.5j)], num_qubits=self.num_qubits)
                 self.operator_pool.append(op)
@@ -499,7 +498,6 @@ class HardwareAdaptAnsatz14(BaseADAPTVQEAnsatz):
 
         for i in range(self.num_qubits):
             for j in range(i + 1, self.num_qubits):
-                print(i, j)
                 op = SparsePauliOp.from_sparse_list([("XX", [i, j], -0.5j),
                                                      ("YY", [i, j], -0.5j)], num_qubits=self.num_qubits)
                 self.operator_pool.append(op)

@@ -165,7 +165,7 @@ class AdaptVQE(BaseVQE):
                             if secgrad < -adapt_options["prec_cutoff"]:
                                 new_op_index = op_id
                                 initial_parameter_value = np.pi
-                                print(f"Selecting saddle point: {new_op_index} with second gradient of {secgrad}")
+                                print(f"Selecting maximum: {new_op_index} with second gradient of {secgrad}")
                                 break
                 else:
 
