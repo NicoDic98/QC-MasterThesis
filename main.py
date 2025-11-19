@@ -10,7 +10,8 @@ from solver.adapt_vqe import AdaptVQE
 from solver.circuits import HardwareAdaptAnsatz1, HardwareAdaptAnsatz2, HardwareAdaptAnsatz3, HardwareAdaptAnsatz4, \
     HardwareAdaptAnsatz5, HardwareAdaptAnsatz6, HardwareAdaptAnsatz7, HardwareAdaptAnsatz8, HardwareAdaptAnsatz9, \
     HardwareAdaptAnsatz10, HardwareAdaptAnsatz11, HardwareAdaptAnsatz12, HardwareAdaptAnsatz13, HardwareAdaptAnsatz14, \
-    HardwareAdaptAnsatz15, HardwareAdaptAnsatz16, HardwareAdaptAnsatz17, HardwareAdaptAnsatz18, HardwareAdaptAnsatz19
+    HardwareAdaptAnsatz15, HardwareAdaptAnsatz16, HardwareAdaptAnsatz17, HardwareAdaptAnsatz18, HardwareAdaptAnsatz19, \
+    HardwareAdaptAnsatz20
 from solver.exact_diagonalization import ED
 from hamiltonian.free_wilson import FreeWilson2D
 from hamiltonian.base import HamiltonianType, HamiltonianParameters
@@ -43,7 +44,7 @@ def run_vqe(my_f: h5py.File):
 
 
 def run_adapt_vqe(my_f: h5py.File):
-    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz19(8))
+    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz20(8))
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
                       HamiltonianParameters.Mass: np.linspace(-6, 2, 50).tolist(),
@@ -64,7 +65,7 @@ def run_adapt_vqe(my_f: h5py.File):
                                                         ),
                      adapt_options={
                          "max_depth": 50,
-                         "gradient_hamiltonian_type": HamiltonianType.Full,
+                         "gradient_hamiltonian_type": HamiltonianType.ZeroChargePenalty,
                          # "precision": 0.01
                      })
 

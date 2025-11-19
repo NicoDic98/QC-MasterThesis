@@ -606,6 +606,14 @@ class HardwareAdaptAnsatz19(HardwareAdaptAnsatz16):
         for i in range(0, self.num_qubits, 2):
             self.fixed_ansatz.x(i)
 
+class HardwareAdaptAnsatz20(HardwareAdaptAnsatz5):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
+        for i in range(0, self.num_qubits, 2):
+            self.fixed_ansatz.h(i)
+            self.fixed_ansatz.cx(i, i + 1)
+
 
 class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
     def __init__(self, num_qubits: int):
