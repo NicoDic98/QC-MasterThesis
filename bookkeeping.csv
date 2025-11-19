@@ -59,17 +59,18 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 23954272,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,,"EEE, 2 ES"
 23954327,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,"EEE, ES"
 23954408,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,"GS (or), ES (mr), EEE (r)"
-23954444,15,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,Running
-23954474,16,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,ES
-23954477,17,PH,PH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build
+23954444,15,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,ES (Energy ~200)
+23954474,16,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,ES (Energy ~200)
+23954477,17,PH,PH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build (Energy=400)
 23954761,18,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,EEE (Energy = -4)
 23954764,19,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,ES (Energy = -1)
-23954819,7,PH,NH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,Running
-23954825,12,PH,NH,50,00001111+11110000,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build
-23954828,13,PH,NH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build
-23954829,14,PH,NH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build
-23954830,15,PH,NH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,Running
-23954833,16,PH,NH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,Running
-23954836,17,PH,NH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build
-23954839,18,PH,NH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,Running
-23954845,19,PH,NH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,Running
+23954819,7,PH,NH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,"GS (or), ES (mr), EEE (r)"
+23954825,12,PH,NH,50,00001111+11110000,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build (Energy=0)
+23954828,13,PH,NH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build (Energy=0)
+23954829,14,PH,NH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build (Energy=400)
+23954830,15,PH,NH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,ES (Energy ~200)
+23954833,16,PH,NH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,ES (Energy ~200)
+23954836,17,PH,NH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,No circuit build (Energy=400)
+23954839,18,PH,NH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,EEE (Energy = -4)
+23954845,19,PH,NH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,ES (Energy = -1)
+,20,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,New exit option for small parameter values added,
