@@ -71,7 +71,9 @@ class AdaptVQE(BaseVQE):
             "prec_cutoff": 1e-3,
             "max_depth": 20,
             "gradient_hamiltonian_type": hamiltonian_type,
-            "precision": 0
+            "precision": 0,
+            "parameter_prec_cutoff": 1e-3,
+            "allow_duplicate_gates": False,
         }
         fill_defaults_in_dict(adapt_options, adapt_options_default)
         save_dict_as_attribute(local_group, adapt_options, VQEParameters.AdaptOptions)
@@ -176,7 +178,7 @@ class AdaptVQE(BaseVQE):
                 op_index_list.append(new_op_index)
                 params = np.append(params, initial_parameter_value)
 
-                if self.ansatz.set_ansatz(op_index_list):
+                if self.ansatz.set_ansatz(op_index_list, not adapt_options["allow_duplicate_gates"]):
                     print("Adding the same operator twice is not sensible, terminating.")
                     break
                 circuit = pm.run(self.ansatz())
@@ -192,7 +194,7 @@ class AdaptVQE(BaseVQE):
                 if not optimize_result.success:
                     print(f"Optimization failed: {optimize_result.message}")
                 params = optimize_result.x
-                if np.abs(params[-1]) < adapt_options["prec_cutoff"]:
+                if np.abs(params[-1]) < adapt_options["parameter_prec_cutoff"]:
                     print("Parameter value cutoff reached.")
                     break
             # self.ansatz().draw("mpl")

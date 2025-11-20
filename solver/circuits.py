@@ -137,7 +137,7 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         """
         return None
 
-    def set_ansatz(self, operator_indices: list[int]):
+    def set_ansatz(self, operator_indices: list[int], exit_on_duplicate=True):
         qc = self.fixed_ansatz.copy()
         my_params = ParameterVector("A", len(operator_indices))
         last_gate_on_qubit = [-1] * self.num_qubits
@@ -147,7 +147,7 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
             for qbit in qbits:
                 if last_gate_on_qubit[qbit] != oi:
                     ok = True
-            if not ok:
+            if (not ok) and exit_on_duplicate:
                 return 1
             gate = self.gate_pool[gi](my_params[i])
             qc.append(gate, qbits)
