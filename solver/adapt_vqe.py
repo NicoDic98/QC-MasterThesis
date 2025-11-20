@@ -189,6 +189,8 @@ class AdaptVQE(BaseVQE):
                 # circuit.draw("text", filename="out/test.txt")
                 cost_function_instance.hamiltonian = h_operator.apply_layout(layout=circuit.layout)
                 optimize_result = minimize(fun=cost_function_instance, x0=params, **optimizer_options)
+                if not optimize_result.success:
+                    print(f"Optimization failed: {optimize_result.message}")
                 params = optimize_result.x
                 if np.abs(params[-1]) < adapt_options["prec_cutoff"]:
                     print("Parameter value cutoff reached.")

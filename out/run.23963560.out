@@ -1,0 +1,3968 @@
+Start 2025-11-20 16:44:34 | 23963560 MyPyJob | lmnode209 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 45.99999999999997
+0:	0.00e+00	0.00e+00
+1:	-2.00e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.50e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.50e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	2.00e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	2.00e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-2.50e+00	2.10e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.08e-15
+19:	2.50e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.12e-15
+22:	-2.00e+00	2.09e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.50e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	5.00e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.50e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.50e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-5.00e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.50e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 111.24430652331928
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 38.59221917333683
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 27.925413734386012
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 93.16916421535005
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 20.51739805996559
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 9.850825591366727
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 148.4225437297708
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 5.925439421165967
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 52.002059052156305
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.0010119905790535381
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 44.36734693877547
+0:	0.00e+00	0.00e+00
+1:	-1.92e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.42e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.42e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.92e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.92e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-2.42e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.08e-15
+19:	2.42e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.12e-15
+22:	-1.92e+00	2.09e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.34e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.84e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.34e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.34e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.84e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.34e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 110.11520803528651
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 37.240916992698764
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 26.948942068529437
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 92.69640978302868
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 19.82230071122398
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 9.530582641214103
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 148.18277205704052
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 5.765315101525947
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 51.91962988899525
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 0.0020154215849130194
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.673, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 42.73469387755098
+0:	0.00e+00	0.00e+00
+1:	-1.84e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.34e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.34e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.84e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.84e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-2.34e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.08e-15
+19:	2.34e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.12e-15
+22:	-1.84e+00	2.09e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.17e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.67e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.17e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.17e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.67e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.17e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 109.00119212489982
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 35.89118031222255
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 25.972524031136707
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 92.23873183511667
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 19.128792186662565
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 9.212483851239396
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 147.44516944876068
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 4.69218333091424
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 51.838147642173254
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 0.0001918763120088376
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.510, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 41.10204081632649
+0:	0.00e+00	0.00e+00
+1:	-1.76e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.26e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.26e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.76e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.76e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-2.26e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.08e-15
+19:	2.26e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.76e+00	2.09e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.01e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.51e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.01e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.01e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.51e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.01e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 107.90442146090402
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 34.54309834340623
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 24.996095978589025
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 91.79805024853272
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 18.43690911480507
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 8.890130842567755
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 146.87080568678988
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 5.445443616171135
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 51.75649056523777
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 4.459112385787417e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.347, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 39.469387755102005
+0:	0.00e+00	0.00e+00
+1:	-1.67e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.17e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.17e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.67e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.67e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-2.17e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.08e-15
+19:	2.17e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.67e+00	2.09e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.85e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.35e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.85e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.85e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.35e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.85e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 106.82660430343802
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 33.19660933691188
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 24.019750544086886
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 91.3765910510585
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 17.74669521254092
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 8.57007014649997
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 146.22765522103813
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 4.365741341728382
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 51.67523786567401
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.00012102314419819445
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.184, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 37.83673469387752
+0:	0.00e+00	0.00e+00
+1:	-1.59e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.09e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.09e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.59e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.59e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-2.09e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.08e-15
+19:	2.09e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.59e+00	2.09e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.68e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.18e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.68e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.68e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.18e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.68e+00	2.08e-17
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 105.77030506840765
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 31.851825488586424
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 23.043319365646866
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 90.97662992600056
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 17.058154278522153
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 8.249866981822855
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 146.99718969239643
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 4.202759799403423
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 51.59355007126275
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.0013015293010391388
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.020, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 36.20408163265302
+0:	0.00e+00	0.00e+00
+1:	-1.51e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.01e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.01e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.51e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.51e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-2.01e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	2.01e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.51e+00	2.09e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.52e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.02e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.52e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.52e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.02e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.52e+00	2.08e-17
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 104.73845219307164
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 30.508741539347078
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 22.067375809158143
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 90.6010698349577
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 16.371336192460856
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 7.931087160275829
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 146.68098168929984
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 4.964961932142469
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 51.51149047042492
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 0.003644996452302768
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.857, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 34.57142857142855
+0:	0.00e+00	0.00e+00
+1:	-1.43e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.93e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.93e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.43e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.43e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-1.93e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.93e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.43e+00	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.36e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.86e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.36e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.36e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.86e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.36e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 103.73472180958052
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 29.167324987000786
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 21.09069582254723
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 90.2536731018953
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 15.687142680109309
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 7.609906158366936
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 143.72829731683967
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 3.8761104207541477
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 51.43032907935285
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 0.00017674233049326234
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.694, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 32.93877551020406
+0:	0.00e+00	0.00e+00
+1:	-1.35e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.85e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.85e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.35e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.35e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-1.85e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.85e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.35e+00	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.19e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.69e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.19e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.19e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.69e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.19e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 102.7624092461635
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 27.82769759682888
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 20.114377663638997
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 89.93834870796843
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 15.003274087795738
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 7.2900205734784
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 146.0038487083108
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 3.712904825488891
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 51.34872633139875
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 0.0011514601872031586
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.531, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 31.306122448979565
+0:	0.00e+00	0.00e+00
+1:	-1.27e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.77e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.77e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.27e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.27e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-1.77e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.77e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.27e+00	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-3.03e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.53e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-3.03e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	3.03e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.53e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	3.03e+00	2.08e-17
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 101.82803483436423
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 26.489876208338536
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 19.138102175044782
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 89.65982188202588
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 14.321787165509086
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 6.9700794605802265
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 141.35396840518987
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 4.485771296243923
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 51.2668090562946
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 0.0002833844911489869
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.367, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 29.673469387755077
+0:	0.00e+00	0.00e+00
+1:	-1.18e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.68e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.68e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.18e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.18e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-1.68e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.68e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.18e+00	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.87e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.37e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.87e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.87e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.37e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.87e+00	2.08e-17
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 100.93560994337733
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 25.15383243991681
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 18.16190192387985
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 89.42437706632303
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 13.642643376186232
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 6.650711983356725
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 145.23688327709445
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 4.32519418180591
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 51.185384237291714
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 8.05929170495225e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.204, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 28.04081632653058
+0:	0.00e+00	0.00e+00
+1:	-1.10e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.60e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.60e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.10e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.10e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-1.60e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.60e+00	2.09e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.10e+00	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.70e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.20e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.70e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.70e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.20e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.70e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 100.09466625726891
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 23.81944955010833
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 17.185764613147768
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 89.23998788924229
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 12.964366121834026
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 6.331315155976461
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 138.0435724272907
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 4.165333144139124
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 51.1034964051717
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.00048784482028879655
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.041, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 26.408163265306097
+0:	0.00e+00	0.00e+00
+1:	-1.02e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.52e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.52e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.02e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.02e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-1.52e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.52e+00	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-1.02e+00	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.54e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	3.04e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.54e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.54e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-3.04e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.54e+00	2.08e-17
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 99.3144949017411
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 22.48710399855928
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 16.21002734904415
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 89.1150070661812
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 12.288556478018744
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 6.0110764162302495
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 135.8731176114241
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 3.06105449950071
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 51.02202331208078
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 0.00023910268952543072
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.878, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 24.775510204081613
+0:	0.00e+00	0.00e+00
+1:	-9.39e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.44e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.44e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	9.39e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	9.39e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-1.44e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.44e+00	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-9.39e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.38e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.88e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.38e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.38e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.88e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.38e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 98.60314481214358
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 21.15665065138551
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 15.233622987847177
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 89.06122288025477
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 11.614754454732124
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 5.692356228862218
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 133.22579999284903
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 2.8969161001786374
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 2.251016181268925
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 71.33186952952316
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 7.67998434266711e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.714, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 23.14285714285712
+0:	0.00e+00	0.00e+00
+1:	-8.57e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.36e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.36e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	8.57e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	8.57e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.12e-15
+16:	-1.36e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.36e+00	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-8.57e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.21e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.71e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.21e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.21e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.71e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.21e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 97.97882955558204
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 19.82811663216124
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 14.257706547927146
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 89.09460948446181
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.94301972635283
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 5.372476507914709
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 129.95271457762337
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.686325751761413
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 2.0606571885689666
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 71.21632652303725
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 6.11438786564789e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.551, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 21.51020408163264
+0:	0.00e+00	0.00e+00
+1:	-7.76e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.28e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.28e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	7.76e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	7.76e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-1.28e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.28e+00	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-7.76e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.05e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.55e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.05e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.05e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.55e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.05e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 97.45850710892252
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 18.501518659293918
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 13.28236038341024
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 89.2316183998225
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.273150948814363
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 5.0541836585895235
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 130.85918807493061
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 2.570539060466788
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 1.8621097206820767
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 71.10132613627626
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 0.0002204795004740494
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.388, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 19.877551020408145
+0:	0.00e+00	0.00e+00
+1:	-6.94e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.19e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.19e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	6.94e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	6.94e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-1.19e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.19e+00	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-6.94e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.89e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.39e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.89e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.89e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.39e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.89e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 97.06860378918637
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 17.176880475396455
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 12.30637511320989
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 89.49541387108326
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 9.60550271119208
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 4.735524571541201
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 120.63860560972476
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.3674093149034725
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 1.67005473825449
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 70.98546362555616
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 6.594579336084923e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.224, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 18.244897959183657
+0:	0.00e+00	0.00e+00
+1:	-6.12e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.11e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.11e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	6.12e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	6.12e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-1.11e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.11e+00	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-6.12e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.72e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.22e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.72e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.72e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.22e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.72e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 96.83588060434202
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 15.854227073076606
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 11.33074349156488
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 89.9214027613502
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 8.940083974816131
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 4.418291077490524
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 113.92985065598845
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.2090354942580688
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 1.4767441947072475
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 70.8704699853788
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 1.8411139226961164e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.061, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 16.612244897959172
+0:	0.00e+00	0.00e+00
+1:	-5.31e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.03e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.03e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	5.31e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	5.31e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-1.03e+00	2.09e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	1.03e+00	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-5.31e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.56e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.06e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.56e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.56e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.06e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.56e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 96.80520688647925
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 14.533572459639336
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.356152302297227
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 90.54626362573104
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 8.276907258258735
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 4.098933527186503
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 108.77657952121716
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 2.0820326128786593
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 1.281178923445746
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 70.75691579428562
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 0.0008440462466384887
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.898, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 14.97959183673468
+0:	0.00e+00	0.00e+00
+1:	-4.49e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	9.49e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-9.49e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	4.49e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	4.49e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-9.49e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	9.49e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-4.49e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.40e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.90e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.40e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.40e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.90e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.40e+00	2.08e-17
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 97.02310687011963
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 13.214939394403146
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 95.25885427702228
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 11.450307465369752
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 7.616405822320856
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 3.782345341853873
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 2.340739370685362
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.8980945274343967
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 50.56188750536732
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 1.9901995876532186
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 0.0007655800288064753
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.735, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 13.346938775510196
+0:	0.00e+00	0.00e+00
+1:	-3.67e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	8.67e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-8.67e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	3.67e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	3.67e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-8.67e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	8.67e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.11e-15
+22:	-3.67e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.23e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.73e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.23e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.23e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.73e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.23e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 97.56069309057048
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 11.898359250512504
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 96.11495961651906
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.449789432680701
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 7.261325924813564
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 0.7351908904249128
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 29.23498666984648
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 0.0004890552328715514
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.571, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 11.714285714285706
+0:	0.00e+00	0.00e+00
+1:	-2.86e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	7.86e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-7.86e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	2.86e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	2.86e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-7.86e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	7.86e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	-2.86e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-1.07e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.57e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-1.07e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	1.07e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.57e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	1.07e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 98.95895751185233
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 10.583844693189478
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 97.82877435085041
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.453410403663417
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 6.521088318835244
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 0.5716052784084774
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 24.52400731572775
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 0.0009835052833232077
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.408, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 10.08163265306122
+0:	0.00e+00	0.00e+00
+1:	-2.04e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	7.04e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-7.04e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	2.04e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	2.04e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-7.04e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	7.04e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	-2.04e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-9.08e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.41e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-9.08e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	9.08e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.41e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	9.08e-01	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 100.85289990662997
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 9.271415303737172
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 5.244919210861597
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 96.02011896292603
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 4.443099148232957
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 1.7574871102473346
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 0.4083180523384624
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 18.691510583733976
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 0.0019320938701301504
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.245, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 8.44897959183673
+0:	0.00e+00	0.00e+00
+1:	-1.22e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	6.22e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-6.22e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	1.22e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	1.22e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-6.22e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.09e-15
+19:	6.22e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	-1.22e-01	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-7.45e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.24e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-7.45e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	7.45e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.24e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	7.45e-01	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 102.89397626358038
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 7.9610963383600435
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 4.347642035301714
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 98.79243766833582
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.854082324996237
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 0.24563647586785067
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 50.87867920369639
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 1.9945007824976377
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 7.193579637738658e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.082, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 6.816326530612239
+0:	0.00e+00	0.00e+00
+1:	-4.08e-02	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	5.41e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-5.41e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	4.08e-02	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	4.08e-02	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-5.41e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	5.41e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	-4.08e-02	2.08e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-5.82e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.08e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-5.82e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	5.82e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.08e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	5.82e-01	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 104.15156960925482
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.652896471244708
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 3.4490267067953484
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 100.78497437681402
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.2840093938393684
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.08171633671607952
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 50.96262824266344
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 1.9915247538286531
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 0.0002567786935762258
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.918, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 5.510204081632648
+0:	0.00e+00	0.00e+00
+1:	4.08e-02	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	4.59e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.59e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-4.08e-02	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-4.08e-02	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-4.59e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	4.59e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	4.08e-02	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-4.18e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	9.18e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-4.18e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	4.18e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-9.18e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	4.18e-01	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 103.49871645912178
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 5.999835145288946
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 2.795958074780322
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 100.78435922927247
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.2839558803666336
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.08168773297675094
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 50.959660611727536
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 1.9904492977774018
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 0.0018382995390059697
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.755, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 4.530612244897959
+0:	0.00e+00	0.00e+00
+1:	1.22e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	3.78e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-3.78e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.22e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.22e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-3.78e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	3.78e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	1.22e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-2.55e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	7.55e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-2.55e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	2.55e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-7.55e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	2.55e-01	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 100.93494070664315
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.001912758830304
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 2.3884271574635383
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 98.79219032313374
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.8540926333587775
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.24564852687876745
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 50.87902195146069
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 1.9945086020540193
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 0.00013771256277996723
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.592, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 3.5510204081632653
+0:	0.00e+00	0.00e+00
+1:	2.04e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.96e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.96e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-2.04e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-2.04e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-2.96e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	2.96e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	2.04e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	-9.18e-02	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	5.92e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	-9.18e-02	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	9.18e-02	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-5.92e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	9.18e-02	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 97.5875468136818
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.006109258883005
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 1.9796552493989312
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 96.01625828551488
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.426513730397104
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.4089206372735985
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 50.79692301897382
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 1.9912521973660597
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 0.0023343391810136493
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.429, r=1.000)
+h_im: 0.0
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 3.1428571428571397
+0:	0.00e+00	0.00e+00
+1:	2.86e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	2.14e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-2.14e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-2.86e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-2.86e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-2.14e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	2.14e-01	2.10e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	2.86e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	7.14e-02	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	4.29e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	7.14e-02	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-7.14e-02	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-4.29e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-7.14e-02	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 94.67284931486668
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.298130177448923
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 1.8571597123676054
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 93.3892104435423
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.000721161307558
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.5721211516209175
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 50.71546199567865
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 1.992737409831369
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 9.154219046623588e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.265, r=1.000)
+h_im: 0.0
+New op index: 22	$R_Y$[7]
+Current grad: 3.469387755102038
+0:	0.00e+00	0.00e+00
+1:	3.67e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	1.33e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-1.33e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-3.67e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-3.67e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-1.33e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	1.33e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	3.67e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.35e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	2.65e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.35e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.35e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-2.65e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.35e-01	2.08e-17
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 352.57140252504536
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 5.190624761909788
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 4.864656820472301
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 94.99128074071815
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 7.615758681823588
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.836808684539938
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 3.2656539269056766
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 60.425737880417046
+Optimization terminated successfully
+New op index: 35	$R_{YX-XY}$[5, 6]
+Current grad: 4.304165930009601
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 0.8068880546648686
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 2.8142235948354046
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 1.7478906285298743
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 1.0004759982720064
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 0.0005966417869844091
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.102, r=1.000)
+h_im: 0.0
+New op index: 1	$R_Y$[0]
+Current grad: 3.7959183673469337
+0:	0.00e+00	0.00e+00
+1:	4.49e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	5.10e-02	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-5.10e-02	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-4.49e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-4.49e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	-5.10e-02	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	5.10e-02	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	4.49e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.98e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	1.02e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.98e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.98e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	-1.02e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.98e-01	2.08e-17
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 353.1427565753371
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 6.212620019440813
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 5.945707258843972
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 82.62159166357723
+Optimization terminated successfully
+New op index: 27	$R_{YX-XY}$[1, 2]
+Current grad: 4.805828787974727
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 1.6792731534557674
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 172.1773225033238
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 1.5120541951964463
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 70.54751928659259
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.00022341605436354553
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.939, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 4.612244897959174
+0:	0.00e+00	0.00e+00
+1:	5.31e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-3.06e-02	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	3.06e-02	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-5.31e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-5.31e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	3.06e-02	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-3.06e-02	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	5.31e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	5.61e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-6.12e-02	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	5.61e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-5.61e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	6.12e-02	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-5.61e-01	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 59.39873014381843
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 7.106540380953039
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 4.929189643024297
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 88.07036092006265
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 5.5242667916581905
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 3.3061425402693994
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 2.010368388197273
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 56.608868697931406
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.147778603688161
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 1.6762788881730715
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 70.75672480048416
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 0.0001685865953284782
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.776, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 6.244897959183663
+0:	0.00e+00	0.00e+00
+1:	6.12e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.12e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.12e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-6.12e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-6.12e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.11e-15
+16:	1.12e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-1.12e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	6.12e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	7.24e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.24e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	7.24e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-7.24e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.24e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-7.24e-01	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 63.48955769479213
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 8.59608396141729
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 6.071669675070391
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 87.1672144659092
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 6.687842263726034
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 4.122486943415387
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 2.6035358082175826
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 59.81813535722727
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.806588581505711
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 1.9889424628672636
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 70.87072920142788
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.00011609212943799506
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.612, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 7.877551020408152
+0:	0.00e+00	0.00e+00
+1:	6.94e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.94e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.94e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-6.94e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-6.94e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	1.94e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-1.94e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	6.94e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	8.88e-01	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-3.88e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	8.88e-01	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-8.88e-01	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	3.88e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-8.88e-01	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 66.78471359585882
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 10.088877826171249
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 7.214396816178688
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 86.71481415612821
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 7.853267363634496
+Optimization terminated successfully
+New op index: 31	$R_{YX-XY}$[3, 4]
+Current grad: 4.939004420244329
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 3.4067798439844195
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 62.28393268582992
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.46920016977835
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 2.3008621043638455
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 70.98622658306337
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 0.0013047473227936483
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.449, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 9.510204081632644
+0:	0.00e+00	0.00e+00
+1:	7.76e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-2.76e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	2.76e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-7.76e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-7.76e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	2.76e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-2.76e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	7.76e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.05e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-5.51e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.05e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.05e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	5.51e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.05e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 69.60153806764369
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 11.584378333223672
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 8.357479186211842
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 86.56785752311154
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 9.02078066377538
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.755985808755968
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 65.84385623674503
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 7.829303555807687
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 4.602424335264255
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 72.31392518753452
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 5.164645028974937
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 0.0027112801746354055
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.286, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 11.142857142857125
+0:	0.00e+00	0.00e+00
+1:	8.57e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-3.57e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	3.57e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-8.57e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-8.57e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	3.57e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-3.57e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	8.57e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.21e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-7.14e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.21e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.21e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	7.14e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.21e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 72.08673503404721
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 13.082860076621833
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 9.5000281442602
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 70.39522039343663
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 10.189025152574983
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.572965063273772
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 67.51522864562281
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 8.511355683093754
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 4.928762230921973
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 72.43305025761502
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 5.507954428187431
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 0.0038679839169690703
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.122, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 12.775510204081614
+0:	0.00e+00	0.00e+00
+1:	9.39e-01	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-4.39e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	4.39e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-9.39e-01	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-9.39e-01	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	4.39e-01	2.08e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-4.39e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	9.39e-01	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.38e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-8.78e-01	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.38e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.38e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	8.78e-01	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.38e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 74.3518395574963
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 14.584434762392215
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 10.642939682276541
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 86.85607875050013
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.36134003086645
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 7.3878001001929015
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 68.96369167117876
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.196675197220813
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 5.255150104176877
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 72.54791799851888
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 5.853424180128793
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 0.00014073143106509405
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.041, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 14.408163265306104
+0:	0.00e+00	0.00e+00
+1:	1.02e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-5.20e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	5.20e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.02e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.02e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	5.20e-01	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-5.20e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.10e-15
+22:	1.02e+00	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.54e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.04e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.54e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.54e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.04e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.54e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 76.45296616754355
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 16.088931892334195
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 11.785750467086682
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 87.1953087139029
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 12.535228052784008
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 8.204113782636888
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 70.2490789317975
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.88493000755783
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 5.581766689750268
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 72.6639839816816
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 6.201440520135307
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.0014835903760125107
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.204, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 16.0408163265306
+0:	0.00e+00	0.00e+00
+1:	1.10e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-6.02e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	6.02e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.10e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.10e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	6.02e-01	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-6.02e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.10e+00	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.70e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.20e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.70e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.70e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.20e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.70e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 78.43218962449136
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 17.596749271117574
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 12.928629680964836
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 87.62715464540163
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 13.70929411523181
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.020451249738414
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 70.92122303513274
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.532381637775735
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 4.908867173616272
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 72.2815841878819
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.594594405623462
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 0.0008055025764088201
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.367, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 17.673469387755077
+0:	0.00e+00	0.00e+00
+1:	1.18e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-6.84e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	6.84e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.18e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.18e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	6.84e-01	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-6.84e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.18e+00	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	1.87e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.37e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	1.87e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-1.87e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.37e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-1.87e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 80.3180286268285
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 19.10661960807339
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 14.07144086574024
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 88.12909030552927
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 14.886085733416483
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.837211905900663
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 71.98808779349544
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 11.223197370739106
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.235686331193811
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 72.3963444948585
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.94850085125313
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 4.1698689612623956e-05
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.531, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 19.306122448979565
+0:	0.00e+00	0.00e+00
+1:	1.27e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-7.65e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	7.65e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.27e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.27e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	7.65e-01	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-7.65e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.27e+00	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.03e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.53e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.03e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.03e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.53e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.03e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 82.13067582032372
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 20.619799154200887
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 15.214301376439739
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 88.6859648910644
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 16.064655298298458
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.654057147615903
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 72.98262270455348
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 11.916856933742956
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 5.562923277130232
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 72.51270337940085
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.305010541697893
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 0.0014582198237951926
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.694, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 20.93877551020406
+0:	0.00e+00	0.00e+00
+1:	1.35e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-8.47e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	8.47e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.35e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.35e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	8.47e-01	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.10e-15
+19:	-8.47e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.35e+00	2.07e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.19e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.69e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.19e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.19e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.69e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.19e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 83.88429097130148
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 22.13579582036002
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 16.3571798664158
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 89.29340278781514
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 17.24498305148662
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 11.469427223695929
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 74.41498923023349
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 12.666482952215052
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 6.887911487620939
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 73.12761095112316
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 7.610396102947592
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 0.0006524726467882151
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.857, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 22.571428571428545
+0:	0.00e+00	0.00e+00
+1:	1.43e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-9.29e-01	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	9.29e-01	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.43e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.43e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	9.29e-01	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.11e-15
+19:	-9.29e-01	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.43e+00	2.06e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.36e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-1.86e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.36e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.36e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	1.86e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.36e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 85.5903848258555
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 23.654708659884808
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 17.500091772194526
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 89.93793240680371
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 18.427093965557447
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 12.285769927901175
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 75.3050763958059
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 13.369792364872382
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 7.21468595995547
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 73.24513479689327
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 7.966304045220998
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 0.0013331348815962094
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.020, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 24.20408163265304
+0:	0.00e+00	0.00e+00
+1:	1.51e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.01e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.01e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.51e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.51e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	1.01e+00	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.11e-15
+19:	-1.01e+00	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.51e+00	2.06e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.52e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.02e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.52e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.52e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.02e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.52e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 87.2558860713252
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 25.176455063871018
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 18.64289105065313
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 90.61253895536
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 19.611399589035223
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 13.102609949552804
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 75.65839899078392
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 14.014997008487185
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.541509236774956
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 72.86119277123284
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 7.385530005650937
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 0.00012064736786499607
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.184, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 25.83673469387752
+0:	0.00e+00	0.00e+00
+1:	1.59e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.09e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.09e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.59e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.59e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	1.09e+00	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.11e-15
+19:	-1.09e+00	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.59e+00	2.06e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.68e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.18e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.68e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.68e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.18e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.68e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 88.8904876915168
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 26.700973232405353
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 19.785815713553415
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 81.82578910952083
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 20.792974325250547
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 13.918423626961694
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 76.47546988133799
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 14.719990255562912
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 6.868495913451916
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 72.97783043384835
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 7.747760937629626
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 0.0036635856968418915
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.347, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 27.469387755102005
+0:	0.00e+00	0.00e+00
+1:	1.67e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.17e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.17e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.67e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.67e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	1.17e+00	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.11e-15
+19:	-1.17e+00	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.67e+00	2.06e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	2.85e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.35e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	2.85e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-2.85e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.35e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-2.85e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 90.49688353751385
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 28.228261605749445
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 20.92859584407855
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 82.93561914173742
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 21.98073039934086
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 14.734769291791727
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 77.26518287402223
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 15.427820811951504
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 7.19411202822463
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 73.09371283021568
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 8.113305642264951
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 0.003122056534486961
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.510, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 29.1020408163265
+0:	0.00e+00	0.00e+00
+1:	1.76e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.26e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.26e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.76e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.76e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	1.26e+00	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.11e-15
+19:	-1.26e+00	2.11e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.76e+00	2.06e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.01e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.51e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.01e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.01e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.51e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.01e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 92.07868828650001
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 29.758306429829258
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 22.071507722975685
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 84.02955310808322
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 23.168693334058297
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 15.551083124512392
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 78.52900046486866
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 16.207312546590366
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 8.520459048288675
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 73.7089062143058
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.412942548651742
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 0.002563289869906232
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.673, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 30.73469387755099
+0:	0.00e+00	0.00e+00
+1:	1.84e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.34e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.34e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.84e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.84e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	1.34e+00	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.11e-15
+19:	-1.34e+00	2.12e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.84e+00	2.06e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.17e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.67e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.17e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.17e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.67e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.17e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 93.64160232793803
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 31.291022577701778
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 23.214481410509254
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 85.1096851260866
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 24.358857728311484
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 16.367380611525164
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 79.27632216097105
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 16.923827378291023
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 8.848273485331196
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 73.82622539444503
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.775502266701144
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 0.0007664989466013301
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.837, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 32.367346938775476
+0:	0.00e+00	0.00e+00
+1:	1.92e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.42e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.42e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-1.92e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-1.92e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	1.42e+00	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.11e-15
+19:	-1.42e+00	2.12e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	1.92e+00	2.06e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.34e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-2.84e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.34e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.34e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	2.84e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.34e+00	2.08e-17
+Optimization terminated successfully
+New op index: 1	$R_Y$[0]
+Current grad: 95.18883129144231
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 32.826670556338456
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 24.357479953343997
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 86.17732072188237
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 25.55022211171156
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 17.183720306693786
+Optimization terminated successfully
+New op index: 22	$R_Y$[7]
+Current grad: 80.00512820952163
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 17.64282755220421
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 9.175277268274632
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 73.9467659261328
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 10.142385082685013
+Optimization terminated successfully
+New op index: 13	$R_Y$[4]
+Current grad: 0.003548655841844263
+Optimization terminated successfully
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h_im: 0.0
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 33.99999999999997
+0:	0.00e+00	0.00e+00
+1:	2.00e+00	0.00e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	-1.50e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	1.50e+00	0.00e+00
+8:	0.00e+00	0.00e+00
+9:	0.00e+00	0.00e+00
+10:	-2.00e+00	-5.00e-01
+11:	0.00e+00	-5.00e-01
+12:	0.00e+00	0.00e+00
+13:	-2.00e+00	-5.00e-01
+14:	0.00e+00	-5.00e-01
+15:	0.00e+00	2.10e-15
+16:	1.50e+00	2.07e-15
+17:	0.00e+00	1.39e-17
+18:	0.00e+00	2.11e-15
+19:	-1.50e+00	2.12e-15
+20:	0.00e+00	6.94e-18
+21:	0.00e+00	2.09e-15
+22:	2.00e+00	2.06e-15
+23:	0.00e+00	1.39e-17
+24:	0.00e+00	0.00e+00
+25:	3.50e+00	0.00e+00
+26:	0.00e+00	0.00e+00
+27:	-3.00e+00	0.00e+00
+28:	0.00e+00	-5.00e-01
+29:	3.50e+00	-5.00e-01
+30:	0.00e+00	6.94e-18
+31:	0.00e+00	-2.00e+00
+32:	0.00e+00	-5.00e-01
+33:	-3.50e+00	-5.00e-01
+34:	0.00e+00	2.08e-17
+35:	3.00e+00	2.08e-17
+36:	0.00e+00	2.08e-17
+37:	-3.50e+00	2.08e-17
+Optimization terminated successfully
+New op index: 4	$R_Y$[1]
+Current grad: 105.4156296994653
+Optimization terminated successfully
+New op index: 25	$R_{YX-XY}$[0, 1]
+Current grad: 34.39030742976664
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 25.50007770508851
+Optimization terminated successfully
+New op index: 7	$R_Y$[2]
+Current grad: 87.2343508697174
+Optimization terminated successfully
+New op index: 29	$R_{YX-XY}$[2, 3]
+Current grad: 26.74346417087436
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 18.000082608747526
+Optimization terminated successfully
+New op index: 16	$R_Y$[5]
+Current grad: 88.91740692987428
+Optimization terminated successfully
+New op index: 33	$R_{YX-XY}$[4, 5]
+Current grad: 18.308867557669245
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 8.500395574591783
+Optimization terminated successfully
+New op index: 19	$R_Y$[6]
+Current grad: 73.55856457619429
+Optimization terminated successfully
+New op index: 37	$R_{YX-XY}$[6, 7]
+Current grad: 9.592155173543786
+Optimization terminated successfully
+New op index: 10	$R_Y$[3]
+Current grad: 0.0005353447175009197
+Precision cutoff reached.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23963560
+	2025-11-20_16-44-36-23963560:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-11-20_16-44-36
+			ProcessId: 23963560
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 15, 38), maxshape=(50, None, 38))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 15, 38), maxshape=(50, None, 38))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 14), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz7
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 1920, 14), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 1920), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 1920), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23963560
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 1920), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 1920), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 1920), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: 1e-08
+				x0Seed: 23963560
+			options:
+				Attributes:
+					disp: 0
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 14), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+End 2025-11-20 16:50:50 | 23963560 MyPyJob | lmnode209 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
