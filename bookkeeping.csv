@@ -58,23 +58,23 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 23886762,13,PH,PH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},AER-SVE,500,96,SLSQP,2x2,,No circuit build (Energy=0)
 23954272,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,,"EEE, 2 ES"
 23954327,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,New exit option for small parameter values added from here on out,"EEE, ES"
-23954408,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,96,SLSQP,2x2,"","GS (or), ES (10, mr), EEE (r)"
-23954444,15,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"",ES (Energy ~200)
-23954474,16,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,"",ES (Energy ~200)
-23954477,17,PH,PH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,"",No circuit build (Energy=400)
-23954761,18,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,"",EEE (Energy = -4)
-23954764,19,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,"",ES (Energy = -1)
-23954819,7,PH,NH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,"","GS (or), ES (mr), EEE (r)"
-23954825,12,PH,NH,50,00001111+11110000,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,"",No circuit build (Energy=0)
-23954828,13,PH,NH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,"",No circuit build (Energy=0)
-23954829,14,PH,NH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,"",No circuit build (Energy=400)
-23954830,15,PH,NH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,"",ES (Energy ~200)
-23954833,16,PH,NH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,"",ES (Energy ~200)
-23954836,17,PH,NH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,"",No circuit build (Energy=400)
-23954839,18,PH,NH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,"",EEE (Energy = -4)
-23954845,19,PH,NH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,"",ES (Energy = -1)
-23956503,20,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,"","ES (Energy=200,300), 9 EEE"
-23963013,21,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,"","GS (or), ES (6, mr), EEE (r)"
+23954408,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},AER-SVE,500,96,SLSQP,2x2,,"GS (or), ES (10, mr), EEE (r)"
+23954444,15,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,,ES (Energy ~200)
+23954474,16,PH,PH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,,ES (Energy ~200)
+23954477,17,PH,PH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,,No circuit build (Energy=400)
+23954761,18,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,,EEE (Energy = -4)
+23954764,19,PH,PH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,,ES (Energy = -1)
+23954819,7,PH,NH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,,"GS (or), ES (mr), EEE (r)"
+23954825,12,PH,NH,50,00001111+11110000,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,,No circuit build (Energy=0)
+23954828,13,PH,NH,50,11001100+00110011,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,,No circuit build (Energy=0)
+23954829,14,PH,NH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,,No circuit build (Energy=400)
+23954830,15,PH,NH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,,ES (Energy ~200)
+23954833,16,PH,NH,50,Full superpositon,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,,ES (Energy ~200)
+23954836,17,PH,NH,50,(00+11)^4,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,,No circuit build (Energy=400)
+23954839,18,PH,NH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,,EEE (Energy = -4)
+23954845,19,PH,NH,50,10101010,R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,,ES (Energy = -1)
+23956503,20,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY},SVE,500,96,SLSQP,2x2,,"ES (Energy=200,300), 9 EEE"
+23963013,21,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,,"GS (or), ES (6, mr), EEE (r)"
 23963426,21,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,opt_tol=1e-7,"GS (or), ES (7, mr), EEE (r)"
 23963454,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,opt_tol=1e-7,"GS (or), ES (10, mr), EEE (r)"
 23963560,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,opt_tol=1e-8,"GS (or), ES (10, mr), EEE (r)"
@@ -89,10 +89,10 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 23964018,21,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5, parameter_prec_cutoff=-1","GS (or), ES (6, mr), EEE (r)"
 23964134,21,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX} (Arbitrary far 2 qbit gates),SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5, parameter_prec_cutoff=-1, allow_duplicate_gates=True","GS (or), ES (6, mr), EEE (r)"
 23964135,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5, parameter_prec_cutoff=-1, allow_duplicate_gates=True","GS (or), ES (10, mr), EEE (r)"
-23964341,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,opt_tol=1e-7,""
-23964343,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,opt_tol=1e-8,""
-23964345,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,opt_tol=1e-9,""
-23964346,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-4",""
-23964349,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5",""
-23964355,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5, parameter_prec_cutoff=-1",""
-23964375,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5, parameter_prec_cutoff=-1, allow_duplicate_gates=True",""
+23964341,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,opt_tol=1e-7,"EEE, 8 ES"
+23964343,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,opt_tol=1e-8,"EEE, 7 ES"
+23964345,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,opt_tol=1e-9,"EEE, 13 ES"
+23964346,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-4","EEE, 13 ES"
+23964349,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5","EEE, 13 ES"
+23964355,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5, parameter_prec_cutoff=-1","EEE, 4 ES"
+23964375,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5, parameter_prec_cutoff=-1, allow_duplicate_gates=True","EEE, 4 ES"
