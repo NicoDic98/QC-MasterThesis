@@ -44,3 +44,6989 @@ Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.898, r=1.000)
 Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.735, r=1.000)
 Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.571, r=1.000)
 Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.408, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.245, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.082, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.918, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.755, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.592, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.429, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.265, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.102, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.939, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.776, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.612, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.449, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.286, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.122, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.041, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.204, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.367, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.531, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.694, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.857, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.020, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.184, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.347, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.510, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.673, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.837, r=1.000)
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23972378
+	2025-11-20_18-47-41-23964341-rerun-23972378:
+		Attributes:
+		2025-11-21_16-54-29-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-54-29
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -6.0
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(1950, 21), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1950,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1950,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(1950,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(1950,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(1950,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-54-51-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-54-51
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -5.836734693877551
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(720, 16), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(720,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(720,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(720,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(720,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(720,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-54-59-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-54-59
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -5.673469387755102
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(2990, 13), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(2990,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(2990,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(2990,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(2990,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(2990,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-55-25-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-55-25
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -5.510204081632653
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(1320, 16), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1320,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1320,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(1320,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(1320,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(1320,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-55-38-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-55-38
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -5.346938775510204
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(170, 7), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(170,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(170,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(170,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(170,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(170,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-55-41-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-55-41
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -5.183673469387755
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(130, 7), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(130,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(130,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(130,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(130,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(130,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-55-43-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-55-43
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -5.020408163265306
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(380, 12), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(380,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(380,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(380,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(380,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(380,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-55-47-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-55-47
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -4.857142857142858
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(100, 5), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(100,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(100,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(100,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(100,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(100,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-55-50-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-55-50
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -4.6938775510204085
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(370, 12), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(370,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(370,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(370,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(370,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(370,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-55-54-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-55-54
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -4.530612244897959
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(140, 6), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(140,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(140,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(140,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(140,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(140,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-55-56-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-55-56
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -4.36734693877551
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(230, 6), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(230,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(230,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(230,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(230,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(230,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-55-59-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-55-59
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -4.204081632653061
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(430, 7), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(430,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(430,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(430,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(430,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(430,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-56-03-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-56-03
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -4.040816326530612
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(480, 14), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(480,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(480,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(480,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(480,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(480,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-56-09-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-56-09
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -3.8775510204081636
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(150, 6), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(150,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(150,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(150,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(150,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(150,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-56-11-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-56-11
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -3.7142857142857144
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(1250, 13), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1250,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1250,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(1250,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(1250,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(1250,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-56-22-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-56-22
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -3.5510204081632657
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(660, 11), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(660,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(660,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(660,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(660,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(660,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-56-29-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-56-29
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -3.3877551020408165
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(580, 12), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(580,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(580,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(580,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(580,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(580,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-56-35-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-56-35
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -3.2244897959183674
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(5700, 21), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(5700,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(5700,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(5700,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(5700,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(5700,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-57-38-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-57-38
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -3.0612244897959187
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(650, 11), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(650,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(650,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(650,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(650,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(650,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-57-45-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-57-45
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -2.8979591836734695
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(120, 6), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(120,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(120,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(120,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(120,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(120,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-57-47-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-57-47
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -2.734693877551021
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(7540, 27), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(7540,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(7540,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(7540,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(7540,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(7540,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-59-27-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-59-27
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -2.5714285714285716
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(650, 7), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(650,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(650,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(650,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(650,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(650,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_16-59-32-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_16-59-32
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -2.408163265306123
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(7450, 50), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(7450,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(7450,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(7450,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(7450,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(7450,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-02-13-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-02-13
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -2.2448979591836737
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(3750, 21), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(3750,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(3750,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(3750,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(3750,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(3750,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-02-55-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-02-55
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -2.0816326530612246
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(8550, 25), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(8550,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(8550,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(8550,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(8550,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(8550,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-04-42-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-04-42
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -1.9183673469387754
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(4020, 25), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(4020,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(4020,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(4020,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(4020,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(4020,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-05-33-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-05-33
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -1.7551020408163271
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(3250, 21), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(3250,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(3250,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(3250,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(3250,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(3250,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-06-10-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-06-10
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -1.591836734693878
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(12920, 50), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(12920,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(12920,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(12920,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(12920,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(12920,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-10-46-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-10-46
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -1.4285714285714288
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(160, 6), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(160,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(160,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(160,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(160,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(160,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-10-49-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-10-49
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -1.2653061224489797
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(1990, 17), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1990,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1990,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(1990,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(1990,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(1990,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-11-09-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-11-09
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -1.1020408163265314
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(640, 18), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(640,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(640,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(640,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(640,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(640,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-11-17-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-11-17
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -0.9387755102040822
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(800, 13), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(800,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(800,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(800,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(800,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(800,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-11-25-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-11-25
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -0.7755102040816331
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(150, 6), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(150,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(150,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(150,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(150,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(150,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-11-27-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-11-27
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -0.6122448979591839
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(750, 14), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(750,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(750,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(750,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(750,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(750,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-11-35-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-11-35
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -0.44897959183673475
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(200, 7), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(200,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(200,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(200,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(200,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(200,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-11-38-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-11-38
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -0.2857142857142865
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(630, 13), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(630,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(630,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(630,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(630,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(630,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-11-45-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-11-45
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: -0.12244897959183731
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(3020, 16), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(3020,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(3020,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(3020,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(3020,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(3020,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-12-13-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-12-13
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 0.040816326530611846
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(640, 12), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(640,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(640,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(640,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(640,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(640,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-12-20-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-12-20
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 0.204081632653061
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(2670, 17), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(2670,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(2670,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(2670,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(2670,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(2670,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-12-47-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-12-47
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 0.3673469387755093
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(100, 5), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(100,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(100,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(100,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(100,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(100,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-12-49-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-12-49
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 0.5306122448979584
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(620, 14), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(620,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(620,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(620,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(620,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(620,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-12-55-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-12-55
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 0.6938775510204076
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(110, 7), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(110,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(110,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(110,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(110,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(110,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-12-57-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-12-57
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 0.8571428571428568
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(110, 5), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(110,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(110,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(110,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(110,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(110,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-13-00-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-13-00
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 1.020408163265306
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(2820, 17), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(2820,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(2820,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(2820,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(2820,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(2820,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-13-28-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-13-28
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 1.1836734693877542
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(190, 7), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(190,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(190,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(190,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(190,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(190,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-13-31-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-13-31
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 1.3469387755102034
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(200, 6), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(200,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(200,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(200,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(200,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(200,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-13-33-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-13-33
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 1.5102040816326525
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(760, 12), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(760,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(760,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(760,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(760,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(760,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-13-40-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-13-40
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 1.6734693877551017
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(1630, 14), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1630,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1630,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(1630,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(1630,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(1630,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-13-56-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-13-56
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 1.8367346938775508
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(1120, 10), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1120,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(1120,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(1120,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(1120,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(1120,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+		2025-11-21_17-14-05-23972378:
+			Attributes:
+				HamiltonianType: ZeroChargePenalty
+				Last-Modified: 2025-11-21_17-14-05
+				ProcessId: 23972378
+				SimulatorType: Statevector
+				SolverName: VQE
+				SystemName: FreeWilson2D
+				mass: 2.0
+				n_x: 2
+				n_y: 2
+				r: 1.0
+			Circuit:
+				Attributes:
+					Ansatz: HardwareAdaptAnsatz14
+				AnsatzOptions:
+					Attributes:
+						num_qubits: 8
+			CircuitParameters: Dataset (dtype=float64, shape=(230, 9), maxshape=(None, None))
+				Attributes:
+					DIMENSION_LABELS: ['IterationAxis' 'CircuitParameterAxis']
+					NDataDims: 2
+			Data:
+				Attributes:
+				evs:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(230,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+				stds:
+					Attributes:
+					Hamiltonian: Dataset (dtype=float64, shape=(230,), maxshape=(None,))
+						Attributes:
+							DIMENSION_LABELS: ['IterationAxis']
+							NDataDims: 1
+			EstimatorOptions:
+				Attributes:
+					_VERSION: 2
+					default_precision: Unset
+					default_shots: Unset
+					experimental: Unset
+					max_execution_time: Unset
+					resilience_level: Unset
+					seed_estimator: 23972378
+				dynamical_decoupling:
+					Attributes:
+						enable: Unset
+						extra_slack_distribution: Unset
+						scheduling_method: Unset
+						sequence_type: Unset
+						skip_reset_qubits: Unset
+				environment:
+					Attributes:
+						callback: None
+						job_tags: None
+						log_level: WARNING
+						private: False
+				execution:
+					Attributes:
+						init_qubits: Unset
+						rep_delay: Unset
+				resilience:
+					Attributes:
+						layer_noise_model: Unset
+						measure_mitigation: Unset
+						pec_mitigation: Unset
+						zne_mitigation: Unset
+					layer_noise_learning:
+						Attributes:
+							layer_pair_depths: Unset
+							max_layers_to_learn: Unset
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					measure_noise_learning:
+						Attributes:
+							num_randomizations: Unset
+							shots_per_randomization: Unset
+					pec:
+						Attributes:
+							max_overhead: Unset
+							noise_gain: Unset
+					zne:
+						Attributes:
+							amplifier: Unset
+							extrapolated_noise_factors: Unset
+							extrapolator: Unset
+							noise_factors: Unset
+				simulator:
+					Attributes:
+						basis_gates: Unset
+						coupling_map: Unset
+						noise_model: Unset
+						seed_simulator: Unset
+				twirling:
+					Attributes:
+						enable_gates: Unset
+						enable_measure: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+						strategy: Unset
+			MetaData:
+				Attributes:
+				circuit_metadata: Dataset (dtype=object, shape=(230,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				target_precision: Dataset (dtype=float64, shape=(230,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+				version: Dataset (dtype=int64, shape=(230,), maxshape=(None,))
+					Attributes:
+						DIMENSION_LABELS: ['IterationAxis']
+						NDataDims: 1
+			NIterations: Dataset (dtype=int64, shape=(), maxshape=())
+				Attributes:
+					NDataDims: 0
+			OptimizerOptions:
+				Attributes:
+					bounds: None
+					callback: None
+					constraints: []
+					method: slsqp
+					tol: None
+					x0Seed: 23972378
+				options:
+					Attributes:
+						disp: 0
+						maxiter: 20000
+			PresetPassManagerOptions:
+				Attributes:
+			SimulatorOptions:
+				Attributes:
+			VersionInfo:
+				Attributes:
+					QiskitAerVersion: 0.17.1
+					QiskitIBMRuntimeVersion: 0.41.1
+					QiskitVersion: 2.1.2
+-----Ending pprint-----
+End 2025-11-21 17:14:09 | 23972378 MyPyJob | lmnode193 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

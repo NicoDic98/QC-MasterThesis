@@ -99,7 +99,7 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 23971901,,,,,,,SVE,50,2,COBYLA,2x2,Rerun of 23862036,"GS (6, or), ES (mr), EEE (r)"
 23972292,,,,,,,SVE,50,2,COBYLA,2x2,Rerun of 23963013,"GS (16, or), ES, EEE (r)"
 23972344,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23963013,"GS (11, or), ES, EEE (r)"
-23972375,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964341,
+23972378,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964341,"1 GS, EEE, 6 ES (Better in mr)"
 23972382,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964375,
-23972383,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964134,
-23972384,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964135,
+23972383,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964134,"GS (or), ES (7, mr), EEE(r)"
+23972384,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964135,"GS (11, or), ES, EEE (r)"
