@@ -1,4 +1,5 @@
 import argparse
+from time import sleep
 from datetime import datetime
 from pathlib import Path
 
@@ -6,6 +7,7 @@ import h5py
 import numpy as np
 from qiskit_ibm_runtime import EstimatorOptions
 
+from plotter import ResultLoader
 from solver.adapt_vqe import AdaptVQE
 from solver.circuits import HardwareAdaptAnsatz1, HardwareAdaptAnsatz2, HardwareAdaptAnsatz3, HardwareAdaptAnsatz4, \
     HardwareAdaptAnsatz5, HardwareAdaptAnsatz6, HardwareAdaptAnsatz7, HardwareAdaptAnsatz8, HardwareAdaptAnsatz9, \
@@ -73,6 +75,31 @@ def run_adapt_vqe(my_f: h5py.File):
                      })
 
 
+def rerun_vqe(my_f: h5py.File, source_group: h5py.Group):
+    source_loader = ResultLoader(source_group)
+    energy, mass = source_loader.get_energy_mass({})
+    g_name = f"{source_group.name.split('/')[-1]}-rerun-{my_f.attrs[GlobalParameters.ProcessId]}"
+    my_f.create_group(g_name)
+    for i in range(len(mass)):
+        params = {HamiltonianParameters.Mass: i}
+        params_values = source_loader.get_parameter_values_from_indices(params)
+        ansatz = source_loader.get_ansatz(params, False)
+        my_vqe = VQE(FreeWilson2D.build_hamiltonian, my_f[g_name], 8, 4)
+        my_vqe.ansatz = ansatz
+        my_vqe.run({HamiltonianParameters.XExtend: [2],
+                    HamiltonianParameters.YExtend: [2],
+                    HamiltonianParameters.Mass: [float(params_values[HamiltonianParameters.Mass])],
+                    HamiltonianParameters.WilsonParameter: [1.]},
+                   HamiltonianType.ZeroChargePenalty,
+                   optimizer_options={
+                       "method": 'slsqp',
+                       "options": {"maxiter": 20000, "disp": 0},
+                       "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
+                   },
+                   estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId]))
+        sleep(1.5) # this avoids naming conflicts :D
+
+
 # Define the parser
 parser = argparse.ArgumentParser(description='Short sample app')
 parser.add_argument('--id', action="store", dest='id', default=default_id, type=int)
@@ -87,5 +114,7 @@ with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
     f.attrs[GlobalParameters.ProcessId] = args.id
     # run_ed(f)
     # run_vqe(f)
-    run_adapt_vqe(f)
+    # run_adapt_vqe(f)
+    with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
+        rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])# 2025-11-20_18-55-43-23964375   2025-11-20_17-56-51-23964134     2025-11-20_17-57-51-23964135
     pprint_h5(f)

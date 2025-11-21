@@ -41,7 +41,7 @@ class VQE(BaseVQE):
 
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
-            print(f"Calculating energies for {hamiltonian}")
+            print(f"Calculating energies for {hamiltonian}", flush=True)
             h_operator = hamiltonian.hamiltonian_op(hamiltonian_type)
             h_operator = h_operator.apply_layout(layout=circuit.layout)
 

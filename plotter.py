@@ -182,7 +182,7 @@ class ResultLoader:
             raise NotImplementedError
         return labels
 
-    def get_ansatz(self, parameters: dict[str, int]) -> BaseVQEAnsatz | BaseADAPTVQEAnsatz:
+    def get_ansatz(self, parameters: dict[str, int], exit_on_duplicate=True) -> BaseVQEAnsatz | BaseADAPTVQEAnsatz:
         if self.solver == VQE.__name__:
             ansatz = rebuild_ansatz(self.group)
             ansatz: BaseVQEAnsatz
@@ -190,7 +190,7 @@ class ResultLoader:
             ansatz = rebuild_ansatz(self.group)
             ansatz: BaseADAPTVQEAnsatz
             operator_indices = self.get_operator_indices(parameters)
-            ansatz.set_ansatz(operator_indices)
+            ansatz.set_ansatz(operator_indices, exit_on_duplicate)
         else:
             raise NotImplementedError
         return ansatz

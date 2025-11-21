@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --partition=lm_long
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=96
-#SBATCH --mem=500G
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=50G
 #SBATCH --job-name=MyPyJob
 #SBATCH --output=out/run.%A.out
 #SBATCH --account=ag_hiskp_funcke

@@ -96,3 +96,10 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 23964349,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5","EEE, 13 ES"
 23964355,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5, parameter_prec_cutoff=-1","EEE, 4 ES"
 23964375,14,PH,PH,50,(00+11)^4,R_x; R_y; R_z; R_{XY+YX}; R_{XX+YY}; R_{XY-YX}; R_{XX-YY} (Arbitrary far 2 qbit gates),AER-SVE,500,96,SLSQP,2x2,"opt_tol=1e-9, adapt_prec_cutoff=1e-5, parameter_prec_cutoff=-1, allow_duplicate_gates=True","EEE, 4 ES"
+23971901,,,,,,,SVE,50,2,COBYLA,2x2,Rerun of 23862036,"GS (6, or), ES (mr), EEE (r)"
+23972292,,,,,,,SVE,50,2,COBYLA,2x2,Rerun of 23963013,"GS (16, or), ES, EEE (r)"
+23972344,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23963013,"GS (11, or), ES, EEE (r)"
+23972375,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964341,
+23972382,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964375,
+23972383,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964134,
+23972384,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964135,
