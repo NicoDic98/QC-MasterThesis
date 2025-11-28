@@ -45,7 +45,7 @@ class DatasetParameters(StrEnum):
 
 
 class H5Saver:
-    def __init__(self, group: h5py.Group, parameters_dict_list: dict[str, list]):
+    def __init__(self, group: h5py.Group, parameters_dict_list: dict[str, list], first_open=True):
         """
 
         :param group: h5py Group to save under
@@ -62,9 +62,11 @@ class H5Saver:
         self.non_singular_keys = []
         for key, value in self.parameters_dict_list.items():
             if len(value) == 1:
-                self.group.attrs[key] = value[0]
+                if first_open:
+                    self.group.attrs[key] = value[0]
             elif len(value) > 1:
-                self.group[key] = value
+                if first_open:
+                    self.group[key] = value
                 # local_group[key].make_scale(key)
                 self.non_singular_keys.append(key)
             else:

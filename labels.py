@@ -21,3 +21,5 @@ class VQEParameters(StrEnum):
     AnsatzOperatorSecondDerivatives = "AnsatzOperatorSecondDerivatives"
     AnsatzPoolOperatorAxis = "AnsatzPoolOperatorAxis"
     AdaptOptions = "AdaptOptions"
+    HamiltonianVarianceSuffix = "/HamiltonianVariance"
+    HamiltonianVariance = f"{DataPrefix}Final{HamiltonianVarianceSuffix}"

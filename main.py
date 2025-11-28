@@ -5,8 +5,12 @@ from pathlib import Path
 
 import h5py
 import numpy as np
+from qiskit import generate_preset_pass_manager
+from qiskit.primitives import StatevectorEstimator
 from qiskit_ibm_runtime import EstimatorOptions
 
+from h5_interface import H5Saver
+from labels import VQEParameters
 from plotter import ResultLoader
 from solver.adapt_vqe import AdaptVQE
 from solver.circuits import HardwareAdaptAnsatz1, HardwareAdaptAnsatz2, HardwareAdaptAnsatz3, HardwareAdaptAnsatz4, \
@@ -97,7 +101,50 @@ def rerun_vqe(my_f: h5py.File, source_group: h5py.Group):
                        "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                    },
                    estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId]))
-        sleep(1.5) # this avoids naming conflicts :D
+        sleep(1.5)  # this avoids naming conflicts :D
+
+
+def measure_observables(group: h5py.Group):
+    hamiltonian_factory = FreeWilson2D.build_hamiltonian
+    result_loader = ResultLoader(group)
+    _, masses = result_loader.get_energy_mass({})
+    h5_saver = H5Saver(group,
+                       {HamiltonianParameters.XExtend: [2],
+                        HamiltonianParameters.YExtend: [2],
+                        HamiltonianParameters.Mass: masses.tolist(),
+                        HamiltonianParameters.WilsonParameter: [1.]},
+                       False
+                       )
+    if VQEParameters.HamiltonianVariance in group:
+        del group[VQEParameters.HamiltonianVariance]
+    h5_saver.create_dataset_with_dim_labels(VQEParameters.HamiltonianVariance,
+                                            [], [])
+    for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
+        hamiltonian = hamiltonian_factory(**parameters)
+        print(f"Calculating for {hamiltonian}", flush=True)
+
+        i = non_singular_index[0]
+        params = {HamiltonianParameters.Mass: i}
+        param_values = result_loader.get_parameter_values_from_indices(params)
+        print([f"{x}={y:.3f}" for x, y in param_values.items()], flush=True)
+        circuit = result_loader.get_circuit(params, final=True)
+
+        h_operator = hamiltonian.hamiltonian_op(HamiltonianType.Full)
+        pm = generate_preset_pass_manager()
+        estimator = StatevectorEstimator()
+        circuit = pm.run(circuit)
+        pub = (circuit, [[h_operator], [(h_operator.compose(h_operator)).simplify()]])
+        job = estimator.run(pubs=[pub])
+        result = job.result()
+
+        pub_result = result[0]
+        h_exp = pub_result.data.evs[0][0]
+        hh_exp = pub_result.data.evs[1][0]
+        h_var = hh_exp - (h_exp * h_exp)
+
+        print(h_exp, hh_exp, h_var, flush=True)
+        dataset = group[VQEParameters.HamiltonianVariance]
+        dataset[*non_singular_index] = h_var
 
 
 # Define the parser
@@ -109,12 +156,17 @@ Path(data_folder).mkdir(parents=True, exist_ok=True)
 
 h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 
-with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
-    pprint_h5(f)
-    f.attrs[GlobalParameters.ProcessId] = args.id
-    # run_ed(f)
-    # run_vqe(f)
-    # run_adapt_vqe(f)
-    with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
-        rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])# 2025-11-20_18-55-43-23964375   2025-11-20_17-56-51-23964134     2025-11-20_17-57-51-23964135
-    pprint_h5(f)
+# with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
+#     pprint_h5(f)
+#     f.attrs[GlobalParameters.ProcessId] = args.id
+#     # run_ed(f)
+#     # run_vqe(f)
+#     # run_adapt_vqe(f)
+#     # with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
+#     #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
+#     pprint_h5(f)
+
+with h5py.File(f"{data_folder}{"2025-10-42"}.hdf5", "a") as sf:
+    pprint_h5(sf)
+    measure_observables(sf["2025-10-22_17-19-30-23753926"])
+    pprint_h5(sf)
