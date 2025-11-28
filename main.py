@@ -127,7 +127,7 @@ def measure_observables(group: h5py.Group):
         params = {HamiltonianParameters.Mass: i}
         param_values = result_loader.get_parameter_values_from_indices(params)
         print([f"{x}={y:.3f}" for x, y in param_values.items()], flush=True)
-        circuit = result_loader.get_circuit(params, final=True)
+        circuit = result_loader.get_circuit(params, final=True, exit_on_duplicate=False)
 
         h_operator = hamiltonian.hamiltonian_op(HamiltonianType.Full)
         pm = generate_preset_pass_manager()
@@ -168,5 +168,5 @@ h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 
 with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "a") as sf:
     pprint_h5(sf)
-    measure_observables(sf["2025-11-18_13-11-50-23954408"])
+    measure_observables(sf["2025-11-20_18-55-43-23964375"])
     pprint_h5(sf)

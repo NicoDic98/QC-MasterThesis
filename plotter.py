@@ -127,10 +127,10 @@ class ResultLoader:
             raise NotImplementedError
         elif self.solver == VQE.__name__:
             h_var, dep, _ = self.get_observables(VQEParameters.HamiltonianVariance, parameters,
-                                                  [HamiltonianParameters.Mass])
+                                                 [HamiltonianParameters.Mass])
         elif self.solver == AdaptVQE.__name__:
             h_var, dep, _ = self.get_observables(VQEParameters.HamiltonianVariance, parameters,
-                                                  [HamiltonianParameters.Mass])
+                                                 [HamiltonianParameters.Mass])
         else:
             raise NotImplementedError
         return h_var, dep[0]
@@ -208,8 +208,8 @@ class ResultLoader:
             raise NotImplementedError
         return ansatz
 
-    def get_circuit(self, parameters: dict[str, int], final=False):
-        ansatz = self.get_ansatz(parameters)
+    def get_circuit(self, parameters: dict[str, int], final=False, exit_on_duplicate=True):
+        ansatz = self.get_ansatz(parameters, exit_on_duplicate)
         circuit = ansatz.full_ansatz
         if self.solver == VQE.__name__:
             if final:
@@ -219,7 +219,14 @@ class ResultLoader:
                 circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(
                     VQEParameters.CircuitParameters,
                     parameters, [])
-                circuit_parameters = circuit_parameters[circuit_parameters != 0]
+
+                non_zero_end = 0
+                for i in range(len(circuit_parameters)):
+                    j = len(circuit_parameters) - 1 - i
+                    if circuit_parameters[j] != 0:
+                        non_zero_end = j + 1
+                        break
+                circuit_parameters = circuit_parameters[: non_zero_end]
                 if circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]] != len(
                         circuit.parameters):
                     raise ValueError(f"Parameters do not match circuit parameters"
