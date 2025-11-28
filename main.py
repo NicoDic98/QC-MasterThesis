@@ -166,7 +166,7 @@ h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 #     #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
 #     pprint_h5(f)
 
-with h5py.File(f"{data_folder}{"2025-10-42"}.hdf5", "a") as sf:
+with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "a") as sf:
     pprint_h5(sf)
-    measure_observables(sf["2025-10-22_17-19-30-23753926"])
+    measure_observables(sf["2025-11-18_13-11-50-23954408"])
     pprint_h5(sf)

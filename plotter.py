@@ -122,6 +122,19 @@ class ResultLoader:
             raise NotImplementedError
         return energy, dep[0]
 
+    def get_hamiltonian_variance_mass(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            raise NotImplementedError
+        elif self.solver == VQE.__name__:
+            h_var, dep, _ = self.get_observables(VQEParameters.HamiltonianVariance, parameters,
+                                                  [HamiltonianParameters.Mass])
+        elif self.solver == AdaptVQE.__name__:
+            h_var, dep, _ = self.get_observables(VQEParameters.HamiltonianVariance, parameters,
+                                                  [HamiltonianParameters.Mass])
+        else:
+            raise NotImplementedError
+        return h_var, dep[0]
+
     def get_energy_evolution(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
             raise NotImplementedError

@@ -12826,6 +12826,12 @@
 				NDataDims: 2
 		Data:
 			Attributes:
+			Final:
+				Attributes:
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
 			evs:
 				Attributes:
 				Hamiltonian: Dataset (dtype=float64, shape=(50, 33080), maxshape=(50, None))
@@ -13162,6 +13168,12 @@
 				NDataDims: 2
 		Data:
 			Attributes:
+			Final:
+				Attributes:
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
 			evs:
 				Attributes:
 				Hamiltonian: Dataset (dtype=float64, shape=(50, 1220), maxshape=(50, None))
@@ -15780,6 +15792,12 @@
 				NDataDims: 2
 		Data:
 			Attributes:
+			Final:
+				Attributes:
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
 			evs:
 				Attributes:
 				Hamiltonian: Dataset (dtype=float64, shape=(50, 26140), maxshape=(50, None))
