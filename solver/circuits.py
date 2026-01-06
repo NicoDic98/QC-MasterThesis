@@ -170,11 +170,19 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         return gi, qbits, gate.label
 
 
-def build_r_yx_xy(b: Parameter | float, plus=True):
+def build_r_yx_xy(b: Parameter | float, plus=True, val_str=""):
     if plus:
         name = "$R_{YX+XY}$"
     else:
         name = "$R_{YX-XY}$"
+
+    if val_str == "":
+        if np.issubdtype(type(b), np.floating):
+            val_str = f"{b:.2f}"
+        else:
+            val_str = f"{b}"
+    name = name[:-1] + r"\left(" + val_str + r"\right)$"
+
     qc = QuantumCircuit(2, name=name)
     qc.z(1)
     qc.s(0)
@@ -207,10 +215,10 @@ def build_r_xzy_m_yzx(b: Parameter | float, n: int = 0):
     qc = QuantumCircuit(n + 2, name=name)
 
     for j in range(0, n_floor):
-        gate = build_r_yx_xy(np.pi / 2)
+        gate = build_r_yx_xy(np.pi / 2, val_str=r"\frac{\pi}{2}")
         qc.append(gate, [n - j, n - j + 1])
     for j in range(0, n_ceil):
-        gate = build_r_yx_xy(np.pi / 2)
+        gate = build_r_yx_xy(np.pi / 2, val_str=r"\frac{\pi}{2}")
         qc.append(gate, [j, j + 1])
 
     if n % 2:
@@ -223,10 +231,10 @@ def build_r_xzy_m_yzx(b: Parameter | float, n: int = 0):
     qc.append(gate, [n_ceil, n_ceil + 1])
 
     for j in range(n_floor - 1, -1, -1):
-        gate = build_r_yx_xy(-np.pi / 2)
+        gate = build_r_yx_xy(-np.pi / 2, val_str=r"-\frac{\pi}{2}")
         qc.append(gate, [n - j, n - j + 1])
     for j in range(n_ceil - 1, -1, -1):
-        gate = build_r_yx_xy(-np.pi / 2)
+        gate = build_r_yx_xy(-np.pi / 2, val_str=r"-\frac{\pi}{2}")
         qc.append(gate, [j, j + 1])
 
     return qc
