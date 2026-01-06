@@ -3,6 +3,7 @@ from typing import Any, Callable
 
 import h5py
 import matplotlib.pyplot as plt
+import numpy as np
 from qiskit import QuantumCircuit
 from qiskit.circuit import Parameter, Gate, ParameterVector
 from qiskit.circuit.library import n_local, XXPlusYYGate, RZGate, RYGate, RXGate, XXMinusYYGate
@@ -169,7 +170,7 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         return gi, qbits, gate.label
 
 
-def build_r_yx_xy(b: Parameter, plus=True):
+def build_r_yx_xy(b: Parameter | float, plus=True):
     if plus:
         name = "$R_{YX+XY}$"
     else:
@@ -193,6 +194,42 @@ def build_r_yx_xy(b: Parameter, plus=True):
     qc.h(1)
     qc.z(1)
     return qc.to_gate(label=name)
+
+
+def build_r_xzy_m_yzx(b: Parameter | float, n: int = 0):
+    name = "$R_{YX-XY}^{(n)}$"
+
+    if n < 0:
+        raise ValueError("n cannot be negative")
+    n_floor = n // 2
+    n_ceil = (n + 1) // 2
+
+    qc = QuantumCircuit(n + 2, name=name)
+
+    for j in range(0, n_floor):
+        gate = build_r_yx_xy(np.pi / 2)
+        qc.append(gate, [n - j, n - j + 1])
+    for j in range(0, n_ceil):
+        gate = build_r_yx_xy(np.pi / 2)
+        qc.append(gate, [j, j + 1])
+
+    if n % 2:
+        # Odd
+        gate = build_r_yx_xy(((-1) ** n_ceil) * b)
+    else:
+        # Even
+        gate = build_r_yx_xy(((-1) ** n_ceil) * b, False)
+
+    qc.append(gate, [n_ceil, n_ceil + 1])
+
+    for j in range(n_floor - 1, -1, -1):
+        gate = build_r_yx_xy(-np.pi / 2)
+        qc.append(gate, [n - j, n - j + 1])
+    for j in range(n_ceil - 1, -1, -1):
+        gate = build_r_yx_xy(-np.pi / 2)
+        qc.append(gate, [j, j + 1])
+
+    return qc
 
 
 class HardwareAdaptAnsatz1(BaseADAPTVQEAnsatz):
