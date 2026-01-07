@@ -330,12 +330,12 @@ class ResultLoader:
         else:
             raise NotImplementedError
 
-    def get_excited_state(self, parameters: dict[str, int]):
+    def get_excited_state(self, parameters: dict[str, int], j=1):
         if self.solver == ED.__name__:
             energy, _, energy_dep_dict = self.get_observables(EDParameters.EigenValues, parameters, [])
             eigen_vect, _, eigen_vect_dep_dict = self.get_observables(EDParameters.EigenVectors, parameters, [])
             return np.take(eigen_vect,
-                           np.argsort(energy, energy_dep_dict[EDParameters.EigenValueAxis])[1],
+                           np.argsort(energy, energy_dep_dict[EDParameters.EigenValueAxis])[j],
                            eigen_vect_dep_dict[EDParameters.EigenValueAxis])
         else:
             raise NotImplementedError

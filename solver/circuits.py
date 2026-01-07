@@ -694,6 +694,8 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
         for i in range(0, self.num_qubits, 2):
             self.fixed_ansatz.x(i)
 
+        # TODO: These are ordered directly according to the snake,
+        #  the ordering has to be flipped such that it is consistent with the phi convention.
         # A_1(0,0):
         op = SparsePauliOp.from_sparse_list([("XY", [1, 2], 0.5j),
                                              ("YX", [1, 2], -0.5j),
