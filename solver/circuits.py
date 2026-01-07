@@ -807,6 +807,31 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
                                     "$A_4(1,0)$"))
 
 
+class PhysicsAdaptAnsatz2(PhysicsAdaptAnsatz1):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
+        if (self.num_qubits % 4) != 0:
+            raise NotImplementedError
+
+        self.fixed_ansatz.h(0)
+
+        for i in range(self.num_qubits // 2, self.num_qubits):
+            self.fixed_ansatz.x(i)
+
+        for i in range(1, self.num_qubits):
+            self.fixed_ansatz.cx(0, i)
+
+
+class PhysicsAdaptAnsatz3(PhysicsAdaptAnsatz1):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
+        for i in range(0, self.num_qubits, 2):
+            self.fixed_ansatz.h(i)
+            self.fixed_ansatz.cx(i, i + 1)
+
+
 class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
