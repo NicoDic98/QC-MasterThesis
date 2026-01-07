@@ -103,4 +103,8 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 23972382,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964375,"3 GS, EEE, 5 ES (Better in mr)"
 23972383,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964134,"GS (or), ES (7, mr), EEE(r)"
 23972384,,,,,,,SVE,50,2,SLSQP,2x2,Rerun of 23964135,"GS (11, or), ES, EEE (r)"
-,P1,PH,PH,4,10101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,
+24236380,P1,PH,PH,4,10101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,EEE (Energy = -4)
+24236398,P1,PH,PH,50,10101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,EEE (Energy = -4)
+24236417,P2,PH,PH,50,00001111+11110000,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,No circuit build (Energy=0)
+24236464,P3,PH,PH,50,(00+11)^4,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,This fixed ansatz is not Q=0,No circuit build (Energy=400)
+24236917,P4,PH,PH,50,11001100+00110011,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,No circuit build (Energy=0)
