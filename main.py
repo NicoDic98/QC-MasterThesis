@@ -17,7 +17,7 @@ from solver.circuits import HardwareAdaptAnsatz1, HardwareAdaptAnsatz2, Hardware
     HardwareAdaptAnsatz5, HardwareAdaptAnsatz6, HardwareAdaptAnsatz7, HardwareAdaptAnsatz8, HardwareAdaptAnsatz9, \
     HardwareAdaptAnsatz10, HardwareAdaptAnsatz11, HardwareAdaptAnsatz12, HardwareAdaptAnsatz13, HardwareAdaptAnsatz14, \
     HardwareAdaptAnsatz15, HardwareAdaptAnsatz16, HardwareAdaptAnsatz17, HardwareAdaptAnsatz18, HardwareAdaptAnsatz19, \
-    HardwareAdaptAnsatz20, HardwareAdaptAnsatz21
+    HardwareAdaptAnsatz20, HardwareAdaptAnsatz21, PhysicsAdaptAnsatz1
 from solver.exact_diagonalization import ED
 from hamiltonian.free_wilson import FreeWilson2D
 from hamiltonian.base import HamiltonianType, HamiltonianParameters
@@ -50,10 +50,10 @@ def run_vqe(my_f: h5py.File):
 
 
 def run_adapt_vqe(my_f: h5py.File):
-    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz14(8))
+    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, PhysicsAdaptAnsatz1(8))
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
-                      HamiltonianParameters.Mass: np.linspace(-6, 2, 50).tolist(),
+                      HamiltonianParameters.Mass: np.linspace(-6, 2, 4).tolist(),
                       HamiltonianParameters.WilsonParameter: [1.]},
                      HamiltonianType.ZeroChargePenalty,
                      # simulator_type=SimulatorType.Aer,
@@ -63,7 +63,7 @@ def run_adapt_vqe(my_f: h5py.File):
                      optimizer_options={
                          "method": 'slsqp',
                          "options": {"maxiter": 20000, "disp": 0},
-                         "tol": 1e-9,
+                         # "tol": 1e-9,
                          "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                      },
                      estimator_options=EstimatorOptions(seed_estimator=my_f.attrs[GlobalParameters.ProcessId],
@@ -72,9 +72,9 @@ def run_adapt_vqe(my_f: h5py.File):
                      adapt_options={
                          "max_depth": 50,
                          "gradient_hamiltonian_type": HamiltonianType.ZeroChargePenalty,
-                         "prec_cutoff": 1e-5,
-                         "parameter_prec_cutoff": -1,
-                         "allow_duplicate_gates": True,
+                         # "prec_cutoff": 1e-5,
+                         # "parameter_prec_cutoff": -1,
+                         # "allow_duplicate_gates": True,
                          # "precision": 0.01
                      })
 
@@ -156,17 +156,17 @@ Path(data_folder).mkdir(parents=True, exist_ok=True)
 
 h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 
-# with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
-#     pprint_h5(f)
-#     f.attrs[GlobalParameters.ProcessId] = args.id
-#     # run_ed(f)
-#     # run_vqe(f)
-#     # run_adapt_vqe(f)
-#     # with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
-#     #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
-#     pprint_h5(f)
+with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
+    pprint_h5(f)
+    f.attrs[GlobalParameters.ProcessId] = args.id
+    # run_ed(f)
+    # run_vqe(f)
+    run_adapt_vqe(f)
+    # with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
+    #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
+    pprint_h5(f)
 
-with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "a") as sf:
-    pprint_h5(sf)
-    measure_observables(sf["2025-11-20_18-55-43-23964375"])
-    pprint_h5(sf)
+# with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "a") as sf:
+#     pprint_h5(sf)
+#     measure_observables(sf["2025-11-20_18-55-43-23964375"])
+#     pprint_h5(sf)

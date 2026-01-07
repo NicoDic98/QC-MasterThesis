@@ -204,8 +204,14 @@ def build_r_yx_xy(b: Parameter | float, plus=True, val_str=""):
     return qc.to_gate(label=name)
 
 
-def build_r_xzy_m_yzx(b: Parameter | float, n: int = 0):
-    name = "$R_{YX-XY}^{(n)}$"
+def build_r_xzy_m_yzx(b: Parameter | float, n: int = 0, ret_gate=True, val_str=""):
+    name = "$R_{YX-XY}^{(" + str(n) + ")}$"
+    if val_str == "":
+        if np.issubdtype(type(b), np.floating):
+            val_str = f"{b:.2f}"
+        else:
+            val_str = f"{b}"
+    name = name[:-1] + r"\left(" + val_str + r"\right)$"
 
     if n < 0:
         raise ValueError("n cannot be negative")
@@ -237,7 +243,17 @@ def build_r_xzy_m_yzx(b: Parameter | float, n: int = 0):
         gate = build_r_yx_xy(-np.pi / 2, val_str=r"-\frac{\pi}{2}")
         qc.append(gate, [j, j + 1])
 
-    return qc
+    if ret_gate:
+        return qc.to_gate(label=name)
+    else:
+        return qc
+
+
+def combine_gates(gates: list[Gate], qbits: list[list[int]], n: int, name: str):
+    qc = QuantumCircuit(n, name=name)
+    for gate, qbit in zip(gates, qbits):
+        qc.append(gate, qbit)
+    return qc.to_gate(label=name)
 
 
 class HardwareAdaptAnsatz1(BaseADAPTVQEAnsatz):
@@ -667,6 +683,128 @@ class HardwareAdaptAnsatz21(HardwareAdaptAnsatz11):
         self.fixed_ansatz = QuantumCircuit(self.num_qubits)
         for i in range(0, self.num_qubits):
             self.fixed_ansatz.h(i)
+
+
+class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        if num_qubits != 8:
+            raise NotImplementedError
+
+        for i in range(0, self.num_qubits, 2):
+            self.fixed_ansatz.x(i)
+
+        # A_1(0,0):
+        op = SparsePauliOp.from_sparse_list([("XY", [1, 2], 0.5j),
+                                             ("YX", [1, 2], -0.5j),
+                                             ("XZZY", list(range(0, 4)), 0.5j),
+                                             ("YZZX", list(range(0, 4)), -0.5j),
+                                             ], num_qubits=self.num_qubits)
+        self.operator_pool.append(op)
+        self.operator_gate_map.append((0, list(range(0, 4))))
+        self.gate_pool.append(
+            lambda a: combine_gates([build_r_xzy_m_yzx(a, 0), build_r_xzy_m_yzx(a, 2)],
+                                    [[1, 2], list(range(0, 4))],
+                                    4,
+                                    "$A_1(0,0)$"))
+
+        # A_1(0,1):
+        op = SparsePauliOp.from_sparse_list([("XY", [5, 6], -0.5j),
+                                             ("YX", [5, 6], 0.5j),
+                                             ("XZZY", list(range(4, 8)), -0.5j),
+                                             ("YZZX", list(range(4, 8)), 0.5j),
+                                             ], num_qubits=self.num_qubits)
+        self.operator_pool.append(op)
+        self.operator_gate_map.append((1, list(range(4, 8))))
+        self.gate_pool.append(
+            lambda a: combine_gates([build_r_xzy_m_yzx(-a, 0), build_r_xzy_m_yzx(-a, 2)],
+                                    [[1, 2], list(range(4))],
+                                    4,
+                                    "$A_1(0,1)$"))
+
+        # A_2(0,0):
+        op = SparsePauliOp.from_sparse_list([("XZZZZZY", list(range(1, 8)), -0.5j),
+                                             ("YZZZZZX", list(range(1, 8)), 0.5j),
+                                             ("XZZZZZY", list(range(0, 7)), -0.5j),
+                                             ("YZZZZZX", list(range(0, 7)), 0.5j),
+                                             ], num_qubits=self.num_qubits)
+        self.operator_pool.append(op)
+        self.operator_gate_map.append((2, list(range(0, 8))))
+        self.gate_pool.append(
+            lambda a: combine_gates([build_r_xzy_m_yzx(-a, 5), build_r_xzy_m_yzx(-a, 5)],
+                                    [list(range(1, 8)), list(range(0, 7))],
+                                    8,
+                                    "$A_2(0,0)$"))
+
+        # A_2(1,0):
+        op = SparsePauliOp.from_sparse_list([("XZY", list(range(3, 6)), -0.5j),
+                                             ("YZX", list(range(3, 6)), 0.5j),
+                                             ("XZY", list(range(2, 5)), -0.5j),
+                                             ("YZX", list(range(2, 5)), 0.5j),
+                                             ], num_qubits=self.num_qubits)
+        self.operator_pool.append(op)
+        self.operator_gate_map.append((3, list(range(2, 6))))
+        self.gate_pool.append(
+            lambda a: combine_gates([build_r_xzy_m_yzx(-a, 1), build_r_xzy_m_yzx(-a, 1)],
+                                    [list(range(1, 4)), list(range(0, 3))],
+                                    4,
+                                    "$A_2(1,0)$"))
+
+        # A_3(0,0):
+        op = SparsePauliOp.from_sparse_list([("XZY", list(range(0, 3)), -0.5j),
+                                             ("YZX", list(range(0, 3)), 0.5j),
+                                             ("XZY", list(range(1, 4)), -0.5j),
+                                             ("YZX", list(range(1, 4)), 0.5j),
+                                             ], num_qubits=self.num_qubits)
+        self.operator_pool.append(op)
+        self.operator_gate_map.append((4, list(range(0, 4))))
+        self.gate_pool.append(
+            lambda a: combine_gates([build_r_xzy_m_yzx(-a, 1), build_r_xzy_m_yzx(-a, 1)],
+                                    [list(range(0, 3)), list(range(1, 4))],
+                                    4,
+                                    "$A_3(0,0)$"))
+
+        # A_3(0,1):
+        op = SparsePauliOp.from_sparse_list([("XZY", list(range(5, 8)), 0.5j),
+                                             ("YZX", list(range(5, 8)), -0.5j),
+                                             ("XZY", list(range(4, 7)), 0.5j),
+                                             ("YZX", list(range(4, 7)), -0.5j),
+                                             ], num_qubits=self.num_qubits)
+        self.operator_pool.append(op)
+        self.operator_gate_map.append((5, list(range(4, 8))))
+        self.gate_pool.append(
+            lambda a: combine_gates([build_r_xzy_m_yzx(a, 1), build_r_xzy_m_yzx(a, 1)],
+                                    [list(range(1, 4)), list(range(0, 3))],
+                                    4,
+                                    "$A_3(0,1)$"))
+
+        # A_4(0,0):
+        op = SparsePauliOp.from_sparse_list([("XZZZZZZY", list(range(0, 8)), -0.5j),
+                                             ("YZZZZZZX", list(range(0, 8)), 0.5j),
+                                             ("XZZZZY", list(range(1, 7)), -0.5j),
+                                             ("YZZZZX", list(range(1, 7)), 0.5j),
+                                             ], num_qubits=self.num_qubits)
+        self.operator_pool.append(op)
+        self.operator_gate_map.append((6, list(range(0, 8))))
+        self.gate_pool.append(
+            lambda a: combine_gates([build_r_xzy_m_yzx(-a, 6), build_r_xzy_m_yzx(-a, 4)],
+                                    [list(range(0, 8)), list(range(1, 7))],
+                                    8,
+                                    "$A_4(0,0)$"))
+
+        # A_4(1,0):
+        op = SparsePauliOp.from_sparse_list([("XZZY", list(range(2, 6)), -0.5j),
+                                             ("YZZX", list(range(2, 6)), 0.5j),
+                                             ("XY", list(range(3, 5)), -0.5j),
+                                             ("YX", list(range(3, 5)), 0.5j),
+                                             ], num_qubits=self.num_qubits)
+        self.operator_pool.append(op)
+        self.operator_gate_map.append((7, list(range(2, 6))))
+        self.gate_pool.append(
+            lambda a: combine_gates([build_r_xzy_m_yzx(-a, 2), build_r_xzy_m_yzx(-a, 0)],
+                                    [list(range(0, 4)), list(range(1, 3))],
+                                    4,
+                                    "$A_4(1,0)$"))
 
 
 class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
