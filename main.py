@@ -7,6 +7,7 @@ import h5py
 import numpy as np
 from qiskit import generate_preset_pass_manager
 from qiskit.primitives import StatevectorEstimator
+from qiskit.quantum_info import SparsePauliOp
 from qiskit_ibm_runtime import EstimatorOptions
 
 from h5_interface import H5Saver
@@ -116,10 +117,23 @@ def measure_observables(group: h5py.Group):
                         HamiltonianParameters.WilsonParameter: [1.]},
                        False
                        )
-    if VQEParameters.HamiltonianVariance in group:
-        del group[VQEParameters.HamiltonianVariance]
-    h5_saver.create_dataset_with_dim_labels(VQEParameters.HamiltonianVariance,
-                                            [], [])
+
+    observable_name_list = [
+        VQEParameters.HamiltonianVariance,
+        VQEParameters.ChargeConjugation,
+        VQEParameters.ChargeConjugationVariance,
+    ]
+    for observable_name in observable_name_list:
+        if observable_name in group:
+            del group[observable_name]
+        h5_saver.create_dataset_with_dim_labels(observable_name, [], [])
+
+    c_op = SparsePauliOp.from_sparse_list([("XX", [1, 0], 0.5),  # need to flip order due to phi convention chosen
+                                           ("YY", [1, 0], -0.5),
+                                           ("IZ", [1, 0], -0.5),
+                                           ("ZI", [1, 0], 0.5),
+                                           ], num_qubits=2)
+
     for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
         hamiltonian = hamiltonian_factory(**parameters)
         print(f"Calculating for {hamiltonian}", flush=True)
@@ -131,25 +145,42 @@ def measure_observables(group: h5py.Group):
         circuit = result_loader.get_circuit(params, final=True, exit_on_duplicate=False)
 
         h_operator = hamiltonian.hamiltonian_op(HamiltonianType.Full)
+        if circuit.num_qubits % 2 != 0:
+            raise NotImplementedError
+        complete_c_op = c_op
+        for _ in range(circuit.num_qubits // 2 - 1):
+            complete_c_op = complete_c_op.tensor(c_op)
+
         pm = generate_preset_pass_manager()
         estimator = StatevectorEstimator()
         circuit = pm.run(circuit)
-        pub = (circuit, [[h_operator], [(h_operator.compose(h_operator)).simplify()]])
+        pub = (circuit, [
+            [h_operator],
+            [(h_operator.compose(h_operator)).simplify()],
+            [complete_c_op.simplify()]
+        ])
         job = estimator.run(pubs=[pub])
         result = job.result()
 
         pub_result = result[0]
         h_exp = pub_result.data.evs[0][0]
         hh_exp = pub_result.data.evs[1][0]
+        c_exp = pub_result.data.evs[2][0]
         h_var = hh_exp - (h_exp * h_exp)
+        c_var = 1 - (c_exp * c_exp)
 
-        print(h_exp, hh_exp, h_var, flush=True)
+        print("H:", h_exp, hh_exp, h_var, flush=True)
+        print("C:", c_exp, c_var, flush=True)
         dataset = group[VQEParameters.HamiltonianVariance]
         dataset[*non_singular_index] = h_var
+        dataset = group[VQEParameters.ChargeConjugation]
+        dataset[*non_singular_index] = c_exp
+        dataset = group[VQEParameters.ChargeConjugationVariance]
+        dataset[*non_singular_index] = c_var
 
 
 # Define the parser
-parser = argparse.ArgumentParser(description='Short sample app')
+parser = argparse.ArgumentParser(description='Main app')
 parser.add_argument('--id', action="store", dest='id', default=default_id, type=int)
 args = parser.parse_args()
 
