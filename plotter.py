@@ -106,34 +106,46 @@ class ResultLoader:
             info_dict[VQEParameters.AdaptOptions] = load_attribute_as_dict(self.group[VQEParameters.AdaptOptions])
         return self.group.name, info_dict
 
+    def get_variational_observable_mass(self, parameters: dict[str, int], observable_name: str):
+        if self.solver == ED.__name__:
+            raise NotImplementedError
+        elif self.solver == VQE.__name__:
+            obs, dep, _ = self.get_observables(observable_name, parameters,
+                                               [HamiltonianParameters.Mass])
+        elif self.solver == AdaptVQE.__name__:
+            obs, dep, _ = self.get_observables(observable_name, parameters,
+                                               [HamiltonianParameters.Mass])
+        else:
+            raise NotImplementedError
+        return obs, dep[0]
+
     def get_energy_mass(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
             energy, dep, _ = self.get_observables(EDParameters.EigenValues, parameters,
                                                   [HamiltonianParameters.Mass])
             energy.sort(-1)
             energy = energy[:, :]
-        elif self.solver == VQE.__name__:
-            energy, dep, _ = self.get_observables(VQEParameters.Hamiltonian, parameters,
-                                                  [HamiltonianParameters.Mass])
-        elif self.solver == AdaptVQE.__name__:
-            energy, dep, _ = self.get_observables(VQEParameters.Hamiltonian, parameters,
-                                                  [HamiltonianParameters.Mass])
+            return energy, dep[0]
         else:
-            raise NotImplementedError
-        return energy, dep[0]
+            return self.get_variational_observable_mass(parameters, VQEParameters.Hamiltonian)
 
     def get_hamiltonian_variance_mass(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
             raise NotImplementedError
-        elif self.solver == VQE.__name__:
-            h_var, dep, _ = self.get_observables(VQEParameters.HamiltonianVariance, parameters,
-                                                 [HamiltonianParameters.Mass])
-        elif self.solver == AdaptVQE.__name__:
-            h_var, dep, _ = self.get_observables(VQEParameters.HamiltonianVariance, parameters,
-                                                 [HamiltonianParameters.Mass])
         else:
+            return self.get_variational_observable_mass(parameters, VQEParameters.HamiltonianVariance)
+
+    def get_charge_conjugation_mass(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
             raise NotImplementedError
-        return h_var, dep[0]
+        else:
+            return self.get_variational_observable_mass(parameters, VQEParameters.ChargeConjugation)
+
+    def get_charge_conjugation_variance_mass(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            raise NotImplementedError
+        else:
+            return self.get_variational_observable_mass(parameters, VQEParameters.ChargeConjugationVariance)
 
     def get_energy_evolution(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
