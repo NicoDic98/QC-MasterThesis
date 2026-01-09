@@ -20,7 +20,7 @@ from solver.circuits import HardwareAdaptAnsatz1, HardwareAdaptAnsatz2, Hardware
     HardwareAdaptAnsatz15, HardwareAdaptAnsatz16, HardwareAdaptAnsatz17, HardwareAdaptAnsatz18, HardwareAdaptAnsatz19, \
     HardwareAdaptAnsatz20, HardwareAdaptAnsatz21, PhysicsAdaptAnsatz1, PhysicsAdaptAnsatz2, PhysicsAdaptAnsatz3, \
     PhysicsAdaptAnsatz4
-from solver.exact_diagonalization import ED
+from solver.exact_diagonalization import ED, EDParameters
 from hamiltonian.free_wilson import FreeWilson2D
 from hamiltonian.base import HamiltonianType, HamiltonianParameters
 from misc import pprint_h5, data_folder, default_id
@@ -179,6 +179,61 @@ def measure_observables(group: h5py.Group):
         dataset[*non_singular_index] = c_var
 
 
+def calculate_observables(group: h5py.Group):
+    result_loader = ResultLoader(group)
+    energies, masses = result_loader.get_energy_mass({})
+    n_eigv = energies.shape[1]
+    h5_saver = H5Saver(group,
+                       {HamiltonianParameters.XExtend: [2],
+                        HamiltonianParameters.YExtend: [2],
+                        HamiltonianParameters.Mass: masses.tolist(),
+                        HamiltonianParameters.WilsonParameter: [1.]},
+                       False
+                       )
+
+    observable_name_list = [
+        EDParameters.ChargeConjugation,
+        EDParameters.ChargeConjugationVariance,
+    ]
+    for observable_name in observable_name_list:
+        if observable_name in group:
+            del group[observable_name]
+        h5_saver.create_dataset_with_dim_labels(observable_name, [n_eigv], [EDParameters.EigenValueAxis])
+
+    c_op = SparsePauliOp.from_sparse_list([("XX", [1, 0], 0.5),  # need to flip order due to phi convention chosen
+                                           ("YY", [1, 0], -0.5),
+                                           ("IZ", [1, 0], -0.5),
+                                           ("ZI", [1, 0], 0.5),
+                                           ], num_qubits=2)
+    complete_c_op = c_op
+    for _ in range(3):
+        complete_c_op = complete_c_op.tensor(c_op)
+    complete_c_op = complete_c_op.to_matrix(sparse=True)
+    for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
+        i = non_singular_index[0]
+        params = {HamiltonianParameters.Mass: i}
+        param_values = result_loader.get_parameter_values_from_indices(params)
+        print([f"{x}={y:.3f}" for x, y in param_values.items()], flush=True)
+        for j in range(n_eigv):
+            print(j, flush=True)
+            vec = result_loader.get_excited_state({HamiltonianParameters.Mass: i}, j)
+
+            temp = complete_c_op.dot(vec)
+            # print(temp.shape, vec.shape, type(temp), type(vec), flush=True)
+            c_exp = np.vdot(vec, temp)
+            c_exp_im = np.imag(c_exp)
+            c_exp = np.real(c_exp)
+            if c_exp_im > 1e-12:
+                raise ValueError(f"Imaginary part of {c_exp_im} is too large.")
+            c_var = 1 - (c_exp * c_exp)
+
+            print("C:", c_exp, c_var, flush=True)
+            dataset = group[EDParameters.ChargeConjugation]
+            dataset[*non_singular_index] = c_exp
+            dataset = group[EDParameters.ChargeConjugationVariance]
+            dataset[*non_singular_index] = c_var
+
+
 # Define the parser
 parser = argparse.ArgumentParser(description='Main app')
 parser.add_argument('--id', action="store", dest='id', default=default_id, type=int)
@@ -198,7 +253,12 @@ h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 #     #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
 #     pprint_h5(f)
 
-with h5py.File(f"{data_folder}{"2026-01-01"}.hdf5", "a") as sf:
+# with h5py.File(f"{data_folder}{"2026-01-01"}.hdf5", "a") as sf:
+#     pprint_h5(sf)
+#     measure_observables(sf["2026-01-07_14-31-34-24236398"])
+#     pprint_h5(sf)
+
+with h5py.File(f"{data_folder}{"2025-09-35"}.hdf5", "a") as sf:
     pprint_h5(sf)
-    measure_observables(sf["2026-01-07_14-31-34-24236398"])
+    calculate_observables(sf["2025-09-03_22-35-17"])
     pprint_h5(sf)

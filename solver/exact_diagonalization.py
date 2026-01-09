@@ -18,6 +18,8 @@ class EDParameters(StrEnum):
     CompressMatrix = "CompressMatrix"
     EigenValueAxis = "EigenValueAxis"
     EigenVectorAxis = "EigenVectorAxis"
+    ChargeConjugation = "ChargeConjugation"
+    ChargeConjugationVariance = "ChargeConjugationVariance"
 
 
 class ED(BaseSolver):

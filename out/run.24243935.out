@@ -1,0 +1,4577 @@
+Start 2026-01-09 18:25:37 | 24243935 MyPyJob | lmnode193 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23113711
+	2025-09-02_17-46-07:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-02_17-46-07
+			ProcessId: 23113711
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 5000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 5000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 5000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 5000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 5000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 5000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 5000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-03_11-10-56:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-10-56
+			ProcessId: 23114898
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-03_11-11-36:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-11-36
+			ProcessId: 23114899
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 30
+			AnsatzOptions:
+				Attributes:
+					num_layers: 2
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 30), maxshape=(101, None, 30))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-03_11-12-33:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-12-33
+			ProcessId: 23114900
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 120
+			AnsatzOptions:
+				Attributes:
+					num_layers: 8
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(25, 20000, 120), maxshape=(25, None, 120))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(25, 20000), maxshape=(25, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(25, 20000), maxshape=(25, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(25, 20000), maxshape=(25, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(25, 20000), maxshape=(25, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(25, 20000), maxshape=(25, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(25,), maxshape=(25,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(25,), maxshape=(25,))
+			Attributes:
+	2025-09-03_22-35-17:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_22-35-17
+			ProcessId: 23116296
+			SolverName: ED
+			SystemName: FreeWilson2D
+			Which: SM
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		ChargeConjugation: Dataset (dtype=float64, shape=(1001, 72), maxshape=(1001, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		ChargeConjugationVariance: Dataset (dtype=float64, shape=(1001, 72), maxshape=(1001, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		EigenValues: Dataset (dtype=float64, shape=(1001, 72), maxshape=(1001, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		EigenVectors: Dataset (dtype=complex128, shape=(1001, 256, 72), maxshape=(1001, 256, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenVectorAxis' 'EigenValueAxis']
+				NDataDims: 2
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(1001,), maxshape=(1001,))
+			Attributes:
+	2025-09-06_15-50-13:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147803
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147803
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147803
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-06_15-50-13-23147802:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147802
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147802
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147802
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-06_15-50-13-23147804:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147804
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147804
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147804
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-06_15-50-13-23147805:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147805
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147805
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147805
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+-----Ending pprint-----
+['mass=-6.000']
+0
+C: 0.9999999999999964 7.105427357601002e-15
+1
+C: -0.9999999999999998 4.440892098500626e-16
+2
+C: -0.4471417129739217 0.800064288518747
+3
+C: -0.4933716096017714 0.7565844548389573
+4
+C: 0.41008230462720485 0.8318325034316404
+5
+C: 0.5307606920207982 0.7182930878056033
+6
+C: -0.03605135117923554 0.9987003000781515
+7
+C: -0.35483174817997953 0.8740944304835396
+8
+C: -0.8797999977851466 0.22595196389725603
+9
+C: -0.041226384921347205 0.9983003851863169
+10
+C: -0.3986724987605221 0.8410602387320415
+11
+C: -0.3190248924593734 0.8982231179912853
+12
+C: -0.17284046988691174 0.9701261719692715
+13
+C: -0.6450008654953 0.5839738835103139
+14
+C: 0.6018817484255197 0.6377383609122395
+15
+C: 0.2620588492247256 0.9313251595430125
+16
+C: -0.2267312515530706 0.9485929395691782
+17
+C: -0.11806718517643301 0.9860601397845139
+18
+C: 0.22788158353932453 0.9480699838836099
+19
+C: 0.8302069134761725 0.3107564808163671
+20
+C: 0.2984777747436618 0.9109110179840719
+21
+C: -0.3644771838526437 0.8671563824508461
+22
+C: -0.013965978258219651 0.9998049514512909
+23
+C: -0.29115465508204214 0.9152289668240571
+24
+C: -0.5949846484723452 0.6459932680822398
+25
+C: 0.6771169653949765 0.5415126151742983
+26
+C: 0.5099954581894818 0.7399046326261005
+27
+C: -0.12749577126966088 0.9837448283083543
+28
+C: 0.44812333338030547 0.7991854780801236
+29
+C: 0.59737584821419 0.6431420959703771
+30
+C: -0.12935749720501832 0.9832666379168536
+31
+C: 0.3673491688718511 0.8650545881291603
+32
+C: 0.543348293169906 0.70477263230935
+33
+C: 0.17942610424058078 0.9678062731170483
+34
+C: 0.238468520685208 0.9431327646422085
+35
+C: -0.1061382039066493 0.9887346816714705
+36
+C: 0.3681848644230892 0.8644399056097515
+37
+C: -0.3241921233199587 0.8948994671772966
+38
+C: 0.5000067627334633 0.749993237220802
+39
+C: 0.014118671431492258 0.9998006631170095
+40
+C: 0.13512398017283062 0.9817415099822525
+41
+C: -0.6082180850010577 0.6300707610776461
+42
+C: -0.02332201456158428 0.9994560836367893
+43
+C: -0.08667339455811629 0.9924877226757731
+44
+C: 0.1700668988497896 0.9710772499156154
+45
+C: 0.34529710978825856 0.8807699059718753
+46
+C: -0.05663438535820019 0.9967925463950988
+47
+C: 0.3970248489266078 0.8423712693348042
+48
+C: -0.15956734524398705 0.9745382623317862
+49
+C: 0.04411701020679787 0.9980536894104133
+50
+C: -0.03284595029155343 0.9989211435494448
+51
+C: 0.003412340882345155 0.9999883559297027
+52
+C: 0.6341482304463111 0.5978560218218123
+53
+C: 0.35851823289362694 0.8714646766828311
+54
+C: 0.552119895472227 0.6951636210237372
+55
+C: -0.7427975630437593 0.44825178033625235
+56
+C: 0.5400671898084644 0.7083274304923881
+57
+C: -0.31186533876445227 0.9027400104773334
+58
+C: -0.665131019945119 0.5576007263067657
+59
+C: -0.5946492903745891 0.6463922214569976
+60
+C: -0.19445330950167447 0.962187910423846
+61
+C: -0.5242475286574153 0.7251645286965925
+62
+C: 0.32711617903083834 0.8929950054162645
+63
+C: -0.4560229673796391 0.7920430532222686
+64
+C: -0.09466756170292405 0.991038052761223
+65
+C: -0.43367101412172426 0.8119294515106352
+66
+C: 0.34579570460981907 0.8804253306733988
+67
+C: 0.16910234701252339 0.9714043962348561
+68
+C: -0.9999999999999994 1.1102230246251565e-15
+69
+C: 0.9999999999999987 2.6645352591003757e-15
+70
+C: 0.9263197426830337 0.1419317343156381
+71
+C: -0.9327137980594281 0.13004497090955636
+['mass=-5.992']
+0
+C: 0.9999999999999997 6.661338147750939e-16
+1
+C: -0.9999999999999989 2.220446049250313e-15
+2
+C: -0.6615347717459683 0.5623717457710096
+3
+C: 0.8092252292511551 0.3451545283434154
+4
+C: 0.003570791554404165 0.999987249447675
+5
+C: -0.2251069604051822 0.9493268563771398
+6
+C: -0.7873213616827973 0.3801250734379459
+7
+C: -0.5300924032994423 0.7190020439642214
+8
+C: -0.3303150055499348 0.8908919971085465
+9
+C: -0.6564179116850374 0.5691155252190545
+10
+C: 0.03626580834043622 0.9986847911454148
+11
+C: 0.11840337783084565 0.985980640118246
+12
+C: -0.4810165731298273 0.7686230563744375
+13
+C: 0.44472737088384834 0.8022175655867401
+14
+C: 0.8442757721523442 0.2871984205565631
+15
+C: -0.815427325153644 0.3350782773927733
+16
+C: 0.9410590225403355 0.11440791609542833
+17
+C: 0.7433504098538473 0.44743016817011727
+18
+C: 0.732329588601996 0.4636933736580312
+19
+C: -0.4301723348268445 0.8149517623496212
+20
+C: -0.9999999999999984 3.1086244689504383e-15
+21
+C: -0.5378692945902397 0.7106966219369979
+22
+C: -0.3964943122219468 0.8427922603756454
+23
+C: -0.3099814651174697 0.9039114912836269
+24
+C: 0.5309115871981394 0.7181328865787524
+25
+C: -0.03133548626854486 0.9990180873003138
+26
+C: 0.2710398676604984 0.9265373901385795
+27
+C: 0.1499195416830567 0.9775241310215422
+28
+C: 0.2619565731686188 0.9313787537737541
+29
+C: 0.29030646083278155 0.9157221587987446
+30
+C: 0.19807438271726782 0.9607665389111734
+31
+C: 0.11640676951268292 0.9864494640116211
+32
+C: 0.5964177799032415 0.6442858318152885
+33
+C: -0.07774716582559404 0.9939553782060876
+34
+C: 0.3326698510989847 0.8893307701697793
+35
+C: 0.2560823651934218 0.9344218222369429
+36
+C: -0.04038884902383022 0.9983687408745302
+37
+C: -0.29126445326125805 0.9151650182664204
+38
+C: 0.5223371791497378 0.7271638712778947
+39
+C: 0.7074117655064741 0.49956859402301323
+40
+C: -0.47111664673334386 0.7780491051707297
+41
+C: 0.20795134681559885 0.9567562373575785
+42
+C: -0.11955869379424515 0.9857057187382139
+43
+C: 0.5658257774620504 0.6798411895594663
+44
+C: 0.09089440756697287 0.991738206673049
+45
+C: 0.42625807675470984 0.8183040520013759
+46
+C: -0.2811119761896362 0.9209760568427574
+47
+C: -0.172653153676418 0.9701908885255872
+48
+C: -0.7787251625775359 0.3935871211685903
+49
+C: -0.9999999999999905 1.9095836023552692e-14
+50
+C: 0.9762526081644809 0.046930845052048475
+51
+C: 0.4118742045684317 0.8303596396111217
+52
+C: -0.24809744404517803 0.9384476582582497
+53
+C: 0.8780870607474537 0.22896311374789757
+54
+C: 0.2699934705942947 0.9271035258364477
+55
+C: -0.23674907118974617 0.9439498772907925
+56
+C: 0.13877290076989351 0.9807420820119093
+57
+C: -0.24382456236137348 0.9405495827892847
+58
+C: 0.03930826870257648 0.998454860011606
+59
+C: -0.08981415707565327 0.9919334171887899
+60
+C: -0.510202724873657 0.7396931795314954
+61
+C: -0.5652596291180956 0.680481551689273
+62
+C: -0.45883412947103475 0.7894712416325578
+63
+C: -0.2858425608341747 0.9182940304157612
+64
+C: 0.18432140846822234 0.9660256183802908
+65
+C: -0.37521537739078725 0.8592134205694891
+66
+C: -0.22255283584259053 0.950470235258421
+67
+C: 0.4315559841119067 0.8137594325772037
+68
+C: -0.9999999999999993 1.3322676295501878e-15
+69
+C: 0.9999999999999956 8.881784197001252e-15
+70
+C: 0.33443176367901256 0.8881553954425451
+71
+C: -0.3836893335940314 0.8527824952861681
+['mass=-5.984']
+0
+C: 0.9999999999999962 7.549516567451064e-15
+1
+C: -1.0000000000000004 -8.881784197001252e-16
+2
+C: 0.19331408255374818 0.9626296654864026
+3
+C: 0.8646568328879588 0.2523685613401645
+4
+C: -0.2597334540376963 0.9325385328536479
+5
+C: -0.7916112166126499 0.37335168173304034
+6
+C: -0.7249414087892188 0.4744599538227028
+7
+C: -0.2721136288147938 0.9259541730132447
+8
+C: -0.7670073725547282 0.4116996904466924
+9
+C: -0.20669012656999863 0.957279191578478
+10
+C: -0.6677571368812371 0.5541004061441728
+11
+C: 0.4213335465118825 0.8224780425837194
+12
+C: -0.8308921743907887 0.30961819453614725
+13
+C: 0.5682370604098222 0.677106643176804
+14
+C: 0.223527225139253 0.9500355796215457
+15
+C: 0.08947141835309136 0.991994865297886
+16
+C: 0.7929758911811657 0.37118923600543596
+17
+C: 0.4514798180223823 0.7961659739184765
+18
+C: 0.14795695454593902 0.9781087396014909
+19
+C: 0.5968381161570996 0.6437842631020445
+20
+C: -1.0000000000000029 -5.773159728050814e-15
+21
+C: 0.10898924097770862 0.988121345351103
+22
+C: -0.1323935328017674 0.9824719524722674
+23
+C: 0.15492754447513887 0.9759974559629039
+24
+C: -0.057538803919771064 0.9966892860434822
+25
+C: -0.6028577558988417 0.6365625261526126
+26
+C: 0.34332193829053154 0.8821300466884324
+27
+C: -0.389380714043376 0.8483826595310706
+28
+C: 0.19221929869783913 0.9630517412081109
+29
+C: 0.31258281394126153 0.9022919844285626
+30
+C: 0.7430649405104346 0.4478544941842243
+31
+C: -0.017084306513898695 0.9997081264709392
+32
+C: 0.27085969927298026 0.9266350233097507
+33
+C: 0.44038501272648856 0.8060610405658906
+34
+C: 0.37361743389613167 0.8604100130888697
+35
+C: 0.02444624400949258 0.9994023811538284
+36
+C: -0.15083278237524048 0.9772494717609433
+37
+C: 0.07114991598865675 0.9949376894548071
+38
+C: -0.13389251794188145 0.982072793639183
+39
+C: -0.0285973413670413 0.9991821920667369
+40
+C: 0.1635480120784285 0.9732520477451942
+41
+C: 0.29543593752807207 0.912717606816909
+42
+C: -0.5001473703777745 0.7498526079041973
+43
+C: -0.03898631047780028 0.9984800675953286
+44
+C: 0.16474672292852452 0.9728585172843119
+45
+C: 0.14153111599312407 0.9799689432057409
+46
+C: -0.2624523947222728 0.9311187405045444
+47
+C: -0.025887481106571644 0.9993298383219569
+48
+C: 0.17861691120282758 0.9680959990323612
+49
+C: -0.9999999999999845 3.108624468950438e-14
+50
+C: 0.8410731181253895 0.29259600996683455
+51
+C: 0.2393940524875905 0.9426904876335688
+52
+C: 0.12471072579271045 0.9844472348722554
+53
+C: 0.7986061248494354 0.36222825735296804
+54
+C: -0.2377519913930239 0.9434739905886514
+55
+C: 0.5241542434202954 0.7252623291044977
+56
+C: 0.39964543674847586 0.84028352488612
+57
+C: -0.7121262200809949 0.49287624667315444
+58
+C: -0.9144873860494555 0.16371282075643423
+59
+C: 0.11764977637821465 0.9861585301181561
+60
+C: 0.1331751282283104 0.982264385221373
+61
+C: -0.7232999847767658 0.47683713202193034
+62
+C: -0.1188965416112282 0.9858636123928894
+63
+C: -0.4442278838477218 0.802661587212175
+64
+C: 0.43979859390458864 0.8065771967995468
+65
+C: 0.5407773431367442 0.707559865149964
+66
+C: -0.13520635329647102 0.9817192420282699
+67
+C: -0.9758650455704803 0.04768741283372446
+68
+C: -1.000000000000001 -2.220446049250313e-15
+69
+C: 0.9999999999999992 1.5543122344752192e-15
+70
+C: -0.7507483513877105 0.4363769128886348
+71
+C: 0.7538821149140648 0.4316617568126968
+['mass=-5.976']
+0
+C: 0.9999999999999983 3.3306690738754696e-15
+1
+C: -1.0000000000000009 -1.7763568394002505e-15
+2
+C: -0.8766133162093489 0.2315490938444481
+3
+C: 0.009913499886700119 0.9999017225199964
+4
+C: 0.6407846270685256 0.5893950617126507
+5
+C: 0.39851557387020603 0.8411853373829004
+6
+C: -0.40808169520914106 0.8334693300352337
+7
+C: -0.7378901886171254 0.4555180695425831
+8
+C: -0.4664211924767432 0.7824512712085729
+9
+C: -0.5616913704117885 0.6845028044049271
+10
+C: 0.09286361410024432 0.991376349176241
+11
+C: 0.137575181017825 0.9810730695679126
+12
+C: 0.45123589372817585 0.7963861682113345
+13
+C: -0.3307260210812874 0.8906202989797398
+14
+C: 0.29482141830443004 0.9130803313089643
+15
+C: -0.24616868098630623 0.9394009805014621
+16
+C: 0.9064489123932724 0.17835036922105352
+17
+C: 0.10712455131590437 0.9885243305053661
+18
+C: 0.20687609267951615 0.9572022822776562
+19
+C: 0.8065927539696081 0.34940812924372333
+20
+C: -0.9999999999999972 5.551115123125783e-15
+21
+C: -0.5793927166108193 0.6643040799383348
+22
+C: -0.20217341582262266 0.9591259099346129
+23
+C: 0.09512303467999933 0.9909516082732677
+24
+C: -0.270892202026059 0.9266174148814729
+25
+C: 0.43699678700930233 0.8090338081435464
+26
+C: 0.5219580759723665 0.7275597669272252
+27
+C: 0.3961404254925464 0.8430727632905843
+28
+C: -0.550105947089447 0.6973834469768225
+29
+C: 0.6625757319405999 0.5609933994433782
+30
+C: -0.12368483970780848 0.9847020604264537
+31
+C: -0.17498369932669244 0.9693807049699457
+32
+C: 0.4343292774253079 0.8113580787712099
+33
+C: 0.4424711374840341 0.8042192924935849
+34
+C: 0.14958305401413463 0.9776249099518045
+35
+C: 0.2725992374072438 0.9256896557649892
+36
+C: 0.4142327346101282 0.8284112415774151
+37
+C: -0.4162879164149834 0.8267043706468717
+38
+C: 0.16635555617219566 0.9723258289306395
+39
+C: 0.05933793239529728 0.9964790097790511
+40
+C: -0.08754466991308424 0.9923359307698091
+41
+C: -0.24550336785328927 0.9397280963726925
+42
+C: -0.2851826659924785 0.9186708470174224
+43
+C: -0.3104441768271112 0.9036244130741373
+44
+C: 0.013815871728650939 0.9998091216883774
+45
+C: 0.01584165587451128 0.9997490419391536
+46
+C: 0.12867601555320857 0.9834424830213504
+47
+C: 0.29719446529404164 0.9116754497985887
+48
+C: 0.5889941426210213 0.6530858999581279
+49
+C: -0.9999999999999959 8.215650382226158e-15
+50
+C: 0.5957918944134601 0.6450320185512204
+51
+C: 0.3909386131893501 0.8471670007175878
+52
+C: 0.7942684186878378 0.3691376790751215
+53
+C: 0.2034178304872596 0.9586211862398565
+54
+C: 0.14271173686817346 0.9796333601600692
+55
+C: 0.1047376068386559 0.9890300337137111
+56
+C: -0.42655750261647707 0.8180486969615941
+57
+C: 0.146046002512808 0.9786705651500289
+58
+C: -0.012485036419537632 0.9998441238656028
+59
+C: -0.4882187848346393 0.7616424181345882
+60
+C: -0.038114416109430616 0.9985472912846372
+61
+C: -0.4488119900137453 0.7985677976199018
+62
+C: -0.15155754584777043 0.9770303102966009
+63
+C: -0.46110152959652884 0.7873853794037414
+64
+C: 0.7055980495320938 0.502131392496505
+65
+C: -0.33229505987671715 0.8895799931815289
+66
+C: 0.3145845553384021 0.9010365575425399
+67
+C: -0.700917751305282 0.5087143059051469
+68
+C: -0.999999999999999 1.9984014443252818e-15
+69
+C: 1.0000000000000004 -8.881784197001252e-16
+70
+C: 0.7743237908212992 0.4004226669681329
+71
+C: -0.7696671763220827 0.4076124376923921
+['mass=-5.968']
+0
+C: 0.9999999999999958 8.43769498715119e-15
+1
+C: -0.9999999999999993 1.3322676295501878e-15
+2
+C: -0.17730827834113985 0.9685617744317009
+3
+C: 0.6150235467663838 0.6217460369228978
+4
+C: -0.17770695311680107 0.9684202388139431
+5
+C: -0.260539414960703 0.9321192132519346
+6
+C: -0.2232498654748966 0.9501594975654406
+7
+C: -0.13081957641359385 0.9828862384269679
+8
+C: -0.7616263349740964 0.4199253258739255
+9
+C: -0.016798696134638247 0.9997178038081761
+10
+C: -0.24535577788149998 0.9398005422601641
+11
+C: -0.6432306053865426 0.5862543882940618
+12
+C: -0.7398293676261017 0.45265250679796243
+13
+C: 0.6121539897636165 0.6252674928164861
+14
+C: 0.33075583554332116 0.8906005772540395
+15
+C: -0.10476973255340932 0.9890233031406871
+16
+C: 0.6517877846464606 0.5751726837856591
+17
+C: -0.002597999044181204 0.9999932504009664
+18
+C: 0.5627181269134336 0.6833483096430368
+19
+C: 0.7984017431748451 0.36255465649536867
+20
+C: -0.9999999999999959 8.215650382226158e-15
+21
+C: -0.19044935745661212 0.9637290422443636
+22
+C: 0.051736483218867035 0.9973233363041439
+23
+C: -0.40164478678011334 0.8386814652523573
+24
+C: -0.22139988071468122 0.950982092819525
+25
+C: 0.13109559869428164 0.9828139440029878
+26
+C: 0.10077645012954803 0.9898441070992867
+27
+C: 0.4031311683548666 0.8374852611008402
+28
+C: 0.09274241478599021 0.9913988444996633
+29
+C: -0.010873080237758983 0.9998817761261433
+30
+C: 0.695806037279527 0.5158539584853616
+31
+C: -0.22366543896151525 0.9499737714141527
+32
+C: 0.3559201759530816 0.8733208283495274
+33
+C: -0.12225772560272549 0.9850530485304487
+34
+C: 0.2991567370123216 0.9105052467001407
+35
+C: 0.25329163284936734 0.9358433487285013
+36
+C: 0.22290008887641322 0.950315550378887
+37
+C: -0.03895041988405416 0.9984828647908559
+38
+C: -0.18415865535462111 0.9660855896579779
+39
+C: 0.44026006246298105 0.8061710774000921
+40
+C: 0.26228062272989056 0.9312088749404208
+41
+C: 0.22787921629341612 0.9480710627814984
+42
+C: -0.4484693595327424 0.7988752335602918
+43
+C: -0.06230675622352767 0.9961178681289019
+44
+C: 0.45182522352182003 0.7958539673894574
+45
+C: -0.34048093858885176 0.8840727304576546
+46
+C: 0.34597630329657236 0.8803003975572382
+47
+C: -0.022628901892991937 0.9994879327991173
+48
+C: -0.46743746463011115 0.7815022166601736
+49
+C: -0.9999999999999841 3.175237850427948e-14
+50
+C: 0.9037007058706295 0.1833250342089261
+51
+C: 0.2626096714310679 0.9310361604708666
+52
+C: 0.5259120326887863 0.723416533873149
+53
+C: 0.30683611683899 0.9058515974031697
+54
+C: -0.5580659038050502 0.6885624470102525
+55
+C: 0.4815522872769177 0.768107394618369
+56
+C: 0.053541646322427694 0.9971332921090841
+57
+C: -0.1045463687473984 0.989070056781733
+58
+C: 0.03400696561252309 0.9988435262898286
+59
+C: -0.7887306546800652 0.37790395436795576
+60
+C: 0.44137856042446844 0.8051849663976238
+61
+C: -0.508525659953067 0.7414016531692977
+62
+C: -0.7819503497830073 0.3885536504742326
+63
+C: -0.09101442218003966 0.9917163749552335
+64
+C: 0.025277228351458514 0.9993610617268682
+65
+C: -0.6481506061329532 0.5799007917694854
+66
+C: -0.08829817025819556 0.9922034331290547
+67
+C: 0.7176184713192104 0.48502372962147955
+68
+C: -0.9999999999999978 4.440892098500626e-15
+69
+C: 0.999999999999995 9.992007221626409e-15
+70
+C: 0.09604639952845467 0.9907750891376205
+71
+C: -0.09856230174126515 0.9902854726754639
+['mass=-5.960']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+1
+C: -0.9999999999999967 6.661338147750939e-15
+2
+C: -0.19280247904977274 0.962827204072262
+3
+C: 0.05652776392641723 0.9968046119054792
+4
+C: 0.22890273208079034 0.9476035392459499
+5
+C: -0.0906811737390339 0.9917769247293111
+6
+C: -0.38996951853784206 0.8479237746113637
+7
+C: -0.8637793865653532 0.25388517134478206
+8
+C: -0.24886455689860126 0.9380664323196628
+9
+C: 0.268937570325998 0.9276725832671489
+10
+C: -0.4780446041631848 0.771473356430464
+11
+C: -0.374576866331092 0.8596921712095793
+12
+C: 0.07960493647275317 0.9936630540891689
+13
+C: 0.6802406735309147 0.5372726260742076
+14
+C: -0.39159044581050695 0.8466569227499284
+15
+C: -0.29120447829235496 0.9151999518224774
+16
+C: 0.6801602185100971 0.5373820771562969
+17
+C: 0.3133843652463245 0.9017902396191583
+18
+C: 0.7787061901269705 0.3936166694579385
+19
+C: 0.13563020405104748 0.9816044477490712
+20
+C: -0.9999999999999966 6.8833827526759706e-15
+21
+C: 0.12477767419496359 0.9844305320224955
+22
+C: 0.0596237407519518 0.996445009538744
+23
+C: 0.0764805000333122 0.9941507331146545
+24
+C: -0.33046316302174955 0.8907940978856606
+25
+C: 0.2000517152081919 0.9599793112422604
+26
+C: -0.25877010158238284 0.9330380345270433
+27
+C: -0.060438645197570834 0.9963471701666822
+28
+C: 0.08295869990867026 0.9931178541094632
+29
+C: -0.11685628336470645 0.9863446090381874
+30
+C: 0.8123316752336118 0.3401172494121538
+31
+C: 0.5664443937934422 0.6791407487399796
+32
+C: 0.6968162126298647 0.5144471658161711
+33
+C: -0.1049233964637148 0.9889910808745181
+34
+C: -0.18089267711647855 0.9672778393656334
+35
+C: 0.5952814849988762 0.6456399536175327
+36
+C: 0.8288957749773451 0.3129317942247064
+37
+C: -0.10681382011883525 0.9885908078316211
+38
+C: 0.22063379510505918 0.9513207284575388
+39
+C: -0.3510250877559526 0.8767813877659257
+40
+C: -0.3038840816136937 0.9076544649418019
+41
+C: 0.0029858658853497283 0.9999910846049147
+42
+C: 0.5770939821126481 0.6669625358093667
+43
+C: -0.3353572064829962 0.8875355440599211
+44
+C: -0.33845257054758343 0.885449857489733
+45
+C: -0.1218206874939797 0.9851597200984942
+46
+C: -0.3395706819490945 0.8846917519606269
+47
+C: 0.5196913831357534 0.7299208662944476
+48
+C: 0.015538867277708715 0.9997585436037257
+49
+C: -0.9999999999999989 2.220446049250313e-15
+50
+C: 0.986389225491791 0.027036295833704704
+51
+C: 0.9382080400985516 0.11976567349443457
+52
+C: 0.10300972879865958 0.9893889957728266
+53
+C: 0.574907761028645 0.6694810663090304
+54
+C: 0.3916351937185873 0.8466218750410046
+55
+C: -0.19910407199710192 0.9603575685141729
+56
+C: -0.48798594021390646 0.7618697221535498
+57
+C: 0.1862181880633927 0.965322786434387
+58
+C: -0.96244066175374 0.07370797260302309
+59
+C: -0.22146242173629233 0.9509543957586966
+60
+C: -0.30369991452314643 0.9077663619186336
+61
+C: -0.2343983593890196 0.945057409115736
+62
+C: 0.037474108887317906 0.9985956911631014
+63
+C: -0.10959847504320333 0.9879881742682043
+64
+C: -0.7006504652461957 0.5090889255502895
+65
+C: 0.5390049658122986 0.7094736468296827
+66
+C: 0.702783801464552 0.5060949283990331
+67
+C: -0.5322096370693663 0.7167529022104935
+68
+C: -0.9999999999999981 3.774758283725532e-15
+69
+C: 0.9999999999999997 6.661338147750939e-16
+70
+C: 0.40920703289057847 0.832549604232889
+71
+C: -0.40186909447477787 0.838501230906022
+['mass=-5.952']
+0
+C: 0.9999999999999961 7.771561172376096e-15
+1
+C: -1.0000000000000002 -4.440892098500626e-16
+2
+C: -0.18741204002781783 0.9648767272526116
+3
+C: 0.43912847781936715 0.8071661799680456
+4
+C: 0.32168689089380553 0.8965175442270769
+5
+C: -0.6011338157854099 0.6386381355192728
+6
+C: 0.2582284064687163 0.9333180900926275
+7
+C: -0.062129106517182314 0.9961399741233766
+8
+C: -0.23115897936098945 0.9465655262607856
+9
+C: -0.7121343562240351 0.4928646586853791
+10
+C: -0.3772165097552196 0.8577077047680903
+11
+C: -0.5115328993411994 0.7383340928915864
+12
+C: -0.5730964598280389 0.671560447732569
+13
+C: 0.07070007628467853 0.9950014992133407
+14
+C: 0.8436222943578373 0.28830142446241847
+15
+C: -0.37549900298259575 0.8590004987590766
+16
+C: 0.6048868501847972 0.6341118984735148
+17
+C: 0.4136136071356075 0.8289237839922713
+18
+C: 0.2975166064430999 0.9114838688905816
+19
+C: 0.7023423937468445 0.5067151619459525
+20
+C: -0.9999999999999981 3.774758283725532e-15
+21
+C: -0.11567996495557029 0.986618145707878
+22
+C: -0.4290137856448817 0.8159471717266475
+23
+C: 0.1459318144106017 0.9787039055428297
+24
+C: 0.03524942433741575 0.9987574780838808
+25
+C: 0.251140407936484 0.9369284955014964
+26
+C: 0.21366385213881173 0.954347758289204
+27
+C: -0.20212547263625183 0.9591452933115718
+28
+C: 0.22626905088979632 0.9488023166094308
+29
+C: 0.5672175758977114 0.678264221592724
+30
+C: 0.07715799859627417 0.9940466432526174
+31
+C: 0.12653586593420502 0.9839886746322809
+32
+C: -0.024571047024189628 0.999396263648135
+33
+C: 0.22128430560457316 0.9510332560931019
+34
+C: 0.26624402978421347 0.9291141166042629
+35
+C: 0.6816342715499473 0.5353747198485728
+36
+C: -0.00800978182926082 0.9999358433950476
+37
+C: -0.20597772675134557 0.957573176082348
+38
+C: 0.29762823656152837 0.911417432801275
+39
+C: -0.4968159092011945 0.7531739523645904
+40
+C: 0.33791979963356256 0.8858102090156129
+41
+C: -0.056290031471538965 0.9968314323569332
+42
+C: 0.08224086490092108 0.9932364401403484
+43
+C: -0.011632337481413516 0.9998646887247185
+44
+C: -0.03602919228512583 0.9987018973032814
+45
+C: -0.25648945610863455 0.9342131589050968
+46
+C: 0.3831146140274899 0.8532231925185674
+47
+C: -0.60557871392088 0.6332744212459329
+48
+C: 0.33410006872869824 0.8883771440754791
+49
+C: -0.9999999999999993 1.3322676295501878e-15
+50
+C: 0.2734926135023542 0.9252017903596519
+51
+C: 0.6475490961767398 0.5806801680406873
+52
+C: 0.7982344495088545 0.362821763617296
+53
+C: 0.29122478149635445 0.9151881266424006
+54
+C: 0.6706415208409131 0.5502399505241871
+55
+C: 0.5906551259232051 0.6511265222206427
+56
+C: -0.8019692622793297 0.3568453023591476
+57
+C: -0.5173392167267019 0.7323601348366026
+58
+C: -0.5287535380759181 0.7204196959721987
+59
+C: -0.2791405471996385 0.9220805549090864
+60
+C: -0.05328139868675971 0.9971610925539826
+61
+C: -0.714983790773448 0.48879817893123034
+62
+C: -0.8067222468904522 0.3491992163720202
+63
+C: 0.3746273841608827 0.8596543230367744
+64
+C: -0.0011011735979894743 0.9999987874167071
+65
+C: 0.3740866732417289 0.860059160902936
+66
+C: -0.4413110525640171 0.8052445548848394
+67
+C: 0.06284918046604304 0.9960499805147468
+68
+C: -0.9999999999999992 1.5543122344752192e-15
+69
+C: 0.9999999999999971 5.773159728050814e-15
+70
+C: 0.4357272784553081 0.8101417388099303
+71
+C: -0.4435761796394616 0.8032401728564601
+['mass=-5.944']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+1
+C: -0.9999999999999989 2.220446049250313e-15
+2
+C: 0.3806450278503307 0.855109362772821
+3
+C: 0.25797195254210825 0.9334504717016122
+4
+C: -0.4232080161144464 0.8208949750964745
+5
+C: -0.2560274444456002 0.9344499476906551
+6
+C: 0.6522918951980503 0.5745152834589358
+7
+C: -0.35591872833900823 0.8733218588175433
+8
+C: -0.38305695522254274 0.8532673690556349
+9
+C: -0.5922406873360072 0.6492509682637737
+10
+C: -0.8160069206481432 0.33413270545433493
+11
+C: -0.576931634734763 0.667149888842274
+12
+C: -0.6342264416814822 0.5977568206720454
+13
+C: 0.07688619060276705 0.9940885136945949
+14
+C: 0.5156313500858166 0.734124310808678
+15
+C: 0.04561900697977761 0.997918906202179
+16
+C: 0.9746145390349936 0.050126500301606924
+17
+C: 0.8807304937409273 0.22431379739486246
+18
+C: 0.15461129796259368 0.9760953465423221
+19
+C: 0.001794145981165396 0.9999967810401983
+20
+C: -1.0000000000000018 -3.552713678800501e-15
+21
+C: 0.015769972252229036 0.9997513079751639
+22
+C: 0.30907377699375305 0.9044734003748158
+23
+C: 0.20273703670155646 0.9588976939494718
+24
+C: 0.1542776824745637 0.9761983966902777
+25
+C: 0.1498542656302051 0.9775436990724319
+26
+C: -0.3386194544291772 0.8853368650820864
+27
+C: -0.3441393979917586 0.88156807474987
+28
+C: -0.20336295586526637 0.9586435081817417
+29
+C: 0.16928043961836065 0.9713441327626146
+30
+C: 0.036894054064031276 0.9986388287747203
+31
+C: 0.3153439222487286 0.9005582107007878
+32
+C: 0.212114458254849 0.9550074565992519
+33
+C: 0.4093801655672753 0.8324078800401102
+34
+C: 0.13520336065862942 0.9817200512666125
+35
+C: 0.48235790034435133 0.7673308559753889
+36
+C: 0.6403731071826658 0.589922283597218
+37
+C: -0.043710011640920816 0.9980894348823506
+38
+C: -0.11669787241344656 0.986381606574175
+39
+C: 0.5267881726618504 0.7224942211435885
+40
+C: 0.43939437398471304 0.8069325841105821
+41
+C: -0.08623143066247929 0.992564140365902
+42
+C: 0.18816012938029422 0.9645957657115909
+43
+C: -0.23956551089033554 0.9426083659918525
+44
+C: -0.22549001184263243 0.9491542545592095
+45
+C: -0.0538380626851119 0.997101463006314
+46
+C: 0.41805287995604634 0.8252317895604555
+47
+C: 0.38560042548606555 0.8513123118649653
+48
+C: -0.13882145533931786 0.9807286035374738
+49
+C: -0.9999999999999928 1.4432899320127035e-14
+50
+C: 0.39472830048701807 0.8441895687946304
+51
+C: 0.991614160120423 0.016701357448668075
+52
+C: 0.6921622153642291 0.5209114676220825
+53
+C: -0.0682601588788484 0.9953405507098344
+54
+C: 0.19626597645644306 0.9614796664855989
+55
+C: 0.5525208017291358 0.6947207636565931
+56
+C: -0.01741427855541766 0.9996967429023943
+57
+C: -0.6683830834488544 0.5532640537594017
+58
+C: -0.7073447369982222 0.4996634230409158
+59
+C: 0.05161281404674303 0.9973361174261763
+60
+C: 0.04798628782447375 0.9976973161808268
+61
+C: -0.30092264246529865 0.909445563251702
+62
+C: -0.44095068720668973 0.8055624914519481
+63
+C: -0.5319183525836296 0.7170628661847175
+64
+C: -0.29241523641566436 0.9144933295119712
+65
+C: 0.5734642214681558 0.671138786695922
+66
+C: -0.8837208070974318 0.21903753510306367
+67
+C: 0.547229585348533 0.7005397809192726
+68
+C: -1.0000000000000004 -8.881784197001252e-16
+69
+C: 1.0000000000000004 -8.881784197001252e-16
+70
+C: -0.9675548353692657 0.06383764055355323
+71
+C: 0.9533976125385525 0.0910329924057881
+['mass=-5.936']
+0
+C: 0.999999999999994 1.199040866595169e-14
+1
+C: -0.9999999999999954 9.103828801926284e-15
+2
+C: 0.9298232813930142 0.13542866537952758
+3
+C: -0.9272018549807375 0.1402967201202795
+4
+C: 0.5513369512788879 0.6960275661545012
+5
+C: -0.6552456454217823 0.5706531441557919
+6
+C: -0.49309872350428896 0.7568536488784408
+7
+C: -0.6211804904505622 0.614134798283599
+8
+C: -0.5761476645686548 0.6680538686120847
+9
+C: -0.1542917598538202 0.9761940528412111
+10
+C: -0.1858931974976789 0.965443719124089
+11
+C: 0.2894701144964531 0.9162070528134103
+12
+C: -0.29587772307214666 0.9124563729896421
+13
+C: -0.2497161997706659 0.9376418195720969
+14
+C: -0.167023921087386 0.9721030097845946
+15
+C: 0.7270600862971928 0.47138363091351865
+16
+C: 0.4817243125434524 0.7679416867045382
+17
+C: 0.41734880699409793 0.8258199733006032
+18
+C: 0.8748428603601147 0.23464996967693286
+19
+C: 0.1741587451810348 0.9696687314769674
+20
+C: -1.0000000000000029 -5.773159728050814e-15
+21
+C: 0.2303201612691424 0.9469526233129563
+22
+C: 0.019867949026133022 0.999605264601495
+23
+C: 0.23593843724495225 0.9443330538304098
+24
+C: 0.06802251707324683 0.9953729371710198
+25
+C: 0.0923299446005603 0.9914751813300575
+26
+C: -0.6138985416989273 0.6231285804999304
+27
+C: 0.21943454057820688 0.9518484824012313
+28
+C: 0.11638254221059703 0.9864551038685986
+29
+C: 0.7091446607633147 0.49711385011088327
+30
+C: 0.7870394823410275 0.38056885323636747
+31
+C: 0.3781834104492526 0.8569773080609722
+32
+C: 0.711243213387599 0.4941330914100823
+33
+C: -0.4706924022597641 0.7784486624549324
+34
+C: 0.2541543273514263 0.9354055778885441
+35
+C: -0.4260429757174093 0.818487382841855
+36
+C: 0.5792501613015133 0.6644692506321708
+37
+C: -0.1494863003041697 0.9776538460213716
+38
+C: 0.7565933646875969 0.427566480510701
+39
+C: -0.6940878636847586 0.5182420374855279
+40
+C: -0.05764046701350228 0.9966775765624654
+41
+C: 0.00029060894240294857 0.9999999155464426
+42
+C: -0.5395768216268468 0.7088568535630699
+43
+C: -0.6511949922105433 0.5759450821199104
+44
+C: -0.3364488008921139 0.8868022043782587
+45
+C: -0.06874760946833537 0.9952737661923893
+46
+C: 0.41817914443292054 0.8251262031613505
+47
+C: 0.5643892773009713 0.6814647436676873
+48
+C: 0.5277067639815711 0.7215255712480984
+49
+C: -1.0000000000000013 -2.6645352591003757e-15
+50
+C: 0.5096473769327708 0.7402595511855462
+51
+C: 0.23066880342812954 0.9467919031250349
+52
+C: 0.38027889746307125 0.8553879601442709
+53
+C: 0.8778712528011448 0.22934206350534858
+54
+C: -0.6846500074027266 0.5312543673634464
+55
+C: 0.3066197760711653 0.9059843129220685
+56
+C: 0.10995939614091066 0.9879089312003263
+57
+C: 0.2513139708485904 0.9368412880563138
+58
+C: 0.2887510437700408 0.916622834721712
+59
+C: -0.21250891329274899 0.954839961771135
+60
+C: -0.04029232905841247 0.9983765282190487
+61
+C: -0.432831194329802 0.8126571572150372
+62
+C: -0.5854122791324553 0.6572924634409443
+63
+C: -0.8390875803664838 0.29593203247471966
+64
+C: 0.7962440111892981 0.3659954746451769
+65
+C: -0.801568317129937 0.35748823297348065
+66
+C: -0.8166291461253926 0.3331168376985122
+67
+C: 0.8231442585471627 0.3224335296208418
+68
+C: -0.9999999999999992 1.5543122344752192e-15
+69
+C: 0.9999999999999974 5.10702591327572e-15
+70
+C: 0.18778980858104127 0.9647349877930959
+71
+C: -0.2516801851958054 0.9366570843798051
+['mass=-5.928']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+1
+C: -0.9999999999999977 4.6629367034256575e-15
+2
+C: 0.43070731620937197 0.8144912077637201
+3
+C: -0.6984832202338093 0.512121191051808
+4
+C: 0.546366746787952 0.7014833780043499
+5
+C: -0.2560962445129355 0.9344147135463707
+6
+C: -0.27564915417959074 0.9240175438000762
+7
+C: 0.3967505116165162 0.8425890315320327
+8
+C: -0.44686863218526995 0.8003084255688659
+9
+C: 0.15378363496972997 0.9763505936154968
+10
+C: -0.9021943240310974 0.1860454016860711
+11
+C: -0.9405498573078619 0.11536596591816062
+12
+C: -0.12950996880640675 0.9832271679797635
+13
+C: -0.6553618380081152 0.570500861282625
+14
+C: 0.18952523939179128 0.9640801836334842
+15
+C: 0.5788386854842423 0.6649457761868744
+16
+C: 0.7916360308910253 0.3733123945951037
+17
+C: 0.415022053939106 0.8277566947441658
+18
+C: 0.07688262053777498 0.9940890626592445
+19
+C: 0.7734140132384846 0.4018307641263412
+20
+C: -1.0000000000000009 -1.7763568394002505e-15
+21
+C: -0.03632007765350043 0.9986808519592437
+22
+C: 0.32288940664726684 0.895742431074976
+23
+C: 0.028213352990736018 0.9992040067130201
+24
+C: -0.18031146939532744 0.9674877740044979
+25
+C: 0.4997591667004668 0.750240775298855
+26
+C: -0.5891206411655564 0.6529368701526838
+27
+C: -0.5425299926762491 0.7056612070467091
+28
+C: 0.04322434069761103 0.9981316563712569
+29
+C: 0.2630251060263921 0.9308177935998052
+30
+C: 0.45274840712290737 0.7950188798476701
+31
+C: -0.20625031482113626 0.9574608076361821
+32
+C: -0.44779976605385124 0.7994753695221161
+33
+C: -0.169588616231728 0.9712397012446077
+34
+C: 0.21559369539291465 0.9535193585068271
+35
+C: -0.1507390812709761 0.9772777293775821
+36
+C: 0.30548516707158246 0.9066788126992473
+37
+C: -0.47430818923814055 0.7750317416216362
+38
+C: 0.18778812598948452 0.9647356197373574
+39
+C: 0.3616967305138905 0.869175475135562
+40
+C: 0.548652864304847 0.6989800344900872
+41
+C: 0.16849613768121882 0.9716090515865118
+42
+C: -0.2960758631975694 0.9123390832318141
+43
+C: 0.02147837256948054 0.9995386795117666
+44
+C: 0.5717654064188598 0.6730843200226762
+45
+C: 0.05833603421463707 0.9965969071121087
+46
+C: -0.704787887289771 0.503274033929621
+47
+C: 0.43378561919953756 0.8118300365756738
+48
+C: -0.0539752223501708 0.9970866753722496
+49
+C: -0.999999999999999 1.9984014443252818e-15
+50
+C: 0.038448238037552145 0.9985217329918077
+51
+C: 0.5812854339649596 0.6621072442601686
+52
+C: 0.9411771750250888 0.11418552521179337
+53
+C: 0.4393792397863345 0.8069458836447828
+54
+C: 0.4859017508950806 0.7638994884770951
+55
+C: 0.28270481459013236 0.9200779878075589
+56
+C: -0.6719201070790292 0.5485233697029059
+57
+C: -0.14334341668700296 0.9794526648924963
+58
+C: -0.5072062836784736 0.7427417857970717
+59
+C: -0.42112703600665263 0.8226520195442515
+60
+C: 0.33288722491463574 0.8891860954886327
+61
+C: -0.4430608967805512 0.8036970417440137
+62
+C: -0.39223159646945016 0.8461543747310264
+63
+C: -0.8768299610304997 0.2311692194392524
+64
+C: -0.8931724777313684 0.20224292502320818
+65
+C: 0.8429226547574215 0.2894813980967009
+66
+C: 0.735541813232386 0.45897824098681383
+67
+C: -0.5672685284982886 0.6782064165753864
+68
+C: -1.0000000000000002 -4.440892098500626e-16
+69
+C: 1.000000000000001 -2.220446049250313e-15
+70
+C: 0.7899836351246808 0.37592585623519514
+71
+C: -0.7923898951943775 0.37211825399384335
+['mass=-5.920']
+0
+C: 0.9999999999999958 8.43769498715119e-15
+1
+C: -0.9999999999999942 1.1546319456101628e-14
+2
+C: 0.712730311253965 0.49201550341982614
+3
+C: -0.19237679241786435 0.9629911697390139
+4
+C: -0.9109949507038148 0.17008819979215417
+5
+C: 0.38068151639894815 0.8550815830721974
+6
+C: -0.06884945629954807 0.9952597523672566
+7
+C: -0.4888316306062096 0.7610436369188742
+8
+C: -0.6614756918170637 0.5624499091351369
+9
+C: 0.0036103458004390077 0.9999869654032012
+10
+C: -0.35558307819565493 0.8735606745009028
+11
+C: -0.16343164155505902 0.9732900985386187
+12
+C: 0.4140335128966802 0.8285762501984345
+13
+C: -0.20130759883098917 0.9594752506529015
+14
+C: -0.24559825427928988 0.9396814974949652
+15
+C: -0.013680190070964215 0.9998128523996223
+16
+C: 0.7776409323949016 0.3952745802639881
+17
+C: 0.8628311284376897 0.25552244379894296
+18
+C: -0.33241633991245967 0.8894993769592041
+19
+C: 0.6106924114001939 0.6270547786582163
+20
+C: -0.9999999999999951 9.769962616701378e-15
+21
+C: 0.31765139528250036 0.8990975910750807
+22
+C: 0.6539392883147149 0.5723634071984441
+23
+C: -0.41077896055407304 0.8312606455661153
+24
+C: -0.5058847641868094 0.7440806053636563
+25
+C: 0.5604864613842653 0.6858549266049445
+26
+C: 0.06849113831433135 0.9953089639724071
+27
+C: -0.10450687451270091 0.9890783131795866
+28
+C: -0.10619380419779986 0.9887228759499993
+29
+C: -0.11254021816613087 0.9873346992951196
+30
+C: 0.12250621915952185 0.9849922262672393
+31
+C: 0.06934415737268955 0.9951913878382717
+32
+C: 0.2525456823792198 0.9362206783116143
+33
+C: 0.21808930764633405 0.9524370538903426
+34
+C: 0.508519035069577 0.7414083909719064
+35
+C: 0.7707324690601683 0.4059714611364167
+36
+C: 0.5011205191333167 0.7488782253035552
+37
+C: -0.023099937363781464 0.9994663928937894
+38
+C: 0.42661241411168405 0.818001848125801
+39
+C: 0.23345673295902214 0.9454979538360998
+40
+C: -0.09677094343786741 0.9906353845061451
+41
+C: 0.23015831180623933 0.947027151506502
+42
+C: -0.2185467740507194 0.9522373075520238
+43
+C: 0.298489752847075 0.9109038674452921
+44
+C: 0.032996579511041575 0.9989112257405716
+45
+C: 0.48815766946542566 0.7617020897420842
+46
+C: -0.14946580241092905 0.9776599739096571
+47
+C: 0.032080807136997624 0.9989708218134388
+48
+C: -0.596991164406633 0.6436015496204124
+49
+C: -0.9999999999999973 5.329070518200751e-15
+50
+C: 0.9614739284676901 0.07556788487690713
+51
+C: 0.10526515764726205 0.988919246585497
+52
+C: 0.41615095678729946 0.8268183811650152
+53
+C: 0.3229917770971119 0.8956763119276496
+54
+C: -0.7810984320257397 0.3898852394869309
+55
+C: 0.052126781402846656 0.9972827986605799
+56
+C: -0.019696258270974654 0.999612057410123
+57
+C: 0.6413656730166961 0.5886500734758404
+58
+C: 0.028634268897118786 0.9991800786447275
+59
+C: 0.5935805381291659 0.6476621447542898
+60
+C: -0.6701600634026461 0.5508854894201614
+61
+C: -0.23720821256896307 0.9437322638898377
+62
+C: -0.9533599233619636 0.09110485652727085
+63
+C: -0.6981659777160001 0.5125642675598616
+64
+C: -0.4610655662470902 0.7874185436212501
+65
+C: -0.30096659271905013 0.9094191100670854
+66
+C: 0.7424590798835096 0.44875451469853234
+67
+C: 0.022822570726153887 0.9994791302654497
+68
+C: -1.0000000000000004 -8.881784197001252e-16
+69
+C: 1.0000000000000009 -1.7763568394002505e-15
+70
+C: -0.12879586881094413 0.983411624177234
+71
+C: 0.12120560553274536 0.9853092011874405
+['mass=-5.912']
+0
+C: 0.9999999999999953 9.325873406851315e-15
+1
+C: -0.999999999999998 3.9968028886505635e-15
+2
+C: -0.7190829488296472 0.48291971270245904
+3
+C: -0.8014298576072265 0.3577101833356606
+4
+C: 0.6629563556260452 0.5604888705350328
+5
+C: 0.8647338357353684 0.2522353933343968
+6
+C: -0.2516731610440177 0.936660620010112
+7
+C: -0.49109819235282404 0.7588225654677887
+8
+C: -0.7917163359012458 0.3731852434671057
+9
+C: -0.5663555188082982 0.6792414263153834
+10
+C: 0.4769796614537335 0.7724904025594818
+11
+C: -0.4899437148037628 0.7599551563242891
+12
+C: 0.6036195029981686 0.6356434956002439
+13
+C: -0.5311476531009808 0.7178821706053202
+14
+C: 0.824925081085409 0.3194986105962314
+15
+C: -0.8782693737675819 0.2286429071018996
+16
+C: 0.30505323046320815 0.9069425265839608
+17
+C: 0.4657710697538032 0.7830573105803977
+18
+C: 0.8962217010679217 0.19678666253492083
+19
+C: 0.3999587785966729 0.8400329754234576
+20
+C: -1.0000000000000016 -3.1086244689504383e-15
+21
+C: -0.40254256173420544 0.8379594859924634
+22
+C: -0.010348681460917955 0.9998929047920204
+23
+C: 0.5017151311841306 0.7482819271408907
+24
+C: 0.5004884471437233 0.7495113142756644
+25
+C: -0.19054837629785645 0.9636913162902505
+26
+C: -0.27288392922298765 0.9255343611718234
+27
+C: 0.2284833060270267 0.9477953788669601
+28
+C: -0.29183200899341855 0.9148340785268653
+29
+C: -0.031693170883359253 0.9989955429193582
+30
+C: 0.5764409594701165 0.6677158202451714
+31
+C: 0.5826218800315601 0.6605517449084903
+32
+C: 0.7516786645181504 0.43497918530821
+33
+C: 0.2139940002626186 0.9542065678516024
+34
+C: -0.020791124979665246 0.9995677291220799
+35
+C: -0.23308234527908897 0.9456726203191995
+36
+C: -0.12687438974600662 0.9839028892265784
+37
+C: -0.3725520161941737 0.8612049952296561
+38
+C: -0.34591780179545806 0.8803408744009982
+39
+C: -0.09287937994573836 0.9913734207808952
+40
+C: 0.8735690090165711 0.2368771864858059
+41
+C: -0.3283520881017553 0.8921849062392171
+42
+C: -0.135982342145147 0.9815088026247202
+43
+C: 0.12047533299961943 0.9854856941386309
+44
+C: -0.3937067562770178 0.8449949900618289
+45
+C: 0.3470410391468015 0.8795625171479082
+46
+C: 0.283072733281484 0.9198698276725498
+47
+C: -0.17988312528582645 0.9676420612374037
+48
+C: 0.4082603817507631 0.8333234606927211
+49
+C: -1.0000000000000004 -8.881784197001252e-16
+50
+C: 0.030471157838855123 0.9990715085399596
+51
+C: 0.658376502372901 0.5665403811232255
+52
+C: 0.5440592933208948 0.7039994853511686
+53
+C: 0.7723900726093504 0.4034135757345223
+54
+C: -0.16457710257770813 0.9729143773071265
+55
+C: -0.3694936900749687 0.863474412994783
+56
+C: 0.5832137825028358 0.6598616838987349
+57
+C: 0.11305529278884627 0.9872185007724282
+58
+C: -0.6154928564507542 0.6211685436580912
+59
+C: -0.5746327274690827 0.669797228521443
+60
+C: -0.021836876755564893 0.9995231508135622
+61
+C: -0.25147664758360394 0.9367594957201119
+62
+C: -0.8545404404932119 0.2697606355616674
+63
+C: 0.3612228820197938 0.8695180295053141
+64
+C: -0.3299082750869376 0.8911605300291615
+65
+C: 0.4074557147347161 0.8339798405300216
+66
+C: -0.3824942586693949 0.85369814208495
+67
+C: 0.25519663672344783 0.9348746766050406
+68
+C: -1.0000000000000002 -4.440892098500626e-16
+69
+C: 0.9999999999999996 8.881784197001252e-16
+70
+C: -0.980328398486667 0.038956231120566676
+71
+C: 0.9785288813367221 0.0424812283899032
+['mass=-5.904']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+1
+C: -0.999999999999998 3.9968028886505635e-15
+2
+C: 0.017330828222142367 0.9996996423931346
+3
+C: -0.541547000936394 0.7067268457767973
+4
+C: 0.10329693939570334 0.9893297423114804
+5
+C: 0.4446126073547989 0.8023196293811674
+6
+C: -0.6513291414717708 0.575770349469646
+7
+C: -0.5791142879717459 0.6646266414669777
+8
+C: -0.1094498750780813 0.9880207248453924
+9
+C: -0.0646651837355963 0.9958184140124415
+10
+C: -0.3410184499227113 0.8837064168123112
+11
+C: -0.47750878331223856 0.7719853618596656
+12
+C: -0.7522334580282399 0.4341448246228762
+13
+C: 0.6782713123011288 0.5399480269093047
+14
+C: -0.17325462774859177 0.9699828339636969
+15
+C: 0.3089669616355532 0.9045394166176945
+16
+C: 0.9503541336696613 0.09682702061698767
+17
+C: 0.5440829654547289 0.7039737267019883
+18
+C: -0.3570711805538387 0.872500172017888
+19
+C: 0.8606641067371128 0.25925729537440767
+20
+C: -1.0000000000000002 -4.440892098500626e-16
+21
+C: -0.2688830470327898 0.9277019070183625
+22
+C: -0.14847771465939952 0.977954368249522
+23
+C: 0.08813112490496183 0.992232904822986
+24
+C: 0.32818823220971044 0.8922924842390652
+25
+C: -0.13908224499245075 0.9806561291278599
+26
+C: 0.2040057218340739 0.9583816654589584
+27
+C: 0.18107656721991042 0.9672112768038532
+28
+C: -0.13116195289661642 0.9827965421123458
+29
+C: -0.0018402306827499937 0.9999966135510343
+30
+C: -0.038042921105828825 0.9985527361537356
+31
+C: 0.35633068479735236 0.8730284430718499
+32
+C: 0.5583046351011625 0.6882959344245578
+33
+C: 0.2134821046991526 0.9544253909732201
+34
+C: 0.010655689082882613 0.9998864562901689
+35
+C: -0.2122052582091181 0.9549689283884015
+36
+C: 0.13506995115717363 0.9817561082943987
+37
+C: 0.4467775580859542 0.8003898135907518
+38
+C: 0.414184064269172 0.8284515609054705
+39
+C: 0.16189081469487326 0.9737913641174302
+40
+C: 0.26915710160769774 0.9275544546541434
+41
+C: -0.2593102160045769 0.9327582118756597
+42
+C: -0.12898283268946126 0.9833634288714025
+43
+C: 0.2937078909697599 0.9137356747820956
+44
+C: 0.054373275536365305 0.9970435469074465
+45
+C: 0.02749518214240651 0.9992440149589559
+46
+C: -0.10776840724740747 0.9883859703993569
+47
+C: 0.26035273570591055 0.9322164530104483
+48
+C: -0.11850414992653113 0.9859567664501903
+49
+C: -0.9999999999999953 9.325873406851315e-15
+50
+C: 0.23975476730324694 0.9425176515553659
+51
+C: 0.5548880416299726 0.6920992612560537
+52
+C: 0.26463050791345066 0.9299706942814692
+53
+C: 0.9816492639116332 0.03636472266174873
+54
+C: -0.5880308572640813 0.6542197109052696
+55
+C: 0.28329984245951867 0.9197411992624119
+56
+C: 0.17834213500915502 0.9681940828803763
+57
+C: 0.07367831304692446 0.9945715061865594
+58
+C: 0.27390340701345584 0.9249769236264211
+59
+C: -0.41250594126452883 0.8298388484214652
+60
+C: -0.191722035203484 0.9632426612174341
+61
+C: -0.7544415113761518 0.4308180059124679
+62
+C: -0.8179169111342917 0.33101192648053923
+63
+C: -0.17406375610891334 0.9697018088092567
+64
+C: 0.6008685574359112 0.638956976684887
+65
+C: 0.3010007676582822 0.9093985378691248
+66
+C: -0.40086720599989123 0.8393054831538408
+67
+C: -0.5036246417476681 0.746362220224533
+68
+C: -0.9999999999999978 4.440892098500626e-15
+69
+C: 1.0 0.0
+70
+C: 0.22474504539101098 0.9494896645721924
+71
+C: -0.2253112726762454 0.9492348304050106
+['mass=-5.896']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+1
+C: -1.0000000000000009 -1.7763568394002505e-15
+2
+C: -0.46728812086122085 0.781641812101989
+3
+C: 0.2573183701944401 0.9337872563604771
+4
+C: -0.027667150311764754 0.9992345287936262
+5
+C: 0.451030477010083 0.796571508808057
+6
+C: -0.3993172239471736 0.8405457546591228
+7
+C: 0.28120941493304163 0.9209212649530164
+8
+C: -0.2426733855559806 0.9411096279427984
+9
+C: 0.1825299588816774 0.9666828141106532
+10
+C: -0.6093957730815043 0.6286367917503958
+11
+C: -0.93750949645566 0.12107594405545496
+12
+C: -0.5388468955080524 0.709644023201334
+13
+C: 0.3230443923210955 0.8956423205898941
+14
+C: 0.6967152981932382 0.5145877932635072
+15
+C: -0.4982452340798499 0.7517516867167156
+16
+C: 0.9803031644709629 0.03900570572821627
+17
+C: 0.6381602287111131 0.5927515224913797
+18
+C: 0.3651026192326319 0.8667000774294719
+19
+C: 0.2725022771133535 0.9257425089680371
+20
+C: -1.0000000000000013 -2.6645352591003757e-15
+21
+C: -0.16301308775829773 0.9734267332195056
+22
+C: -0.01266085133307926 0.9998397028435216
+23
+C: 0.3442783791536702 0.8814723976473217
+24
+C: 0.18212719025529406 0.9668296865697119
+25
+C: -0.12162651796492124 0.9852069901277287
+26
+C: 0.1788106573967294 0.9680267488013494
+27
+C: -0.029124550835373686 0.9991517605386377
+28
+C: -0.49122672811640994 0.7586963015840467
+29
+C: 0.5763681493469591 0.6677997564183614
+30
+C: 0.15961284407930282 0.9745237400049162
+31
+C: 0.2665166231542023 0.9289688895824809
+32
+C: 0.12563010560725926 0.9842170765651089
+33
+C: 0.43118693306927236 0.8140778287503149
+34
+C: 0.38634085629563 0.8507407427567594
+35
+C: 0.06752840298240029 0.9954399147906465
+36
+C: 0.26395268506301317 0.9303289800480258
+37
+C: -0.2210921567683414 0.9511182582155231
+38
+C: -0.19213124249700686 0.9630855856565563
+39
+C: 0.2749513192267286 0.9244017720554816
+40
+C: 0.46521551041949005 0.7835745288651333
+41
+C: -0.12303074613962134 0.9848634355043281
+42
+C: 0.1014162262786035 0.9897147490474071
+43
+C: -0.5690294455490839 0.6762054900981023
+44
+C: 0.2824870223289653 0.9202010822157147
+45
+C: 0.04176828879521382 0.9982554100511196
+46
+C: -0.11689482819103744 0.9863355991421878
+47
+C: 0.1905996629017124 0.9636717685017536
+48
+C: 0.11711914414071226 0.9862831060757471
+49
+C: -0.9999999999999991 1.7763568394002505e-15
+50
+C: 0.4017226383381217 0.8386189218466586
+51
+C: 0.5585159725610616 0.6880599083941715
+52
+C: 0.7328805806528566 0.4628860545019319
+53
+C: 0.3109831338379695 0.9032894904683155
+54
+C: -0.492224882072528 0.7577146654686859
+55
+C: 0.2070885219456257 0.9571143440783761
+56
+C: 0.37486914618010403 0.8594731232421998
+57
+C: -0.12471041258648316 0.9844473129925091
+58
+C: -0.4007411596954755 0.8394065229259253
+59
+C: 0.5194393426105958 0.7301827693482721
+60
+C: -0.4049088314720714 0.8360488381959217
+61
+C: -0.8020130389679763 0.3567750853253514
+62
+C: -0.24459503695956417 0.9401732678947494
+63
+C: -0.8061319188446104 0.35015132941990645
+64
+C: 0.14105722178241475 0.9801028601830266
+65
+C: -0.1315873849080781 0.9826847601330533
+66
+C: -0.3033219684241504 0.9079957834712987
+67
+C: 0.2911346752480445 0.9152406008682157
+68
+C: -0.9999999999999991 1.7763568394002505e-15
+69
+C: 1.0 0.0
+70
+C: 0.9397743093991953 0.11682424739326558
+71
+C: -0.9520447888713648 0.0936107199828784
+['mass=-5.888']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+1
+C: -1.0000000000000013 -2.6645352591003757e-15
+2
+C: 0.10616423101951263 0.9887291560520356
+3
+C: 0.4109684704899543 0.8311049162631476
+4
+C: -0.06795897897509723 0.9953815771766623
+5
+C: -0.39530415171974564 0.8437346276331323
+6
+C: -0.4615848587247542 0.7869394181960487
+7
+C: -0.3306883960120233 0.8906451847429953
+8
+C: -0.6261849079326055 0.6078924610774343
+9
+C: -0.0612773288163262 0.9962450889731358
+10
+C: -0.33439004363358554 0.8881832987187288
+11
+C: 0.011248076598683432 0.9998734807728301
+12
+C: -0.2469710094651232 0.939005320483778
+13
+C: 0.0029390844598091645 0.9999913617825381
+14
+C: 0.3309224515924425 0.8904903310320476
+15
+C: -0.01892057470760336 0.999642011852734
+16
+C: -0.4822747672663316 0.7674110488582057
+17
+C: 0.6235293574318214 0.6112111404206599
+18
+C: 0.790271554858084 0.37547086958218634
+19
+C: 0.9913075602403707 0.017309321010283818
+20
+C: -0.9999999999999983 3.3306690738754696e-15
+21
+C: -0.27571311541645316 0.9239822779873536
+22
+C: -0.1976288314953496 0.9609428449617827
+23
+C: -0.3222272126612184 0.8961696234205819
+24
+C: 0.07678179002261828 0.9941045567209226
+25
+C: 0.5781354431942556 0.6657594093225816
+26
+C: 0.23221818098234898 0.9460747164212491
+27
+C: 0.050003635654759265 0.9974996364213061
+28
+C: -0.27387025719315056 0.9249950822249575
+29
+C: 0.4480152746526858 0.7992823136778785
+30
+C: 0.6010879320642458 0.6386932979267286
+31
+C: 0.23564023268407813 0.9444736807405936
+32
+C: 0.08375391323412038 0.9929852820179714
+33
+C: -0.3884693565543202 0.8490915590182725
+34
+C: 0.2889730424040478 0.9164945807637483
+35
+C: -0.15273752890088943 0.97667124726525
+36
+C: 0.16144431856748176 0.9739357320022815
+37
+C: 0.4056220739085654 0.8354707331581143
+38
+C: 0.5334969475661511 0.7153810069375994
+39
+C: 0.1444688025072568 0.9791287651021192
+40
+C: 0.2748393688274289 0.9244633213425405
+41
+C: -0.4931606449333505 0.7567925782889218
+42
+C: 0.30752138721013245 0.9054305964083558
+43
+C: 0.23608614052929766 0.9442633342499808
+44
+C: -0.029601507697305154 0.9991237507420464
+45
+C: -0.5945279109768524 0.6465365630694999
+46
+C: -0.4354541427662227 0.8103796895477342
+47
+C: 0.3237141148239631 0.895209171863738
+48
+C: 0.5893861400213363 0.6526239779507498
+49
+C: -1.0 0.0
+50
+C: 0.6691407268033666 0.5522506877330624
+51
+C: 0.4837438146676709 0.76599192177077
+52
+C: 0.4595600029632406 0.7888046036764262
+53
+C: 0.38033391463617744 0.8553461133775209
+54
+C: -0.7455852858558415 0.44410258151526316
+55
+C: -0.8903631808063401 0.20725340626441646
+56
+C: 0.6494824244759209 0.5781725802968798
+57
+C: 0.9293661708415234 0.13627852049536437
+58
+C: -0.09004877874521122 0.991891217446496
+59
+C: -0.6748904339749338 0.5445229021291256
+60
+C: -0.08919766520748157 0.9920437765215341
+61
+C: -0.3107473719140618 0.9034360708485037
+62
+C: -0.25130796008808126 0.9368443091963674
+63
+C: -0.7632119806433486 0.4175074726024569
+64
+C: 0.3495432749262587 0.8778194989538259
+65
+C: -0.5621863877514466 0.6839464654269802
+66
+C: 0.13016731325175038 0.9830564705608207
+67
+C: 0.12387684598978554 0.9846545270276229
+68
+C: -0.9999999999999984 3.1086244689504383e-15
+69
+C: 0.9999999999999973 5.329070518200751e-15
+70
+C: -0.11913055202749799 0.9858079115736236
+71
+C: 0.11576518027150798 0.9865984230367053
+['mass=-5.880']
+0
+C: 0.999999999999996 7.993605777301127e-15
+1
+C: -0.9999999999999962 7.549516567451064e-15
+2
+C: 0.646955741885548 0.5814482680413201
+3
+C: -0.26558568803100735 0.9294642423130964
+4
+C: 0.35955365234726433 0.8707211710837426
+5
+C: -0.7030652389351528 0.5056992698010565
+6
+C: -0.5468864634708879 0.7009151960723052
+7
+C: 0.4316107496227282 0.8137121608101066
+8
+C: 0.29624482878858027 0.9122390014160248
+9
+C: -0.835646177184858 0.30169546655633295
+10
+C: -0.7735978072773524 0.40154643257567235
+11
+C: -0.6434365076153782 0.5859894606677254
+12
+C: 0.13013124530852838 0.9830658589944516
+13
+C: -0.2662352126790648 0.9291188115297331
+14
+C: 0.35496751430592577 0.8739980637874724
+15
+C: -0.2318661612203224 0.9462380832809515
+16
+C: 0.47603295755822794 0.7733926233183663
+17
+C: 0.6098955905480631 0.6280273686300294
+18
+C: -0.03319096647937658 0.9988983597441649
+19
+C: 0.9569395092945164 0.08426677555117013
+20
+C: -0.9999999999999981 3.774758283725532e-15
+21
+C: -0.5640312914837445 0.6818687022271792
+22
+C: -0.01886812535208543 0.999643993845698
+23
+C: -0.19332765345440978 0.9626244184098116
+24
+C: 0.21002308155445842 0.9558903052143694
+25
+C: 0.1683121205296258 0.9716710300828207
+26
+C: 0.3094734927954779 0.9042261572569673
+27
+C: 0.20317656897386135 0.9587192818200098
+28
+C: -0.11633955744668086 0.9864651073731104
+29
+C: 0.284020856472154 0.9193321530888241
+30
+C: 0.1711343185534655 0.970713045013241
+31
+C: 0.2844390327409805 0.9190944366533754
+32
+C: -0.04882644810781003 0.9976159779651753
+33
+C: -0.12275700527755062 0.9849307176552874
+34
+C: 0.6090226014256492 0.6290914709527348
+35
+C: 0.4828511333782608 0.7668547829953289
+36
+C: -0.26101663700814753 0.931870315204957
+37
+C: 1.0438847329513612e-05 0.9999999998910305
+38
+C: 0.2004435617076617 0.9598223785699468
+39
+C: -0.053634940143853664 0.9971232931957652
+40
+C: 0.1268721050776121 0.9839034689531754
+41
+C: -0.144236876865093 0.979195723352204
+42
+C: 0.5764915914342452 0.6676574450056113
+43
+C: -0.45903156668397604 0.7892900207876544
+44
+C: 0.4424810073414677 0.80421055814208
+45
+C: -0.4179403476108193 0.8253258658389475
+46
+C: 0.511125514872694 0.7387507080461235
+47
+C: -0.22123303452329718 0.9510559444356136
+48
+C: -0.3823618168602352 0.85379944100734
+49
+C: -0.9999999999999987 2.6645352591003757e-15
+50
+C: 0.7125204547298503 0.49231460159156737
+51
+C: 0.3145120019800936 0.9010822006104736
+52
+C: 0.694115266030656 0.5182039974631917
+53
+C: 0.2148047011635876 0.9538589403580219
+54
+C: -0.16648859904606567 0.9722815463876784
+55
+C: 0.16202585740283948 0.9737476215328748
+56
+C: -0.780215059615593 0.39126446074903665
+57
+C: 0.7928841652426909 0.37133470050740125
+58
+C: 0.17418035624847855 0.9696612034971531
+59
+C: -0.6042623914518033 0.6348669622769476
+60
+C: -0.39041444249122736 0.8475765630942641
+61
+C: -0.3050254101458263 0.9069594991653704
+62
+C: -0.1636089258918792 0.9732321193685056
+63
+C: -0.7241101181781958 0.4756645367519593
+64
+C: -0.9501928612467929 0.09713352643563289
+65
+C: 0.6731569503568922 0.5468597201862087
+66
+C: 0.5763210835362963 0.6678540086715494
+67
+C: -0.324595570704539 0.8946377154789946
+68
+C: -1.0000000000000027 -5.329070518200751e-15
+69
+C: 1.0000000000000036 -7.105427357601002e-15
+70
+C: -0.5688505018961161 0.6764091064925368
+71
+C: 0.5617815391870362 0.6844015022286445
+['mass=-5.872']
+0
+C: 1.0 0.0
+1
+C: -1.000000000000001 -2.220446049250313e-15
+2
+C: 0.40642666901236296 0.8348173627155151
+3
+C: -0.4879107893551917 0.7619430616307937
+4
+C: 0.2920709091144631 0.914694584049051
+5
+C: -0.1908940613965001 0.9635594573235493
+6
+C: -0.9183136766011224 0.15669999136732915
+7
+C: -0.4767222021146269 0.7727359420109808
+8
+C: 0.12927956486148698 0.9832867941092246
+9
+C: -0.591762208102327 0.6498174890618582
+10
+C: 0.2917633163319842 0.9148741672429626
+11
+C: -0.1625945922787811 0.9735629985616969
+12
+C: -0.6251077728501967 0.609240272322267
+13
+C: 0.6297595952640751 0.6034028521728283
+14
+C: 0.35200185432258874 0.876094694553459
+15
+C: 0.2423201254281092 0.9412809568125055
+16
+C: 0.8956106543965605 0.19788155573136468
+17
+C: 0.7840501573750723 0.38526535072012436
+18
+C: 0.8976719453267425 0.1941850785733017
+19
+C: -0.5084987000774173 0.7414290720195769
+20
+C: -1.0000000000000002 -4.440892098500626e-16
+21
+C: -0.10032574982026629 0.9899347439230013
+22
+C: -0.43679334337319253 0.8092115751848683
+23
+C: 0.12590658638321817 0.9841475315053252
+24
+C: 0.20922202335026677 0.9562261449452204
+25
+C: 0.26005602886787926 0.9323708618494687
+26
+C: -0.30576737588611796 0.9065063118437174
+27
+C: -0.004459700465977504 0.9999801110717538
+28
+C: 0.46188951535160255 0.7866580756082617
+29
+C: 0.44574644038557387 0.80131011088359
+30
+C: 0.322250359267518 0.8961547059519556
+31
+C: 0.5213138433952174 0.7282318766845068
+32
+C: -0.012157565228296474 0.9998521936077197
+33
+C: 0.10517904673201048 0.9889373681285456
+34
+C: 0.5866255579129213 0.6558704548033538
+35
+C: 0.43685101421653405 0.8091611913779856
+36
+C: -0.009900683911961958 0.9999019764580754
+37
+C: -0.5253143753716513 0.7240448070278919
+38
+C: 0.23477577232509803 0.9448803367291537
+39
+C: 0.2813461969920279 0.920844317438123
+40
+C: 0.04942688811577878 0.9975569827311903
+41
+C: 0.5708739489602352 0.6741029343985467
+42
+C: -0.16762381228919268 0.9719022575536375
+43
+C: 0.14666929276616913 0.9784881185594718
+44
+C: -0.019900602883404533 0.999603966004877
+45
+C: -0.29716626919866496 0.9116922084505465
+46
+C: -0.1987522931598794 0.9604975259636893
+47
+C: -0.33344626953717854 0.8888135853317393
+48
+C: -0.20322861403060902 0.9586981304391977
+49
+C: -0.9999999999999987 2.6645352591003757e-15
+50
+C: 0.8678316623629346 0.24686820580038538
+51
+C: 0.9895737234551998 0.020743845847011833
+52
+C: 0.5006464036798933 0.7493531784823892
+53
+C: -0.32954194165296696 0.8914021086915925
+54
+C: -0.5227490886388286 0.7267333903272741
+55
+C: -0.5216596094979455 0.7278712518184509
+56
+C: 0.731687814980212 0.4646329414094831
+57
+C: 0.406580263272442 0.8346924895173118
+58
+C: -0.5212398365564559 0.7283090327865991
+59
+C: -0.6373232960866974 0.593819016265188
+60
+C: -0.528153474906677 0.7210539069440021
+61
+C: -0.5423887913191323 0.7058143990513708
+62
+C: -0.0779000974486301 0.993931574817494
+63
+C: -0.12997152102563747 0.9831074037222822
+64
+C: 0.43988930115713315 0.806497402727489
+65
+C: -0.35506406438432914 0.873929510182881
+66
+C: -0.6972026518132513 0.5139084623045703
+67
+C: 0.602362392566 0.6371595480221641
+68
+C: -0.9999999999999977 4.6629367034256575e-15
+69
+C: 0.999999999999993 1.3988810110276972e-14
+70
+C: -0.13900783706298236 0.9806768212350714
+71
+C: 0.19314964677309826 0.9626932139514274
+['mass=-5.864']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+1
+C: -1.0000000000000007 -1.3322676295501878e-15
+2
+C: -0.5165302625901358 0.7331964878285654
+3
+C: 0.6882902841070438 0.5262564848038449
+4
+C: -0.6314747376235196 0.6012396557433071
+5
+C: 0.49659074633497247 0.7533976306544751
+6
+C: 0.29196968684693286 0.9147537019625039
+7
+C: -0.8052421922951669 0.3515850117476734
+8
+C: -0.809622852694655 0.34451083639456903
+9
+C: -0.5648688030777509 0.6809232353095092
+10
+C: 0.3417070046346827 0.8832363229835929
+11
+C: -0.3659341132982585 0.8660922247246173
+12
+C: -0.2537570089143125 0.9356073804268615
+13
+C: -0.31983013825383855 0.8977086826645305
+14
+C: 0.181925507722015 0.9669031096400871
+15
+C: 0.33127836120625936 0.8902546473964952
+16
+C: -0.6403756118526042 0.5899190757444028
+17
+C: 0.8845492212786227 0.21757267513538225
+18
+C: 0.8322909899356246 0.30729170807197814
+19
+C: 0.9144012071450478 0.16387043237167942
+20
+C: -1.000000000000001 -2.220446049250313e-15
+21
+C: 0.47123869716379535 0.7779340902953688
+22
+C: 0.49101304126217865 0.758906193310466
+23
+C: -0.20351923890335505 0.9585799193961991
+24
+C: -0.4370198207300052 0.809013676289114
+25
+C: 0.19435297235772178 0.9622269221357186
+26
+C: -0.2919294351998354 0.9147772048639051
+27
+C: 0.09826794605460544 0.9903434107782092
+28
+C: -0.16674942327725623 0.9721946298367025
+29
+C: 0.0717432621634181 0.9948529043341511
+30
+C: 0.6879726032187924 0.526693697220358
+31
+C: 0.39911859899323643 0.8407043439376761
+32
+C: 0.30869010333496827 0.9047104201030466
+33
+C: 0.6563172355943794 0.5692476862617519
+34
+C: 0.4298058314674791 0.815266947236549
+35
+C: -0.704098172818455 0.5042457630337132
+36
+C: 0.04687729874260192 0.9978025188625969
+37
+C: 0.25373485842420673 0.9356186216204477
+38
+C: -0.27330784004738773 0.9253028245686316
+39
+C: -0.10065692573705712 0.9898681833011646
+40
+C: 0.6269803932668063 0.6068955864590009
+41
+C: -0.5176812888467468 0.7320060831779711
+42
+C: 0.27141161659089774 0.9263357343795156
+43
+C: -0.37539641392261025 0.8590775324140443
+44
+C: 0.32471482862303025 0.8945602800723161
+45
+C: 0.21803016448185336 0.9524628473760159
+46
+C: -0.03976108462774996 0.9984190561492249
+47
+C: -0.7389231602694915 0.4539925632173475
+48
+C: 0.2935934457709643 0.9138028886003319
+49
+C: -1.000000000000003 -6.217248937900877e-15
+50
+C: 0.9358153933420588 0.12424954958404788
+51
+C: 0.05181036481813648 0.9973156860974116
+52
+C: 0.3332810041455636 0.8889237722757248
+53
+C: 0.5012024460239243 0.7487961080996353
+54
+C: -0.190490964493718 0.9637131924462531
+55
+C: 0.41101655040880464 0.8310653952900465
+56
+C: -0.1387405000213367 0.9807510736538295
+57
+C: 0.13349946972425542 0.9821778915833426
+58
+C: -0.156399441174699 0.9755392148002419
+59
+C: -0.20223941113232238 0.9590992205848514
+60
+C: -0.40795279341298035 0.8335745183465462
+61
+C: -0.8000322226093085 0.3599484427868098
+62
+C: -0.6755885908835386 0.5435800558679946
+63
+C: 0.2838666332832858 0.9194197345084125
+64
+C: -0.29283106192240843 0.9142499691733946
+65
+C: 0.3540865206916114 0.8746227358645091
+66
+C: 0.3036594577341951 0.9077909337285746
+67
+C: -0.3370518652543072 0.8863960401285923
+68
+C: -1.0000000000000009 -1.7763568394002505e-15
+69
+C: 0.9999999999999983 3.3306690738754696e-15
+70
+C: 0.688933001331467 0.5253713196764169
+71
+C: -0.6811641992850035 0.53601533361242
+['mass=-5.856']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+1
+C: -0.9999999999999971 5.773159728050814e-15
+2
+C: -0.27866867556089814 0.9223437692611349
+3
+C: 0.9539763492036493 0.089929125160077
+4
+C: -0.6045224246849081 0.6345526380530796
+5
+C: -0.06206042287793964 0.9961485039122113
+6
+C: -0.14799592394256023 0.978097206496388
+7
+C: -0.7805002618899937 0.39081934118965134
+8
+C: -0.7380059793858452 0.45534717439073935
+9
+C: -0.7914105623002728 0.3736693218795659
+10
+C: 0.44537348800808196 0.8016424561795149
+11
+C: 0.006006689830398088 0.9999639196772814
+12
+C: 0.0951102615535121 0.9909540381472225
+13
+C: -0.11169708756457991 0.9875237606295906
+14
+C: 0.026311159474121548 0.9993077228871273
+15
+C: -0.4530209656140379 0.7947720047141247
+16
+C: 0.7062739611231069 0.501177091839476
+17
+C: 0.6234552406431534 0.6113035629145878
+18
+C: 0.369333191935986 0.8635929933343761
+19
+C: 0.3225372027798987 0.8959697528229185
+20
+C: -0.9999999999999984 3.1086244689504383e-15
+21
+C: -0.653523590891003 0.572906916148929
+22
+C: 0.2782430967535807 0.9225807791089775
+23
+C: -0.16311201051769683 0.9733944720248747
+24
+C: -0.15975551534784013 0.974478175315946
+25
+C: -0.04542785094603005 0.9979363103584252
+26
+C: 0.44689263355623465 0.800286974073173
+27
+C: -0.44417629983259543 0.8027074146670243
+28
+C: 0.6091608939953386 0.6289230052267999
+29
+C: 0.14949395749398667 0.9776515566727861
+30
+C: 0.049965481574326696 0.9975034506510456
+31
+C: 0.5487226261576541 0.6989034795426474
+32
+C: 0.5034989408453334 0.7464888165676274
+33
+C: 0.6185991669791265 0.6173350706127307
+34
+C: 0.569032561033573 0.676201944483573
+35
+C: 0.29810177842709445 0.9111353296986034
+36
+C: 0.4016750179413414 0.838657179961823
+37
+C: -0.0970915849699536 0.9905732241280223
+38
+C: 0.20872378716678175 0.956434380670756
+39
+C: 0.10215318353544056 0.9895647270935746
+40
+C: -0.29279209117825056 0.914272791343467
+41
+C: -0.6782664601766051 0.5399546089994978
+42
+C: -0.12111273931176254 0.985331704376401
+43
+C: 0.004767731964560568 0.9999772687319141
+44
+C: -0.060963130340687184 0.9962834967390644
+45
+C: -0.0646965353814547 0.9958143583096362
+46
+C: 0.01523631623480308 0.9997678546675931
+47
+C: 0.46215715389982337 0.7864107650992149
+48
+C: 0.5413404634830368 0.7069505025959709
+49
+C: -0.9999999999999997 6.661338147750939e-16
+50
+C: 0.5678829464973192 0.677508959077523
+51
+C: 0.6776754041356791 0.540756046629544
+52
+C: 0.8834951134724618 0.2194363844702819
+53
+C: -0.11308238076890138 0.9872123751596372
+54
+C: -0.007865947219154637 0.9999381268743455
+55
+C: -0.8338876984303856 0.3046313064064743
+56
+C: 0.848382011705903 0.28024796221384507
+57
+C: -0.01839628052153733 0.9996615768629729
+58
+C: 0.2798026125867052 0.9217104979896542
+59
+C: -0.2105601244681063 0.9556644339839756
+60
+C: -0.7384422826954462 0.45470299512753876
+61
+C: -0.5095618296105322 0.7403467418039669
+62
+C: 0.015461457094077147 0.999760943344528
+63
+C: -0.7876529977790417 0.3796027550896889
+64
+C: 0.34556413279100756 0.8805854301283988
+65
+C: 0.2625522479543824 0.9310663170941005
+66
+C: 0.21377235999803296 0.9543013781008713
+67
+C: -0.7587392460793927 0.42431475645887473
+68
+C: -0.9999999999999998 4.440892098500626e-16
+69
+C: 0.9999999999999973 5.329070518200751e-15
+70
+C: 0.1999354344234353 0.9600258220619122
+71
+C: -0.06309387665339061 0.9960191627288467
+['mass=-5.848']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+1
+C: -1.000000000000002 -3.9968028886505635e-15
+2
+C: 0.5140970436555572 0.7357042297046161
+3
+C: -0.1393022036624355 0.9805948960547893
+4
+C: -0.20872294387921542 0.9564347326983939
+5
+C: -0.13924425365272514 0.9806110378246955
+6
+C: -0.8997019353616622 0.19053642750647937
+7
+C: -0.8283170343886597 0.31389089054157604
+8
+C: -0.5432713634654969 0.7048562256383399
+9
+C: 0.5529595177236775 0.694235771758798
+10
+C: -0.822749448519104 0.32308334496151014
+11
+C: 0.49797665636789357 0.7520192497126529
+12
+C: -0.5277867491601934 0.721441147410915
+13
+C: 0.4902523898295354 0.7596525942664293
+14
+C: -0.4845103072172739 0.7652497622002229
+15
+C: 0.5620112418736498 0.6841433640076379
+16
+C: 0.9504979391964615 0.09655366758327977
+17
+C: 0.6029460940262177 0.6364560076985275
+18
+C: -0.18485339507345214 0.9658292223298183
+19
+C: 0.6513997173539597 0.5756784082311814
+20
+C: -0.9999999999999984 3.1086244689504383e-15
+21
+C: -0.011614840811269234 0.9998650954729289
+22
+C: -0.7706879529213215 0.40604007922194285
+23
+C: 0.6382106372027186 0.5926871825612998
+24
+C: 0.6867610465268073 0.5283592649734045
+25
+C: -0.6068679052145447 0.6317113456205103
+26
+C: -0.7891543704856179 0.3772353795434482
+27
+C: 0.8303615209017208 0.3104997446057811
+28
+C: -0.003522686739388159 0.9999875906781361
+29
+C: -0.06406493152281759 0.9958956845489767
+30
+C: -0.054724750330031366 0.9970052017013157
+31
+C: 0.1071414941206068 0.988520700237604
+32
+C: 0.029642345245385893 0.9991213313683533
+33
+C: 0.6549088424929961 0.5710944080244841
+34
+C: 0.16570862154761443 0.9725406527447895
+35
+C: -0.2257528206851104 0.9490356639527164
+36
+C: 0.3467829154319206 0.8797416095645374
+37
+C: 0.16142635753478712 0.973941531093051
+38
+C: 0.4863355978448158 0.7634776862689256
+39
+C: 0.2847172142296017 0.9189361079213351
+40
+C: 0.2626947564208828 0.930991464948973
+41
+C: 0.23491427903838527 0.9448152815038756
+42
+C: 0.084129096899057 0.9929222950549491
+43
+C: -0.14291133855519714 0.9795763493123618
+44
+C: 0.0896590364233174 0.9919612571876423
+45
+C: 0.3716198292011002 0.8618987025445451
+46
+C: -0.844789218434225 0.2863311764172912
+47
+C: -0.30034540502376633 0.9097926376811097
+48
+C: 0.5012339381747024 0.7487645392218786
+49
+C: -0.9999999999999956 8.881784197001252e-15
+50
+C: 0.43348592800503005 0.8120899502216179
+51
+C: 0.10179810594938782 0.9896371456251172
+52
+C: 0.7203360715235102 0.48111594406207636
+53
+C: 0.7183624423053485 0.48395540148509486
+54
+C: -0.7862135651427299 0.38186822998555847
+55
+C: 0.8085027920616907 0.34632323522845043
+56
+C: 0.4382493004665754 0.8079375506405573
+57
+C: -0.516714239183275 0.7330063950252492
+58
+C: 0.13880774178303168 0.9807324108210952
+59
+C: -0.9722811174287025 0.054669428691593636
+60
+C: -0.6957223328532958 0.5159704355691679
+61
+C: 0.525869958008932 0.7234607872636841
+62
+C: -0.3432161099420237 0.8822027018762647
+63
+C: -0.9152037334501577 0.16240212627889272
+64
+C: 0.11215528658671899 0.9874211916906509
+65
+C: -0.5965331698957067 0.6441481772141799
+66
+C: -0.23234749859328813 0.946014639897442
+67
+C: 0.3241024879577191 0.8949575772996166
+68
+C: -1.0000000000000016 -3.1086244689504383e-15
+69
+C: 0.9999999999999969 6.217248937900877e-15
+70
+C: 0.4002829841446728 0.8397735326042357
+71
+C: -0.15873730301474026 0.9748024686316066
+['mass=-5.840']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+1
+C: -0.9999999999999991 1.7763568394002505e-15
+2
+C: 0.3024596487500436 0.9085181608780002
+3
+C: 0.521363750223881 0.7281798399524906
+4
+C: -0.645895256151128 0.5828193180814688
+5
+C: -0.2130158726196829 0.9546242380120751
+6
+C: 0.2203540960449275 0.9514440723562229
+7
+C: -0.7581609500160953 0.42519197387069185
+8
+C: -0.0065987850819471255 0.9999564560354423
+9
+C: -0.19278445217733434 0.9628341549986851
+10
+C: -0.505376603335875 0.7445944888006937
+11
+C: -0.7913321812890124 0.37379337885637365
+12
+C: -0.17065009990329133 0.9708785434029967
+13
+C: -0.29254245861333167 0.9144189099084671
+14
+C: 0.32831026218950143 0.8922123717410608
+15
+C: 0.22494294527828268 0.9494006713695315
+16
+C: 0.374863542846781 0.8594773242443596
+17
+C: 0.9796769671384963 0.040233040058317626
+18
+C: 0.8575440352636337 0.26461822758376385
+19
+C: 0.9774910087589426 0.04451132779542488
+20
+C: -0.9999999999999994 1.1102230246251565e-15
+21
+C: -0.04135589998160584 0.9982896895367114
+22
+C: -0.5631102309509447 0.6829068677983737
+23
+C: 0.15540968073561348 0.9758478311336547
+24
+C: 0.18027577990130927 0.9675006431809747
+25
+C: 0.0684330990734329 0.9953169109512057
+26
+C: 0.6614727986239364 0.5624537366806173
+27
+C: -0.12676327690034284 0.983931071629487
+28
+C: -0.31437039756080976 0.9011712531374584
+29
+C: 0.6057032496127192 0.633123573408592
+30
+C: 0.6703821141578394 0.5505878210172656
+31
+C: 0.2646991939130234 0.9299343367417956
+32
+C: 0.1887884564905344 0.9643589186959216
+33
+C: -0.12902198036165438 0.9833533285835568
+34
+C: 0.15971389899237168 0.9744914704686545
+35
+C: 0.12174220519954998 0.9851788354731507
+36
+C: 0.2036506549860425 0.9585264107237559
+37
+C: -0.3659134789100937 0.8661073259519124
+38
+C: -0.42242187620144056 0.8215597585064548
+39
+C: 0.4775207094205605 0.7719739720744846
+40
+C: 0.33218963937333096 0.8896500434930164
+41
+C: -0.7543380535145277 0.4309741010199136
+42
+C: -0.09181456645112601 0.9915700853873918
+43
+C: -0.07871123016340931 0.9938045422461628
+44
+C: -0.10640933781687496 0.9886770528253742
+45
+C: 0.15836196764650182 0.9749214872031283
+46
+C: 0.13990788756104264 0.9804257829982066
+47
+C: 0.4274377290870416 0.8172969877529128
+48
+C: 0.1792181404665571 0.9678808581277094
+49
+C: -0.9999999999999962 7.549516567451064e-15
+50
+C: 0.07497757902115804 0.994378362644126
+51
+C: 0.21950198588810788 0.9518188781911769
+52
+C: 0.7394255873639669 0.4532498007514525
+53
+C: 0.9256726086421265 0.14313022160968047
+54
+C: -0.47028530570189797 0.7788317312408723
+55
+C: -0.05956736543252161 0.9964517289754284
+56
+C: 0.04023330342506003 0.9983812812955071
+57
+C: 0.5579076370745903 0.6887390684938473
+58
+C: -0.6430574284006322 0.5864771437787658
+59
+C: 0.5897292755942277 0.6522193815071073
+60
+C: -0.8016278202729508 0.35739283776443775
+61
+C: -0.6189367935189707 0.6169172456284551
+62
+C: -0.452202839791084 0.7955125916848792
+63
+C: -0.08000391303911641 0.9935993738984294
+64
+C: 0.648741124489972 0.5791349533954866
+65
+C: -0.4799328083385312 0.7696644994802907
+66
+C: 0.038708926888438105 0.9985016189791456
+67
+C: -0.10966876522402083 0.9879727619342386
+68
+C: -1.0000000000000013 -2.6645352591003757e-15
+69
+C: 0.9999999999999978 4.440892098500626e-15
+70
+C: -0.5563486726366402 0.6904761544554485
+71
+C: 0.595372795963767 0.6455312338262866
+['mass=-5.832']
+0
+C: 0.9999999999999954 9.103828801926284e-15
+1
+C: -0.9999999999999979 4.218847493575595e-15
+2
+C: 0.10646514985374672 0.9886651718666193
+3
+C: 0.05325744962133672 0.9971636440598308
+4
+C: -0.20167851466688658 0.9593257767217584
+5
+C: 0.017980134383365473 0.9996767147675562
+6
+C: -0.8248575824830855 0.3196099686201598
+7
+C: -0.6317839820931336 0.6008489999705431
+8
+C: -0.542005988428215 0.7062295085079536
+9
+C: 0.3966649573762896 0.8426569115896664
+10
+C: -0.6210079804660092 0.6143490881975286
+11
+C: 0.30163077027869667 0.9090188784210801
+12
+C: 0.29943334494573065 0.9103396719346111
+13
+C: -0.12751284894581236 0.9837404733537224
+14
+C: 0.05134138199258795 0.9973640624950911
+15
+C: -0.20875982192868187 0.956419336748305
+16
+C: -0.1378254366075128 0.9810041490239485
+17
+C: 0.838312806809985 0.2972316379383648
+18
+C: 0.8384914810004152 0.2969320362897304
+19
+C: 0.4593083897287644 0.7890358031247695
+20
+C: -0.9999999999999999 2.220446049250313e-16
+21
+C: 0.008582471592355478 0.9999263411813664
+22
+C: 0.08221851283496492 0.9932401161472068
+23
+C: 0.024701259070487314 0.9993898478003327
+24
+C: 0.45408142958245756 0.7938100553083516
+25
+C: -0.025034899444009495 0.9993732538098283
+26
+C: -0.45422827476852645 0.793676674400808
+27
+C: -0.5513734948140385 0.6959872692165534
+28
+C: 0.5205091835799114 0.7290701898089741
+29
+C: 0.40769182240733953 0.8337873779421823
+30
+C: 0.5675475585911778 0.6778897687371936
+31
+C: -0.2746882930752743 0.9245463416473922
+32
+C: -0.2513084585525776 0.9368440586599274
+33
+C: 0.19597940382026074 0.9615920732782551
+34
+C: 0.09512365669999719 0.9909514899360211
+35
+C: -0.08237249423950366 0.9932147721927629
+36
+C: 0.2460851539956053 0.9394420969829592
+37
+C: 0.7679016139977257 0.4103271112196879
+38
+C: 0.48351639510482664 0.7662118956648332
+39
+C: 0.06522969457072614 0.9957450869462098
+40
+C: -0.2535701621755646 0.9357021728542578
+41
+C: 0.5681200460942273 0.6772396132258931
+42
+C: 0.04751043797412041 0.9977427582835072
+43
+C: 0.050948495363566215 0.9974042508201887
+44
+C: 0.16290571749321517 0.9734617272080208
+45
+C: 0.2941631843487906 0.9134680209737794
+46
+C: -0.759612243666701 0.42298923927164045
+47
+C: -0.18994855145550404 0.9639195477999557
+48
+C: -0.3349528993011471 0.8878065552497556
+49
+C: -0.9999999999999998 4.440892098500626e-16
+50
+C: 0.2943777043591542 0.9133417671762344
+51
+C: 0.06667313853455062 0.9955546925979526
+52
+C: 0.9900694843385845 0.019762416181529296
+53
+C: 0.6509662358764703 0.5762429597488197
+54
+C: 0.8487695983636179 0.27959016889366284
+55
+C: 0.09161601339342673 0.9916065060898954
+56
+C: -0.4222030490917245 0.8217445853376508
+57
+C: -0.5019228238426889 0.748073478905781
+58
+C: -0.6114551498932224 0.6261225996690569
+59
+C: -0.010932962375499511 0.9998804703336959
+60
+C: -0.273194137055824 0.9253649634783236
+61
+C: -0.37513303642043605 0.8592752049859838
+62
+C: -0.2629813291887412 0.9308408204981229
+63
+C: -0.3958389468417049 0.84331152816325
+64
+C: 0.3856075764620256 0.851306796975083
+65
+C: -0.41853405691785683 0.8248292431998802
+66
+C: -0.262736340693288 0.9309696152791005
+67
+C: 0.3011170504011123 0.909328521957734
+68
+C: -0.9999999999999961 7.771561172376096e-15
+69
+C: 0.9999999999999952 9.547918011776346e-15
+70
+C: 0.7832772725121857 0.38647671436587117
+71
+C: -0.7829170246205517 0.3870409325593025
+['mass=-5.824']
+0
+C: 0.9999999999999948 1.0436096431476471e-14
+1
+C: -0.9999999999999983 3.3306690738754696e-15
+2
+C: -0.42973885038351 0.8153245204710592
+3
+C: 0.4833500258332194 0.7663727525270261
+4
+C: 0.38892130525941004 0.8487402183153168
+5
+C: -0.41997837523621245 0.8236181643339511
+6
+C: -0.3176647675824634 0.8990890954367795
+7
+C: 0.3574985284214044 0.8721948021765303
+8
+C: 0.17200043626128636 0.9704158499259272
+9
+C: -0.21158080031354556 0.9552335649386796
+10
+C: -0.14742641422703473 0.9782654523881588
+11
+C: -0.7353862704871452 0.45920703317900724
+12
+C: 0.05480322528727606 0.9969966064981121
+13
+C: -0.18443711580752378 0.9659829503126021
+14
+C: -0.09196334369548362 0.9915427434163464
+15
+C: 0.2192438748494004 0.9519321233410205
+16
+C: 0.78334977048076 0.3863631370877406
+17
+C: 0.533507141578908 0.715370129884303
+18
+C: 0.44407721802655337 0.802795424429797
+19
+C: 0.312744199623246 0.9021910656020152
+20
+C: -1.0000000000000009 -1.7763568394002505e-15
+21
+C: -0.32539876927397454 0.8941156409549826
+22
+C: 0.09609557337712904 0.9907656407773208
+23
+C: 0.41648902033820134 0.8265368959377253
+24
+C: 0.3862368474288199 0.8508210976882464
+25
+C: 0.31052024969372893 0.9035771745301442
+26
+C: -0.4371357398918393 0.8089123449092142
+27
+C: -0.29406661185557914 0.9135248277917801
+28
+C: -0.12242620685857467 0.9850118238742215
+29
+C: 0.131693604118143 0.9826567946343738
+30
+C: -0.2349986331102874 0.9447756424362965
+31
+C: 0.5829287422573735 0.6601940814502367
+32
+C: 0.653881315758994 0.5724392249012868
+33
+C: -0.35900819192072375 0.8711131181338128
+34
+C: 0.39898310047944324 0.8408124855318105
+35
+C: 0.010470341089365232 0.9998903719574723
+36
+C: 0.4266401069138251 0.8179782191725599
+37
+C: 0.24664762938473223 0.9391649469188917
+38
+C: -0.09207598457638896 0.9915220130642886
+39
+C: 0.5372763710755608 0.7113341010838763
+40
+C: 0.5457684742114706 0.7021367725568834
+41
+C: 0.22169443759583835 0.9508515763390649
+42
+C: 0.20712989278161337 0.9570972075162774
+43
+C: 0.011170429783636242 0.9998752214984489
+44
+C: 0.04310005417384628 0.9981423853302115
+45
+C: -0.07950427315701722 0.9936790705497744
+46
+C: -0.08927944218044648 0.9920291812039483
+47
+C: 0.2681236751170245 0.9281096948417403
+48
+C: -0.5673914070878966 0.6780669911628168
+49
+C: -1.0 0.0
+50
+C: 0.1291661391053427 0.9833161085086193
+51
+C: 0.1860422964362612 0.9653882639367223
+52
+C: 0.9321853225610011 0.13103052440184237
+53
+C: 0.7453369124737349 0.44447288690412
+54
+C: 0.24243042630173556 0.9412274884031587
+55
+C: 0.16523693140600845 0.972696756499526
+56
+C: -0.5148953162484118 0.734882813305448
+57
+C: 0.14425015015485715 0.9791918941803012
+58
+C: 0.4753438405659801 0.774048233235984
+59
+C: -0.10655522445660238 0.9886459841410031
+60
+C: -0.36759772018642367 0.8648719161137437
+61
+C: -0.7773633385851138 0.3957062398238058
+62
+C: -0.5345478675163056 0.7142585773337702
+63
+C: -0.8273681599348747 0.3154619279259796
+64
+C: 0.6637884944088969 0.5593848346903698
+65
+C: -0.13331549552224597 0.982226978653658
+66
+C: -0.29042737656242223 0.915651938943069
+67
+C: -0.30437681961416496 0.9073547516815661
+68
+C: -0.9999999999999944 1.1102230246251565e-14
+69
+C: 0.999999999999994 1.199040866595169e-14
+70
+C: -0.3617966770420125 0.8691031644813577
+71
+C: 0.3667361960110354 0.8655045625353555
+['mass=-5.816']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+1
+C: -0.9999999999999987 2.6645352591003757e-15
+2
+C: 0.845861752370654 0.2845178958764465
+3
+C: -0.3190134863099262 0.8982303955523865
+4
+C: -0.21471388203001657 0.9538979488636001
+5
+C: -0.26593345655173134 0.9292793966864484
+6
+C: 0.09483065411661092 0.9910071470398157
+7
