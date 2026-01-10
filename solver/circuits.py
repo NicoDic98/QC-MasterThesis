@@ -852,6 +852,15 @@ class PhysicsAdaptAnsatz4(PhysicsAdaptAnsatz1):
             self.fixed_ansatz.x(i)
 
 
+class PhysicsAdaptAnsatz5(PhysicsAdaptAnsatz1):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        self.fixed_ansatz = QuantumCircuit(self.num_qubits)
+        self.fixed_ansatz.x(1)
+        for i in range(2, self.num_qubits, 2):
+            self.fixed_ansatz.x(i)
+
+
 class YXPlusXYRYAdaptAnsatz1(BaseADAPTVQEAnsatz):
     def __init__(self, num_qubits: int):
         super().__init__(num_qubits)
