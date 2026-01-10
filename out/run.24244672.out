@@ -1,0 +1,5438 @@
+Start 2026-01-10 15:34:02 | 24244672 MyPyJob | lmnode196 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23113711
+	2025-09-02_17-46-07:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-02_17-46-07
+			ProcessId: 23113711
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 5000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 5000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 5000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 5000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 5000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 5000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 5000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-03_11-10-56:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-10-56
+			ProcessId: 23114898
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-03_11-11-36:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-11-36
+			ProcessId: 23114899
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 30
+			AnsatzOptions:
+				Attributes:
+					num_layers: 2
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 30), maxshape=(101, None, 30))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-03_11-12-33:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-12-33
+			ProcessId: 23114900
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 120
+			AnsatzOptions:
+				Attributes:
+					num_layers: 8
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(25, 20000, 120), maxshape=(25, None, 120))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(25, 20000), maxshape=(25, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(25, 20000), maxshape=(25, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(25, 20000), maxshape=(25, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(25, 20000), maxshape=(25, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(25, 20000), maxshape=(25, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(25,), maxshape=(25,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(25,), maxshape=(25,))
+			Attributes:
+	2025-09-03_22-35-17:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_22-35-17
+			ProcessId: 23116296
+			SolverName: ED
+			SystemName: FreeWilson2D
+			Which: SM
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		ChargeConjugation: Dataset (dtype=float64, shape=(1001, 72), maxshape=(1001, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		ChargeConjugationVariance: Dataset (dtype=float64, shape=(1001, 72), maxshape=(1001, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		EigenValues: Dataset (dtype=float64, shape=(1001, 72), maxshape=(1001, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		EigenVectors: Dataset (dtype=complex128, shape=(1001, 256, 72), maxshape=(1001, 256, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenVectorAxis' 'EigenValueAxis']
+				NDataDims: 2
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(1001,), maxshape=(1001,))
+			Attributes:
+	2025-09-06_15-50-13:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147803
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147803
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147803
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-06_15-50-13-23147802:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147802
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147802
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147802
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-06_15-50-13-23147804:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147804
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147804
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147804
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-06_15-50-13-23147805:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147805
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147805
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147805
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+-----Ending pprint-----
+['mass=-6.000']
+0
+C: 0.9999999999999964 7.105427357601002e-15
+['mass=-5.992']
+0
+C: 0.9999999999999997 6.661338147750939e-16
+['mass=-5.984']
+0
+C: 0.9999999999999962 7.549516567451064e-15
+['mass=-5.976']
+0
+C: 0.9999999999999983 3.3306690738754696e-15
+['mass=-5.968']
+0
+C: 0.9999999999999958 8.43769498715119e-15
+['mass=-5.960']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=-5.952']
+0
+C: 0.9999999999999961 7.771561172376096e-15
+['mass=-5.944']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=-5.936']
+0
+C: 0.999999999999994 1.199040866595169e-14
+['mass=-5.928']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-5.920']
+0
+C: 0.9999999999999958 8.43769498715119e-15
+['mass=-5.912']
+0
+C: 0.9999999999999953 9.325873406851315e-15
+['mass=-5.904']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=-5.896']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=-5.888']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=-5.880']
+0
+C: 0.999999999999996 7.993605777301127e-15
+['mass=-5.872']
+0
+C: 1.0 0.0
+['mass=-5.864']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=-5.856']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-5.848']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-5.840']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=-5.832']
+0
+C: 0.9999999999999954 9.103828801926284e-15
+['mass=-5.824']
+0
+C: 0.9999999999999948 1.0436096431476471e-14
+['mass=-5.816']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+['mass=-5.808']
+0
+C: 0.9999999999999944 1.1102230246251565e-14
+['mass=-5.800']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-5.792']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=-5.784']
+0
+C: 0.9999999999999999 2.220446049250313e-16
+['mass=-5.776']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=-5.768']
+0
+C: 1.000000000000002 -3.9968028886505635e-15
+['mass=-5.760']
+0
+C: 0.999999999999999 1.9984014443252818e-15
+['mass=-5.752']
+0
+C: 0.9999999999999977 4.6629367034256575e-15
+['mass=-5.744']
+0
+C: 0.9999999999998841 2.318145675417327e-13
+['mass=-5.736']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=-5.728']
+0
+C: 0.9999999999999997 6.661338147750939e-16
+['mass=-5.720']
+0
+C: 0.9999999999999974 5.10702591327572e-15
+['mass=-5.712']
+0
+C: 0.9999999999999974 5.10702591327572e-15
+['mass=-5.704']
+0
+C: 0.9999999999999981 3.774758283725532e-15
+['mass=-5.696']
+0
+C: 1.000000000000003 -6.217248937900877e-15
+['mass=-5.688']
+0
+C: 0.9999999999999968 6.439293542825908e-15
+['mass=-5.680']
+0
+C: 0.9999999999999978 4.440892098500626e-15
+['mass=-5.672']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-5.664']
+0
+C: 0.9999999999999943 1.1324274851176597e-14
+['mass=-5.656']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=-5.648']
+0
+C: 0.999999999999999 1.9984014443252818e-15
+['mass=-5.640']
+0
+C: 1.0000000000000042 -8.43769498715119e-15
+['mass=-5.632']
+0
+C: 0.9999999999999996 8.881784197001252e-16
+['mass=-5.624']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=-5.616']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-5.608']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=-5.600']
+0
+C: 0.9999999999999999 2.220446049250313e-16
+['mass=-5.592']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=-5.584']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=-5.576']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=-5.568']
+0
+C: 0.9999999999999976 4.884981308350689e-15
+['mass=-5.560']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-5.552']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-5.544']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=-5.536']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=-5.528']
+0
+C: 0.9999999999999988 2.4424906541753444e-15
+['mass=-5.520']
+0
+C: 0.9999999999999978 4.440892098500626e-15
+['mass=-5.512']
+0
+C: 1.0000000000000027 -5.329070518200751e-15
+['mass=-5.504']
+0
+C: 1.000000000000003 -6.217248937900877e-15
+['mass=-5.496']
+0
+C: 0.9999999999999997 6.661338147750939e-16
+['mass=-5.488']
+0
+C: 0.9999999999999967 6.661338147750939e-15
+['mass=-5.480']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=-5.472']
+0
+C: 1.0 0.0
+['mass=-5.464']
+0
+C: 0.9999999999999986 2.886579864025407e-15
+['mass=-5.456']
+0
+C: 0.9999999999999961 7.771561172376096e-15
+['mass=-5.448']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=-5.440']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-5.432']
+0
+C: 0.9999999999999949 1.021405182655144e-14
+['mass=-5.424']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-5.416']
+0
+C: 0.9999999999999988 2.4424906541753444e-15
+['mass=-5.408']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=-5.400']
+0
+C: 0.9999999999999969 6.217248937900877e-15
+['mass=-5.392']
+0
+C: 0.9999999999999956 8.881784197001252e-15
+['mass=-5.384']
+0
+C: 0.9999999999999964 7.105427357601002e-15
+['mass=-5.376']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=-5.368']
+0
+C: 0.9999999999999992 1.5543122344752192e-15
+['mass=-5.360']
+0
+C: 0.9999999999999978 4.440892098500626e-15
+['mass=-5.352']
+0
+C: 0.9999999999999964 7.105427357601002e-15
+['mass=-5.344']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=-5.336']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-5.328']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=-5.320']
+0
+C: 0.9999999999999966 6.8833827526759706e-15
+['mass=-5.312']
+0
+C: 1.0 0.0
+['mass=-5.304']
+0
+C: 0.9999999999999938 1.2434497875801753e-14
+['mass=-5.296']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-5.288']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=-5.280']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=-5.272']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-5.264']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=-5.256']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-5.248']
+0
+C: 0.9999999999999999 2.220446049250313e-16
+['mass=-5.240']
+0
+C: 1.0000000000000029 -5.773159728050814e-15
+['mass=-5.232']
+0
+C: 1.0000000000000036 -7.105427357601002e-15
+['mass=-5.224']
+0
+C: 0.9999999999999979 4.218847493575595e-15
+['mass=-5.216']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-5.208']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+['mass=-5.200']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-5.192']
+0
+C: 1.000000000000004 -7.993605777301127e-15
+['mass=-5.184']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=-5.176']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+['mass=-5.168']
+0
+C: 0.9999999999999971 5.773159728050814e-15
+['mass=-5.160']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-5.152']
+0
+C: 0.999999999999997 5.995204332975845e-15
+['mass=-5.144']
+0
+C: 1.0000000000000036 -7.105427357601002e-15
+['mass=-5.136']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-5.128']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-5.120']
+0
+C: 0.9999999999999997 6.661338147750939e-16
+['mass=-5.112']
+0
+C: 0.9999999999999976 4.884981308350689e-15
+['mass=-5.104']
+0
+C: 0.9999999999999954 9.103828801926284e-15
+['mass=-5.096']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-5.088']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=-5.080']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-5.072']
+0
+C: 1.0000000000000036 -7.105427357601002e-15
+['mass=-5.064']
+0
+C: 1.0000000000000049 -9.769962616701378e-15
+['mass=-5.056']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+['mass=-5.048']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-5.040']
+0
+C: 0.9999999999999986 2.886579864025407e-15
+['mass=-5.032']
+0
+C: 0.9999999999999961 7.771561172376096e-15
+['mass=-5.024']
+0
+C: 1.0 0.0
+['mass=-5.016']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=-5.008']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=-5.000']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-4.992']
+0
+C: 1.0000000000000027 -5.329070518200751e-15
+['mass=-4.984']
+0
+C: 1.0 0.0
+['mass=-4.976']
+0
+C: 0.9999999999999932 1.354472090042691e-14
+['mass=-4.968']
+0
+C: 1.000000000000001 -2.220446049250313e-15
+['mass=-4.960']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=-4.952']
+0
+C: 1.000000000000003 -6.217248937900877e-15
+['mass=-4.944']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=-4.936']
+0
+C: 0.9999999999998951 2.0983215165415459e-13
+['mass=-4.928']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.920']
+0
+C: 0.9999999999999946 1.0880185641326534e-14
+['mass=-4.912']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=-4.904']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=-4.896']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=-4.888']
+0
+C: 0.9999999999999996 8.881784197001252e-16
+['mass=-4.880']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.872']
+0
+C: 0.9999999999999999 2.220446049250313e-16
+['mass=-4.864']
+0
+C: 0.9999999999999 2.000621890374532e-13
+['mass=-4.856']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=-4.848']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=-4.840']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=-4.832']
+0
+C: 0.9999999999999988 2.4424906541753444e-15
+['mass=-4.824']
+0
+C: 0.9999999999999956 8.881784197001252e-15
+['mass=-4.816']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=-4.808']
+0
+C: 0.9999999999999988 2.4424906541753444e-15
+['mass=-4.800']
+0
+C: 0.9999999999999964 7.105427357601002e-15
+['mass=-4.792']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=-4.784']
+0
+C: 0.9999999999999983 3.3306690738754696e-15
+['mass=-4.776']
+0
+C: 0.9999999999999996 8.881784197001252e-16
+['mass=-4.768']
+0
+C: 1.0000000000000044 -8.881784197001252e-15
+['mass=-4.760']
+0
+C: 0.9999999999999972 5.551115123125783e-15
+['mass=-4.752']
+0
+C: 0.9999999999999972 5.551115123125783e-15
+['mass=-4.744']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=-4.736']
+0
+C: 0.999999999999924 1.5210055437364645e-13
+['mass=-4.728']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=-4.720']
+0
+C: 0.9999999999999977 4.6629367034256575e-15
+['mass=-4.712']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-4.704']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.696']
+0
+C: 0.9999999999999996 8.881784197001252e-16
+['mass=-4.688']
+0
+C: 0.9999999999999977 4.6629367034256575e-15
+['mass=-4.680']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-4.672']
+0
+C: 0.9999999999999994 1.1102230246251565e-15
+['mass=-4.664']
+0
+C: 0.9999999999999996 8.881784197001252e-16
+['mass=-4.656']
+0
+C: 1.0000000000000036 -7.105427357601002e-15
+['mass=-4.648']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=-4.640']
+0
+C: 0.9999999999999968 6.439293542825908e-15
+['mass=-4.632']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=-4.624']
+0
+C: 1.0000000000000029 -5.773159728050814e-15
+['mass=-4.616']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=-4.608']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-4.600']
+0
+C: 0.999999999999996 7.993605777301127e-15
+['mass=-4.592']
+0
+C: 0.9999999999999996 8.881784197001252e-16
+['mass=-4.584']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=-4.576']
+0
+C: 0.9999999999999964 7.105427357601002e-15
+['mass=-4.568']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=-4.560']
+0
+C: 1.000000000000004 -7.993605777301127e-15
+['mass=-4.552']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-4.544']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=-4.536']
+0
+C: 1.0000000000000036 -7.105427357601002e-15
+['mass=-4.528']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.520']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-4.512']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.504']
+0
+C: 0.9999999999999026 1.9473311851925246e-13
+['mass=-4.496']
+0
+C: 0.9999999999999994 1.1102230246251565e-15
+['mass=-4.488']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=-4.480']
+0
+C: 0.9999999999999997 6.661338147750939e-16
+['mass=-4.472']
+0
+C: 1.000000000000003 -6.217248937900877e-15
+['mass=-4.464']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.456']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=-4.448']
+0
+C: 0.9999999999999978 4.440892098500626e-15
+['mass=-4.440']
+0
+C: 1.0 0.0
+['mass=-4.432']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=-4.424']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.416']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=-4.408']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-4.400']
+0
+C: 0.9999999999999994 1.1102230246251565e-15
+['mass=-4.392']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=-4.384']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.376']
+0
+C: 1.0 0.0
+['mass=-4.368']
+0
+C: 1.000000000000003 -6.217248937900877e-15
+['mass=-4.360']
+0
+C: 0.9999999999999986 2.886579864025407e-15
+['mass=-4.352']
+0
+C: 0.9999999999999969 6.217248937900877e-15
+['mass=-4.344']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=-4.336']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=-4.328']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=-4.320']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=-4.312']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-4.304']
+0
+C: 1.000000000000002 -3.9968028886505635e-15
+['mass=-4.296']
+0
+C: 1.000000000000002 -3.9968028886505635e-15
+['mass=-4.288']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=-4.280']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=-4.272']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=-4.264']
+0
+C: 0.9999999999999988 2.4424906541753444e-15
+['mass=-4.256']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=-4.248']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=-4.240']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-4.232']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=-4.224']
+0
+C: 0.9999999999999851 2.9753977059954195e-14
+['mass=-4.216']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-4.208']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-4.200']
+0
+C: 0.9999999999999963 7.327471962526033e-15
+['mass=-4.192']
+0
+C: 1.0 0.0
+['mass=-4.184']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-4.176']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.168']
+0
+C: 0.9999999999999992 1.5543122344752192e-15
+['mass=-4.160']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-4.152']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=-4.144']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-4.136']
+0
+C: 1.0000000000000024 -4.884981308350689e-15
+['mass=-4.128']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=-4.120']
+0
+C: 0.9999999999999979 4.218847493575595e-15
+['mass=-4.112']
+0
+C: 0.9999999999999986 2.886579864025407e-15
+['mass=-4.104']
+0
+C: 0.9999999999999963 7.327471962526033e-15
+['mass=-4.096']
+0
+C: 1.0000000000000033 -6.661338147750939e-15
+['mass=-4.088']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-4.080']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=-4.072']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=-4.064']
+0
+C: 0.9999999999999962 7.549516567451064e-15
+['mass=-4.056']
+0
+C: -0.9999999999999976 4.884981308350689e-15
+['mass=-4.048']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=-4.040']
+0
+C: 0.9999999999999978 4.440892098500626e-15
+['mass=-4.032']
+0
+C: 0.9999999999999999 2.220446049250313e-16
+['mass=-4.024']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=-4.016']
+0
+C: -0.9999999999999987 2.6645352591003757e-15
+['mass=-4.008']
+0
+C: 0.9999999999999999 2.220446049250313e-16
+['mass=-4.000']
+0
+C: 0.7423590248898518 0.4489030781645883
+['mass=-3.992']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-3.984']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-3.976']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-3.968']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-3.960']
+0
+C: 1.0000000000000038 -7.549516567451064e-15
+['mass=-3.952']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-3.944']
+0
+C: -0.9999999999999992 1.5543122344752192e-15
+['mass=-3.936']
+0
+C: -0.9999999999999992 1.5543122344752192e-15
+['mass=-3.928']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=-3.920']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-3.912']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-3.904']
+0
+C: -0.9999999999999662 6.750155989720952e-14
+['mass=-3.896']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-3.888']
+0
+C: -0.9999999999999949 1.021405182655144e-14
+['mass=-3.880']
+0
+C: -0.9999999999999994 1.1102230246251565e-15
+['mass=-3.872']
+0
+C: -0.9999999999999994 1.1102230246251565e-15
+['mass=-3.864']
+0
+C: -0.9999999999999956 8.881784197001252e-15
+['mass=-3.856']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-3.848']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-3.840']
+0
+C: -1.0000000000000036 -7.105427357601002e-15
+['mass=-3.832']
+0
+C: -1.0000000000000029 -5.773159728050814e-15
+['mass=-3.824']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-3.816']
+0
+C: -0.9999999999999971 5.773159728050814e-15
+['mass=-3.808']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-3.800']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-3.792']
+0
+C: -0.9999999999999984 3.1086244689504383e-15
+['mass=-3.784']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-3.776']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-3.768']
+0
+C: -0.9999999999999984 3.1086244689504383e-15
+['mass=-3.760']
+0
+C: -0.9999999999999902 1.9539925233402755e-14
+['mass=-3.752']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-3.744']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-3.736']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-3.728']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-3.720']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-3.712']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-3.704']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-3.696']
+0
+C: -0.9999999999999981 3.774758283725532e-15
+['mass=-3.688']
+0
+C: -0.9999999999999634 7.327471962526033e-14
+['mass=-3.680']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-3.672']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-3.664']
+0
+C: -0.9999999999999984 3.1086244689504383e-15
+['mass=-3.656']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-3.648']
+0
+C: -0.9999999999999986 2.886579864025407e-15
+['mass=-3.640']
+0
+C: -0.999999999999997 5.995204332975845e-15
+['mass=-3.632']
+0
+C: -1.0000000000000033 -6.661338147750939e-15
+['mass=-3.624']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-3.616']
+0
+C: -0.9999999999999981 3.774758283725532e-15
+['mass=-3.608']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-3.600']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-3.592']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-3.584']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-3.576']
+0
+C: -1.0000000000000027 -5.329070518200751e-15
+['mass=-3.568']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-3.560']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-3.552']
+0
+C: -1.0000000000000027 -5.329070518200751e-15
+['mass=-3.544']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-3.536']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-3.528']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-3.520']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-3.512']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-3.504']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-3.496']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-3.488']
+0
+C: -0.999999999999997 5.995204332975845e-15
+['mass=-3.480']
+0
+C: -0.9999999999999981 3.774758283725532e-15
+['mass=-3.472']
+0
+C: -1.0000000000000027 -5.329070518200751e-15
+['mass=-3.464']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-3.456']
+0
+C: -1.0000000000000044 -8.881784197001252e-15
+['mass=-3.448']
+0
+C: -0.9999999999999973 5.329070518200751e-15
+['mass=-3.440']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-3.432']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-3.424']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-3.416']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-3.408']
+0
+C: -0.9999999999999981 3.774758283725532e-15
+['mass=-3.400']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-3.392']
+0
+C: -0.999999999999996 7.993605777301127e-15
+['mass=-3.384']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-3.376']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-3.368']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-3.360']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-3.352']
+0
+C: -0.9999999999999969 6.217248937900877e-15
+['mass=-3.344']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-3.336']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-3.328']
+0
+C: -0.999999999999997 5.995204332975845e-15
+['mass=-3.320']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-3.312']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-3.304']
+0
+C: -0.9999999999999988 2.4424906541753444e-15
+['mass=-3.296']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-3.288']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-3.280']
+0
+C: -1.0000000000000038 -7.549516567451064e-15
+['mass=-3.272']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-3.264']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-3.256']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-3.248']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-3.240']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-3.232']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-3.224']
+0
+C: -1.0000000000000029 -5.773159728050814e-15
+['mass=-3.216']
+0
+C: -1.0 0.0
+['mass=-3.208']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-3.200']
+0
+C: -1.0 0.0
+['mass=-3.192']
+0
+C: -1.000000000000004 -7.993605777301127e-15
+['mass=-3.184']
+0
+C: -1.0000000000000038 -7.549516567451064e-15
+['mass=-3.176']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-3.168']
+0
+C: -0.9999999999999964 7.105427357601002e-15
+['mass=-3.160']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-3.152']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-3.144']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-3.136']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-3.128']
+0
+C: -0.9999999999999074 1.851852005074761e-13
+['mass=-3.120']
+0
+C: -0.9999999999999976 4.884981308350689e-15
+['mass=-3.112']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-3.104']
+0
+C: -0.9999999999999961 7.771561172376096e-15
+['mass=-3.096']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-3.088']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-3.080']
+0
+C: -1.0000000000000042 -8.43769498715119e-15
+['mass=-3.072']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-3.064']
+0
+C: -0.9999999999999964 7.105427357601002e-15
+['mass=-3.056']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-3.048']
+0
+C: -0.9999999999999961 7.771561172376096e-15
+['mass=-3.040']
+0
+C: -1.0 0.0
+['mass=-3.032']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-3.024']
+0
+C: -0.999999999999996 7.993605777301127e-15
+['mass=-3.016']
+0
+C: -1.0000000000000058 -1.1546319456101628e-14
+['mass=-3.008']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-3.000']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-2.992']
+0
+C: -0.9999999999999983 3.3306690738754696e-15
+['mass=-2.984']
+0
+C: -0.9999999999999966 6.8833827526759706e-15
+['mass=-2.976']
+0
+C: -0.9999999999999983 3.3306690738754696e-15
+['mass=-2.968']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-2.960']
+0
+C: -0.9999999999999091 1.8185453143360064e-13
+['mass=-2.952']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-2.944']
+0
+C: -0.9999999999999979 4.218847493575595e-15
+['mass=-2.936']
+0
+C: -0.9999999999999973 5.329070518200751e-15
+['mass=-2.928']
+0
+C: -0.9999999999999973 5.329070518200751e-15
+['mass=-2.920']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-2.912']
+0
+C: -1.000000000000004 -7.993605777301127e-15
+['mass=-2.904']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.896']
+0
+C: -1.000000000000004 -7.993605777301127e-15
+['mass=-2.888']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-2.880']
+0
+C: -0.9999999999999969 6.217248937900877e-15
+['mass=-2.872']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-2.864']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-2.856']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-2.848']
+0
+C: -0.9999999999999968 6.439293542825908e-15
+['mass=-2.840']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-2.832']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-2.824']
+0
+C: -0.999999999999994 1.199040866595169e-14
+['mass=-2.816']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.808']
+0
+C: -1.0 0.0
+['mass=-2.800']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.792']
+0
+C: -1.0000000000000024 -4.884981308350689e-15
+['mass=-2.784']
+0
+C: -0.9999999999999976 4.884981308350689e-15
+['mass=-2.776']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-2.768']
+0
+C: -0.9999999999999984 3.1086244689504383e-15
+['mass=-2.760']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-2.752']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.744']
+0
+C: -0.9999999999999973 5.329070518200751e-15
+['mass=-2.736']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-2.728']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-2.720']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-2.712']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-2.704']
+0
+C: -1.0000000000000049 -9.769962616701378e-15
+['mass=-2.696']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-2.688']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-2.680']
+0
+C: -0.9999999999999976 4.884981308350689e-15
+['mass=-2.672']
+0
+C: -1.000000000000003 -6.217248937900877e-15
+['mass=-2.664']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-2.656']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-2.648']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-2.640']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-2.632']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.624']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-2.616']
+0
+C: -0.9999999999999986 2.886579864025407e-15
+['mass=-2.608']
+0
+C: -0.9999999999999976 4.884981308350689e-15
+['mass=-2.600']
+0
+C: -0.9999999999999966 6.8833827526759706e-15
+['mass=-2.592']
+0
+C: -0.9999999999999987 2.6645352591003757e-15
+['mass=-2.584']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-2.576']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-2.568']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-2.560']
+0
+C: -0.9999999999999978 4.440892098500626e-15
+['mass=-2.552']
+0
+C: -0.9999999999999978 4.440892098500626e-15
+['mass=-2.544']
+0
+C: -1.0 0.0
+['mass=-2.536']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-2.528']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-2.520']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-2.512']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-2.504']
+0
+C: -0.9999999999999988 2.4424906541753444e-15
+['mass=-2.496']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-2.488']
+0
+C: -0.9999999999999967 6.661338147750939e-15
+['mass=-2.480']
+0
+C: -0.9999999999999967 6.661338147750939e-15
+['mass=-2.472']
+0
+C: -0.9999999999999976 4.884981308350689e-15
+['mass=-2.464']
+0
+C: -0.9999999999999972 5.551115123125783e-15
+['mass=-2.456']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-2.448']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-2.440']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-2.432']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-2.424']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-2.416']
+0
+C: -0.9999999999999954 9.103828801926284e-15
+['mass=-2.408']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-2.400']
+0
+C: -1.000000000000003 -6.217248937900877e-15
+['mass=-2.392']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.384']
+0
+C: -1.0000000000000024 -4.884981308350689e-15
+['mass=-2.376']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-2.368']
+0
+C: -0.9999999999999984 3.1086244689504383e-15
+['mass=-2.360']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-2.352']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.344']
+0
+C: -1.0000000000000024 -4.884981308350689e-15
+['mass=-2.336']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-2.328']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-2.320']
+0
+C: -0.9999999999999981 3.774758283725532e-15
+['mass=-2.312']
+0
+C: -0.9999999999999974 5.10702591327572e-15
+['mass=-2.304']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-2.296']
+0
+C: -0.9999999999999939 1.2212453270876722e-14
+['mass=-2.288']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-2.280']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.272']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-2.264']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-2.256']
+0
+C: -0.9999999999999981 3.774758283725532e-15
+['mass=-2.248']
+0
+C: -1.0 0.0
+['mass=-2.240']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-2.232']
+0
+C: -0.9999999999999979 4.218847493575595e-15
+['mass=-2.224']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-2.216']
+0
+C: -0.9999999999999986 2.886579864025407e-15
+['mass=-2.208']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-2.200']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-2.192']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-2.184']
+0
+C: -1.0000000000000044 -8.881784197001252e-15
+['mass=-2.176']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-2.168']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-2.160']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-2.152']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-2.144']
+0
+C: -0.9999999999999972 5.551115123125783e-15
+['mass=-2.136']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.128']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-2.120']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-2.112']
+0
+C: -1.0000000000000027 -5.329070518200751e-15
+['mass=-2.104']
+0
+C: -0.9999999999999984 3.1086244689504383e-15
+['mass=-2.096']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-2.088']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-2.080']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-2.072']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-2.064']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-2.056']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-2.048']
+0
+C: -0.9999999999999983 3.3306690738754696e-15
+['mass=-2.040']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-2.032']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-2.024']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-2.016']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-2.008']
+0
+C: -0.9999999999999994 1.1102230246251565e-15
+['mass=-2.000']
+0
+C: -0.6545666083176859 0.5715425552754811
+['mass=-1.992']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-1.984']
+0
+C: -0.9999999999999968 6.439293542825908e-15
+['mass=-1.976']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-1.968']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-1.960']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-1.952']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-1.944']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-1.936']
+0
+C: -1.0000000000000036 -7.105427357601002e-15
+['mass=-1.928']
+0
+C: -0.9999999999999992 1.5543122344752192e-15
+['mass=-1.920']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-1.912']
+0
+C: -0.9999999999999986 2.886579864025407e-15
+['mass=-1.904']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-1.896']
+0
+C: -0.9999999999999992 1.5543122344752192e-15
+['mass=-1.888']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-1.880']
+0
+C: -1.0 0.0
+['mass=-1.872']
+0
+C: -1.0000000000000029 -5.773159728050814e-15
+['mass=-1.864']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-1.856']
+0
+C: -1.0000000000000024 -4.884981308350689e-15
+['mass=-1.848']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-1.840']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-1.832']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-1.824']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-1.816']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-1.808']
+0
+C: -0.9999999999999994 1.1102230246251565e-15
+['mass=-1.800']
+0
+C: -0.9999999999999988 2.4424906541753444e-15
+['mass=-1.792']
+0
+C: -0.9999999999999979 4.218847493575595e-15
+['mass=-1.784']
+0
+C: -0.9999999999999979 4.218847493575595e-15
+['mass=-1.776']
+0
+C: -0.9999999999999987 2.6645352591003757e-15
+['mass=-1.768']
+0
+C: -1.0 0.0
+['mass=-1.760']
+0
+C: -1.0000000000000024 -4.884981308350689e-15
+['mass=-1.752']
+0
+C: -0.9999999999999976 4.884981308350689e-15
+['mass=-1.744']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-1.736']
+0
+C: -0.9999999999999994 1.1102230246251565e-15
+['mass=-1.728']
+0
+C: -0.9999999999999987 2.6645352591003757e-15
+['mass=-1.720']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-1.712']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-1.704']
+0
+C: -0.9999999999999971 5.773159728050814e-15
+['mass=-1.696']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-1.688']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-1.680']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-1.672']
+0
+C: -1.000000000000004 -7.993605777301127e-15
+['mass=-1.664']
+0
+C: -0.9999999999999986 2.886579864025407e-15
+['mass=-1.656']
+0
+C: -1.0000000000000036 -7.105427357601002e-15
+['mass=-1.648']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-1.640']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-1.632']
+0
+C: -0.9999999999999978 4.440892098500626e-15
+['mass=-1.624']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-1.616']
+0
+C: -1.0000000000000033 -6.661338147750939e-15
+['mass=-1.608']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-1.600']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-1.592']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-1.584']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-1.576']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-1.568']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-1.560']
+0
+C: -0.9999999999999979 4.218847493575595e-15
+['mass=-1.552']
+0
+C: -0.9999999999999978 4.440892098500626e-15
+['mass=-1.544']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-1.536']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-1.528']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-1.520']
+0
+C: -0.9999999999999979 4.218847493575595e-15
+['mass=-1.512']
+0
+C: -0.9999999999999992 1.5543122344752192e-15
+['mass=-1.504']
+0
+C: -0.9999999999999968 6.439293542825908e-15
+['mass=-1.496']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-1.488']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-1.480']
+0
+C: -1.000000000000003 -6.217248937900877e-15
+['mass=-1.472']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-1.464']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-1.456']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-1.448']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-1.440']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-1.432']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-1.424']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-1.416']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-1.408']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-1.400']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-1.392']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-1.384']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-1.376']
+0
+C: -1.0000000000000036 -7.105427357601002e-15
+['mass=-1.368']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-1.360']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-1.352']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-1.344']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-1.336']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-1.328']
+0
+C: -1.000000000000003 -6.217248937900877e-15
+['mass=-1.320']
+0
+C: -0.9999999999999981 3.774758283725532e-15
+['mass=-1.312']
+0
+C: -0.9999999999999977 4.6629367034256575e-15
+['mass=-1.304']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-1.296']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-1.288']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-1.280']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-1.272']
+0
+C: -0.999999999999998 3.9968028886505635e-15
+['mass=-1.264']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-1.256']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-1.248']
+0
+C: -0.9999999999999988 2.4424906541753444e-15
+['mass=-1.240']
+0
+C: -0.9999999999999145 1.709743457922741e-13
+['mass=-1.232']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-1.224']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-1.216']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-1.208']
+0
+C: -1.0000000000000047 -9.325873406851315e-15
+['mass=-1.200']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-1.192']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-1.184']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-1.176']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-1.168']
+0
+C: -1.0000000000000047 -9.325873406851315e-15
+['mass=-1.160']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-1.152']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-1.144']
+0
+C: -0.9999999999999978 4.440892098500626e-15
+['mass=-1.136']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-1.128']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-1.120']
+0
+C: -0.9999999999999964 7.105427357601002e-15
+['mass=-1.112']
+0
+C: -1.0000000000000042 -8.43769498715119e-15
+['mass=-1.104']
+0
+C: -1.0000000000000024 -4.884981308350689e-15
+['mass=-1.096']
+0
+C: -0.9999999999999994 1.1102230246251565e-15
+['mass=-1.088']
+0
+C: -1.0000000000000029 -5.773159728050814e-15
+['mass=-1.080']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-1.072']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-1.064']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-1.056']
+0
+C: -0.9999999999999976 4.884981308350689e-15
+['mass=-1.048']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-1.040']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-1.032']
+0
+C: -0.9999999999999968 6.439293542825908e-15
+['mass=-1.024']
+0
+C: -1.0 0.0
+['mass=-1.016']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-1.008']
+0
+C: -1.0000000000000053 -1.0658141036401503e-14
+['mass=-1.000']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-0.992']
+0
+C: -0.9999999999999933 1.3322676295501878e-14
+['mass=-0.984']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-0.976']
+0
+C: -0.9999999999999999 2.220446049250313e-16
+['mass=-0.968']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-0.960']
+0
+C: -1.0000000000000044 -8.881784197001252e-15
+['mass=-0.952']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-0.944']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-0.936']
+0
+C: -0.9999999999999959 8.215650382226158e-15
+['mass=-0.928']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-0.920']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-0.912']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-0.904']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-0.896']
+0
+C: -0.9999999999999982 3.552713678800501e-15
+['mass=-0.888']
+0
+C: -1.0 0.0
+['mass=-0.880']
+0
+C: -0.9999999999999984 3.1086244689504383e-15
+['mass=-0.872']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-0.864']
+0
+C: -0.9999999999999948 1.0436096431476471e-14
+['mass=-0.856']
+0
+C: -0.9999999999999979 4.218847493575595e-15
+['mass=-0.848']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-0.840']
+0
+C: -0.9999999999999988 2.4424906541753444e-15
+['mass=-0.832']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-0.824']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-0.816']
+0
+C: -0.9999999999999067 1.865174681370263e-13
+['mass=-0.808']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-0.800']
+0
+C: -1.000000000000003 -6.217248937900877e-15
+['mass=-0.792']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-0.784']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-0.776']
+0
+C: -0.9999999999999984 3.1086244689504383e-15
+['mass=-0.768']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-0.760']
+0
+C: -0.999999999999996 7.993605777301127e-15
+['mass=-0.752']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.744']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.736']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-0.728']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-0.720']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-0.712']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-0.704']
+0
+C: -0.9999999999999994 1.1102230246251565e-15
+['mass=-0.696']
+0
+C: -0.9999999999999992 1.5543122344752192e-15
+['mass=-0.688']
+0
+C: -0.9999999999999974 5.10702591327572e-15
+['mass=-0.680']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.672']
+0
+C: -0.9999999999999971 5.773159728050814e-15
+['mass=-0.664']
+0
+C: -1.0 0.0
+['mass=-0.656']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-0.648']
+0
+C: -0.999999999999996 7.993605777301127e-15
+['mass=-0.640']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-0.632']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-0.624']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-0.616']
+0
+C: -0.9999999999999979 4.218847493575595e-15
+['mass=-0.608']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-0.600']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-0.592']
+0
+C: -0.9999999999999983 3.3306690738754696e-15
+['mass=-0.584']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-0.576']
+0
+C: -1.0000000000000022 -4.440892098500626e-15
+['mass=-0.568']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-0.560']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.552']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-0.544']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-0.536']
+0
+C: -0.9999999999999979 4.218847493575595e-15
+['mass=-0.528']
+0
+C: -0.9999999999999987 2.6645352591003757e-15
+['mass=-0.520']
+0
+C: -0.9999999999999991 1.7763568394002505e-15
+['mass=-0.512']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-0.504']
+0
+C: -1.000000000000003 -6.217248937900877e-15
+['mass=-0.496']
+0
+C: -1.0000000000000033 -6.661338147750939e-15
+['mass=-0.488']
+0
+C: -1.000000000000002 -3.9968028886505635e-15
+['mass=-0.480']
+0
+C: -1.0000000000000018 -3.552713678800501e-15
+['mass=-0.472']
+0
+C: -1.0000000000000036 -7.105427357601002e-15
+['mass=-0.464']
+0
+C: -1.0000000000000033 -6.661338147750939e-15
+['mass=-0.456']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-0.448']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-0.440']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.432']
+0
+C: -0.9999999999999963 7.327471962526033e-15
+['mass=-0.424']
+0
+C: -0.999999999999998 3.9968028886505635e-15
+['mass=-0.416']
+0
+C: -1.0000000000000047 -9.325873406851315e-15
+['mass=-0.408']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-0.400']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-0.392']
+0
+C: -1.0000000000000029 -5.773159728050814e-15
+['mass=-0.384']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.376']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-0.368']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-0.360']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.352']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-0.344']
+0
+C: -0.9999999999999983 3.3306690738754696e-15
+['mass=-0.336']
+0
+C: -1.0000000000000016 -3.1086244689504383e-15
+['mass=-0.328']
+0
+C: -0.9999999999999993 1.3322676295501878e-15
+['mass=-0.320']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-0.312']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-0.304']
+0
+C: -1.000000000000001 -2.220446049250313e-15
+['mass=-0.296']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-0.288']
+0
+C: -0.9999999999999976 4.884981308350689e-15
+['mass=-0.280']
+0
+C: -0.9999999999999984 3.1086244689504383e-15
+['mass=-0.272']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-0.264']
+0
+C: -0.9999999999999987 2.6645352591003757e-15
+['mass=-0.256']
+0
+C: -1.0 0.0
+['mass=-0.248']
+0
+C: -1.0 0.0
+['mass=-0.240']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-0.232']
+0
+C: -0.999999999999963 7.394085344003543e-14
+['mass=-0.224']
+0
+C: -1.0000000000000036 -7.105427357601002e-15
+['mass=-0.216']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.208']
+0
+C: -1.0000000000000027 -5.329070518200751e-15
+['mass=-0.200']
+0
+C: -1.0000000000000029 -5.773159728050814e-15
+['mass=-0.192']
+0
+C: -0.9999999999999978 4.440892098500626e-15
+['mass=-0.184']
+0
+C: -0.9999999999999996 8.881784197001252e-16
+['mass=-0.176']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-0.168']
+0
+C: -0.9999999999999987 2.6645352591003757e-15
+['mass=-0.160']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-0.152']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.144']
+0
+C: -0.9999999999999997 6.661338147750939e-16
+['mass=-0.136']
+0
+C: -1.0000000000000002 -4.440892098500626e-16
+['mass=-0.128']
+0
+C: -0.9999999999999971 5.773159728050814e-15
+['mass=-0.120']
+0
+C: -1.0000000000000027 -5.329070518200751e-15
+['mass=-0.112']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=-0.104']
+0
+C: -0.999999999999999 1.9984014443252818e-15
+['mass=-0.096']
+0
+C: -0.9999999999999989 2.220446049250313e-15
+['mass=-0.088']
+0
+C: -0.9999999999999981 3.774758283725532e-15
+['mass=-0.080']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-0.072']
+0
+C: -0.9999999999999987 2.6645352591003757e-15
+['mass=-0.064']
+0
+C: -1.0000000000000009 -1.7763568394002505e-15
+['mass=-0.056']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=-0.048']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-0.040']
+0
+C: -1.0000000000000007 -1.3322676295501878e-15
+['mass=-0.032']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=-0.024']
+0
+C: -1.0000000000000013 -2.6645352591003757e-15
+['mass=-0.016']
+0
+C: -1.0000000000000004 -8.881784197001252e-16
+['mass=-0.008']
+0
+C: 1.0000000000000024 -4.884981308350689e-15
+['mass=0.000']
+0
+C: 0.9893131183545769 0.02125955385154288
+['mass=0.008']
+0
+C: -0.9999999999999994 1.1102230246251565e-15
+['mass=0.016']
+0
+C: -0.9999999999999998 4.440892098500626e-16
+['mass=0.024']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=0.032']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.040']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=0.048']
+0
+C: 0.9999999999999992 1.5543122344752192e-15
+['mass=0.056']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=0.064']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=0.072']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=0.080']
+0
+C: 0.9999999999999979 4.218847493575595e-15
+['mass=0.088']
+0
+C: 0.9999999999999983 3.3306690738754696e-15
+['mass=0.096']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=0.104']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.112']
+0
+C: 1.0 0.0
+['mass=0.120']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.128']
+0
+C: 1.000000000000004 -7.993605777301127e-15
+['mass=0.136']
+0
+C: 0.9999999999999999 2.220446049250313e-16
+['mass=0.144']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=0.152']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=0.160']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.168']
+0
+C: 1.000000000000001 -2.220446049250313e-15
+['mass=0.176']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=0.184']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=0.192']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=0.200']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=0.208']
+0
+C: 1.0000000000000036 -7.105427357601002e-15
+['mass=0.216']
+0
+C: 0.9999999999999962 7.549516567451064e-15
+['mass=0.224']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=0.232']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.240']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.248']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=0.256']
+0
+C: 0.9999999999999981 3.774758283725532e-15
+['mass=0.264']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=0.272']
+0
+C: 1.0 0.0
+['mass=0.280']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=0.288']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.296']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=0.304']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.312']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+['mass=0.320']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=0.328']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.336']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=0.344']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=0.352']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.360']
+0
+C: 0.9999999999999953 9.325873406851315e-15
+['mass=0.368']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=0.376']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=0.384']
+0
+C: 1.0 0.0
+['mass=0.392']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=0.400']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=0.408']
+0
+C: 0.9999999999998829 2.3425705819590803e-13
+['mass=0.416']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=0.424']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=0.432']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=0.440']
+0
+C: 1.0000000000000036 -7.105427357601002e-15
+['mass=0.448']
+0
+C: 1.0000000000000049 -9.769962616701378e-15
+['mass=0.456']
+0
+C: 0.9999999999999966 6.8833827526759706e-15
+['mass=0.464']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=0.472']
+0
+C: 0.9999999999999974 5.10702591327572e-15
+['mass=0.480']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=0.488']
+0
+C: 1.0000000000000033 -6.661338147750939e-15
+['mass=0.496']
+0
+C: 0.9999999999999996 8.881784197001252e-16
+['mass=0.504']
+0
+C: 1.0 0.0
+['mass=0.512']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=0.520']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=0.528']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=0.536']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.544']
+0
+C: 0.9999999999999976 4.884981308350689e-15
+['mass=0.552']
+0
+C: 1.0 0.0
+['mass=0.560']
+0
+C: 0.9999999999999972 5.551115123125783e-15
+['mass=0.568']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=0.576']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=0.584']
+0
+C: 0.9999999999999997 6.661338147750939e-16
+['mass=0.592']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=0.600']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=0.608']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=0.616']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=0.624']
+0
+C: 1.0000000000000024 -4.884981308350689e-15
+['mass=0.632']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.640']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=0.648']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=0.656']
+0
+C: 0.9999999999999978 4.440892098500626e-15
+['mass=0.664']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=0.672']
+0
+C: 0.9999999999999986 2.886579864025407e-15
+['mass=0.680']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.688']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=0.696']
+0
+C: 1.0000000000000024 -4.884981308350689e-15
+['mass=0.704']
+0
+C: 0.9999999999999977 4.6629367034256575e-15
+['mass=0.712']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=0.720']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.728']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=0.736']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=0.744']
+0
+C: 0.9999999999999972 5.551115123125783e-15
+['mass=0.752']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.760']
+0
+C: 0.9999999999998789 2.4225066397320916e-13
+['mass=0.768']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+['mass=0.776']
+0
+C: 1.0000000000000033 -6.661338147750939e-15
+['mass=0.784']
+0
+C: 0.9999999999999999 2.220446049250313e-16
+['mass=0.792']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=0.800']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=0.808']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.816']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.824']
+0
+C: 0.9999999999999983 3.3306690738754696e-15
+['mass=0.832']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.840']
+0
+C: 0.9999999999999962 7.549516567451064e-15
+['mass=0.848']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.856']
+0
+C: 1.000000000000002 -3.9968028886505635e-15
+['mass=0.864']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=0.872']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=0.880']
+0
+C: 1.0 0.0
+['mass=0.888']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.896']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=0.904']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=0.912']
+0
+C: 0.9999999999999988 2.4424906541753444e-15
+['mass=0.920']
+0
+C: 0.9999999999999988 2.4424906541753444e-15
+['mass=0.928']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=0.936']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=0.944']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=0.952']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=0.960']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=0.968']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=0.976']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=0.984']
+0
+C: 1.0000000000000027 -5.329070518200751e-15
+['mass=0.992']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=1.000']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=1.008']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=1.016']
+0
+C: 0.9999999999999959 8.215650382226158e-15
+['mass=1.024']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=1.032']
+0
+C: 1.000000000000001 -2.220446049250313e-15
+['mass=1.040']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=1.048']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=1.056']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=1.064']
+0
+C: 0.9999999999999961 7.771561172376096e-15
+['mass=1.072']
+0
+C: 0.999999999999999 1.9984014443252818e-15
+['mass=1.080']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=1.088']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=1.096']
+0
+C: 0.9999999999999977 4.6629367034256575e-15
+['mass=1.104']
+0
+C: 0.9999999999999967 6.661338147750939e-15
+['mass=1.112']
+0
+C: 1.0000000000000033 -6.661338147750939e-15
+['mass=1.120']
+0
+C: 0.9999999999999976 4.884981308350689e-15
+['mass=1.128']
+0
+C: 0.9999999999999997 6.661338147750939e-16
+['mass=1.136']
+0
+C: 0.9999999999999977 4.6629367034256575e-15
+['mass=1.144']
+0
+C: 0.9999999999999986 2.886579864025407e-15
+['mass=1.152']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=1.160']
+0
+C: 0.9999999999998936 2.1271873151818e-13
+['mass=1.168']
+0
+C: 0.9999999999999967 6.661338147750939e-15
+['mass=1.176']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=1.184']
+0
+C: 0.9999999999999961 7.771561172376096e-15
+['mass=1.192']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=1.200']
+0
+C: 0.9999999999999966 6.8833827526759706e-15
+['mass=1.208']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=1.216']
+0
+C: 0.9999999999999996 8.881784197001252e-16
+['mass=1.224']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=1.232']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=1.240']
+0
+C: 0.9999999999999988 2.4424906541753444e-15
+['mass=1.248']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=1.256']
+0
+C: 0.999999999999997 5.995204332975845e-15
+['mass=1.264']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=1.272']
+0
+C: 0.9999999999999988 2.4424906541753444e-15
+['mass=1.280']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=1.288']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=1.296']
+0
+C: 1.0000000000000004 -8.881784197001252e-16
+['mass=1.304']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=1.312']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=1.320']
+0
+C: 1.0000000000000024 -4.884981308350689e-15
+['mass=1.328']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=1.336']
+0
+C: 0.999999999999996 7.993605777301127e-15
+['mass=1.344']
+0
+C: 1.0000000000000029 -5.773159728050814e-15
+['mass=1.352']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=1.360']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=1.368']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=1.376']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+['mass=1.384']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=1.392']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=1.400']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=1.408']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=1.416']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=1.424']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=1.432']
+0
+C: 0.9999999999999987 2.6645352591003757e-15
+['mass=1.440']
+0
+C: 0.9999999999999971 5.773159728050814e-15
+['mass=1.448']
+0
+C: 1.0000000000000027 -5.329070518200751e-15
+['mass=1.456']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=1.464']
+0
+C: 0.9999999999999986 2.886579864025407e-15
+['mass=1.472']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=1.480']
+0
+C: 0.9999999999999951 9.769962616701378e-15
+['mass=1.488']
+0
+C: 0.9999999999999983 3.3306690738754696e-15
+['mass=1.496']
+0
+C: 0.999999999999998 3.9968028886505635e-15
+['mass=1.504']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=1.512']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=1.520']
+0
+C: 1.0000000000000033 -6.661338147750939e-15
+['mass=1.528']
+0
+C: 1.000000000000001 -2.220446049250313e-15
+['mass=1.536']
+0
+C: 1.000000000000002 -3.9968028886505635e-15
+['mass=1.544']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=1.552']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=1.560']
+0
+C: 1.0000000000000022 -4.440892098500626e-15
+['mass=1.568']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+['mass=1.576']
+0
+C: 1.0000000000000018 -3.552713678800501e-15
+['mass=1.584']
+0
+C: 0.9999999999999961 7.771561172376096e-15
+['mass=1.592']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=1.600']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=1.608']
+0
+C: 0.9999999999999973 5.329070518200751e-15
+['mass=1.616']
+0
+C: 1.0000000000000027 -5.329070518200751e-15
+['mass=1.624']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=1.632']
+0
+C: 0.9999999999999967 6.661338147750939e-15
+['mass=1.640']
+0
+C: 0.9999999999999964 7.105427357601002e-15
+['mass=1.648']
+0
+C: 0.999999999999999 1.9984014443252818e-15
+['mass=1.656']
+0
+C: 0.9999999999999962 7.549516567451064e-15
+['mass=1.664']
+0
+C: 0.9999999999999964 7.105427357601002e-15
+['mass=1.672']
+0
+C: 0.9999999999999993 1.3322676295501878e-15
+['mass=1.680']
+0
+C: 0.9999999999999989 2.220446049250313e-15
+['mass=1.688']
+0
+C: 0.9999999999999949 1.021405182655144e-14
+['mass=1.696']
+0
+C: 0.9999999999999963 7.327471962526033e-15
+['mass=1.704']
+0
+C: 1.0000000000000027 -5.329070518200751e-15
+['mass=1.712']
+0
+C: 0.999999999999999 1.9984014443252818e-15
+['mass=1.720']
+0
+C: 0.9999999999999983 3.3306690738754696e-15
+['mass=1.728']
+0
+C: 0.9999999999999991 1.7763568394002505e-15
+['mass=1.736']
+0
+C: 0.9999999999999954 9.103828801926284e-15
+['mass=1.744']
+0
+C: 0.9999999999999966 6.8833827526759706e-15
+['mass=1.752']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=1.760']
+0
+C: 0.9999999999999982 3.552713678800501e-15
+['mass=1.768']
+0
+C: 0.9999999999999947 1.0658141036401503e-14
+['mass=1.776']
+0
+C: 0.9999999999999969 6.217248937900877e-15
+['mass=1.784']
+0
+C: 1.0000000000000007 -1.3322676295501878e-15
+['mass=1.792']
+0
+C: 0.9999999999999981 3.774758283725532e-15
+['mass=1.800']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=1.808']
+0
+C: 0.9999999999999984 3.1086244689504383e-15
+['mass=1.816']
+0
+C: 0.9999999999999956 8.881784197001252e-15
+['mass=1.824']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=1.832']
+0
+C: 0.9999999999999983 3.3306690738754696e-15
+['mass=1.840']
+0
+C: 0.9999999999999957 8.659739592076221e-15
+['mass=1.848']
+0
+C: 0.999999999999992 1.5987211554602254e-14
+['mass=1.856']
+0
+C: 0.9999999999999947 1.0658141036401503e-14
+['mass=1.864']
+0
+C: 0.9999999999999949 1.021405182655144e-14
+['mass=1.872']
+0
+C: 1.0 0.0
+['mass=1.880']
+0
+C: 1.0 0.0
+['mass=1.888']
+0
+C: 1.0000000000000009 -1.7763568394002505e-15
+['mass=1.896']
+0
+C: 0.9999999999999968 6.439293542825908e-15
+['mass=1.904']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+['mass=1.912']
+0
+C: 0.9999999999999968 6.439293542825908e-15
+['mass=1.920']
+0
+C: 1.0000000000000027 -5.329070518200751e-15
+['mass=1.928']
+0
+C: 0.9999999999999999 2.220446049250313e-16
+['mass=1.936']
+0
+C: 0.9999999999999971 5.773159728050814e-15
+['mass=1.944']
+0
+C: 0.9999999999999962 7.549516567451064e-15
+['mass=1.952']
+0
+C: 0.999999999999992 1.5987211554602254e-14
+['mass=1.960']
+0
+C: 1.0000000000000016 -3.1086244689504383e-15
+['mass=1.968']
+0
+C: 0.9999999999999966 6.8833827526759706e-15
+['mass=1.976']
+0
+C: 1.0000000000000013 -2.6645352591003757e-15
+['mass=1.984']
+0
+C: 0.9999999999999981 3.774758283725532e-15
+['mass=1.992']
+0
+C: 1.0000000000000002 -4.440892098500626e-16
+['mass=2.000']
+0
+C: 0.9999999999999998 4.440892098500626e-16
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 23113711
+	2025-09-02_17-46-07:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-02_17-46-07
+			ProcessId: 23113711
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 5000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 5000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 5000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 5000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 5000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 5000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 5000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-03_11-10-56:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-10-56
+			ProcessId: 23114898
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-03_11-11-36:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-11-36
+			ProcessId: 23114899
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 30
+			AnsatzOptions:
+				Attributes:
+					num_layers: 2
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 30), maxshape=(101, None, 30))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-03_11-12-33:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_11-12-33
+			ProcessId: 23114900
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 120
+			AnsatzOptions:
+				Attributes:
+					num_layers: 8
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(25, 20000, 120), maxshape=(25, None, 120))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(25, 20000), maxshape=(25, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(25, 20000), maxshape=(25, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: Unset
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(25, 20000), maxshape=(25, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(25, 20000), maxshape=(25, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(25, 20000), maxshape=(25, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(25,), maxshape=(25,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 42
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(25,), maxshape=(25,))
+			Attributes:
+	2025-09-03_22-35-17:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-03_22-35-17
+			ProcessId: 23116296
+			SolverName: ED
+			SystemName: FreeWilson2D
+			Which: SM
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		ChargeConjugation: Dataset (dtype=float64, shape=(1001, 72), maxshape=(1001, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		ChargeConjugationVariance: Dataset (dtype=float64, shape=(1001, 72), maxshape=(1001, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		EigenValues: Dataset (dtype=float64, shape=(1001, 72), maxshape=(1001, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenValueAxis']
+				NDataDims: 1
+		EigenVectors: Dataset (dtype=complex128, shape=(1001, 256, 72), maxshape=(1001, 256, 72))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'EigenVectorAxis' 'EigenValueAxis']
+				NDataDims: 2
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(1001,), maxshape=(1001,))
+			Attributes:
+	2025-09-06_15-50-13:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147803
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147803
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147803
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-06_15-50-13-23147802:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147802
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147802
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147802
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-06_15-50-13-23147804:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147804
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147804
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147804
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+	2025-09-06_15-50-13-23147805:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2025-09-06_15-50-13
+			ProcessId: 23147805
+			SimulatorType: Statevector
+			SolverName: VQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		Circuit:
+			Attributes:
+				Ansatz: XXPlusYYRZAnsatz1
+				NumParameters: 60
+			AnsatzOptions:
+				Attributes:
+					num_layers: 4
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(101, 20000, 60), maxshape=(101, None, 60))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 23147805
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: 42
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(101, 20000), maxshape=(101, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(101,), maxshape=(101,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: cobyla
+				tol: None
+				x0Seed: 23147805
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+				approximation_degree: 1.0
+				optimization_level: 3
+				seed_transpiler: 42
+		SimulatorOptions:
+			Attributes:
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+			Attributes:
+-----Ending pprint-----
+End 2026-01-10 15:35:18 | 24244672 MyPyJob | lmnode196 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

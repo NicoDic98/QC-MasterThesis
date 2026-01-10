@@ -106,9 +106,17 @@ class ResultLoader:
             info_dict[VQEParameters.AdaptOptions] = load_attribute_as_dict(self.group[VQEParameters.AdaptOptions])
         return self.group.name, info_dict
 
-    def get_variational_observable_mass(self, parameters: dict[str, int], observable_name: str):
+    def get_observable_mass(self, parameters: dict[str, int], observable_name: str):
         if self.solver == ED.__name__:
-            raise NotImplementedError
+            obs, dep, obs_dep_dict = self.get_observables(observable_name, parameters,
+                                                          [HamiltonianParameters.Mass])
+
+            energy, _, energy_dep_dict = self.get_observables(EDParameters.EigenValues, parameters,
+                                                              [HamiltonianParameters.Mass])
+            ind = np.argsort(energy, energy_dep_dict[EDParameters.EigenValueAxis])
+
+            obs = np.take_along_axis(obs, ind, obs_dep_dict[EDParameters.EigenValueAxis])
+            return obs, dep[0]
         elif self.solver == VQE.__name__:
             obs, dep, _ = self.get_observables(observable_name, parameters,
                                                [HamiltonianParameters.Mass])
@@ -121,31 +129,27 @@ class ResultLoader:
 
     def get_energy_mass(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
-            energy, dep, _ = self.get_observables(EDParameters.EigenValues, parameters,
-                                                  [HamiltonianParameters.Mass])
-            energy.sort(-1)
-            energy = energy[:, :]
-            return energy, dep[0]
+            return self.get_observable_mass(parameters, EDParameters.EigenValues)
         else:
-            return self.get_variational_observable_mass(parameters, VQEParameters.Hamiltonian)
+            return self.get_observable_mass(parameters, VQEParameters.Hamiltonian)
 
     def get_hamiltonian_variance_mass(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
             raise NotImplementedError
         else:
-            return self.get_variational_observable_mass(parameters, VQEParameters.HamiltonianVariance)
+            return self.get_observable_mass(parameters, VQEParameters.HamiltonianVariance)
 
     def get_charge_conjugation_mass(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
-            raise NotImplementedError
+            return self.get_observable_mass(parameters, EDParameters.ChargeConjugation)
         else:
-            return self.get_variational_observable_mass(parameters, VQEParameters.ChargeConjugation)
+            return self.get_observable_mass(parameters, VQEParameters.ChargeConjugation)
 
     def get_charge_conjugation_variance_mass(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
-            raise NotImplementedError
+            return self.get_observable_mass(parameters, EDParameters.ChargeConjugationVariance)
         else:
-            return self.get_variational_observable_mass(parameters, VQEParameters.ChargeConjugationVariance)
+            return self.get_observable_mass(parameters, VQEParameters.ChargeConjugationVariance)
 
     def get_energy_evolution(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
@@ -342,12 +346,14 @@ class ResultLoader:
         else:
             raise NotImplementedError
 
-    def get_excited_state(self, parameters: dict[str, int], j=1):
+    def get_excited_state(self, parameters: dict[str, int], j=1, sort=True):
         if self.solver == ED.__name__:
-            energy, _, energy_dep_dict = self.get_observables(EDParameters.EigenValues, parameters, [])
             eigen_vect, _, eigen_vect_dep_dict = self.get_observables(EDParameters.EigenVectors, parameters, [])
+            if sort:
+                energy, _, energy_dep_dict = self.get_observables(EDParameters.EigenValues, parameters, [])
+                j = np.argsort(energy, energy_dep_dict[EDParameters.EigenValueAxis])[j]
             return np.take(eigen_vect,
-                           np.argsort(energy, energy_dep_dict[EDParameters.EigenValueAxis])[j],
+                           j,
                            eigen_vect_dep_dict[EDParameters.EigenValueAxis])
         else:
             raise NotImplementedError

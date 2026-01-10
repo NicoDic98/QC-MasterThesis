@@ -216,7 +216,8 @@ def calculate_observables(group: h5py.Group):
         print([f"{x}={y:.3f}" for x, y in param_values.items()], flush=True)
         for j in range(n_eigv):
             print(j, flush=True)
-            vec = result_loader.get_excited_state({HamiltonianParameters.Mass: i}, j)
+            # Unsorted such that the ordering is exactly the same as in the energy
+            vec = result_loader.get_excited_state({HamiltonianParameters.Mass: i}, j, sort=False)
 
             temp = complete_c_op.dot(vec)
             # print(temp.shape, vec.shape, type(temp), type(vec), flush=True)
@@ -229,9 +230,9 @@ def calculate_observables(group: h5py.Group):
 
             print("C:", c_exp, c_var, flush=True)
             dataset = group[EDParameters.ChargeConjugation]
-            dataset[*non_singular_index] = c_exp
+            dataset[*non_singular_index, j] = c_exp
             dataset = group[EDParameters.ChargeConjugationVariance]
-            dataset[*non_singular_index] = c_var
+            dataset[*non_singular_index, j] = c_var
 
 
 # Define the parser
