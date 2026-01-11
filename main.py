@@ -19,7 +19,7 @@ from solver.circuits import HardwareAdaptAnsatz1, HardwareAdaptAnsatz2, Hardware
     HardwareAdaptAnsatz10, HardwareAdaptAnsatz11, HardwareAdaptAnsatz12, HardwareAdaptAnsatz13, HardwareAdaptAnsatz14, \
     HardwareAdaptAnsatz15, HardwareAdaptAnsatz16, HardwareAdaptAnsatz17, HardwareAdaptAnsatz18, HardwareAdaptAnsatz19, \
     HardwareAdaptAnsatz20, HardwareAdaptAnsatz21, PhysicsAdaptAnsatz1, PhysicsAdaptAnsatz2, PhysicsAdaptAnsatz3, \
-    PhysicsAdaptAnsatz4, PhysicsAdaptAnsatz5, PhysicsAdaptAnsatz6, PhysicsAdaptAnsatz7
+    PhysicsAdaptAnsatz4, PhysicsAdaptAnsatz5, PhysicsAdaptAnsatz6, PhysicsAdaptAnsatz7, PhysicsAdaptAnsatz8
 from solver.exact_diagonalization import ED, EDParameters
 from hamiltonian.free_wilson import FreeWilson2D
 from hamiltonian.base import HamiltonianType, HamiltonianParameters
@@ -52,7 +52,7 @@ def run_vqe(my_f: h5py.File):
 
 
 def run_adapt_vqe(my_f: h5py.File):
-    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, PhysicsAdaptAnsatz7(8))
+    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, PhysicsAdaptAnsatz8(8))
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
                       HamiltonianParameters.Mass: np.linspace(-6, 2, 50).tolist(),
@@ -244,23 +244,23 @@ Path(data_folder).mkdir(parents=True, exist_ok=True)
 
 h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 
-# with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
-#     pprint_h5(f)
-#     f.attrs[GlobalParameters.ProcessId] = args.id
-#     # run_ed(f)
-#     # run_vqe(f)
-#     run_adapt_vqe(f)
-#     # with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
-#     #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
-#     pprint_h5(f)
+with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
+    pprint_h5(f)
+    f.attrs[GlobalParameters.ProcessId] = args.id
+    # run_ed(f)
+    # run_vqe(f)
+    run_adapt_vqe(f)
+    # with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
+    #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
+    pprint_h5(f)
 
-file_names = ["2025-11-45", "2026-01-02", "2026-01-02"]
-dataset_names = ["2025-11-13_14-45-01-23862036", "2026-01-11_00-57-15-24245100", "2026-01-11_01-16-50-24245112"]
-for file_name, dataset_name in zip(file_names, dataset_names):
-    with h5py.File(f"{data_folder}{file_name}.hdf5", "a") as sf:
-        pprint_h5(sf)
-        measure_observables(sf[dataset_name])
-        pprint_h5(sf)
+# file_names = ["2025-11-45", "2026-01-02", "2026-01-02"]
+# dataset_names = ["2025-11-13_14-45-01-23862036", "2026-01-11_00-57-15-24245100", "2026-01-11_01-16-50-24245112"]
+# for file_name, dataset_name in zip(file_names, dataset_names):
+#     with h5py.File(f"{data_folder}{file_name}.hdf5", "a") as sf:
+#         pprint_h5(sf)
+#         measure_observables(sf[dataset_name])
+#         pprint_h5(sf)
 
 # with h5py.File(f"{data_folder}{"2025-09-35"}.hdf5", "a") as sf:
 #     pprint_h5(sf)

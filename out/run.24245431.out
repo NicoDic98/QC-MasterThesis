@@ -1,0 +1,1045 @@
+Start 2026-01-11 12:28:09 | 24245431 MyPyJob | lmnode196 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	3.20e+01
+1:	0.00e+00	-3.20e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000168014834212
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0003223519219076021
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	3.07e+01
+1:	0.00e+00	-3.07e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000163679859515
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00017903922330586442
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.673, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	2.94e+01
+1:	0.00e+00	-2.94e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000160823269578
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00018234466292834522
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.510, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	2.81e+01
+1:	0.00e+00	-2.81e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.00018750485954
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00029674024604870076
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.347, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	2.68e+01
+1:	0.00e+00	-2.68e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000189202665567
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00017146700906094683
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.184, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	2.55e+01
+1:	0.00e+00	-2.55e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000163932757143
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0003287603989295137
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.020, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	2.42e+01
+1:	0.00e+00	-2.42e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000161427290617
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0002178333391637462
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.857, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	2.29e+01
+1:	0.00e+00	-2.29e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000189092300495
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0003001942387881705
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.694, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	2.16e+01
+1:	0.00e+00	-2.16e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000177037736924
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00028920573213199506
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.531, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	2.02e+01
+1:	0.00e+00	-2.02e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000172582872707
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.000415671599852558
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.367, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	1.89e+01
+1:	0.00e+00	-1.89e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000193085105483
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0001758950497965889
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.204, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	1.76e+01
+1:	0.00e+00	-1.76e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000183265805715
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0002146333422458233
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.041, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	1.63e+01
+1:	0.00e+00	-1.63e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.00019403925808
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0002302715763956262
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.878, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	1.50e+01
+1:	0.00e+00	-1.50e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000190213003375
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00017724448616378947
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.714, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	1.37e+01
+1:	0.00e+00	-1.37e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.00016958299641
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0002595995969479081
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.551, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	1.24e+01
+1:	0.00e+00	-1.24e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000172935780096
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00017747134343804082
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.388, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	1.11e+01
+1:	0.00e+00	-1.11e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000190173266478
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00021033096142085154
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.224, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	9.80e+00
+1:	0.00e+00	-9.80e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000171529829458
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0002323414303333431
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.061, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	8.49e+00
+1:	0.00e+00	-8.49e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000166240814888
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0002650359027892056
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.898, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	7.18e+00
+1:	0.00e+00	-7.18e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000175619056364
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00017633875392868045
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.735, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	5.88e+00
+1:	0.00e+00	-5.88e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000181166197441
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00022757698285304
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.571, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	4.57e+00
+1:	0.00e+00	-4.57e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000167624291262
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00017719792671548875
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.408, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	3.27e+00
+1:	0.00e+00	-3.27e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000178114315595
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00021954288014890678
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.245, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	1.96e+00
+1:	0.00e+00	-1.96e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000187686225173
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00021785856987127362
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.082, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	6.53e-01
+1:	0.00e+00	-6.53e-01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000173485271354
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0001738234021279218
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.918, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-6.53e-01
+1:	0.00e+00	6.53e-01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000186385400308
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00019308543125715215
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.755, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-1.96e+00
+1:	0.00e+00	1.96e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.00017249202629
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00018529136392965187
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.592, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-3.27e+00
+1:	0.00e+00	3.27e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000170305644339
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00021869057755489481
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.429, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-4.57e+00
+1:	0.00e+00	4.57e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000171671915567
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0001665517212594553
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.265, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-5.88e+00
+1:	0.00e+00	5.88e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000173816195492
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0001737840331708973
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.102, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-7.18e+00
+1:	0.00e+00	7.18e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000174370309477
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00032806581128575087
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.939, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-8.49e+00
+1:	0.00e+00	8.49e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000164841000633
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0001876950183441588
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.776, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-9.80e+00
+1:	0.00e+00	9.80e+00
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000180325783099
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00021608284044978717
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.612, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-1.11e+01
+1:	0.00e+00	1.11e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000179347137443
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.000281620325712473
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.449, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-1.24e+01
+1:	0.00e+00	1.24e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000168315968622
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00026168120187072363
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.286, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-1.37e+01
+1:	0.00e+00	1.37e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000194112726698
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0002753548588091468
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.122, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-1.50e+01
+1:	0.00e+00	1.50e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000169203892984
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00032883414408855073
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.041, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-1.63e+01
+1:	0.00e+00	1.63e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000176214351825
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0001731077116740169
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.204, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-1.76e+01
+1:	0.00e+00	1.76e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000176637924373
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00021825323590951413
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.367, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-1.89e+01
+1:	0.00e+00	1.89e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000162842229427
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00018364621791382336
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.531, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-2.02e+01
+1:	0.00e+00	2.02e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000172688240568
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0003203642802451293
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.694, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-2.16e+01
+1:	0.00e+00	2.16e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000173635404554
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00027984931226418975
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.857, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-2.29e+01
+1:	0.00e+00	2.29e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000184838912869
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0002260518491312419
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.020, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-2.42e+01
+1:	0.00e+00	2.42e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.00017516034055
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0003308636624569244
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.184, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-2.55e+01
+1:	0.00e+00	2.55e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000173954383268
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00027869548165769704
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.347, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-2.68e+01
+1:	0.00e+00	2.68e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000169951338954
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.000396000210072257
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.510, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-2.81e+01
+1:	0.00e+00	2.81e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000173363271422
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00018074684366483425
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.673, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-2.94e+01
+1:	0.00e+00	2.94e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000174427382767
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0001847081584031904
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.837, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-3.07e+01
+1:	0.00e+00	3.07e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000183435984535
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.0001824833796222323
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h_im: 0.0
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 8.0
+0:	0.00e+00	-3.20e+01
+1:	0.00e+00	3.20e+01
+2:	0.00e+00	0.00e+00
+3:	0.00e+00	0.00e+00
+4:	0.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	-4.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 8.000179549378199
+New op index: 7	$A_4(1,0)$[2, 3, 4, 5]
+Current grad: 0.00026771246961536534
+Precision cutoff reached.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 24245431
+	2026-01-11_12-28-12-24245431:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-01-11_12-28-12
+			ProcessId: 24245431
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.Full
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 3, 8), maxshape=(50, None, 8))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 3, 8), maxshape=(50, None, 8))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 2), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: PhysicsAdaptAnsatz1
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 30, 2), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 30), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 30), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 24245431
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 30), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 30), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 30), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 24245431
+			options:
+				Attributes:
+					disp: 0
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 2), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+End 2026-01-11 12:28:44 | 24245431 MyPyJob | lmnode196 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

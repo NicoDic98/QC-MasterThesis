@@ -1,0 +1,1145 @@
+Start 2026-01-11 12:37:09 | 24245438 MyPyJob | lmnode196 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/13.3.0                   7) Tcl/8.6.14-GCCcore-13.3.0
+  2) zlib/1.3.1-GCCcore-13.3.0        8) SQLite/3.45.3-GCCcore-13.3.0
+  3) binutils/2.42-GCCcore-13.3.0     9) XZ/5.4.5-GCCcore-13.3.0
+  4) bzip2/1.0.8-GCCcore-13.3.0      10) libffi/3.4.5-GCCcore-13.3.0
+  5) ncurses/6.5-GCCcore-13.3.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-13.3.0  12) Python/3.12.3-GCCcore-13.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-3.20e+01
+2:	0.00e+00	-3.20e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000083469903353
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000383451215093
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.001564003784239375
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-3.07e+01
+2:	0.00e+00	-3.07e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000091656092684
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000381432719207
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015740880696817334
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.673, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-2.94e+01
+2:	0.00e+00	-2.94e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000083469903353
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000363995031141
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015597084802923917
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.510, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-2.81e+01
+2:	0.00e+00	-2.81e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000090740166809
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000348709048353
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015772391534417541
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.347, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-2.68e+01
+2:	0.00e+00	-2.68e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000093339372059
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.0003806013729575
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015658701237473687
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.184, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-2.55e+01
+2:	0.00e+00	-2.55e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.0000887597133135
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000378237092143
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015665428528807393
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.020, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-2.42e+01
+2:	0.00e+00	-2.42e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000081226207819
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000389843614451
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.001576603424586401
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.857, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-2.29e+01
+2:	0.00e+00	-2.29e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000089618404783
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000353219234032
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.001567648517385646
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.694, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-2.16e+01
+2:	0.00e+00	-2.16e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000087818366251
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000363018199579
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015831569416932547
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.531, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-2.02e+01
+2:	0.00e+00	-2.02e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.0000877865265645
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000371051260261
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015783563900301455
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.367, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-1.89e+01
+2:	0.00e+00	-1.89e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000089302052862
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000353626449301
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.001579445107677921
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.204, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-1.76e+01
+2:	0.00e+00	-1.76e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.0000916091809176
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000387514170947
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.001571091725725569
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.041, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-1.63e+01
+2:	0.00e+00	-1.63e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000088908306486
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000367650947093
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015662085888750964
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.878, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-1.50e+01
+2:	0.00e+00	-1.50e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.00008923100858
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000386931733335
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015758134564341462
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.714, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-1.37e+01
+2:	0.00e+00	-1.37e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000085653061989
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.0003806175008485
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015700364390830296
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.551, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-1.24e+01
+2:	0.00e+00	-1.24e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000094226672648
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.00036921274061
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015783555836354384
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.388, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-1.11e+01
+2:	0.00e+00	-1.11e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000087171325187
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000376454382552
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.001576953019131283
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.224, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-9.80e+00
+2:	0.00e+00	-9.80e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000085785348426
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000371070029834
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015497587721390034
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.061, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-8.49e+00
+2:	0.00e+00	-8.49e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000088468794114
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.0003830828061036
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015675014017598574
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.898, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-7.18e+00
+2:	0.00e+00	-7.18e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000083501645096
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000356541300118
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015775149292249727
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.735, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-5.88e+00
+2:	0.00e+00	-5.88e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000085450400188
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000397341398138
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015542887848492889
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.571, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-4.57e+00
+2:	0.00e+00	-4.57e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.00008827010676
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000376950999039
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015763654820246833
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.408, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-3.27e+00
+2:	0.00e+00	-3.27e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000089618404773
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.0003557981884725
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015646463989068113
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.245, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-1.96e+00
+2:	0.00e+00	-1.96e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000086478304657
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000398201453527
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.001569062503960681
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.082, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	-6.53e-01
+2:	0.00e+00	-6.53e-01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000090534339558
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.00040012314221
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015603628691288677
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.918, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	6.53e-01
+2:	0.00e+00	6.53e-01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.0000900300566276
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000387990868921
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015691648360504423
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.755, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	1.96e+00
+2:	0.00e+00	1.96e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000088577787223
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.0003674831644815
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015606729166923697
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.592, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	3.27e+00
+2:	0.00e+00	3.27e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.0000936937300535
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000373759674023
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015701668959204182
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.429, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	4.57e+00
+2:	0.00e+00	4.57e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000083384033015
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000355363395829
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015735946480283113
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.265, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	5.88e+00
+2:	0.00e+00	5.88e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000087786526578
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000386812785807
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015718631651952444
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.102, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	7.18e+00
+2:	0.00e+00	7.18e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000089207514572
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.0003605635866695
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015633244237325524
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.939, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	8.49e+00
+2:	0.00e+00	8.49e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000090740166829
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.0003856988745685
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015835734436968622
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.776, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	9.80e+00
+2:	0.00e+00	9.80e+00
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000087992371972
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000408397087029
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015805338667992884
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.612, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	1.11e+01
+2:	0.00e+00	1.11e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000087076434653
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000360895945296
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015712421943792987
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.449, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	1.24e+01
+2:	0.00e+00	1.24e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.0000898103555045
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000349865012021
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015643497157510427
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.286, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	1.37e+01
+2:	0.00e+00	1.37e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000085095934598
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.00038627118133
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.00156113620542919
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.122, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	1.50e+01
+2:	0.00e+00	1.50e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.0000952486205845
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000383670635667
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015699648993358491
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.041, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	1.63e+01
+2:	0.00e+00	1.63e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000083916851363
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000365259773574
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015701552570149449
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.204, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	1.76e+01
+2:	0.00e+00	1.76e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000084581240775
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000375888087153
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015601536763881966
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.367, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	1.89e+01
+2:	0.00e+00	1.89e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000084071602229
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000352173618974
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015783572774796196
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.531, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	2.02e+01
+2:	0.00e+00	2.02e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000089871061849
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000357631239762
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.001571418355067402
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.694, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	2.16e+01
+2:	0.00e+00	2.16e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000085038687716
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000361469817913
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015698061534428608
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.857, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	2.29e+01
+2:	0.00e+00	2.29e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000097043507996
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.0003674138613015
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015657147684169112
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.020, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	2.42e+01
+2:	0.00e+00	2.42e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000084854792574
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000365784067892
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.001555041550257883
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.184, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	2.55e+01
+2:	0.00e+00	2.55e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000090197835328
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000379847086649
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015664292443011724
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.347, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	2.68e+01
+2:	0.00e+00	2.68e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000089114131073
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000350055388762
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015679952367049263
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.510, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	2.81e+01
+2:	0.00e+00	2.81e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000082970340869
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000374747595526
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015676177698389136
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.673, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	2.94e+01
+2:	0.00e+00	2.94e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000089925865171
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000351745281892
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015808433656267766
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.837, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	3.07e+01
+2:	0.00e+00	3.07e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.000089938729316
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000391055494678
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015815812883577414
+Parameter value cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h_im: 0.0
+New op index: 4	$A_3(0,0)$[0, 1, 2, 3]
+Current grad: 8.0
+0:	0.00e+00	0.00e+00
+1:	0.00e+00	3.20e+01
+2:	0.00e+00	3.20e+01
+3:	0.00e+00	0.00e+00
+4:	4.00e+00	0.00e+00
+5:	0.00e+00	0.00e+00
+6:	0.00e+00	0.00e+00
+7:	-4.00e+00	0.00e+00
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 4.00008616049437
+New op index: 5	$A_3(0,1)$[4, 5, 6, 7]
+Current grad: 4.000373594254305
+New op index: 6	$A_4(0,0)$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.0015693258639032184
+Parameter value cutoff reached.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 24245438
+	2026-01-11_12-37-12-24245438:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-01-11_12-37-12
+			ProcessId: 24245438
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.Full
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 4, 8), maxshape=(50, None, 8))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 4, 8), maxshape=(50, None, 8))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 4), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: PhysicsAdaptAnsatz5
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 80, 4), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 80), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 80), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 24245438
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 80), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 80), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 80), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 24245438
+			options:
+				Attributes:
+					disp: 0
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 4), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+End 2026-01-11 12:38:35 | 24245438 MyPyJob | lmnode196 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
