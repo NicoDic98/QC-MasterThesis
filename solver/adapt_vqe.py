@@ -74,7 +74,10 @@ class AdaptVQE(BaseVQE):
             "precision": 0,
             "parameter_prec_cutoff": 1e-3,
             "allow_duplicate_gates": False,
+            "SelSeed": 42,
         }
+        do_random_select = ("SelSeed" in adapt_options)
+
         fill_defaults_in_dict(adapt_options, adapt_options_default)
         save_dict_as_attribute(local_group, adapt_options, VQEParameters.AdaptOptions)
 
@@ -112,6 +115,8 @@ class AdaptVQE(BaseVQE):
         # https://docs.h5py.org/en/latest/swmr.html
         local_group.file.swmr_mode = True
 
+        sel_rng = np.random.default_rng(seed=adapt_options["SelSeed"])
+
         for parameters, non_singular_index in zip(h5_saver.parameters_list_dict, h5_saver.non_singular_indices_list):
             hamiltonian = self.hamiltonian_factory(**parameters)
             print(f"Calculating energies for {hamiltonian}")
@@ -141,7 +146,11 @@ class AdaptVQE(BaseVQE):
                 gradients = pub_result.data.evs
 
                 abs_gradients = np.abs(gradients)
-                new_op_index = np.argmax(abs_gradients)
+                if do_random_select:
+                    new_op_index_opts = np.argwhere(abs_gradients >= abs_gradients.max())[:, 0]
+                    new_op_index = sel_rng.choice(new_op_index_opts)
+                else:
+                    new_op_index = np.argmax(abs_gradients)
                 _, qbits, gname = self.ansatz.get_operator_info(int(new_op_index), True)
                 print(f"New op index: {new_op_index}\t{gname}{qbits}", flush=True)
                 print(f"Current grad: {abs_gradients.sum()}")
