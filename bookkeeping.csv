@@ -111,3 +111,8 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 24245100,P5,PH,PH,50,b01101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,"GS (mrr), EEE(r)"
 24245110,P6,PH,PH,50,b00001111,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,No circuit build (Energy=0)
 24245112,P7,PH,PH,50,10101001,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,"GS (mlr), EEE(r)"
+24245431,P1,PH,NH,50,10101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,EEE (Energy = -4)
+24245433,P1,NH,NH,50,10101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,EEE (Energy = -4)
+24245436,P5,NH,NH,50,b01101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,"GS (mrr), EEE(r)"
+24245438,P5,PH,NH,50,b01101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,"GS (mrr), EEE(r)"
+24245440,P8,PH,PH,50,b01010101,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,EEE (Energy = -4)
