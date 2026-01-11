@@ -116,3 +116,5 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 24245436,P5,NH,NH,50,b01101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,"GS (mrr), EEE(r)"
 24245438,P5,PH,NH,50,b01101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,"GS (mrr), EEE(r)"
 24245440,P8,PH,PH,50,b01010101,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,EEE (Energy = -4)
+24245586,P5,PH,PH,50,b01101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,Added random selection of op index in case of equal magnitude gradients; SelSeed is set,"GS (mrr), EEE(r)"
+24245600,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,50,2,SLSQP,2x2,SelSeed is set,"GS (or), ES (mr), EEE (r)"
