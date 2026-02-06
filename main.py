@@ -172,6 +172,10 @@ def measure_observables(group: h5py.Group):
 
         print("H:", h_exp, hh_exp, h_var, flush=True)
         print("C:", c_exp, c_var, flush=True)
+        # Have to save the H expectation value as the optimization might have had a penalty term
+        # which would slightly skew the final values
+        dataset = group[VQEParameters.HamiltonianFinal]
+        dataset[*non_singular_index] = h_exp
         dataset = group[VQEParameters.HamiltonianVariance]
         dataset[*non_singular_index] = h_var
         dataset = group[VQEParameters.ChargeConjugation]

@@ -23,6 +23,7 @@ class VQEParameters(StrEnum):
     AdaptOptions = "AdaptOptions"
     HamiltonianVarianceSuffix = "/HamiltonianVariance"
     HamiltonianVariance = f"{DataPrefix}Final{HamiltonianVarianceSuffix}"
+    HamiltonianFinal = f"{DataPrefix}Final{HamiltonianSuffix}"
     ChargeConjugationSuffix = "/ChargeConjugation"
     ChargeConjugation = f"{DataPrefix}Final{ChargeConjugationSuffix}"
     ChargeConjugationVarianceSuffix = "/ChargeConjugationVariance"

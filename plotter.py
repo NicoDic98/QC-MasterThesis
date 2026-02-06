@@ -1,4 +1,5 @@
 import json
+import warnings
 from datetime import datetime
 from pathlib import Path
 
@@ -131,7 +132,12 @@ class ResultLoader:
         if self.solver == ED.__name__:
             return self.get_observable_mass(parameters, EDParameters.EigenValues)
         else:
-            return self.get_observable_mass(parameters, VQEParameters.Hamiltonian)
+            if VQEParameters.HamiltonianFinal in self.group:
+                return self.get_observable_mass(parameters, VQEParameters.HamiltonianFinal)
+            else:
+                warnings.warn("I'll give you your data, but note that it might be skewed by e.g. a penalty term!",
+                              RuntimeWarning)
+                return self.get_observable_mass(parameters, VQEParameters.Hamiltonian)
 
     def get_hamiltonian_variance_mass(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
