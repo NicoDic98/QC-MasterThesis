@@ -235,7 +235,20 @@ class ResultLoader:
         circuit = ansatz.full_ansatz
         if self.solver == VQE.__name__:
             if final:
-                raise NotImplementedError
+                circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(
+                    VQEParameters.CircuitParameters,
+                    parameters, [])
+
+                if circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]] != len(
+                        circuit.parameters):
+                    raise ValueError(f"Parameters do not match circuit parameters"
+                                     f"{circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]]}"
+                                     f"!={len(circuit.parameters)}")
+                parameter_binds = {}
+                for i, p in enumerate(circuit.parameters):
+                    parameter_binds[p] = np.take(circuit_parameters, i,
+                                                 circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis])
+                circuit.assign_parameters(parameter_binds, inplace=True)
         elif self.solver == AdaptVQE.__name__:
             if final:
                 circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(

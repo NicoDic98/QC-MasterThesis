@@ -4970,6 +4970,24 @@
 				NDataDims: 2
 		Data:
 			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(101,), maxshape=(101,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
 			evs:
 				Attributes:
 				Hamiltonian: Dataset (dtype=float64, shape=(101, 20000), maxshape=(101, None))
