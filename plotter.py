@@ -14,7 +14,7 @@ from qiskit_aer import AerSimulator
 
 from combine_data import combine_data
 from h5_interface import H5Loader, load_attribute_as_dict
-from hamiltonian.base import HamiltonianParameters
+from hamiltonian.base import HamiltonianParameters, HamiltonianType
 from labels import VQEParameters
 from misc import plots_folder, data_folder
 from solver.adapt_vqe import AdaptVQE
@@ -128,16 +128,31 @@ class ResultLoader:
             raise NotImplementedError
         return obs, dep[0]
 
-    def get_energy_mass(self, parameters: dict[str, int]):
+    def get_hamiltonian_type(self):
+        return self.group.attrs[HamiltonianType.__name__]
+
+    def get_hamiltonian_mass(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
             return self.get_observable_mass(parameters, EDParameters.EigenValues)
         else:
+            return self.get_observable_mass(parameters, VQEParameters.Hamiltonian)
+
+    def get_hamiltonian_final_mass(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            raise NotImplementedError
+        else:
+            return self.get_observable_mass(parameters, VQEParameters.HamiltonianFinal)
+
+    def get_energy_mass(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            return self.get_hamiltonian_mass(parameters)
+        else:
             if VQEParameters.HamiltonianFinal in self.group:
-                return self.get_observable_mass(parameters, VQEParameters.HamiltonianFinal)
+                return self.get_hamiltonian_final_mass(parameters)
             else:
                 warnings.warn("I'll give you your data, but note that it might be skewed by e.g. a penalty term!",
                               RuntimeWarning)
-                return self.get_observable_mass(parameters, VQEParameters.Hamiltonian)
+                return self.get_hamiltonian_mass(parameters)
 
     def get_hamiltonian_variance_mass(self, parameters: dict[str, int]):
         if self.solver == ED.__name__:
@@ -203,8 +218,12 @@ class ResultLoader:
                 if opid is None:
                     labels.append(None)
                 else:
-                    gi, qbit, gname = ansatz.get_operator_info(opid, True)
-                    labels.append(f"{gname}" + "$^{" + f"{qbit}" + "}$")
+                    gi, qbits, gname = ansatz.get_operator_info(opid, True)
+                    full_gname = f"${gname.strip("$")}" + "^{("
+                    for qbit in qbits:
+                        full_gname += f"{ansatz.num_qubits - 1 - qbit},"
+                    full_gname = full_gname[:-1] + ")}$"
+                    labels.append(full_gname)
         else:
             raise NotImplementedError
         return labels

@@ -167,7 +167,10 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         gate = self.gate_pool[gi](Parameter("A"))
         if not all_qbits:
             qbits = qbits[0]
-        return gi, qbits, gate.label
+        gname = gate.label
+        if gname.endswith(r"\right)$"):
+            gname = gname.rpartition( r"\left(")[0]
+        return gi, qbits, gname
 
 
 def build_r_yx_xy(b: Parameter | float, plus=True, val_str=""):
@@ -876,6 +879,7 @@ class PhysicsAdaptAnsatz7(PhysicsAdaptAnsatz1):
         self.fixed_ansatz.x(self.num_qubits - 1)
         for i in range(0, self.num_qubits - 2, 2):
             self.fixed_ansatz.x(i)
+
 
 class PhysicsAdaptAnsatz8(PhysicsAdaptAnsatz1):
     def __init__(self, num_qubits: int):
