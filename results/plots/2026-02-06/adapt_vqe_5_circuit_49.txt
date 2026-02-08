@@ -1,0 +1,18 @@
+\documentclass[border=2px]{standalone}
+
+\usepackage[braket, qm]{qcircuit}
+\usepackage{graphicx}
+
+\begin{document}
+\scalebox{1.0}{
+\Qcircuit @C=1.0em @R=0.2em @!R { \\
+	 	\nghost{{q}_{0} :  } & \lstick{{q}_{0} :  } & \qw & \multigate{3}{\mathrm{$A\_3(0,0)$}\,(\mathrm{-4.189})}_<<<{0} & \multigate{7}{\mathrm{$A\_4(0,0)$}\,(\mathrm{0.9554})}_<<<{0} & \qw & \multigate{7}{\mathrm{$A\_4(0,0)$}\,(\mathrm{-7.792e-05})}_<<<{0} & \qw & \qw\\
+	 	\nghost{{q}_{1} :  } & \lstick{{q}_{1} :  } & \gate{\mathrm{X}} & \ghost{\mathrm{$A\_3(0,0)$}\,(\mathrm{-4.189})}_<<<{1} & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{0.9554})}_<<<{1} & \qw & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{-7.792e-05})}_<<<{1} & \qw & \qw\\
+	 	\nghost{{q}_{2} :  } & \lstick{{q}_{2} :  } & \gate{\mathrm{X}} & \ghost{\mathrm{$A\_3(0,0)$}\,(\mathrm{-4.189})}_<<<{2} & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{0.9554})}_<<<{2} & \qw & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{-7.792e-05})}_<<<{2} & \qw & \qw\\
+	 	\nghost{{q}_{3} :  } & \lstick{{q}_{3} :  } & \qw & \ghost{\mathrm{$A\_3(0,0)$}\,(\mathrm{-4.189})}_<<<{3} & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{0.9554})}_<<<{3} & \qw & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{-7.792e-05})}_<<<{3} & \qw & \qw\\
+	 	\nghost{{q}_{4} :  } & \lstick{{q}_{4} :  } & \gate{\mathrm{X}} & \qw & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{0.9554})}_<<<{4} & \multigate{3}{\mathrm{$A\_3(0,1)$}\,(\mathrm{0.7854})}_<<<{0} & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{-7.792e-05})}_<<<{4} & \qw & \qw\\
+	 	\nghost{{q}_{5} :  } & \lstick{{q}_{5} :  } & \qw & \qw & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{0.9554})}_<<<{5} & \ghost{\mathrm{$A\_3(0,1)$}\,(\mathrm{0.7854})}_<<<{1} & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{-7.792e-05})}_<<<{5} & \qw & \qw\\
+	 	\nghost{{q}_{6} :  } & \lstick{{q}_{6} :  } & \gate{\mathrm{X}} & \qw & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{0.9554})}_<<<{6} & \ghost{\mathrm{$A\_3(0,1)$}\,(\mathrm{0.7854})}_<<<{2} & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{-7.792e-05})}_<<<{6} & \qw & \qw\\
+	 	\nghost{{q}_{7} :  } & \lstick{{q}_{7} :  } & \qw & \qw & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{0.9554})}_<<<{7} & \ghost{\mathrm{$A\_3(0,1)$}\,(\mathrm{0.7854})}_<<<{3} & \ghost{\mathrm{$A\_4(0,0)$}\,(\mathrm{-7.792e-05})}_<<<{7} & \qw & \qw\\
+\\ }}
+\end{document}
