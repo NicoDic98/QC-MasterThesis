@@ -699,7 +699,7 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
 
         # TODO: These are ordered directly according to the snake,
         #  the ordering has to be flipped such that it is consistent with the phi convention.
-        # A_1(0,0):
+        # A_1(0,0) -> U_1[0,1](b)=exp(ib * A_1(0,1)):
         op = SparsePauliOp.from_sparse_list([("XY", [1, 2], 0.5j),
                                              ("YX", [1, 2], -0.5j),
                                              ("XZZY", list(range(0, 4)), 0.5j),
@@ -711,9 +711,9 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
             lambda a: combine_gates([build_r_xzy_m_yzx(a, 0), build_r_xzy_m_yzx(a, 2)],
                                     [[1, 2], list(range(0, 4))],
                                     4,
-                                    "$A_1(0,0)$"))
+                                    "$U_1[0,1]$"))
 
-        # A_1(0,1):
+        # A_1(0,1) -> U_1[0,0](b)=exp(ib * A_1(0,0)):
         op = SparsePauliOp.from_sparse_list([("XY", [5, 6], -0.5j),
                                              ("YX", [5, 6], 0.5j),
                                              ("XZZY", list(range(4, 8)), -0.5j),
@@ -725,9 +725,9 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
             lambda a: combine_gates([build_r_xzy_m_yzx(-a, 0), build_r_xzy_m_yzx(-a, 2)],
                                     [[1, 2], list(range(4))],
                                     4,
-                                    "$A_1(0,1)$"))
+                                    "$U_1[0,0]$"))
 
-        # A_2(0,0):
+        # A_2(0,0) -> U_2[0,1](b)=exp(ib * A_2(0,1)):
         op = SparsePauliOp.from_sparse_list([("XZZZZZY", list(range(1, 8)), -0.5j),
                                              ("YZZZZZX", list(range(1, 8)), 0.5j),
                                              ("XZZZZZY", list(range(0, 7)), -0.5j),
@@ -739,9 +739,9 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
             lambda a: combine_gates([build_r_xzy_m_yzx(-a, 5), build_r_xzy_m_yzx(-a, 5)],
                                     [list(range(1, 8)), list(range(0, 7))],
                                     8,
-                                    "$A_2(0,0)$"))
+                                    "$U_2[0,1]$"))
 
-        # A_2(1,0):
+        # A_2(1,0) -> U_2[1,1](b)=exp(ib * A_2(1,1)):
         op = SparsePauliOp.from_sparse_list([("XZY", list(range(3, 6)), -0.5j),
                                              ("YZX", list(range(3, 6)), 0.5j),
                                              ("XZY", list(range(2, 5)), -0.5j),
@@ -753,9 +753,9 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
             lambda a: combine_gates([build_r_xzy_m_yzx(-a, 1), build_r_xzy_m_yzx(-a, 1)],
                                     [list(range(1, 4)), list(range(0, 3))],
                                     4,
-                                    "$A_2(1,0)$"))
+                                    "$U_2[1,1]$"))
 
-        # A_3(0,0):
+        # A_3(0,0) -> U_3[0,1](b)=exp(ib * A_3(0,1)):
         op = SparsePauliOp.from_sparse_list([("XZY", list(range(0, 3)), -0.5j),
                                              ("YZX", list(range(0, 3)), 0.5j),
                                              ("XZY", list(range(1, 4)), -0.5j),
@@ -767,9 +767,9 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
             lambda a: combine_gates([build_r_xzy_m_yzx(-a, 1), build_r_xzy_m_yzx(-a, 1)],
                                     [list(range(0, 3)), list(range(1, 4))],
                                     4,
-                                    "$A_3(0,0)$"))
+                                    "$U_3[0,1]$"))
 
-        # A_3(0,1):
+        # A_3(0,1) -> U_3[0,0](b)=exp(ib * A_3(0,0)):
         op = SparsePauliOp.from_sparse_list([("XZY", list(range(5, 8)), 0.5j),
                                              ("YZX", list(range(5, 8)), -0.5j),
                                              ("XZY", list(range(4, 7)), 0.5j),
@@ -781,9 +781,9 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
             lambda a: combine_gates([build_r_xzy_m_yzx(a, 1), build_r_xzy_m_yzx(a, 1)],
                                     [list(range(1, 4)), list(range(0, 3))],
                                     4,
-                                    "$A_3(0,1)$"))
+                                    "$U_3[0,0]$"))
 
-        # A_4(0,0):
+        # A_4(0,0) -> U_4[0,1](b)=exp(ib * A_4(0,1)):
         op = SparsePauliOp.from_sparse_list([("XZZZZZZY", list(range(0, 8)), -0.5j),
                                              ("YZZZZZZX", list(range(0, 8)), 0.5j),
                                              ("XZZZZY", list(range(1, 7)), -0.5j),
@@ -795,9 +795,9 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
             lambda a: combine_gates([build_r_xzy_m_yzx(-a, 6), build_r_xzy_m_yzx(-a, 4)],
                                     [list(range(0, 8)), list(range(1, 7))],
                                     8,
-                                    "$A_4(0,0)$"))
+                                    "$U_4[0,1]$"))
 
-        # A_4(1,0):
+        # A_4(1,0) -> U_4[1,1](b)=exp(ib * A_4(1,1)):
         op = SparsePauliOp.from_sparse_list([("XZZY", list(range(2, 6)), -0.5j),
                                              ("YZZX", list(range(2, 6)), 0.5j),
                                              ("XY", list(range(3, 5)), -0.5j),
@@ -809,7 +809,7 @@ class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
             lambda a: combine_gates([build_r_xzy_m_yzx(-a, 2), build_r_xzy_m_yzx(-a, 0)],
                                     [list(range(0, 4)), list(range(1, 3))],
                                     4,
-                                    "$A_4(1,0)$"))
+                                    "$U_4[1,1]$"))
 
 
 class PhysicsAdaptAnsatz2(PhysicsAdaptAnsatz1):
