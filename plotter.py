@@ -236,7 +236,8 @@ class ResultLoader:
             raise NotImplementedError
         return labels
 
-    def get_ansatz(self, parameters: dict[str, int], exit_on_duplicate=True) -> BaseVQEAnsatz | BaseADAPTVQEAnsatz:
+    def get_ansatz(self, parameters: dict[str, int], exit_on_duplicate=True,
+                   trim=False) -> BaseVQEAnsatz | BaseADAPTVQEAnsatz:
         if self.solver == VQE.__name__:
             ansatz = rebuild_ansatz(self.group)
             ansatz: BaseVQEAnsatz
@@ -244,12 +245,14 @@ class ResultLoader:
             ansatz = rebuild_ansatz(self.group)
             ansatz: BaseADAPTVQEAnsatz
             operator_indices = self.get_operator_indices(parameters)
+            if trim:
+                operator_indices = operator_indices[:-1]
             ansatz.set_ansatz(operator_indices, exit_on_duplicate)
         else:
             raise NotImplementedError
         return ansatz
 
-    def get_circuit(self, parameters: dict[str, int], final=False, exit_on_duplicate=True):
+    def get_circuit(self, parameters: dict[str, int], final=False, exit_on_duplicate=True, trim=False):
         ansatz = self.get_ansatz(parameters, exit_on_duplicate)
         circuit = ansatz.full_ansatz
         if self.solver == VQE.__name__:
@@ -269,23 +272,35 @@ class ResultLoader:
                                                  circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis])
                 circuit.assign_parameters(parameter_binds, inplace=True)
         elif self.solver == AdaptVQE.__name__:
-            if final:
-                circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(
-                    VQEParameters.CircuitParameters,
-                    parameters, [])
+            circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(
+                VQEParameters.CircuitParameters,
+                parameters, [])
 
-                non_zero_end = 0
-                for i in range(len(circuit_parameters)):
-                    j = len(circuit_parameters) - 1 - i
-                    if circuit_parameters[j] != 0:
-                        non_zero_end = j + 1
-                        break
-                circuit_parameters = circuit_parameters[: non_zero_end]
-                if circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]] != len(
-                        circuit.parameters):
-                    raise ValueError(f"Parameters do not match circuit parameters"
-                                     f"{circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]]}"
-                                     f"!={len(circuit.parameters)}")
+            non_zero_end = 0
+            for i in range(len(circuit_parameters)):
+                j = len(circuit_parameters) - 1 - i
+                if circuit_parameters[j] != 0:
+                    non_zero_end = j + 1
+                    break
+            circuit_parameters = circuit_parameters[: non_zero_end]
+
+            if trim:
+                if "parameter_prec_cutoff" in self.group[VQEParameters.AdaptOptions].attrs:
+                    param_cut_off = self.group[VQEParameters.AdaptOptions].attrs["parameter_prec_cutoff"]
+                else:
+                    param_cut_off = self.group[VQEParameters.AdaptOptions].attrs["prec_cutoff"]
+                if circuit_parameters[-1] < param_cut_off:
+                    circuit_parameters = circuit_parameters[:-1]
+                    ansatz = self.get_ansatz(parameters, exit_on_duplicate, True)
+                    circuit = ansatz.full_ansatz
+
+            if circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]] != len(
+                    circuit.parameters):
+                raise ValueError(f"Parameters do not match circuit parameters"
+                                 f"{circuit_parameters.shape[circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]]}"
+                                 f"!={len(circuit.parameters)}")
+
+            if final:
                 parameter_binds = {}
                 for i, p in enumerate(circuit.parameters):
                     parameter_binds[p] = np.take(circuit_parameters, i,
