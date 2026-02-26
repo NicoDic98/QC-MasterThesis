@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from qiskit import QuantumCircuit
 from qiskit.circuit import Parameter, Gate, ParameterVector
-from qiskit.circuit.library import n_local, XXPlusYYGate, RZGate, RYGate, RXGate, XXMinusYYGate
+from qiskit.circuit.library import n_local, XXPlusYYGate, RZGate, RYGate, RXGate, XXMinusYYGate, RXXGate, RYYGate, RZZGate
 from qiskit.converters import circuit_to_dag, dag_to_circuit
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler.passes import RemoveBarriers
@@ -686,6 +686,45 @@ class HardwareAdaptAnsatz21(HardwareAdaptAnsatz11):
         self.fixed_ansatz = QuantumCircuit(self.num_qubits)
         for i in range(0, self.num_qubits):
             self.fixed_ansatz.h(i)
+
+
+class HardwareAdaptAnsatz22(BaseADAPTVQEAnsatz):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        for i in range(0, self.num_qubits):
+            self.fixed_ansatz.h(i)
+
+        for i in range(self.num_qubits):
+            op = SparsePauliOp.from_sparse_list([("X", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((0, [i]))
+            op = SparsePauliOp.from_sparse_list([("Y", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((1, [i]))
+            op = SparsePauliOp.from_sparse_list([("Z", [i], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((2, [i]))
+
+        self.gate_pool.append(lambda a: RXGate(a, label=f"$R_X$"))
+        self.gate_pool.append(lambda a: RYGate(a, label=f"$R_Y$"))
+        self.gate_pool.append(lambda a: RZGate(a, label=f"$R_Z$"))
+
+        for i in range(self.num_qubits - 1):
+            op = SparsePauliOp.from_sparse_list([("XX", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((3, [i, i + 1]))
+
+            op = SparsePauliOp.from_sparse_list([("YY", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((4, [i, i + 1]))
+
+            op = SparsePauliOp.from_sparse_list([("ZZ", [i, i + 1], -0.5j)], num_qubits=self.num_qubits)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((5, [i, i + 1]))
+
+        self.gate_pool.append(lambda a: RXXGate(a))
+        self.gate_pool.append(lambda a: RYYGate(a))
+        self.gate_pool.append(lambda a: RZZGate(a))
 
 
 class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):

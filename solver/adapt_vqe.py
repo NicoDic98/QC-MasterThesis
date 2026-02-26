@@ -145,17 +145,6 @@ class AdaptVQE(BaseVQE):
                 pub_result = full_result[0]
                 gradients = pub_result.data.evs
 
-                abs_gradients = np.abs(gradients)
-                if do_random_select:
-                    new_op_index_opts = np.argwhere(abs_gradients >= abs_gradients.max())[:, 0]
-                    new_op_index = sel_rng.choice(new_op_index_opts)
-                else:
-                    new_op_index = np.argmax(abs_gradients)
-                _, qbits, gname = self.ansatz.get_operator_info(int(new_op_index), True)
-                print(f"New op index: {new_op_index}\t{gname}{qbits}", flush=True)
-                print(f"Current grad: {abs_gradients.sum()}")
-                initial_parameter_value = 0
-
                 pub = (circuit, sec_commutator_list, [params])
                 # noinspection PyTypeChecker
                 job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
@@ -163,26 +152,53 @@ class AdaptVQE(BaseVQE):
                 pub_result = full_result[0]
                 second_gradients = pub_result.data.evs
 
+                b = np.atan2(gradients, -second_gradients)
+                f = []
+                for k in range(len(gradients)):
+                    if np.abs(np.sin(b[k])) > adapt_options["precision"]:
+                        f.append(-second_gradients[k] + (gradients[k] / np.sin(b[k])))
+                    else:
+                        f.append(-second_gradients[k] - (second_gradients[k] / np.cos(b[k])))
+
+                f = np.array(f)
+
+                abs_gradients = np.abs(gradients)
+                # if do_random_select:
+                #     new_op_index_opts = np.argwhere(abs_gradients >= abs_gradients.max())[:, 0]
+                #     new_op_index = sel_rng.choice(new_op_index_opts)
+                # else:
+                #     new_op_index = np.argmax(abs_gradients)
+                new_op_index = np.argmax(f)
+                _, qbits, gname = self.ansatz.get_operator_info(int(new_op_index), True)
+                print(f"New op index: {new_op_index}\t{gname}{qbits}", flush=True)
+                print(f"Current grad: {abs_gradients.sum()}")
+                print(b, "\n", f)
+                initial_parameter_value = np.pi + b[new_op_index]
+
                 # Note that the derivative dataset will have one more entry as long as the depth limit is not reached
                 cost_function_instance.update_ansatz_operator_derivatives_dataset(len(op_index_list) + 1, gradients)
                 cost_function_instance.update_ansatz_operator_second_derivatives_dataset(len(op_index_list) + 1,
                                                                                          second_gradients)
 
-                if i == 0:
-                    for op_id, (grad, secgrad) in enumerate(zip(gradients, second_gradients)):
-                        print(f"{op_id}:\t{grad:.2e}\t{secgrad:.2e}")
-                    if abs_gradients.sum() < adapt_options["prec_cutoff"]:
-                        for op_id, secgrad in enumerate(second_gradients):
-                            if secgrad < -adapt_options["prec_cutoff"]:
-                                new_op_index = op_id
-                                initial_parameter_value = np.pi
-                                print(f"Selecting maximum: {new_op_index} with second gradient of {secgrad}")
-                                break
-                else:
+                # if i == 0:
+                #     for op_id, (grad, secgrad) in enumerate(zip(gradients, second_gradients)):
+                #         print(f"{op_id}:\t{grad:.2e}\t{secgrad:.2e}")
+                #     if abs_gradients.sum() < adapt_options["prec_cutoff"]:
+                #         for op_id, secgrad in enumerate(second_gradients):
+                #             if secgrad < -adapt_options["prec_cutoff"]:
+                #                 new_op_index = op_id
+                #                 initial_parameter_value = np.pi
+                #                 print(f"Selecting maximum: {new_op_index} with second gradient of {secgrad}")
+                #                 break
+                # else:
+                #
+                #     if abs_gradients.sum() < adapt_options["prec_cutoff"]:
+                #         print("Precision cutoff reached.")
+                #         break
 
-                    if abs_gradients.sum() < adapt_options["prec_cutoff"]:
-                        print("Precision cutoff reached.")
-                        break
+                if np.abs(f).sum() < adapt_options["prec_cutoff"]:
+                    print("Precision cutoff reached.")
+                    break
 
                 op_index_list.append(new_op_index)
                 params = np.append(params, initial_parameter_value)
