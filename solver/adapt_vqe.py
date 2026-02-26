@@ -153,14 +153,15 @@ class AdaptVQE(BaseVQE):
                 second_gradients = pub_result.data.evs
 
                 b = np.atan2(gradients, -second_gradients)
-                f = []
-                for k in range(len(gradients)):
-                    if np.abs(np.sin(b[k])) > adapt_options["precision"]:
-                        f.append(-second_gradients[k] + (gradients[k] / np.sin(b[k])))
-                    else:
-                        f.append(-second_gradients[k] - (second_gradients[k] / np.cos(b[k])))
-
-                f = np.array(f)
+                f = np.sqrt(gradients ** 2 + second_gradients ** 2) - second_gradients
+                # f = []
+                # for k in range(len(gradients)):
+                #     if np.abs(np.sin(b[k])) > adapt_options["precision"]:
+                #         f.append(-second_gradients[k] + (gradients[k] / np.sin(b[k])))
+                #     else:
+                #         f.append(-second_gradients[k] - (second_gradients[k] / np.cos(b[k])))
+                #
+                # f = np.array(f)
 
                 abs_gradients = np.abs(gradients)
                 # if do_random_select:
@@ -196,7 +197,7 @@ class AdaptVQE(BaseVQE):
                 #         print("Precision cutoff reached.")
                 #         break
 
-                if np.abs(f).sum() < adapt_options["prec_cutoff"]:
+                if f.sum() < adapt_options["prec_cutoff"]:
                     print("Precision cutoff reached.")
                     break
 
