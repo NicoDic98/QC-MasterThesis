@@ -289,7 +289,7 @@ class ResultLoader:
                     param_cut_off = self.group[VQEParameters.AdaptOptions].attrs["parameter_prec_cutoff"]
                 else:
                     param_cut_off = self.group[VQEParameters.AdaptOptions].attrs["prec_cutoff"]
-                if circuit_parameters[-1] < param_cut_off:
+                if np.abs(circuit_parameters[-1]) < param_cut_off:
                     circuit_parameters = circuit_parameters[:-1]
                     ansatz = self.get_ansatz(parameters, exit_on_duplicate, True)
                     circuit = ansatz.full_ansatz

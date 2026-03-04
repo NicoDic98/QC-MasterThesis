@@ -144,7 +144,7 @@ def measure_observables(group: h5py.Group):
         params = {HamiltonianParameters.Mass: i}
         param_values = result_loader.get_parameter_values_from_indices(params)
         print([f"{x}={y:.3f}" for x, y in param_values.items()], flush=True)
-        circuit = result_loader.get_circuit(params, final=True, exit_on_duplicate=False)
+        circuit = result_loader.get_circuit(params, final=True, exit_on_duplicate=False, trim=True)
 
         h_operator = hamiltonian.hamiltonian_op(HamiltonianType.Full)
         if circuit.num_qubits % 2 != 0:
@@ -261,12 +261,12 @@ Path(data_folder).mkdir(parents=True, exist_ok=True)
 #     pprint_h5(f)
 
 dataset_names = [
-    # ("2025-10-43", "2025-10-27_17-21-26-23769494"),
+    ("2025-10-43", "2025-10-27_17-21-26-23769494"),
     # ("2025-11-45", "2025-11-13_14-45-01-23862036"),
     ("2025-11-46", "2025-11-18_13-11-50-23954408"),
-    # ("2026-01-01", "2026-01-07_14-31-34-24236398"),
-    # ("2026-01-02", "2026-01-11_00-57-15-24245100"),
-    # ("2026-01-02", "2026-01-11_01-16-50-24245112"),
+    ("2026-01-01", "2026-01-07_14-31-34-24236398"),
+    ("2026-01-02", "2026-01-11_00-57-15-24245100"),
+    ("2026-01-02", "2026-01-11_01-16-50-24245112"),
     # ("2025-09-35", "2025-09-02_17-46-07"),
     # ("2025-09-35", "2025-09-03_11-10-56"),
     # ("2025-09-35", "2025-09-03_11-11-36"),

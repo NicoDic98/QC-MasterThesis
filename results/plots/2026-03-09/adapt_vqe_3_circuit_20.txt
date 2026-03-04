@@ -6,7 +6,7 @@
 \begin{document}
 \scalebox{1.0}{
 \Qcircuit @C=1.0em @R=0.2em @!R { \\
-	 	\nghost{{q}_{0} :  } & \lstick{{q}_{0} :  } & \gate{\mathrm{H}} & \qw & \qw & \qw & \qw & \qw\\
+	 	\nghost{{q}_{0} :  } & \lstick{{q}_{0} :  } & \gate{\mathrm{H}} & \gate{\mathrm{$R\_Y$}\,(\mathrm{A[7]})} & \qw & \qw & \qw & \qw\\
 	 	\nghost{{q}_{1} :  } & \lstick{{q}_{1} :  } & \gate{\mathrm{H}} & \multigate{1}{\mathrm{$R\_{YX\mbox{-}XY}\left(A[2]\right)$}\,(\mathrm{A[2]})}_<<<{1} & \gate{\mathrm{$R\_Y$}\,(\mathrm{A[3]})} & \qw & \qw & \qw\\
 	 	\nghost{{q}_{2} :  } & \lstick{{q}_{2} :  } & \gate{\mathrm{H}} & \ghost{\mathrm{$R\_{YX\mbox{-}XY}\left(A[2]\right)$}\,(\mathrm{A[2]})}_<<<{0} & \multigate{1}{\mathrm{$R\_{YX\mbox{-}XY}\left(A[5]\right)$}\,(\mathrm{A[5]})}_<<<{1} & \qw & \qw & \qw\\
 	 	\nghost{{q}_{3} :  } & \lstick{{q}_{3} :  } & \gate{\mathrm{H}} & \qw & \ghost{\mathrm{$R\_{YX\mbox{-}XY}\left(A[5]\right)$}\,(\mathrm{A[5]})}_<<<{0} & \qw & \qw & \qw\\
