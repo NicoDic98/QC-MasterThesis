@@ -28,6 +28,8 @@ from misc import pprint_h5, data_folder, default_id
 from solver.base import GlobalParameters, SimulatorType
 from solver.variational_quantum_eigensolver import VQE
 
+from Tests.smo import sequential_minimal_optimization
+
 
 def run_ed(my_f: h5py.File):
     my_ed = ED(FreeWilson2D.build_hamiltonian, my_f)
@@ -64,8 +66,8 @@ def run_adapt_vqe(my_f: h5py.File):
                      #     "method": "statevector",
                      # },
                      optimizer_options={
-                         "method": 'slsqp',
-                         "options": {"maxiter": 20000, "disp": 0},
+                         "method": sequential_minimal_optimization,
+                         "options": {"maxiter": 100, "disp": 1, "subset_size": 4},
                          # "tol": 1e-9,
                          "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                      },
