@@ -216,9 +216,7 @@ class AdaptVQE(BaseVQE):
                 cost_function_instance.ansatz = circuit
                 # circuit.draw("text", filename="out/test.txt")
                 cost_function_instance.hamiltonian = h_operator.apply_layout(layout=circuit.layout)
-                print(optimizer_options)
                 optimize_result = minimize(fun=cost_function_instance, x0=params, **optimizer_options)
-                raise ValueError
                 if not optimize_result.success:
                     print(f"Optimization failed: {optimize_result.message}")
                 params = optimize_result.x

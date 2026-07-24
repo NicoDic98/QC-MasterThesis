@@ -147,9 +147,17 @@ def sequential_minimal_optimization(
     hessp=None,
     bounds=None,
     constraints=(),
-    tol: float | None = None,
     callback: Callable | None = None,
     options: dict | None = None,
+    *,
+    subset_size: int = 1,
+    subsets=None,
+    order=None,
+    maxiter: int = 100,
+    tol: float = 1e-8,
+    n_restarts: int = 4,
+    seed=None,
+    disp: bool = False,
     **unused,
 ) -> OptimizeResult:
     """
@@ -157,38 +165,61 @@ def sequential_minimal_optimization(
     compatible with the `method=` callable interface of
     `scipy.optimize.minimize`.
 
+    IMPORTANT: when scipy.optimize.minimize dispatches to a custom `method`
+    callable, it does NOT pass `options` as a dict -- it splats the dict's
+    entries directly as keyword arguments:
+
+        return method(fun, x0, args=args, jac=jac, hess=hess, hessp=hessp,
+                      bounds=bounds, constraints=constraints,
+                      callback=callback, **options)
+
+    (Note this also means the top-level `tol=` argument of `minimize()` is
+    NOT forwarded to custom methods -- only whatever you put in `options`
+    reaches here.) So this function accepts subset_size/maxiter/tol/etc. as
+    ordinary keyword-only parameters, which is what makes
+
+        minimize(fun, x0, method=sequential_minimal_optimization,
+                 options={"subset_size": 2, "maxiter": 50, "disp": True})
+
+    actually work. For convenience it *also* still accepts a manually-passed
+    `options` dict (e.g. if you call this function directly rather than
+    through `scipy.optimize.minimize`); values in `options` take precedence
+    over the keyword defaults above.
+
     Parameters
     ----------
-    fun, x0, args, jac, hess, hessp, bounds, constraints, tol, callback, options
+    fun, x0, args, jac, hess, hessp, bounds, constraints, callback
         Same meaning as in `scipy.optimize.minimize`. `jac`, `hess`, `hessp`
         are ignored (method is analytic/gradient-free). `bounds` and
         `constraints` are not supported.
-
     options : dict, optional
-        - "subset_size" : int, default 1
-              Size |M| of each jointly-updated parameter group. 1 reproduces
-              the original single-parameter method (Sec. II B). Larger values
-              exploit joint sinusoidal structure (Sec. II C, Eq. 12) between
-              parameters that interact through commuting/related generators.
-        - "subsets" : list of tuples of int, optional
-              Explicit parameter groups to update each sweep, overriding
-              `subset_size` (groups need not partition all indices, and can
-              repeat indices across groups).
-        - "order" : sequence of int, optional
-              Permutation of parameter indices used to build default
-              (chunked) subsets when "subsets" is not given.
-        - "maxiter" : int, default 100
-              Maximum number of full sweeps over all subsets.
-        - "tol" : float, default 1e-8
-              Sweep is considered converged when the true cost function
-              changes by less than this between successive sweeps.
-        - "n_restarts" : int, default 4
-              Random restarts used for minimizing the (cheap, closed-form)
-              reconstructed trig polynomial when |M| > 1.
-        - "seed" : int, optional
-              RNG seed for restarts.
-        - "disp" : bool, default False
-              Print progress each sweep.
+        Alternative way to pass the keyword options below in one dict
+        (only relevant if you call this function directly; scipy itself
+        splats `options` into keywords before this function ever sees it).
+    subset_size : int, default 1
+        Size |M| of each jointly-updated parameter group. 1 reproduces the
+        original single-parameter method (Sec. II B). Larger values exploit
+        joint sinusoidal structure (Sec. II C, Eq. 12) between parameters
+        that interact through commuting/related generators.
+    subsets : list of tuples of int, optional
+        Explicit parameter groups to update each sweep, overriding
+        `subset_size` (groups need not partition all indices, and can
+        repeat indices across groups).
+    order : sequence of int, optional
+        Permutation of parameter indices used to build default (chunked)
+        subsets when `subsets` is not given.
+    maxiter : int, default 100
+        Maximum number of full sweeps over all subsets.
+    tol : float, default 1e-8
+        Sweep is considered converged when the true cost function changes
+        by less than this between successive sweeps.
+    n_restarts : int, default 4
+        Random restarts used for minimizing the (cheap, closed-form)
+        reconstructed trig polynomial when |M| > 1.
+    seed : int, optional
+        RNG seed for restarts.
+    disp : bool, default False
+        Print progress each sweep.
 
     Returns
     -------
@@ -204,17 +235,17 @@ def sequential_minimal_optimization(
         warnings.warn("`jac` is ignored: this method reconstructs the cost function's "
                        "exact trigonometric dependence and does not use gradients.")
 
-    options = dict(options or {})
-    subset_size = int(options.get("subset_size", 1))
-    explicit_subsets = options.get("subsets")
-    order = options.get("order")
-    maxiter = int(options.get("maxiter", 100))
-    tol_ = float(tol) if tol is not None else float(options.get("tol", 1e-8))
-    n_restarts = int(options.get("n_restarts", 4))
-    seed = options.get("seed")
-    disp = bool(options.get("disp", False))
-
-    print(f"Igot:{disp} and {subset_size} and {options}")
+    # Allow an explicit `options` dict (direct-call convenience) to override
+    # the keyword-only defaults above.
+    opts = dict(options or {})
+    subset_size = int(opts.get("subset_size", subset_size))
+    explicit_subsets = opts.get("subsets", subsets)
+    order = opts.get("order", order)
+    maxiter = int(opts.get("maxiter", maxiter))
+    tol_ = float(opts.get("tol", tol))
+    n_restarts = int(opts.get("n_restarts", n_restarts))
+    seed = opts.get("seed", seed)
+    disp = bool(opts.get("disp", disp))
 
     rng = np.random.default_rng(seed)
     x = np.asarray(x0, dtype=float).copy()

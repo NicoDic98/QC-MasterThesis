@@ -168,8 +168,9 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         if not all_qbits:
             qbits = qbits[0]
         gname = gate.label
-        if gname.endswith(r"\right)$"):
-            gname = gname.rpartition( r"\left(")[0]
+        if gname is not None:
+            if gname.endswith(r"\right)$"):
+                gname = gname.rpartition( r"\left(")[0]
         return gi, qbits, gname
 
 
@@ -722,9 +723,9 @@ class HardwareAdaptAnsatz22(BaseADAPTVQEAnsatz):
             self.operator_pool.append(op)
             self.operator_gate_map.append((5, [i, i + 1]))
 
-        self.gate_pool.append(lambda a: RXXGate(a))
-        self.gate_pool.append(lambda a: RYYGate(a))
-        self.gate_pool.append(lambda a: RZZGate(a))
+        self.gate_pool.append(lambda a: RXXGate(a, label="$R_{XX}$"))
+        self.gate_pool.append(lambda a: RYYGate(a, label="$R_{YY}$"))
+        self.gate_pool.append(lambda a: RZZGate(a, label="$R_{ZZ}$"))
 
 
 class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
