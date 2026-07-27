@@ -118,3 +118,13 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 24245440,P8,PH,PH,50,b01010101,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,,EEE (Energy = -4)
 24245586,P5,PH,PH,50,b01101010,C-Invariant-Pool,SVE,50,2,SLSQP,2x2,Added random selection of op index in case of equal magnitude gradients; SelSeed is set,"GS (mrr), EEE(r)"
 24245600,7,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX+YY}; R_{XY-YX},SVE,50,2,SLSQP,2x2,SelSeed is set,"GS (or), ES (mr), EEE (r)"
+,,,,,,,,,,,,,
+24623374,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,modified version with theta_0=pi+b,"GS (or), EEE (mr)"
+26631342,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,NFT,2x2,"subset_size=1, modified version with theta_0=pi+b","GS (or), EEE (mr)"
+26631391,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,NFT,2x2,"subset_size=2, modified version with theta_0=pi+b","GS (or), EEE (mr)"
+26631402,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,NFT,2x2,"subset_size=4, modified version with theta_0=pi+b","GS (or), EEE (mr)"
+26631496,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,NFT,2x2,"subset_size=6, modified version with theta_0=pi+b","GS (or), EEE (mr)"
+26631761,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,NFT,2x2,"subset_size=8, modified version with theta_0=pi+b","GS (or), EEE (mr)"
+26632179,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,NFT,2x2,"subset_size=10, modified version with theta_0=pi+b","GS (or), EEE (mr)"
+26695159,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,NFT,2x2,"subset_size=2, modified version with theta_0=0","GS (or), EEE (mr)"
+26695313,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,modified version with theta_0=0,"GS (or), EEE (mr), 1 ES"
