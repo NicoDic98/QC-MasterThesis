@@ -175,6 +175,7 @@ class AdaptVQE(BaseVQE):
                 print(f"Current grad: {abs_gradients.sum()}")
                 print(b, "\n", f)
                 initial_parameter_value = np.pi + b[new_op_index]
+                initial_parameter_value = 0
 
                 # Note that the derivative dataset will have one more entry as long as the depth limit is not reached
                 cost_function_instance.update_ansatz_operator_derivatives_dataset(len(op_index_list) + 1, gradients)

@@ -66,8 +66,8 @@ def run_adapt_vqe(my_f: h5py.File):
                      #     "method": "statevector",
                      # },
                      optimizer_options={
-                         "method": sequential_minimal_optimization,
-                         "options": {"maxiter": 100, "disp": 1, "subset_size": 10},
+                         "method": "slsqp",
+                         "options": {"maxiter": 20000, "disp": 1},
                          # "tol": 1e-9,
                          "x0Seed": my_f.attrs[GlobalParameters.ProcessId]
                      },
