@@ -128,3 +128,5 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 26632179,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,NFT,2x2,"subset_size=10, modified version with theta_0=pi+b","GS (or), EEE (mr)"
 26695159,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,NFT,2x2,"subset_size=2, modified version with theta_0=0","GS (or), EEE (mr)"
 26695313,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,modified version with theta_0=0,"GS (or), EEE (mr), 1 ES"
+26732550,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,New modified version with direct previous operator layer parameter search,"GS (or), ES/EEE (mr)"
+26732869,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,New modified version with full previous operators parameter search,ES/EEE
