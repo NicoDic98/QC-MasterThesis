@@ -1,0 +1,205 @@
+Start 2026-07-29 18:24:58 | 26732526 MyPyJob | lmnode193 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/14.3.0                    8) Tcl/9.0.1-GCCcore-14.3.0
+  2) zlib/1.3.1-GCCcore-14.3.0         9) SQLite/3.50.1-GCCcore-14.3.0
+  3) binutils/2.44-GCCcore-14.3.0     10) XZ/5.8.1-GCCcore-14.3.0
+  4) bzip2/1.0.8-GCCcore-14.3.0       11) libffi/3.5.1-GCCcore-14.3.0
+  5) ncurses/6.5-GCCcore-14.3.0       12) OpenSSL/3
+  6) libreadline/8.2-GCCcore-14.3.0   13) Python/3.13.5-GCCcore-14.3.0
+  7) libtommath/1.3.0-GCCcore-14.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h_im: 0.0
+New op index: 10	$R_Y$[3]
+Current grad: 17.999999999999986
+
+ [200.5        198.5        200.5        200.5        198.00000002
+ 200.5        200.5        198.00000002 200.5        200.5
+ 197.93844723 200.5        200.5        197.93844723 200.5
+ 200.5        198.00000001 200.5        200.5        198.00000001
+ 200.5        200.5        198.5        200.5        200.5
+ 200.5        200.5        200.5        200.5        200.5
+ 200.5        200.5        200.5        200.5        200.5
+ 200.5        200.5        200.5        200.5        200.5
+ 200.5        200.5        200.5        200.5        200.5       ]
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 197.93844723156963
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+New op index: 16	$R_Y$[5]
+Current grad: 340.42626735658143
+
+ [197.93844723 147.4338395  197.93844723 197.93844723 151.93383956
+ 197.93844723 197.93844723 147.55520796 197.93844723 197.93844723
+ 197.93844719 197.93844723 197.93844723 152.04009405 197.93844723
+ 197.93844723 146.9338395  197.93844723 197.93844723 151.93383956
+ 197.93844723 197.93844723 147.4338395  197.93844723 197.93844723
+ 197.93844723 197.93844723 197.93844723 197.93844723 197.93844723
+ 197.93844723 197.93844723 197.93844723 197.93844723 197.93844723
+ 197.93844723 197.93844723 197.93844723 197.93844723 197.93844723
+ 197.93844723 197.93844723 197.93844723 197.93844723 197.93844723]
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 145.49759665398662
+            Iterations: 5
+            Function evaluations: 20
+            Gradient evaluations: 5
+New op index: 4	$R_Y$[1]
+Current grad: 12.504558623274665
+
+ [145.49759665 143.49985298 145.49759665 145.49759665 142.99534034
+ 145.49759665 145.49759665 143.50460312 145.49759665 145.49759634
+ 145.49759657 145.49759634 145.49759665 143.93741863 145.49759665
+ 145.49759655 145.49759657 145.49759655 145.49759665 143.93382447
+ 145.49759665 145.49759665 143.49985298 145.49759665 145.49759665
+ 145.49759665 145.49759665 145.49759665 145.49759665 145.49759665
+ 145.49759634 145.49759634 145.49759634 145.49759634 145.49759634
+ 145.49759634 145.49759655 145.49759655 145.49759655 145.49759655
+ 145.49759655 145.49759655 145.49759665 145.49759665 145.49759665]
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 142.93844719914816
+            Iterations: 3
+            Function evaluations: 15
+            Gradient evaluations: 3
+New op index: 22	$R_Y$[7]
+Current grad: 244.53072385007954
+
+ [142.9384472   92.92999644 142.9384472  142.9384472  142.9384472
+ 142.9384472  142.9384472   92.92999348 142.9384472  142.93844723
+ 142.93844719 142.93844723 142.9384472   97.04963768 142.9384472
+ 142.9384472  142.93844723 142.9384472  142.9384472   96.92978639
+ 142.9384472  142.9384472   92.43247133 142.9384472  142.9384472
+ 142.9384472  142.9384472  142.9384472  142.9384472  142.9384472
+ 142.93844723 142.93844723 142.93844723 142.93844723 142.93844723
+ 142.93844723 142.9384472  142.9384472  142.9384472  142.9384472
+ 142.9384472  142.9384472  142.9384472  142.9384472  142.9384472 ]
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 90.99760214437408
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+New op index: 19	$R_Y$[6]
+Current grad: 8.033194746845167
+
+ [90.99760214 89.43849973 90.99760214 90.99760113 90.99760114 90.99760112
+ 90.99760214 89.43850069 90.99760214 90.99759723 90.99759748 90.99759726
+ 90.99760214 89.43739958 90.99760214 90.99760215 90.99760216 90.99760214
+ 90.99760214 89.43359875 90.99760214 90.99760219 90.9976024  90.99760217
+ 90.99760113 90.99760113 90.99760112 90.99760113 90.99760113 90.99760112
+ 90.99759723 90.99759723 90.99759726 90.99759723 90.99759723 90.99759726
+ 90.99760215 90.99760215 90.99760214 90.99760215 90.99760215 90.99760214
+ 90.99760219 90.99760229 90.99760217]
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 89.39862100756908
+            Iterations: 7
+            Function evaluations: 48
+            Gradient evaluations: 7
+New op index: 7	$R_Y$[2]
+Current grad: 147.2785503673668
+
+ [89.39862101 39.47087323 89.39862101 89.39862095 89.39862093 89.39862095
+ 89.39862101 39.47085625 89.39862101 89.39862115 89.39862101 89.39862115
+ 89.39862101 43.14978123 89.39862101 89.39862112 89.39862101 89.39862112
+ 89.39862094 89.39862094 89.39862094 89.39862102 89.39862101 89.39862101
+ 89.39862095 89.39862095 89.39862095 89.39862095 89.39862095 89.39862095
+ 89.39862115 89.39862115 89.39862115 89.39862115 89.39862115 89.39862115
+ 89.39862112 89.39862112 89.39862112 89.39862139 89.39862103 89.39862133
+ 89.39862119 89.39862104 89.39862136]
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 37.992788300887334
+            Iterations: 6
+            Function evaluations: 51
+            Gradient evaluations: 6
+New op index: 1	$R_Y$[0]
+Current grad: 4.00062120737143
+
+ [37.9927883  35.99990359 37.9927883  37.99278833 37.99278856 37.99278832
+ 37.99278835 37.99278857 37.99278833 37.99278833 37.99278855 37.99278833
+ 37.9927883  36.00006907 37.9927883  37.99278838 37.99278856 37.99278833
+ 37.9927883  37.99278856 37.99278833 37.99278834 37.99278856 37.99278833
+ 37.99278833 37.99278833 37.99278832 37.99278842 37.99278842 37.99278842
+ 37.9927883  37.9927883  37.9927883  37.99278833 37.99278833 37.99278833
+ 37.99278838 37.99278838 37.99278833 37.99278842 37.99278842 37.99278842
+ 37.9927883  37.9927883  37.9927883 ]
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 35.99754904401189
+            Iterations: 6
+            Function evaluations: 56
+            Gradient evaluations: 6
+New op index: 13	$R_Y$[4]
+Current grad: 52.004830755949286
+
+ [ 35.99754904  35.99754905  35.99754904  35.9975492   35.99754904
+  35.99754904  35.99754904  35.99754905  35.99754904  35.99754903
+  35.99754903  35.99754903  35.99754904 -15.99875969  35.99754904
+  35.99754904  35.99754905  35.99754904  35.99754903  35.99754903
+  35.99754903  35.99754904  35.99754905  35.99754904  35.9975491
+  35.99754911  35.99754943  35.99754926  35.9975491   35.9975493
+  35.99754903  35.99754908  35.99754903  35.99754903  35.99754903
+  35.99754903  35.99754904  35.99754904  35.99754904  35.99754903
+  35.99754906  35.99754904  35.99754932  35.99754904  35.99754907]
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -15.99999999999805
+            Iterations: 2
+            Function evaluations: 23
+            Gradient evaluations: 2
+New op index: 41	$R_{ZZ}$[5, 6]
+Current grad: 2.9680748015534347e-05
+
+ [-16.         -15.99999974 -15.99999997 -15.99999996 -15.99999974
+ -15.99999997 -16.         -15.99999974 -15.99999997 -15.99999997
+ -15.99999974 -15.99999997 -16.         -15.99999974 -15.99999997
+ -15.9999997  -15.99999974 -15.99999997 -16.         -15.99999974
+ -15.99999997 -16.         -15.99999974 -15.99999997 -16.
+ -16.         -16.         -16.         -16.         -16.
+ -16.         -16.         -16.         -15.99999001 -15.99999001
+ -16.         -16.         -16.         -16.         -16.
+ -16.         -16.         -16.         -16.         -16.        ]
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+h_im: 0.0
+Traceback (most recent call last):
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/main.py", line 261, in <module>
+    run_adapt_vqe(f)
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/main.py", line 59, in run_adapt_vqe
+    my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/solver/adapt_vqe.py", line 165, in run
+    temp_optimize_result = minimize(fun=opt_f, x0=np.zeros_like(pis), method="slsqp", options = {"maxiter": 20000})
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/scipy/optimize/_minimize.py", line 796, in minimize
+    res = _minimize_slsqp(fun, x0, args, jac, bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/scipy/optimize/_slsqp_py.py", line 419, in _minimize_slsqp
+    sf = _prepare_scalar_function(func, x, jac=jac, args=args, epsilon=eps,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/scipy/optimize/_optimize.py", line 310, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 274, in __init__
+    self._update_fun()
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 353, in _update_fun
+    fx = self._wrapped_fun(self.x)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/lib/python3.12/site-packages/scipy/_lib/_util.py", line 590, in __call__
+    fx = self.f(np.copy(x), *self.args)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/solver/adapt_vqe.py", line 158, in opt_f
+    temp_params[pi]=x[rpi]
+    ~~~~~~~~~~~^^^^
+IndexError: index 6 is out of bounds for axis 0 with size 1
+End 2026-07-29 18:25:24 | 26732526 MyPyJob | lmnode193 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

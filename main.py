@@ -253,23 +253,23 @@ Path(data_folder).mkdir(parents=True, exist_ok=True)
 
 h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 
-with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
-    pprint_h5(f)
-    f.attrs[GlobalParameters.ProcessId] = args.id
-    # run_ed(f)
-    # run_vqe(f)
-    run_adapt_vqe(f)
-    # with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
-    #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
-    pprint_h5(f)
+# with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
+#     pprint_h5(f)
+#     f.attrs[GlobalParameters.ProcessId] = args.id
+#     # run_ed(f)
+#     # run_vqe(f)
+#     run_adapt_vqe(f)
+#     # with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
+#     #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
+#     pprint_h5(f)
 
 dataset_names = [
-    ("2025-10-43", "2025-10-27_17-21-26-23769494"),
+    # ("2025-10-43", "2025-10-27_17-21-26-23769494"),
     # ("2025-11-45", "2025-11-13_14-45-01-23862036"),
-    ("2025-11-46", "2025-11-18_13-11-50-23954408"),
-    ("2026-01-01", "2026-01-07_14-31-34-24236398"),
-    ("2026-01-02", "2026-01-11_00-57-15-24245100"),
-    ("2026-01-02", "2026-01-11_01-16-50-24245112"),
+    # ("2025-11-46", "2025-11-18_13-11-50-23954408"),
+    # ("2026-01-01", "2026-01-07_14-31-34-24236398"),
+    # ("2026-01-02", "2026-01-11_00-57-15-24245100"),
+    # ("2026-01-02", "2026-01-11_01-16-50-24245112"),
     # ("2025-09-35", "2025-09-02_17-46-07"),
     # ("2025-09-35", "2025-09-03_11-10-56"),
     # ("2025-09-35", "2025-09-03_11-11-36"),
@@ -278,13 +278,15 @@ dataset_names = [
     # ("2025-09-35", "2025-09-06_15-50-13-23147802"),
     # ("2025-09-35", "2025-09-06_15-50-13-23147804"),
     # ("2025-09-35", "2025-09-06_15-50-13-23147805"),
+    ("2026-07-30", "2026-07-29_18-28-01-26732550"),
+    ("2026-07-30", "2026-07-29_18-51-11-26732869"),
 ]
-# for file_name, dataset_name in dataset_names:
-#     print(f"Processing {file_name}: {dataset_name}")
-#     with h5py.File(f"{data_folder}{file_name}.hdf5", "a") as sf:
-#         pprint_h5(sf)
-#         measure_observables(sf[dataset_name])
-#         pprint_h5(sf)
+for file_name, dataset_name in dataset_names:
+    print(f"Processing {file_name}: {dataset_name}")
+    with h5py.File(f"{data_folder}{file_name}.hdf5", "a") as sf:
+        pprint_h5(sf)
+        measure_observables(sf[dataset_name])
+        pprint_h5(sf)
 
 # with h5py.File(f"{data_folder}{"2025-09-35"}.hdf5", "a") as sf:
 #     pprint_h5(sf)

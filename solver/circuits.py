@@ -130,6 +130,7 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         self.operator_pool = []
         self.gate_pool = []
         self.operator_gate_map = []
+        self.last_parameter_index_on_qubit = [-1] * self.num_qubits
 
     def max_num_parameters(self):
         """
@@ -138,10 +139,12 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         """
         return None
 
-    def set_ansatz(self, operator_indices: list[int], exit_on_duplicate=True):
+    def set_ansatz(self, operator_indices: list[int], exit_on_duplicate=True, update_last_parameter_on_qubit=False):
         qc = self.fixed_ansatz.copy()
         my_params = ParameterVector("A", len(operator_indices))
         last_gate_on_qubit = [-1] * self.num_qubits
+        if update_last_parameter_on_qubit:
+            self.last_parameter_index_on_qubit = [-1] * self.num_qubits
         for i, oi in enumerate(operator_indices):
             gi, qbits = self.operator_gate_map[oi]
             ok = False
@@ -152,10 +155,24 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
                 return 1
             gate = self.gate_pool[gi](my_params[i])
             qc.append(gate, qbits)
-            for qbit in qbits:
-                last_gate_on_qubit[qbit] = oi
+            if update_last_parameter_on_qubit:
+                for qbit in qbits:
+                    last_gate_on_qubit[qbit] = oi
+                    self.last_parameter_index_on_qubit[qbit] = i
+            else:
+                for qbit in qbits:
+                    last_gate_on_qubit[qbit] = oi
         self.full_ansatz = qc
         return 0
+
+    def get_previous_parameter_indices(self, oi:int):
+        gi, qbits = self.operator_gate_map[oi]
+        temp = []
+        for qbit in qbits:
+            temp.append(self.last_parameter_index_on_qubit[qbit])
+        temp = np.unique(temp)
+        temp = temp[temp>=0]
+        return temp.tolist()
 
     def get_operator_info(self, operator_index: int, all_qbits=False):
         """
