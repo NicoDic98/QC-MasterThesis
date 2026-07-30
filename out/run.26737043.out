@@ -1,0 +1,3244 @@
+Start 2026-07-30 12:12:47 | 26737043 MyPyJob | lmnode194 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/14.3.0                    8) Tcl/9.0.1-GCCcore-14.3.0
+  2) zlib/1.3.1-GCCcore-14.3.0         9) SQLite/3.50.1-GCCcore-14.3.0
+  3) binutils/2.44-GCCcore-14.3.0     10) XZ/5.8.1-GCCcore-14.3.0
+  4) bzip2/1.0.8-GCCcore-14.3.0       11) libffi/3.5.1-GCCcore-14.3.0
+  5) ncurses/6.5-GCCcore-14.3.0       12) OpenSSL/3
+  6) libreadline/8.2-GCCcore-14.3.0   13) Python/3.13.5-GCCcore-14.3.0
+  7) libtommath/1.3.0-GCCcore-14.3.0
+
+ 
+
+Start of Program:
+
+Processing 2026-07-30: 2026-07-29_18-28-01-26732550
+-----Beginning pprint-----
+/:
+	Attributes:
+	2026-07-27_17-06-32-26695159:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-27_17-06-32
+			ProcessId: 26695159
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26695159
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 10, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 10, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 2720, 9), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26695159
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: <function sequential_minimal_optimization at 0x14d18c9234c0>
+				tol: None
+				x0Seed: 26695159
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 100
+					subset_size: 2
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-27_17-14-18-26695313:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-27_17-14-18
+			ProcessId: 26695313
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26695313
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 720, 9), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26695313
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26695313
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-29_18-28-01-26732550:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-29_18-28-01
+			ProcessId: 26732550
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26732550
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 390, 8), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26732550
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26732550
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-29_18-51-11-26732869:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-29_18-51-11
+			ProcessId: 26732869
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26732869
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 70, 8), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26732869
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26732869
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+['mass=-6.000']
+H: -15.999999999999924 255.99999999999798 4.263256414560601e-13
+C: 0.9999999999999876 2.4868995751603507e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+['mass=-5.837']
+H: -15.34693877551014 235.52852977925681 1.7053025658242404e-13
+C: 0.9999999999999806 3.885780586188048e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.673, r=1.000)
+['mass=-5.673']
+H: -14.69387755102032 215.9100374843793 3.979039320256561e-13
+C: 0.999999999999983 3.397282455352979e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.510, r=1.000)
+['mass=-5.510']
+H: -14.040816326530543 197.14452311536692 2.8421709430404007e-13
+C: 0.9999999999999823 3.530509218307998e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.347, r=1.000)
+['mass=-5.347']
+H: -13.387755102040721 179.23198667221766 3.126388037344441e-13
+C: 0.9999999999999909 1.8207657603852567e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.184, r=1.000)
+['mass=-5.184']
+H: -12.734693877550963 162.17242815493415 1.7053025658242404e-13
+C: 0.999999999999987 2.5979218776228663e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.020, r=1.000)
+['mass=-5.020']
+H: -12.081632653061149 145.9658475635136 1.9895196601282805e-13
+C: 0.9999999999999638 7.238654120556021e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.857, r=1.000)
+['mass=-4.857']
+H: -11.428571428571358 130.61224489795785 2.8421709430404007e-13
+C: 0.9999999999999825 3.5083047578154947e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.694, r=1.000)
+['mass=-4.694']
+H: -10.77551020408157 116.11162015826623 1.9895196601282805e-13
+C: 0.9999999999999726 5.484501741648273e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.531, r=1.000)
+['mass=-4.531']
+H: -10.122448979591772 102.46397334443863 1.2789769243681803e-13
+C: 0.9999999999999735 5.306866057708248e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.367, r=1.000)
+['mass=-4.367']
+H: -9.469387755101982 89.66930445647559 2.2737367544323206e-13
+C: 0.9999999999999821 3.574918139293004e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.204, r=1.000)
+['mass=-4.204']
+H: -8.816326530612203 77.72761349437678 1.7053025658242404e-13
+C: 0.9999999999999862 2.7533531010703882e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.041, r=1.000)
+['mass=-4.041']
+H: -8.163265306122396 66.63890045814178 1.9895196601282805e-13
+C: 0.9999999999999877 2.4646951146678475e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.878, r=1.000)
+['mass=-3.878']
+H: -7.510204081632604 56.40316534777122 1.9895196601282805e-13
+C: 0.9999999999999684 6.328271240363392e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.714, r=1.000)
+['mass=-3.714']
+H: -6.8571428571394675 47.0204081632255 6.679101716144942e-12
+C: 0.999999999998164 3.671951631645243e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.551, r=1.000)
+['mass=-3.551']
+H: -4.667719641871632 24.967704524823986 3.1800978697097477
+C: 0.24751400096554269 0.9387368193260294
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.388, r=1.000)
+['mass=-3.388']
+H: -4.177961147671398 20.397898727229524 2.942539375777823
+C: 0.2524425097071795 0.9362727792927406
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.224, r=1.000)
+['mass=-3.224']
+H: -3.6882820390038007 16.335002425431213 2.73157802619318
+C: 0.24749338540367827 0.9387470241814264
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.061, r=1.000)
+['mass=-3.061']
+H: -4.244897959183657 18.019158683881628 5.3290705182007514e-14
+C: 0.9999999999999931 1.3766765505351941e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.898, r=1.000)
+['mass=-2.898']
+H: -3.591836734690899 12.901291128681354 6.373568339768099e-12
+C: 0.999999999998092 3.816058580241588e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.735, r=1.000)
+['mass=-2.735']
+H: -2.2189356433075513 7.182747112110368 2.2590717229696713
+C: 0.24994554856930465 0.9375272227503894
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.571, r=1.000)
+['mass=-2.571']
+H: -1.729157781319881 5.144754045134462 2.1547674124353686
+C: 0.24748921729193485 0.9387490873242255
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.408, r=1.000)
+['mass=-2.408']
+H: -1.239505178529826 3.613539133459117 2.0771660458568615
+C: 0.2524835939318673 0.9362520347952479
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.245, r=1.000)
+['mass=-2.245']
+H: -0.9795918379868919 0.9596001716263522 2.5758152277788327e-09
+C: 0.9999999992088486 1.5823027332828588e-09
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.082, r=1.000)
+['mass=-2.082']
+H: -0.2599563790198276 2.069680053332565 2.0021027343394646
+C: 0.24751687544576773 0.9387353963695643
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.918, r=1.000)
+['mass=-1.918']
+H: -0.6010322690474058 5.647049263579392 5.285809475143119
+C: -0.1249621134787565 0.9843844701949224
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.755, r=1.000)
+['mass=-1.755']
+H: -0.2648204102112386 4.909918293150153 4.839788443485705
+C: 0.12498756577204038 0.9843781084023798
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.592, r=1.000)
+['mass=-1.592']
+H: -0.4281677289153764 5.016491511780237 4.833163907695686
+C: -0.124987433043494 0.9843781415811981
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.429, r=1.000)
+['mass=-1.429']
+H: -0.5912545252865988 5.2562270102866515 4.9066450966147706
+C: 0.12498764547220145 0.9843780884793153
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.265, r=1.000)
+['mass=-1.265']
+H: -2.9387755103000552 8.63640150029179 3.524398550780461e-10
+C: 0.9999999999008045 1.9839108134078742e-10
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.102, r=1.000)
+['mass=-1.102']
+H: -1.8057976208681412 7.105010570403847 3.844105522870808
+C: -0.12501186446993232 0.9843720337417513
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.939, r=1.000)
+['mass=-0.939']
+H: -2.1322938189507754 8.626637923805244 4.079960993469562
+C: 0.12497412796031235 0.9843814673405594
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.776, r=1.000)
+['mass=-0.776']
+H: -2.4588002279654626 10.414828147779621 4.3691295867366104
+C: -0.12501190479152732 0.9843720236603941
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.612, r=1.000)
+['mass=-0.612']
+H: -2.785306653519029 12.469555824368143 4.7116226702307715
+C: -0.12501343115996955 0.9843716420296116
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.449, r=1.000)
+['mass=-0.449']
+H: -3.111813593342144 14.790817475303747 5.1074336355948
+C: 0.12497561135987348 0.9843810965652259
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.286, r=1.000)
+['mass=-0.286']
+H: -6.857142857141777 47.02040816325241 1.9255708139098715e-12
+C: 0.9999999999994938 1.0123013538532177e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.122, r=1.000)
+['mass=-0.122']
+H: -7.510204081631644 56.40316534775851 1.8971491044794675e-12
+C: 0.99999999999947 1.0600409439120995e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.041, r=1.000)
+['mass=0.041']
+H: -8.163265306122351 66.63890045814108 2.2737367544323206e-13
+C: 0.9999999999999567 8.659739592076221e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.204, r=1.000)
+['mass=0.204']
+H: -8.816326530612203 77.72761349437674 1.2789769243681803e-13
+C: 0.9999999999999692 6.150635556423367e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.367, r=1.000)
+['mass=0.367']
+H: -9.469387755101984 89.66930445647559 1.9895196601282805e-13
+C: 0.9999999999999593 8.149037000748649e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.531, r=1.000)
+['mass=0.531']
+H: -10.122448979591804 102.46397334443922 8.526512829121202e-14
+C: 0.9999999999999799 4.0190073491430667e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.694, r=1.000)
+['mass=0.694']
+H: -10.775510204081566 116.11162015826626 2.984279490192421e-13
+C: 0.9999999999999782 4.3520742565306136e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.857, r=1.000)
+['mass=0.857']
+H: -11.428571428571368 130.61224489795808 2.5579538487363607e-13
+C: 0.9999999999999795 4.107825191113079e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.020, r=1.000)
+['mass=1.020']
+H: -12.081632653061154 145.9658475635137 1.9895196601282805e-13
+C: 0.9999999999999826 3.4861002973229915e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.184, r=1.000)
+['mass=1.184']
+H: -12.734693877550907 162.172428154933 4.547473508864641e-13
+C: 0.9999999999999645 7.105427357601002e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.347, r=1.000)
+['mass=1.347']
+H: -13.387755102040632 179.23198667221575 7.673861546209082e-13
+C: 0.9999999999999809 3.8191672047105385e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.510, r=1.000)
+['mass=1.510']
+H: -14.040816326530546 197.14452311536692 1.7053025658242404e-13
+C: 0.9999999999999725 5.5067062021407764e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.673, r=1.000)
+['mass=1.673']
+H: -14.693877551020266 215.910037484378 6.536993168992922e-13
+C: 0.9999999999999709 5.81756864903582e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.837, r=1.000)
+['mass=1.837']
+H: -15.346938775510106 235.5285297792562 5.684341886080801e-13
+C: 0.9999999999999706 5.88418203051333e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+['mass=2.000']
+H: -15.999999999999941 255.99999999999847 3.410605131648481e-13
+C: 0.9999999999999853 2.930988785010413e-14
+-----Beginning pprint-----
+/:
+	Attributes:
+	2026-07-27_17-06-32-26695159:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-27_17-06-32
+			ProcessId: 26695159
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26695159
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 10, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 10, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 2720, 9), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26695159
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: <function sequential_minimal_optimization at 0x14d18c9234c0>
+				tol: None
+				x0Seed: 26695159
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 100
+					subset_size: 2
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-27_17-14-18-26695313:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-27_17-14-18
+			ProcessId: 26695313
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26695313
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 720, 9), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26695313
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26695313
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-29_18-28-01-26732550:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-29_18-28-01
+			ProcessId: 26732550
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26732550
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 390, 8), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26732550
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26732550
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-29_18-51-11-26732869:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-29_18-51-11
+			ProcessId: 26732869
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26732869
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 70, 8), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26732869
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26732869
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+Processing 2026-07-30: 2026-07-29_18-51-11-26732869
+-----Beginning pprint-----
+/:
+	Attributes:
+	2026-07-27_17-06-32-26695159:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-27_17-06-32
+			ProcessId: 26695159
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26695159
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 10, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 10, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 2720, 9), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26695159
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: <function sequential_minimal_optimization at 0x14d18c9234c0>
+				tol: None
+				x0Seed: 26695159
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 100
+					subset_size: 2
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-27_17-14-18-26695313:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-27_17-14-18
+			ProcessId: 26695313
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26695313
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 720, 9), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26695313
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26695313
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-29_18-28-01-26732550:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-29_18-28-01
+			ProcessId: 26732550
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26732550
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 390, 8), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26732550
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26732550
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-29_18-51-11-26732869:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-29_18-51-11
+			ProcessId: 26732869
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26732869
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 70, 8), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26732869
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26732869
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+['mass=-6.000']
+H: -9.004711013304458 99.56598081232401 18.481160379197405
+C: 0.0618967296047331 0.9961687948642386
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+['mass=-5.837']
+H: -8.67819585011125 92.51350220217638 17.202418989288276
+C: 0.06189391022242449 0.9961691438773784
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.673, r=1.000)
+['mass=-5.673']
+H: -8.351676036010643 85.72746880459025 15.976976194115807
+C: 0.06189423545797886 0.9961691036170722
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.510, r=1.000)
+['mass=-5.510']
+H: -8.025155947320448 79.20799263770697 14.804864658894218
+C: 0.06189336285112514 0.996169211634979
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.347, r=1.000)
+['mass=-5.347']
+H: -7.698634513255091 72.9550508757937 13.68607750711125
+C: 0.06310185258271839 0.9960181562006288
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.184, r=1.000)
+['mass=-5.184']
+H: -7.372117660214225 66.96870801163871 12.620589215596254
+C: 0.06189136849545583 0.9961694585057597
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.020, r=1.000)
+['mass=-5.020']
+H: -7.0455982962911605 61.24887796572158 11.608422613020679
+C: 0.06310370136621876 0.9960179228738831
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.857, r=1.000)
+['mass=-4.857']
+H: -6.719077360004109 55.79557594448116 10.649575374761376
+C: 0.0618896722422321 0.9961696684697491
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.694, r=1.000)
+['mass=-4.694']
+H: -6.392559918982844 50.608855626410346 9.744033308624402
+C: 0.06188845846670331 0.9961698187086151
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.531, r=1.000)
+['mass=-4.531']
+H: -6.066040772138111 45.68866163132539 8.891810982083463
+C: 0.06188745174784087 0.9961699433161587
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.367, r=1.000)
+['mass=-4.367']
+H: -5.739521556817519 41.03501110618345 8.092903405010446
+C: 0.06188649534927352 0.9961700616933844
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.204, r=1.000)
+['mass=-4.204']
+H: -6.626762859327049 48.31097675123921 4.396990757482804
+C: 0.2475302040390457 0.9387287980883884
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.041, r=1.000)
+['mass=-4.041']
+H: -8.163265306120746 66.63890045812107 6.437517185986508e-12
+C: 0.9999999999989331 2.133848653329551e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.878, r=1.000)
+['mass=-3.878']
+H: -7.510204081616283 56.40316534759182 6.59383658785373e-11
+C: 0.9999999999908805 1.8238965893146997e-11
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.714, r=1.000)
+['mass=-3.714']
+H: -6.857142857125033 47.020408163093926 7.30651095182111e-11
+C: 0.9999999999888644 2.2271295918585565e-11
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.551, r=1.000)
+['mass=-3.551']
+H: -2.0559062243423334 12.845519189231227 8.618768785941679
+C: -0.06188153384612677 0.9961706757688507
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.388, r=1.000)
+['mass=-3.388']
+H: -1.8926525904807159 11.401143706841026 7.819009878587662
+C: -0.06311335934691764 0.9960167038719469
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.224, r=1.000)
+['mass=-3.224']
+H: -3.4538895263614466 15.92271723670967 3.993364376400372
+C: 0.06187965574533811 0.9961709082048384
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.061, r=1.000)
+['mass=-3.061']
+H: -1.566144696588943 8.912220600426181 6.459411389772509
+C: -0.06311511847493011 0.9960164818198955
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.898, r=1.000)
+['mass=-2.898']
+H: -2.305786231661738 8.364212592920287 3.047562446799448
+C: -0.12497545206023078 0.9843811363823409
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.735, r=1.000)
+['mass=-2.735']
+H: -2.474332962584991 9.158465694227532 3.036142084492915
+C: 0.06187649845560643 0.9961712989388734
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.571, r=1.000)
+['mass=-2.571']
+H: -2.14781712161787 7.4368140991918645 2.8236957112769927
+C: 0.06187618251636107 0.9961713380372019
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.408, r=1.000)
+['mass=-2.408']
+H: -0.918162462389601 4.545498981003624 3.702476673662289
+C: -0.12373572262771662 0.9846894709457967
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.245, r=1.000)
+['mass=-2.245']
+H: -0.9997622314327147 3.307120488936028 2.307595969536707
+C: 0.1250126708101694 0.9843718321369083
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.082, r=1.000)
+['mass=-2.082']
+H: -0.5050107355388535 4.009992083911774 3.7549562409022803
+C: 0.06312343604496723 0.9960154318218769
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.918, r=1.000)
+['mass=-1.918']
+H: -0.5097081207453463 4.493480614133865 4.233678245780112
+C: 6.0176525215061005e-06 0.9999999999637879
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.755, r=1.000)
+['mass=-1.755']
+H: -0.7548619859876522 4.376055836843992 3.80623921895477
+C: 0.1250130232140024 0.9843717440268953
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.592, r=1.000)
+['mass=-1.592']
+H: -1.49999999994267 5.166597251251746 2.9165972514237355
+C: 0.06250014802301472 0.9960937314971012
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.429, r=1.000)
+['mass=-1.429']
+H: -1.09125445993393 6.031361323870958 4.840525027545265
+C: 0.12498765114276777 0.9843780870618137
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.265, r=1.000)
+['mass=-1.265']
+H: -1.2544774654840898 7.7059054899596395 6.132191778552254
+C: 0.1249866310008427 0.9843783420710592
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.102, r=1.000)
+['mass=-1.102']
+H: -1.4176932624131087 7.487056850238185 5.477202663946661
+C: 0.12498932787498908 0.9843776679173585
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.939, r=1.000)
+['mass=-0.939']
+H: -1.0809067048036392 6.7751563067175065 5.606797002228045
+C: -0.12498776476937443 0.9843780586579556
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.776, r=1.000)
+['mass=-0.776']
+H: -1.9587995049282 8.574235438058885 4.737339937551923
+C: -0.12501210962323767 0.9843719724475476
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.612, r=1.000)
+['mass=-0.612']
+H: -2.2853068526990206 10.384877956916517 5.162250545923414
+C: -0.1250121902453717 0.984371952290055
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.449, r=1.000)
+['mass=-0.449']
+H: -1.5705608087707934 9.493447915574455 7.026786661527686
+C: -0.12498788238260712 0.9843780292575116
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.286, r=1.000)
+['mass=-0.286']
+H: -5.152606831808921 30.002127808812325 3.4527706456083607
+C: 0.4999758318893142 0.7500241675265882
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.122, r=1.000)
+['mass=-0.122']
+H: -5.647241550465305 35.62664304506541 3.735305915763629
+C: 0.2499459006221143 0.9375270467622001
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.041, r=1.000)
+['mass=0.041']
+H: -4.091334656995615 23.353815858760626 6.6147965832272
+C: 0.1249760474769269 0.984380987557045
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.204, r=1.000)
+['mass=0.204']
+H: -4.417842964834415 26.741225373202703 7.223888911265767
+C: 0.12497608633434704 0.9843809778445498
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.367, r=1.000)
+['mass=0.367']
+H: -4.744351399582839 30.39518120650457 7.8863110037809285
+C: 0.12497503313156128 0.9843812410937651
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.531, r=1.000)
+['mass=0.531']
+H: -7.606286462123819 63.02112402952853 5.165530285640443
+C: 0.25001798192915425 0.9374910087120731
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.694, r=1.000)
+['mass=0.694']
+H: -10.775510204081064 116.1116201582575 2.3732127374387346e-12
+C: 0.9999999999997097 5.806466418789569e-13
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.857, r=1.000)
+['mass=0.857']
+H: -11.428571428571162 130.61224489795424 1.1368683772161603e-12
+C: 0.9999999999999137 1.7252865802674933e-13
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.020, r=1.000)
+['mass=1.020']
+H: -12.081632653061186 145.96584756351444 1.7053025658242404e-13
+C: 0.9999999999999857 2.864375403532904e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.184, r=1.000)
+['mass=1.184']
+H: -9.56533968697473 98.51812108838564 7.022397761171831
+C: 0.25001845521715105 0.9374907720508294
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.347, r=1.000)
+['mass=1.347']
+H: -10.055098187766246 108.65828656505052 7.553286999430469
+C: 0.24994747283639868 0.9375262608226977
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.510, r=1.000)
+['mass=1.510']
+H: -7.029906181082469 63.435785196393795 14.0162042815723
+C: 0.12497679136005066 0.9843808016213463
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.673, r=1.000)
+['mass=1.673']
+H: -7.35641439607469 69.22202072992933 15.105187963154371
+C: -0.125011577437429 0.9843721055066057
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.837, r=1.000)
+['mass=1.837']
+H: -7.682922172767158 75.27478801849239 16.247494905695156
+C: -0.12501158780886906 0.9843721029135054
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+['mass=2.000']
+H: -8.00943630587908 81.5941642161735 17.443094278239585
+C: 0.12497667336037059 0.9843808311157752
+-----Beginning pprint-----
+/:
+	Attributes:
+	2026-07-27_17-06-32-26695159:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-27_17-06-32
+			ProcessId: 26695159
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26695159
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 10, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 10, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 2720, 9), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26695159
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 2720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: <function sequential_minimal_optimization at 0x14d18c9234c0>
+				tol: None
+				x0Seed: 26695159
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 100
+					subset_size: 2
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-27_17-14-18-26695313:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-27_17-14-18
+			ProcessId: 26695313
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26695313
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 720, 9), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26695313
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 720), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26695313
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 9), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-29_18-28-01-26732550:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-29_18-28-01
+			ProcessId: 26732550
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26732550
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 390, 8), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26732550
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 390), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26732550
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+	2026-07-29_18-51-11-26732869:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-07-29_18-51-11
+			ProcessId: 26732869
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26732869
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 9, 45), maxshape=(50, None, 45))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz22
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 70, 8), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26732869
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					callback: None
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 70), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26732869
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 8), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.1
+				QiskitIBMRuntimeVersion: 0.41.1
+				QiskitVersion: 2.1.2
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+End 2026-07-30 12:12:52 | 26737043 MyPyJob | lmnode194 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

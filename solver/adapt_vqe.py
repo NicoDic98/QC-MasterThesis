@@ -136,68 +136,69 @@ class AdaptVQE(BaseVQE):
             # print("Prec", estimator.default_precision)
             cost_function_instance = self.cost_function(circuit, h_operator.apply_layout(circuit.layout),
                                                         estimator, local_group, non_singular_index)
-            ref_f = 0
+            # ref_f = 0
             for i in range(adapt_options["max_depth"]):
                 local_group.file.flush()
 
-                f = np.zeros(len(self.ansatz.operator_pool))
-                new_params = []
-                for oi, op in enumerate(self.ansatz.operator_pool):
-                    # pis = self.ansatz.get_previous_parameter_indices(oi)
-                    if len(params) <=4:
-                        pis = list(range(len(params)))
-                    else:
-                        pis = list(range(len(params)-4,len(params)))
-                    pis.append(len(params))
-                    offsets = np.zeros(3)
-                    offsets[1] = 2 * np.pi / 3
-                    offsets[2] = -2 * np.pi / 3
-                    temp1 = np.array(np.meshgrid(*([offsets] * len(pis)), indexing="ij")).T
-                    temp_shape = temp1.shape[:-1]
-                    temp1 = temp1.reshape(-1, len(pis))
-                    temp2 = np.append(params, 0)
-                    temp_params = np.tile(temp2, [3 ** len(pis), 1])
-                    for j, pi in enumerate(pis):
-                        temp_params[:, pi] = temp1[:, j]
-
-                    self.ansatz.set_ansatz([*op_index_list, oi], False)
-                    temp_circuit = pm.run(self.ansatz())
-
-                    # print("=" * 40)
-                    # print(temp_params.shape)
-                    pub = (temp_circuit, h_operator.apply_layout(layout=temp_circuit.layout), temp_params)
-                    job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
-                    full_result = job.result()
-                    pub_result = full_result[0]
-                    # print(pub_result.data.evs.reshape(temp_shape))
-                    temp_x0 = temp1[np.argmin(pub_result.data.evs)]
-                    # print(temp_x0)
-                    # print(pub_result.data.evs.shape)
-                    # print("=" * 40)
-
-
-                    temp_params = np.append(params, 0)
-
-                    def opt_f(x: np.ndarray):
-                        for rpi, pi in enumerate(pis):
-                            temp_params[pi] = x[rpi]
-                        pub = (temp_circuit, [h_operator.apply_layout(layout=temp_circuit.layout)], [temp_params])
-                        job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
-                        full_result = job.result()
-                        pub_result = full_result[0]
-                        return pub_result.data.evs.item()
-
-                    temp_optimize_result = minimize(fun=opt_f, x0=temp_x0, method="slsqp",
-                                                    options={"maxiter": 20000})
-                    temp_x = temp_optimize_result.x
-                    f[oi] = temp_optimize_result.fun
-                    for rpi, pi in enumerate(pis):
-                        temp_params[pi] = temp_x[rpi]
-                    new_params.append(temp_params)
-
-                self.ansatz.set_ansatz(op_index_list, False)
-                if i == 0:
-                    ref_f = np.max(f) + 42
+                # f = np.zeros(len(self.ansatz.operator_pool))
+                # new_params = []
+                # for oi, op in enumerate(self.ansatz.operator_pool):
+                #     # pis = self.ansatz.get_previous_parameter_indices(oi)
+                #     if len(params) <=4:
+                #         pis = list(range(len(params)))
+                #     else:
+                #         pis = list(range(len(params)-4,len(params)))
+                #     pis.append(len(params))
+                #     offsets = np.zeros(3)
+                #     offsets[1] = 2 * np.pi / 3
+                #     offsets[2] = -2 * np.pi / 3
+                #     temp1 = np.array(np.meshgrid(*([offsets] * len(pis)), indexing="ij")).T
+                #     temp_shape = temp1.shape[:-1]
+                #     temp1 = temp1.reshape(-1, len(pis))
+                #     temp2 = np.append(params, 0)
+                #     temp_params = np.tile(temp2, [3 ** len(pis), 1])
+                #     for j, pi in enumerate(pis):
+                #         temp_params[:, pi] = temp1[:, j]
+                #
+                #     self.ansatz.set_ansatz([*op_index_list, oi], False)
+                #     temp_circuit = pm.run(self.ansatz())
+                #
+                #     # print("=" * 40)
+                #     # print(temp_params.shape)
+                #     pub = (temp_circuit, h_operator.apply_layout(layout=temp_circuit.layout), temp_params)
+                #     job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
+                #     full_result = job.result()
+                #     pub_result = full_result[0]
+                #     # print(pub_result.data.evs.reshape(temp_shape))
+                #     temp_x0 = temp1[np.argmin(pub_result.data.evs)]
+                #     # print(temp_x0)
+                #     # print(pub_result.data.evs.shape)
+                #     # print("=" * 40)
+                #
+                #
+                #     temp_params = np.append(params, 0)
+                #
+                #     def opt_f(x: np.ndarray):
+                #         for rpi, pi in enumerate(pis):
+                #             temp_params[pi] = x[rpi]
+                #         pub = (temp_circuit, [h_operator.apply_layout(layout=temp_circuit.layout)], [temp_params])
+                #         job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
+                #         full_result = job.result()
+                #         pub_result = full_result[0]
+                #         return pub_result.data.evs.item()
+                #
+                #     temp_optimize_result = minimize(fun=opt_f, x0=temp_x0, method="slsqp",
+                #                                     options={"maxiter": 20000})
+                #     temp_x = temp_optimize_result.x
+                #     f[oi] = temp_optimize_result.fun
+                #     for rpi, pi in enumerate(pis):
+                #         temp_params[pi] = temp_x[rpi]
+                #     new_params.append(temp_params)
+                #
+                # self.ansatz.set_ansatz(op_index_list, False)
+                # if i == 0:
+                #     ref_f = np.max(f) + 42
+                # f-=ref_f
 
                 pub = (circuit, [op.apply_layout(circuit.layout) for op in commutator_list], params)
                 # noinspection PyTypeChecker
@@ -213,8 +214,8 @@ class AdaptVQE(BaseVQE):
                 pub_result = full_result[0]
                 second_gradients = pub_result.data.evs
 
-                # b = np.atan2(gradients, -second_gradients)
-                # f = np.sqrt(gradients ** 2 + second_gradients ** 2) - second_gradients
+                b = np.atan2(gradients, -second_gradients)
+                f = np.sqrt(gradients ** 2 + second_gradients ** 2) - second_gradients
 
                 # f = []
                 # for k in range(len(gradients)):
@@ -231,12 +232,14 @@ class AdaptVQE(BaseVQE):
                 #     new_op_index = sel_rng.choice(new_op_index_opts)
                 # else:
                 #     new_op_index = np.argmax(abs_gradients)
-                new_op_index = np.argmin(f)
+                # new_op_index = np.argmin(f)
+                new_op_index = np.argmax(f)
                 _, qbits, gname = self.ansatz.get_operator_info(int(new_op_index), True)
                 print(f"New op index: {new_op_index}\t{gname}{qbits}", flush=True)
                 print(f"Current grad: {abs_gradients.sum()}")
-                print(ref_f, "\n", (ref_f - f))
-                # initial_parameter_value = np.pi + b[new_op_index]
+                # print(ref_f, "\n", f)
+                print(b, "\n", f)
+                initial_parameter_value = np.pi + b[new_op_index]
                 # initial_parameter_value = 0
 
                 # Note that the derivative dataset will have one more entry as long as the depth limit is not reached
@@ -260,13 +263,13 @@ class AdaptVQE(BaseVQE):
                 #         print("Precision cutoff reached.")
                 #         break
 
-                if (ref_f - f).sum() < adapt_options["prec_cutoff"]:
+                if f.sum() < adapt_options["prec_cutoff"]:
                     print("Precision cutoff reached.")
                     break
 
                 op_index_list.append(new_op_index)
-                # params = np.append(params, initial_parameter_value)
-                params = new_params[new_op_index]
+                params = np.append(params, initial_parameter_value)
+                # params = new_params[new_op_index]
 
                 if self.ansatz.set_ansatz(op_index_list, not adapt_options["allow_duplicate_gates"], True):
                     print("Adding the same operator twice is not sensible, terminating.")
@@ -284,7 +287,7 @@ class AdaptVQE(BaseVQE):
                 if not optimize_result.success:
                     print(f"Optimization failed: {optimize_result.message}")
                 params = optimize_result.x
-                ref_f = optimize_result.fun
+                # ref_f = optimize_result.fun
                 if np.abs(params[-1]) < adapt_options["parameter_prec_cutoff"]:
                     print("Parameter value cutoff reached.")
                     break

@@ -20,7 +20,7 @@ from solver.circuits import HardwareAdaptAnsatz1, HardwareAdaptAnsatz2, Hardware
     HardwareAdaptAnsatz15, HardwareAdaptAnsatz16, HardwareAdaptAnsatz17, HardwareAdaptAnsatz18, HardwareAdaptAnsatz19, \
     HardwareAdaptAnsatz20, HardwareAdaptAnsatz21, PhysicsAdaptAnsatz1, PhysicsAdaptAnsatz2, PhysicsAdaptAnsatz3, \
     PhysicsAdaptAnsatz4, PhysicsAdaptAnsatz5, PhysicsAdaptAnsatz6, PhysicsAdaptAnsatz7, PhysicsAdaptAnsatz8, \
-    HardwareAdaptAnsatz22
+    HardwareAdaptAnsatz22, HardwareAdaptAnsatz23
 from solver.exact_diagonalization import ED, EDParameters
 from hamiltonian.free_wilson import FreeWilson2D
 from hamiltonian.base import HamiltonianType, HamiltonianParameters
@@ -55,7 +55,7 @@ def run_vqe(my_f: h5py.File):
 
 
 def run_adapt_vqe(my_f: h5py.File):
-    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz22(8))
+    my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz23(8))
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
                       HamiltonianParameters.Mass: np.linspace(-6, 2, 10).tolist(),
@@ -278,8 +278,11 @@ dataset_names = [
     # ("2025-09-35", "2025-09-06_15-50-13-23147802"),
     # ("2025-09-35", "2025-09-06_15-50-13-23147804"),
     # ("2025-09-35", "2025-09-06_15-50-13-23147805"),
-    ("2026-07-30", "2026-07-29_18-28-01-26732550"),
-    ("2026-07-30", "2026-07-29_18-51-11-26732869"),
+    # ("2026-07-30", "2026-07-29_18-28-01-26732550"),
+    # ("2026-07-30", "2026-07-29_18-51-11-26732869"),
+    ("2026-07-30", "2026-07-30_13-15-42-26737529"),
+    ("2026-07-30", "2026-07-30_13-21-03-26737543"),
+    ("2026-07-30", "2026-07-30_12-56-02-26737355"),
 ]
 # for file_name, dataset_name in dataset_names:
 #     print(f"Processing {file_name}: {dataset_name}")

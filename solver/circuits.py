@@ -1,4 +1,5 @@
 from enum import StrEnum
+from itertools import product
 from typing import Any, Callable
 
 import h5py
@@ -6,7 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from qiskit import QuantumCircuit
 from qiskit.circuit import Parameter, Gate, ParameterVector
-from qiskit.circuit.library import n_local, XXPlusYYGate, RZGate, RYGate, RXGate, XXMinusYYGate, RXXGate, RYYGate, RZZGate
+from qiskit.circuit.library import n_local, XXPlusYYGate, RZGate, RYGate, RXGate, XXMinusYYGate, RXXGate, RYYGate, \
+    RZZGate, PauliEvolutionGate
 from qiskit.converters import circuit_to_dag, dag_to_circuit
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler.passes import RemoveBarriers
@@ -165,13 +167,13 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         self.full_ansatz = qc
         return 0
 
-    def get_previous_parameter_indices(self, oi:int):
+    def get_previous_parameter_indices(self, oi: int):
         gi, qbits = self.operator_gate_map[oi]
         temp = []
         for qbit in qbits:
             temp.append(self.last_parameter_index_on_qubit[qbit])
         temp = np.unique(temp)
-        temp = temp[temp>=0]
+        temp = temp[temp >= 0]
         return temp.tolist()
 
     def get_operator_info(self, operator_index: int, all_qbits=False):
@@ -187,7 +189,7 @@ class BaseADAPTVQEAnsatz(BaseAnsatz):
         gname = gate.label
         if gname is not None:
             if gname.endswith(r"\right)$"):
-                gname = gname.rpartition( r"\left(")[0]
+                gname = gname.rpartition(r"\left(")[0]
         return gi, qbits, gname
 
 
@@ -743,6 +745,22 @@ class HardwareAdaptAnsatz22(BaseADAPTVQEAnsatz):
         self.gate_pool.append(lambda a: RXXGate(a, label="$R_{XX}$"))
         self.gate_pool.append(lambda a: RYYGate(a, label="$R_{YY}$"))
         self.gate_pool.append(lambda a: RZZGate(a, label="$R_{ZZ}$"))
+
+
+class HardwareAdaptAnsatz23(BaseADAPTVQEAnsatz):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        for i in range(0, self.num_qubits):
+            self.fixed_ansatz.h(i)
+
+        pauli_strings = ["".join(tu) for tu in product(*(["XYZI"] * self.num_qubits))]
+        for i, pauli_string in enumerate(pauli_strings):
+            op = SparsePauliOp(pauli_string, -0.5j)
+            self.operator_pool.append(op)
+            self.operator_gate_map.append((i, list(range(self.num_qubits))))
+            self.gate_pool.append(lambda a:
+                                  PauliEvolutionGate(SparsePauliOp(pauli_string, 0.5),
+                                                     a, label="$R_{" + pauli_string[::-1] + "}$"))
 
 
 class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):
