@@ -58,7 +58,7 @@ def run_adapt_vqe(my_f: h5py.File):
     my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz22(8))
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
-                      HamiltonianParameters.Mass: np.linspace(-6, 2, 50).tolist(),
+                      HamiltonianParameters.Mass: np.linspace(-6, 2, 10).tolist(),
                       HamiltonianParameters.WilsonParameter: [1.]},
                      HamiltonianType.ZeroChargePenalty,
                      # simulator_type=SimulatorType.Aer,
@@ -253,15 +253,15 @@ Path(data_folder).mkdir(parents=True, exist_ok=True)
 
 h5_file = f"{data_folder}{datetime.now().strftime('%Y-%m-%U')}-{args.id}"
 
-# with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
-#     pprint_h5(f)
-#     f.attrs[GlobalParameters.ProcessId] = args.id
-#     # run_ed(f)
-#     # run_vqe(f)
-#     run_adapt_vqe(f)
-#     # with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
-#     #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
-#     pprint_h5(f)
+with h5py.File(h5_file + ".hdf5", "w", libver='latest') as f:
+    pprint_h5(f)
+    f.attrs[GlobalParameters.ProcessId] = args.id
+    # run_ed(f)
+    # run_vqe(f)
+    run_adapt_vqe(f)
+    # with h5py.File(f"{data_folder}{"2025-11-46"}.hdf5", "r") as sf:
+    #     rerun_vqe(f, sf["2025-11-20_17-57-51-23964135"])
+    pprint_h5(f)
 
 dataset_names = [
     # ("2025-10-43", "2025-10-27_17-21-26-23769494"),
@@ -281,12 +281,12 @@ dataset_names = [
     ("2026-07-30", "2026-07-29_18-28-01-26732550"),
     ("2026-07-30", "2026-07-29_18-51-11-26732869"),
 ]
-for file_name, dataset_name in dataset_names:
-    print(f"Processing {file_name}: {dataset_name}")
-    with h5py.File(f"{data_folder}{file_name}.hdf5", "a") as sf:
-        pprint_h5(sf)
-        measure_observables(sf[dataset_name])
-        pprint_h5(sf)
+# for file_name, dataset_name in dataset_names:
+#     print(f"Processing {file_name}: {dataset_name}")
+#     with h5py.File(f"{data_folder}{file_name}.hdf5", "a") as sf:
+#         pprint_h5(sf)
+#         measure_observables(sf[dataset_name])
+#         pprint_h5(sf)
 
 # with h5py.File(f"{data_folder}{"2025-09-35"}.hdf5", "a") as sf:
 #     pprint_h5(sf)

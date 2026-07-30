@@ -144,15 +144,38 @@ class AdaptVQE(BaseVQE):
                 new_params = []
                 for oi, op in enumerate(self.ansatz.operator_pool):
                     # pis = self.ansatz.get_previous_parameter_indices(oi)
-                    pis = list(range(len(params)))
+                    if len(params) <=4:
+                        pis = list(range(len(params)))
+                    else:
+                        pis = list(range(len(params)-4,len(params)))
                     pis.append(len(params))
-                    # temp1 = np.append(params, 0)
-                    # temp2 = np.tile(temp1, [3**len(pis),1])
-                    #
-                    # for j in range(len(params)):
-                    #     pub = (circuit, [op.apply_layout(circuit.layout) for op in commutator_list], [params])
+                    offsets = np.zeros(3)
+                    offsets[1] = 2 * np.pi / 3
+                    offsets[2] = -2 * np.pi / 3
+                    temp1 = np.array(np.meshgrid(*([offsets] * len(pis)), indexing="ij")).T
+                    temp_shape = temp1.shape[:-1]
+                    temp1 = temp1.reshape(-1, len(pis))
+                    temp2 = np.append(params, 0)
+                    temp_params = np.tile(temp2, [3 ** len(pis), 1])
+                    for j, pi in enumerate(pis):
+                        temp_params[:, pi] = temp1[:, j]
+
                     self.ansatz.set_ansatz([*op_index_list, oi], False)
                     temp_circuit = pm.run(self.ansatz())
+
+                    # print("=" * 40)
+                    # print(temp_params.shape)
+                    pub = (temp_circuit, h_operator.apply_layout(layout=temp_circuit.layout), temp_params)
+                    job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
+                    full_result = job.result()
+                    pub_result = full_result[0]
+                    # print(pub_result.data.evs.reshape(temp_shape))
+                    temp_x0 = temp1[np.argmin(pub_result.data.evs)]
+                    # print(temp_x0)
+                    # print(pub_result.data.evs.shape)
+                    # print("=" * 40)
+
+
                     temp_params = np.append(params, 0)
 
                     def opt_f(x: np.ndarray):
@@ -164,7 +187,7 @@ class AdaptVQE(BaseVQE):
                         pub_result = full_result[0]
                         return pub_result.data.evs.item()
 
-                    temp_optimize_result = minimize(fun=opt_f, x0=np.zeros_like(pis), method="slsqp",
+                    temp_optimize_result = minimize(fun=opt_f, x0=temp_x0, method="slsqp",
                                                     options={"maxiter": 20000})
                     temp_x = temp_optimize_result.x
                     f[oi] = temp_optimize_result.fun
@@ -176,14 +199,14 @@ class AdaptVQE(BaseVQE):
                 if i == 0:
                     ref_f = np.max(f) + 42
 
-                pub = (circuit, [op.apply_layout(circuit.layout) for op in commutator_list], [params])
+                pub = (circuit, [op.apply_layout(circuit.layout) for op in commutator_list], params)
                 # noinspection PyTypeChecker
                 job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
                 full_result = job.result()
                 pub_result = full_result[0]
                 gradients = pub_result.data.evs
 
-                pub = (circuit, sec_commutator_list, [params])
+                pub = (circuit, [op.apply_layout(circuit.layout) for op in sec_commutator_list], params)
                 # noinspection PyTypeChecker
                 job = estimator.run(pubs=[pub], precision=adapt_options["precision"])
                 full_result = job.result()
