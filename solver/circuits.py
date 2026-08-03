@@ -1,4 +1,5 @@
 from enum import StrEnum
+import functools
 from itertools import product
 from typing import Any, Callable
 
@@ -754,13 +755,28 @@ class HardwareAdaptAnsatz23(BaseADAPTVQEAnsatz):
             self.fixed_ansatz.h(i)
 
         pauli_strings = ["".join(tu) for tu in product(*(["XYZI"] * self.num_qubits))]
+        # remove those elements which result in vanishing commutators, qiskit throws errors if the operator is 0
+        pauli_strings.pop(65535)
+        pauli_strings.pop(61115)
+        pauli_strings.pop(48110)
+        pauli_strings.pop(43690)
+        helper_func = lambda param, operator, label: PauliEvolutionGate(operator, time=param, label=label)
         for i, pauli_string in enumerate(pauli_strings):
-            op = SparsePauliOp(pauli_string, -0.5j)
+            op = SparsePauliOp.from_sparse_list([(pauli_string,
+                                                  list(range(self.num_qubits)), -0.5j)],
+                                                num_qubits=self.num_qubits)
             self.operator_pool.append(op)
             self.operator_gate_map.append((i, list(range(self.num_qubits))))
-            self.gate_pool.append(lambda a:
-                                  PauliEvolutionGate(SparsePauliOp(pauli_string, 0.5),
-                                                     a, label="$R_{" + pauli_string[::-1] + "}$"))
+            # self.gate_pool.append(
+            #     functools.partial(PauliEvolutionGate,
+            #                       1j * self.operator_pool[i],
+            #                       functools.Placeholder,
+            #                       label="$R_{" + self.operator_pool[i].to_list()[0][0] + "}$"))
+            # Can use functools.Placeholder starting from 3.14 for this for now need this:
+            self.gate_pool.append(
+                functools.partial(helper_func,
+                                  operator=1j * self.operator_pool[i],
+                                  label="$R_{" + self.operator_pool[i].to_list()[0][0] + "}$"))
 
 
 class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):

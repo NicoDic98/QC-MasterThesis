@@ -1,0 +1,136 @@
+Start 2026-07-31 11:30:53 | 26777713 MyPyJob | lmnode193 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/14.3.0                    8) Tcl/9.0.1-GCCcore-14.3.0
+  2) zlib/1.3.1-GCCcore-14.3.0         9) SQLite/3.50.1-GCCcore-14.3.0
+  3) binutils/2.44-GCCcore-14.3.0     10) XZ/5.8.1-GCCcore-14.3.0
+  4) bzip2/1.0.8-GCCcore-14.3.0       11) libffi/3.5.1-GCCcore-14.3.0
+  5) ncurses/6.5-GCCcore-14.3.0       12) OpenSSL/3
+  6) libreadline/8.2-GCCcore-14.3.0   13) Python/3.13.5-GCCcore-14.3.0
+  7) libtommath/1.3.0-GCCcore-14.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h_im: 0.0
+Lets GO!
+New op index: 66	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 181951.99999999985
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999745
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 200.49999999999983
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+New op index: 32832	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 182853.95981701056
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 200.49999999999946
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+New op index: 32832	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 183499.71722827695
+gradient: -49.999999999999964
+second_gradient: -0.4999999999999997
+b: -1.5607966601082315
+f: 50.50249993750309
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.111, r=1.000)
+h_im: 0.0
+Lets GO!
+New op index: 66	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 181496.88888888873
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999745
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 200.49999999999983
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+New op index: 32832	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 182396.87049337654
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 200.49999999999946
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+New op index: 32832	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 183039.53782399517
+gradient: -49.999999999999964
+second_gradient: -0.49999999999999967
+b: -1.5607966601082315
+f: 50.50249993750309
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.222, r=1.000)
+h_im: 0.0
+Lets GO!
+New op index: 66	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 181041.77777777764
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999745
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 200.49999999999983
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+New op index: 32832	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 181939.7811697425
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 200.49999999999946
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+New op index: 32832	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 182579.35841971336
+gradient: -49.999999999999964
+second_gradient: -0.49999999999999967
+b: -1.5607966601082315
+f: 50.50249993750309
+Adding the same operator twice is not sensible, terminating.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.333, r=1.000)
+h_im: 0.0
+Lets GO!
+New op index: 66	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 180586.6666666665
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999745
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 200.49999999999983
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+New op index: 32832	$R_{ZIIIIIII}$[0, 1, 2, 3, 4, 5, 6, 7]
+[2026-07-31T12:00:04.922] error: *** JOB 26777713 ON lmnode193 CANCELLED AT 2026-07-31T12:00:04 DUE to SIGNAL Terminated ***

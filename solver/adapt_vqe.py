@@ -126,6 +126,24 @@ class AdaptVQE(BaseVQE):
             commutator_list = [(temp @ op - op @ temp).simplify() for op in self.ansatz.operator_pool]
             sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
                                    for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]
+            # l0 = np.array([op.to_list()[0] for op in self.ansatz.operator_pool])
+            # l1 = np.array([op.size for op in commutator_list])
+            # l2 = np.array([op.size for op in sec_commutator_list])
+            # l3 = np.array([op.to_list()[0] for op in commutator_list])
+            # l4 = np.array([op.to_list()[0] for op in sec_commutator_list])
+            # print(l0[l1<2])
+            # print(l0[l2<2])
+            # print(np.argwhere(l1<2))
+            # print(np.argwhere(l2<2))
+            #
+            # print(l1[l1<2])
+            # print(l3[l1<2])
+            #
+            # print(l2[l2<2])
+            # print(l4[l2<2])
+            # commutator_list = [op for op in commutator_list if op.size>=2]
+            # sec_commutator_list = [op for op in sec_commutator_list if op.size>=2]
+
             # print("[op]:\n",self.ansatz.operator_pool)
             # print("[,]:\n",commutator_list)
 
@@ -137,6 +155,7 @@ class AdaptVQE(BaseVQE):
             cost_function_instance = self.cost_function(circuit, h_operator.apply_layout(circuit.layout),
                                                         estimator, local_group, non_singular_index)
             # ref_f = 0
+            print("Lets GO!", flush=True)
             for i in range(adapt_options["max_depth"]):
                 local_group.file.flush()
 
@@ -238,7 +257,11 @@ class AdaptVQE(BaseVQE):
                 print(f"New op index: {new_op_index}\t{gname}{qbits}", flush=True)
                 print(f"Current grad: {abs_gradients.sum()}")
                 # print(ref_f, "\n", f)
-                print(b, "\n", f)
+                print(f"gradient: {gradients[new_op_index]}")
+                print(f"second_gradient: {second_gradients[new_op_index]}")
+                print(f"b: {b[new_op_index]}")
+                print(f"f: {f[new_op_index]}")
+                # print(b, "\n", f)
                 initial_parameter_value = np.pi + b[new_op_index]
                 # initial_parameter_value = 0
 

@@ -58,7 +58,7 @@ def run_adapt_vqe(my_f: h5py.File):
     my_adapt_vqe = AdaptVQE(FreeWilson2D.build_hamiltonian, my_f, HardwareAdaptAnsatz23(8))
     my_adapt_vqe.run({HamiltonianParameters.XExtend: [2],
                       HamiltonianParameters.YExtend: [2],
-                      HamiltonianParameters.Mass: np.linspace(-6, 2, 10).tolist(),
+                      HamiltonianParameters.Mass: np.linspace(-6, 2, 50).tolist(),
                       HamiltonianParameters.WilsonParameter: [1.]},
                      HamiltonianType.ZeroChargePenalty,
                      # simulator_type=SimulatorType.Aer,
@@ -280,9 +280,10 @@ dataset_names = [
     # ("2025-09-35", "2025-09-06_15-50-13-23147805"),
     # ("2026-07-30", "2026-07-29_18-28-01-26732550"),
     # ("2026-07-30", "2026-07-29_18-51-11-26732869"),
-    ("2026-07-30", "2026-07-30_13-15-42-26737529"),
-    ("2026-07-30", "2026-07-30_13-21-03-26737543"),
-    ("2026-07-30", "2026-07-30_12-56-02-26737355"),
+    # ("2026-07-30", "2026-07-30_13-15-42-26737529"),
+    # ("2026-07-30", "2026-07-30_13-21-03-26737543"),
+    # ("2026-07-30", "2026-07-30_12-56-02-26737355"),
+    ("2026-07-30", "2026-07-31_12-42-19-26779174"),
 ]
 # for file_name, dataset_name in dataset_names:
 #     print(f"Processing {file_name}: {dataset_name}")
