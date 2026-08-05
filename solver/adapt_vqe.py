@@ -2,6 +2,7 @@ from typing import Any, Callable
 
 import h5py
 import numpy as np
+from qiskit.quantum_info import SparsePauliOp
 from qiskit_ibm_runtime import EstimatorOptions
 from scipy.optimize import minimize
 
@@ -10,7 +11,17 @@ from hamiltonian.base import HamiltonianType, BaseHamiltonian
 from labels import VQEParameters
 from misc import fill_defaults_in_dict, calc_im_part
 from solver.base import SimulatorType, BaseVQE, BaseCostFunction
-from solver.circuits import BaseADAPTVQEAnsatz
+from solver.circuits import BaseADAPTVQEAnsatz, HardwareAdaptAnsatz24
+
+
+def remove_zero_operators(operator_list: list[SparsePauliOp], threshold: float = 1e-4) -> np.ndarray:
+    op_sizes = np.array([op.size for op in operator_list])
+    temp = np.abs(np.array([op.to_list()[0][1] for op in operator_list]))
+    zero_op_indices = np.argwhere(np.logical_and(op_sizes <= 1, temp < threshold))[:, 0]
+    # start deleting from the back
+    for index in zero_op_indices[::-1]:
+        del operator_list[index]
+    return zero_op_indices
 
 
 def update_operator_dataset_size(dataset: h5py.Dataset, num_operators: int, resize_index: int = -1):
@@ -126,6 +137,10 @@ class AdaptVQE(BaseVQE):
             commutator_list = [(temp @ op - op @ temp).simplify() for op in self.ansatz.operator_pool]
             sec_commutator_list = [(op2 @ op1 - op1 @ op2).simplify()
                                    for op1, op2 in zip(self.ansatz.operator_pool, commutator_list)]
+
+            zero_commutator_indices = remove_zero_operators(commutator_list)
+            zero_sec_commutator_indices = remove_zero_operators(sec_commutator_list)
+
             # l0 = np.array([op.to_list()[0] for op in self.ansatz.operator_pool])
             # l1 = np.array([op.size for op in commutator_list])
             # l2 = np.array([op.size for op in sec_commutator_list])
@@ -233,6 +248,11 @@ class AdaptVQE(BaseVQE):
                 pub_result = full_result[0]
                 second_gradients = pub_result.data.evs
 
+                # Reinsert 0 operators:
+                gradients = np.insert(gradients, zero_commutator_indices, 0)
+                second_gradients = np.insert(second_gradients, zero_sec_commutator_indices, 0)
+
+                # atan2(0,0)=0
                 b = np.atan2(gradients, -second_gradients)
                 f = np.sqrt(gradients ** 2 + second_gradients ** 2) - second_gradients
 
@@ -252,10 +272,29 @@ class AdaptVQE(BaseVQE):
                 # else:
                 #     new_op_index = np.argmax(abs_gradients)
                 # new_op_index = np.argmin(f)
+
                 new_op_index = np.argmax(f)
+
+                # prefer smaller operators if they result in a significant reduction of energy
+                if isinstance(self.ansatz, HardwareAdaptAnsatz24):
+                    print("Special HardwareAdaptAnsatz24 selection activated")
+                    prev_end = 0
+                    for gate_size in range(1, self.ansatz.num_qubits + 1):
+                        block_size = (3 ** gate_size)*(self.ansatz.num_qubits - (gate_size - 1))
+                        print(f"Checking gate size {gate_size} with block size {block_size}.")
+                        f_subset = f[prev_end:block_size]
+                        if f_subset.sum() < 1e-3:
+                            prev_end += block_size
+                            continue
+                        else:
+                            new_op_index = prev_end + np.argmax(f_subset)
+                            print(f"Choose gate size {gate_size}")
+                            break
+
                 _, qbits, gname = self.ansatz.get_operator_info(int(new_op_index), True)
-                print(f"New op index: {new_op_index}\t{gname}{qbits}", flush=True)
-                print(f"Current grad: {abs_gradients.sum()}")
+                operator_name = self.ansatz.operator_pool[int(new_op_index)].to_list()[0][0]
+                print(f"Current gradient magnitude: {abs_gradients.sum()}")
+                print(f"New op index: {new_op_index}\t{operator_name}\t{gname}{qbits}", flush=True)
                 # print(ref_f, "\n", f)
                 print(f"gradient: {gradients[new_op_index]}")
                 print(f"second_gradient: {second_gradients[new_op_index]}")

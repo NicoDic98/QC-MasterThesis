@@ -1,0 +1,705 @@
+Start 2026-08-05 11:53:58 | 26843770 MyPyJob | node124 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_13_1/bin/python
+Python version:
+Python 3.13.1
+Pip list:
+Package                   Version
+------------------------- -----------
+annotated-types           0.7.0
+anyio                     4.12.1
+argon2-cffi               25.1.0
+argon2-cffi-bindings      25.1.0
+arrow                     1.4.0
+asttokens                 3.0.1
+async-lru                 2.1.0
+attrs                     25.4.0
+babel                     2.18.0
+beautifulsoup4            4.14.3
+bleach                    6.3.0
+certifi                   2026.1.4
+cffi                      2.0.0
+charset-normalizer        3.4.4
+comm                      0.2.3
+contourpy                 1.3.3
+cryptography              46.0.5
+cycler                    0.12.1
+debugpy                   1.8.20
+decorator                 5.2.1
+defusedxml                0.7.1
+dill                      0.4.1
+executing                 2.2.1
+fastjsonschema            2.21.2
+fonttools                 4.61.1
+fqdn                      1.5.1
+h11                       0.16.0
+h5py                      3.15.1
+httpcore                  1.0.9
+httpx                     0.28.1
+ibm-cloud-sdk-core        3.24.4
+ibm-platform-services     0.73.2
+idna                      3.11
+ipykernel                 7.2.0
+ipython                   9.10.0
+ipython_pygments_lexers   1.1.1
+isoduration               20.11.0
+jedi                      0.19.2
+Jinja2                    3.1.6
+json5                     0.13.0
+jsonpointer               3.0.0
+jsonschema                4.26.0
+jsonschema-specifications 2025.9.1
+jupyter_client            8.8.0
+jupyter_core              5.9.1
+jupyter-events            0.12.0
+jupyter-lsp               2.3.0
+jupyter_server            2.17.0
+jupyter_server_terminals  0.5.4
+jupyterlab                4.5.4
+jupyterlab_pygments       0.3.0
+jupyterlab_server         2.28.0
+kiwisolver                1.4.9
+lark                      1.3.1
+MarkupSafe                3.0.3
+matplotlib                3.10.8
+matplotlib-inline         0.2.1
+mistune                   3.2.0
+nbclient                  0.10.4
+nbconvert                 7.17.0
+nbformat                  5.10.4
+nest-asyncio              1.6.0
+notebook                  7.5.3
+notebook_shim             0.2.4
+numpy                     2.4.2
+numpyencoder              0.3.2
+packaging                 26.0
+pandocfilters             1.5.1
+parso                     0.8.6
+pexpect                   4.9.0
+pillow                    12.1.1
+pip                       24.3.1
+platformdirs              4.5.1
+prometheus_client         0.24.1
+prompt_toolkit            3.0.52
+psutil                    7.2.2
+ptyprocess                0.7.0
+pure_eval                 0.2.3
+pycparser                 3.0
+pydantic                  2.12.5
+pydantic_core             2.41.5
+Pygments                  2.19.2
+PyJWT                     2.11.0
+pylatexenc                2.10
+pyparsing                 3.3.2
+pyspnego                  0.12.0
+python-dateutil           2.9.0.post0
+python-json-logger        4.0.0
+PyYAML                    6.0.3
+pyzmq                     27.1.0
+qiskit                    2.5.1
+qiskit-aer                0.17.2
+qiskit-ibm-runtime        0.45.0
+referencing               0.37.0
+requests                  2.32.5
+requests_ntlm             1.3.0
+rfc3339-validator         0.1.4
+rfc3986-validator         0.1.1
+rfc3987-syntax            1.1.0
+rpds-py                   0.30.0
+rustworkx                 0.17.1
+scipy                     1.17.0
+Send2Trash                2.1.0
+setuptools                82.0.0
+six                       1.17.0
+soupsieve                 2.8.3
+stack-data                0.6.3
+stevedore                 5.6.0
+terminado                 0.18.1
+tinycss2                  1.4.0
+tornado                   6.5.4
+traitlets                 5.14.3
+typing_extensions         4.15.0
+typing-inspection         0.4.2
+tzdata                    2025.3
+uri-template              1.3.0
+urllib3                   2.6.3
+wcwidth                   0.6.0
+webcolors                 25.10.0
+webencodings              0.5.1
+websocket-client          1.9.0
+Module list:
+
+Currently Loaded Modules:
+  1) GCCcore/14.2.0                   7) Tcl/8.6.16-GCCcore-14.2.0
+  2) zlib/1.3.1-GCCcore-14.2.0        8) SQLite/3.47.2-GCCcore-14.2.0
+  3) binutils/2.42-GCCcore-14.2.0     9) XZ/5.6.3-GCCcore-14.2.0
+  4) bzip2/1.0.8-GCCcore-14.2.0      10) libffi/3.4.5-GCCcore-14.2.0
+  5) ncurses/6.5-GCCcore-14.2.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-14.2.0  12) Python/3.13.1-GCCcore-14.2.0
+
+ 
+
+Start of Program:
+
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/plotter.py:153: RuntimeWarning: I'll give you your data, but note that it might be skewed by e.g. a penalty term!
+  warnings.warn("I'll give you your data, but note that it might be skewed by e.g. a penalty term!",
+Processing 2026-08-31: 2026-08-04_17-42-13-26833315
+-----Beginning pprint-----
+/:
+	Attributes:
+	2026-08-04_17-42-13-26833315:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-08-04_17-42-13
+			ProcessId: 26833315
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26833315
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 27, 14748), maxshape=(50, None, 14748))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 27, 14748), maxshape=(50, None, 14748))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 26), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz24
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 6280, 26), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 6280), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 6280), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26833315
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 6280), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 6280), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 6280), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26833315
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 26), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.2
+				QiskitIBMRuntimeVersion: 0.45.0
+				QiskitVersion: 2.5.1
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+['mass=-6.000']
+H: -15.99999999999991 255.99999999999756 4.547473508864641e-13
+C: 0.9999999999999817 3.6637359812630166e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+['mass=-5.837']
+H: -15.34693877551013 235.52852977925656 1.7053025658242404e-13
+C: 0.9999999999999832 3.352873534367973e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.673, r=1.000)
+['mass=-5.673']
+H: -14.693877551020337 215.91003748437961 1.9895196601282805e-13
+C: 0.9999999999999947 1.0658141036401503e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.510, r=1.000)
+['mass=-5.510']
+H: -14.040816326530528 197.14452311536664 3.979039320256561e-13
+C: 0.9999999999999598 8.038014698286133e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.347, r=1.000)
+['mass=-5.347']
+H: -13.387755102040767 179.2319866722187 1.1368683772161603e-13
+C: 0.9999999999999795 4.107825191113079e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.184, r=1.000)
+['mass=-5.184']
+H: -12.734693877550912 162.17242815493316 4.831690603168681e-13
+C: 0.9999999999999561 8.770761894538737e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-5.020, r=1.000)
+['mass=-5.020']
+H: -12.081632653061154 145.96584756351368 1.7053025658242404e-13
+C: 0.9999999999999499 1.0014211682118912e-13
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.857, r=1.000)
+['mass=-4.857']
+H: -11.428571428571379 130.61224489795825 1.9895196601282805e-13
+C: 0.9999999999999962 7.549516567451064e-15
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.694, r=1.000)
+['mass=-4.694']
+H: -10.775510204081575 116.11162015826646 3.126388037344441e-13
+C: 0.9999999999999829 3.419486915845482e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.531, r=1.000)
+['mass=-4.531']
+H: -10.12244897959179 102.46397334443897 1.1368683772161603e-13
+C: 0.9999999999999604 7.926992395823618e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.367, r=1.000)
+['mass=-4.367']
+H: -9.469387755101996 89.6693044564758 1.7053025658242404e-13
+C: 0.9999999999999774 4.529709940470639e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.204, r=1.000)
+['mass=-4.204']
+H: -8.816326530612175 77.72761349437639 2.8421709430404007e-13
+C: 0.9999999999999772 4.551914400963142e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-4.041, r=1.000)
+['mass=-4.041']
+H: -8.163265306122414 66.63890045814198 1.1368683772161603e-13
+C: 0.9999999999999731 5.3734794391857577e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.878, r=1.000)
+['mass=-3.878']
+H: -7.510204081632577 56.40316534777083 2.1316282072803006e-13
+C: 0.9999999999999856 2.886579864025407e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.714, r=1.000)
+['mass=-3.714']
+H: -6.857142857138166 47.02040816322021 1.9234391857025912e-11
+C: 0.9999999999962982 7.403633262015319e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.551, r=1.000)
+['mass=-3.551']
+H: -6.204081632649944 38.490628904590295 5.8975047068088315e-12
+C: 0.9999999999981383 3.72346597998785e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.388, r=1.000)
+['mass=-3.388']
+H: -5.551020408160177 30.81382757181676 5.979217121421243e-12
+C: 0.9999999999981682 3.6635139366580916e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.224, r=1.000)
+['mass=-3.224']
+H: -4.8979591836687355 23.990004164916314 3.140954163427523e-11
+C: 0.9999999999913629 1.7274182084747736e-11
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-3.061, r=1.000)
+['mass=-3.061']
+H: -4.244897959180317 18.019158683889927 3.6703085015687975e-11
+C: 0.999999999987002 2.5996094166202965e-11
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.898, r=1.000)
+['mass=-2.898']
+H: -3.591836734751918 12.90129112946881 3.554916361281357e-10
+C: 0.9999999997456114 5.087772425582671e-10
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.735, r=1.000)
+['mass=-2.735']
+H: -2.9387755103057493 8.636401500343057 3.702389506088366e-10
+C: 0.9999999997326907 5.346185716348373e-10
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.571, r=1.000)
+['mass=-2.571']
+H: -2.2857142858730217 5.224489797074418 4.304006040456443e-10
+C: 0.9999999997135994 5.728011398531407e-10
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.408, r=1.000)
+['mass=-2.408']
+H: -1.6326530619177946 2.665556022166648 1.577098007743416e-09
+C: 0.9999999990177647 1.964470586202083e-09
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.245, r=1.000)
+['mass=-2.245']
+H: -0.9795918379589668 0.9596001715139564 2.518129815776149e-09
+C: 0.9999999985805837 2.838832502405353e-09
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-2.082, r=1.000)
+['mass=-2.082']
+H: -0.32653061440586695 0.10662224638397576 4.239702797170786e-09
+C: 0.9999999974569521 5.086095766770882e-09
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.918, r=1.000)
+['mass=-1.918']
+H: -4.163265280742241 17.33277786155617 6.372239980123595e-08
+C: -0.9999999866180718 2.6763856242340012e-08
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.755, r=1.000)
+['mass=-1.755']
+H: -4.489795209838198 20.15826258543424 1.5591482096510845e-06
+C: -0.9999996977504159 6.044990769060732e-07
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.592, r=1.000)
+['mass=-1.592']
+H: -4.816325198036425 23.19699113677555 2.72353494779054e-06
+C: -0.9999993080443331 1.383910854912962e-06
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.429, r=1.000)
+['mass=-1.429']
+H: -2.2857142857098136 5.224489795907418 9.494627306594339e-12
+C: 0.999999999995399 9.201972517303147e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.265, r=1.000)
+['mass=-1.265']
+H: -2.9387755102040316 8.636401499375035 6.927791673660977e-14
+C: 0.9999999999999346 1.3078427230084344e-13
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-1.102, r=1.000)
+['mass=-1.102']
+H: -3.591836734690726 12.901291128680601 6.865619184281968e-12
+C: 0.9999999999979581 4.083844373781176e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.939, r=1.000)
+['mass=-0.939']
+H: -4.2448979591808005 18.019158683863314 5.9898752624576446e-12
+C: 0.9999999999982189 3.5622615968122773e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.776, r=1.000)
+['mass=-0.776']
+H: -4.897959183670535 23.990004164908203 5.6701310313655995e-12
+C: 0.9999999999979539 4.092282068768327e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.612, r=1.000)
+['mass=-0.612']
+H: -5.551020408159935 30.81382757181459 6.501466032204917e-12
+C: 0.9999999999980397 3.920641589161278e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.449, r=1.000)
+['mass=-0.449']
+H: -6.204081632651633 38.49062890460774 2.3874235921539366e-12
+C: 0.9999999999991425 1.7150725284409418e-12
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.286, r=1.000)
+['mass=-0.286']
+H: -6.857142857141947 47.020408163254395 1.5702994460298214e-12
+C: 0.9999999999995475 9.050538096744276e-13
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=-0.122, r=1.000)
+['mass=-0.122']
+H: -7.510204081632593 56.40316534777107 2.1316282072803006e-13
+C: 0.9999999999999714 5.728750807065808e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.041, r=1.000)
+['mass=0.041']
+H: -8.163265306122407 66.6389004581419 1.5631940186722204e-13
+C: 0.9999999999999891 2.1760371282653068e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.204, r=1.000)
+['mass=0.204']
+H: -8.816326530612175 77.7276134943763 1.9895196601282805e-13
+C: 0.9999999999999754 4.929390229335695e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.367, r=1.000)
+['mass=0.367']
+H: -9.469387755101991 89.66930445647571 1.8474111129762605e-13
+C: 0.9999999999999816 3.68594044175552e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.531, r=1.000)
+['mass=0.531']
+H: -10.122448979591763 102.4639733444386 2.8421709430404007e-13
+C: 0.9999999999999649 7.016609515630989e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.694, r=1.000)
+['mass=0.694']
+H: -10.775510204081543 116.1116201582659 4.263256414560601e-13
+C: 0.9999999999999563 8.748557434046234e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=0.857, r=1.000)
+['mass=0.857']
+H: -11.42857142857132 130.61224489795705 3.410605131648481e-13
+C: 0.9999999999999383 1.234568003383174e-13
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.020, r=1.000)
+['mass=1.020']
+H: -12.08163265306113 145.9658475635133 3.979039320256561e-13
+C: 0.9999999999999691 6.17284001691587e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.184, r=1.000)
+['mass=1.184']
+H: -12.73469387755091 162.17242815493296 3.126388037344441e-13
+C: 0.9999999999999668 6.639133687258436e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.347, r=1.000)
+['mass=1.347']
+H: -13.387755102040723 179.23198667221774 3.410605131648481e-13
+C: 0.9999999999999681 6.372680161348399e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.510, r=1.000)
+['mass=1.510']
+H: -14.040816326530544 197.1445231153669 1.9895196601282805e-13
+C: 0.9999999999999841 3.175237850427948e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.673, r=1.000)
+['mass=1.673']
+H: -14.693877551020286 215.9100374843786 6.821210263296962e-13
+C: 0.9999999999999764 4.729550084903167e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=1.837, r=1.000)
+['mass=1.837']
+H: -15.346938775510115 235.52852977925633 4.263256414560601e-13
+C: 0.999999999999988 2.398081733190338e-14
+Calculating for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+['mass=2.000']
+H: -15.999999999999897 255.99999999999724 5.400124791776761e-13
+C: 0.9999999999999687 6.261657858885883e-14
+-----Beginning pprint-----
+/:
+	Attributes:
+	2026-08-04_17-42-13-26833315:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-08-04_17-42-13
+			ProcessId: 26833315
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26833315
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 27, 14748), maxshape=(50, None, 14748))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 27, 14748), maxshape=(50, None, 14748))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 26), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz24
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 6280, 26), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			Final:
+				Attributes:
+				ChargeConjugation: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				ChargeConjugationVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				Hamiltonian: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+				HamiltonianVariance: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+					Attributes:
+						DIMENSION_LABELS: ['mass']
+						NDataDims: 0
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 6280), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 6280), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26833315
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 6280), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 6280), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 6280), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26833315
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 26), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.2
+				QiskitIBMRuntimeVersion: 0.45.0
+				QiskitVersion: 2.5.1
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+End 2026-08-05 11:55:07 | 26843770 MyPyJob | node124 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+

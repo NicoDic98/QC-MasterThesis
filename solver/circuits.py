@@ -9,9 +9,9 @@ import numpy as np
 from qiskit import QuantumCircuit
 from qiskit.circuit import Parameter, Gate, ParameterVector
 from qiskit.circuit.library import n_local, XXPlusYYGate, RZGate, RYGate, RXGate, XXMinusYYGate, RXXGate, RYYGate, \
-    RZZGate, PauliEvolutionGate
+    RZZGate, PauliEvolutionGate, PauliProductRotationGate
 from qiskit.converters import circuit_to_dag, dag_to_circuit
-from qiskit.quantum_info import SparsePauliOp
+from qiskit.quantum_info import SparsePauliOp, Pauli
 from qiskit.transpiler.passes import RemoveBarriers
 from qiskit_aer.library import SaveStatevector
 
@@ -760,7 +760,7 @@ class HardwareAdaptAnsatz23(BaseADAPTVQEAnsatz):
         pauli_strings.pop(61115)
         pauli_strings.pop(48110)
         pauli_strings.pop(43690)
-        helper_func = lambda param, operator, label: PauliEvolutionGate(operator, time=param, label=label)
+        helper_func = lambda param, ps, label: PauliProductRotationGate(Pauli(ps), angle=param, label=label)
         for i, pauli_string in enumerate(pauli_strings):
             op = SparsePauliOp.from_sparse_list([(pauli_string,
                                                   list(range(self.num_qubits)), -0.5j)],
@@ -775,8 +775,34 @@ class HardwareAdaptAnsatz23(BaseADAPTVQEAnsatz):
             # Can use functools.Placeholder starting from 3.14 for this for now need this:
             self.gate_pool.append(
                 functools.partial(helper_func,
-                                  operator=1j * self.operator_pool[i],
-                                  label="$R_{" + self.operator_pool[i].to_list()[0][0] + "}$"))
+                                  ps=self.operator_pool[i].to_list()[0][0],
+                                  label="$R_{" + self.operator_pool[i].to_list()[0][0][::-1] + "}$"))
+
+
+class HardwareAdaptAnsatz24(BaseADAPTVQEAnsatz):
+    def __init__(self, num_qubits: int):
+        super().__init__(num_qubits)
+        for i in range(0, self.num_qubits):
+            self.fixed_ansatz.h(i)
+
+        helper_func = lambda param, ps, label: PauliProductRotationGate(Pauli(ps), angle=param, label=label)
+        i = -1
+        for gate_size in range(1, self.num_qubits + 1):
+            pauli_strings = ["".join(tu) for tu in product(*(["XYZ"] * gate_size))]
+            for pauli_string in pauli_strings:
+                for start_qubit in range(self.num_qubits - (gate_size - 1)):
+                    qubit_list = list(range(start_qubit, start_qubit + gate_size))
+                    op = SparsePauliOp.from_sparse_list(
+                        [(pauli_string, qubit_list, -0.5j)],
+                        num_qubits=self.num_qubits)
+                    self.operator_pool.append(op)
+                    i += 1
+                    self.operator_gate_map.append((len(self.gate_pool), qubit_list))
+
+                self.gate_pool.append(
+                    functools.partial(helper_func,
+                                      ps=self.operator_pool[i].to_list()[0][0].replace("I",""),
+                                      label="$R_{" + self.operator_pool[i].to_list()[0][0].replace("I","")[::-1] + "}$"))
 
 
 class PhysicsAdaptAnsatz1(BaseADAPTVQEAnsatz):

@@ -1,0 +1,315 @@
+Start 2026-08-04 15:17:04 | 26833014 MyPyJob | node003 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_13_1/bin/python
+Python version:
+Python 3.13.1
+Pip list:
+Package                   Version
+------------------------- -----------
+annotated-types           0.7.0
+anyio                     4.12.1
+argon2-cffi               25.1.0
+argon2-cffi-bindings      25.1.0
+arrow                     1.4.0
+asttokens                 3.0.1
+async-lru                 2.1.0
+attrs                     25.4.0
+babel                     2.18.0
+beautifulsoup4            4.14.3
+bleach                    6.3.0
+certifi                   2026.1.4
+cffi                      2.0.0
+charset-normalizer        3.4.4
+comm                      0.2.3
+contourpy                 1.3.3
+cryptography              46.0.5
+cycler                    0.12.1
+debugpy                   1.8.20
+decorator                 5.2.1
+defusedxml                0.7.1
+dill                      0.4.1
+executing                 2.2.1
+fastjsonschema            2.21.2
+fonttools                 4.61.1
+fqdn                      1.5.1
+h11                       0.16.0
+h5py                      3.15.1
+httpcore                  1.0.9
+httpx                     0.28.1
+ibm-cloud-sdk-core        3.24.4
+ibm-platform-services     0.73.2
+idna                      3.11
+ipykernel                 7.2.0
+ipython                   9.10.0
+ipython_pygments_lexers   1.1.1
+isoduration               20.11.0
+jedi                      0.19.2
+Jinja2                    3.1.6
+json5                     0.13.0
+jsonpointer               3.0.0
+jsonschema                4.26.0
+jsonschema-specifications 2025.9.1
+jupyter_client            8.8.0
+jupyter_core              5.9.1
+jupyter-events            0.12.0
+jupyter-lsp               2.3.0
+jupyter_server            2.17.0
+jupyter_server_terminals  0.5.4
+jupyterlab                4.5.4
+jupyterlab_pygments       0.3.0
+jupyterlab_server         2.28.0
+kiwisolver                1.4.9
+lark                      1.3.1
+MarkupSafe                3.0.3
+matplotlib                3.10.8
+matplotlib-inline         0.2.1
+mistune                   3.2.0
+nbclient                  0.10.4
+nbconvert                 7.17.0
+nbformat                  5.10.4
+nest-asyncio              1.6.0
+notebook                  7.5.3
+notebook_shim             0.2.4
+numpy                     2.4.2
+numpyencoder              0.3.2
+packaging                 26.0
+pandocfilters             1.5.1
+parso                     0.8.6
+pexpect                   4.9.0
+pillow                    12.1.1
+pip                       24.3.1
+platformdirs              4.5.1
+prometheus_client         0.24.1
+prompt_toolkit            3.0.52
+psutil                    7.2.2
+ptyprocess                0.7.0
+pure_eval                 0.2.3
+pycparser                 3.0
+pydantic                  2.12.5
+pydantic_core             2.41.5
+Pygments                  2.19.2
+PyJWT                     2.11.0
+pylatexenc                2.10
+pyparsing                 3.3.2
+pyspnego                  0.12.0
+python-dateutil           2.9.0.post0
+python-json-logger        4.0.0
+PyYAML                    6.0.3
+pyzmq                     27.1.0
+qiskit                    2.5.1
+qiskit-aer                0.17.2
+qiskit-ibm-runtime        0.45.0
+referencing               0.37.0
+requests                  2.32.5
+requests_ntlm             1.3.0
+rfc3339-validator         0.1.4
+rfc3986-validator         0.1.1
+rfc3987-syntax            1.1.0
+rpds-py                   0.30.0
+rustworkx                 0.17.1
+scipy                     1.17.0
+Send2Trash                2.1.0
+setuptools                82.0.0
+six                       1.17.0
+soupsieve                 2.8.3
+stack-data                0.6.3
+stevedore                 5.6.0
+terminado                 0.18.1
+tinycss2                  1.4.0
+tornado                   6.5.4
+traitlets                 5.14.3
+typing_extensions         4.15.0
+typing-inspection         0.4.2
+tzdata                    2025.3
+uri-template              1.3.0
+urllib3                   2.6.3
+wcwidth                   0.6.0
+webcolors                 25.10.0
+webencodings              0.5.1
+websocket-client          1.9.0
+Module list:
+
+Currently Loaded Modules:
+  1) GCCcore/14.2.0                   7) Tcl/8.6.16-GCCcore-14.2.0
+  2) zlib/1.3.1-GCCcore-14.2.0        8) SQLite/3.47.2-GCCcore-14.2.0
+  3) binutils/2.42-GCCcore-14.2.0     9) XZ/5.6.3-GCCcore-14.2.0
+  4) bzip2/1.0.8-GCCcore-14.2.0      10) libffi/3.4.5-GCCcore-14.2.0
+  5) ncurses/6.5-GCCcore-14.2.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-14.2.0  12) Python/3.13.1-GCCcore-14.2.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h_im: 0.0
+Lets GO!
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 11	$R_{Y}$[3]
+Current grad: 21567.99999999998
+gradient: 1.9999999999999996
+second_gradient: -0.49999999999999956
+b: 1.3258176636680326
+f: 2.5615528128088294
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 197.93844718719103
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 13	$R_{Y}$[5]
+Current grad: 22620.439777228
+gradient: -51.007125007266524
+second_gradient: -2.791603753715677e-15
+b: -1.5707963267948966
+f: 51.007125007266524
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 145.49759620950533
+            Iterations: 4
+            Function evaluations: 15
+            Gradient evaluations: 4
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 9	$R_{Y}$[1]
+Current grad: 9349.59782897805
+gradient: 2.502311015047213
+second_gradient: 0.0
+b: 1.5707963267948966
+f: 2.502311015047213
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 142.93844718723895
+            Iterations: 2
+            Function evaluations: 12
+            Gradient evaluations: 2
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 15	$R_{Y}$[7]
+Current grad: 10789.828178106292
+gradient: -50.50710002253109
+second_gradient: -8.896529351820332e-15
+b: -1.5707963267948963
+f: 50.5071000225311
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 90.99759621918848
+            Iterations: 4
+            Function evaluations: 26
+            Gradient evaluations: 4
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 14	$R_{Y}$[6]
+Current grad: 4315.623636142943
+gradient: 2.0023021115068147
+second_gradient: 0.49999999999803996
+b: 1.815504446372018
+f: 1.563786264551341
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 89.39862088913765
+            Iterations: 7
+            Function evaluations: 48
+            Gradient evaluations: 7
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 8	$R_{Y}$[0]
+Current grad: 5702.106471024782
+gradient: -50.42626411576634
+second_gradient: 0.4999999999999993
+b: -1.5807114697000892
+f: 49.9287429218003
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 37.99278884681958
+            Iterations: 5
+            Function evaluations: 42
+            Gradient evaluations: 5
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 10	$R_{Y}$[2]
+Current grad: 1419.3069875358012
+gradient: -1.9976565768325685
+second_gradient: 0.004838669284997216
+b: -1.5732184947883594
+f: 1.9928237675853726
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 35.99754904573443
+            Iterations: 6
+            Function evaluations: 56
+            Gradient evaluations: 6
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 12	$R_{Y}$[4]
+Current grad: 1085.513853166542
+gradient: 52.001192715322816
+second_gradient: 0.004883968470863219
+b: 1.5708902471109794
+f: 51.996308976203885
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -15.99999999999783
+            Iterations: 2
+            Function evaluations: 23
+            Gradient evaluations: 2
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+New op index: 11	$R_{Y}$[3]
+Current grad: 0.00047509023143467747
+gradient: -1.1103940161360608e-05
+second_gradient: 51.99999999999959
+b: -3.1415924400524826
+f: 1.1866063687193673e-12
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+h_im: 0.0
+Lets GO!
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 11	$R_{Y}$[3]
+Current grad: 21558.204081632633
+gradient: 1.918367346938775
+second_gradient: -0.49999999999999956
+b: 1.3158304801291172
+f: 2.482456374753531
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 198.01754362524633
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 13	$R_{Y}$[5]
+Current grad: 22738.444156463076
+gradient: -50.801962854236464
+second_gradient: -8.21444669654895e-16
+b: -1.5707963267948966
+f: 50.801962854236464
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 145.6608577611925
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Choose gate size 1
+New op index: 9	$R_{Y}$[1]
+[2026-08-04T15:26:18.620] error: *** JOB 26833014 ON node003 CANCELLED AT 2026-08-04T15:26:18 DUE to SIGNAL Terminated ***

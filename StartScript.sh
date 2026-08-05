@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --partition=lm_long
+#SBATCH --partition=lm_medium
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=50G
@@ -14,12 +14,15 @@ echo -e "Start $(date +"%F %T") | $SLURM_JOB_ID $SLURM_JOB_NAME | $(hostname) | 
 echo $SLURM_JOB_ID >"out/latest_id"
 
 # shellcheck disable=SC1090
-source ~/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/activate
+source ~/PycharmProjects/QC-MasterThesis/.venv_intel_3_13_1/bin/activate
 
 echo "Used python interpreter:"
 which python
 echo "Python version:"
 python --version
+echo "Pip list:"
+pip list
+echo "Module list:"
 module list
 echo "Start of Program:"
 echo

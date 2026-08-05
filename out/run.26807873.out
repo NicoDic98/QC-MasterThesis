@@ -1,0 +1,204 @@
+Start 2026-08-03 11:22:30 | 26807873 MyPyJob | lmnode195 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_12_3/bin/python
+Python version:
+Python 3.12.3
+
+Currently Loaded Modules:
+  1) GCCcore/14.3.0                    8) Tcl/9.0.1-GCCcore-14.3.0
+  2) zlib/1.3.1-GCCcore-14.3.0         9) SQLite/3.50.1-GCCcore-14.3.0
+  3) binutils/2.44-GCCcore-14.3.0     10) XZ/5.8.1-GCCcore-14.3.0
+  4) bzip2/1.0.8-GCCcore-14.3.0       11) libffi/3.5.1-GCCcore-14.3.0
+  5) ncurses/6.5-GCCcore-14.3.0       12) OpenSSL/3
+  6) libreadline/8.2-GCCcore-14.3.0   13) Python/3.13.5-GCCcore-14.3.0
+  7) libtommath/1.3.0-GCCcore-14.3.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h_im: 0.0
+Lets GO!
+New op index: 66	$R_{ZXXYXXXX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 181951.99999999985
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999745
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+New op index: 219	$R_{IZYIXXXX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 99749.16776441695
+gradient: -49.99999999999994
+second_gradient: -6.5881807591295326e-15
+b: -1.5707963267948966
+f: 49.99999999999995
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249673
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+New op index: 6144	$R_{XXXXXZYX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 41614.6312626554
+gradient: -49.99999999999995
+second_gradient: -5.983610145993828e-17
+b: -1.5707963267948966
+f: 49.99999999999995
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.99750006249669
+            Iterations: 1
+            Function evaluations: 4
+            Gradient evaluations: 1
+New op index: 16961	$R_{YXXYZXXY}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 9134.172081094239
+gradient: -50.00249993750298
+second_gradient: -7.243825764918775e-17
+b: -1.5707963267948966
+f: 50.00249993750298
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.004999875006220067
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+New op index: 1024	$R_{XXXXXYXX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 2574.0184846140874
+gradient: -3.999999999999989
+second_gradient: 5.5189108575834873e-17
+b: -1.5707963267948966
+f: 3.999999999999989
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.0049998750062485
+            Iterations: 1
+            Function evaluations: 6
+            Gradient evaluations: 1
+New op index: 10244	$R_{XYXXXZZX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 2316.1017803669392
+gradient: -3.9999999999999885
+second_gradient: 1.7845056101292228e-17
+b: -1.5707963267948966
+f: 3.9999999999999885
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.004999875006227
+            Iterations: 1
+            Function evaluations: 7
+            Gradient evaluations: 1
+New op index: 15855	$R_{IIZIYIIX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 1800.9115396350003
+gradient: -3.999900007499364
+second_gradient: 0.0049997500187480785
+b: -1.5720462948954668
+f: 3.9949033822450395
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -12.001225948090088
+            Iterations: 3
+            Function evaluations: 27
+            Gradient evaluations: 3
+New op index: 60215	$R_{YZIXIZZI}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 1024.190779876571
+gradient: 4.001143657912529
+second_gradient: 0.002415565392316174
+b: 1.5714000454577013
+f: 3.9987288216811896
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -15.999999999413166
+            Iterations: 3
+            Function evaluations: 32
+            Gradient evaluations: 3
+New op index: 27306	$R_{ZZZZZZZY}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 0.054590309252931776
+gradient: -0.00021618702254168687
+second_gradient: 51.999999999556096
+b: -3.141588496147052
+f: 4.4938985865883296e-10
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.837, r=1.000)
+h_im: 0.0
+Lets GO!
+New op index: 66	$R_{ZXXYXXXX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 181868.40816326515
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999745
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+New op index: 219	$R_{IZYIXXXX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 99665.36904817782
+gradient: -49.99999999999994
+second_gradient: -6.587508992856813e-15
+b: -1.5707963267948966
+f: 49.99999999999995
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249673
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+New op index: 6144	$R_{XXXXXZYX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 41530.62357727262
+gradient: -49.99999999999995
+second_gradient: -5.73938116044306e-17
+b: -1.5707963267948966
+f: 49.99999999999995
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.99750006249669
+            Iterations: 1
+            Function evaluations: 4
+            Gradient evaluations: 1
+New op index: 16961	$R_{YXXYZXXY}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 9050.164395711461
+gradient: -50.00249993750298
+second_gradient: -6.948159407166989e-17
+b: -1.5707963267948966
+f: 50.00249993750298
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.004999875006220069
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+New op index: 4	$R_{XYXXXXXX}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 2490.0107992313087
+gradient: 3.83673469387754
+second_gradient: 5.1368574072098645e-17
+b: 1.5707963267948966
+f: 3.83673469387754
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.841734568883824
+            Iterations: 1
+            Function evaluations: 6
+            Gradient evaluations: 1
+New op index: 17773	$R_{YIZYYYXY}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 2253.0960163298546
+gradient: 3.8367346938775384
+second_gradient: -8.962546914404396e-16
+b: 1.5707963267948963
+f: 3.8367346938775393
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.678469262761341
+            Iterations: 1
+            Function evaluations: 7
+            Gradient evaluations: 1
+New op index: 31914	$R_{ZZZZXIIY}$[0, 1, 2, 3, 4, 5, 6, 7]
+Current grad: 1758.9076969436283
+gradient: -3.836638782703468
+second_gradient: 0.004999750018747966
+b: -1.5720994849684158
+f: 3.8316422904177325
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -11.511431075275922
+            Iterations: 3
+            Function evaluations: 27
+            Gradient evaluations: 3
+New op index: 48758	$R_{XZIYZIIZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+[2026-08-03T13:03:32.879] error: *** JOB 26807873 ON lmnode195 CANCELLED AT 2026-08-03T13:03:32 DUE to SIGNAL Terminated ***

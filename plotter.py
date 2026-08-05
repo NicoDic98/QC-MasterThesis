@@ -191,6 +191,37 @@ class ResultLoader:
             raise NotImplementedError
         return energy
 
+    def get_circuit_parameter_evolution(self, parameters: dict[str, int]):
+        if self.solver == ED.__name__:
+            raise NotImplementedError
+        elif self.solver == VQE.__name__:
+            raise NotImplementedError
+        elif self.solver == AdaptVQE.__name__:
+            circuit_parameters, _, circuit_parameters_dep_dict = self.get_observables(
+                VQEParameters.CircuitParameters,
+                parameters, [], False)
+
+            n_iterations, _, _ = self.get_observables(VQEParameters.NIterations, parameters, [])
+            # limit iteration dimension in case a different parameter set (e.g. mass) resulted in more
+            circuit_parameters = np.take(circuit_parameters, range(n_iterations + 1),
+                                         circuit_parameters_dep_dict[VQEParameters.IterationAxis])
+
+            non_zero_end = 0
+            tot_num_of_circuit_params = circuit_parameters.shape[
+                circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis]]
+            ref_parameters = np.take(circuit_parameters, -1, circuit_parameters_dep_dict[VQEParameters.IterationAxis])
+            for i in range(tot_num_of_circuit_params):
+                j = tot_num_of_circuit_params - 1 - i
+                if ref_parameters[j] != 0:
+                    non_zero_end = j + 1
+                    break
+            # limit CircuitParameter dimension in case a different parameter set (e.g. mass) resulted in more
+            circuit_parameters = np.take(circuit_parameters, range(non_zero_end),
+                                         circuit_parameters_dep_dict[VQEParameters.CircuitParameterAxis])
+        else:
+            raise NotImplementedError
+        return circuit_parameters
+
     def get_start_iterations(self, parameters: dict[str, int]):
         if self.solver == AdaptVQE.__name__:
             start_iterations, _, _ = self.get_observables(VQEParameters.StartIterations, parameters,
@@ -352,11 +383,11 @@ class ResultLoader:
                     pass
                 else:
                     legend_elements.append(Line2D([0], [0],
-                                                  color=cmap(norm(n_qbits // 2)), linestyle=linestyle_str[gi],
+                                                  color=cmap(norm(n_qbits // 2)), linestyle=linestyle_str[gi%len(linestyle_str)],
                                                   label=gname))
                     already_labeled.append(gi)
                 ax.plot(der.take(i, der_dep_dict[VQEParameters.AnsatzPoolOperatorAxis]),
-                        color=cmap(norm(qbit)), linestyle=linestyle_str[gi], alpha=0.8)
+                        color=cmap(norm(qbit)), linestyle=linestyle_str[gi%len(linestyle_str)], alpha=0.8)
             cbar = fig.colorbar(plt.cm.ScalarMappable(norm=norm, cmap=cmap), ax=ax,
                                 # location="top", orientation="horizontal"
                                 )
@@ -373,7 +404,7 @@ class ResultLoader:
                 gi, qbit, gname = ansatz.get_operator_info(opid)
                 # noinspection PyTypeChecker
                 fig_legend_elements.append(Line2D([0], [0],
-                                                  color=cmap(norm(qbit)), linestyle=linestyle_str[gi],
+                                                  color=cmap(norm(qbit)), linestyle=linestyle_str[gi%len(linestyle_str)],
                                                   label=f"{i}: {label}"))
             source = list(range(der.shape[der_dep_dict[VQEParameters.AnsatzOperatorAxis]]))
             target = [str(i) for i in source]
