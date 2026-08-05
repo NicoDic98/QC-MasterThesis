@@ -130,3 +130,9 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 26695313,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,modified version with theta_0=0,"GS (or), EEE (mr), 1 ES"
 26732550,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,New modified version with direct previous operator layer parameter search,"GS (or), ES/EEE (mr)"
 26732869,22,PH,PH,50,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,New modified version with full previous operators parameter search,ES/EEE
+26737355,22,PH,PH,10,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,New modified version with full previous operators parameter search and pre grid search,"GS (or), ES/EEE (mr)"
+26737529,22,PH,PH,10,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,New modified version with direct previous operator layer parameter search and pre grid search,"GS (or), EEE (mr)"
+26737543,22,PH,PH,10,Full superpositon,R_x; R_y; R_z; R_{XX}; R_{YY}; R_{ZZ},SVE,50,2,SLSQP,2x2,New modified version with 4 previous operators parameter search and pre grid search,"2 GS, ES(r)"
+26779174,23,PH,PH,10,Full superpositon,All pauli word rotations,SVE,50,2,SLSQP,2x2,modified version with theta_0=pi+b,"GS, 2EEE"
+26811059,23,PH,PH,50,Full superpositon,All pauli word rotations,SVE,50,2,SLSQP,2x2,modified version with theta_0=pi+b,"GS(or/mr), EEE(mr)"
+26833315,24,PH,PH,50,Full superpositon,All neighbouring pauli rotations of size 1-8,SVE,50,2,SLSQP,2x2,"modified version with theta_0=pi+b, strict priority on smaller operators","GS(or/3 in mr), EEE(mr)"
