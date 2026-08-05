@@ -280,9 +280,11 @@ class AdaptVQE(BaseVQE):
                     print("Special HardwareAdaptAnsatz24 selection activated")
                     prev_end = 0
                     for gate_size in range(1, self.ansatz.num_qubits + 1):
-                        block_size = (3 ** gate_size)*(self.ansatz.num_qubits - (gate_size - 1))
+                        block_size = (3 ** gate_size) * (self.ansatz.num_qubits - (gate_size - 1))
                         print(f"Checking gate size {gate_size} with block size {block_size}.")
-                        f_subset = f[prev_end:block_size]
+                        # f[prev_end:prev_end + block_size] = f[prev_end:prev_end + block_size] / gate_size
+                        # prev_end += block_size
+                        f_subset = f[prev_end:prev_end + block_size]
                         if f_subset.sum() < 1e-3:
                             prev_end += block_size
                             continue
@@ -290,6 +292,7 @@ class AdaptVQE(BaseVQE):
                             new_op_index = prev_end + np.argmax(f_subset)
                             print(f"Choose gate size {gate_size}")
                             break
+                # new_op_index = np.argmax(f)
 
                 _, qbits, gname = self.ansatz.get_operator_info(int(new_op_index), True)
                 operator_name = self.ansatz.operator_pool[int(new_op_index)].to_list()[0][0]
