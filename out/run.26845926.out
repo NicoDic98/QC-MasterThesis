@@ -1,0 +1,443 @@
+Start 2026-08-05 14:50:16 | 26845926 MyPyJob | lmnode194 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
+Used python interpreter:
+/home/s6nidich_hpc/PycharmProjects/QC-MasterThesis/.venv_intel_3_13_1/bin/python
+Python version:
+Python 3.13.1
+Pip list:
+Package                   Version
+------------------------- -----------
+annotated-types           0.7.0
+anyio                     4.12.1
+argon2-cffi               25.1.0
+argon2-cffi-bindings      25.1.0
+arrow                     1.4.0
+asttokens                 3.0.1
+async-lru                 2.1.0
+attrs                     25.4.0
+babel                     2.18.0
+beautifulsoup4            4.14.3
+bleach                    6.3.0
+certifi                   2026.1.4
+cffi                      2.0.0
+charset-normalizer        3.4.4
+comm                      0.2.3
+contourpy                 1.3.3
+cryptography              46.0.5
+cycler                    0.12.1
+debugpy                   1.8.20
+decorator                 5.2.1
+defusedxml                0.7.1
+dill                      0.4.1
+executing                 2.2.1
+fastjsonschema            2.21.2
+fonttools                 4.61.1
+fqdn                      1.5.1
+h11                       0.16.0
+h5py                      3.15.1
+httpcore                  1.0.9
+httpx                     0.28.1
+ibm-cloud-sdk-core        3.24.4
+ibm-platform-services     0.73.2
+idna                      3.11
+ipykernel                 7.2.0
+ipython                   9.10.0
+ipython_pygments_lexers   1.1.1
+isoduration               20.11.0
+jedi                      0.19.2
+Jinja2                    3.1.6
+json5                     0.13.0
+jsonpointer               3.0.0
+jsonschema                4.26.0
+jsonschema-specifications 2025.9.1
+jupyter_client            8.8.0
+jupyter_core              5.9.1
+jupyter-events            0.12.0
+jupyter-lsp               2.3.0
+jupyter_server            2.17.0
+jupyter_server_terminals  0.5.4
+jupyterlab                4.5.4
+jupyterlab_pygments       0.3.0
+jupyterlab_server         2.28.0
+kiwisolver                1.4.9
+lark                      1.3.1
+MarkupSafe                3.0.3
+matplotlib                3.10.8
+matplotlib-inline         0.2.1
+mistune                   3.2.0
+nbclient                  0.10.4
+nbconvert                 7.17.0
+nbformat                  5.10.4
+nest-asyncio              1.6.0
+notebook                  7.5.3
+notebook_shim             0.2.4
+numpy                     2.4.2
+numpyencoder              0.3.2
+packaging                 26.0
+pandocfilters             1.5.1
+parso                     0.8.6
+pexpect                   4.9.0
+pillow                    12.1.1
+pip                       24.3.1
+platformdirs              4.5.1
+prometheus_client         0.24.1
+prompt_toolkit            3.0.52
+psutil                    7.2.2
+ptyprocess                0.7.0
+pure_eval                 0.2.3
+pycparser                 3.0
+pydantic                  2.12.5
+pydantic_core             2.41.5
+Pygments                  2.19.2
+PyJWT                     2.11.0
+pylatexenc                2.10
+pyparsing                 3.3.2
+pyspnego                  0.12.0
+python-dateutil           2.9.0.post0
+python-json-logger        4.0.0
+PyYAML                    6.0.3
+pyzmq                     27.1.0
+qiskit                    2.5.1
+qiskit-aer                0.17.2
+qiskit-ibm-runtime        0.45.0
+referencing               0.37.0
+requests                  2.32.5
+requests_ntlm             1.3.0
+rfc3339-validator         0.1.4
+rfc3986-validator         0.1.1
+rfc3987-syntax            1.1.0
+rpds-py                   0.30.0
+rustworkx                 0.17.1
+scipy                     1.17.0
+Send2Trash                2.1.0
+setuptools                82.0.0
+six                       1.17.0
+soupsieve                 2.8.3
+stack-data                0.6.3
+stevedore                 5.6.0
+terminado                 0.18.1
+tinycss2                  1.4.0
+tornado                   6.5.4
+traitlets                 5.14.3
+typing_extensions         4.15.0
+typing-inspection         0.4.2
+tzdata                    2025.3
+uri-template              1.3.0
+urllib3                   2.6.3
+wcwidth                   0.6.0
+webcolors                 25.10.0
+webencodings              0.5.1
+websocket-client          1.9.0
+Module list:
+
+Currently Loaded Modules:
+  1) GCCcore/14.2.0                   7) Tcl/8.6.16-GCCcore-14.2.0
+  2) zlib/1.3.1-GCCcore-14.2.0        8) SQLite/3.47.2-GCCcore-14.2.0
+  3) binutils/2.42-GCCcore-14.2.0     9) XZ/5.6.3-GCCcore-14.2.0
+  4) bzip2/1.0.8-GCCcore-14.2.0      10) libffi/3.4.5-GCCcore-14.2.0
+  5) ncurses/6.5-GCCcore-14.2.0      11) OpenSSL/3
+  6) libreadline/8.2-GCCcore-14.2.0  12) Python/3.13.1-GCCcore-14.2.0
+
+ 
+
+Start of Program:
+
+-----Beginning pprint-----
+/:
+	Attributes:
+-----Ending pprint-----
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-6.000, r=1.000)
+h_im: 0.0
+Lets GO!
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 21567.99999999998
+New op index: 6747	IXXYXXXZ	$R_{ZXXXYXX}$[0, 1, 2, 3, 4, 5, 6]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999745
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.9975000624968
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 11800.25431755104
+New op index: 8192	ZYXXXXXX	$R_{XXXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -49.999999999999964
+second_gradient: -5.30825383648903e-16
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249684
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 9201.054451291042
+New op index: 8448	XXZXXYXX	$R_{XXYXXZXX}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -49.999999999999936
+second_gradient: -3.3306690738754696e-16
+b: -1.5707963267948966
+f: 49.999999999999936
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.99750006249686
+            Iterations: 1
+            Function evaluations: 4
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 4251.0621995849615
+New op index: 11292	XXXYZXYY	$R_{YYXZYXXX}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -49.99750018748434
+second_gradient: -8.890124443746563e-20
+b: -1.5707963267948966
+f: 49.99750018748434
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.0012499921677287759
+            Iterations: 2
+            Function evaluations: 12
+            Gradient evaluations: 2
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 810.1317221400016
+New op index: 8188	YXXXXXXX	$R_{XXXXXXXY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -3.9999999999999942
+second_gradient: -1.1102230043014012e-16
+b: -1.5707963267948966
+f: 3.9999999999999942
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.0012499921677485
+            Iterations: 1
+            Function evaluations: 6
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 467.3783091079624
+New op index: 9032	ZZXYYXYX	$R_{XYXYYXZZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -3.999975006768757
+second_gradient: 1.3555324311688313e-24
+b: -1.5707963267948966
+f: 3.999975006768757
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.001225482642592
+            Iterations: 1
+            Function evaluations: 10
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 179.29813285181555
+New op index: 7315	IZYZYXYZ	$R_{ZYXYZYZ}$[0, 1, 2, 3, 4, 5, 6]
+gradient: -0.999993997554057
+second_gradient: 5.0460572045979715e-17
+b: -1.5707963267948968
+f: 0.999993997554057
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -9.001219504925185
+            Iterations: 1
+            Function evaluations: 11
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 82.28738926853273
+New op index: 8148	YZXZZZZI	$R_{ZZZZXZY}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.9999999999999983
+second_gradient: -2.886579864025407e-15
+b: 1.5707963267948937
+f: 1.0000000000000013
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -10.001219504925166
+            Iterations: 1
+            Function evaluations: 9
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 74.2656050793841
+New op index: 13252	YZYYZZXZ	$R_{ZXZZYYZY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.9974992546376484
+second_gradient: 102.49878673048815
+b: 3.1318611455614347
+f: 0.004853624306548454
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -10.414213349124031
+            Iterations: 8
+            Function evaluations: 92
+            Gradient evaluations: 8
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 102.39086411737934
+New op index: 7980	YYXZYZZI	$R_{ZZYZXYY}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.7071067389486292
+second_gradient: 102.70710668220097
+b: 3.1347080709152073
+f: 0.002434077016118863
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -10.416647555224218
+            Iterations: 1
+            Function evaluations: 15
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 119.16913425675726
+New op index: 8075	IYZZXZZZ	$R_{ZZZXZZY}$[0, 1, 2, 3, 4, 5, 6]
+gradient: -1.4093213188738691
+second_gradient: 102.70469882904388
+b: -3.1278714423039182
+f: 0.009668949492535717
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -11.000149633905629
+            Iterations: 13
+            Function evaluations: 176
+            Gradient evaluations: 13
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 98.57349867531437
+New op index: 12558	XZZZZZZY	$R_{YZZZZZZX}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.5002992291058029
+second_gradient: 102.50001540379893
+b: 3.1367117249950507
+f: 0.0012209648306082954
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -11.001370619017049
+            Iterations: 1
+            Function evaluations: 16
+            Gradient evaluations: 1
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 99.06929001535576
+New op index: 10372	YZZZZZZX	$R_{XZZZZZZY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -0.997845415639302
+second_gradient: 102.50029216915244
+b: -3.1318579116297114
+f: 0.004856922174312217
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -11.299583620442595
+            Iterations: 6
+            Function evaluations: 96
+            Gradient evaluations: 6
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 171.57912795739696
+New op index: 13022	ZXXZZYXZ	$R_{ZXYZZXXZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.5572490419822227
+second_gradient: 104.93301595949998
+b: 3.136282181966253
+f: 0.0014796310896230125
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -11.302431725751859
+            Iterations: 6
+            Function evaluations: 102
+            Gradient evaluations: 6
+Special HardwareAdaptAnsatz24 selection activated
+Checking gate size 1 with block size 24.
+Checking gate size 2 with block size 63.
+Checking gate size 3 with block size 162.
+Checking gate size 4 with block size 405.
+Checking gate size 5 with block size 972.
+Checking gate size 6 with block size 2187.
+Checking gate size 7 with block size 4374.
+Checking gate size 8 with block size 6561.
+Current gradient magnitude: 262.0626756846836
+New op index: 14408	ZXYZYYZZ	$R_{ZZYYZYXZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+[2026-08-05T15:09:30.981] error: *** JOB 26845926 ON lmnode194 CANCELLED AT 2026-08-05T15:09:30 DUE to SIGNAL Terminated ***
