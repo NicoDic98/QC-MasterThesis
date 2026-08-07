@@ -138,3 +138,7 @@ JOBID,Ansatz,Hamiltonian VQE,Hamiltonian Gradient,# masses,Fixed Ansatz,Operator
 26833315,24,PH,PH,50,Full superpositon,All neighbouring pauli rotations of size 1-8,SVE,50,2,SLSQP,2x2,"modified version with theta_0=pi+b, strict priority on smaller operators (bugged window selection)","GS(or/3 in mr), EEE(mr)"
 26846193,24,PH,PH,50,Full superpositon,All neighbouring pauli rotations of size 1-8,SVE,50,2,SLSQP,2x2,"modified version with theta_0=pi+b, priority on smaller operators by dividing by length","GS (or), EEE (mr)"
 26846335,24,PH,PH,50,Full superpositon,All neighbouring pauli rotations of size 1-8,SVE,50,2,SLSQP,2x2,"modified version with theta_0=pi+b, strict priority on smaller operators","GS(or/3 in mr), EEE(mr)"
+26869229,24,PH,PH,50,Full superpositon,All neighbouring pauli rotations of size 1-8,SVE,50,2,SLSQP,2x2,"modified version with theta_0=pi+b, priority on smaller operators by dividing by sqrt(length)","GS (or), EEE (mr)"
+26869463,24,PH,PH,50,Full superpositon,All neighbouring pauli rotations of size 1-8,SVE,50,2,SLSQP,2x2,"modified version with theta_0=pi+b, priority on smaller operators by dividing by length^2","GS (or), EEE (mr)"
+26895042,24,PH,PH,50,Full superpositon,All neighbouring pauli rotations of size 1-8,SVE,50,2,SLSQP,2x2,modified version with theta_0=pi+b,
+26895081,25,PH,PH,50,Full superpositon,All neighbouring pauli rotations of size 1-4,SVE,50,2,SLSQP,2x2,modified version with theta_0=pi+b,"GS(or/mr), EEE(mr)"
