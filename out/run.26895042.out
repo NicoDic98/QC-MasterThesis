@@ -674,3 +674,4965 @@ Optimization terminated successfully    (Exit mode 0)
             Gradient evaluations: 2
 Current gradient magnitude: 5282.95992544324
 New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7517982081369728e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238849
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1497.874866838008
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 3.183593884278953
+second_gradient: 0.004999726177088968
+b: 1.5723667915741524
+f: 3.178598084049604
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.1899045517090983
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 608.3206391964093
+New op index: 11786	ZZXYZZYY	$R_{YYZZYXZZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 3.184841169173879
+second_gradient: 0.0024357561522502166
+b: 1.5715611233884987
+f: 3.182406344450678
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.37234681364103
+            Iterations: 3
+            Function evaluations: 26
+            Gradient evaluations: 3
+Current gradient magnitude: 188.28789342714873
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: -3.1835938854451786
+second_gradient: 0.004999689545817913
+b: -1.5723667800673415
+f: 3.178598121789572
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -9.552251622454826
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 86.6983703806185
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 3.184841897082483
+second_gradient: 0.0024365152515999455
+b: 1.571561361561139
+f: 3.1824063138403664
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -12.734692324293993
+            Iterations: 2
+            Function evaluations: 22
+            Gradient evaluations: 2
+Current gradient magnitude: 0.1265375326391838
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 0.0021525382007848495
+second_gradient: 3.1836750503323046
+b: 3.1409165362603693
+f: 7.276842177716958e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-5.020, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21509.2244897959
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21778.720366079404
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14335.628067915171
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.4489734661906638e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5236.89724398882
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7523495055809285e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238845
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1437.4134956114644
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 3.0203326594441346
+second_gradient: 0.004999726177088966
+b: 1.5724516814111196
+f: 3.0153370714278944
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.026640310465531
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 589.3461242580782
+New op index: 35	IIYXIIII	$R_{XY}$[4, 5]
+gradient: -3.021580787801909
+second_gradient: 0.0024398753765804007
+b: -1.5716038097045513
+f: 3.0191418975042166
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.0458161635899685
+            Iterations: 3
+            Function evaluations: 26
+            Gradient evaluations: 3
+Current gradient magnitude: 183.2409832306738
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 3.020332520476935
+second_gradient: 0.00500432507167929
+b: 1.5724532041282329
+f: 3.015332341182594
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -9.062456008769523
+            Iterations: 2
+            Function evaluations: 20
+            Gradient evaluations: 2
+Current gradient magnitude: 84.75415097601389
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -3.021573859704017
+second_gradient: 0.002432657864246808
+b: -1.5716014228976558
+f: 3.019142181101506
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -12.08162565269049
+            Iterations: 4
+            Function evaluations: 41
+            Gradient evaluations: 4
+Current gradient magnitude: 0.29686736883040044
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -0.004582124054237399
+second_gradient: 3.020406341495537
+b: -3.1400755992530627
+f: 3.4756662508073077e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.857, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21499.428571428554
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21760.834325675292
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14312.426272886536
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.4129589736115718e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5190.834562534402
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7529008030248846e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238844
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1376.952124384921
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.857071434609318
+second_gradient: 0.004999726177088963
+b: 1.572546272915582
+f: 2.8520760830590595
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.863376073766503
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 570.3758358980693
+New op index: 298	XXYXIIII	$R_{XYXX}$[4, 5, 6, 7]
+gradient: -2.858320324817692
+second_gradient: 0.0024438961663801407
+b: -1.5716513378829222
+f: 2.855877473430535
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.719283992310572
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 178.86958509496966
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 2.8570704560992786
+second_gradient: 0.0050338580787802276
+b: 1.5725582199464003
+f: 2.852041032581683
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.572659991016067
+            Iterations: 2
+            Function evaluations: 21
+            Gradient evaluations: 2
+Current gradient magnitude: 82.67202583133479
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -2.8583109875184087
+second_gradient: 0.00243418879444855
+b: -1.571647944486817
+f: 2.8558778352231444
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -11.42857025064007
+            Iterations: 3
+            Function evaluations: 32
+            Gradient evaluations: 3
+Current gradient magnitude: 0.25096487065530854
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -0.0016231593429775568
+second_gradient: 2.857142721779711
+b: -3.1410245478539536
+f: 4.610630788270953e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.694, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21489.632653061206
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21742.94828527118
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14289.224477857897
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.37694448103248e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5144.771881079982
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7534521004688403e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238842
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1316.4907531583772
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.6938102097745
+second_gradient: 0.004999726177088961
+b: 1.5726523300196278
+f: 2.688815123352697
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.7001118449517207
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 551.4063017969982
+New op index: 3653	XXXYZZII	$R_{ZZYXXX}$[2, 3, 4, 5, 6, 7]
+gradient: -2.6950600384571217
+second_gradient: 0.002448086560483992
+b: -1.5717046872218372
+f: 2.692613063769191
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.392754977006902
+            Iterations: 4
+            Function evaluations: 35
+            Gradient evaluations: 4
+Current gradient magnitude: 172.5899550936552
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 2.6938102071854932
+second_gradient: 0.004999822283648909
+b: 1.5726523656981006
+f: 2.68881502483551
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.082867070124387
+            Iterations: 3
+            Function evaluations: 27
+            Gradient evaluations: 3
+Current gradient magnitude: 79.82331979542438
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -2.6950599706030482
+second_gradient: 0.0024480163323228657
+b: -1.5717046611866217
+f: 2.692613066079515
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -10.77550833368466
+            Iterations: 2
+            Function evaluations: 22
+            Gradient evaluations: 2
+Current gradient magnitude: 0.13926612568811225
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -0.0021649781645046665
+second_gradient: 2.693881424671334
+b: -3.1407889887816194
+f: 8.699584275184691e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.531, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21479.83673469386
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21725.06224486707
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14266.02268282926
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.340929988453388e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5098.709199625564
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.754003397912796e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238838
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1256.0293819318335
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.5305489849396823
+second_gradient: 0.0049997261770889576
+b: 1.5727720718609874
+f: 2.5255541978563634
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.536847625200849
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 532.4256723209189
+New op index: 35	IIYXIIII	$R_{XY}$[4, 5]
+gradient: -2.5317997013916704
+second_gradient: 0.0024522105394261195
+b: -1.5717648906869213
+f: 2.529348678413629
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.066222285638254
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 168.04704258122285
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: -2.5305487907285023
+second_gradient: 0.005007394805886631
+b: -1.5727751024220087
+f: 2.5255463501796305
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.593072114896216
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 77.69151753212961
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 2.5318004342909823
+second_gradient: 0.002452967224734411
+b: 1.5717651892786777
+f: 2.5293486553603
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -10.122448979587078
+            Iterations: 4
+            Function evaluations: 43
+            Gradient evaluations: 4
+Current gradient magnitude: 0.0007450255709003072
+New op index: 35	IIYXIIII	$R_{XY}$[4, 5]
+gradient: 2.674661192532869e-06
+second_gradient: 2.5306122449109196
+b: 3.1415915966672254
+f: 1.4135359549527493e-12
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.367, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21470.040816326513
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21707.176204462958
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14242.820887800623
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.304915495874296e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5052.646518171145
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.754554695356752e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238837
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1195.5680107052897
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.3672877601048645
+second_gradient: 0.004999726177088955
+b: 1.5729083297492867
+f: 2.362293313647967
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.3735834150501702
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 513.4510497543299
+New op index: 35	IIYXIIII	$R_{XY}$[4, 5]
+gradient: -2.3685393903459953
+second_gradient: 0.0024563476133759067
+b: -1.5718333991538245
+f: 2.3660843164378402
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.73969211616464
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 163.06981521007768
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 2.3672869197435533
+second_gradient: 0.005035099509658758
+b: 1.5729232729943203
+f: 2.3622571749287964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.103275127094584
+            Iterations: 2
+            Function evaluations: 20
+            Gradient evaluations: 2
+Current gradient magnitude: 76.10887081390675
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -2.3685317458042867
+second_gradient: 0.0024484637509386
+b: -1.5718300739182383
+f: 2.36608454759964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -9.469386051148266
+            Iterations: 3
+            Function evaluations: 32
+            Gradient evaluations: 3
+Current gradient magnitude: 0.26340630371713813
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -0.0017433363862736201
+second_gradient: 2.3673473274421273
+b: -3.140856244508232
+f: 6.419044025207654e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.204, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21460.244897959165
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21689.290164058842
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14219.619092771985
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.2689010032952041e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5006.583836716726
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7551059928007076e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238835
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1135.1066394787458
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.204026535270046
+second_gradient: 0.004999726177088952
+b: 1.573064773894388
+f: 2.199032479902561
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.2103192180010325
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 494.4784365220952
+New op index: 35	IIYXIIII	$R_{XY}$[4, 5]
+gradient: -2.2052792150167546
+second_gradient: 0.002460610367854818
+b: -1.5719121081118257
+f: 2.2028199774005808
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.413163140299915
+            Iterations: 4
+            Function evaluations: 35
+            Gradient evaluations: 4
+Current gradient magnitude: 156.89047970104488
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 2.2040265344435728
+second_gradient: 0.004999763674216486
+b: 1.5730647909081619
+f: 2.199032441664023
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.613482606049743
+            Iterations: 3
+            Function evaluations: 27
+            Gradient evaluations: 3
+Current gradient magnitude: 72.98259462773623
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -2.205279144096351
+second_gradient: 0.0024605375150074126
+b: -1.5719120751120916
+f: 2.2028199792517817
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.81632653058596
+            Iterations: 4
+            Function evaluations: 43
+            Gradient evaluations: 4
+Current gradient magnitude: 0.001285269463853011
+New op index: 157	IZXYIIII	$R_{YXZ}$[4, 5, 6]
+gradient: -6.020795479821066e-06
+second_gradient: 2.2040816326459307
+b: -3.1415899219325847
+f: 8.22364398800346e-12
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-4.041, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21450.44897959182
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21671.404123654735
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14196.417297743348
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.2328865107161122e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4960.521155262307
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7556572902446633e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238832
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1074.6452682522022
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.040765310435228
+second_gradient: 0.00499972617708895
+b: 1.5732462489630834
+f: 2.035771708731201
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.047055035196003
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 475.5190772691345
+New op index: 3653	XXXYZZII	$R_{ZZYXXX}$[2, 3, 4, 5, 6, 7]
+gradient: -2.0420190164899594
+second_gradient: 0.00246483499448072
+b: -1.5720033840149805
+f: 2.0395556690940975
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.086632527477839
+            Iterations: 4
+            Function evaluations: 32
+            Gradient evaluations: 4
+Current gradient magnitude: 151.67383810295817
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: -2.0407653088110678
+second_gradient: 0.004999805762458585
+b: -1.573246287962605
+f: 2.0357716277166547
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.123687815361492
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 70.72059380542154
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 2.0420192643819095
+second_gradient: 0.00246508899947134
+b: 1.5720035082573938
+f: 2.0395556632874907
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.163263053269015
+            Iterations: 2
+            Function evaluations: 21
+            Gradient evaluations: 2
+Current gradient magnitude: 0.28302722028859384
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 0.001795899758195445
+second_gradient: 2.0408261189929666
+b: 3.14071266715787
+f: 7.901837610901907e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.878, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21440.65306122447
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21653.51808325062
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14173.21550271471
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.1968720181370203e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4914.458473807888
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7562085876886193e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.00999974998423883
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1014.1838970256588
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.8775040856004113
+second_gradient: 0.004999726177088946
+b: 1.5734592847065028
+f: 1.8725110164574459
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.8837908736684668
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 456.5454939658179
+New op index: 626	IIXYZZII	$R_{ZZYX}$[2, 3, 4, 5]
+gradient: -1.8787588470008032
+second_gradient: 0.0024690751638446725
+b: -1.5721105315137787
+f: 1.8762913942723078
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.760099307108547
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 147.20800244989272
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: -1.877504428249552
+second_gradient: 0.004981442865362549
+b: -1.5734495461968472
+f: 1.8725295938184963
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.633892713978923
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 68.55401208570238
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 1.8787591560117056
+second_gradient: 0.002469390997373939
+b: 1.5721106994048464
+f: 1.8762913878645107
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.51020146021159
+            Iterations: 2
+            Function evaluations: 22
+            Gradient evaluations: 2
+Current gradient magnitude: 0.20191464028483277
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 0.0020345144999155415
+second_gradient: 1.8775709905934108
+b: 3.1405090654251784
+f: 1.102288024412701e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.714, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21430.857142857127
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21635.632042846504
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14150.013707686072
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.1608575255579283e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4868.395792353469
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.756759885132575e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238828
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 953.7225257991149
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.7142428607655935
+second_gradient: 0.0049997261770889445
+b: 1.5737128983700048
+f: 1.7092504256232988
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.7205264206404962
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 438.1933981205677
+New op index: 298	XXYXIIII	$R_{XYXX}$[4, 5, 6, 7]
+gradient: -1.7155076577524124
+second_gradient: 0.002482444028228395
+b: -1.5722433866691436
+f: 1.713027009847069
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.4335688341046477
+            Iterations: 4
+            Function evaluations: 35
+            Gradient evaluations: 4
+Current gradient magnitude: 142.25883484320912
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: -1.7142427682225667
+second_gradient: 0.00500512133797341
+b: -1.573716045756681
+f: 1.7092449536636223
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.144094774734903
+            Iterations: 2
+            Function evaluations: 21
+            Gradient evaluations: 2
+Current gradient magnitude: 66.79089359640855
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 1.7154909469356165
+second_gradient: 0.002465412335197434
+b: 1.5722334726115252
+f: 1.7130273061792358
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.857140484322333
+            Iterations: 3
+            Function evaluations: 31
+            Gradient evaluations: 3
+Current gradient magnitude: 0.5026330922671614
+New op index: 218	XYZIIIII	$R_{ZYX}$[5, 6, 7]
+gradient: -0.001862656525610705
+second_gradient: 1.7142892170454178
+b: -3.1405061065975572
+f: 1.0119320221768646e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.551, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21421.061224489782
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21617.746002442396
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14126.811912657435
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.1248430329788364e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4822.333110899051
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7573111825765307e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238826
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 893.2611545725713
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.550981635930776
+second_gradient: 0.004999726177088941
+b: 1.5740199038786724
+f: 1.5459899682620302
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.5572621750213642
+            Iterations: 3
+            Function evaluations: 22
+            Gradient evaluations: 3
+Current gradient magnitude: 418.37219411507255
+New op index: 298	XXYXIIII	$R_{XYXX}$[4, 5, 6, 7]
+gradient: -1.5522439297378567
+second_gradient: 0.0024830195095968885
+b: -1.5723959577189808
+f: 1.5497628961860797
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.1070260568177943
+            Iterations: 1
+            Function evaluations: 10
+            Gradient evaluations: 1
+Current gradient magnitude: 137.4879299633499
+New op index: 11094	XXZZZZXY	$R_{YXZZZZXX}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -1.5509808992443723
+second_gradient: 0.005046999776770408
+b: -1.574050384897848
+f: 1.5459421110901075
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.654295201418535
+            Iterations: 3
+            Function evaluations: 29
+            Gradient evaluations: 3
+Current gradient magnitude: 64.61528672607807
+New op index: 628	XYZZIIII	$R_{ZZYX}$[4, 5, 6, 7]
+gradient: -1.5522425154727202
+second_gradient: 0.0024809010760482118
+b: -1.5723945944230955
+f: 1.5497635969690333
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.2040781823297575
+            Iterations: 2
+            Function evaluations: 21
+            Gradient evaluations: 2
+Current gradient magnitude: 0.370334958992576
+New op index: 218	XYZIIIII	$R_{ZYX}$[5, 6, 7]
+gradient: -0.0014258856116689672
+second_gradient: 1.5511268327351342
+b: -3.140673395937913
+f: 6.553781757290267e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.388, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21411.265306122434
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21599.85996203828
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14103.610117628796
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.0888285403997445e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4776.270429444632
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7578624800204866e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238823
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 832.7997833460277
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.387720411095958
+second_gradient: 0.004999726177088938
+b: 1.5743991451323982
+f: 1.382729691481188
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.393998244507543
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+Current gradient magnitude: 399.4266713630787
+New op index: 626	IIXYZZII	$R_{ZZYX}$[2, 3, 4, 5]
+gradient: -1.3889820105163864
+second_gradient: 0.0024854318710721833
+b: -1.5725857158579235
+f: 1.3864988023482112
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.78050343296389
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 131.84701898274335
+New op index: 424	IIIIZZXY	$R_{YXZZ}$[0, 1, 2, 3]
+gradient: 1.3877203804767788
+second_gradient: 0.00498137464075228
+b: 1.5743859211508624
+f: 1.3827479464027743
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.164506485542425
+            Iterations: 3
+            Function evaluations: 28
+            Gradient evaluations: 3
+Current gradient magnitude: 62.07908742371872
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 1.3889824856776563
+second_gradient: 0.0024859168938916906
+b: 1.572586064437567
+f: 1.386498793353879
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.551020388501128
+            Iterations: 5
+            Function evaluations: 53
+            Gradient evaluations: 5
+Current gradient magnitude: 0.023799517800749525
+New op index: 33	IIIIYXII	$R_{XY}$[2, 3]
+gradient: 0.00015012295441463232
+second_gradient: 1.387755105588461
+b: 3.141484476755693
+f: 8.119912964232867e-09
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.224, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21401.469387755085
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21581.97392163417
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14080.408322600158
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.0528140478206525e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4730.207747990213
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7584137774644423e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238821
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 772.3384121194838
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.2244591862611403
+second_gradient: 0.004999726177088936
+b: 1.5748795158854678
+f: 1.2194696675119243
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.2307344564490919
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+Current gradient magnitude: 380.62739010781206
+New op index: 298	XXYXIIII	$R_{XYXX}$[4, 5, 6, 7]
+gradient: -1.2257209418353139
+second_gradient: 0.0024886983195508334
+b: -1.5728267195333463
+f: 1.223234770034129
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.4539765447745765
+            Iterations: 3
+            Function evaluations: 26
+            Gradient evaluations: 3
+Current gradient magnitude: 126.85439500573574
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 1.2244591924426806
+second_gradient: 0.004999222038690963
+b: 1.5748791041484032
+f: 1.2194701757734283
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.6747094021407847
+            Iterations: 2
+            Function evaluations: 21
+            Gradient evaluations: 2
+Current gradient magnitude: 60.204407215325794
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -1.2257126624037433
+second_gradient: 0.0024803245312982726
+b: -1.572819901505229
+f: 1.2232348474342989
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.897944961939997
+            Iterations: 1
+            Function evaluations: 12
+            Gradient evaluations: 1
+Current gradient magnitude: 0.6554099454850891
+New op index: 3562	IXZZZYZI	$R_{ZYZZZX}$[1, 2, 3, 4, 5, 6]
+gradient: 0.0032077665270092187
+second_gradient: 1.226120001656973
+b: 3.138976466589971
+f: 4.196060936489943e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-3.061, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21391.67346938774
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21564.087881230058
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14057.206527571521
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.0167995552415608e-15
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4684.145066535793
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.758965074908398e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.00999974998423882
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 711.8770408929402
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.0611979614263227
+second_gradient: 0.004999726177088932
+b: 1.5755076901463985
+f: 1.0562100130343588
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.067470668995469
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+Current gradient magnitude: 361.82118675037776
+New op index: 298	XXYXIIII	$R_{XYXX}$[4, 5, 6, 7]
+gradient: -1.0624601469898718
+second_gradient: 0.002492231970936255
+b: -1.573142040567721
+f: 1.0599708380517057
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.127445519214632
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 121.42130106519211
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: -1.0611980387978666
+second_gradient: 0.004992430036084349
+b: -1.5755008145741272
+f: 1.056217352196488
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.1849193366749446
+            Iterations: 5
+            Function evaluations: 44
+            Gradient evaluations: 5
+Current gradient magnitude: 57.27812925668833
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 1.0624615531629695
+second_gradient: 0.002493648982646013
+b: 1.5731433711621663
+f: 1.0599708305340663
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.244894750065583
+            Iterations: 2
+            Function evaluations: 20
+            Gradient evaluations: 2
+Current gradient magnitude: 0.22606525007877903
+New op index: 5267	IYZZZZZX	$R_{XZZZZZY}$[0, 1, 2, 3, 4, 5, 6]
+gradient: 0.0021827277009505396
+second_gradient: 1.0616980822216604
+b: 3.139536772862217
+f: 2.2437146971476807e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.898, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21381.877551020392
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21546.201840825946
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14034.004732542882
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -9.807850626624689e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4638.082385081376
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7595163723523541e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238816
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 651.4156696663963
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 0.8979367365915043
+second_gradient: 0.004999726177088931
+b: 1.5763642853222646
+f: 0.8929509295843769
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.904206883322793
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+Current gradient magnitude: 343.13472817402317
+New op index: 3653	XXXYZZII	$R_{ZZYXXX}$[2, 3, 4, 5, 6, 7]
+gradient: -0.8992000453212654
+second_gradient: 0.002496453598366479
+b: -1.5735726246801924
+f: 0.8967070571745478
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.8009140450757926
+            Iterations: 1
+            Function evaluations: 9
+            Gradient evaluations: 1
+Current gradient magnitude: 116.66519265670809
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: -0.897936970826103
+second_gradient: 0.004973572425982132
+b: -1.5763351582793228
+f: 0.8929771723251062
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.6951232890971255
+            Iterations: 4
+            Function evaluations: 38
+            Gradient evaluations: 4
+Current gradient magnitude: 55.687540832253426
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 0.899201000641868
+second_gradient: 0.0024974123152377127
+b: 1.5735736879099231
+f: 0.8967070564367859
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.591830767857649
+            Iterations: 1
+            Function evaluations: 12
+            Gradient evaluations: 1
+Current gradient magnitude: 0.42960926322660353
+New op index: 5267	IYZZZZZX	$R_{XZZZZZY}$[0, 1, 2, 3, 4, 5, 6]
+gradient: 0.002487107916151363
+second_gradient: 0.8985820481608826
+b: 3.1388248467209636
+f: 3.4419193842838425e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.735, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21372.08163265304
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21528.31580042183
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14010.802937514247
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -9.44770570083377e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4592.0197036269565
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7600676697963098e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238814
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 590.9542984398527
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 0.7346755117566869
+second_gradient: 0.004999726177088927
+b: 1.5776015747110244
+f: 0.7296927978333271
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.7409431002274829
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+Current gradient magnitude: 324.5080780699794
+New op index: 626	IIXYZZII	$R_{ZZYX}$[2, 3, 4, 5]
+gradient: -0.7359408475464662
+second_gradient: 0.0025015709669017755
+b: -1.5741954604898927
+f: 0.7334435281707401
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.4743866283982925
+            Iterations: 1
+            Function evaluations: 7
+            Gradient evaluations: 1
+Current gradient magnitude: 111.6348228408996
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 0.7346755092789272
+second_gradient: 0.005000063428199041
+b: 1.5776020337604248
+f: 0.7296924603996517
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.205330286450973
+            Iterations: 3
+            Function evaluations: 29
+            Gradient evaluations: 3
+Current gradient magnitude: 53.58729584506875
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -0.7359408186143535
+second_gradient: 0.002501541422735518
+b: -1.5741954204792277
+f: 0.7334435286825369
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.938773835243152
+            Iterations: 1
+            Function evaluations: 12
+            Gradient evaluations: 1
+Current gradient magnitude: 0.6078857587921707
+New op index: 3562	IXZZZYZI	$R_{ZYZZZX}$[1, 2, 3, 4, 5, 6]
+gradient: 0.0050830447207397735
+second_gradient: 0.7385030666298888
+b: 3.134709859619049
+f: 1.7492843835675842e-05
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.939613387339555
+            Iterations: 11
+            Function evaluations: 117
+            Gradient evaluations: 11
+Current gradient magnitude: 30.89367407900558
+New op index: 1290	IIIXZZZY	$R_{YZZZX}$[0, 1, 2, 3, 4]
+gradient: 0.07455738814707209
+second_gradient: 1.1694679357531186
+b: 3.0779255625842583
+f: 0.002374228056484906
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.470626986392426
+            Iterations: 18
+            Function evaluations: 219
+            Gradient evaluations: 18
+Current gradient magnitude: 74.3543884429555
+New op index: 4603	IZZYZYYX	$R_{XYYZYZZ}$[0, 1, 2, 3, 4, 5, 6]
+gradient: -0.9966273318453082
+second_gradient: 100.86611819553944
+b: -3.1317122802927986
+f: 0.004923565092298077
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.8836004912656352
+            Iterations: 13
+            Function evaluations: 175
+            Gradient evaluations: 13
+Current gradient magnitude: 93.13074952858449
+New op index: 6455	IYZZXYZY	$R_{YZYXZZY}$[0, 1, 2, 3, 4, 5, 6]
+gradient: 0.7071068404517017
+second_gradient: 101.07445390803008
+b: 3.134596867042727
+f: 0.0024733943484278598
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.8860742763505645
+            Iterations: 1
+            Function evaluations: 16
+            Gradient evaluations: 1
+Current gradient magnitude: 109.8457550590901
+New op index: 507	IXZZYIII	$R_{YZZX}$[3, 4, 5, 6]
+gradient: -1.4092535487008897
+second_gradient: 101.07199780376322
+b: -3.12765049091298
+f: 0.009824180253488635
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.4693872494859
+            Iterations: 14
+            Function evaluations: 219
+            Gradient evaluations: 14
+Current gradient magnitude: 82.94203513640275
+New op index: 376	IIYZZXII	$R_{XZZY}$[2, 3, 4, 5]
+gradient: 0.500000087801518
+second_gradient: 100.86734667528776
+b: 3.1366356877428383
+f: 0.0012392442168618345
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.470626886822113
+            Iterations: 1
+            Function evaluations: 19
+            Gradient evaluations: 1
+Current gradient magnitude: 81.76250199511273
+New op index: 2349	IIYZZZZX	$R_{XZZZZY}$[0, 1, 2, 3, 4, 5]
+gradient: -0.9975158271012646
+second_gradient: 100.86611378239579
+b: -3.1317034720616466
+f: 0.004932347742723664
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.883600476321458
+            Iterations: 14
+            Function evaluations: 249
+            Gradient evaluations: 14
+Current gradient magnitude: 55.635560681226664
+New op index: 3077	XZZZZYII	$R_{YZZZZX}$[2, 3, 4, 5, 6, 7]
+gradient: 0.7071067315209539
+second_gradient: 101.07445355183332
+b: 3.1345968680957492
+f: 0.0024733935950962405
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.8860742458951005
+            Iterations: 1
+            Function evaluations: 20
+            Gradient evaluations: 1
+Current gradient magnitude: 71.98918660356114
+New op index: 2351	YZZZZXII	$R_{XZZZZY}$[2, 3, 4, 5, 6, 7]
+gradient: -1.4092442114401822
+second_gradient: 101.07199754430746
+b: -3.12765058324151
+f: 0.009824050101741477
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.469387538409293
+            Iterations: 16
+            Function evaluations: 315
+            Gradient evaluations: 16
+Current gradient magnitude: 1.5411461640010997
+New op index: 377	IYZZXIII	$R_{XZZY}$[3, 4, 5, 6]
+gradient: -0.0036945282258423473
+second_gradient: 101.36734682617092
+b: -3.141556206663442
+f: 6.732709323387098e-08
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.571, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21362.285714285696
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21510.42976001772
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13987.601142485608
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -9.08756077504285e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4545.957022172538
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7606189672402656e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238812
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 530.4929272133089
+New op index: 2573	XXZZXYII	$R_{YXZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 0.5714142869218689
+second_gradient: 0.004999726177088925
+b: 1.5795458430527056
+f: 0.5664364334770529
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.5776793842437087
+            Iterations: 3
+            Function evaluations: 23
+            Gradient evaluations: 3
+Current gradient magnitude: 306.10968426344704
+New op index: 11782	YYXYZZYY	$R_{YYZZYXYY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -0.5726832383260856
+second_gradient: 0.002508264433059964
+b: -1.5751761448630035
+f: 0.5701804667727481
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.1478599886124954
+            Iterations: 1
+            Function evaluations: 10
+            Gradient evaluations: 1
+Current gradient magnitude: 106.86515099713426
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 0.5714143576495707
+second_gradient: 0.004987333466621355
+b: 1.5795241558431263
+f: 0.5664487886180599
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.715721302661585
+            Iterations: 12
+            Function evaluations: 107
+            Gradient evaluations: 12
+Current gradient magnitude: 72.25026578855702
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -0.5726788197708035
+second_gradient: 0.002503832096658798
+b: -1.575168439148818
+f: 0.5701804612004847
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.2859022180063078
+            Iterations: 1
+            Function evaluations: 11
+            Gradient evaluations: 1
+Current gradient magnitude: 13.63597872779832
+New op index: 180	IIXZYIII	$R_{YZX}$[3, 4, 5]
+gradient: 0.04388145517486553
+second_gradient: 0.7064561681583257
+b: 3.079557453009661
+f: 0.001361534104911244
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.1430402943582685
+            Iterations: 19
+            Function evaluations: 205
+            Gradient evaluations: 19
+Current gradient magnitude: 128.88220381877716
+New op index: 6724	XZZZZZYI	$R_{YZZZZZX}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.043332186859155214
+second_gradient: 0.7038331154684663
+b: 3.0801042670469987
+f: 0.0013326330247827034
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.9999998916980286
+            Iterations: 17
+            Function evaluations: 206
+            Gradient evaluations: 17
+Current gradient magnitude: 0.5282512436882937
+New op index: 3828	YZXXXXXI	$R_{XXXXXZY}$[1, 2, 3, 4, 5, 6, 7]
+gradient: -0.004542183312881357
+second_gradient: 100.9999998640104
+b: -3.1415476814777543
+f: 1.0213578605089424e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.408, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21352.48979591835
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21492.54371961361
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13964.399347456969
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -8.727415849251931e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4499.894340718119
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7611702646842215e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238809
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 470.0315559867653
+New op index: 11422	YYZZXYYY	$R_{YYYXZZYY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.4081530620870515
+second_gradient: 0.004999726177088894
+b: 1.5830453494984287
+f: 0.40318395717255506
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.4144159375811043
+            Iterations: 3
+            Function evaluations: 22
+            Gradient evaluations: 3
+Current gradient magnitude: 288.0670561453012
+New op index: 626	IIXYZZII	$R_{ZZYX}$[2, 3, 4, 5]
+gradient: -0.40942888055045046
+second_gradient: 0.00251818448453971
+b: -1.5769467300808089
+f: 0.406918440015386
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.8213350964649706
+            Iterations: 1
+            Function evaluations: 10
+            Gradient evaluations: 1
+Current gradient magnitude: 102.4285497684619
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 0.40815315682681885
+second_gradient: 0.0049764608793271894
+b: 1.58298835377654
+f: 0.4032070328959371
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.2266362672139834
+            Iterations: 14
+            Function evaluations: 119
+            Gradient evaluations: 14
+Current gradient magnitude: 90.30258111916075
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -0.4094196694758805
+second_gradient: 0.00250897048931323
+b: -1.5769243642829858
+f: 0.4069183865432322
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.63443557734315
+            Iterations: 11
+            Function evaluations: 107
+            Gradient evaluations: 11
+Current gradient magnitude: 39.47505383200455
+New op index: 6724	XZZZZZYI	$R_{YZZZZZX}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.07862842129062289
+second_gradient: 0.7096340859919321
+b: 3.031241417218673
+f: 0.004342779625057358
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.8172179417469856
+            Iterations: 19
+            Function evaluations: 206
+            Gradient evaluations: 19
+Current gradient magnitude: 87.48580075803358
+New op index: 180	IIXZYIII	$R_{YZX}$[3, 4, 5]
+gradient: 0.07755413607063462
+second_gradient: 0.7046171674602194
+b: 3.031968276823973
+f: 0.004255174150966212
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.9999999950255782
+            Iterations: 18
+            Function evaluations: 218
+            Gradient evaluations: 18
+Current gradient magnitude: 0.13011809189713763
+New op index: 49	IIXYIIII	$R_{YX}$[4, 5]
+gradient: -0.000977557839926176
+second_gradient: 100.99999999457943
+b: -3.1415829747992987
+f: 4.730793534690747e-09
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.245, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21342.693877551
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21474.657679209497
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13941.197552428333
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -8.367270923461011e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4453.8316592637
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7617215621281772e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238807
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 409.57018476022154
+New op index: 11422	YYZZXYYY	$R_{YYYXZZYY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.24489183725223362
+second_gradient: 0.004999726177088892
+b: 1.5912095498425167
+f: 0.23994314311005807
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.2511525269581796
+            Iterations: 3
+            Function evaluations: 23
+            Gradient evaluations: 3
+Current gradient magnitude: 271.1253089489152
+New op index: 35	IIYXIIII	$R_{XY}$[4, 5]
+gradient: -0.24618711535698648
+second_gradient: 0.00254059547536283
+b: -1.5811157348119003
+f: 0.24365962871861227
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.49692579590512054
+            Iterations: 10
+            Function evaluations: 79
+            Gradient evaluations: 10
+Current gradient magnitude: 178.55965556131767
+New op index: 3797	XYZZZZII	$R_{ZZZZYX}$[2, 3, 4, 5, 6, 7]
+gradient: 0.24489183762435118
+second_gradient: 0.004999624289629155
+b: 1.5912091339339873
+f: 0.239943243289872
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.7380853137238284
+            Iterations: 5
+            Function evaluations: 44
+            Gradient evaluations: 5
+Current gradient magnitude: 109.19289956873385
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: -0.2461692411409544
+second_gradient: 0.002522795272538102
+b: -1.5810441828909296
+f: 0.24365937260300177
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.9838520940136953
+            Iterations: 9
+            Function evaluations: 87
+            Gradient evaluations: 9
+Current gradient magnitude: 60.88507052607963
+New op index: 180	IIXZYIII	$R_{YZX}$[3, 4, 5]
+gradient: 0.11209490159112268
+second_gradient: 0.7032215037590319
+b: 2.983520536466931
+f: 0.008878033041714528
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.4919259763056765
+            Iterations: 14
+            Function evaluations: 153
+            Gradient evaluations: 14
+Current gradient magnitude: 180.19834474389967
+New op index: 5267	IYZZZZZX	$R_{XZZZZZY}$[0, 1, 2, 3, 4, 5, 6]
+gradient: 0.11264055659559138
+second_gradient: 0.7076666665725213
+b: 2.983745051162428
+f: 0.008908525551814428
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.9999999972031475
+            Iterations: 15
+            Function evaluations: 184
+            Gradient evaluations: 15
+Current gradient magnitude: 0.10742730257795893
+New op index: 1713	IIZXXYXX	$R_{XXYXXZ}$[0, 1, 2, 3, 4, 5]
+gradient: -0.0005700316854083347
+second_gradient: 151.4999999424737
+b: -3.1415888910044094
+f: 1.072407940228004e-09
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-2.082, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21332.897959183654
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21456.771638805385
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13917.995757399694
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -8.007125997670092e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4407.768977809281
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.762272859572133e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238806
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 349.1088135336778
+New op index: 11422	YYZZXYYY	$R_{YYYXZZYY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.08163061241741568
+second_gradient: 0.004999726177088888
+b: 1.6319680879010154
+f: 0.07678385497150234
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.08789252157018268
+            Iterations: 3
+            Function evaluations: 23
+            Gradient evaluations: 3
+Current gradient magnitude: 260.4066355154949
+New op index: 626	IIXYZZII	$R_{ZZYX}$[2, 3, 4, 5]
+gradient: -0.08302880169372173
+second_gradient: 0.0026448972578642605
+b: -1.6026407363209012
+f: 0.08042602059068263
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.17216432939493842
+            Iterations: 11
+            Function evaluations: 84
+            Gradient evaluations: 11
+Current gradient magnitude: 198.03857398636217
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: 0.08163061203013842
+second_gradient: 0.0050012684977015
+b: 1.6319869114561696
+f: 0.07678240656646447
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.25008231900469724
+            Iterations: 4
+            Function evaluations: 37
+            Gradient evaluations: 4
+Current gradient magnitude: 126.91688674846633
+New op index: 14742	XYZZZZZZ	$R_{ZZZZZZYX}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -0.0829759703909616
+second_gradient: 0.0025929377965069568
+b: -1.6020354224401399
+f: 0.08042353640433038
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.3343290592705812
+            Iterations: 10
+            Function evaluations: 95
+            Gradient evaluations: 10
+Current gradient magnitude: 83.28828954754181
+New op index: 180	IIXZYIII	$R_{YZX}$[3, 4, 5]
+gradient: 0.1494968966842407
+second_gradient: 0.7100729822218526
+b: 2.934085844135748
+f: 0.015566709498255782
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.1671644252281337
+            Iterations: 22
+            Function evaluations: 235
+            Gradient evaluations: 22
+Current gradient magnitude: 205.73644150154126
+New op index: 6724	XZZZZZYI	$R_{YZZZZZX}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.1496086403415898
+second_gradient: 0.7105630954614708
+b: 2.9340743134093
+f: 0.01557921696540221
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.9999999905451937
+            Iterations: 16
+            Function evaluations: 193
+            Gradient evaluations: 16
+Current gradient magnitude: 0.16891959424611605
+New op index: 10592	ZXXZZXXY	$R_{YXXZZXXZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.0004973776964806448
+second_gradient: 50.49999999566323
+b: 3.141582804526496
+f: 2.449354497002787e-09
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.918, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21327.673469387737
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21452.18461509237
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13912.114288203762
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -7.646981071879173e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4407.768977809281
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7628241570160888e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238802
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 349.1088135336778
+New op index: 11260	YYZZYXYY	$R_{YYXYZZYY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.08163061241741568
+second_gradient: 0.004999726177088886
+b: 1.6319680879010154
+f: 0.07678385497150235
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.08789254045374406
+            Iterations: 3
+            Function evaluations: 22
+            Gradient evaluations: 3
+Current gradient magnitude: 260.3085450684024
+New op index: 388	XXXYIIII	$R_{YXXX}$[4, 5, 6, 7]
+gradient: -0.08302667670666869
+second_gradient: 0.0026428194728091376
+b: -1.6026165506355106
+f: 0.08042590833567206
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.17216442696466316
+            Iterations: 10
+            Function evaluations: 77
+            Gradient evaluations: 10
+Current gradient magnitude: 197.91162349358677
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: 0.08163061300372008
+second_gradient: 0.00499907309003259
+b: 1.631960116842964
+f: 0.07678446872079023
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.25008613541870334
+            Iterations: 6
+            Function evaluations: 54
+            Gradient evaluations: 6
+Current gradient magnitude: 126.5585846675238
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -0.08296095763034826
+second_gradient: 0.0025782833642574287
+b: -1.6018646007449238
+f: 0.0804227288949364
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.33432910953045025
+            Iterations: 11
+            Function evaluations: 107
+            Gradient evaluations: 11
+Current gradient magnitude: 83.49019197200877
+New op index: 131	IIIYZXII	$R_{XZY}$[2, 3, 4]
+gradient: 0.1493490996208685
+second_gradient: 0.7083014556784377
+b: 2.93378144808229
+f: 0.015574297247268443
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.1671645374934014
+            Iterations: 15
+            Function evaluations: 165
+            Gradient evaluations: 15
+Current gradient magnitude: 205.62495277577284
+New op index: 6724	XZZZZZYI	$R_{YZZZZZX}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.14941800179011291
+second_gradient: 0.7092007630034258
+b: 2.933944429710406
+f: 0.01556917394456292
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.9999996789968333
+            Iterations: 16
+            Function evaluations: 194
+            Gradient evaluations: 16
+Current gradient magnitude: 0.8534888824857829
+New op index: 4303	IZXXXXYX	$R_{XYXXXXZ}$[0, 1, 2, 3, 4, 5, 6]
+gradient: 0.006922580336410387
+second_gradient: 100.99999531860936
+b: 3.1415241131873533
+f: 2.3723822550891782e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.755, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21327.020408163247
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21460.75661506992
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13923.553144840535
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -7.286836146088256e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4453.831659263698
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7633754544600445e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.0099997499842388
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 409.5701847602212
+New op index: 11260	YYZZYXYY	$R_{YYXYZZYY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.24489183725223274
+second_gradient: 0.004999726177088883
+b: 1.5912095498425167
+f: 0.23994314311005718
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.2511523209844668
+            Iterations: 3
+            Function evaluations: 23
+            Gradient evaluations: 3
+Current gradient magnitude: 270.77155950757987
+New op index: 11768	ZZYXZZYY	$R_{YYZZXYZZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.2461877526168621
+second_gradient: 0.0025412286745493356
+b: 1.5811182798453491
+f: 0.24365963928029286
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.49692589490862105
+            Iterations: 11
+            Function evaluations: 85
+            Gradient evaluations: 11
+Current gradient magnitude: 178.74099305693778
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 0.24489183759896918
+second_gradient: 0.004999711646738239
+b: 1.5912094905045948
+f: 0.23994315769048175
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.7380846128654142
+            Iterations: 4
+            Function evaluations: 38
+            Gradient evaluations: 4
+Current gradient magnitude: 110.2112186251425
+New op index: 14740	YXZZZZZZ	$R_{ZZZZZZXY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -0.24617674158621128
+second_gradient: 0.002530247269995059
+b: -1.581074138419914
+f: 0.24365949713308027
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.9838521212943115
+            Iterations: 11
+            Function evaluations: 105
+            Gradient evaluations: 11
+Current gradient magnitude: 60.87432699103813
+New op index: 5267	IYZZZZZX	$R_{XZZZZZY}$[0, 1, 2, 3, 4, 5, 6]
+gradient: 0.11227915702500763
+second_gradient: 0.7044666341713395
+b: 2.983540222966859
+f: 0.00889151414053213
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.491926057362233
+            Iterations: 17
+            Function evaluations: 181
+            Gradient evaluations: 17
+Current gradient magnitude: 104.67646010212994
+New op index: 131	IIIYZXII	$R_{XZY}$[2, 3, 4]
+gradient: 0.11219856914149356
+second_gradient: 0.7040535985703823
+b: 2.983560664567863
+f: 0.00888397834452792
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.99999999492851
+            Iterations: 18
+            Function evaluations: 214
+            Gradient evaluations: 18
+Current gradient magnitude: 0.12731573922899306
+New op index: 14746	YZZZZZZZ	$R_{ZZZZZZZY}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.00037670682406160854
+second_gradient: 50.49999999825679
+b: 3.1415851940487225
+f: 1.4050343111193797e-09
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.592, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21326.367346938758
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21469.328615047474
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13934.992001477307
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -6.926691220297336e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4499.894340718118
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7639267519040002e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238799
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 470.031555986765
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 0.4081530620870506
+second_gradient: 0.004999726177088908
+b: 1.5830453494984287
+f: 0.4031839571725542
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.41441620829441916
+            Iterations: 3
+            Function evaluations: 22
+            Gradient evaluations: 3
+Current gradient magnitude: 287.767544655717
+New op index: 616	IIYXZZII	$R_{ZZXY}$[2, 3, 4, 5]
+gradient: -0.4094279491821453
+second_gradient: 0.0025172535364187754
+b: -1.5769444703797444
+f: 0.4069184338881925
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.821335463085866
+            Iterations: 1
+            Function evaluations: 10
+            Gradient evaluations: 1
+Current gradient magnitude: 102.38615276444715
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: 0.4081529932720568
+second_gradient: 0.005016557744047044
+b: 1.5830865837324035
+f: 0.4031672633078646
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.2266362001952067
+            Iterations: 14
+            Function evaluations: 122
+            Gradient evaluations: 14
+Current gradient magnitude: 90.74429469269043
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -0.4094203722124479
+second_gradient: 0.0025096735649280766
+b: -1.5769260709467587
+f: 0.406918390500033
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.6344357049240945
+            Iterations: 10
+            Function evaluations: 98
+            Gradient evaluations: 10
+Current gradient magnitude: 39.317055611135004
+New op index: 6724	XZZZZZYI	$R_{YZZZZZX}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.07838708661480098
+second_gradient: 0.7083136415871326
+b: 3.0313739524599574
+f: 0.004324239953261921
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.817217771170661
+            Iterations: 18
+            Function evaluations: 196
+            Gradient evaluations: 18
+Current gradient magnitude: 87.69771450496972
+New op index: 131	IIIYZXII	$R_{XZY}$[2, 3, 4]
+gradient: 0.07742217310482843
+second_gradient: 0.7039673641898484
+b: 3.032053108962795
+f: 0.004244639896976432
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.9999999795452044
+            Iterations: 19
+            Function evaluations: 226
+            Gradient evaluations: 19
+Current gradient magnitude: 0.29036252287846354
+New op index: 10376	ZXXXXXXY	$R_{YXXXXXXZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -0.000887221514615192
+second_gradient: 50.499999992327034
+b: -3.1415750848469286
+f: 7.793687473167665e-09
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.429, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21325.714285714268
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21477.900615025028
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13946.43085811408
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -6.566546294506417e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4545.957022172537
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7644780493479562e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238795
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 530.4929272133088
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 0.5714142869218685
+second_gradient: 0.0049997261770889055
+b: 1.5795458430527056
+f: 0.5664364334770524
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.5776793645097129
+            Iterations: 3
+            Function evaluations: 23
+            Gradient evaluations: 3
+Current gradient magnitude: 306.0660529977132
+New op index: 388	XXXYIIII	$R_{YXXX}$[4, 5, 6, 7]
+gradient: -0.5726834119315436
+second_gradient: 0.0025084382321325337
+b: -1.575176447011423
+f: 0.5701804673387004
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.1478599784365286
+            Iterations: 1
+            Function evaluations: 10
+            Gradient evaluations: 1
+Current gradient magnitude: 106.89089947239124
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 0.5714141908311066
+second_gradient: 0.005016514002707318
+b: 1.5795752217015553
+f: 0.5664196966944339
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.7155433769455257
+            Iterations: 3
+            Function evaluations: 29
+            Gradient evaluations: 3
+Current gradient magnitude: 52.16408471256504
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -0.5726833059567717
+second_gradient: 0.002508331865777937
+b: -1.575176262092225
+f: 0.5701804672654137
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.2857241941305886
+            Iterations: 1
+            Function evaluations: 12
+            Gradient evaluations: 1
+Current gradient magnitude: 1.0389706800477456
+New op index: 1293	XZZZYIII	$R_{YZZZX}$[3, 4, 5, 6, 7]
+gradient: 0.006345525203133732
+second_gradient: 0.5779118460814429
+b: 3.130613002880121
+f: 3.4836175117014534e-05
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.287969738337824
+            Iterations: 9
+            Function evaluations: 96
+            Gradient evaluations: 9
+Current gradient magnitude: 51.181935956168786
+New op index: 1291	IIXZZZYI	$R_{YZZZX}$[1, 2, 3, 4, 5]
+gradient: 0.11151162139097222
+second_gradient: 1.3535071546474384
+b: 3.0593911350245944
+f: 0.004585794817747679
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.1478180637276374
+            Iterations: 23
+            Function evaluations: 274
+            Gradient evaluations: 23
+Current gradient magnitude: 75.22565167910983
+New op index: 375	IIIYZZXI	$R_{XZZY}$[1, 2, 3, 4]
+gradient: -1.0017168892103763
+second_gradient: 100.7857127048496
+b: -3.1316539045415857
+f: 0.0049779473659441464
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.5620258101248568
+            Iterations: 9
+            Function evaluations: 124
+            Gradient evaluations: 9
+Current gradient magnitude: 120.98866471182222
+New op index: 377	IYZZXIII	$R_{XZZY}$[3, 4, 5, 6]
+gradient: -1.4193819844075992
+second_gradient: 100.98906141205846
+b: -3.127538769781261
+f: 0.009974078911326956
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.14533700692029
+            Iterations: 11
+            Function evaluations: 162
+            Gradient evaluations: 11
+Current gradient magnitude: 82.71476193484894
+New op index: 2351	YZZZZXII	$R_{XZZZZY}$[2, 3, 4, 5, 6, 7]
+gradient: 1.001873722242613
+second_gradient: 100.78693422176015
+b: 3.1316524690580136
+f: 0.004979445838841912
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.5595459662830065
+            Iterations: 12
+            Function evaluations: 187
+            Gradient evaluations: 12
+Current gradient magnitude: 70.37019795785028
+New op index: 2349	IIYZZZZX	$R_{XZZZZY}$[0, 1, 2, 3, 4, 5]
+gradient: 1.4091890529215827
+second_gradient: 100.99036342520405
+b: 3.127639860899783
+f: 0.009831220854266576
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.142851031227035
+            Iterations: 10
+            Function evaluations: 166
+            Gradient evaluations: 10
+Current gradient magnitude: 2.212958634598136
+New op index: 5267	IYZZZZZX	$R_{XZZZZZY}$[0, 1, 2, 3, 4, 5, 6]
+gradient: -0.003644544824165156
+second_gradient: 76.4092838123226
+b: -3.1415449559195685
+f: 8.691814912253903e-08
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.265, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21325.06122448978
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21486.472615002578
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13957.869714750852
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -6.206401368715497e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4592.019703626956
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7650293467919119e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238793
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 590.9542984398526
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 0.7346755117566864
+second_gradient: 0.004999726177088903
+b: 1.5776015747110244
+f: 0.7296927978333266
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.7409431143821692
+            Iterations: 3
+            Function evaluations: 23
+            Gradient evaluations: 3
+Current gradient magnitude: 324.52750660709114
+New op index: 49	IIXYIIII	$R_{YX}$[4, 5]
+gradient: -0.7359407954701797
+second_gradient: 0.00250151856435145
+b: -1.5741953895263963
+f: 0.7334435283191837
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.4743866542941504
+            Iterations: 1
+            Function evaluations: 10
+            Gradient evaluations: 1
+Current gradient magnitude: 111.61640011434449
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: 0.7346754968072458
+second_gradient: 0.005001760570405665
+b: 1.5776043438258305
+f: 0.7296907623381762
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.205330261319234
+            Iterations: 3
+            Function evaluations: 29
+            Gradient evaluations: 3
+Current gradient magnitude: 53.625596034296834
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -0.7359407911186295
+second_gradient: 0.002501514110844744
+b: -1.5741953834951172
+f: 0.7334435284060277
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.938773810679785
+            Iterations: 1
+            Function evaluations: 12
+            Gradient evaluations: 1
+Current gradient magnitude: 0.6069276666958923
+New op index: 6724	XZZZZZYI	$R_{YZZZZZX}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.0038307895184024826
+second_gradient: 0.7361684087096385
+b: 3.1363890141827135
+f: 9.967046139647273e-06
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.469387684744467
+            Iterations: 23
+            Function evaluations: 248
+            Gradient evaluations: 23
+Current gradient magnitude: 52.240360196873034
+New op index: 3755	YZXZZZII	$R_{ZZZXZY}$[2, 3, 4, 5, 6, 7]
+gradient: 0.5000001047401588
+second_gradient: 100.86734731678492
+b: 3.1366356876064376
+f: 0.0012392442929467506
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.470626940044238
+            Iterations: 1
+            Function evaluations: 14
+            Gradient evaluations: 1
+Current gradient magnitude: 52.407422704369516
+New op index: 11090	ZYYZZZXY	$R_{YXZZZYYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 0.997510571727609
+second_gradient: 100.86611304213545
+b: 3.1317035240864493
+f: 0.004932295808558251
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.8835961178224148
+            Iterations: 8
+            Function evaluations: 111
+            Gradient evaluations: 8
+Current gradient magnitude: 83.68726046245727
+New op index: 5740	XXZZZXYI	$R_{YXZZZXX}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.7071158287328888
+second_gradient: 101.07445939576166
+b: 3.134596778499572
+f: 0.0024734570941262746
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.8860709565947684
+            Iterations: 2
+            Function evaluations: 31
+            Gradient evaluations: 2
+Current gradient magnitude: 91.17606191299056
+New op index: 6228	YXZZZYYI	$R_{YYZZZXY}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 1.4092494112552243
+second_gradient: 101.07201574875532
+b: 3.127650534315707
+f: 0.00982412082643691
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.469387663534328
+            Iterations: 10
+            Function evaluations: 160
+            Gradient evaluations: 10
+Current gradient magnitude: 89.28139772532784
+New op index: 597	IXZYZIII	$R_{ZYZX}$[3, 4, 5, 6]
+gradient: 0.5000001228995956
+second_gradient: 100.86734692003377
+b: 3.1366356874069115
+f: 0.0012392443878326276
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.470626915116445
+            Iterations: 1
+            Function evaluations: 18
+            Gradient evaluations: 1
+Current gradient magnitude: 89.51860204273449
+New op index: 505	IIIXZZYI	$R_{YZZX}$[1, 2, 3, 4]
+gradient: 0.9975163331922476
+second_gradient: 100.86611384233122
+b: 3.13170346705056
+f: 0.00493235274454662
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.883599830250733
+            Iterations: 15
+            Function evaluations: 265
+            Gradient evaluations: 15
+Current gradient magnitude: 86.4468780974394
+New op index: 507	IXZZYIII	$R_{YZZX}$[3, 4, 5, 6]
+gradient: -0.7071070414234317
+second_gradient: 101.07445369538914
+b: -3.1345968650397538
+f: 0.002473395759579944
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.886074657843862
+            Iterations: 2
+            Function evaluations: 39
+            Gradient evaluations: 2
+Current gradient magnitude: 125.8643600103155
+New op index: 377	IYZZXIII	$R_{XZZY}$[3, 4, 5, 6]
+gradient: 1.4092544622286813
+second_gradient: 101.0719976383821
+b: 3.12765048185354
+f: 0.00982419300569859
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.469387691782026
+            Iterations: 18
+            Function evaluations: 351
+            Gradient evaluations: 18
+Current gradient magnitude: 1.013241764736472
+New op index: 153	IIIIIZXY	$R_{YXZ}$[0, 1, 2]
+gradient: 0.0014603368779722366
+second_gradient: 76.87114364262023
+b: 3.1415736563847485
+f: 1.3871158444089815e-08
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-1.102, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21324.40816326529
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21495.044614980132
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13969.308571387624
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -5.846256442924579e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4638.082385081374
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7655806442358676e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238792
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 651.4156696663961
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 0.8979367365915034
+second_gradient: 0.0049997261770888994
+b: 1.5763642853222646
+f: 0.892950929584376
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.9042068829368759
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+Current gradient magnitude: 343.17668711712747
+New op index: 388	XXXYIIII	$R_{YXXX}$[4, 5, 6, 7]
+gradient: -0.8992000290295235
+second_gradient: 0.0024964372310280506
+b: -1.5735726065285227
+f: 0.8967070572047666
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.800914180500392
+            Iterations: 1
+            Function evaluations: 9
+            Gradient evaluations: 1
+Current gradient magnitude: 116.77897358643455
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: 0.897936959964974
+second_gradient: 0.0049747884764580405
+b: 1.5763365125763074
+f: 0.8929759521499556
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.695118678985456
+            Iterations: 2
+            Function evaluations: 20
+            Gradient evaluations: 2
+Current gradient magnitude: 56.13311237924217
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -0.8991958595330733
+second_gradient: 0.00249225070984905
+b: -1.5735679635875095
+f: 0.8967070626323173
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.591826258105536
+            Iterations: 1
+            Function evaluations: 12
+            Gradient evaluations: 1
+Current gradient magnitude: 0.6188369856553807
+New op index: 6724	XZZZZZYI	$R_{YZZZZZX}$[1, 2, 3, 4, 5, 6, 7]
+gradient: 0.003987133043248836
+second_gradient: 0.8996814083328044
+b: 3.137160965990107
+f: 8.834878492680609e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.939, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21327.67346938774
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21507.10938011764
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 13985.158529921346
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -5.486111517133659e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4684.145066535793
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7661319416798237e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238788
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 711.8770408929398
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.0611979614263218
+second_gradient: 0.004999726177088898
+b: 1.5755076901463985
+f: 1.056210013034358
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.0674706695737228
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+Current gradient magnitude: 361.859564090102
+New op index: 388	XXXYIIII	$R_{YXXX}$[4, 5, 6, 7]
+gradient: -1.0624601679748764
+second_gradient: 0.0024922531424987518
+b: -1.573142060448204
+f: 1.0599708379147526
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.1274455698973966
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 121.43775620385193
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 1.0611979834400667
+second_gradient: 0.004997651376093555
+b: 1.5755057349422743
+f: 1.056212100075777
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.1849193433661256
+            Iterations: 5
+            Function evaluations: 47
+            Gradient evaluations: 5
+Current gradient magnitude: 57.30851366620216
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -1.0624615200854697
+second_gradient: 0.0024936156932855395
+b: -1.5731433399031114
+f: 1.059970830667887
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.2448979234393285
+            Iterations: 5
+            Function evaluations: 50
+            Gradient evaluations: 5
+Current gradient magnitude: 0.04022308072198134
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: 0.00021821521540919944
+second_gradient: 1.0612247561145034
+b: 3.141387027768235
+f: 2.243534158452576e-08
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.776, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21337.469387755085
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21524.995420521755
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14008.360324949985
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -5.12596659134274e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4730.207747990213
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7666832391237794e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238786
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 772.3384121194836
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.2244591862611398
+second_gradient: 0.004999726177088894
+b: 1.5748795158854678
+f: 1.2194696675119239
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.230734455121059
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+Current gradient magnitude: 380.67258166600703
+New op index: 388	XXXYIIII	$R_{YXXX}$[4, 5, 6, 7]
+gradient: -1.2257209255554744
+second_gradient: 0.0024886818605022597
+b: -1.5728267061323133
+f: 1.2232347701799535
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.453976321442866
+            Iterations: 3
+            Function evaluations: 27
+            Gradient evaluations: 3
+Current gradient magnitude: 126.57588903455661
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 1.2244591923470385
+second_gradient: 0.004999229141940662
+b: 1.5748791099497577
+f: 1.219470168603538
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.6747129175094386
+            Iterations: 4
+            Function evaluations: 38
+            Gradient evaluations: 4
+Current gradient magnitude: 59.80203714319093
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -1.2257229903675353
+second_gradient: 0.002490771397430133
+b: -1.5728284074432808
+f: 1.2232347496951543
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.897956026342143
+            Iterations: 3
+            Function evaluations: 33
+            Gradient evaluations: 3
+Current gradient magnitude: 0.23969226754449088
+New op index: 5267	IYZZZZZX	$R_{XZZZZZY}$[0, 1, 2, 3, 4, 5, 6]
+gradient: 0.0019090027362371577
+second_gradient: 1.2248519654527499
+b: 3.140034096927958
+f: 1.4876447671507975e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.612, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21347.265306122434
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21542.88146092587
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14031.562119978622
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -4.76582166555182e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4776.270429444631
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7672345365677351e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238785
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 832.7997833460273
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.3877204110959576
+second_gradient: 0.0049997261770888925
+b: 1.5743991451323982
+f: 1.3827296914811877
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.3939982413760177
+            Iterations: 3
+            Function evaluations: 20
+            Gradient evaluations: 3
+Current gradient magnitude: 399.4706006090531
+New op index: 616	IIYXZZII	$R_{ZZXY}$[2, 3, 4, 5]
+gradient: -1.3889820293331923
+second_gradient: 0.002485450925739391
+b: -1.5725857295520789
+f: 1.3864988021444158
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.7805037033190274
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 131.89516239271137
+New op index: 334	IIIIZZYX	$R_{XYZZ}$[0, 1, 2, 3]
+gradient: 1.387720265406962
+second_gradient: 0.004993288155156182
+b: 1.5743945062914535
+f: 1.3827359606350282
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.164508907548274
+            Iterations: 4
+            Function evaluations: 39
+            Gradient evaluations: 4
+Current gradient magnitude: 61.56473264991402
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: 1.3889807708130721
+second_gradient: 0.002484177141097195
+b: 1.5725848141120686
+f: 1.3864988151322222
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.551015664113745
+            Iterations: 2
+            Function evaluations: 21
+            Gradient evaluations: 2
+Current gradient magnitude: 0.15682655278719826
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: 0.0025549325746169428
+second_gradient: 1.387756654415619
+b: 3.13975160337406
+f: 2.3518802481081735e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.449, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21357.061224489782
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21560.76750132998
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14054.763915007261
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -4.405676739760901e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4822.333110899051
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.767785834011691e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238781
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 893.2611545725712
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.5509816359307755
+second_gradient: 0.004999726177088889
+b: 1.5740199038786722
+f: 1.5459899682620297
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.5572621386318986
+            Iterations: 3
+            Function evaluations: 22
+            Gradient evaluations: 3
+Current gradient magnitude: 418.4885217641255
+New op index: 11768	ZZYXZZYY	$R_{YYZZXYZZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: 1.5522438146994872
+second_gradient: 0.0024829027279770614
+b: 1.5723958826036533
+f: 1.549762897742674
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.1070380415819088
+            Iterations: 3
+            Function evaluations: 26
+            Gradient evaluations: 3
+Current gradient magnitude: 137.24647293688113
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -1.5509816326211805
+second_gradient: 0.0049999404761808435
+b: -1.574020042054089
+f: 1.5459897513441831
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.6542995577283435
+            Iterations: 2
+            Function evaluations: 21
+            Gradient evaluations: 2
+Current gradient magnitude: 64.65446856620358
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: 1.5522313275921689
+second_gradient: 0.0024702045567043056
+b: 1.5723877149002108
+f: 1.549763088562954
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.204080575439552
+            Iterations: 4
+            Function evaluations: 41
+            Gradient evaluations: 4
+Current gradient magnitude: 0.13737529165377868
+New op index: 117	IIIIIZYX	$R_{XYZ}$[0, 1, 2]
+gradient: 0.0013501808228024888
+second_gradient: 1.5510207818927484
+b: 3.1407221426994725
+f: 5.876735920118392e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.286, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21366.857142857127
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21578.65354173409
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14077.965710035896
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -4.045531813969983e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4868.395792353469
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7683371314556467e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.00999974998423878
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 953.7225257991145
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.7142428607655926
+second_gradient: 0.0049997261770888856
+b: 1.5737128983700048
+f: 1.7092504256232979
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.7205258893814843
+            Iterations: 3
+            Function evaluations: 22
+            Gradient evaluations: 3
+Current gradient magnitude: 437.2255901035869
+New op index: 616	IIYXZZII	$R_{ZZXY}$[2, 3, 4, 5]
+gradient: -1.715505303042022
+second_gradient: 0.002480045705850719
+b: -1.572241990631513
+f: 1.7130270499926785
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.433568760647759
+            Iterations: 3
+            Function evaluations: 27
+            Gradient evaluations: 3
+Current gradient magnitude: 142.1439166368056
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 1.714242860361557
+second_gradient: 0.004999749692414224
+b: 1.5737129120881914
+f: 1.7092504017725227
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.144094925888481
+            Iterations: 2
+            Function evaluations: 20
+            Gradient evaluations: 2
+Current gradient magnitude: 67.00210710901499
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -1.7154921891525126
+second_gradient: 0.002466687699952294
+b: -1.5722342150088868
+f: 1.7130272748634514
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.8571404037550785
+            Iterations: 3
+            Function evaluations: 33
+            Gradient evaluations: 3
+Current gradient magnitude: 0.23494988461391522
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -0.0021012468790953037
+second_gradient: 1.7142906389896284
+b: -3.1403669303786863
+f: 1.2877736972338738e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=-0.122, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21376.65306122447
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21596.539582138204
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14101.167505064534
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -3.6853868881790634e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4914.4584738078875
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7688884288996025e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238778
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1014.1838970256583
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 1.8775040856004104
+second_gradient: 0.004999726177088884
+b: 1.5734592847065028
+f: 1.872511016457445
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -1.8837908739256122
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 456.603627121312
+New op index: 616	IIYXZZII	$R_{ZZXY}$[2, 3, 4, 5]
+gradient: -1.8787589173845802
+second_gradient: 0.0024691471034248235
+b: -1.5721105697554907
+f: 1.8762913928109888
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.7600992383787215
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 147.26965899880508
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -1.877503880786347
+second_gradient: 0.005010622934131186
+b: -1.573465088809025
+f: 1.8724999439362608
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.633892699238643
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 68.53167784322225
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: 1.8787590384421526
+second_gradient: 0.002469270834661811
+b: 1.5721106355286536
+f: 1.8762913902998364
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.510201450794498
+            Iterations: 2
+            Function evaluations: 22
+            Gradient evaluations: 2
+Current gradient magnitude: 0.22760720695858158
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -0.0020417901687712625
+second_gradient: 1.8775710949762683
+b: -3.1405051904469183
+f: 1.1101858863327152e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.041, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21386.44897959182
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21614.425622542316
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14124.36930009317
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -3.3252419623881446e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 4960.521155262307
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7694397263435584e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238776
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1074.6452682522022
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.040765310435228
+second_gradient: 0.00499972617708888
+b: 1.5732462489630834
+f: 2.035771708731201
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.0470550354133863
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 475.5727454707569
+New op index: 49	IIXYIIII	$R_{YX}$[4, 5]
+gradient: -2.042018980957646
+second_gradient: 0.002464798583409684
+b: -1.572003366205093
+f: 2.039555669928931
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.086632527997828
+            Iterations: 4
+            Function evaluations: 35
+            Gradient evaluations: 4
+Current gradient magnitude: 151.6612905976341
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 2.0407653124987983
+second_gradient: 0.004999625060561618
+b: 1.5732461994125666
+f: 2.035771811663567
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.123687805547846
+            Iterations: 3
+            Function evaluations: 27
+            Gradient evaluations: 3
+Current gradient magnitude: 70.76803191112577
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -2.0420189586837525
+second_gradient: 0.002464775769676228
+b: -1.5720033550461296
+f: 2.03955567044125
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.163265306090082
+            Iterations: 4
+            Function evaluations: 43
+            Gradient evaluations: 4
+Current gradient magnitude: 0.001955109442989205
+New op index: 286	IIYZXXII	$R_{XXZY}$[2, 3, 4, 5]
+gradient: 3.8450524095284376e-05
+second_gradient: 53.061224489773366
+b: 3.1415919289453007
+f: 1.3933743048255565e-11
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.204, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21396.244897959165
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21632.311662946428
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14147.571095121812
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -2.965097036597225e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5006.583836716726
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.769991023787514e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238773
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1135.1066394787458
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.204026535270046
+second_gradient: 0.004999726177088878
+b: 1.573064773894388
+f: 2.199032479902561
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.2103192176841095
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 494.5407737587194
+New op index: 49	IIXYIIII	$R_{YX}$[4, 5]
+gradient: -2.205279173698268
+second_gradient: 0.002460567920151959
+b: -1.5719120888845333
+f: 2.2028199784824607
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.4131608064814
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 157.78499405174153
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 2.2040273173152656
+second_gradient: 0.004964117608546358
+b: 1.5730486170344657
+f: 2.1990687900259016
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.613479929685951
+            Iterations: 2
+            Function evaluations: 21
+            Gradient evaluations: 2
+Current gradient magnitude: 73.53153894791369
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -2.2052709736669023
+second_gradient: 0.0024521334802201557
+b: -1.5719082683652903
+f: 2.2028202035013993
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.816326473691394
+            Iterations: 5
+            Function evaluations: 50
+            Gradient evaluations: 5
+Current gradient magnitude: 0.03618440708515827
+New op index: 424	IIIIZZXY	$R_{YXZZ}$[0, 1, 2, 3]
+gradient: -0.00034471796712556564
+second_gradient: 2.2040824818493556
+b: -3.1414362538329086
+f: 2.695690337617407e-08
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.367, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21406.040816326513
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21650.19770335054
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14170.772890150447
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -2.6049521108063074e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5052.646518171145
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7705423212314698e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.00999974998423877
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1195.5680107052895
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.3672877601048636
+second_gradient: 0.004999726177088875
+b: 1.5729083297492867
+f: 2.362293313647966
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.3735834150501063
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 513.5135643410595
+New op index: 616	IIYXZZII	$R_{ZZXY}$[2, 3, 4, 5]
+gradient: -2.3685394006430727
+second_gradient: 0.0024563582190605814
+b: -1.571833403627043
+f: 2.3660843161402263
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.739691551035882
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 162.83200183144777
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 2.3672879961814957
+second_gradient: 0.004989743960548262
+b: 1.572904112826499
+f: 2.362303510879205
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.1032772505741235
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 75.38658074936822
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -2.3685398079105404
+second_gradient: 0.0024567776741871725
+b: -1.5718335805429247
+f: 2.366084304387393
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -9.469385626649101
+            Iterations: 2
+            Function evaluations: 22
+            Gradient evaluations: 2
+Current gradient magnitude: 0.17721992352336005
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -0.0021367327804740315
+second_gradient: 2.36735397031686
+b: -3.140690071117112
+f: 9.642888438854413e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.531, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21415.83673469386
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21668.083743754654
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14193.974685179086
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -2.244807185015387e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5098.709199625564
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7710936186754257e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238769
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1256.0293819318333
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.5305489849396814
+second_gradient: 0.0049997261770888726
+b: 1.5727720718609874
+f: 2.5255541978563625
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.536847625220162
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 532.4871993094365
+New op index: 3599	XXYXZZII	$R_{ZZXYXX}$[2, 3, 4, 5, 6, 7]
+gradient: -2.531799689919957
+second_gradient: 0.002452198694018319
+b: -1.571764886012663
+f: 2.529348678775856
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.066222394001144
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 168.0365921947753
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -2.5305483880827198
+second_gradient: 0.005023256390562878
+b: -1.5727813707546716
+f: 2.525530117386172
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.593072122558979
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 77.6082714441024
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: 2.5318002006811757
+second_gradient: 0.0024527262328369976
+b: 1.5717650941821786
+f: 2.529348662509024
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -10.122448979583332
+            Iterations: 4
+            Function evaluations: 43
+            Gradient evaluations: 4
+Current gradient magnitude: 0.0006186926269120647
+New op index: 31	IIIIIIYX	$R_{XY}$[0, 1]
+gradient: -4.026343337141681e-06
+second_gradient: 2.530612244894755
+b: -3.141591062534765
+f: 3.2032154706485017e-12
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.694, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21425.632653061206
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21685.969784158762
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14217.176480207723
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.8846622592244678e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5144.7718810799815
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7716449161193814e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238766
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1316.4907531583772
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.693810209774499
+second_gradient: 0.004999726177088869
+b: 1.5726523300196278
+f: 2.688815123352696
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.7001118455342024
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 551.4705856422178
+New op index: 49	IIXYIIII	$R_{YX}$[4, 5]
+gradient: -2.695060036833198
+second_gradient: 0.002448084878835336
+b: -1.5717046865984106
+f: 2.692613063825389
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.392753017748959
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 173.2620985499891
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 2.6938100228761366
+second_gradient: 0.005006659295926441
+b: 1.5726549038617867
+f: 2.688808016212624
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.082866960423772
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 79.91331849166707
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -2.6950602542834465
+second_gradient: 0.002448309990916068
+b: -1.5717047700527125
+f: 2.692613056367959
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -10.775508397092377
+            Iterations: 2
+            Function evaluations: 22
+            Gradient evaluations: 2
+Current gradient magnitude: 0.13281406450024782
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 0.0020894938248525886
+second_gradient: 2.693881049770468
+b: 3.140817009317749
+f: 8.103519988367225e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=0.857, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21435.428571428554
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21703.855824562877
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14240.37827523636
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.5245173334335485e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5190.834562534401
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7721962135633371e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238764
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1376.9521243849208
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 2.857071434609317
+second_gradient: 0.004999726177088867
+b: 1.5725462729155817
+f: 2.8520760830590586
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -2.8633760736857354
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 570.4451182754926
+New op index: 388	XXXYIIII	$R_{YXXX}$[4, 5, 6, 7]
+gradient: -2.8583203275023616
+second_gradient: 0.00244389895161294
+b: -1.5716513388565485
+f: 2.855877473332353
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -5.719283742039401
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 178.4710172079543
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -2.8570712129257063
+second_gradient: 0.0050074791286722
+b: -1.5725489866441382
+f: 2.8520681220019646
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.572661805590716
+            Iterations: 3
+            Function evaluations: 27
+            Gradient evaluations: 3
+Current gradient magnitude: 82.14079814122196
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 2.8583200415968335
+second_gradient: 0.002443602257531123
+b: 1.571651235141986
+f: 2.8558774838673497
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -11.428569948798094
+            Iterations: 2
+            Function evaluations: 21
+            Gradient evaluations: 2
+Current gradient magnitude: 0.32436904934274907
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -0.001683883349704293
+second_gradient: 2.857144426690813
+b: -3.141003294809393
+f: 4.962057329471747e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.020, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21445.2244897959
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21721.74186496699
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14263.580070264998
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -1.1643724076426282e-16
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5236.89724398882
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7727475110072933e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238762
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1437.4134956114644
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 3.0203326594441346
+second_gradient: 0.004999726177088864
+b: 1.5724516814111196
+f: 3.0153370714278944
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.0266403097559547
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 589.4226092625081
+New op index: 388	XXXYIIII	$R_{YXXX}$[4, 5, 6, 7]
+gradient: -3.021580732291037
+second_gradient: 0.002439817624815279
+b: -1.5716037906063016
+f: 3.0191418996984942
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.045814638351928
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 183.7185101699966
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 3.020331054310719
+second_gradient: 0.0050525898737289925
+b: 1.5724691848590382
+f: 3.015282690570833
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -9.062455473332712
+            Iterations: 2
+            Function evaluations: 20
+            Gradient evaluations: 2
+Current gradient magnitude: 84.89901251507996
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -3.021573546277459
+second_gradient: 0.002432341263186989
+b: -1.5716013182010429
+f: 3.0191421840212316
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -12.081629900546316
+            Iterations: 3
+            Function evaluations: 32
+            Gradient evaluations: 3
+Current gradient magnitude: 0.2611516616517001
+New op index: 5268	YZZZZZXI	$R_{XZZZZZY}$[1, 2, 3, 4, 5, 6, 7]
+gradient: -0.0031175858015925735
+second_gradient: 3.020440860728057
+b: -3.140560491452467
+f: 1.6089271550612239e-06
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.184, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21455.020408163247
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21739.627905371104
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14286.781865293637
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -8.042274818517109e-17
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5282.959925443239
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.773298808451249e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238759
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1497.874866838008
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 3.183593884278952
+second_gradient: 0.004999726177088862
+b: 1.5723667915741524
+f: 3.1785980840496033
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.189904551804325
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 608.4037114262914
+New op index: 616	IIYXZZII	$R_{ZZXY}$[2, 3, 4, 5]
+gradient: -3.184841178738985
+second_gradient: 0.0024357661288398127
+b: -1.5715611265187233
+f: 3.182406344046822
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.372345191105637
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 188.90778149174545
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 3.1835934105911874
+second_gradient: 0.005014582826627047
+b: 1.572371458425342
+f: 3.178582777079389
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -9.552251539056009
+            Iterations: 3
+            Function evaluations: 27
+            Gradient evaluations: 3
+Current gradient magnitude: 86.75320911683359
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -3.1848406941965104
+second_gradient: 0.00243526074413905
+b: -1.5715609679507208
+f: 3.182406364502712
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -12.734692427287259
+            Iterations: 2
+            Function evaluations: 22
+            Gradient evaluations: 2
+Current gradient magnitude: 0.2710456098161226
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 0.002010752635433537
+second_gradient: 3.1836747747323173
+b: 3.1409610713741625
+f: 6.349778236547365e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.347, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21464.816326530596
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21757.513945775216
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14309.983660322272
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -4.4408255606079156e-17
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5329.022606897657
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7738501058952047e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238757
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1558.3362380645517
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 3.34685510911377
+second_gradient: 0.004999726177088859
+b: 1.572290183653035
+f: 3.341859117374995
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.3531687977456457
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 627.3903901139453
+New op index: 49	IIXYIIII	$R_{YX}$[4, 5]
+gradient: -3.34810157802681
+second_gradient: 0.002431651838237535
+b: -1.5715226044642026
+f: 3.345670809215826
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -6.69887589122272
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 194.10473234039145
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 3.3468556059064896
+second_gradient: 0.0049848608077245294
+b: 1.5722857418484948
+f: 3.341874457362815
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -10.042046433867363
+            Iterations: 3
+            Function evaluations: 29
+            Gradient evaluations: 3
+Current gradient magnitude: 89.11016538264784
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -3.348104408499556
+second_gradient: 0.002434610452385168
+b: -1.5715234875181687
+f: 3.3456706832237586
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -13.387754228126935
+            Iterations: 3
+            Function evaluations: 32
+            Gradient evaluations: 3
+Current gradient magnitude: 0.23260957548615682
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 0.0013659776060071995
+second_gradient: 3.3469391165556743
+b: 3.1411845261985873
+f: 2.787464423725794e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.510, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21474.61224489794
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21775.39998617933
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14333.185455350911
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: -8.393763026987225e-18
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5375.0852883520765
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7744014033391606e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238755
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1618.7976092910953
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 3.510116333948588
+second_gradient: 0.004999726177088856
+b: 1.5722207020349734
+f: 3.505120168515188
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.5164330491557507
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 646.3676066833891
+New op index: 3599	XXYXZZII	$R_{ZZXYXX}$[2, 3, 4, 5, 6, 7]
+gradient: -3.5113620821464195
+second_gradient: 0.0024276336038877694
+b: -1.571487691900603
+f: 3.508935287733147
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.025406544575297
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 199.35333599831694
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 3.510116083356964
+second_gradient: 0.0050068600682621756
+b: 1.5722227345129445
+f: 3.5051127942012292
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -10.531841294860648
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 91.30469764471596
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -3.5113623456623717
+second_gradient: 0.0024279098839385268
+b: -1.571487770530407
+f: 3.5089352751600065
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -14.040814947285781
+            Iterations: 2
+            Function evaluations: 22
+            Gradient evaluations: 2
+Current gradient magnitude: 0.11036643271386423
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -0.002133586747679105
+second_gradient: 3.510204879980236
+b: -3.140984829671282
+f: 6.484225485436923e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.673, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21484.408163265285
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21793.28602658344
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14356.38725037955
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: 2.7620729552104805e-17
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5421.147969806495
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.7749527007831165e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238752
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1679.2589805176394
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 3.6733775587834057
+second_gradient: 0.0049997261770888535
+b: 1.5721573965487488
+f: 3.6683812350948806
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.679697304477372
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 665.3402002764542
+New op index: 3599	XXYXZZII	$R_{ZZXYXX}$[2, 3, 4, 5, 6, 7]
+gradient: -3.6746225942348403
+second_gradient: 0.0024236103894739926
+b: -1.5714558802526706
+f: 3.6721997830957016
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.3519374727702385
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 204.47882958733413
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 3.67337565457933
+second_gradient: 0.005051297092731805
+b: 1.5721714363355062
+f: 3.6683278305305578
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -11.021636183536408
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 93.58580816817262
+New op index: 1605	XYZZZIII	$R_{ZZZYX}$[3, 4, 5, 6, 7]
+gradient: -3.674622359556132
+second_gradient: 0.0024233634892242397
+b: -1.571455813104176
+f: 3.6721997951544583
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -14.693876269179562
+            Iterations: 2
+            Function evaluations: 22
+            Gradient evaluations: 2
+Current gradient magnitude: 0.2038171457750336
+New op index: 1605	XYZZZIII	$R_{ZZZYX}$[3, 4, 5, 6, 7]
+gradient: -0.0020857992315732946
+second_gradient: 3.6734699407673004
+b: -3.141024852834362
+f: 5.921592056701286e-07
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=1.837, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21494.204081632633
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21811.17206698755
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14379.589045408187
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: 6.363522213119674e-17
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5467.210651260914
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.775503998227072e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.00999974998423875
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1739.720351744183
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 3.8366387836182234
+second_gradient: 0.004999726177088851
+b: 1.5720994787539109
+f: 3.8316423151430765
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -3.8429615622947537
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 684.3228195815796
+New op index: 3599	XXYXZZII	$R_{ZZXYXX}$[2, 3, 4, 5, 6, 7]
+gradient: -3.837883106270418
+second_gradient: 0.002419573719757788
+b: -1.571426771582348
+f: 3.8354642952545053
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -7.678468778748503
+            Iterations: 2
+            Function evaluations: 17
+            Gradient evaluations: 2
+Current gradient magnitude: 209.77583583653316
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 3.8366377029704113
+second_gradient: 0.005027813125973342
+b: 1.572106799828075
+f: 3.831613184251668
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -11.511429906619455
+            Iterations: 2
+            Function evaluations: 20
+            Gradient evaluations: 2
+Current gradient magnitude: 96.42952647394833
+New op index: 51	XYIIIIII	$R_{YX}$[6, 7]
+gradient: -3.8378753790541906
+second_gradient: 0.0024114323836260457
+b: -1.5714246515392196
+f: 3.8354647042519074
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -15.346938774331633
+            Iterations: 6
+            Function evaluations: 60
+            Gradient evaluations: 6
+Current gradient magnitude: 0.0034955186257468514
+New op index: 37	YXIIIIII	$R_{XY}$[6, 7]
+gradient: -6.615572853117792e-05
+second_gradient: 3.8367346935087685
+b: -3.1415754108733145
+f: 5.703522099054226e-10
+Precision cutoff reached.
+Calculating energies for FreeWilson2D(N_x=2, N_y=2, mass=2.000, r=1.000)
+h_im: 0.0
+Lets GO!
+Current gradient magnitude: 21503.99999999998
+New op index: 61	IIIIZYII	$R_{YZ}$[2, 3]
+gradient: -49.99999999999996
+second_gradient: -0.49999999999999956
+b: -1.5607966601082315
+f: 50.50249993750308
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 149.99750006249673
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Current gradient magnitude: 21829.05810739167
+New op index: 59	IIIIIIZY	$R_{YZ}$[0, 1]
+gradient: -49.999999999999964
+second_gradient: -1.3582279188341113e-17
+b: -1.5707963267948966
+f: 49.999999999999964
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 99.99750006249656
+            Iterations: 1
+            Function evaluations: 3
+            Gradient evaluations: 1
+Current gradient magnitude: 14402.790840436825
+New op index: 456	IIZYYYII	$R_{YYYZ}$[2, 3, 4, 5]
+gradient: -50.00249993750307
+second_gradient: 9.964971471028867e-17
+b: -1.5707963267948966
+f: 50.00249993750307
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 49.9925001875047
+            Iterations: 2
+            Function evaluations: 10
+            Gradient evaluations: 2
+Current gradient magnitude: 5513.273332715333
+New op index: 11108	ZYXXXXYY	$R_{YYXXXXYZ}$[0, 1, 2, 3, 4, 5, 6, 7]
+gradient: -50.002499937489
+second_gradient: -1.776055295671028e-15
+b: -1.5707963267948966
+f: 50.002499937489
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -0.009999749984238748
+            Iterations: 1
+            Function evaluations: 5
+            Gradient evaluations: 1
+Current gradient magnitude: 1800.1817229707267
+New op index: 2087	XXZZYXII	$R_{XYZZXX}$[2, 3, 4, 5, 6, 7]
+gradient: 3.9999000084530416
+second_gradient: 0.004999726177088847
+b: 1.5720462889346143
+f: 3.994903407010575
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -4.006225822764854
+            Iterations: 3
+            Function evaluations: 21
+            Gradient evaluations: 3
+Current gradient magnitude: 703.3077242723398
+New op index: 616	IIYXZZII	$R_{ZZXY}$[2, 3, 4, 5]
+gradient: -4.0011436469190045
+second_gradient: 0.002415553782487182
+b: -1.5714000425577335
+f: 3.9987288222904867
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -8.004998642696286
+            Iterations: 2
+            Function evaluations: 18
+            Gradient evaluations: 2
+Current gradient magnitude: 215.02116527627754
+New op index: 45	IIIIIIXY	$R_{YX}$[0, 1]
+gradient: 3.999899277047253
+second_gradient: 0.005017978090332841
+b: 1.5720508522492347
+f: 3.9948844465479545
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -12.001225927920487
+            Iterations: 3
+            Function evaluations: 30
+            Gradient evaluations: 3
+Current gradient magnitude: 98.18504635020172
+New op index: 1605	XYZZZIII	$R_{ZZZYX}$[3, 4, 5, 6, 7]
+gradient: -4.001144050146159
+second_gradient: 0.0024159793285256667
+b: -1.5714001488529439
+f: 3.998728800228461
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: -15.999999999414767
+            Iterations: 4
+            Function evaluations: 43
+            Gradient evaluations: 4
+Current gradient magnitude: 0.004684939745930778
+New op index: 1847	YXZZXXII	$R_{XXZZXY}$[2, 3, 4, 5, 6, 7]
+gradient: 9.353476092978277e-05
+second_gradient: 7.999999999858753
+b: 3.1415809617446775
+f: 5.467963859473457e-10
+Precision cutoff reached.
+-----Beginning pprint-----
+/:
+	Attributes:
+		ProcessId: 26895042
+	2026-08-07_12-08-57-26895042:
+		Attributes:
+			HamiltonianType: ZeroChargePenalty
+			Last-Modified: 2026-08-07_12-08-57
+			ProcessId: 26895042
+			SimulatorType: Statevector
+			SolverName: AdaptVQE
+			SystemName: FreeWilson2D
+			n_x: 2
+			n_y: 2
+			r: 1.0
+		AdaptOptions:
+			Attributes:
+				SelSeed: 26895042
+				allow_duplicate_gates: False
+				gradient_hamiltonian_type: HamiltonianType.ZeroChargePenalty
+				max_depth: 50
+				parameter_prec_cutoff: 0.001
+				prec_cutoff: 0.001
+				precision: 0
+		AnsatzOperatorDerivatives: Dataset (dtype=float64, shape=(50, 18, 14748), maxshape=(50, None, 14748))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperatorSecondDerivatives: Dataset (dtype=float64, shape=(50, 18, 14748), maxshape=(50, None, 14748))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis' 'AnsatzPoolOperatorAxis']
+				NDataDims: 2
+		AnsatzOperators: Dataset (dtype=int64, shape=(50, 17), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		Circuit:
+			Attributes:
+				Ansatz: HardwareAdaptAnsatz24
+			AnsatzOptions:
+				Attributes:
+					num_qubits: 8
+		CircuitParameters: Dataset (dtype=float64, shape=(50, 1440, 17), maxshape=(50, None, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'IterationAxis' 'CircuitParameterAxis']
+				NDataDims: 2
+		Data:
+			Attributes:
+			evs:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 1440), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+			stds:
+				Attributes:
+				Hamiltonian: Dataset (dtype=float64, shape=(50, 1440), maxshape=(50, None))
+					Attributes:
+						DIMENSION_LABELS: ['mass' 'IterationAxis']
+						NDataDims: 1
+		EstimatorOptions:
+			Attributes:
+				_VERSION: 2
+				default_precision: Unset
+				default_shots: Unset
+				experimental: Unset
+				max_execution_time: Unset
+				resilience_level: Unset
+				seed_estimator: 26895042
+			dynamical_decoupling:
+				Attributes:
+					enable: Unset
+					extra_slack_distribution: Unset
+					scheduling_method: Unset
+					sequence_type: Unset
+					skip_reset_qubits: Unset
+			environment:
+				Attributes:
+					job_tags: None
+					log_level: WARNING
+					private: False
+			execution:
+				Attributes:
+					init_qubits: Unset
+					rep_delay: Unset
+			resilience:
+				Attributes:
+					layer_noise_model: Unset
+					measure_mitigation: Unset
+					pec_mitigation: Unset
+					zne_mitigation: Unset
+				layer_noise_learning:
+					Attributes:
+						layer_pair_depths: Unset
+						max_layers_to_learn: Unset
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				measure_noise_learning:
+					Attributes:
+						num_randomizations: Unset
+						shots_per_randomization: Unset
+				pec:
+					Attributes:
+						max_overhead: Unset
+						noise_gain: Unset
+				zne:
+					Attributes:
+						amplifier: Unset
+						extrapolated_noise_factors: Unset
+						extrapolator: Unset
+						noise_factors: Unset
+			simulator:
+				Attributes:
+					basis_gates: Unset
+					coupling_map: Unset
+					noise_model: Unset
+					seed_simulator: Unset
+			twirling:
+				Attributes:
+					enable_gates: Unset
+					enable_measure: Unset
+					num_randomizations: Unset
+					shots_per_randomization: Unset
+					strategy: Unset
+		MetaData:
+			Attributes:
+			circuit_metadata: Dataset (dtype=object, shape=(50, 1440), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			target_precision: Dataset (dtype=float64, shape=(50, 1440), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+			version: Dataset (dtype=int64, shape=(50, 1440), maxshape=(50, None))
+				Attributes:
+					DIMENSION_LABELS: ['mass' 'IterationAxis']
+					NDataDims: 1
+		NIterations: Dataset (dtype=int64, shape=(50,), maxshape=(50,))
+			Attributes:
+				DIMENSION_LABELS: ['mass']
+				NDataDims: 0
+		OptimizerOptions:
+			Attributes:
+				bounds: None
+				callback: None
+				constraints: []
+				method: slsqp
+				tol: None
+				x0Seed: 26895042
+			options:
+				Attributes:
+					disp: 1
+					maxiter: 20000
+		PresetPassManagerOptions:
+			Attributes:
+		SimulatorOptions:
+			Attributes:
+		StartIterations: Dataset (dtype=int64, shape=(50, 17), maxshape=(50, None))
+			Attributes:
+				DIMENSION_LABELS: ['mass' 'AnsatzOperatorAxis']
+				NDataDims: 1
+		VersionInfo:
+			Attributes:
+				QiskitAerVersion: 0.17.2
+				QiskitIBMRuntimeVersion: 0.45.0
+				QiskitVersion: 2.5.1
+		mass: Dataset (dtype=float64, shape=(50,), maxshape=(50,))
+			Attributes:
+-----Ending pprint-----
+End 2026-08-07 18:51:42 | 26895042 MyPyJob | lmnode193 | /home/s6nidich_hpc/PycharmProjects/QC-MasterThesis 
+
